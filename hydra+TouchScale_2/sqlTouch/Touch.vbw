@@ -1,0 +1,7 @@
+FrmKeyTouch = 171, 57, 827, 734, CZ, 0, 0, 0, 0, C
+Var = 450, 40, 1003, 616, CZ
+FrmSelect = 123, 103, 611, 679, , 0, 0, 0, 0, C
+ICMP_PINGS = 123, 103, 611, 679, 
+FrmInactividad = 123, 103, 611, 679, C, 0, 0, 0, 0, C
+modInactividad = 123, 103, 611, 679, C
+FrmAviso = 0, 0, 0, 0, C, 0, 0, 0, 0, C

@@ -1,0 +1,354 @@
+100011100Filete C/P Nacional Pqñ     1300w                                                 
+100021100Filete C/P                  0   w                                                 
+100031100Merluza Filete NC  3  S/p   468 w                                                 
+100041100Filete S/P nº 1 EMAR        292 w                                                 
+100051100Filete Lenguado PLT             w                                                 
+100061100Filete  Bacalalao   500/1000566 w                                                 
+100071100Pescadilla 0 Tronquito      211 w                                                 
+100081100R. de Merluza   Nac/        546 w                                                 
+100091100Merluza    Nº6 Lusitania    528 w                                                 
+100101100R. de Rosada Salg           500 w                                                 
+100121100Palmeta                     410 w                                                 
+100131100Lomos de Atun Rojo              w                                                 
+100141100Lomo  de Salmon             0   w                                                 
+100151100Pez Espada / Marr               w                                                 
+100161100Cazon                       325 w                                                 
+100171100Centros de Merluza Extra    625 w                                                 
+100191100Palometa Rodaja             430 w                                                 
+100201100Cococha de Merluza G/D      3720w                                                 
+100221100Gallos LG/                  306 w                                                 
+100231100Pulpo Cdo Bandeja T4 Gilmar 1378w                                                 
+100241100Chipirón   Nº5                  w                                                 
+100251100Chipirón   N4 L                 w                                                 
+100271100Anillas de Calamar Extra    585 w                                                 
+100281100Calamar   Nacional          1027w                                                 
+100291100Volador                         w                                                 
+100301100Tubo Calamar ANT/RIC        494 w                                                 
+100321100Sepia  /  G  AN/RI          547 w                                                 
+100341100Rape    300 /  500          429 w                                                 
+100371100Gata                        458 w                                                 
+100381100Pez Rodaja                  0   w                                                 
+100431100Palometa                    0   w                                                 
+100441100Sardinas                    0   w                                                 
+100451100Filete Polaca               0   w                                                 
+100461100Cabracho                    0   w                                                 
+100471100Saborin                     0   w                                                 
+100501100Lomos de Pavo               0   w                                                 
+100511100Jamoncitos de Pavo          0   w                                                 
+100521100Jamoncitos de Pollo         0   w                                                 
+100531100Ancas de Rana               571 w                                                 
+100601100Acedia Bloque               0   w                                                 
+100611100Filete de Salmonete         0   w                                                 
+100621100Filete Fogonero 500/1000    332 w                                                 
+100631100Eglefino C/P                422 w                                                 
+100641100Halibut                     468 w                                                 
+200001200Preparado de Paella 24x250gr0   w                                                 
+200011200Calamar  Romana Extra           w                                                 
+200021200Sepia Rebozada Besbes       318 w                                                 
+200041200Muslito de Cangrejo  AN/RI  430 w                                                 
+200051200Bocas  ANT/RIC 40x250gr.    78  w                                                 
+200061200Salpicon de Marisco         494 w                                                 
+200071200Mejillon Tigre 5 Kg         332 w                                                 
+200081200Merluza Empanada            520 w                                                 
+200091200Flamenquin 1 x 5  Ortola    0   w                                                 
+200101200Eurogamba Rebozada 2 kg         w                                                 
+200111200Almeja  Fina  60/80  1x6    351 w                                                 
+200121200Carne Berberecho            212 w                                                 
+200131200Bacalao Reboz Alcam.6x1Kg   292 w                                                 
+200141200Mini Brocheta  Pollo  1x2       w                                                 
+200151200Bocadito Bacalao 10 x 400 gr190 w                                                 
+200161200Buñuelo de Bacalao          0   w                                                 
+200181200Rollitos primavera12 x 4Und.0   w                                                 
+200191200Canelones Carne 10/500 FD       w                                                 
+200201200Lasaña Cocinera             0   w                                                 
+200211200Bases de Pizza Cocin        47  w                                                 
+200221200Quesadilla Chendal          167 w                                                 
+200261200Empanadilla 96 und. A/R         w                                                 
+200281200San Jacobo A/R              187 w                                                 
+200291200Chanquetes                  0   w                                                 
+200301200Croqueta Suprema Pollo      0   w                                                 
+200311200Croqueta Cas/Bacalao Caterin    w                                                 
+200321200Bomba Mexicana              159 w                                                 
+200341200Albondiga 5,5 Kg. Findus        w                                                 
+200351200Hamburgesa  Caterfrits          w                                                 
+200361200Varita de Ternera eurofrits     w                                                 
+200401200Nuggets Pollo  1x3          317 w                                                 
+200411200Alitas de Pollo Adobado     0   w                                                 
+200441200Caprichos de Mar                w                                                 
+200451200Saladitos Atún              485 w                                                 
+200461200Churros                     78  w                                                 
+200471700Croissant 90 uni            320 w                                                 
+200481200Redondo de Pavo             260 w                                                 
+200501200Pechuga a la Villeroy       680 w                                                 
+200511200Pechuga  Villeroy 1 x 20 300237 w                                                 
+200521200San Jacobo Jamon Queso      365 w                                                 
+200531200San Jacobo Jam/Que 300gr.   0   w                                                 
+200541200San Jacobo Merluza          482 w                                                 
+200551200San Jacobo Merluza  400gr.  0   w                                                 
+200561200Croqueta Jamon              328 w                                                 
+200571200Croqueta jamon 300gr;       116 w                                                 
+200581200Croqueta Pollo              328 w                                                 
+200591200Croqueta Pollo 300gr.       116 w                                                 
+200601200Croquetas Cabrales          374 w                                                 
+200611200Leche Frita                 257 w                                                 
+200621200Gamba Gabardina 3 Kg        915 w                                                 
+200631200Delicias Jamon Queso        530 w                                                 
+200641200Pimiento Carne/Bech         652 w                                                 
+200651200Pimiento Piquillo CARNE     666 w                                                 
+200661200Bola Pimiento Piquillo      281 w                                                 
+200671200Cordon Bleuu de Pollo       711 w                                                 
+200681200Mini Pechuga Villeroy       856 w                                                 
+200691200Lomo Lenguado a la Villeroy 650 w                                                 
+200801200Abadejo Grat.Almen          0   w                                                 
+200811200Alitas de Pollo Empanadas   321 w                                                 
+202411200Perdizes                    0   w                                                 
+203001700Empanada Hojaldre Caballa   630 w                                                 
+203011700Empanada Hojaldre Atun      915 w                                                 
+203101700Empanada Mini Atun          77  w                                                 
+300001300Bocadito Patata 4x2,5 FD    294 w                                                 
+300011300Tortilla Atun 800 gr        0   w                                                 
+300021300Patatas 2,5  kg  AN/RI          w                                                 
+300031300Calabacin Romana 1x4        206 w                                                 
+300041300Ensalada de Cangrejo        0   w                                                 
+300051300Sopa Verduras Miñarro       68  w                                                 
+300091300Sopa Verduras An/Ri             w                                                 
+300101300Acelgas                         w                                                 
+300201300Judia  Plana                103 w                                                 
+300211300Judia Redonda SM  Bondu.    0   w                                                 
+300221300Guisantes SM Bonduelle      78  w                                                 
+300231300Coliflor                    103 w                                                 
+300241300Ensaladilla SM Bonduelle    0   w                                                 
+300251300Menestra SM Bonduelle       0   w                                                 
+300261300Espinacas SM Bonduelle      0   w                                                 
+300271300Coles Bruselas Findus       130 w                                                 
+300281300Coles bruselas Miñarro      91  w                                                 
+300291300Broccoli Findus             150 w                                                 
+300301300Menestra Especial 1Kg. Bondu0   w                                                 
+300401300Coliflor 400 Gr.  Bonduelle 0   w                                                 
+300411300Coliflor 1 Kgr. Bonduelle   0   w                                                 
+300501300Alcachofa 400Gr Bonduelle   0   w                                                 
+300511300Espinaca 400Gr Bonduelle    0   w                                                 
+300521300Ensaladilla 400Gr  Bonduelle0   w                                                 
+300531300Guisantes 400Gr  Bonduelle  0   w                                                 
+300541300Judia Plana 400Gr  Bonduelle0   w                                                 
+300551300Judia V Troc. 400Gr  Bonduel0   w                                                 
+300561300Menestra C/Esparragos 400Gr 0   w                                                 
+300571300Menestra  Verd. 400Gr  Bond.0   w                                                 
+300581300Salteado Patat/Terne 600    336 w                                                 
+300591300Parridada Pata Pewrj 400    268 w                                                 
+300601300Braseado Gambas 500         387 w                                                 
+300611300Graten Beren/Tern 450       387 w                                                 
+300621300Salteado V. Pasta 450Gr  Bon158 w                                                 
+300631300Salteado V. Carne 400Gr  Bon158 w                                                 
+300641300Maiz 400Gr  Bonduelle       0   w                                                 
+300651300Champiñon LM                    w                                                 
+300661300Cardo                       214 w                                                 
+300681300Zanahoria Baby              143 w                                                 
+300691300Patata  Parisina            180 w                                                 
+400011500Parrocha                    221 w                                                 
+400021500Sardina                     195 w                                                 
+400031500Boqueron                    910 w                                                 
+400041500F. de Sardina               559 w                                                 
+400051500F. de Rosada                696 w                                                 
+400061500F. de Lenguado/H            962 w                                                 
+400071500F. Dory                     0   w                                                 
+400081500F. de Bacalao               2470w                                                 
+400091500Anilla  Calamar Fresco      682 w                                                 
+400101500F. de Trucha                806 w                                                 
+400111500Trucha Asalmonada           306 w                                                 
+400121500RS/ Trucha Blanca           286 w                                                 
+400131500Calamar Fresco              770 w                                                 
+400141500Volador                     370 w                                                 
+400151500Pulpo Fresco                0   w                                                 
+400161500Sepia                       702 w                                                 
+400171500Chipiron Relleno            812 w                                                 
+400181500Salmón                      624 w                                                 
+400191500Merluza Pincho 2/3          838 w                                                 
+400201500Merluza C/H / 5             1300w                                                 
+400211500Cockochas de Merluza        0   w                                                 
+400221500Lenguado                    1138w                                                 
+400231500Lenguadina  EXT/            637 w                                                 
+400241500Gallo de  Filete            937 w                                                 
+400251500SS/ Gallo Racion            650 w                                                 
+400261500Pescadilla  Enroscar        546 w                                                 
+400271500Pescadilla                  416 w                                                 
+400281500Pescadilla 500/700          403 w                                                 
+400291500Pescadilla de 1Kg.          650 w                                                 
+400301500Pescadilla Negra            0   w                                                 
+400311500Pescadilla Pincho           852 w                                                 
+400341500Congrio Abierto             351 w                                                 
+400351500Ternera                     723 w                                                 
+400361500Bacalao                     403 w                                                 
+400371500RS/ Bonito                  547 w                                                 
+400381500Lirios                      195 w                                                 
+400391500Rodaballo Salv              0   w                                                 
+400401500Doradas  300/400            715 w                                                 
+400411500Lubina PIC. 300/400         611 w                                                 
+400421500Emperador                   1170w                                                 
+400431500Bertorella                  0   w                                                 
+400441500Chicharros                  728 w                                                 
+400451500Chincho                     182 w                                                 
+400461500Palometa                    364 w                                                 
+400471500Besugo                      1346w                                                 
+400481500Brecas                      0   w                                                 
+400491500Sable                       585 w                                                 
+400501500Rape  S/C                   1235w                                                 
+400511500Rape  C/C                   702 w                                                 
+400521500SS/ Caella                  0   w                                                 
+400531500Filete de Mero /Negrita 1x6 304 w                                                 
+400541500Caballas                    292 w                                                 
+400551500Salmonete                   1080w                                                 
+400561500Cabracho                    0   w                                                 
+400571500Sargo                       0   w                                                 
+400581500Mero                        1170w                                                 
+400591500Fanecas                     0   w                                                 
+400601500Raya                        650 w                                                 
+400611500Clavos                      0   w                                                 
+400621500SS/ Fletan                  0   w                                                 
+400631500Agrafin                     0   w                                                 
+400641500Melva                       0   w                                                 
+400651500Gallinetas                  0   w                                                 
+400661500San Martiño                 0   w                                                 
+400671500Pez Limon                   0   w                                                 
+400681500Merluza Rosada              0   w                                                 
+400691500Pampanos                    0   w                                                 
+400991500Espinas                     0   w                                                 
+402021500Carpacho Salmon                 w                                                 
+404001500Caviar                      2080w                                                 
+404011500Caviar Eurocaviar.          1764w                                                 
+404021550Foie Gras Pato Extra Restaur3120w                                                 
+404031550Delicias de Pato Confit     489 w                                                 
+404091550Pate                        986 w                                                 
+404101500Anchoa la Binalesa 100gr.   0   w                                                 
+405001500Boqueron                    5120w                                                 
+405011500Tintas de  Calamar          9   w                                                 
+405021500Sobrasada                   992 w                                                 
+405031500Salmon Ahumado Plan/ Won    1441w                                                 
+405041500Trucha Ahumada 700 Wonder   156 w                                                 
+405051500Palometa Roja Wonder 700    1156w                                                 
+405061500Bacalao  Ahumado            2938w                                                 
+405071500Anchoa Ahu/380gr.Wonder     0   w                                                 
+405101500Lonchitas Salmom 250 gr     1180w                                                 
+405171500Salmon Lomos Angel          193 w                                                 
+406001500Bacalao Centro Largo        1293w                                                 
+406041500Bacalao salao 40/60         700 w                                                 
+406061500Bacalao Lomo Corto 6 Kg.        w                                                 
+500001500Gamba Cocida Gorda          3500w                                                 
+500011500Gamba  Arroz                0   w                                                 
+500021500Gamba Plancha               0   w                                                 
+500031500Cigala Arroz                0   w                                                 
+500041500Cigala Tronco               0   w                                                 
+500051500Reloges                     0   w                                                 
+500061500SS/ Chirla                  960 w                                                 
+500071500Almeja Gigante              3011w                                                 
+500081500Almeja Babosa Gorda         2241w                                                 
+500091500Almeja Babosa Mediana       1691w                                                 
+500101500RS/ Almeja Machito          361 w                                                 
+500111500Almeja  FR                  961 w                                                 
+500121500Berberecho                  960 w                                                 
+500131500Bigaros                     850 w                                                 
+500141500Coquina                     1014w                                                 
+500151500Mejillon EXT/G              241 w                                                 
+500161500Cangrejo de Mar             192 w                                                 
+500171500Cangrejo de Rio             709 w                                                 
+500181500Navajas                     800 w                                                 
+500191500Caracoles                   0   w                                                 
+500201500Bogabante  Vivo             2730w                                                 
+500211500Langosta                    4375w                                                 
+500221500Lenguado                    1235w                                                 
+500231500Necoras Viva                1080w                                                 
+500241500Percebe Gallego             1220w                                                 
+500251500Vieira                      1095w                                                 
+500261500Ostras                      185 w                                                 
+500271500Camaron                     8060w                                                 
+500281500Langostino Vivo             2100w                                                 
+500291500Carabinero  Pequeño         1700w                                                 
+500301500Cigala Tronco Viva          3562w                                                 
+600001400Gamba G1Friomar             5924w                                                 
+600021400Gamba 3C   AN/RI                w                                                 
+600031400Gamba G 3 A                     w                                                 
+600041400Gamba 3 X A                     w                                                 
+600051400Gamba COLA BUÑUELO          350 w                                                 
+600081400Gambon Nº1                  626 w                                                 
+600091400Gambon 40/60  800 gr.       975 w                                                 
+602001400Langostino  ANT/RIC  Nº4    684 w                                                 
+602011400Langostino  ANT/RIC  Nº2    0   w                                                 
+602021400Langostino  ANT/RIC  N5     793 w                                                 
+602031400Langostino  ANT/RIC  Nº6    721 w                                                 
+602041400Langostino  Calembo A       1825w                                                 
+602051400Langostino  Calembo B/B     1300w                                                 
+602061400Langostino  Pescasur B/2        w                                                 
+602071400Langostino Nicar/34/40      1733w                                                 
+602101400Langostino  Nº 5  MARIN     1172w                                                 
+602111400Langostino Tigre 31/40      700 w                                                 
+602501400Carabinero 0 Peix           6370w                                                 
+602511400Patas de Buey Gordo         2750w                                                 
+602521400Patas de Buey  Pequeño      890 w                                                 
+602531400Buey Congelado              547 w                                                 
+602541400Boca  PECHO COCIDO 1 x 3    897 w                                                 
+602551400Necora 4/8 cocida           689 w                                                 
+602561400Bogabante Cocido 250        2130w                                                 
+603001400Cigala  Nº000               3050w                                                 
+603011400Cigala  Nº 0 Icelandic      2090w                                                 
+603021400Cigala  Nº1 ANT/RIC         1420w                                                 
+603031400Cigala  Nº2  11/15          1200w                                                 
+603041400Cigala  Nº3  21/25          0   w                                                 
+603051400Cigala  Nº4  26/35          864 w                                                 
+603061400Cigala Grillo               448 w                                                 
+603071400Cigala Escocia              0   w                                                 
+603081400Cigala 16/20  800gr.        760 w                                                 
+603091400Brocheta  Cigala            183 w                                                 
+603101400Vieiras  Concha  5/7        488 w                                                 
+603201400Colas de Langosta           6000w                                                 
+604021400Angulas Aguinaga            5050w                                                 
+604041600Gulas  Aliment./Conge.      538 w                                                 
+604071600Gulas  Aliment. / Fresca    479 w                                                 
+604091600Gulas  Hostel / Fresca      414 w                                                 
+604101600Gulas  Hostel/ Conge.       391 w                                                 
+604111600Barritas Krissia 150 Gr.    164 w                                                 
+604121600Colas del Oceano  Krissia   205 w                                                 
+604131600Rallado  Krissia 150 gr     184 w                                                 
+604141600Barritas Hosteleria         489 w                                                 
+604151600Rallado Hosteleria          426 w                                                 
+604161600Barritas  Krissia 300 gr.   300 w                                                 
+604171600Txannorte Preparado         205 w                                                 
+604181600Solo Lomo Merluza           254 w                                                 
+604191600Solo Lomo Salmon            254 w                                                 
+604201600Merluza Salsa Verde Conge.  334 w                                                 
+604211600Salmon a la Nantesa Conge.  334 w                                                 
+604501600King Artik 160 gr.          330 w                                                 
+700001700Baguette 235 gr Senior      39  w                                                 
+700011700Pane Nostrum Emporion       42  w                                                 
+700021700Panecillo Payes             19  w                                                 
+700051700Redondo Payes 800 gr.       179 w                                                 
+700401700Chapata Tronquete Rustico   64  w                                                 
+700501700Chapata Pulga               298 w                                                 
+700601700Capriccio Pasas Nueces      23  w                                                 
+700701700Triangulo Chocolate /Leche  39  w                                                 
+700801700Piquitos de Chocolate Leche 423 w                                                 
+700901700Croque  Mayorquin           117 w                                                 
+701001700Croissant Gigante 85 gr. Mar51  w                                                 
+701201700Croissant Relleno Frk/Bq/Qu 24  w                                                 
+701301700Masa de Hojaldre 40 x 60    24  w                                                 
+800001800.TULIPAS                    21  w                                                 
+800011800Surtido de Frutinos         169 w                                                 
+800021800Sandwich 6 Unds 120 ml      160 w                                                 
+800051800Tarta Crujiente 1.5 L       404 w                                                 
+800061800Cono Nata Choco 6 Undes.    183 w                                                 
+800071800Cono Nata Cho IMPU/ 1x      46  w                                                 
+800091800Granel  6 L Nata            234 w                                                 
+800101800Vasito Nata Fresa 75 ml     10  w                                                 
+800111800Vasito   Nata/Fresa Pack 12515  w                                                 
+800141800Tarrina Nata/Fresa          234 w                                                 
+800201800Copa Celebracion Host/      272 w                                                 
+800221800COCOS                       135 w                                                 
+800231800Helados Tartitas            272 w                                                 
+800241800Bloque Turron               161 w                                                 
+800991800Pulpa Acerola/Naranja 250   168 w                                                 
+802001750Plancha Chocolate           1094w                                                 
+802101750Banda Chocolate 40 por Dachy544 w                                                 
+802201750Tarta Yema  Nata Dachy      724 w                                                 
+802301750Pastel Queso Arand          710 w                                                 
+802401750Bavarois Avellana  Profit Da882 w                                                 
+802501750Volcanes                    904 w                                                 
+802601750Trufa Dachy 50/und          965 w                                                 

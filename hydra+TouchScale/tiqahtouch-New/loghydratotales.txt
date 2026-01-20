@@ -1,0 +1,306 @@
+12/06/2024 12:36:18-->Localizando en cabecera:select * from cabecera where nume="00001" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:36:09" and vended="101" and onoff="Red"
+12/06/2024 12:36:18-->No localizado --> Almacenando Cabecera de Tiquet : 1Sec : 1Bal : 1Importe : 15,77Fecha : 30/10/2023Hora : 10:36:09
+12/06/2024 12:36:18-->Marcando:update mbd.hTickets set Captured='*' where id=1
+12/06/2024 12:36:22-->Localizando en cabecera:select * from cabecera where nume="00002" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:42:49" and vended="101" and onoff="Red"
+12/06/2024 12:36:22-->No localizado --> Almacenando Cabecera de Tiquet : 2Sec : 1Bal : 1Importe : 5,55Fecha : 30/10/2023Hora : 10:42:49
+12/06/2024 12:36:22-->Marcando:update mbd.hTickets set Captured='*' where id=2
+12/06/2024 12:36:23-->Localizando en cabecera:select * from cabecera where nume="00003" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:44:54" and vended="101" and onoff="Red"
+12/06/2024 12:36:23-->No localizado --> Almacenando Cabecera de Tiquet : 3Sec : 1Bal : 1Importe : 4,44Fecha : 30/10/2023Hora : 10:44:54
+12/06/2024 12:36:24-->Marcando:update mbd.hTickets set Captured='*' where id=3
+12/06/2024 12:37:58-->Localizando en cabecera:select * from cabecera where nume="00004" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:31:03" and vended="101" and onoff="Red"
+12/06/2024 12:37:58-->No localizado --> Almacenando Cabecera de Tiquet : 4Sec : 1Bal : 1Importe : 40Fecha : 13/02/2024Hora : 09:31:03
+12/06/2024 12:37:58-->Marcando:update mbd.hTickets set Captured='*' where id=4
+12/06/2024 12:37:59-->Localizando en cabecera:select * from cabecera where nume="00005" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:39:52" and vended="101" and onoff="Red"
+12/06/2024 12:37:59-->No localizado --> Almacenando Cabecera de Tiquet : 5Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 09:39:52
+12/06/2024 12:37:59-->Marcando:update mbd.hTickets set Captured='*' where id=5
+12/06/2024 12:38:00-->Localizando en cabecera:select * from cabecera where nume="00006" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:40:58" and vended="101" and onoff="Red"
+12/06/2024 12:38:00-->No localizado --> Almacenando Cabecera de Tiquet : 6Sec : 1Bal : 1Importe : 8,88Fecha : 13/02/2024Hora : 09:40:58
+12/06/2024 12:38:00-->Marcando:update mbd.hTickets set Captured='*' where id=6
+12/06/2024 12:38:00-->Localizando en cabecera:select * from cabecera where nume="00007" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:45:43" and vended="101" and onoff="Red"
+12/06/2024 12:38:00-->No localizado --> Almacenando Cabecera de Tiquet : 7Sec : 1Bal : 1Importe : 584,55Fecha : 13/02/2024Hora : 09:45:43
+12/06/2024 12:38:00-->Marcando:update mbd.hTickets set Captured='*' where id=7
+12/06/2024 12:38:00-->Localizando en cabecera:select * from cabecera where nume="00008" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:46:14" and vended="101" and onoff="Red"
+12/06/2024 12:38:00-->No localizado --> Almacenando Cabecera de Tiquet : 8Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 09:46:14
+12/06/2024 12:38:00-->Marcando:update mbd.hTickets set Captured='*' where id=8
+12/06/2024 12:38:00-->Localizando en cabecera:select * from cabecera where nume="00009" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:46:38" and vended="102" and onoff="Red"
+12/06/2024 12:38:00-->No localizado --> Almacenando Cabecera de Tiquet : 9Sec : 1Bal : 1Importe : 90,93Fecha : 13/02/2024Hora : 09:46:38
+12/06/2024 12:38:01-->Marcando:update mbd.hTickets set Captured='*' where id=9
+12/06/2024 12:38:01-->Localizando en cabecera:select * from cabecera where nume="00010" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:48:40" and vended="103" and onoff="Red"
+12/06/2024 12:38:01-->No localizado --> Almacenando Cabecera de Tiquet : 10Sec : 1Bal : 1Importe : 116,91Fecha : 13/02/2024Hora : 09:48:40
+12/06/2024 12:38:01-->Marcando:update mbd.hTickets set Captured='*' where id=10
+12/06/2024 12:38:01-->Localizando en cabecera:select * from cabecera where nume="00011" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:49:03" and vended="103" and onoff="Red"
+12/06/2024 12:38:01-->No localizado --> Almacenando Cabecera de Tiquet : 11Sec : 1Bal : 1Importe : 103,92Fecha : 13/02/2024Hora : 09:49:03
+12/06/2024 12:38:01-->Marcando:update mbd.hTickets set Captured='*' where id=11
+12/06/2024 12:38:01-->Localizando en cabecera:select * from cabecera where nume="00012" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:03:01" and vended="108" and onoff="Red"
+12/06/2024 12:38:01-->No localizado --> Almacenando Cabecera de Tiquet : 12Sec : 1Bal : 1Importe : 38,97Fecha : 13/02/2024Hora : 10:03:01
+12/06/2024 12:38:01-->Marcando:update mbd.hTickets set Captured='*' where id=12
+12/06/2024 12:38:01-->Localizando en cabecera:select * from cabecera where nume="00013" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:03:52" and vended="107" and onoff="Red"
+12/06/2024 12:38:01-->No localizado --> Almacenando Cabecera de Tiquet : 13Sec : 1Bal : 1Importe : 51,96Fecha : 13/02/2024Hora : 10:03:52
+12/06/2024 12:38:01-->Marcando:update mbd.hTickets set Captured='*' where id=13
+12/06/2024 12:39:07-->Localizando en cabecera:select * from cabecera where nume="00014" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:04:21" and vended="106" and onoff="Red"
+12/06/2024 12:39:07-->No localizado --> Almacenando Cabecera de Tiquet : 14Sec : 1Bal : 1Importe : 415,68Fecha : 13/02/2024Hora : 10:04:21
+12/06/2024 12:39:07-->Marcando:update mbd.hTickets set Captured='*' where id=14
+12/06/2024 12:39:07-->Localizando en cabecera:select * from cabecera where nume="00015" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:04:57" and vended="105" and onoff="Red"
+12/06/2024 12:39:07-->No localizado --> Almacenando Cabecera de Tiquet : 15Sec : 1Bal : 1Importe : 38,97Fecha : 13/02/2024Hora : 10:04:57
+12/06/2024 12:39:07-->Marcando:update mbd.hTickets set Captured='*' where id=15
+12/06/2024 12:39:07-->Localizando en cabecera:select * from cabecera where nume="00016" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:08:12" and vended="106" and onoff="Red"
+12/06/2024 12:39:07-->No localizado --> Almacenando Cabecera de Tiquet : 16Sec : 1Bal : 1Importe : 42,54Fecha : 13/02/2024Hora : 10:08:12
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=16
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00017" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:17:26" and vended="104" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 17Sec : 1Bal : 1Importe : 40Fecha : 13/02/2024Hora : 10:17:26
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=17
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00018" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:37:18" and vended="106" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 18Sec : 1Bal : 1Importe : 25,98Fecha : 13/02/2024Hora : 10:37:18
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=18
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00019" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="13:00:34" and vended="103" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 19Sec : 1Bal : 1Importe : 77,94Fecha : 13/02/2024Hora : 13:00:34
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=19
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00020" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="13:28:19" and vended="106" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 20Sec : 1Bal : 1Importe : 10,71Fecha : 13/02/2024Hora : 13:28:19
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=20
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00021" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="14:38:31" and vended="101" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 21Sec : 1Bal : 1Importe : 6,81Fecha : 13/02/2024Hora : 14:38:31
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=21
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00022" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="15:34:02" and vended="105" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 22Sec : 1Bal : 1Importe : 42,48Fecha : 13/02/2024Hora : 15:34:02
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=22
+12/06/2024 12:39:08-->Localizando en cabecera:select * from cabecera where nume="00023" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:05:04" and vended="104" and onoff="Red"
+12/06/2024 12:39:08-->No localizado --> Almacenando Cabecera de Tiquet : 23Sec : 1Bal : 1Importe : 49,75Fecha : 13/02/2024Hora : 16:05:04
+12/06/2024 12:39:08-->Marcando:update mbd.hTickets set Captured='*' where id=23
+12/06/2024 12:39:09-->Localizando en cabecera:select * from cabecera where nume="00024" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:08:27" and vended="103" and onoff="Red"
+12/06/2024 12:39:09-->No localizado --> Almacenando Cabecera de Tiquet : 24Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 16:08:27
+12/06/2024 12:39:09-->Marcando:update mbd.hTickets set Captured='*' where id=24
+12/06/2024 12:39:09-->Localizando en cabecera:select * from cabecera where nume="00025" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:11:10" and vended="104" and onoff="Red"
+12/06/2024 12:39:09-->No localizado --> Almacenando Cabecera de Tiquet : 25Sec : 1Bal : 1Importe : 114,18Fecha : 13/02/2024Hora : 16:11:10
+12/06/2024 12:39:09-->Marcando:update mbd.hTickets set Captured='*' where id=25
+12/06/2024 12:39:09-->Localizando en cabecera:select * from cabecera where nume="00026" and typtic="1" and balanza=1 and cstr(cdate(fecha))="11/03/2024" and hora="14:44:30" and vended="101" and onoff="Red"
+12/06/2024 12:39:09-->No localizado --> Almacenando Cabecera de Tiquet : 26Sec : 1Bal : 1Importe : 58,39Fecha : 11/03/2024Hora : 14:44:30
+12/06/2024 12:39:09-->Marcando:update mbd.hTickets set Captured='*' where id=26
+12/06/2024 12:39:09-->Localizando en cabecera:select * from cabecera where nume="00027" and typtic="1" and balanza=1 and cstr(cdate(fecha))="11/03/2024" and hora="15:44:23" and vended="101" and onoff="Red"
+12/06/2024 12:39:09-->No localizado --> Almacenando Cabecera de Tiquet : 27Sec : 1Bal : 1Importe : 49,29Fecha : 11/03/2024Hora : 15:44:23
+12/06/2024 12:39:09-->Marcando:update mbd.hTickets set Captured='*' where id=27
+12/06/2024 12:39:09-->Localizando en cabecera:select * from cabecera where nume="00028" and typtic="1" and balanza=1 and cstr(cdate(fecha))="12/03/2024" and hora="10:22:54" and vended="101" and onoff="Red"
+12/06/2024 12:39:09-->No localizado --> Almacenando Cabecera de Tiquet : 28Sec : 1Bal : 1Importe : 64,95Fecha : 12/03/2024Hora : 10:22:54
+12/06/2024 12:39:09-->Marcando:update mbd.hTickets set Captured='*' where id=28
+12/06/2024 12:39:09-->Localizando en cabecera:select * from cabecera where nume="00029" and typtic="1" and balanza=1 and cstr(cdate(fecha))="12/03/2024" and hora="10:24:00" and vended="101" and onoff="Red"
+12/06/2024 12:39:09-->No localizado --> Almacenando Cabecera de Tiquet : 29Sec : 1Bal : 1Importe : 57,81Fecha : 12/03/2024Hora : 10:24:00
+12/06/2024 12:39:09-->Marcando:update mbd.hTickets set Captured='*' where id=29
+12/06/2024 12:39:10-->Localizando en cabecera:select * from cabecera where nume="00030" and typtic="1" and balanza=1 and cstr(cdate(fecha))="20/05/2024" and hora="13:32:35" and vended="101" and onoff="Red"
+12/06/2024 12:39:10-->No localizado --> Almacenando Cabecera de Tiquet : 30Sec : 1Bal : 1Importe : 38,78Fecha : 20/05/2024Hora : 13:32:35
+12/06/2024 12:39:10-->Marcando:update mbd.hTickets set Captured='*' where id=30
+12/06/2024 12:39:10-->Localizando en cabecera:select * from cabecera where nume="00031" and typtic="1" and balanza=1 and cstr(cdate(fecha))="20/05/2024" and hora="14:25:55" and vended="101" and onoff="Red"
+12/06/2024 12:39:10-->No localizado --> Almacenando Cabecera de Tiquet : 31Sec : 1Bal : 1Importe : 20Fecha : 20/05/2024Hora : 14:25:55
+12/06/2024 12:39:10-->Marcando:update mbd.hTickets set Captured='*' where id=31
+12/06/2024 12:39:10-->Localizando en cabecera:select * from cabecera where nume="00032" and typtic="1" and balanza=1 and cstr(cdate(fecha))="18/05/2024" and hora="14:36:13" and vended="101" and onoff="Red"
+12/06/2024 12:39:10-->No localizado --> Almacenando Cabecera de Tiquet : 32Sec : 1Bal : 1Importe : 12,99Fecha : 18/05/2024Hora : 14:36:13
+12/06/2024 12:39:10-->Marcando:update mbd.hTickets set Captured='*' where id=32
+12/06/2024 12:39:10-->Localizando en cabecera:select * from cabecera where nume="00033" and typtic="1" and balanza=1 and cstr(cdate(fecha))="21/05/2024" and hora="14:41:27" and vended="101" and onoff="Red"
+12/06/2024 12:39:10-->No localizado --> Almacenando Cabecera de Tiquet : 33Sec : 1Bal : 1Importe : 54,88Fecha : 21/05/2024Hora : 14:41:27
+12/06/2024 12:39:10-->Marcando:update mbd.hTickets set Captured='*' where id=33
+12/06/2024 12:39:10-->Localizando en cabecera:select * from cabecera where nume="00034" and typtic="1" and balanza=1 and cstr(cdate(fecha))="21/05/2024" and hora="17:26:04" and vended="102" and onoff="Red"
+12/06/2024 12:39:10-->No localizado --> Almacenando Cabecera de Tiquet : 34Sec : 1Bal : 1Importe : 9,99Fecha : 21/05/2024Hora : 17:26:04
+12/06/2024 12:39:10-->Marcando:update mbd.hTickets set Captured='*' where id=34
+12/06/2024 12:43:43-->Localizando en cabecera:select * from cabecera where nume="00001" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:36:09" and vended="101" and onoff="Red"
+12/06/2024 12:43:43-->No localizado --> Almacenando Cabecera de Tiquet : 1Sec : 1Bal : 1Importe : 15,77Fecha : 30/10/2023Hora : 10:36:09
+12/06/2024 12:43:43-->Marcando:update mbd.hTickets set Captured='*' where id=1
+12/06/2024 12:43:43-->Localizando en cabecera:select * from cabecera where nume="00002" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:42:49" and vended="101" and onoff="Red"
+12/06/2024 12:43:43-->No localizado --> Almacenando Cabecera de Tiquet : 2Sec : 1Bal : 1Importe : 5,55Fecha : 30/10/2023Hora : 10:42:49
+12/06/2024 12:43:43-->Marcando:update mbd.hTickets set Captured='*' where id=2
+12/06/2024 12:43:43-->Localizando en cabecera:select * from cabecera where nume="00003" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:44:54" and vended="101" and onoff="Red"
+12/06/2024 12:43:43-->No localizado --> Almacenando Cabecera de Tiquet : 3Sec : 1Bal : 1Importe : 4,44Fecha : 30/10/2023Hora : 10:44:54
+12/06/2024 12:43:43-->Marcando:update mbd.hTickets set Captured='*' where id=3
+12/06/2024 12:43:43-->Localizando en cabecera:select * from cabecera where nume="00004" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:31:03" and vended="101" and onoff="Red"
+12/06/2024 12:43:43-->No localizado --> Almacenando Cabecera de Tiquet : 4Sec : 1Bal : 1Importe : 40Fecha : 13/02/2024Hora : 09:31:03
+12/06/2024 12:43:43-->Marcando:update mbd.hTickets set Captured='*' where id=4
+12/06/2024 12:43:43-->Localizando en cabecera:select * from cabecera where nume="00005" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:39:52" and vended="101" and onoff="Red"
+12/06/2024 12:43:43-->No localizado --> Almacenando Cabecera de Tiquet : 5Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 09:39:52
+12/06/2024 12:43:43-->Marcando:update mbd.hTickets set Captured='*' where id=5
+12/06/2024 12:43:43-->Localizando en cabecera:select * from cabecera where nume="00006" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:40:58" and vended="101" and onoff="Red"
+12/06/2024 12:43:43-->No localizado --> Almacenando Cabecera de Tiquet : 6Sec : 1Bal : 1Importe : 8,88Fecha : 13/02/2024Hora : 09:40:58
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=6
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00007" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:45:43" and vended="101" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 7Sec : 1Bal : 1Importe : 584,55Fecha : 13/02/2024Hora : 09:45:43
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=7
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00008" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:46:14" and vended="101" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 8Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 09:46:14
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=8
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00009" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:46:38" and vended="102" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 9Sec : 1Bal : 1Importe : 90,93Fecha : 13/02/2024Hora : 09:46:38
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=9
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00010" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:48:40" and vended="103" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 10Sec : 1Bal : 1Importe : 116,91Fecha : 13/02/2024Hora : 09:48:40
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=10
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00011" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:49:03" and vended="103" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 11Sec : 1Bal : 1Importe : 103,92Fecha : 13/02/2024Hora : 09:49:03
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=11
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00012" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:03:01" and vended="108" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 12Sec : 1Bal : 1Importe : 38,97Fecha : 13/02/2024Hora : 10:03:01
+12/06/2024 12:43:44-->Marcando:update mbd.hTickets set Captured='*' where id=12
+12/06/2024 12:43:44-->Localizando en cabecera:select * from cabecera where nume="00013" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:03:52" and vended="107" and onoff="Red"
+12/06/2024 12:43:44-->No localizado --> Almacenando Cabecera de Tiquet : 13Sec : 1Bal : 1Importe : 51,96Fecha : 13/02/2024Hora : 10:03:52
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=13
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00014" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:04:21" and vended="106" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 14Sec : 1Bal : 1Importe : 415,68Fecha : 13/02/2024Hora : 10:04:21
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=14
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00015" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:04:57" and vended="105" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 15Sec : 1Bal : 1Importe : 38,97Fecha : 13/02/2024Hora : 10:04:57
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=15
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00016" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:08:12" and vended="106" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 16Sec : 1Bal : 1Importe : 42,54Fecha : 13/02/2024Hora : 10:08:12
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=16
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00017" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:17:26" and vended="104" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 17Sec : 1Bal : 1Importe : 40Fecha : 13/02/2024Hora : 10:17:26
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=17
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00018" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:37:18" and vended="106" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 18Sec : 1Bal : 1Importe : 25,98Fecha : 13/02/2024Hora : 10:37:18
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=18
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00019" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="13:00:34" and vended="103" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 19Sec : 1Bal : 1Importe : 77,94Fecha : 13/02/2024Hora : 13:00:34
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=19
+12/06/2024 12:43:45-->Localizando en cabecera:select * from cabecera where nume="00020" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="13:28:19" and vended="106" and onoff="Red"
+12/06/2024 12:43:45-->No localizado --> Almacenando Cabecera de Tiquet : 20Sec : 1Bal : 1Importe : 10,71Fecha : 13/02/2024Hora : 13:28:19
+12/06/2024 12:43:45-->Marcando:update mbd.hTickets set Captured='*' where id=20
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00021" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="14:38:31" and vended="101" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 21Sec : 1Bal : 1Importe : 6,81Fecha : 13/02/2024Hora : 14:38:31
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=21
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00022" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="15:34:02" and vended="105" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 22Sec : 1Bal : 1Importe : 42,48Fecha : 13/02/2024Hora : 15:34:02
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=22
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00023" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:05:04" and vended="104" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 23Sec : 1Bal : 1Importe : 49,75Fecha : 13/02/2024Hora : 16:05:04
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=23
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00024" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:08:27" and vended="103" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 24Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 16:08:27
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=24
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00025" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:11:10" and vended="104" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 25Sec : 1Bal : 1Importe : 114,18Fecha : 13/02/2024Hora : 16:11:10
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=25
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00026" and typtic="1" and balanza=1 and cstr(cdate(fecha))="11/03/2024" and hora="14:44:30" and vended="101" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 26Sec : 1Bal : 1Importe : 58,39Fecha : 11/03/2024Hora : 14:44:30
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=26
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00027" and typtic="1" and balanza=1 and cstr(cdate(fecha))="11/03/2024" and hora="15:44:23" and vended="101" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 27Sec : 1Bal : 1Importe : 49,29Fecha : 11/03/2024Hora : 15:44:23
+12/06/2024 12:43:46-->Marcando:update mbd.hTickets set Captured='*' where id=27
+12/06/2024 12:43:46-->Localizando en cabecera:select * from cabecera where nume="00028" and typtic="1" and balanza=1 and cstr(cdate(fecha))="12/03/2024" and hora="10:22:54" and vended="101" and onoff="Red"
+12/06/2024 12:43:46-->No localizado --> Almacenando Cabecera de Tiquet : 28Sec : 1Bal : 1Importe : 64,95Fecha : 12/03/2024Hora : 10:22:54
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=28
+12/06/2024 12:43:47-->Localizando en cabecera:select * from cabecera where nume="00029" and typtic="1" and balanza=1 and cstr(cdate(fecha))="12/03/2024" and hora="10:24:00" and vended="101" and onoff="Red"
+12/06/2024 12:43:47-->No localizado --> Almacenando Cabecera de Tiquet : 29Sec : 1Bal : 1Importe : 57,81Fecha : 12/03/2024Hora : 10:24:00
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=29
+12/06/2024 12:43:47-->Localizando en cabecera:select * from cabecera where nume="00030" and typtic="1" and balanza=1 and cstr(cdate(fecha))="20/05/2024" and hora="13:32:35" and vended="101" and onoff="Red"
+12/06/2024 12:43:47-->No localizado --> Almacenando Cabecera de Tiquet : 30Sec : 1Bal : 1Importe : 38,78Fecha : 20/05/2024Hora : 13:32:35
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=30
+12/06/2024 12:43:47-->Localizando en cabecera:select * from cabecera where nume="00031" and typtic="1" and balanza=1 and cstr(cdate(fecha))="20/05/2024" and hora="14:25:55" and vended="101" and onoff="Red"
+12/06/2024 12:43:47-->No localizado --> Almacenando Cabecera de Tiquet : 31Sec : 1Bal : 1Importe : 20Fecha : 20/05/2024Hora : 14:25:55
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=31
+12/06/2024 12:43:47-->Localizando en cabecera:select * from cabecera where nume="00032" and typtic="1" and balanza=1 and cstr(cdate(fecha))="18/05/2024" and hora="14:36:13" and vended="101" and onoff="Red"
+12/06/2024 12:43:47-->No localizado --> Almacenando Cabecera de Tiquet : 32Sec : 1Bal : 1Importe : 12,99Fecha : 18/05/2024Hora : 14:36:13
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=32
+12/06/2024 12:43:47-->Localizando en cabecera:select * from cabecera where nume="00033" and typtic="1" and balanza=1 and cstr(cdate(fecha))="21/05/2024" and hora="14:41:27" and vended="101" and onoff="Red"
+12/06/2024 12:43:47-->No localizado --> Almacenando Cabecera de Tiquet : 33Sec : 1Bal : 1Importe : 54,88Fecha : 21/05/2024Hora : 14:41:27
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=33
+12/06/2024 12:43:47-->Localizando en cabecera:select * from cabecera where nume="00034" and typtic="1" and balanza=1 and cstr(cdate(fecha))="21/05/2024" and hora="17:26:04" and vended="102" and onoff="Red"
+12/06/2024 12:43:47-->No localizado --> Almacenando Cabecera de Tiquet : 34Sec : 1Bal : 1Importe : 9,99Fecha : 21/05/2024Hora : 17:26:04
+12/06/2024 12:43:47-->Marcando:update mbd.hTickets set Captured='*' where id=34
+12/06/2024 12:52:26-->Localizando en cabecera:select * from cabecera where nume="00001" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:36:09" and vended="101" and onoff="Red"
+12/06/2024 12:52:26-->No localizado --> Almacenando Cabecera de Tiquet : 1Sec : 1Bal : 1Importe : 15,77Fecha : 30/10/2023Hora : 10:36:09
+12/06/2024 12:52:26-->Marcando:update mbd.hTickets set Captured='*' where id=1
+12/06/2024 12:52:26-->Localizando en cabecera:select * from cabecera where nume="00002" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:42:49" and vended="101" and onoff="Red"
+12/06/2024 12:52:26-->No localizado --> Almacenando Cabecera de Tiquet : 2Sec : 1Bal : 1Importe : 5,55Fecha : 30/10/2023Hora : 10:42:49
+12/06/2024 12:52:26-->Marcando:update mbd.hTickets set Captured='*' where id=2
+12/06/2024 12:52:26-->Localizando en cabecera:select * from cabecera where nume="00003" and typtic="1" and balanza=1 and cstr(cdate(fecha))="30/10/2023" and hora="10:44:54" and vended="101" and onoff="Red"
+12/06/2024 12:52:26-->No localizado --> Almacenando Cabecera de Tiquet : 3Sec : 1Bal : 1Importe : 4,44Fecha : 30/10/2023Hora : 10:44:54
+12/06/2024 12:52:28-->Marcando:update mbd.hTickets set Captured='*' where id=3
+12/06/2024 12:52:28-->Localizando en cabecera:select * from cabecera where nume="00004" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:31:03" and vended="101" and onoff="Red"
+12/06/2024 12:52:28-->No localizado --> Almacenando Cabecera de Tiquet : 4Sec : 1Bal : 1Importe : 40Fecha : 13/02/2024Hora : 09:31:03
+12/06/2024 12:52:28-->Marcando:update mbd.hTickets set Captured='*' where id=4
+12/06/2024 12:52:28-->Localizando en cabecera:select * from cabecera where nume="00005" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:39:52" and vended="101" and onoff="Red"
+12/06/2024 12:52:28-->No localizado --> Almacenando Cabecera de Tiquet : 5Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 09:39:52
+12/06/2024 12:52:28-->Marcando:update mbd.hTickets set Captured='*' where id=5
+12/06/2024 12:52:28-->Localizando en cabecera:select * from cabecera where nume="00006" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:40:58" and vended="101" and onoff="Red"
+12/06/2024 12:52:28-->No localizado --> Almacenando Cabecera de Tiquet : 6Sec : 1Bal : 1Importe : 8,88Fecha : 13/02/2024Hora : 09:40:58
+12/06/2024 12:52:28-->Marcando:update mbd.hTickets set Captured='*' where id=6
+12/06/2024 12:52:28-->Localizando en cabecera:select * from cabecera where nume="00007" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:45:43" and vended="101" and onoff="Red"
+12/06/2024 12:52:28-->No localizado --> Almacenando Cabecera de Tiquet : 7Sec : 1Bal : 1Importe : 584,55Fecha : 13/02/2024Hora : 09:45:43
+12/06/2024 12:52:28-->Marcando:update mbd.hTickets set Captured='*' where id=7
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00008" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:46:14" and vended="101" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 8Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 09:46:14
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=8
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00009" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:46:38" and vended="102" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 9Sec : 1Bal : 1Importe : 90,93Fecha : 13/02/2024Hora : 09:46:38
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=9
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00010" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:48:40" and vended="103" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 10Sec : 1Bal : 1Importe : 116,91Fecha : 13/02/2024Hora : 09:48:40
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=10
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00011" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="09:49:03" and vended="103" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 11Sec : 1Bal : 1Importe : 103,92Fecha : 13/02/2024Hora : 09:49:03
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=11
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00012" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:03:01" and vended="108" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 12Sec : 1Bal : 1Importe : 38,97Fecha : 13/02/2024Hora : 10:03:01
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=12
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00013" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:03:52" and vended="107" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 13Sec : 1Bal : 1Importe : 51,96Fecha : 13/02/2024Hora : 10:03:52
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=13
+12/06/2024 12:52:29-->Localizando en cabecera:select * from cabecera where nume="00014" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:04:21" and vended="106" and onoff="Red"
+12/06/2024 12:52:29-->No localizado --> Almacenando Cabecera de Tiquet : 14Sec : 1Bal : 1Importe : 415,68Fecha : 13/02/2024Hora : 10:04:21
+12/06/2024 12:52:29-->Marcando:update mbd.hTickets set Captured='*' where id=14
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00015" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:04:57" and vended="105" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 15Sec : 1Bal : 1Importe : 38,97Fecha : 13/02/2024Hora : 10:04:57
+12/06/2024 12:52:30-->Marcando:update mbd.hTickets set Captured='*' where id=15
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00016" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:08:12" and vended="106" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 16Sec : 1Bal : 1Importe : 42,54Fecha : 13/02/2024Hora : 10:08:12
+12/06/2024 12:52:30-->Marcando:update mbd.hTickets set Captured='*' where id=16
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00017" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:17:26" and vended="104" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 17Sec : 1Bal : 1Importe : 40Fecha : 13/02/2024Hora : 10:17:26
+12/06/2024 12:52:30-->Marcando:update mbd.hTickets set Captured='*' where id=17
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00018" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="10:37:18" and vended="106" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 18Sec : 1Bal : 1Importe : 25,98Fecha : 13/02/2024Hora : 10:37:18
+12/06/2024 12:52:30-->Marcando:update mbd.hTickets set Captured='*' where id=18
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00019" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="13:00:34" and vended="103" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 19Sec : 1Bal : 1Importe : 77,94Fecha : 13/02/2024Hora : 13:00:34
+12/06/2024 12:52:30-->Marcando:update mbd.hTickets set Captured='*' where id=19
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00020" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="13:28:19" and vended="106" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 20Sec : 1Bal : 1Importe : 10,71Fecha : 13/02/2024Hora : 13:28:19
+12/06/2024 12:52:30-->Marcando:update mbd.hTickets set Captured='*' where id=20
+12/06/2024 12:52:30-->Localizando en cabecera:select * from cabecera where nume="00021" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="14:38:31" and vended="101" and onoff="Red"
+12/06/2024 12:52:30-->No localizado --> Almacenando Cabecera de Tiquet : 21Sec : 1Bal : 1Importe : 6,81Fecha : 13/02/2024Hora : 14:38:31
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=21
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00022" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="15:34:02" and vended="105" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 22Sec : 1Bal : 1Importe : 42,48Fecha : 13/02/2024Hora : 15:34:02
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=22
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00023" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:05:04" and vended="104" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 23Sec : 1Bal : 1Importe : 49,75Fecha : 13/02/2024Hora : 16:05:04
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=23
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00024" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:08:27" and vended="103" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 24Sec : 1Bal : 1Importe : 64,95Fecha : 13/02/2024Hora : 16:08:27
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=24
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00025" and typtic="1" and balanza=1 and cstr(cdate(fecha))="13/02/2024" and hora="16:11:10" and vended="104" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 25Sec : 1Bal : 1Importe : 114,18Fecha : 13/02/2024Hora : 16:11:10
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=25
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00026" and typtic="1" and balanza=1 and cstr(cdate(fecha))="11/03/2024" and hora="14:44:30" and vended="101" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 26Sec : 1Bal : 1Importe : 58,39Fecha : 11/03/2024Hora : 14:44:30
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=26
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00027" and typtic="1" and balanza=1 and cstr(cdate(fecha))="11/03/2024" and hora="15:44:23" and vended="101" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 27Sec : 1Bal : 1Importe : 49,29Fecha : 11/03/2024Hora : 15:44:23
+12/06/2024 12:52:31-->Marcando:update mbd.hTickets set Captured='*' where id=27
+12/06/2024 12:52:31-->Localizando en cabecera:select * from cabecera where nume="00028" and typtic="1" and balanza=1 and cstr(cdate(fecha))="12/03/2024" and hora="10:22:54" and vended="101" and onoff="Red"
+12/06/2024 12:52:31-->No localizado --> Almacenando Cabecera de Tiquet : 28Sec : 1Bal : 1Importe : 64,95Fecha : 12/03/2024Hora : 10:22:54
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=28
+12/06/2024 12:52:32-->Localizando en cabecera:select * from cabecera where nume="00029" and typtic="1" and balanza=1 and cstr(cdate(fecha))="12/03/2024" and hora="10:24:00" and vended="101" and onoff="Red"
+12/06/2024 12:52:32-->No localizado --> Almacenando Cabecera de Tiquet : 29Sec : 1Bal : 1Importe : 57,81Fecha : 12/03/2024Hora : 10:24:00
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=29
+12/06/2024 12:52:32-->Localizando en cabecera:select * from cabecera where nume="00030" and typtic="1" and balanza=1 and cstr(cdate(fecha))="20/05/2024" and hora="13:32:35" and vended="101" and onoff="Red"
+12/06/2024 12:52:32-->No localizado --> Almacenando Cabecera de Tiquet : 30Sec : 1Bal : 1Importe : 38,78Fecha : 20/05/2024Hora : 13:32:35
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=30
+12/06/2024 12:52:32-->Localizando en cabecera:select * from cabecera where nume="00031" and typtic="1" and balanza=1 and cstr(cdate(fecha))="20/05/2024" and hora="14:25:55" and vended="101" and onoff="Red"
+12/06/2024 12:52:32-->No localizado --> Almacenando Cabecera de Tiquet : 31Sec : 1Bal : 1Importe : 20Fecha : 20/05/2024Hora : 14:25:55
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=31
+12/06/2024 12:52:32-->Localizando en cabecera:select * from cabecera where nume="00032" and typtic="1" and balanza=1 and cstr(cdate(fecha))="18/05/2024" and hora="14:36:13" and vended="101" and onoff="Red"
+12/06/2024 12:52:32-->No localizado --> Almacenando Cabecera de Tiquet : 32Sec : 1Bal : 1Importe : 12,99Fecha : 18/05/2024Hora : 14:36:13
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=32
+12/06/2024 12:52:32-->Localizando en cabecera:select * from cabecera where nume="00033" and typtic="1" and balanza=1 and cstr(cdate(fecha))="21/05/2024" and hora="14:41:27" and vended="101" and onoff="Red"
+12/06/2024 12:52:32-->No localizado --> Almacenando Cabecera de Tiquet : 33Sec : 1Bal : 1Importe : 54,88Fecha : 21/05/2024Hora : 14:41:27
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=33
+12/06/2024 12:52:32-->Localizando en cabecera:select * from cabecera where nume="00034" and typtic="1" and balanza=1 and cstr(cdate(fecha))="21/05/2024" and hora="17:26:04" and vended="102" and onoff="Red"
+12/06/2024 12:52:32-->No localizado --> Almacenando Cabecera de Tiquet : 34Sec : 1Bal : 1Importe : 9,99Fecha : 21/05/2024Hora : 17:26:04
+12/06/2024 12:52:32-->Marcando:update mbd.hTickets set Captured='*' where id=34

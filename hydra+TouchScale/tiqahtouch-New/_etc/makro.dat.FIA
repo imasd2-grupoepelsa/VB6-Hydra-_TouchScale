@@ -1,0 +1,12 @@
+0
+"COD","Código",2,7,0
+"MOS","Mostrador",8,10,0
+"PRC","Precio",11,16,0
+"FAM","Familia",17,20,0
+"SUB","Subsección",21,29,0
+"BAJA","2 Indica si baja de artículo",39,47,0
+"WGH","Pesado/No pesado",48,48,0
+"CBA","Código de barras",50,61,0
+"TXT","Texto",63,87,0
+"TXT","Texto",88,112,1
+"TXT","Texto",113,123,2

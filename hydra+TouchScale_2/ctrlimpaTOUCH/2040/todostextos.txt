@@ -1,0 +1,243 @@
+configurator
+configurator
+articulo
+COD
+PLU
+FAM
+SUB
+SEC
+PRC
+WGH
+CAD
+PRE
+TAR
+ETQ
+CBA
+TLT
+TXT
+TYP
+GPC
+Propiedades
+COD
+Código
+PLU
+Plu
+SEC
+Sección
+SUB
+Subsección
+FAM
+Familia
+PRC
+Precio
+WGH
+Tipo de venta (pesado/no pesado)
+CAD
+Caducidad
+PRE
+Consumo preferente
+TAR
+Tara Asociada
+ETQ
+Número de etiqueta
+CBA
+Código de barras del artículo
+TLT
+Tipo de letra
+TXT
+Texto
+TYP
+Tipo de descriptivo
+GPC
+Grupo de Conservación
+Ficheros de Configuración
+frmconfigurator.frx
+Form2
+Borrar Campo
+Cancelar
+Aceptar
+Añadir
+Inserte aquí una descripción del contenido del campo
+Posición inicial, contando desde 1
+Posición final, contando desde 1 
+frmconfigurator.frx
+frmconfigurator.frx
+Editar
+Elija el fichero de importación y pulse 
+Editar
+MS Sans Serif
+Campos definidos hasta el momento :
+Fin
+Inicio
+Tipo de Campo
+Nombre del fichero  :
+frmconfigurator
+Propiedades
+COD
+Código
+PLU
+Plu
+SEC
+Sección
+SUB
+Subsección
+FAM
+Familia
+PRC
+Precio
+WGH
+Tipo de venta (pesado/no pesado)
+CAD
+Caducidad
+PRE
+Consumo preferente
+TAR
+Tara Asociada
+ETQ
+Número de etiqueta
+CBA
+Código de barras del artículo
+TLT
+Tipo de letra
+TXT
+Texto
+TYP
+Tipo de descriptivo
+GPC
+Grupo de Conservación
+\
+.cfg
+TXT
+TLT
+(
+)
+----
+-Inicio : 
+-Fin : 
+----
+-Inicio : 
+-Fin : 
+Edite el contenido del fichero, y pulse 'Aceptar' para guardar
+\
+.cfg
+TXT
+TLT
+(
+)
+----
+-Inicio : 
+-Fin : 
+----
+-Inicio : 
+-Fin : 
+Inicio y Fin deben ser numéricos
+El punto de inicio no puede ser mayor que el final
+Zona del fichero ya definida, compruebe el punto de inicio
+Zona del fichero ya definida, compruebe el punto de inicio
+TXT
+¿Qué línea de descriptivo (0-20) ?
+Descriptivo
+Valor no válido
+TLT
+¿Qué TLT corresponde (0-10) ?
+Tipo de Letra
+Valor no válido
+TXT
+TLT
+(
+)
+----
+-Inicio : 
+-Fin : 
+----
+-Inicio : 
+-Fin : 
+Editar
+{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0
+MSCOMCTL.OCX
+Importación
+frmimportar.frx
+Form2
+Fichas.dat
+Ballss.dat
+Balenv.dat
+Bal.dat
+&Cancelar
+&Importar
+100%
+MS Sans Serif
+Elija un Fichero Predefinido, o escríbalo explícitamente, y pulse importar...
+MS Sans Serif
+Fichero
+frmimportar
+\fichas.dat
+No se encontró el archivo Fichas.dat
+\fichas.dat
+\dbase.mdb
+select * from fichavacuno
+Linea : 
+codigo = 
+Importación Finalizada.Envíe Modificaciones
+Fallo en la lectura del archivo fichas.dat
+tratarRegistro
+Importando el Fichero. Puede tardar varios minutos. Por favor, espere
+balenv.dat
+bal.dat
+balenv.dat
+ballss.dat
+Importando el Fichero. Puede tardar varios minutos. Por favor, espere
+Bal.dat
+Ballss.dat
+Balenv.dat
+importararticulos
+\dbase.mdb
+\
+.cfg
+\
+\
+Línea : 
+Datos incorrectos en fichero de configuración
+Importación finalizada. Envíe modificaciones.
+No se pudo abrir el fichero de configuración de importación
+No se pudo abrir el fichero de importación
+articulo
+select * from Articulo
+select * from seccion where codi_ident =
+000
+select * from Seccion
+codigo = 
+secc_maqui = 
+and plu = 
+secc_maqui = 
+and plu = 
+and codigo = 
+and codi_sub = 
+and codi_fam = 
+secc_maqui = 
+and plu = 
+and codigo = 
+ 
+select max(plu) as dato from articulo where secc_maqui = 
+secc_maqui = 
+and plu = 
+-1
+0
+0
+W
+U
+-1
+-1
+-1
+secc_maqui =
+7
+select * from grpconserv
+grupo = 
+W
+Ptas/Kg
+Ptas/Ud
+select * from subsec where codi_sub =
+ and codi_ident=
+select * from familia where codi_ident =
+ and codi_sub=
+and codi_fam =
+VarPublics

@@ -1,0 +1,4 @@
+15/09/2016 16:25:55 --> se ha borrado CRT...(Balanza)
+15/09/2016 16:26:16 --> Recibido: LOG00FE001.B160915
+15/09/2016 16:26:29 --> Borrado en Balanza: LOG00FE001.B160915
+15/09/2016 16:26:29 --> Copiado en Salida: LOG00FE001.B160915

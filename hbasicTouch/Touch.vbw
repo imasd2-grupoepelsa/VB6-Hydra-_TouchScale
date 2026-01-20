@@ -1,0 +1,10 @@
+FrmKeyTouch = 379, 157, 1035, 834, , 0, 0, 0, 0, C
+Var = 45, 41, 598, 617, 
+FrmSelect = 123, 103, 611, 679, , 0, 0, 0, 0, C
+ICMP_PINGS = 19, 82, 507, 658, 
+FrmInactividad = 123, 103, 611, 679, C, 0, 0, 0, 0, C
+modInactividad = 123, 103, 611, 679, C
+FrmAviso = 165, 103, 653, 679, C, 0, 0, 0, 0, C
+modGDIPlusResize = 165, 103, 653, 679, 
+Modulo_FTP = 165, 103, 653, 679, 
+FrmConfiguracion = 26, 107, 514, 683, , 0, 0, 0, 0, C

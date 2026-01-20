@@ -1,0 +1,722 @@
+28/08/2012 14:22:20-->Reset del OCX completado
+28/08/2012 14:22:20-->OCX Cargado
+28/08/2012 14:22:39-->Reset del OCX completado
+28/08/2012 14:22:39-->OCX Cargado
+28/08/2012 14:22:39-->Reset del OCX completado
+28/08/2012 14:22:39-->OCX Descargado
+28/08/2012 14:25:31-->Reset del OCX completado
+28/08/2012 14:25:31-->OCX Descargado
+28/08/2012 17:56:12-->Reset del OCX completado
+28/08/2012 17:56:12-->OCX Cargado
+28/08/2012 17:56:35-->Reset del OCX completado
+28/08/2012 17:56:35-->OCX Cargado
+28/08/2012 17:56:35-->Reset del OCX completado
+28/08/2012 17:56:35-->OCX Descargado
+28/08/2012 17:57:37-->Reset del OCX completado
+28/08/2012 17:57:37-->OCX Descargado
+28/08/2012 18:28:53-->Reset del OCX completado
+28/08/2012 18:28:53-->OCX Cargado
+28/08/2012 18:32:28-->Reset del OCX completado
+28/08/2012 18:32:28-->OCX Descargado
+29/08/2012 8:13:54-->Reset del OCX completado
+29/08/2012 8:13:54-->OCX Cargado
+29/08/2012 8:48:43-->Reset del OCX completado
+29/08/2012 8:48:43-->OCX Cargado
+29/08/2012 8:48:43-->Reset del OCX completado
+29/08/2012 8:48:43-->OCX Descargado
+29/08/2012 8:48:45-->Reset del OCX completado
+29/08/2012 8:48:45-->OCX Descargado
+03/09/2012 9:08:40-->Reset del OCX completado
+03/09/2012 9:08:40-->OCX Cargado
+03/09/2012 9:09:07-->Reset del OCX completado
+03/09/2012 9:09:07-->OCX Cargado
+03/09/2012 9:09:07-->Reset del OCX completado
+03/09/2012 9:09:07-->OCX Descargado
+03/09/2012 9:09:10-->Reset del OCX completado
+03/09/2012 9:09:10-->OCX Descargado
+03/09/2012 10:02:26-->Reset del OCX completado
+03/09/2012 10:02:26-->OCX Cargado
+03/09/2012 10:02:43-->Reset del OCX completado
+03/09/2012 10:02:43-->OCX Descargado
+03/09/2012 10:02:43-->Reset del OCX completado
+03/09/2012 10:02:43-->OCX Cargado
+03/09/2012 10:03:04-->Recibida orden de configuración.Máquina : 10.Tipo conexión : 0.Cadena Conexión : 127.0.0.1:1433
+03/09/2012 10:03:04-->Cadena de conexión(Uid y Pass no reales): Provider=SQLOLEDB;Uid=X;password=Y;Initial Catalog=ScalePos;Data Source=127.0.0.1,1433
+03/09/2012 10:03:04-->Conexión realizada con:127.0.0.1,1433
+03/09/2012 10:03:06-->Familia Pedida: 17
+03/09/2012 10:03:06-->Familia Pedida: 17
+03/09/2012 10:03:07-->Familia Pedida: 17
+03/09/2012 10:03:07-->Familia Pedida: 17
+03/09/2012 10:03:08-->Familia Pedida: 17
+03/09/2012 10:03:08-->Familia Pedida: 17
+03/09/2012 10:03:09-->Familia Pedida: 17
+03/09/2012 10:03:09-->Familia Pedida: 17
+03/09/2012 10:03:10-->Familia Pedida: 17
+03/09/2012 10:03:10-->Familia Pedida: 17
+03/09/2012 10:03:11-->Familia Pedida: 17
+03/09/2012 10:03:11-->Familia Pedida: 17
+03/09/2012 10:03:12-->Familia Pedida: 17
+03/09/2012 10:03:12-->Familia Pedida: 17
+03/09/2012 10:03:13-->Familia Pedida: 17
+03/09/2012 10:03:13-->Familia Pedida: 17
+03/09/2012 10:03:14-->Familia Pedida: 17
+03/09/2012 10:03:14-->Familia Pedida: 17
+03/09/2012 10:03:15-->Familia Pedida: 17
+03/09/2012 10:03:15-->Familia Pedida: 17
+03/09/2012 10:03:16-->Familia Pedida: 17
+03/09/2012 10:03:16-->Familia Pedida: 17
+03/09/2012 10:03:17-->Familia Pedida: 17
+03/09/2012 10:03:17-->Familia Pedida: 17
+03/09/2012 10:03:18-->Familia Pedida: 17
+03/09/2012 10:03:18-->Familia Pedida: 17
+03/09/2012 10:03:19-->Familia Pedida: 17
+03/09/2012 10:03:19-->Familia Pedida: 17
+03/09/2012 10:03:20-->Familia Pedida: 17
+03/09/2012 10:03:20-->Familia Pedida: 17
+03/09/2012 10:03:21-->Familia Pedida: 17
+03/09/2012 10:03:21-->Familia Pedida: 17
+03/09/2012 10:03:22-->Familia Pedida: 17
+03/09/2012 10:03:22-->Familia Pedida: 17
+03/09/2012 10:03:23-->Familia Pedida: 17
+03/09/2012 10:03:23-->Familia Pedida: 17
+03/09/2012 10:03:24-->Familia Pedida: 17
+03/09/2012 10:03:24-->Familia Pedida: 17
+03/09/2012 10:03:25-->Familia Pedida: 17
+03/09/2012 10:03:25-->Familia Pedida: 17
+03/09/2012 10:03:26-->Familia Pedida: 17
+03/09/2012 10:03:26-->Familia Pedida: 17
+03/09/2012 10:03:27-->Familia Pedida: 17
+03/09/2012 10:03:27-->Familia Pedida: 17
+03/09/2012 10:03:28-->Familia Pedida: 17
+03/09/2012 10:03:28-->Familia Pedida: 17
+03/09/2012 10:03:29-->Familia Pedida: 17
+03/09/2012 10:03:29-->Familia Pedida: 17
+03/09/2012 10:03:30-->Familia Pedida: 17
+03/09/2012 10:03:30-->Familia Pedida: 17
+03/09/2012 10:03:31-->Familia Pedida: 17
+03/09/2012 10:03:31-->Familia Pedida: 17
+03/09/2012 10:03:32-->Familia Pedida: 17
+03/09/2012 10:03:32-->Familia Pedida: 17
+03/09/2012 10:03:33-->Familia Pedida: 17
+03/09/2012 10:03:33-->Familia Pedida: 17
+03/09/2012 10:03:34-->Familia Pedida: 17
+03/09/2012 10:03:34-->Familia Pedida: 17
+03/09/2012 10:03:35-->Familia Pedida: 17
+03/09/2012 10:03:35-->Familia Pedida: 17
+03/09/2012 10:03:36-->Familia Pedida: 17
+03/09/2012 10:03:36-->Familia Pedida: 17
+03/09/2012 10:03:37-->Familia Pedida: 17
+03/09/2012 10:03:37-->Familia Pedida: 17
+03/09/2012 10:03:38-->Familia Pedida: 17
+03/09/2012 10:03:38-->Familia Pedida: 17
+03/09/2012 10:03:39-->Familia Pedida: 17
+03/09/2012 10:03:39-->Familia Pedida: 17
+03/09/2012 10:03:40-->Familia Pedida: 17
+03/09/2012 10:03:40-->Familia Pedida: 17
+03/09/2012 10:03:41-->Familia Pedida: 17
+03/09/2012 10:03:41-->Familia Pedida: 17
+03/09/2012 10:03:42-->Familia Pedida: 17
+03/09/2012 10:03:42-->Familia Pedida: 17
+03/09/2012 10:03:43-->Familia Pedida: 17
+03/09/2012 10:03:43-->Familia Pedida: 17
+03/09/2012 10:03:44-->Familia Pedida: 17
+03/09/2012 10:03:44-->Familia Pedida: 17
+03/09/2012 10:03:45-->Familia Pedida: 17
+03/09/2012 10:03:45-->Familia Pedida: 17
+03/09/2012 10:03:46-->Familia Pedida: 17
+03/09/2012 10:03:46-->Familia Pedida: 17
+03/09/2012 10:03:47-->Familia Pedida: 17
+03/09/2012 10:03:47-->Familia Pedida: 17
+03/09/2012 10:03:48-->Familia Pedida: 17
+03/09/2012 10:03:48-->Familia Pedida: 17
+03/09/2012 10:03:49-->Familia Pedida: 17
+03/09/2012 10:03:49-->Familia Pedida: 17
+03/09/2012 10:03:50-->Familia Pedida: 17
+03/09/2012 10:03:50-->Familia Pedida: 17
+03/09/2012 10:03:51-->Familia Pedida: 17
+03/09/2012 10:03:51-->Familia Pedida: 17
+03/09/2012 10:03:52-->Familia Pedida: 17
+03/09/2012 10:03:52-->Familia Pedida: 17
+03/09/2012 10:03:53-->Familia Pedida: 17
+03/09/2012 10:03:53-->Familia Pedida: 17
+03/09/2012 10:03:54-->Familia Pedida: 17
+03/09/2012 10:03:54-->Familia Pedida: 17
+03/09/2012 10:03:55-->Familia Pedida: 17
+03/09/2012 10:03:55-->Familia Pedida: 17
+03/09/2012 10:03:56-->Familia Pedida: 17
+03/09/2012 10:03:56-->Familia Pedida: 17
+03/09/2012 10:03:57-->Familia Pedida: 17
+03/09/2012 10:03:57-->Familia Pedida: 17
+03/09/2012 10:03:58-->Familia Pedida: 17
+03/09/2012 10:03:58-->Familia Pedida: 17
+03/09/2012 10:03:59-->Familia Pedida: 17
+03/09/2012 10:03:59-->Familia Pedida: 17
+03/09/2012 10:04:00-->Familia Pedida: 17
+03/09/2012 10:04:00-->Familia Pedida: 17
+03/09/2012 10:04:01-->Familia Pedida: 17
+03/09/2012 10:04:01-->Familia Pedida: 17
+03/09/2012 10:04:02-->Familia Pedida: 17
+03/09/2012 10:04:02-->Familia Pedida: 17
+03/09/2012 10:04:03-->Familia Pedida: 17
+03/09/2012 10:04:03-->Familia Pedida: 17
+03/09/2012 10:04:04-->Familia Pedida: 17
+03/09/2012 10:04:04-->Familia Pedida: 17
+03/09/2012 10:04:05-->Familia Pedida: 17
+03/09/2012 10:04:05-->Familia Pedida: 17
+03/09/2012 10:04:06-->Familia Pedida: 17
+03/09/2012 10:04:06-->Familia Pedida: 17
+03/09/2012 10:04:07-->Familia Pedida: 17
+03/09/2012 10:04:07-->Familia Pedida: 17
+03/09/2012 10:04:08-->Familia Pedida: 17
+03/09/2012 10:04:08-->Familia Pedida: 17
+03/09/2012 10:04:09-->Familia Pedida: 17
+03/09/2012 10:04:09-->Familia Pedida: 17
+03/09/2012 10:04:10-->Familia Pedida: 17
+03/09/2012 10:04:10-->Familia Pedida: 17
+03/09/2012 10:04:11-->Familia Pedida: 17
+03/09/2012 10:04:11-->Familia Pedida: 17
+03/09/2012 10:04:12-->Familia Pedida: 17
+03/09/2012 10:04:12-->Familia Pedida: 17
+03/09/2012 10:04:13-->Familia Pedida: 17
+03/09/2012 10:04:13-->Familia Pedida: 17
+03/09/2012 10:04:14-->Familia Pedida: 17
+03/09/2012 10:04:14-->Familia Pedida: 17
+03/09/2012 10:04:15-->Familia Pedida: 17
+03/09/2012 10:04:15-->Familia Pedida: 17
+03/09/2012 10:04:16-->Familia Pedida: 17
+03/09/2012 10:04:16-->Familia Pedida: 17
+03/09/2012 10:04:17-->Familia Pedida: 17
+03/09/2012 10:04:17-->Familia Pedida: 17
+03/09/2012 10:04:18-->Familia Pedida: 17
+03/09/2012 10:04:18-->Familia Pedida: 17
+03/09/2012 10:04:19-->Familia Pedida: 17
+03/09/2012 10:04:19-->Familia Pedida: 17
+03/09/2012 10:04:20-->Familia Pedida: 17
+03/09/2012 10:04:20-->Familia Pedida: 17
+03/09/2012 10:04:21-->Familia Pedida: 17
+03/09/2012 10:04:21-->Familia Pedida: 17
+03/09/2012 10:04:22-->Familia Pedida: 17
+03/09/2012 10:04:22-->Familia Pedida: 17
+03/09/2012 10:04:23-->Familia Pedida: 17
+03/09/2012 10:04:23-->Familia Pedida: 17
+03/09/2012 10:04:24-->Familia Pedida: 17
+03/09/2012 10:04:24-->Familia Pedida: 17
+03/09/2012 10:04:25-->Familia Pedida: 17
+03/09/2012 10:04:25-->Familia Pedida: 17
+03/09/2012 10:04:26-->Familia Pedida: 17
+03/09/2012 10:04:26-->Familia Pedida: 17
+03/09/2012 10:04:27-->Familia Pedida: 17
+03/09/2012 10:04:27-->Familia Pedida: 17
+03/09/2012 10:04:28-->Familia Pedida: 17
+03/09/2012 10:04:28-->Familia Pedida: 17
+03/09/2012 10:04:29-->Familia Pedida: 17
+03/09/2012 10:04:29-->Familia Pedida: 17
+03/09/2012 10:04:30-->Familia Pedida: 17
+03/09/2012 10:04:30-->Familia Pedida: 17
+03/09/2012 10:04:31-->Familia Pedida: 17
+03/09/2012 10:04:31-->Familia Pedida: 17
+03/09/2012 10:04:32-->Familia Pedida: 17
+03/09/2012 10:04:32-->Familia Pedida: 17
+03/09/2012 10:04:33-->Familia Pedida: 17
+03/09/2012 10:04:33-->Familia Pedida: 17
+03/09/2012 10:04:34-->Familia Pedida: 17
+03/09/2012 10:04:34-->Familia Pedida: 17
+03/09/2012 10:04:35-->Familia Pedida: 17
+03/09/2012 10:04:35-->Familia Pedida: 17
+03/09/2012 10:04:36-->Familia Pedida: 17
+03/09/2012 10:04:36-->Familia Pedida: 17
+03/09/2012 10:04:37-->Familia Pedida: 17
+03/09/2012 10:04:37-->Familia Pedida: 17
+03/09/2012 10:04:38-->Familia Pedida: 17
+03/09/2012 10:04:38-->Familia Pedida: 17
+03/09/2012 10:04:38-->Reset del OCX completado
+03/09/2012 10:04:38-->Reset del OCX completado
+03/09/2012 10:04:38-->OCX Descargado
+03/09/2012 10:04:39-->Reset del OCX completado
+03/09/2012 10:04:39-->Reset del OCX completado
+03/09/2012 10:04:39-->OCX Cargado
+03/09/2012 10:04:45-->Reset del OCX completado
+03/09/2012 10:04:45-->Reset del OCX completado
+03/09/2012 10:04:45-->OCX Cargado
+03/09/2012 10:04:45-->Reset del OCX completado
+03/09/2012 10:04:45-->Reset del OCX completado
+03/09/2012 10:04:45-->OCX Descargado
+03/09/2012 10:04:47-->Reset del OCX completado
+03/09/2012 10:04:47-->Reset del OCX completado
+03/09/2012 10:04:47-->OCX Descargado
+03/09/2012 10:20:57-->Reset del OCX completado
+03/09/2012 10:20:57-->OCX Cargado
+03/09/2012 10:21:20-->Reset del OCX completado
+03/09/2012 10:21:20-->OCX Cargado
+03/09/2012 10:21:20-->Reset del OCX completado
+03/09/2012 10:21:20-->OCX Descargado
+03/09/2012 10:21:22-->Reset del OCX completado
+03/09/2012 10:21:22-->OCX Descargado
+03/09/2012 12:32:17-->Reset del OCX completado
+03/09/2012 12:32:17-->OCX Cargado
+03/09/2012 12:32:40-->Reset del OCX completado
+03/09/2012 12:32:40-->OCX Descargado
+04/09/2012 15:25:09-->Reset del OCX completado
+04/09/2012 15:25:09-->OCX Cargado
+04/09/2012 15:25:48-->Reset del OCX completado
+04/09/2012 15:25:48-->OCX Cargado
+04/09/2012 15:25:48-->Reset del OCX completado
+04/09/2012 15:25:48-->OCX Descargado
+04/09/2012 15:25:50-->Reset del OCX completado
+04/09/2012 15:25:50-->OCX Descargado
+05/09/2012 10:48:29-->Reset del OCX completado
+05/09/2012 10:48:29-->OCX Cargado
+05/09/2012 10:49:54-->Reset del OCX completado
+05/09/2012 10:49:54-->OCX Cargado
+05/09/2012 10:49:54-->Reset del OCX completado
+05/09/2012 10:49:54-->OCX Descargado
+05/09/2012 11:33:18-->Reset del OCX completado
+05/09/2012 11:33:18-->OCX Descargado
+05/09/2012 11:44:04-->Reset del OCX completado
+05/09/2012 11:44:04-->OCX Cargado
+05/09/2012 11:44:38-->Reset del OCX completado
+05/09/2012 11:44:38-->OCX Cargado
+05/09/2012 11:44:38-->Reset del OCX completado
+05/09/2012 11:44:38-->OCX Descargado
+05/09/2012 11:44:43-->Reset del OCX completado
+05/09/2012 11:44:43-->OCX Descargado
+05/09/2012 12:00:29-->Reset del OCX completado
+05/09/2012 12:00:29-->OCX Cargado
+05/09/2012 12:00:53-->Reset del OCX completado
+05/09/2012 12:00:53-->OCX Cargado
+05/09/2012 12:00:53-->Reset del OCX completado
+05/09/2012 12:00:53-->OCX Descargado
+05/09/2012 12:38:30-->Reset del OCX completado
+05/09/2012 12:38:30-->OCX Descargado
+05/09/2012 12:39:33-->Reset del OCX completado
+05/09/2012 12:39:33-->OCX Cargado
+05/09/2012 12:39:36-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:39:36-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:39:36-->Conexión realizada con:127.0.0.1
+05/09/2012 12:39:38-->Recibida Orden de RESET
+05/09/2012 12:39:38-->Reset del OCX completado
+05/09/2012 12:39:38-->Reset del OCX completado
+05/09/2012 12:39:41-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:39:41-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:39:41-->Conexión realizada con:127.0.0.1
+05/09/2012 12:39:59-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:39:59-->Estado de la conexión:1 Se cierra conexión Existente previamente.
+05/09/2012 12:39:59-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:39:59-->Conexión realizada con:127.0.0.1
+05/09/2012 12:40:00-->Recibida Orden de RESET
+05/09/2012 12:40:00-->Reset del OCX completado
+05/09/2012 12:40:00-->Reset del OCX completado
+05/09/2012 12:40:04-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:40:04-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:40:04-->Conexión realizada con:127.0.0.1
+05/09/2012 12:40:11-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:40:11-->Estado de la conexión:1 Se cierra conexión Existente previamente.
+05/09/2012 12:40:11-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:40:11-->Conexión realizada con:127.0.0.1
+05/09/2012 12:40:13-->Recibida Orden de RESET
+05/09/2012 12:40:13-->Reset del OCX completado
+05/09/2012 12:40:13-->Reset del OCX completado
+05/09/2012 12:40:16-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:40:16-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:40:16-->Conexión realizada con:127.0.0.1
+05/09/2012 12:40:40-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:40:40-->Estado de la conexión:1 Se cierra conexión Existente previamente.
+05/09/2012 12:40:40-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:40:40-->Conexión realizada con:127.0.0.1
+05/09/2012 12:40:58-->Recibida orden de consulta de tique
+05/09/2012 12:40:58-->No hay Tiquets
+05/09/2012 12:41:00-->Recibida Orden de RESET
+05/09/2012 12:41:00-->Reset del OCX completado
+05/09/2012 12:41:00-->Reset del OCX completado
+05/09/2012 12:41:05-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:41:05-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:41:05-->Conexión realizada con:127.0.0.1
+05/09/2012 12:41:20-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:41:20-->Estado de la conexión:1 Se cierra conexión Existente previamente.
+05/09/2012 12:41:20-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:41:20-->Conexión realizada con:127.0.0.1
+05/09/2012 12:41:28-->Recibida Orden de RESET
+05/09/2012 12:41:28-->Reset del OCX completado
+05/09/2012 12:41:28-->Reset del OCX completado
+05/09/2012 12:41:30-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+05/09/2012 12:41:30-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+05/09/2012 12:41:30-->Conexión realizada con:127.0.0.1
+05/09/2012 12:41:36-->Recibida Orden de RESET
+05/09/2012 12:41:36-->Reset del OCX completado
+05/09/2012 12:41:36-->Reset del OCX completado
+05/09/2012 12:41:36-->Recibida Orden de RESET
+05/09/2012 12:41:36-->Reset del OCX completado
+05/09/2012 12:41:36-->Reset del OCX completado
+05/09/2012 12:41:36-->Reset del OCX completado
+05/09/2012 12:41:36-->Reset del OCX completado
+05/09/2012 12:41:36-->OCX Descargado
+05/09/2012 14:29:12-->Reset del OCX completado
+05/09/2012 14:29:12-->OCX Cargado
+05/09/2012 14:29:12-->Reset del OCX completado
+05/09/2012 14:29:12-->OCX Descargado
+05/09/2012 14:30:36-->Reset del OCX completado
+05/09/2012 14:30:36-->OCX Cargado
+05/09/2012 14:30:36-->Reset del OCX completado
+05/09/2012 14:30:36-->OCX Descargado
+05/09/2012 14:30:36-->Reset del OCX completado
+05/09/2012 14:30:36-->OCX Cargado
+05/09/2012 14:30:36-->Reset del OCX completado
+05/09/2012 14:30:36-->OCX Descargado
+05/09/2012 16:30:32-->Reset del OCX completado
+05/09/2012 16:30:32-->OCX Cargado
+05/09/2012 16:45:43-->Reset del OCX completado
+05/09/2012 16:45:43-->OCX Cargado
+05/09/2012 16:45:43-->Reset del OCX completado
+05/09/2012 16:45:43-->OCX Descargado
+05/09/2012 16:46:42-->Reset del OCX completado
+05/09/2012 16:46:42-->OCX Descargado
+07/09/2012 13:12:22-->Reset del OCX completado
+07/09/2012 13:12:22-->OCX Cargado
+07/09/2012 13:12:22-->Reset del OCX completado
+07/09/2012 13:12:22-->OCX Descargado
+07/09/2012 13:13:42-->Reset del OCX completado
+07/09/2012 13:13:42-->OCX Cargado
+07/09/2012 13:14:53-->Reset del OCX completado
+07/09/2012 13:14:53-->OCX Cargado
+07/09/2012 13:14:53-->Reset del OCX completado
+07/09/2012 13:14:53-->OCX Descargado
+07/09/2012 13:31:01-->Reset del OCX completado
+07/09/2012 13:31:01-->OCX Cargado
+07/09/2012 13:31:01-->Reset del OCX completado
+07/09/2012 13:31:01-->OCX Descargado
+07/09/2012 14:21:12-->Reset del OCX completado
+07/09/2012 14:21:12-->OCX Descargado
+08/09/2012 11:58:00-->Reset del OCX completado
+08/09/2012 11:58:00-->OCX Cargado
+08/09/2012 13:34:37-->Reset del OCX completado
+08/09/2012 13:34:37-->OCX Descargado
+09/09/2012 16:53:36-->Reset del OCX completado
+09/09/2012 16:53:36-->OCX Cargado
+09/09/2012 16:53:36-->Reset del OCX completado
+09/09/2012 16:53:36-->OCX Descargado
+09/09/2012 17:00:46-->Reset del OCX completado
+09/09/2012 17:00:46-->OCX Cargado
+09/09/2012 17:00:46-->Reset del OCX completado
+09/09/2012 17:00:46-->OCX Descargado
+09/09/2012 17:02:18-->Reset del OCX completado
+09/09/2012 17:02:18-->OCX Cargado
+09/09/2012 17:02:18-->Reset del OCX completado
+09/09/2012 17:02:18-->OCX Descargado
+09/09/2012 17:18:42-->Reset del OCX completado
+09/09/2012 17:18:42-->OCX Cargado
+09/09/2012 17:18:43-->Reset del OCX completado
+09/09/2012 17:18:43-->OCX Descargado
+09/09/2012 17:32:18-->Reset del OCX completado
+09/09/2012 17:32:18-->OCX Cargado
+09/09/2012 17:32:18-->Reset del OCX completado
+09/09/2012 17:32:18-->OCX Descargado
+09/09/2012 17:37:26-->Reset del OCX completado
+09/09/2012 17:37:26-->OCX Cargado
+09/09/2012 17:37:26-->Reset del OCX completado
+09/09/2012 17:37:26-->OCX Descargado
+09/09/2012 17:38:47-->Reset del OCX completado
+09/09/2012 17:38:47-->OCX Cargado
+09/09/2012 17:39:06-->Reset del OCX completado
+09/09/2012 17:39:06-->OCX Cargado
+09/09/2012 17:39:06-->Reset del OCX completado
+09/09/2012 17:39:06-->OCX Descargado
+09/09/2012 17:39:13-->Reset del OCX completado
+09/09/2012 17:39:13-->OCX Descargado
+10/09/2012 8:50:55-->Reset del OCX completado
+10/09/2012 8:50:55-->OCX Cargado
+10/09/2012 8:53:25-->Reset del OCX completado
+10/09/2012 8:53:25-->OCX Cargado
+10/09/2012 8:53:25-->Reset del OCX completado
+10/09/2012 8:53:25-->OCX Descargado
+10/09/2012 9:12:40-->Reset del OCX completado
+10/09/2012 9:12:40-->OCX Cargado
+10/09/2012 9:12:40-->Reset del OCX completado
+10/09/2012 9:12:40-->OCX Descargado
+10/09/2012 9:29:54-->Reset del OCX completado
+10/09/2012 9:29:54-->OCX Cargado
+10/09/2012 9:29:54-->Reset del OCX completado
+10/09/2012 9:29:54-->OCX Descargado
+10/09/2012 10:21:58-->Reset del OCX completado
+10/09/2012 10:21:58-->OCX Cargado
+10/09/2012 10:21:58-->Reset del OCX completado
+10/09/2012 10:21:58-->OCX Descargado
+10/09/2012 10:32:22-->Reset del OCX completado
+10/09/2012 10:32:22-->OCX Cargado
+10/09/2012 10:32:22-->Reset del OCX completado
+10/09/2012 10:32:22-->OCX Descargado
+10/09/2012 10:40:28-->Reset del OCX completado
+10/09/2012 10:40:28-->OCX Cargado
+10/09/2012 10:40:28-->Reset del OCX completado
+10/09/2012 10:40:28-->OCX Descargado
+10/09/2012 10:50:33-->Reset del OCX completado
+10/09/2012 10:50:33-->OCX Cargado
+10/09/2012 10:50:33-->Reset del OCX completado
+10/09/2012 10:50:33-->OCX Descargado
+10/09/2012 10:55:20-->Reset del OCX completado
+10/09/2012 10:55:20-->OCX Cargado
+10/09/2012 10:55:20-->Reset del OCX completado
+10/09/2012 10:55:20-->OCX Descargado
+10/09/2012 11:16:25-->Reset del OCX completado
+10/09/2012 11:16:25-->OCX Cargado
+10/09/2012 11:16:25-->Reset del OCX completado
+10/09/2012 11:16:25-->OCX Descargado
+10/09/2012 11:17:00-->Reset del OCX completado
+10/09/2012 11:17:00-->OCX Cargado
+10/09/2012 11:17:00-->Reset del OCX completado
+10/09/2012 11:17:00-->OCX Descargado
+10/09/2012 11:49:18-->Reset del OCX completado
+10/09/2012 11:49:18-->OCX Cargado
+10/09/2012 11:49:18-->Reset del OCX completado
+10/09/2012 11:49:18-->OCX Descargado
+10/09/2012 11:49:58-->Reset del OCX completado
+10/09/2012 11:49:58-->OCX Cargado
+10/09/2012 11:49:58-->Reset del OCX completado
+10/09/2012 11:49:58-->OCX Descargado
+10/09/2012 11:57:16-->Reset del OCX completado
+10/09/2012 11:57:16-->OCX Cargado
+10/09/2012 11:57:16-->Reset del OCX completado
+10/09/2012 11:57:16-->OCX Descargado
+10/09/2012 11:57:53-->Reset del OCX completado
+10/09/2012 11:57:53-->OCX Cargado
+10/09/2012 11:57:53-->Reset del OCX completado
+10/09/2012 11:57:53-->OCX Descargado
+10/09/2012 12:43:13-->Reset del OCX completado
+10/09/2012 12:43:13-->OCX Cargado
+10/09/2012 12:43:13-->Reset del OCX completado
+10/09/2012 12:43:13-->OCX Descargado
+10/09/2012 12:53:47-->Reset del OCX completado
+10/09/2012 12:53:47-->OCX Cargado
+10/09/2012 12:53:47-->Reset del OCX completado
+10/09/2012 12:53:47-->OCX Descargado
+10/09/2012 13:22:58-->Reset del OCX completado
+10/09/2012 13:22:58-->OCX Cargado
+10/09/2012 13:22:58-->Reset del OCX completado
+10/09/2012 13:22:58-->OCX Descargado
+10/09/2012 14:06:35-->Reset del OCX completado
+10/09/2012 14:06:35-->OCX Cargado
+10/09/2012 14:06:35-->Reset del OCX completado
+10/09/2012 14:06:35-->OCX Descargado
+10/09/2012 14:12:04-->Reset del OCX completado
+10/09/2012 14:12:04-->OCX Cargado
+10/09/2012 14:12:04-->Reset del OCX completado
+10/09/2012 14:12:04-->OCX Descargado
+10/09/2012 14:24:08-->Reset del OCX completado
+10/09/2012 14:24:08-->OCX Cargado
+10/09/2012 14:24:08-->Reset del OCX completado
+10/09/2012 14:24:08-->OCX Descargado
+10/09/2012 14:31:43-->Reset del OCX completado
+10/09/2012 14:31:43-->OCX Cargado
+10/09/2012 14:31:43-->Reset del OCX completado
+10/09/2012 14:31:43-->OCX Descargado
+10/09/2012 14:35:53-->Reset del OCX completado
+10/09/2012 14:35:53-->OCX Cargado
+10/09/2012 14:35:53-->Reset del OCX completado
+10/09/2012 14:35:53-->OCX Descargado
+10/09/2012 14:47:53-->Reset del OCX completado
+10/09/2012 14:47:53-->OCX Cargado
+10/09/2012 14:47:53-->Reset del OCX completado
+10/09/2012 14:47:53-->OCX Descargado
+10/09/2012 14:52:23-->Reset del OCX completado
+10/09/2012 14:52:23-->OCX Cargado
+10/09/2012 14:52:23-->Reset del OCX completado
+10/09/2012 14:52:23-->OCX Descargado
+10/09/2012 15:01:57-->Reset del OCX completado
+10/09/2012 15:01:57-->OCX Cargado
+10/09/2012 15:01:57-->Reset del OCX completado
+10/09/2012 15:01:57-->OCX Descargado
+10/09/2012 15:19:33-->Reset del OCX completado
+10/09/2012 15:19:33-->OCX Cargado
+10/09/2012 15:19:33-->Reset del OCX completado
+10/09/2012 15:19:33-->OCX Descargado
+10/09/2012 15:20:15-->Reset del OCX completado
+10/09/2012 15:20:15-->OCX Cargado
+10/09/2012 15:20:15-->Reset del OCX completado
+10/09/2012 15:20:15-->OCX Descargado
+10/09/2012 15:31:41-->Reset del OCX completado
+10/09/2012 15:31:41-->OCX Cargado
+10/09/2012 15:31:41-->Reset del OCX completado
+10/09/2012 15:31:41-->OCX Descargado
+10/09/2012 15:46:06-->Reset del OCX completado
+10/09/2012 15:46:06-->OCX Cargado
+10/09/2012 15:46:06-->Reset del OCX completado
+10/09/2012 15:46:06-->OCX Descargado
+10/09/2012 15:52:25-->Reset del OCX completado
+10/09/2012 15:52:25-->OCX Cargado
+10/09/2012 15:52:25-->Reset del OCX completado
+10/09/2012 15:52:25-->OCX Descargado
+10/09/2012 15:53:16-->Reset del OCX completado
+10/09/2012 15:53:16-->OCX Cargado
+10/09/2012 15:53:16-->Reset del OCX completado
+10/09/2012 15:53:16-->OCX Descargado
+10/09/2012 16:07:51-->Reset del OCX completado
+10/09/2012 16:07:51-->OCX Cargado
+10/09/2012 16:07:51-->Reset del OCX completado
+10/09/2012 16:07:51-->OCX Descargado
+10/09/2012 16:08:29-->Reset del OCX completado
+10/09/2012 16:08:29-->OCX Cargado
+10/09/2012 16:08:29-->Reset del OCX completado
+10/09/2012 16:08:29-->OCX Descargado
+10/09/2012 16:19:50-->Reset del OCX completado
+10/09/2012 16:19:50-->OCX Cargado
+10/09/2012 16:19:50-->Reset del OCX completado
+10/09/2012 16:19:50-->OCX Descargado
+10/09/2012 16:23:11-->Reset del OCX completado
+10/09/2012 16:23:11-->OCX Descargado
+10/09/2012 16:45:42-->Reset del OCX completado
+10/09/2012 16:45:42-->OCX Cargado
+10/09/2012 16:45:42-->Reset del OCX completado
+10/09/2012 16:45:42-->OCX Descargado
+10/09/2012 16:45:43-->Reset del OCX completado
+10/09/2012 16:45:43-->OCX Cargado
+10/09/2012 16:45:43-->Reset del OCX completado
+10/09/2012 16:45:43-->OCX Descargado
+10/09/2012 16:45:43-->Reset del OCX completado
+10/09/2012 16:45:43-->OCX Cargado
+10/09/2012 16:45:43-->Reset del OCX completado
+10/09/2012 16:45:43-->OCX Descargado
+13/09/2012 9:40:03-->Reset del OCX completado
+13/09/2012 9:40:03-->OCX Cargado
+13/09/2012 9:40:03-->Reset del OCX completado
+13/09/2012 9:40:03-->OCX Descargado
+13/09/2012 9:40:10-->Reset del OCX completado
+13/09/2012 9:40:10-->OCX Cargado
+13/09/2012 9:40:10-->Reset del OCX completado
+13/09/2012 9:40:10-->OCX Descargado
+13/09/2012 9:40:10-->Reset del OCX completado
+13/09/2012 9:40:10-->OCX Cargado
+13/09/2012 9:40:10-->Reset del OCX completado
+13/09/2012 9:40:10-->OCX Descargado
+13/09/2012 9:42:01-->Reset del OCX completado
+13/09/2012 9:42:01-->OCX Cargado
+13/09/2012 9:42:22-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+13/09/2012 9:42:22-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+13/09/2012 9:42:22-->Conexión realizada con:127.0.0.1
+13/09/2012 9:42:25-->Recibida Orden de RESET
+13/09/2012 9:42:25-->Reset del OCX completado
+13/09/2012 9:42:25-->Reset del OCX completado
+13/09/2012 9:42:27-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+13/09/2012 9:42:27-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+13/09/2012 9:42:27-->Conexión realizada con:127.0.0.1
+13/09/2012 9:43:02-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+13/09/2012 9:43:02-->Estado de la conexión:1 Se cierra conexión Existente previamente.
+13/09/2012 9:43:02-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+13/09/2012 9:43:02-->Conexión realizada con:127.0.0.1
+13/09/2012 9:43:04-->Recibida Orden de RESET
+13/09/2012 9:43:04-->Reset del OCX completado
+13/09/2012 9:43:04-->Reset del OCX completado
+13/09/2012 9:43:07-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.0.0.1
+13/09/2012 9:43:07-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+13/09/2012 9:43:07-->Conexión realizada con:127.0.0.1
+13/09/2012 9:43:17-->Recibida Orden de RESET
+13/09/2012 9:43:17-->Reset del OCX completado
+13/09/2012 9:43:17-->Reset del OCX completado
+13/09/2012 9:43:17-->Recibida Orden de RESET
+13/09/2012 9:43:17-->Reset del OCX completado
+13/09/2012 9:43:17-->Reset del OCX completado
+13/09/2012 9:43:17-->Reset del OCX completado
+13/09/2012 9:43:17-->Reset del OCX completado
+13/09/2012 9:43:17-->OCX Descargado
+28/09/2012 15:38:56-->Reset del OCX completado
+28/09/2012 15:38:56-->OCX Cargado
+28/09/2012 15:39:20-->Reset del OCX completado
+28/09/2012 15:39:20-->OCX Descargado
+28/09/2012 15:40:33-->Reset del OCX completado
+28/09/2012 15:40:33-->OCX Cargado
+28/09/2012 15:52:10-->Reset del OCX completado
+28/09/2012 15:52:10-->OCX Descargado
+28/09/2012 16:00:35-->Reset del OCX completado
+28/09/2012 16:00:35-->OCX Cargado
+28/09/2012 16:01:08-->Reset del OCX completado
+28/09/2012 16:01:08-->OCX Cargado
+28/09/2012 16:01:08-->Reset del OCX completado
+28/09/2012 16:01:08-->OCX Descargado
+28/09/2012 16:01:12-->Reset del OCX completado
+28/09/2012 16:01:12-->OCX Descargado
+28/09/2012 16:01:51-->Reset del OCX completado
+28/09/2012 16:01:51-->OCX Cargado
+28/09/2012 16:01:51-->Reset del OCX completado
+28/09/2012 16:01:51-->OCX Descargado
+28/09/2012 16:02:08-->Reset del OCX completado
+28/09/2012 16:02:08-->OCX Cargado
+28/09/2012 16:02:08-->Reset del OCX completado
+28/09/2012 16:02:08-->OCX Descargado
+28/09/2012 16:02:08-->Reset del OCX completado
+28/09/2012 16:02:08-->OCX Cargado
+28/09/2012 16:02:08-->Reset del OCX completado
+28/09/2012 16:02:08-->OCX Descargado
+28/09/2012 16:06:21-->Reset del OCX completado
+28/09/2012 16:06:21-->OCX Cargado
+28/09/2012 16:06:21-->Reset del OCX completado
+28/09/2012 16:06:21-->OCX Descargado
+28/09/2012 16:06:21-->Reset del OCX completado
+28/09/2012 16:06:21-->OCX Cargado
+28/09/2012 16:06:22-->Reset del OCX completado
+28/09/2012 16:06:22-->OCX Descargado
+01/10/2012 15:57:39-->Reset del OCX completado
+01/10/2012 15:57:39-->OCX Cargado
+01/10/2012 15:58:13-->Reset del OCX completado
+01/10/2012 15:58:13-->OCX Cargado
+01/10/2012 15:58:13-->Reset del OCX completado
+01/10/2012 15:58:13-->OCX Descargado
+01/10/2012 15:58:16-->Reset del OCX completado
+01/10/2012 15:58:16-->OCX Descargado
+01/10/2012 16:17:33-->Reset del OCX completado
+01/10/2012 16:17:33-->OCX Cargado
+01/10/2012 16:17:58-->Reset del OCX completado
+01/10/2012 16:17:58-->OCX Cargado
+01/10/2012 16:17:58-->Reset del OCX completado
+01/10/2012 16:17:58-->OCX Descargado
+01/10/2012 16:18:01-->Reset del OCX completado
+01/10/2012 16:18:01-->OCX Descargado
+03/10/2012 15:41:56-->Reset del OCX completado
+03/10/2012 15:41:56-->OCX Cargado
+03/10/2012 15:42:33-->Reset del OCX completado
+03/10/2012 15:42:33-->OCX Cargado
+03/10/2012 15:42:33-->Reset del OCX completado
+03/10/2012 15:42:33-->OCX Descargado
+03/10/2012 15:42:42-->Reset del OCX completado
+03/10/2012 15:42:42-->OCX Descargado
+03/10/2012 16:19:47-->Reset del OCX completado
+03/10/2012 16:19:47-->OCX Cargado
+03/10/2012 16:19:47-->Reset del OCX completado
+03/10/2012 16:19:47-->OCX Descargado
+03/10/2012 16:19:47-->Reset del OCX completado
+03/10/2012 16:19:47-->OCX Cargado
+03/10/2012 16:19:47-->Reset del OCX completado
+03/10/2012 16:19:47-->OCX Descargado
+03/10/2012 16:19:47-->Reset del OCX completado
+03/10/2012 16:19:47-->OCX Cargado
+03/10/2012 16:19:47-->Reset del OCX completado
+03/10/2012 16:19:47-->OCX Descargado
+03/10/2012 16:45:24-->Reset del OCX completado
+03/10/2012 16:45:24-->OCX Cargado
+03/10/2012 16:45:24-->Reset del OCX completado
+03/10/2012 16:45:24-->OCX Descargado
+03/10/2012 16:45:29-->Reset del OCX completado
+03/10/2012 16:45:29-->OCX Cargado
+03/10/2012 16:45:29-->Reset del OCX completado
+03/10/2012 16:45:29-->OCX Descargado
+03/10/2012 16:45:29-->Reset del OCX completado
+03/10/2012 16:45:29-->OCX Cargado
+03/10/2012 16:45:29-->Reset del OCX completado
+03/10/2012 16:45:29-->OCX Descargado
+04/10/2012 10:31:42-->Reset del OCX completado
+04/10/2012 10:31:42-->OCX Cargado
+04/10/2012 10:31:42-->Reset del OCX completado
+04/10/2012 10:31:42-->OCX Descargado
+04/10/2012 10:31:43-->Reset del OCX completado
+04/10/2012 10:31:43-->OCX Cargado
+04/10/2012 10:31:43-->Reset del OCX completado
+04/10/2012 10:31:43-->OCX Descargado
+04/10/2012 10:31:43-->Reset del OCX completado
+04/10/2012 10:31:43-->OCX Cargado
+04/10/2012 10:31:43-->Reset del OCX completado
+04/10/2012 10:31:43-->OCX Descargado
+04/10/2012 10:37:44-->Reset del OCX completado
+04/10/2012 10:37:44-->OCX Cargado
+04/10/2012 10:37:44-->Reset del OCX completado
+04/10/2012 10:37:44-->OCX Descargado
+04/10/2012 10:37:44-->Reset del OCX completado
+04/10/2012 10:37:44-->OCX Cargado
+04/10/2012 10:37:44-->Reset del OCX completado
+04/10/2012 10:37:44-->OCX Descargado

@@ -1,0 +1,6 @@
+Línea 27: la propiedad Picture de CmdRetro tenía una referencia a archivo no válida.
+Línea 45: la propiedad Picture de CmdAvan tenía una referencia a archivo no válida.
+Línea 3305: la propiedad ItemData de CmbJuego tenía una referencia a archivo no válida.
+Línea 3307: la propiedad List de CmbJuego tenía una referencia a archivo no válida.
+Línea 3315: la propiedad ItemData de CmbTeclas tenía una referencia a archivo no válida.
+Línea 3317: la propiedad List de CmbTeclas tenía una referencia a archivo no válida.

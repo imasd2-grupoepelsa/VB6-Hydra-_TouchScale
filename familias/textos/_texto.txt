@@ -1,0 +1,7 @@
+00 - <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>UNA TANDA DE NEGRITA<o:p></o:p></b>
+01 - <p class=MsoNormal><u>UNA TANDA DE SUBRAYADO<o:p></o:p></u>
+02 - <p class=MsoNormal><i style='mso-bidi-font-style:normal'>UNA TANDA DE CURSIVA<o:p></o:p></i>
+03 - <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>UNA TANDA NEGRITASUBRAYADA<o:p></o:p></u></b>
+04 - <p class=MsoNormal><i style='mso-bidi-font-style:normal'><u>UNA TANDA CURSIVASUBRAYADA<o:p></o:p></u></i>
+05 - <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><u>UNA TANDA CURSIVA NEGRITA SUBRAYADA<o:p></o:p></u></i></b>
+06 - <span style='font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";mso-ansi-language:ES;mso-fareast-language:ES;mso-bidi-language:AR-SA'>TEXTO NORMAL</span>

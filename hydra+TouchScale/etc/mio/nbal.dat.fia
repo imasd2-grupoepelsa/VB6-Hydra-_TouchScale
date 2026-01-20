@@ -1,0 +1,12 @@
+0
+"COD","Código",1,6,0
+"PLU","Plu",7,10,0
+"MOS","Mostrador",11,12,0
+"SUB","Familia",13,15,0
+"FAM","subfamilia",16,19,0
+"TXT","Texto",20,44,0
+"PRC","Precio",45,51,0
+"WGH","Pesado/No pesado",52,52,0
+"IVA","Iva",53,54,0
+"CBA","Código de barras",55,67,0
+"CAD","Caducidad",68,70,0

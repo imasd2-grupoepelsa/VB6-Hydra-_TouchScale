@@ -1,0 +1,23 @@
+Merrion Computing Ltd * 42 Ailesbury Mews * Ballsbridge * Dublin * Ireland
+--------------------------------------------------------------------------
+
+
+              Release Note: EventVB.dll Beta R1.1.5F
+              ======================================
+
+Additions:
+----------
+  + ApiHotkey
+     - Added "HotkeyPressed" event
+       Prior to version 1.1.5F the ApiHotkey required a window to which it sent the WM_HOTKEY message whenever the registered hotkey combination was pressed.  This effectively limited the system to one hotkey per window.  This limitation no longer applies and the hotkey class can be used to register a hotkey for an application which has no VB forms.
+  + ApiWindow
+    - Added "Parent" property
+      This can be set to make one window a child of another.  Alternatively you can create a new ApiWindow class and set its .hwnd member to HWND_MESSAGE and set this to be the parent of any window to convert that window into a message only window. 
+  
+
+Defects addressed:
+------------------
+  +ApiWindowDispenser
+    - Fixed to allow creation of the standard window types ("STATIC","EDIT") etc. by supplying these constants to the CreateWindow method.  
+
+

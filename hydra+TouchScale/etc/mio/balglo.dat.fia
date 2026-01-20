@@ -1,0 +1,33 @@
+0
+"MOS","Mostrador",1,2,0
+"SUB","Subsección",3,5,0
+"FAM","Familia",6,9,0
+"COD","Código",10,15,0
+"PLU","Plu",16,19,0
+"PRC","Precio",20,26,0
+"CAD","Caducidad",27,29,0
+"TAR","Tara Asociada",30,34,0
+"TLT","Tipo de letra",35,35,0
+"TXT","Texto",36,60,0
+"TLT","Tipo de letra",61,61,1
+"TXT","Texto",62,86,1
+"TLT","Tipo de letra",87,87,2
+"TXT","Texto",88,112,2
+"TLT","Tipo de letra",113,113,3
+"TXT","Texto",114,138,3
+"TLT","Tipo de letra",139,139,4
+"TXT","Texto",140,164,4
+"TLT","Tipo de letra",165,165,5
+"TXT","Texto",166,190,5
+"TLT","Tipo de letra",191,191,6
+"TXT","Texto",192,216,6
+"TLT","Tipo de letra",217,217,7
+"TXT","Texto",218,242,7
+"TLT","Tipo de letra",243,243,8
+"TXT","Texto",244,268,8
+"TLT","Tipo de letra",269,269,9
+"TXT","Texto",270,294,9
+"GPC","Grupo de Conservación",295,296,0
+"TEC","Tecla en la sección",297,299,0
+"JTEC","Juego de Tecla en la sección",300,301,0
+"WGH","Tipo de venta (pesado/no pesado)",302,302,0

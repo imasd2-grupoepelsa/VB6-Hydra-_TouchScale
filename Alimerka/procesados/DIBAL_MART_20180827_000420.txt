@@ -1,0 +1,141 @@
+M|1011|0207|00105|BOLLO CON CHORIZO 175 g.|Peso aprox. chorizo (29%)||0|32|0|INGREDIENTES: Harina de TRIGO, chorizo (34,36%) Carne de cerdo, especias, sal, , conservante (E252), agua, margarina Grasa refinada vegetal (palma), aceites refinados vegetales (girasol), agua, emulgente (E471), sal, acidulante (E330), conservador (E200), aromas y colorante (E160ai), levadura, sal,y emulgente (E472e). PUEDE CONTENER TRAZAS DE SOJA Y LECHE.
+M|1015|0207|00065|BAGUETTE INTEGRAL|Peso aprox.240 g.|DE TRIGO 30%|0|32|0|INGREDIENTES: Harina de TRIGO, agua, harina integral de TRIGO (24%), levadura, sal, masa madre deshidratada de TRIGO. Puede contener trazas de SOJA.
+M|1100|0207|00695|EMPANADA PREMIUM 1100 g.|Carne (30%)|CARNE|0|60|2|INGREDIENTES: MASA (50%): Harina de TRIGO, agua, manteca de cerdo ibérica grasas seleccionadas de cerdo ibérico, antioxidantes naturales (palmitato ascórbilo, extracto natural rico en tocoferol, lecitina de SOJA), aceite refinado de girasol, pimentón y sal. RELLENO(50%):Cebolla frita (cebolla, aceite de oliva virgen y sal), cerdo 30%, pimiento asado (dados de pimiento asado, agua, sal y ácido cítrico), pan rallado (harina de TRIGO, agua, sal y levadura), aceite refinado de girasol, aceite de oliva virgen, pimentón , azúcar, sal, perejil y oleorresina de pimentón. Pintado: HUEVO. Puede contenertrazas de PESCADO Y MOLUSCOS. Información nutricional por 100 g: energía 1138.6 kJ / 271.9 kcal, grasas 12.3 g, ácidos grasos saturados 2.8 g, hidratos de carbono 32.8 g, azúcares 3.8 g, proteínas 7.5 g, sal 1.5 g.
+M|1101|0207|00695|EMPANADA PREMIUM 1100 g.|Atún (30%)|ATÚN|0|60|2|INGREDIENTES: MASA (50%):Harina de TRIGO, agua, manteca de cerdo ibérica grasas seleccionadas de cerdo ibérico, antioxidantes naturales (palmitato ascórbilo, extracto natural rico en tocoferol, lecitina de SOJA), aceite refinado de girasol, pimentón y sal. RELLENO (50%): Cebolla frita (cebolla, aceite de oliva virgen y sal), ATÚN 30% (ATÚN, aceite de girasol y sal), pimiento asado (dados de pimiento asado, agua, sal y ácido cítrico), pan rallado (harina de TRIGO, agua, sal y levadura), aceite refinado de girasol, azúcar, aceite de oliva virgen, pimentón y oleorresina de pimentón. Pintado: HUEVO. Puede contener trazas de MOLUSCOS. Información nutricional por 100 g: energía 1272.5 kJ / 304 Kcal, grasas 12.5 g, ácidos grasos saturados 2.3 g, hidratos de carbono 44.6 g, azúcares 4 g, proteínas 3.2 g, sal 1.7 g.
+M|1321|0207|00035|PAN HAMBURGUESA 80 g.|Peso aprox.||0|60|5|INGREDIENTES: Harina de TRIGO, agua, LECHE en polvo, margarina grasa refinada vegetal (palma), aceites refinados vegetales (girasol), agua, emulgente (E471), sal, acidulante (E330), conservador (E200), aromas y colorante (E160ai), levadura, semillas de SÉSAMO, azúcar, sal y emulgente (E472e). Puedecontener trazas de SOJA. 	 Información nutricional por 100 g: energía 1243 Kj / 294 Kcal, grasas 5.2 g, ácidos grasos saturados 2.9 g, hidratos de carbono 50.3 g, azúcares 3.14 g, proteínas 10.3 g, sal 1.07 g.
+M|1386|0207|00100|LAZOS DE CHOCOLATE|.|6 UNIDADES POR|0|60|4|INGREDIENTES: Cobertura de chocolate (Azúcar, grasa vegetal parcialmente hidrogenada (palmiste), cacao desengrasado en polvo, emulgente (E322, E492, E476) y aromas), harina de TRIGO, margarina Grasa refinada vegetal (palma), aceites refinados vegetales (girasol y palma), agua, emulgentes (E471), sal, aroma, acidulante (E 330), conservador (E 200), antioxidantes (E 306, E 304), aromas y colorante (E160aii), agua, azúcar, granillo de ALMENDRA (FRUTO DE CÁSCARA) y sal. Puede contener trazas de SOJA, LECHE y HUEVO.
+M|1616|0207|00065|ESPIGA 340 g.|Peso aprox.||0|32|0|
+M|1658|0207|00075|PALMERA DE CHOCOLATE|/|O GLASEADA|0|60|4|INGREDIENTES: Cobertura de chocolate (azúcar, grasa vegetal parcialmente hidrogenada (palmiste), cacao desengrasado en polvo, emulgente (E322, E492, E476) y aromas), harina de TRIGO, margarina grasa refinada vegetal (palma), aceites refinados vegetales (girasol y palma), agua, emulgentes (E471), sal, aroma, acidulante (E 330), conservador (E200), antioxidantes (E306, E304), aromas y colorante (E160aii), agua, azúcar y sal. Puede contener trazas de SOJA, LECHE, FRUTOS DE CÁSCARA y HUEVO.
+M|1784|0207|00110|BAGUETTE ARTESANA 300 g.|Peso aprox.||0|60|1|INGREDIENTES: Harina de TRIGO, agua, levadura, sal, masa madre deshidratada de TRIGO duro. Puede contener trazas de SOJA Y LECHE.
+M|1799|0207|00275|PORCION EMPANADA|Pollo (20%)|POLLO|0|60|2|INGREDIENTES: Harina de TRIGO, cebolla, pollo (20%), aceite de girasol, vino (contiene SULFITOS), LECHE, champiñones (2.5%), pimiento, aceite de oliva (0.75%), azúcar, agua, sal, pimentón, ajo, perejil, HUEVO líquido pasteurizado para decorar. Información nutricional por 100 g: energía 223 Kcal, grasas 12.09 g, ácidos grasos saturados 1.8 g, hidratos de carbono 16.3 g, azúcares 7.45 g, proteínas 12.35 g, sal 0.91 g.
+M|1828|0207|00090|PAN ABUELA MAIZ 240 g.|Peso aprox. Maiz (8%)||0|32|0|INGREDIENTES: Harina de TRIGO, mezcla de semillas (19%) (Maíz extrusionado (20 %), harina de maíz (20 %), PIPAS DE GIRASOL, aceite vegetal colza, sémola gruesa de maíz (10 %), gluten de TRIGO, semillas de linaza, sal, grasa vegetal palma, extracto de curcumina), agua, levadura, sal, masa madre de TRIGO. Puede contener trazas de SOJA, HUEVO, LECHE, SESAMO Y ALTRAMUZ.
+M|1832|0207|00055|CROISSANT FRANCES|mantequilla (23%)|DE MANTEQUILLA|0|32|0|INGREDIENTES: Harina de TRIGO, MANTEQUILLA, agua, azúcar, gluten de TRIGO, levadura, sal, fibra de trigo, grasa vegetal (palma). Cobertura 1.2%: HUEVO líquido pasteurizado, dextrosa. Puede contener trazas de SOJA, FRUTOS DE CÁSCARA Y MOSTAZA
+M|1929|0207|00075|EMPANADILLA MEDIA LUNA|Atún(13,5%)Peso aprox.120g.|ATUN|0|32|0|INGREDIENTES: Relleno; Cebolla frita en aceite de oliva, ATÚN (27%), pimiento, pan rallado, azúcar, pimentón. Masa; harina deTRIGO,aceite oliva de orujo, agua, sal, lecitina de girasol, abrillantador (proteína LÁCTEA, dextrosa, aceite vegental (colza)) SÉSAMO, PIPAS DE GIRASOL.
+M|1930|0207|00075|EMPANADILLA MEDIA LUNA|Pollo (13%)Peso apr.120gr.|POLLO AL CURRY|0|32|0|INGREDIENTES: Relleno; Cebolla frita en aceite de oliva, pollo (26%), champiñones, LECHE líquida, aceite oliva de orujo,vino, pan rallado, salsa barbacoa (puré de tomate, agua, vinagre de alcohol, azúcar, sirope de glucosa, almidón modificado, sal, colorante (caramelo natural), aroma de humo, (contiene LECHE), especies, conservador (sorbato potásico)), sal, curry, orégano, perejil, pimienta. Masa; harina de TRIGO,aceite oliva de orujo, agua, sal, lecitina de girasol, agua, abrillantador (proteína LÁCTEA, dextreosa, aceite vegetal (colza)), SÉSAMO, chia.
+M|1939|0207|00030|CROIS.MINI CECINA-QUESO|Cecina 10% Queso cabra 29%|Y QUESO DE CABRA|0||0|INGREDIENTES: Relleno cecina y QUESO(39%)QUESO (74%)(Mazada, LECHE de vaca, nata reguladores de la acidez (E450,E452),estabilizantes(E461,E1450,E1442),sal,conservador(E200),fermentos lácticos y aroma), cecina (26%)(carne de vaca, sal, azúcar, corrector de la acidez(E331),conservadores(E252,E250)), harina de TRIGO, margarina(Aceites y grasas vegetales refinadas (palma y girasol)),agua, sal, emulgente (E-471),acidulante (E330),conservador (E200),antioxidantes(E306, E304),aroma y colorante(#-caroteno,E160ii)), azúcar, levadura, sal, mejorante Masa madre de CENTENO, harina de TRIGO, dextrosa, emulgente (E472e), antioxidante (E300) agente de tratamiento de la harina (E920) TRIGO y enzimas TRIGO y sal. Puede contener trazas de HUEVO y SOJA.
+M|1946|0207|00120|HOGAZA BLANCA DE TRIGO|Peso aprox. 450 g.||0|32|0|INGREDIENTES: Harina de TRIGO, agua, sal, levadura y harina de TRIGO duro fermentada. Puede contener trazas de SOJA y LECHE.
+M|1949|0207|00055|PAN CON CHIA, QUINOA|Chia(8%)Quinoa(16%)Sarraceno(10%)|Y SARRACENO 150 g.|0|32|0|INGREDIENTES: Harina de TRIGO, harina de TRIGO SARRACENO (2,9 %), grano de quínoa descascarillado (2,3 %), grano de quínoa roja(2,3 %), semilla de chía(2,3 %), agua, levadura, masa madre en polvo CENTENO Y TRIGO, sal y harina de malta de TRIGO. PUEDE CONTENER TRAZAS HUEVO, LECHE y SOJA.
+M|1951|0207|00450|EMPANADA 500 g.|15% Bacon, 1,5% Chorizo|BACON Y CHORIZO|0|60|2|INGREDIENTES: Masa 50%: harina de TRIGO, agua, manteca de cerdo ibérica grasas seleccionadas de cerdo ibérico, antioxidantes naturales (E-304, E-306, E-322), aceite refinado de girasol y sal. Relleno 50%: Cebolla frita (cebolla, aceite de oliva virgen y sal), bacon 30% panceta de cerdo 90%, agua, sal, azúcar, dextrosa de maíz, proteína de SOJA, aromas, estabilizadores (E-451 y E-407), conservador E-250 y antioxidantes (E-316 yE-331), pimiento asado (dados de pimiento asado, agua, sal y corrector E-330), chorizo 3% magro de cerdo, tocino, pimentón, sal, ajo, dextrina, proteína de cerdo, antioxidante E-392, conservadores (E-252 y E-250) y corrector de acidez (E-331iii), pan rallado (harina de TRIGO, agua, sal y levadura), azúcar, ajo y sal. Pintado con HUEVO. Puede contener trazas de PESCADO, FRUTOS DE CÁSCARA Y MOLUSCOS. Información nutricional por 100 g: energía 1240.3 kJ / 296.2 kcal, grasas 14.71 g, ácidos grasos saturados 3.87 g, hidratos de carbono 34.3 g, azúcares 4.8 g, proteínas 6.7 g, sal 1.1 g.
+M|2001|0208|00495|TRUCHA ASTURIANA|DE RACION||1|40|0|
+M|2011|0208|00595|BONITO|ENTERO||1|40|0|
+M|2016|0208|00995|SALMON EN RAJAS|||1|40|0|
+M|2048|0208|00595|CENTOLLO|||1|40|0|
+M|2051|0208|00995|ALMEJA JAPONICA|CULTIVO||1|40|0|
+M|2052|0208|00545|POTARRO ENTERO|ELABORADO||1|57|0|
+M|2109|0208|01295|BOGAVANTE|||0|40|0|
+M|2139|0208|00995|LANGOSTINO CRUDO|60/70||1|40|0|
+M|2140|0208|00645|NAVAJAS|||1|40|0|
+M|2194|0208|00695|MERLUZA DEL PINCHO|||1|40|0|
+M|2195|0208|00595|MERLUZA FRESCA|||1|40|0|
+M|2211|0208|00995|BONITO|RAJAS||1|40|0|
+M|2230|0208|01295|CONGRIO ABIERTO|||1|40|0|
+M|2344|0208|00395|DORADA 450 PIEZA|||0|40|0|
+M|3026|0209|01495|QUESO AZUL LA PERAL|||1|58|12|INGREDIENTES: LECHE pasteurizada de vaca, sal, cuajo, fermentos lácticos, estabilizador (E-509), cloruro cálcico y pencillum.
+M|3027|0209|00795|SEMICURADO EL PASTOR|||1|58|12|INGREDIENTES: LECHE pasteurizada de vaca (60% mín.), oveja (17% mín.) y cabra (12% mín.), sal, cloruro cálcico, CUAJO y conservador E-1105 (derivado del HUEVO). Información nutricional por 100 g: energía 1540.7 kJ / 368.6 kcal, grasas 31.0 g, ácidos grasos saturados 22.0 g, hidratos de carbono 0.4 g, azúcares 0.5 g, proteínas 22.0 g, sal 1.3 g.
+M|3038|0209|01625|QUESO CABRALES|||1|58|12|INGREDIENTES: LECHE cruda de vaca, oveja y cabra. Cuajo de origen animal, sal.
+M|3044|0209|00795|QUESO BARRA SANDWICH|OSCOS||1|58|10|INGREDIENTES: LECHE pasteurizada de vaca, estabilizante cloruro cálcico, cuajo, conservador lisozima (obtenido de la clara de HUEVO), fermentos LÁCTICOS y sal. Información nutricional por 100 g: energía 1626.0 kJ / 392.0 kcal, grasas 32.0 g, ácidos grasos saturados 22.0 g, hidratos de carbono 3.0 g,azúcares 0.5 g, proteínas 23.0 g, sal 1.5 g.
+M|3045|0209|00795|QUESO BARRA SANDWICH|BERENGUELA LIGHT||1|58|10|INGREDIENTES: LECHE pasteurizada de vaca, estabilizante cloruro cálcico, cuajo, conservador lisozima (obtenido de la clara de HUEVO), fermentos LÁCTICOS y sal. Información nutricional por 100 g: energía 1216.0 kJ / 292.0 kcal, grasas 20.0 g, ácidos grasos saturados 14.0 g, hidratos de carbono 3.0 g,azúcares 0.5 g, proteínas 25.0 g, sal 1.7 g.
+M|3096|0203|01445|CHORIZO IBERICO|SALAMANCA|LA ALBERCA|1|58|0|INGREDIENTES: Magro de cerdo ibérico, sal, pimentón, ajo, LECHE en polvo desnatada, azúcar, conservador E-250 y antioxidante E-307.
+M|3097|0203|01445|SALCHICHON IBERICO|SALAMANCA|LA ALBERCA|1|58|0|INGREDIENTES: Magro de cerdo ibérico, sal, dextrina, especias, dextrosa, conservadores E-250 y E-252, y antioxidante E-331.
+M|3124|0203|00925|JAMON COCIDO|CAMPOFRIO|EXTRA|1|58|0|INGREDIENTES: Jamón de cerdo (81%), agua, sal, estabilizantes (E-451, E-407, E-412), azúcar, aroma de humo, antioxidante (E-316), potenciador del sabor (E-621), conservador (E-250). Recubrimiento decorativo: Agua, gelatina de cerdo, azúcar, colorante (E-150d). Información nutricional por 100 g: energía 139 kcal / 582 kJ, grasas 7 g, ácidos grasos saturados 2.4 g, hidratos de carbono 1 g, azúcares 1 g, fibra alimentaria 0 g, proteínas 18 g, sal 1.8 g.
+M|3128|0203|00595|JAMON COCIDO NATURA|CASADEMONT||1|40|0|
+M|3284|0203|01695|CENTRO JAMON NAVIDUL 4 ESTAC PULIDO|||1|58|0|INGREDIENTES: Jamon de cerdo . Sal. Conservadores (E-250) (E-252) Información nutricional por 100 g: energía 212 kcal / 889 kJ, grasas 10 g, ácidos grasos saturados 3.8 g, hidratos de carbono 0.5 g, azúcares 0.5 g, fibra alimentaria 0 g, proteínas 30 g, sal 5 g.
+M|3311|0209|01195|DELICIAS EL PASTOR CABRA SEMICURADO|||1|58|0|INGREDIENTES: LECHE pasteurizada de cabra, sal, secuestrante: cloruro cálcico, CUAJO, FERMENTOS LÁCTICOS y conservadores E-252 y E-1105 (derivado del HUEVO). Corteza: conservadores (E-235 y E-203), colorante E-172. Información nutricional por 100 g: energía 1514.0 kJ / 365.0 kcal, grasas 30.8 g, ácidos grasos saturados 20.6 g, hidratos de carbono 1.0 g, azúcares 0.5 g, proteínas 21.0 g, sal 0.9 g.
+M|3382|0203|00895|CHORIZO ASTURCELTA EXTRA DE CERDO|||1|58|0|
+M|3420|0203|01495|PATE CABRACHO CANTDELIMAR|||1||0|INGREDIENTES: CABRACHO (35%), caldo de PESCADO, HUEVOS, tomate (aceite vegetal, azúcar, fécula de maiz, sal, cebolla y ajo), margarina vegetal (grasa vegetal, aceite vegetal, mono- y digliceridos de ácidos grasos, ácido cítrico, (E-202) colorante betacaroteno), harina de TRIGO, cebolla (aceite de oliva, sal, acidulante (E-330), antioxidante (E-321)), sal y conservante (E-202).
+M|3425|0209|01895|QUESO 3 LECHES PRIA LLANES MAGNUM|||1||0|INGREDIENTES: LECHE pasteurizada de vaca (40%) y de oveja (50%), sal común, cuajo,FERMENTOS LÁCTICOS, consevadores: lisozima de HUEVO y E252.
+M|4038|0201|00995|FILETE 1ªA TERN.ECOLÓGICA|||1|40|0|
+M|4044|0201|01399|CHULETA TERN.ECOLOGICA|||1|40|0|
+M|4052|0201|00595|GUISAR 1ªB TERN.ECOLÓGICA|||1|40|0|
+M|4057|0201|00595|CARNE PICADA TERN.ECOLOGICA|||1|40|0|
+M|4058|0201|01499|ENTRECOT TERN.ECOLÓGICA|||1|40|0|
+M|4109|0201|00239|CUARTOS DE POLLO AMK|||1|40|0|
+M|4110|0201|00299|ALAS POLLO AMK|||1|40|0|
+M|4111|0201|00595|PECHUGA DE POLLO|||1|40|0|
+M|4120|0201|00695|PITU CALEYA AMK|||1|40|0|
+M|4139|0201|00595|TERN. ASTUR. GUISAR 1.B|||1|40|0|
+M|4142|0201|01399|CHULETA TERNERA ASTURIANA|||1|40|0|
+M|4145|0201|00995|TERNERA AST. FILETE 1.A|||1|40|0|
+M|4147|0201|00595|TERN.AST.CARNE PICADA|||1|40|0|INGREDIENTES: Carne de ternera asturiana (86%), arroz, ajo y cebolla deshidratados (4%), fibras vegetales y proteína de guisante (1%), sal, fécula de patata, almidón de maíz, especias, antioxidantes: E-331 y E-301, conservadores: E-221 y E-224. Contiene SULFITOS.
+M|4149|0201|01499|ENTRECOT TERNERA ASTURIANA|||1|40|0|
+M|4205|0201|00395|CHULETA CERDO 2ª|||1|40|0|
+M|4206|0201|00595|CINTA DE LOMO DE CERDO FRESCA|||1|40|0|
+M|4213|0201|00995|CORDERO NACIONAL|||1|40|0|
+M|4214|0201|01095|PIERNA CORDERO NACIONAL|||1|40|0|
+M|4215|0201|01095|PALETILLA CORDERO|||1|40|0|
+M|4217|0201|01395|CHULETILLA DE CORDERO|||1|40|0|
+M|4231|0201|00495|LONGANIZA ROJA|||1|57|0|INGREDIENTES: Panceta, carne de cerdo, sal, pimentón, almidón de patata, dextrosa, especias, proteínas de origen porcino, antioxidantes:(E-331) y (E-301), conservador:(E-221). Contiene SULFITOS. Información nutricional por 100 g: energía 819.5 kJ / 197.5 kcal, grasas 15.46 g, ácidos grasos saturados5.91 g, hidratos de carbono 1.27 g, azúcares <0.5 g, proteínas 13.30 g, sal 1.32 g.
+M|4241|0201|00495|LONGANIZA BLANCA|||1|57|0|INGREDIENTES: Panceta, carne de cerdo, sal, almidón de patata, dextrosa, especias, proteínas de origen porcino, antioxidantes:(E-331) y (E-301), conservador:(E-221). Contiene SULFITOS. Información nutricional por 100 g: energía 748.5 kJ / 180.5 kcal, grasas 13.65 g, ácidos grasos saturados 4.78 g, hidratos de carbono 0.59 g, azúcares <0.5 g, proteínas 13.75 g, sal 1.9 g.
+M|4306|0201|00395|JAMONCITOS POLLO|||1|40|0|
+M|4420|0201|00595|CINTA DE LOMO FILETEADA|||1|40|0|
+M|4424|0201|00995|CORDERO POR MEDIOS|||1|40|0|
+M|4425|0201|00995|CORDERO POR CUARTOS|||1|57|0|
+M|4435|0201|00395|POLLO ESPECIAL AJILLO|||1|40|0|
+M|4514|0201|00050|CHORIZO CRIOLLO UNIDAD|||0|57|0|
+M|4519|0201|00399|SOLOMILLO DE CERDO AL VACÍO UNIDAD|||0|57|0|
+M|4524|0201|00195|VACA ASTURIANA BURGER MEAT UNIDAD|||0|57|0|
+M|4571|0201|00595|LOMO CERDO ADB.EXTRA|RODRIGUEZ||1|40|5|INGREDIENTES: Lomo de cerdo, pimentón, sal, ajo, azucar, antoxidantes (E-301), corrector de acidez (E-331iii), conservador (E-250).
+M|4627|0201|01295|CHULETA RACK CERDO IBÉRICO|||1||0|
+M|4636|0201|00150|TERNERA ASTUR.BURGER MEAT UN.110|||0|57|0|
+M|5009|0206|00095|COCO|||0|40|0|
+M|5049|0206|00249|MELON SABROSONA|||1|40|0|
+M|5068|0206|00095|PIÑA|||1|40|0|
+M|5074|0206|00225|ESPARRAGOS VERDES|||0|40|0|
+M|5075|0206|00100|PEPINO|||1|40|0|
+M|5084|0206|00145|TOMATE RAMA|SABROSONA||1|40|0|
+M|5088|0206|00395|TOMATE ROSA|||1|40|0|
+M|5089|0206|00100|CALABACIN|||1|40|0|
+M|5092|0206|00245|JUDIAS VERDES|||1|40|0|
+M|5093|0206|00295|TOMATE RAF|||1|40|0|
+M|5102|0206|00100|BERENJENA|||1|40|0|
+M|5118|0206|00175|PIMIENTO ROJO|||1|40|0|
+M|5119|0206|00100|CEBOLLA BUTI|||0|40|0|
+M|5124|0206|00295|TOMATE KUMATO|||1|40|0|
+M|5129|0206|00165|MELOCOTON AMARILLO|||1|40|0|
+M|5130|0206|00295|LIMA|||1|40|0|
+M|5133|0206|00265|MZNA GRANNY SMITH SABROSONA|SABROSONA||1|40|0|
+M|5152|0206|00099|CEBOLLETA MANOJO|||0|40|0|INGREDIENTES: Cebolla fresca
+M|5168|0206|00099|LECHUGA|||0|40|0|
+M|5185|0206|00129|BANANA|||1|40|0|
+M|5200|0206|00135|ZANAHORIA RAMA|||0|40|0|
+M|5221|0206|00145|TOMATE RAMA IMPORT|||1|40|0|
+M|5229|0206|00089|SANDIA RAYADA|||1|40|0|
+M|5244|0206|00395|AJO NEGRO|||0|40|0|
+M|5246|0206|00195|KIWI ASTURIANO BOLSA 750 GR|BOLSA 750 GR||0|40|0|
+M|5247|0206|00285|TOMATE CHERRY RAMA|||1|40|0|
+M|5252|0206|00199|MELOCOTON|||1|40|0|
+M|5253|0206|00199|NECTARINA|||1|40|0|
+M|5265|0206|00069|SANDIA|||1|40|0|
+M|5271|0206|00495|KIWI ZESPRI N.ZELANDA|||1|40|0|
+M|5272|0206|00295|CEREZA S/R|||1|40|0|
+M|5273|0206|00295|MELOCOTON AMARILLO I|||1|40|0|
+M|5274|0206|00165|CIRUELA ROJA|||1|40|0|
+M|5303|0206|00275|LECHUGA TROCADERO|||0|40|0|INGREDIENTES: Lechuga Trocadero
+M|5307|0206|00125|SANDIA FASHION|||1|40|0|
+M|5309|0206|00299|MELOCOTON SABROSONA|||1|40|0|
+M|5312|0206|00195|NECTARINA SABROSONA|||1|40|0|
+M|5317|0206|00195|NECTARINA BLANCA|||1|40|0|
+M|5319|0206|00335|PARAGUAYO SABROSONA|||1|40|0|
+M|5339|0206|00250|UVA VICTORIA|||1|40|0|
+M|5362|0206|00099|NARANJA IMPORTACION|||1|40|0|
+M|5374|0206|00089|ZANAHORIAS GRANEL|||1|40|0|
+M|5445|0206|00195|TOMATE|||1|40|0|
+M|5446|0206|00195|KIWI ASTURIANO|||1|40|0|
+M|5463|0206|00225|TOMATE REBELION|||1|40|0|
+M|5476|0206|00195|MELON AMARILLO|||1|40|0|
+M|5480|0206|00175|CEBOLLA CHATA|||1|40|0|
+M|5505|0206|00295|CEREZA|||1|40|0|
+M|5514|0206|00195|TOMATE ASTURIANO|SABROSONA||1|40|0|
+M|5581|0206|00395|MANGO DE AVION|||1|40|0|
+M|5603|0206|00195|PARAGUAYO|||1|40|0|
+M|5615|0206|00495|PAPAYON|||1|40|0|
+M|5638|0206|00395|AGUACATE GRANEL|||1||0|
+M|5654|0206|00295|TOMATE MONTEROSA|||1|40|0|
+M|5670|0206|00295|TOMATE CORAZON DE BUEY|||1||0|
+M|5719|0206|00195|COL|KALE||1||0|
+M|5722|0206|00990|CAJA CEREZA S/R 2 KG|||0||0|
+M|5751|0206|00195|TOMATE PERA|||1||0|
+M|5770|0206|00115|LECHUGA TROCAD. PIEZA|||0||0|
+M|5794|0206|00375|TOMATE MAR AZUL|||1||0|
+M|5815|0206|00100|LOLLO ROJO|||0|40|0|
+M|2056994000999|0206|00100|CEBOLLA BUTI|||0|40|0|

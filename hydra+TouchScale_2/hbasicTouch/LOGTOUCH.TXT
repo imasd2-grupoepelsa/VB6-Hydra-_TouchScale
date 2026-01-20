@@ -1,0 +1,9 @@
+Sincronización con TOUCH-SCALE.MDB -- DBASE.MDB
+21/06/2012 22:47:32 --> Iniciando conexión nodo:127.0.0.1
+21/06/2012 22:47:33 --> Conexión Correcta.
+
+Bajas en Touch-Scale en función contenido TOUCH-SCALE.MDB...
+TRASPASO DE DATOS TOUCHSCALE.MDB a TOUCH-SCALE...
+21/06/2012 22:47:58 --> Datos enviados.
+21/06/2012 22:47:58 --> Iniciando conexión nodo:172.18.90.3
+21/06/2012 22:47:58 --> No ha sido posible la Conexión.(sin ping)

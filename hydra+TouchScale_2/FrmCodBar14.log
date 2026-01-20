@@ -1,0 +1,3 @@
+Línea 9: la propiedad Icon de FrmCodBar14 tenía una referencia a archivo no válida.
+Línea 805: la propiedad ItemData de CmbTipo tenía una referencia a archivo no válida.
+Línea 807: la propiedad List de CmbTipo tenía una referencia a archivo no válida.

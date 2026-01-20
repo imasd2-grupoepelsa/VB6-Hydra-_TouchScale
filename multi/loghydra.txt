@@ -1,0 +1,62 @@
+09/02/2014 19:24:37 Program HYDRATOUCH Started *************************************
+09/02/2014 19:24:37-->Check_Multi()
+09/02/2014 19:24:37-->Check_Multi() --> Sin parámetro de arranque...
+09/02/2014 19:24:37-->Check_multi() --> Detectado multistart.ord
+09/02/2014 19:24:37-->Leido de multistart.ord, Hydra_INI=C:\hydra+TouchScale\multi\t01\hydra.ini
+09/02/2014 19:24:37-->Leido de multistart.ord, Base_General=C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:24:38-->Función Crea_fichero_ini
+09/02/2014 19:24:38-->Hay multi...
+09/02/2014 19:24:38-->Tienda actual <> 0
+09/02/2014 19:24:38-->hydratouch.ini = C:\hydra+TouchScale\multi\t01\hydra.ini
+09/02/2014 19:24:38-->pass.sec = C:\hydra+TouchScale\multi\pass.sec
+09/02/2014 19:24:38-->Creación Base General. Tienda:1 Nombre:C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:24:38-->corregir nulos
+09/02/2014 19:24:38-->Se revisa si necesario Actualizar: C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:24:38-->corregir nulos
+09/02/2014 19:24:38-->Recibida Orden del plugin --> 61
+09/02/2014 19:25:00 Program Finished ************************************
+09/02/2014 19:29:11 Program HYDRATOUCH Started *************************************
+09/02/2014 19:29:12-->Check_Multi()
+09/02/2014 19:29:12-->Check_Multi() --> Sin parámetro de arranque...
+09/02/2014 19:29:12-->Check_multi() --> Detectado multistart.ord
+09/02/2014 19:29:12-->Leido de multistart.ord, Hydra_INI=C:\hydra+TouchScale\multi\t02\hydra.ini
+09/02/2014 19:29:12-->Leido de multistart.ord, Base_General=C:\hydra+TouchScale\multi\t02\dbase.mdb
+09/02/2014 19:29:13-->Función Crea_fichero_ini
+09/02/2014 19:29:13-->Hay multi...
+09/02/2014 19:29:13-->Tienda actual <> 0
+09/02/2014 19:29:13-->hydratouch.ini = C:\hydra+TouchScale\multi\t02\hydra.ini
+09/02/2014 19:29:13-->pass.sec = C:\hydra+TouchScale\multi\pass.sec
+09/02/2014 19:29:13-->Creación Base General. Tienda:2 Nombre:C:\hydra+TouchScale\multi\t02\dbase.mdb
+09/02/2014 19:29:13-->corregir nulos
+09/02/2014 19:29:13-->Se revisa si necesario Actualizar: C:\hydra+TouchScale\multi\t02\dbase.mdb
+09/02/2014 19:29:13-->corregir nulos
+09/02/2014 19:29:13-->Recibida Orden del plugin --> 61
+09/02/2014 19:29:16 Program Finished ************************************
+09/02/2014 19:44:49 Program HYDRATOUCH Started *************************************
+09/02/2014 19:44:49-->Check_Multi()
+09/02/2014 19:44:49-->Check_Multi() --> Sin parámetro de arranque...
+09/02/2014 19:44:49-->Check_multi() --> Detectado multistart.ord
+09/02/2014 19:44:49-->Leido de multistart.ord, Hydra_INI=C:\hydra+TouchScale\multi\t01\hydra.ini
+09/02/2014 19:44:49-->Leido de multistart.ord, Base_General=C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:44:50-->Función Crea_fichero_ini
+09/02/2014 19:44:50-->Hay multi...
+09/02/2014 19:44:50-->Tienda actual <> 0
+09/02/2014 19:44:50-->hydratouch.ini = C:\hydra+TouchScale\multi\t01\hydra.ini
+09/02/2014 19:44:50-->pass.sec = C:\hydra+TouchScale\multi\pass.sec
+09/02/2014 19:44:50-->Se revisa si necesario Actualizar: C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:44:50-->corregir nulos
+09/02/2014 19:46:26 Program Finished ************************************
+09/02/2014 19:46:35 Program HYDRATOUCH Started *************************************
+09/02/2014 19:46:35-->Check_Multi()
+09/02/2014 19:46:35-->Check_Multi() --> Sin parámetro de arranque...
+09/02/2014 19:46:35-->Check_multi() --> Detectado multistart.ord
+09/02/2014 19:46:35-->Leido de multistart.ord, Hydra_INI=C:\hydra+TouchScale\multi\t01\hydra.ini
+09/02/2014 19:46:35-->Leido de multistart.ord, Base_General=C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:46:36-->Función Crea_fichero_ini
+09/02/2014 19:46:36-->Hay multi...
+09/02/2014 19:46:36-->Tienda actual <> 0
+09/02/2014 19:46:36-->hydratouch.ini = C:\hydra+TouchScale\multi\t01\hydra.ini
+09/02/2014 19:46:36-->pass.sec = C:\hydra+TouchScale\multi\pass.sec
+09/02/2014 19:46:36-->Se revisa si necesario Actualizar: C:\hydra+TouchScale\multi\t01\dbase.mdb
+09/02/2014 19:46:36-->corregir nulos
+09/02/2014 19:46:37-->Recibida Orden del plugin --> 21

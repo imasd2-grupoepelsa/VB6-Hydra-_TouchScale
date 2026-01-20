@@ -1,0 +1,66 @@
+***  Installation Started 03/02/2007 17:43  ***
+Title: Herramientas para Euroscale 
+Source: C:\WINDOWS\GEDIT\GSETUP941.EXE
+Made Dir: C:\WINDOWS\gedit\Euroscale Tools
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Xre.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Yre.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Barras.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\ean128_1.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\ean128_2.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\ean128_3.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\ean128_4.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\ean128_5.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Cod128_1.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Cod128_2.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Cod128_3.dat
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Default.dga
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\\LOGO0.BTM
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\\LOGO1.BTM
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\\LOGO2.BTM
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\\LOGO3.BTM
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\\LOGO4.BTM
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\\LOGO5.BTM
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Fnt0808.fnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Fnt1211.fnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Fnt1622.fnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Fnt2424.fnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Fnt3232.fnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Rct0808.fnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\gedit.exe
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\gedit.ini
+Made Dir: C:\WINDOWS\gedit\Euroscale Tools\fmt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\fmt\EBALC20B.ETQ
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\fmt\DEFAULT.TQT
+Made Dir: C:\WINDOWS\gedit\Euroscale Tools\bmp
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\ASTRO.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\BMACLAIN.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\CHURCH.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\COMIDA.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\CONGEL~1.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\DOLAR.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\EPEL.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\GAMBAS.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\PLATO.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\RECICLE1.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\RECICLE2.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\TERMOM~1.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\bmp\VENENO.BMP
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Server.exe
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\wmcos.exe
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Cfgsrv.exe
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Gedith.hlp
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\Gedith.cnt
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\UNWISE.EXE
+File Copy: C:\WINDOWS\gedit\Euroscale Tools\UNWISE.INI
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Herramientas para Euroscale
+RegDB Val: Herramientas para Euroscale
+RegDB Name: DisplayName
+RegDB Root: 2
+RegDB Key: Software\Microsoft\Windows\CurrentVersion\Uninstall\Herramientas para Euroscale
+RegDB Val: C:\WINDOWS\GEDIT\EUROSC~1\UNWISE.EXE C:\WINDOWS\GEDIT\EUROSC~1\INSTALL.LOG
+RegDB Name: UninstallString
+RegDB Root: 2
+Shell Link: C:\WINDOWS\Menú Inicio\Programas\Euroscale Tools\Gedit 9.4.lnk
+Shell Link: C:\WINDOWS\Menú Inicio\Programas\Euroscale Tools\wmcos 3.02.lnk
+Shell Link: C:\WINDOWS\Menú Inicio\Programas\Euroscale Tools\Gedit.lnk
+Shell Link: C:\WINDOWS\Menú Inicio\Programas\Euroscale Tools\UnInstall.lnk

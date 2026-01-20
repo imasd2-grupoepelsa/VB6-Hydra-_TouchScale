@@ -1,0 +1,9 @@
+0
+"BAJA","Distinto de 0 Indica si baja de artículo",5,5,0
+"COD","Código",6,11,0
+"PLU","Plu",12,13,0
+"TXT","Texto",14,37,0
+"PRC","Precio",38,42,0
+"WGH","Pesado/No pesado",43,43,0
+"CBA","Código de barras",144,155,0
+"IVA","Tipo de IVA",157,157,0

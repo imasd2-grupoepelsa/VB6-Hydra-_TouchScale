@@ -1,0 +1,9 @@
+ControlImportTouch = 556, 15, 1207, 459, , 110, 110, 762, 554, C
+frmconfigurator = 86, 54, 663, 498, , 199, 40, 769, 576, C
+frmimportar = 152, 192, 964, 633, , 27, 10, 427, 605, C
+VarPublics = 163, 55, 975, 499, 
+importararticulos = 250, 210, 1026, 654, 
+configurator = 105, 47, 917, 491, 
+s = 114, 15, 1146, 757, 
+LosEuros = 22, 22, 822, 467, C
+fio = 88, 88, 692, 533, 

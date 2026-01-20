@@ -1,0 +1,208 @@
+[Root]
+Most Recent Package=Paquete de instalación estándar 1
+
+
+[Package|Paquete de instalación estándar 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\hydra+TouchScale\paq
+
+[Package|Paquete de instalación estándar 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de instalación estándar 1|Files Found]
+
+[Package|Paquete de instalación estándar 1|Files Released]
+hydraMulti.exe=
+
+[Package|Paquete de instalación estándar 1|Missing Dependency Information]
+C:\hydra+TouchScale\ctrlimpatouch.ocx=
+C:\Windows\SysWOW64\systray.ocx=
+C:\Program Files (x86)\Common Files\System\ado\msado28.tlb=
+C:\Windows\System32\odbcconf.dll=
+C:\hydra+TouchScale\unrar.dll=
+C:\Windows\System32\wininet.dll=
+C:\Windows\winsxs\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80\GdiPlus.dll=
+C:\hydra+TouchScale\hydraMulti.exe=
+C:\hydra+TouchScale\TIQAHTOUCH.exe=
+
+[Package|Paquete de instalación estándar 1|Out-of-Date Dependency Information]
+C:\Windows\SysWOW64\MSCOMCTL.OCX=
+C:\Windows\SysWOW64\MSCHRT20.OCX=
+C:\Windows\SysWOW64\MSMASK32.OCX=
+C:\Windows\SysWOW64\MSWINSCK.OCX=
+C:\Windows\SysWOW64\scrrun.dll=
+
+[Package|Paquete de instalación estándar 1|Files Added]
+hydramulti.exe=
+c:\hydra+touchscale\tiqahtouch.exe=
+
+[Package|Paquete de instalación estándar 1|Files Removed]
+
+[Package|Paquete de instalación estándar 1|Files In Project]
+C:\hydra+TouchScale\hydraTouch.exe=Yes
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\System32\VB6ES.DLL=Yes
+C:\Windows\winsxs\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80\GdiPlus.dll=Yes
+C:\Windows\System32\wininet.dll=Yes
+C:\hydra+TouchScale\unrar.dll=Yes
+C:\Windows\SysWOW64\MSBIND.DLL=Yes
+C:\Windows\SysWOW64\MSSTDFMT.DLL=Yes
+C:\Windows\SysWOW64\STDFTES.DLL=Yes
+C:\Windows\SysWOW64\scrrun.dll=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\Windows\SysWOW64\SCRRNES.DLL=Yes
+C:\Windows\System32\odbcconf.dll=Yes
+C:\Windows\SysWOW64\msjtes40.dll=Yes
+C:\Program Files (x86)\Common Files\System\ado\msado28.tlb=Yes
+C:\Windows\SysWOW64\MSRDO20.DLL=Yes
+C:\Windows\SysWOW64\RDOCURS.DLL=Yes
+C:\Windows\SysWOW64\RDO20ES.DLL=Yes
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\dao360.dll=Yes
+C:\Windows\System32\msjet40.dll=Yes
+C:\Windows\System32\msjter40.dll=Yes
+C:\Windows\System32\msjint40.dll=Yes
+C:\Windows\System32\vbajet32.dll=Yes
+C:\Windows\System32\expsrv.dll=Yes
+C:\Windows\System32\mswstr10.dll=Yes
+C:\Windows\System32\mswdat10.dll=Yes
+C:\Windows\System32\msrd2x40.dll=Yes
+C:\Windows\System32\msrd3x40.dll=Yes
+C:\Windows\System32\msrepl40.dll=Yes
+C:\Windows\System32\VB5DB.DLL=Yes
+C:\Windows\SysWOW64\MSCOMM32.OCX=Yes
+C:\Windows\SysWOW64\MSCOMES.DLL=Yes
+C:\Windows\SysWOW64\MSWINSCK.OCX=Yes
+C:\Windows\SysWOW64\WINSKES.DLL=Yes
+C:\Windows\SysWOW64\TABCTL32.OCX=Yes
+C:\Windows\SysWOW64\TABCTES.DLL=Yes
+C:\Windows\SysWOW64\MSMASK32.OCX=Yes
+C:\Windows\SysWOW64\MSMSKES.DLL=Yes
+C:\Windows\SysWOW64\MSCHRT20.OCX=Yes
+C:\Windows\SysWOW64\MSCH2ES.DLL=Yes
+C:\Windows\SysWOW64\MSCOMCTL.OCX=Yes
+C:\Windows\SysWOW64\MSCMCES.DLL=Yes
+C:\Windows\SysWOW64\COMDLG32.OCX=Yes
+C:\Windows\SysWOW64\CMDLGES.DLL=Yes
+C:\Windows\SysWOW64\RICHTX32.OCX=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\SysWOW64\RCHTXES.DLL=Yes
+C:\Windows\SysWOW64\systray.ocx=Yes
+C:\hydra+TouchScale\ctrlimpatouch.ocx=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\vb6inst\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\hydra+TouchScale\TIQAHTOUCH.exe=Yes
+
+[Package|Paquete de instalación estándar 1|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 1|Install Locations]
+C:\hydra+TouchScale\hydraTouch.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\System32\VB6ES.DLL=$(WinSysPath)
+C:\Windows\winsxs\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80\GdiPlus.dll=$(WinSysPath)
+C:\Windows\System32\wininet.dll=$(WinSysPath)
+C:\hydra+TouchScale\unrar.dll=$(AppPath)
+C:\Windows\SysWOW64\MSBIND.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\STDFTES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\scrrun.dll=$(WinSysPath)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\SCRRNES.DLL=$(WinSysPath)
+C:\Windows\System32\odbcconf.dll=$(WinSysPath)
+C:\Windows\SysWOW64\msjtes40.dll=$(WinSysPathSysFile)
+C:\Program Files (x86)\Common Files\System\ado\msado28.tlb=$(WinSysPath)
+C:\Windows\SysWOW64\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RDOCURS.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RDO20ES.DLL=$(WinSysPath)
+C:\Program Files (x86)\Common Files\microsoft shared\DAO\dao360.dll=$(MSDAOPath)
+C:\Windows\System32\msjet40.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msjter40.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msjint40.dll=$(WinSysPathSysFile)
+C:\Windows\System32\vbajet32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\expsrv.dll=$(WinSysPathSysFile)
+C:\Windows\System32\mswstr10.dll=$(WinSysPathSysFile)
+C:\Windows\System32\mswdat10.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msrd2x40.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msrd3x40.dll=$(WinSysPathSysFile)
+C:\Windows\System32\msrepl40.dll=$(WinSysPathSysFile)
+C:\Windows\System32\VB5DB.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMM32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSWINSCK.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\WINSKES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMSKES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSCHRT20.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCH2ES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\CMDLGES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RICHTX32.OCX=$(WinSysPath)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\RCHTXES.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\systray.ocx=$(WinSysPath)
+C:\hydra+TouchScale\ctrlimpatouch.ocx=$(WinSysPath)
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\vb6inst\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\vb6inst\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\vb6inst\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\hydra+TouchScale\hydraMulti.exe=$(AppPath)
+C:\hydra+TouchScale\TIQAHTOUCH.exe=$(AppPath)
+
+[Package|Paquete de instalación estándar 1|Configure Shared Files]
+Applicable=Yes
+C:\hydra+TouchScale\hydraTouch.exe=No
+C:\hydra+TouchScale\unrar.dll=No
+C:\vb6inst\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+C:\hydra+TouchScale\hydraMulti.exe=No
+C:\hydra+TouchScale\TIQAHTOUCH.exe=No
+
+[Package|Paquete de instalación estándar 1|Distribution]
+Type=single
+Size=
+Title=HydraTouchLite
+
+[Package|Paquete de instalación estándar 1|IconGroups]
+Group0=HydraTouchLite
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 1|HydraTouchLite]
+Icon1=hydraTouch.exe
+Title1=HydraTouchLite
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 1|Package]
+PackageFolder=C:\hydra+TouchScale\paq
+ProjectFolder=C:\hydra+TouchScale
+ServerSideCab=
+File1=C:\hydra+TouchScale\paq\setup.exe
+File2=C:\hydra+TouchScale\paq\Setup.Lst
+File3=C:\hydra+TouchScale\paq\hydraTouch.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

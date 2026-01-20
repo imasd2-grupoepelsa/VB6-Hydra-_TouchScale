@@ -1,0 +1,24 @@
+Merrion Computing Ltd * 42 Ailesbury Mews * Ballsbridge * Dublin * Ireland
+
+EventVB release note
+====================
+
+Release 1.2.2 H
+---------------
+
+Note:  This release implements a number of changes to the object model, especially around the area of windows hooking, that mean that it is no longer code compatible with previous releases.
+
+New Classes:
+============
+   ApiDeviceMode - implements the getting and setting of device mode data such as the paper size, collation and colour options etc.
+   ApiSystemHook - replaces the EnumHandler class as the method for setting and responding to system hooks, both global and application local
+
+New Properties:
+===============
+   ApiSystem.Hooks - Provides access to the hooking functionality
+   ApiPrinter.DeviceMode - Provides the device settings for the printer
+   ApiPrintJob.DeviceMode - Provides the device settings for the printer for the given print job
+   ApiWindow.VirtualHeight,VirtualWidth etc. - Provides control over the extent of scrolling windows.
+
+New events:
+===========

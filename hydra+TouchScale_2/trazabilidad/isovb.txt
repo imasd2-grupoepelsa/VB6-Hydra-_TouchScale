@@ -1,0 +1,723 @@
+case 248
+    sValor="AALAND ISLANDS"
+    sComentario="248-AX-ALA-AALAND ISLANDS"
+case 4
+    sValor="AFGHANISTAN"
+    sComentario="004-AF-AFG-AFGHANISTAN"
+case 8
+    sValor="ALBANIA"
+    sComentario="008-AL-ALB-ALBANIA"
+case 12
+    sValor="ALGERIA"
+    sComentario="012-DZ-DZA-ALGERIA"
+case 16
+    sValor="AMERICAN SAMOA"
+    sComentario="016-AS-ASM-AMERICAN SAMOA"
+case 20
+    sValor="ANDORRA"
+    sComentario="020-AD-AND-ANDORRA"
+case 24
+    sValor="ANGOLA"
+    sComentario="024-AO-AGO-ANGOLA"
+case 660
+    sValor="ANGUILLA"
+    sComentario="660-AI-AIA-ANGUILLA"
+case 10
+    sValor="ANTARCTICA"
+    sComentario="010-AQ-ATA-ANTARCTICA"
+case 28
+    sValor="ANTIGUA AND BARBUDA"
+    sComentario="028-AG-ATG-ANTIGUA AND BARBUDA"
+case 32
+    sValor="ARGENTINA"
+    sComentario="032-AR-ARG-ARGENTINA"
+case 51
+    sValor="ARMENIA"
+    sComentario="051-AM-ARM-ARMENIA"
+case 533
+    sValor="ARUBA"
+    sComentario="533-AW-ABW-ARUBA"
+case 36
+    sValor="AUSTRALIA"
+    sComentario="036-AU-AUS-AUSTRALIA"
+case 40
+    sValor="AUSTRIA"
+    sComentario="040-AT-AUT-AUSTRIA"
+case 31
+    sValor="AZERBAIJAN"
+    sComentario="031-AZ-AZE-AZERBAIJAN"
+case 44
+    sValor="BAHAMAS"
+    sComentario="044-BS-BHS-BAHAMAS"
+case 48
+    sValor="BAHRAIN"
+    sComentario="048-BH-BHR-BAHRAIN"
+case 50
+    sValor="BANGLADESH"
+    sComentario="050-BD-BGD-BANGLADESH"
+case 52
+    sValor="BARBADOS"
+    sComentario="052-BB-BRB-BARBADOS"
+case 112
+    sValor="BELARUS"
+    sComentario="112-BY-BLR-BELARUS"
+case 56
+    sValor="BELGIUM"
+    sComentario="056-BE-BEL-BELGIUM"
+case 84
+    sValor="BELIZE"
+    sComentario="084-BZ-BLZ-BELIZE"
+case 204
+    sValor="BENIN"
+    sComentario="204-BJ-BEN-BENIN"
+case 60
+    sValor="BERMUDA"
+    sComentario="060-BM-BMU-BERMUDA"
+case 64
+    sValor="BHUTAN"
+    sComentario="064-BT-BTN-BHUTAN"
+case 68
+    sValor="BOLIVIA"
+    sComentario="068-BO-BOL-BOLIVIA"
+case 70
+    sValor="BOSNIA AND HERZEGOWINA"
+    sComentario="070-BA-BIH-BOSNIA AND HERZEGOWINA"
+case 72
+    sValor="BOTSWANA"
+    sComentario="072-BW-BWA-BOTSWANA"
+case 74
+    sValor="BOUVET ISLAND"
+    sComentario="074-BV-BVT-BOUVET ISLAND"
+case 76
+    sValor="BRAZIL"
+    sComentario="076-BR-BRA-BRAZIL"
+case 86
+    sValor="BRITISH INDIAN OCEAN TERRITORY"
+    sComentario="086-IO-IOT-BRITISH INDIAN OCEAN TERRITORY"
+case 96
+    sValor="BRUNEI DARUSSALAM"
+    sComentario="096-BN-BRN-BRUNEI DARUSSALAM"
+case 100
+    sValor="BULGARIA"
+    sComentario="100-BG-BGR-BULGARIA"
+case 854
+    sValor="BURKINA FASO"
+    sComentario="854-BF-BFA-BURKINA FASO"
+case 108
+    sValor="BURUNDI"
+    sComentario="108-BI-BDI-BURUNDI"
+case 116
+    sValor="CAMBODIA"
+    sComentario="116-KH-KHM-CAMBODIA"
+case 120
+    sValor="CAMEROON"
+    sComentario="120-CM-CMR-CAMEROON"
+case 124
+    sValor="CANADA"
+    sComentario="124-CA-CAN-CANADA"
+case 132
+    sValor="CAPE VERDE"
+    sComentario="132-CV-CPV-CAPE VERDE"
+case 136
+    sValor="CAYMAN ISLANDS"
+    sComentario="136-KY-CYM-CAYMAN ISLANDS"
+case 140
+    sValor="CENTRAL AFRICAN REPUBLIC"
+    sComentario="140-CF-CAF-CENTRAL AFRICAN REPUBLIC"
+case 148
+    sValor="CHAD"
+    sComentario="148-TD-TCD-CHAD"
+case 152
+    sValor="CHILE"
+    sComentario="152-CL-CHL-CHILE"
+case 156
+    sValor="CHINA"
+    sComentario="156-CN-CHN-CHINA"
+case 162
+    sValor="CHRISTMAS ISLAND"
+    sComentario="162-CX-CXR-CHRISTMAS ISLAND"
+case 166
+    sValor="COCOS (KEELING) ISLANDS"
+    sComentario="166-CC-CCK-COCOS (KEELING) ISLANDS"
+case 170
+    sValor="COLOMBIA"
+    sComentario="170-CO-COL-COLOMBIA"
+case 174
+    sValor="COMOROS"
+    sComentario="174-KM-COM-COMOROS"
+case 180
+    sValor="CONGO, Democratic Republic of (was Zaire)"
+    sComentario="180-CD-COD-CONGO, Democratic Republic of (was Zaire)"
+case 178
+    sValor="CONGO, Republic of"
+    sComentario="178-CG-COG-CONGO, Republic of"
+case 184
+    sValor="COOK ISLANDS"
+    sComentario="184-CK-COK-COOK ISLANDS"
+case 188
+    sValor="COSTA RICA"
+    sComentario="188-CR-CRI-COSTA RICA"
+case 384
+    sValor="COTE D'IVOIRE"
+    sComentario="384-CI-CIV-COTE D'IVOIRE"
+case 191
+    sValor="CROATIA (local name: Hrvatska)"
+    sComentario="191-HR-HRV-CROATIA (local name: Hrvatska)"
+case 192
+    sValor="CUBA"
+    sComentario="192-CU-CUB-CUBA"
+case 196
+    sValor="CYPRUS"
+    sComentario="196-CY-CYP-CYPRUS"
+case 203
+    sValor="CZECH REPUBLIC"
+    sComentario="203-CZ-CZE-CZECH REPUBLIC"
+case 208
+    sValor="DENMARK"
+    sComentario="208-DK-DNK-DENMARK"
+case 262
+    sValor="DJIBOUTI"
+    sComentario="262-DJ-DJI-DJIBOUTI"
+case 212
+    sValor="DOMINICA"
+    sComentario="212-DM-DMA-DOMINICA"
+case 214
+    sValor="DOMINICAN REPUBLIC"
+    sComentario="214-DO-DOM-DOMINICAN REPUBLIC"
+case 218
+    sValor="ECUADOR"
+    sComentario="218-EC-ECU-ECUADOR"
+case 818
+    sValor="EGYPT"
+    sComentario="818-EG-EGY-EGYPT"
+case 222
+    sValor="EL SALVADOR"
+    sComentario="222-SV-SLV-EL SALVADOR"
+case 226
+    sValor="EQUATORIAL GUINEA"
+    sComentario="226-GQ-GNQ-EQUATORIAL GUINEA"
+case 232
+    sValor="ERITREA"
+    sComentario="232-ER-ERI-ERITREA"
+case 233
+    sValor="ESTONIA"
+    sComentario="233-EE-EST-ESTONIA"
+case 231
+    sValor="ETHIOPIA"
+    sComentario="231-ET-ETH-ETHIOPIA"
+case 238
+    sValor="FALKLAND ISLANDS (MALVINAS)"
+    sComentario="238-FK-FLK-FALKLAND ISLANDS (MALVINAS)"
+case 234
+    sValor="FAROE ISLANDS"
+    sComentario="234-FO-FRO-FAROE ISLANDS"
+case 242
+    sValor="FIJI"
+    sComentario="242-FJ-FJI-FIJI"
+case 246
+    sValor="FINLAND"
+    sComentario="246-FI-FIN-FINLAND"
+case 250
+    sValor="FRANCE"
+    sComentario="250-FR-FRA-FRANCE"
+case 254
+    sValor="FRENCH GUIANA"
+    sComentario="254-GF-GUF-FRENCH GUIANA"
+case 258
+    sValor="FRENCH POLYNESIA"
+    sComentario="258-PF-PYF-FRENCH POLYNESIA"
+case 260
+    sValor="FRENCH SOUTHERN TERRITORIES"
+    sComentario="260-TF-ATF-FRENCH SOUTHERN TERRITORIES"
+case 266
+    sValor="GABON"
+    sComentario="266-GA-GAB-GABON"
+case 270
+    sValor="GAMBIA"
+    sComentario="270-GM-GMB-GAMBIA"
+case 268
+    sValor="GEORGIA"
+    sComentario="268-GE-GEO-GEORGIA"
+case 276
+    sValor="GERMANY"
+    sComentario="276-DE-DEU-GERMANY"
+case 288
+    sValor="GHANA"
+    sComentario="288-GH-GHA-GHANA"
+case 292
+    sValor="GIBRALTAR"
+    sComentario="292-GI-GIB-GIBRALTAR"
+case 300
+    sValor="GREECE"
+    sComentario="300-GR-GRC-GREECE"
+case 304
+    sValor="GREENLAND"
+    sComentario="304-GL-GRL-GREENLAND"
+case 308
+    sValor="GRENADA"
+    sComentario="308-GD-GRD-GRENADA"
+case 312
+    sValor="GUADELOUPE"
+    sComentario="312-GP-GLP-GUADELOUPE"
+case 316
+    sValor="GUAM"
+    sComentario="316-GU-GUM-GUAM"
+case 320
+    sValor="GUATEMALA"
+    sComentario="320-GT-GTM-GUATEMALA"
+case 324
+    sValor="GUINEA"
+    sComentario="324-GN-GIN-GUINEA"
+case 624
+    sValor="GUINEA-BISSAU"
+    sComentario="624-GW-GNB-GUINEA-BISSAU"
+case 328
+    sValor="GUYANA"
+    sComentario="328-GY-GUY-GUYANA"
+case 332
+    sValor="HAITI"
+    sComentario="332-HT-HTI-HAITI"
+case 334
+    sValor="HEARD AND MC DONALD ISLANDS"
+    sComentario="334-HM-HMD-HEARD AND MC DONALD ISLANDS"
+case 340
+    sValor="HONDURAS"
+    sComentario="340-HN-HND-HONDURAS"
+case 344
+    sValor="HONG KONG"
+    sComentario="344-HK-HKG-HONG KONG"
+case 348
+    sValor="HUNGARY"
+    sComentario="348-HU-HUN-HUNGARY"
+case 352
+    sValor="ICELAND"
+    sComentario="352-IS-ISL-ICELAND"
+case 356
+    sValor="INDIA"
+    sComentario="356-IN-IND-INDIA"
+case 360
+    sValor="INDONESIA"
+    sComentario="360-ID-IDN-INDONESIA"
+case 364
+    sValor="IRAN (ISLAMIC REPUBLIC OF)"
+    sComentario="364-IR-IRN-IRAN (ISLAMIC REPUBLIC OF)"
+case 368
+    sValor="IRAQ"
+    sComentario="368-IQ-IRQ-IRAQ"
+case 372
+    sValor="IRELAND"
+    sComentario="372-IE-IRL-IRELAND"
+case 376
+    sValor="ISRAEL"
+    sComentario="376-IL-ISR-ISRAEL"
+case 380
+    sValor="ITALY"
+    sComentario="380-IT-ITA-ITALY"
+case 388
+    sValor="JAMAICA"
+    sComentario="388-JM-JAM-JAMAICA"
+case 392
+    sValor="JAPAN"
+    sComentario="392-JP-JPN-JAPAN"
+case 400
+    sValor="JORDAN"
+    sComentario="400-JO-JOR-JORDAN"
+case 398
+    sValor="KAZAKHSTAN"
+    sComentario="398-KZ-KAZ-KAZAKHSTAN"
+case 404
+    sValor="KENYA"
+    sComentario="404-KE-KEN-KENYA"
+case 296
+    sValor="KIRIBATI"
+    sComentario="296-KI-KIR-KIRIBATI"
+case 408
+    sValor="KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF"
+    sComentario="408-KP-PRK-KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF"
+case 410
+    sValor="KOREA, REPUBLIC OF"
+    sComentario="410-KR-KOR-KOREA, REPUBLIC OF"
+case 414
+    sValor="KUWAIT"
+    sComentario="414-KW-KWT-KUWAIT"
+case 417
+    sValor="KYRGYZSTAN"
+    sComentario="417-KG-KGZ-KYRGYZSTAN"
+case 418
+    sValor="LAO PEOPLE'S DEMOCRATIC REPUBLIC"
+    sComentario="418-LA-LAO-LAO PEOPLE'S DEMOCRATIC REPUBLIC"
+case 428
+    sValor="LATVIA"
+    sComentario="428-LV-LVA-LATVIA"
+case 422
+    sValor="LEBANON"
+    sComentario="422-LB-LBN-LEBANON"
+case 426
+    sValor="LESOTHO"
+    sComentario="426-LS-LSO-LESOTHO"
+case 430
+    sValor="LIBERIA"
+    sComentario="430-LR-LBR-LIBERIA"
+case 434
+    sValor="LIBYAN ARAB JAMAHIRIYA"
+    sComentario="434-LY-LBY-LIBYAN ARAB JAMAHIRIYA"
+case 438
+    sValor="LIECHTENSTEIN"
+    sComentario="438-LI-LIE-LIECHTENSTEIN"
+case 440
+    sValor="LITHUANIA"
+    sComentario="440-LT-LTU-LITHUANIA"
+case 442
+    sValor="LUXEMBOURG"
+    sComentario="442-LU-LUX-LUXEMBOURG"
+case 446
+    sValor="MACAU"
+    sComentario="446-MO-MAC-MACAU"
+case 807
+    sValor="MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF"
+    sComentario="807-MK-MKD-MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF"
+case 450
+    sValor="MADAGASCAR"
+    sComentario="450-MG-MDG-MADAGASCAR"
+case 454
+    sValor="MALAWI"
+    sComentario="454-MW-MWI-MALAWI"
+case 458
+    sValor="MALAYSIA"
+    sComentario="458-MY-MYS-MALAYSIA"
+case 462
+    sValor="MALDIVES"
+    sComentario="462-MV-MDV-MALDIVES"
+case 466
+    sValor="MALI"
+    sComentario="466-ML-MLI-MALI"
+case 470
+    sValor="MALTA"
+    sComentario="470-MT-MLT-MALTA"
+case 584
+    sValor="MARSHALL ISLANDS"
+    sComentario="584-MH-MHL-MARSHALL ISLANDS"
+case 474
+    sValor="MARTINIQUE"
+    sComentario="474-MQ-MTQ-MARTINIQUE"
+case 478
+    sValor="MAURITANIA"
+    sComentario="478-MR-MRT-MAURITANIA"
+case 480
+    sValor="MAURITIUS"
+    sComentario="480-MU-MUS-MAURITIUS"
+case 175
+    sValor="MAYOTTE"
+    sComentario="175-YT-MYT-MAYOTTE"
+case 484
+    sValor="MEXICO"
+    sComentario="484-MX-MEX-MEXICO"
+case 583
+    sValor="MICRONESIA, FEDERATED STATES OF"
+    sComentario="583-FM-FSM-MICRONESIA, FEDERATED STATES OF"
+case 498
+    sValor="MOLDOVA, REPUBLIC OF"
+    sComentario="498-MD-MDA-MOLDOVA, REPUBLIC OF"
+case 492
+    sValor="MONACO"
+    sComentario="492-MC-MCO-MONACO"
+case 496
+    sValor="MONGOLIA"
+    sComentario="496-MN-MNG-MONGOLIA"
+case 500
+    sValor="MONTSERRAT"
+    sComentario="500-MS-MSR-MONTSERRAT"
+case 504
+    sValor="MOROCCO"
+    sComentario="504-MA-MAR-MOROCCO"
+case 508
+    sValor="MOZAMBIQUE"
+    sComentario="508-MZ-MOZ-MOZAMBIQUE"
+case 104
+    sValor="MYANMAR"
+    sComentario="104-MM-MMR-MYANMAR"
+case 516
+    sValor="NAMIBIA"
+    sComentario="516-NA-NAM-NAMIBIA"
+case 520
+    sValor="NAURU"
+    sComentario="520-NR-NRU-NAURU"
+case 524
+    sValor="NEPAL"
+    sComentario="524-NP-NPL-NEPAL"
+case 528
+    sValor="NETHERLANDS"
+    sComentario="528-NL-NLD-NETHERLANDS"
+case 530
+    sValor="NETHERLANDS ANTILLES"
+    sComentario="530-AN-ANT-NETHERLANDS ANTILLES"
+case 540
+    sValor="NEW CALEDONIA"
+    sComentario="540-NC-NCL-NEW CALEDONIA"
+case 554
+    sValor="NEW ZEALAND"
+    sComentario="554-NZ-NZL-NEW ZEALAND"
+case 558
+    sValor="NICARAGUA"
+    sComentario="558-NI-NIC-NICARAGUA"
+case 562
+    sValor="NIGER"
+    sComentario="562-NE-NER-NIGER"
+case 566
+    sValor="NIGERIA"
+    sComentario="566-NG-NGA-NIGERIA"
+case 570
+    sValor="NIUE"
+    sComentario="570-NU-NIU-NIUE"
+case 574
+    sValor="NORFOLK ISLAND"
+    sComentario="574-NF-NFK-NORFOLK ISLAND"
+case 580
+    sValor="NORTHERN MARIANA ISLANDS"
+    sComentario="580-MP-MNP-NORTHERN MARIANA ISLANDS"
+case 578
+    sValor="NORWAY"
+    sComentario="578-NO-NOR-NORWAY"
+case 512
+    sValor="OMAN"
+    sComentario="512-OM-OMN-OMAN"
+case 586
+    sValor="PAKISTAN"
+    sComentario="586-PK-PAK-PAKISTAN"
+case 585
+    sValor="PALAU"
+    sComentario="585-PW-PLW-PALAU"
+case 275
+    sValor="PALESTINIAN TERRITORY, Occupied"
+    sComentario="275-PS-PSE-PALESTINIAN TERRITORY, Occupied"
+case 591
+    sValor="PANAMA"
+    sComentario="591-PA-PAN-PANAMA"
+case 598
+    sValor="PAPUA NEW GUINEA"
+    sComentario="598-PG-PNG-PAPUA NEW GUINEA"
+case 600
+    sValor="PARAGUAY"
+    sComentario="600-PY-PRY-PARAGUAY"
+case 604
+    sValor="PERU"
+    sComentario="604-PE-PER-PERU"
+case 608
+    sValor="PHILIPPINES"
+    sComentario="608-PH-PHL-PHILIPPINES"
+case 612
+    sValor="PITCAIRN"
+    sComentario="612-PN-PCN-PITCAIRN"
+case 616
+    sValor="POLAND"
+    sComentario="616-PL-POL-POLAND"
+case 620
+    sValor="PORTUGAL"
+    sComentario="620-PT-PRT-PORTUGAL"
+case 630
+    sValor="PUERTO RICO"
+    sComentario="630-PR-PRI-PUERTO RICO"
+case 634
+    sValor="QATAR"
+    sComentario="634-QA-QAT-QATAR"
+case 638
+    sValor="REUNION"
+    sComentario="638-RE-REU-REUNION"
+case 642
+    sValor="ROMANIA"
+    sComentario="642-RO-ROU-ROMANIA"
+case 643
+    sValor="RUSSIAN FEDERATION"
+    sComentario="643-RU-RUS-RUSSIAN FEDERATION"
+case 646
+    sValor="RWANDA"
+    sComentario="646-RW-RWA-RWANDA"
+case 654
+    sValor="SAINT HELENA"
+    sComentario="654-SH-SHN-SAINT HELENA"
+case 659
+    sValor="SAINT KITTS AND NEVIS"
+    sComentario="659-KN-KNA-SAINT KITTS AND NEVIS"
+case 662
+    sValor="SAINT LUCIA"
+    sComentario="662-LC-LCA-SAINT LUCIA"
+case 666
+    sValor="SAINT PIERRE AND MIQUELON"
+    sComentario="666-PM-SPM-SAINT PIERRE AND MIQUELON"
+case 670
+    sValor="SAINT VINCENT AND THE GRENADINES"
+    sComentario="670-VC-VCT-SAINT VINCENT AND THE GRENADINES"
+case 882
+    sValor="SAMOA"
+    sComentario="882-WS-WSM-SAMOA"
+case 674
+    sValor="SAN MARINO"
+    sComentario="674-SM-SMR-SAN MARINO"
+case 678
+    sValor="SAO TOME AND PRINCIPE"
+    sComentario="678-ST-STP-SAO TOME AND PRINCIPE"
+case 682
+    sValor="SAUDI ARABIA"
+    sComentario="682-SA-SAU-SAUDI ARABIA"
+case 686
+    sValor="SENEGAL"
+    sComentario="686-SN-SEN-SENEGAL"
+case 891
+    sValor="SERBIA AND MONTENEGRO"
+    sComentario="891-CS-SCG-SERBIA AND MONTENEGRO"
+case 690
+    sValor="SEYCHELLES"
+    sComentario="690-SC-SYC-SEYCHELLES"
+case 694
+    sValor="SIERRA LEONE"
+    sComentario="694-SL-SLE-SIERRA LEONE"
+case 702
+    sValor="SINGAPORE"
+    sComentario="702-SG-SGP-SINGAPORE"
+case 703
+    sValor="SLOVAKIA"
+    sComentario="703-SK-SVK-SLOVAKIA"
+case 705
+    sValor="SLOVENIA"
+    sComentario="705-SI-SVN-SLOVENIA"
+case 90
+    sValor="SOLOMON ISLANDS"
+    sComentario="090-SB-SLB-SOLOMON ISLANDS"
+case 706
+    sValor="SOMALIA"
+    sComentario="706-SO-SOM-SOMALIA"
+case 710
+    sValor="SOUTH AFRICA"
+    sComentario="710-ZA-ZAF-SOUTH AFRICA"
+case 239
+    sValor="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
+    sComentario="239-GS-SGS-SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
+case 724
+    sValor="SPAIN"
+    sComentario="724-ES-ESP-SPAIN"
+case 144
+    sValor="SRI LANKA"
+    sComentario="144-LK-LKA-SRI LANKA"
+case 736
+    sValor="SUDAN"
+    sComentario="736-SD-SDN-SUDAN"
+case 740
+    sValor="SURINAME"
+    sComentario="740-SR-SUR-SURINAME"
+case 744
+    sValor="SVALBARD AND JAN MAYEN ISLANDS"
+    sComentario="744-SJ-SJM-SVALBARD AND JAN MAYEN ISLANDS"
+case 748
+    sValor="SWAZILAND"
+    sComentario="748-SZ-SWZ-SWAZILAND"
+case 752
+    sValor="SWEDEN"
+    sComentario="752-SE-SWE-SWEDEN"
+case 756
+    sValor="SWITZERLAND"
+    sComentario="756-CH-CHE-SWITZERLAND"
+case 760
+    sValor="SYRIAN ARAB REPUBLIC"
+    sComentario="760-SY-SYR-SYRIAN ARAB REPUBLIC"
+case 158
+    sValor="TAIWAN"
+    sComentario="158-TW-TWN-TAIWAN"
+case 762
+    sValor="TAJIKISTAN"
+    sComentario="762-TJ-TJK-TAJIKISTAN"
+case 834
+    sValor="TANZANIA, UNITED REPUBLIC OF"
+    sComentario="834-TZ-TZA-TANZANIA, UNITED REPUBLIC OF"
+case 764
+    sValor="THAILAND"
+    sComentario="764-TH-THA-THAILAND"
+case 626
+    sValor="TIMOR-LESTE"
+    sComentario="626-TL-TLS-TIMOR-LESTE"
+case 768
+    sValor="TOGO"
+    sComentario="768-TG-TGO-TOGO"
+case 772
+    sValor="TOKELAU"
+    sComentario="772-TK-TKL-TOKELAU"
+case 776
+    sValor="TONGA"
+    sComentario="776-TO-TON-TONGA"
+case 780
+    sValor="TRINIDAD AND TOBAGO"
+    sComentario="780-TT-TTO-TRINIDAD AND TOBAGO"
+case 788
+    sValor="TUNISIA"
+    sComentario="788-TN-TUN-TUNISIA"
+case 792
+    sValor="TURKEY"
+    sComentario="792-TR-TUR-TURKEY"
+case 795
+    sValor="TURKMENISTAN"
+    sComentario="795-TM-TKM-TURKMENISTAN"
+case 796
+    sValor="TURKS AND CAICOS ISLANDS"
+    sComentario="796-TC-TCA-TURKS AND CAICOS ISLANDS"
+case 798
+    sValor="TUVALU"
+    sComentario="798-TV-TUV-TUVALU"
+case 800
+    sValor="UGANDA"
+    sComentario="800-UG-UGA-UGANDA"
+case 804
+    sValor="UKRAINE"
+    sComentario="804-UA-UKR-UKRAINE"
+case 784
+    sValor="UNITED ARAB EMIRATES"
+    sComentario="784-AE-ARE-UNITED ARAB EMIRATES"
+case 826
+    sValor="UNITED KINGDOM"
+    sComentario="826-GB-GBR-UNITED KINGDOM"
+case 840
+    sValor="UNITED STATES"
+    sComentario="840-US-USA-UNITED STATES"
+case 581
+    sValor="UNITED STATES MINOR OUTLYING ISLANDS"
+    sComentario="581-UM-UMI-UNITED STATES MINOR OUTLYING ISLANDS"
+case 858
+    sValor="URUGUAY"
+    sComentario="858-UY-URY-URUGUAY"
+case 860
+    sValor="UZBEKISTAN"
+    sComentario="860-UZ-UZB-UZBEKISTAN"
+case 548
+    sValor="VANUATU"
+    sComentario="548-VU-VUT-VANUATU"
+case 336
+    sValor="VATICAN CITY STATE (HOLY SEE)"
+    sComentario="336-VA-VAT-VATICAN CITY STATE (HOLY SEE)"
+case 862
+    sValor="VENEZUELA"
+    sComentario="862-VE-VEN-VENEZUELA"
+case 704
+    sValor="VIET NAM"
+    sComentario="704-VN-VNM-VIET NAM"
+case 92
+    sValor="VIRGIN ISLANDS (BRITISH)"
+    sComentario="092-VG-VGB-VIRGIN ISLANDS (BRITISH)"
+case 850
+    sValor="VIRGIN ISLANDS (U.S.)"
+    sComentario="850-VI-VIR-VIRGIN ISLANDS (U.S.)"
+case 876
+    sValor="WALLIS AND FUTUNA ISLANDS"
+    sComentario="876-WF-WLF-WALLIS AND FUTUNA ISLANDS"
+case 732
+    sValor="WESTERN SAHARA"
+    sComentario="732-EH-ESH-WESTERN SAHARA"
+case 887
+    sValor="YEMEN"
+    sComentario="887-YE-YEM-YEMEN"
+case 894
+    sValor="ZAMBIA"
+    sComentario="894-ZM-ZMB-ZAMBIA"
+case 716
+    sValor="ZIMBABWE"
+    sComentario="716-ZW-ZWE-ZIMBABWE"
+case 0
+    sValor=""
+    sComentario="---"

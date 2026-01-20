@@ -1,0 +1,13 @@
+SIN CATEGORIA                 001
+VACA JOVEN                    002
+TORO                          003
+BUEY                          004
+VACA ADULTA                   005
+TERNERA                       006
+BECERRO                       007
+TERNERA V                     008
+TERNERA Z                     009
+AÑOJO                         010
+NOVILLO                       011
+CEBÓN                         012
+ERAL                          013

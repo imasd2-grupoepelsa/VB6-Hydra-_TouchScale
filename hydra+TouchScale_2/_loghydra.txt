@@ -1,0 +1,142 @@
+14/06/2016 11:35:48-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 010.008.001.165:3306
+14/06/2016 11:35:48-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=10.8.1.165
+14/06/2016 11:35:52-->Conexión realizada con:10.8.1.165
+14/06/2016 11:36:27-->14/06/2016 11:36:27 --> Fin Recepción todos los tipos de tique.
+14/06/2016 11:36:56-->14/06/2016 11:36:56 --> Fin Recepción todos los tipos de tique.
+14/06/2016 11:36:56-->SELECT * FROM Cabecera WHERE (reserv3="NO" OR reserv3="--") order by val(nume)
+14/06/2016 11:36:56-->14/06/2016 11:36:56 --> Fin exportación Tique.
+14/06/2016 11:36:57-->Detectado: C:\hydra+TouchScale\global.dat
+14/06/2016 11:37:00-->LLamada HydraTouch proceso: global.dat
+14/06/2016 11:37:00 Program HYDRATOUCH Started *************************************
+14/06/2016 11:37:00-->Check_Multi()
+14/06/2016 11:37:00-->Función Crea_fichero_ini
+14/06/2016 11:37:00-->hydratouch.ini = C:\hydra+TouchScale\hydratouch.ini
+14/06/2016 11:37:00-->pass.sec = C:\hydra+TouchScale\pass.sec
+14/06/2016 11:37:02-->Se revisa si necesario Actualizar: C:\hydra+TouchScale\dbasetouch.mdb
+14/06/2016 11:37:02-->corregir nulos
+14/06/2016 11:37:02-->Adaptación parámetro:/01GLOBAL
+14/06/2016 11:37:02-->               Queda:/001GLOBAL
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99973 Familia:103 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99918 Familia:101 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99914 Familia:101 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99899 Familia:101 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99626 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99622 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99621 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99546 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99545 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99544 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99543 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99487 Familia:112 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99246 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99243 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99241 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99239 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99238 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99237 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99236 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99235 Familia:123 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99234 Familia:108 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:99048 Familia:101 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:98931 Familia:116 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:98923 Familia:110 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:98920 Familia:101 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:98887 Familia:101 Mostrador:4
+14/06/2016 11:37:02-->Código de Retorno:0
+14/06/2016 11:37:02-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:02-->Código:98886 Familia:101 Mostrador:4
+14/06/2016 11:37:03-->Código de Retorno:0
+14/06/2016 11:37:03-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:03-->Código:98885 Familia:101 Mostrador:4
+14/06/2016 11:37:03-->Código de Retorno:0
+14/06/2016 11:37:03-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:03-->Código:98876 Familia:102 Mostrador:4
+14/06/2016 11:37:03-->Código de Retorno:0
+14/06/2016 11:37:03-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:03-->Código:98863 Familia:101 Mostrador:4
+14/06/2016 11:37:03-->Código de Retorno:0
+14/06/2016 11:37:03-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:03-->Código:98857 Familia:110 Mostrador:4
+14/06/2016 11:37:03-->Código de Retorno:0
+14/06/2016 11:37:03-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:03-->Código:98854 Familia:110 Mostrador:4
+14/06/2016 11:37:03-->Código de Retorno:0
+14/06/2016 11:37:03-->Entrada en Alta_artículo_mod
+14/06/2016 11:37:03-->Código:98818 Familia:75 Mostrador:8
+14/06/2016 11:37:03-->Error:3265 --> No se encontró el elemento en esta colección.
+14/06/2016 11:37:06 Program Finished ************************************
+14/06/2016 11:37:06-->Procesado: global.dat Por parte de HydraTouch.
+14/06/2016 11:37:06-->Envia de Modificaciones desde HydraTouch...
+14/06/2016 11:37:06 Program HYDRATOUCH Started *************************************
+14/06/2016 11:37:06-->Check_Multi()
+14/06/2016 11:37:06-->Función Crea_fichero_ini
+14/06/2016 11:37:06-->hydratouch.ini = C:\hydra+TouchScale\hydratouch.ini
+14/06/2016 11:37:06-->pass.sec = C:\hydra+TouchScale\pass.sec
+14/06/2016 11:37:06-->Se revisa si necesario Actualizar: C:\hydra+TouchScale\dbasetouch.mdb
+14/06/2016 11:37:06-->corregir nulos
+14/06/2016 11:37:06-->Adaptación parámetro:/01TZ
+14/06/2016 11:37:06-->               Queda:/001TZ
+14/06/2016 11:37:06-->mnuEnvio_modificaciones_Clik()
+14/06/2016 11:37:06-->Conectando con el centro remoto-->192.168.1.248,3306
+14/06/2016 11:37:06-->Conectando con el centro remoto-->192.168.1.248,3306
+14/06/2016 11:37:08-->No Ping:192.168.1.248
+14/06/2016 11:37:09 Program Finished ************************************
+14/06/2016 11:37:09-->Modificaciones Correctamente Enviadas Por parte de HydraTouch.
+14/06/2016 11:37:42-->14/06/2016 11:37:42 --> Fin Recepción todos los tipos de tique.
+14/06/2016 11:38:15-->14/06/2016 11:38:15 --> Fin Recepción todos los tipos de tique.
+14/06/2016 11:38:15-->SELECT * FROM Cabecera WHERE (reserv3="NO" OR reserv3="--") order by val(nume)
+14/06/2016 11:38:15-->14/06/2016 11:38:15 --> Fin exportación Tique.
+14/06/2016 11:38:18-->MINIMIZADO Por Usuario
+14/06/2016 11:38:18-->Solicitada Salida:0000000000     0000000001
+14/06/2016 11:38:53-->14/06/2016 11:38:53 --> Fin Recepción todos los tipos de tique.

@@ -1,0 +1,20 @@
+0
+"MOS","Mostrador",1,2,0
+"SUB","Subsección",3,5,0
+"FAM","Familia",6,9,0
+"COD","Código",10,15,0
+"PLU","Plu",16,19,0
+"PRC","Precio",20,26,0
+"CAD","Caducidad",27,29,0
+"TAR","Tara Asociada",30,34,0
+"TXT","Texto",35,59,0
+"TXT","Texto",60,84,1
+"TXT","Texto",85,109,2
+"TXT","Texto",110,124,3
+"TXT","Texto",125,149,4
+"TXT","Texto",150,174,5
+"TXT","Texto",175,199,6
+"TXT","Texto",200,224,7
+"TXT","Texto",225,249,8
+"TXT","Texto",250,274,9
+"WGH","Pesado/No pesado",275,275,0

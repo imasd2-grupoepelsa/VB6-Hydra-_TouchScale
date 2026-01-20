@@ -1,0 +1,12 @@
+0
+"BAJA","Distinto de 0 Indica si baja de artículo",3,4,0
+"MOS","Mostrador",7,10,0
+"COD","Código",11,16,0
+"TXT","Texto",30,54,0
+"PRC","Precio",130,137,0
+"WGH","Pesado/No pesado",198,198,0
+"TXT","Texto",216,240,1
+"TXT","Texto",241,265,2
+"TXT","Texto",266,290,3
+"TXT","Texto",291,315,4
+"CAD","Caducidad",316,319,0

@@ -1,0 +1,2275 @@
+ 
+ 
+ Fecha Inicial:04/06/2024 Fecha Inicial:04/06/2024
+ 
+ Resumen Impuestos del Listado
+ 
+                     % IVA        BASE            Impuesto
+                     _____________________________________
+                     00,00     2732,12                0,00
+                     _____________________________________
+              Totales:         2732,12               0,00
+ TOTAL Base+Impuestos:         2732,12
+ 
+ Detalle de Tiques realizados.
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 1#Fecha : 04/06/24 09:04:18#Tipo : Venta#Estado : Normal#EAN13: 2102001004853#Importe : 4,85
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7254     7254 BUR. POLLO 100%           7,95    0,61     0           4,85     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 1#Fecha : 04/06/24 09:12:27#Tipo : Venta#Estado : Normal#EAN13: 2102001024592#Importe : 24,59
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39627    0                              8,75    2,81     0           24,59    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 2#Fecha : 04/06/24 09:06:40#Tipo : Venta#Estado : Normal#EAN13: 2102002006405#Importe : 6,4
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20819    819  BURGUER MIXTA KG ELABORAC 8,95    0,585    0           5,24     0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    0,43     0           1,16     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 2#Fecha : 04/06/24 09:14:36#Tipo : Venta#Estado : Normal#EAN13: 2102002009185#Importe : 9,18
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39586    0                              4,5     1,02     0           4,59     0 (0,00 %)
+ 2   No        39586    0                              4,5     1,02     0           4,59     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 3#Fecha : 04/06/24 09:16:11#Tipo : Venta#Estado : Normal#EAN13: 2102003008095#Importe : 8,09
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 102#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        23251    3251 CENTRO CURADO NAVIDUL "CO 16,15   0,265    0           4,28     0 (0,00 %)
+ 2   No        37421    0                              7,99    0,25     0           2        0 (0,00 %)
+ 3   No        28242    8242 CARNE MEMBRILLO KG "CORTE 7,55    0,24     0           1,81     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 3#Fecha : 04/06/24 10:17:04#Tipo : Venta#Estado : Normal#EAN13: 2102003006176#Importe : 6,17
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39994    0                              9,95    0,62     0           6,17     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 4#Fecha : 04/06/24 09:16:28#Tipo : Venta#Estado : Normal#EAN13: 2102004012749#Importe : 12,74
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,265    0           3,18     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,26     0           3,12     0 (0,00 %)
+ 3   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,245    0           3,43     0 (0,00 %)
+ 4   No        13458    3458 PECHUGA PAVO EL POZO "COR 8,49    0,355    0           3,01     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 4#Fecha : 04/06/24 10:50:10#Tipo : Venta#Estado : Normal#EAN13: 2102004004430#Importe : 4,43
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39952    0                              10,95   0,405    0           4,43     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 5#Fecha : 04/06/24 11:00:06#Tipo : Venta#Estado : Normal#EAN13: 2102005004620#Importe : 4,62
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39625    0                              8,25    0,56     0           4,62     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 5#Fecha : 04/06/24 09:20:02#Tipo : Venta#Estado : Normal#EAN13: 2102005004668#Importe : 4,66
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41312    0                              6,99    0,255    0           1,78     0 (0,00 %)
+ 2   No        7357     7357 QUESO MEZCLA SEMI KG "COR 8,99    0,32     0           2,88     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 6#Fecha : 04/06/24 11:07:44#Tipo : Venta#Estado : Normal#EAN13: 2102006002885#Importe : 2,88
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39586    0                              4,5     0,64     0           2,88     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 6#Fecha : 04/06/24 09:21:09#Tipo : Venta#Estado : Normal#EAN13: 2102006033223#Importe : 33,22
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    2,185    0           13       0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    2,18     0           9,79     0 (0,00 %)
+ 3   No        41052    0                              3,95    2,64     0           10,43    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 7#Fecha : 04/06/24 09:24:22#Tipo : Venta#Estado : Normal#EAN13: 2102007006981#Importe : 6,98
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,55     0           3,27     0 (0,00 %)
+ 2   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    0,94     0           3,71     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 7#Fecha : 04/06/24 11:10:45#Tipo : Venta#Estado : Normal#EAN13: 2102007009067#Importe : 9,06
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39245    0                              5,95    0,72     0           4,28     0 (0,00 %)
+ 2   No        39994    0                              9,95    0,48     0           4,78     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 8#Fecha : 04/06/24 09:25:02#Tipo : Venta#Estado : Normal#EAN13: 2102008011458#Importe : 11,45
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        4986     4986 CALLOS PREP TERNERA BARRA 10,5    1,09     0           11,45    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 8#Fecha : 04/06/24 11:17:49#Tipo : Venta#Estado : Normal#EAN13: 2102008031609#Importe : 31,6
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39604    0                              9,95    1,88     0           18,71    0 (0,00 %)
+ 2   No        39994    0                              9,95    1,295    0           12,89    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 9#Fecha : 04/06/24 09:25:45#Tipo : Venta#Estado : Normal#EAN13: 2102009001922#Importe : 1,92
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        35427    5427 CHORIZO CRIOLLO KG        4,99    0,385    0           1,92     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 9#Fecha : 04/06/24 11:22:44#Tipo : Venta#Estado : Normal#EAN13: 2102009009881#Importe : 9,88
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39245    0                              5,95    0,59     0           3,51     0 (0,00 %)
+ 2   No        39994    0                              9,95    0,305    0           3,03     0 (0,00 %)
+ 3   No        39952    0                              10,95   0,305    0           3,34     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 10#Fecha : 04/06/24 09:30:41#Tipo : Venta#Estado : Normal#EAN13: 2102010016311#Importe : 16,31
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 102#
+ Líneas : 7#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,265    0           3,18     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,31     0           3,72     0 (0,00 %)
+ 3   No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,25     0           1,5      0 (0,00 %)
+ 4   No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,255    0           1,53     0 (0,00 %)
+ 5   No        41312    0                              6,99    0,26     0           1,82     0 (0,00 %)
+ 6   No        41312    0                              6,99    0,26     0           1,82     0 (0,00 %)
+ 7   No        34189    4189 CHORIZO PAMPLONA EXTRA KG 10,95   0,25     0           2,74     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 10#Fecha : 04/06/24 11:38:00#Tipo : Venta#Estado : Normal#EAN13: 2102010028383#Importe : 28,38
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39586    0                              4,5     3,035    0           13,66    0 (0,00 %)
+ 2   No        39586    0                              4,5     3,27     0           14,72    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 11#Fecha : 04/06/24 09:35:24#Tipo : Venta#Estado : Normal#EAN13: 2102011005420#Importe : 5,42
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,25     0           3        0 (0,00 %)
+ 2   No        7362     7362 CATALANA "CORTE"          9,5     0,255    0           2,42     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 11#Fecha : 04/06/24 12:03:07#Tipo : Venta#Estado : Normal#EAN13: 2102011006663#Importe : 6,66
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39245    0                              5,95    1,12     0           6,66     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 12#Fecha : 04/06/24 12:27:53#Tipo : Venta#Estado : Normal#EAN13: 2102012002657#Importe : 2,65
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39245    0                              5,95    0,445    0           2,65     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 12#Fecha : 04/06/24 09:35:40#Tipo : Venta#Estado : Normal#EAN13: 2102012018467#Importe : 18,46
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7190     7190 MANOS DE CERDO KG "CORTE" 6,2     1,105    0           6,85     0 (0,00 %)
+ 2   Si        20776    776  CHULETA DE CERDO KG       6,45    2,5      0           16,13    0 (0,00 %)
+ 3   No        41052    0                              3,95    2,5      0           9,88     0 (0,00 %)
+ 4   No        20779    779  PANCETA BACON KG          6,9     0,25     0           1,73     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 13#Fecha : 04/06/24 12:28:27#Tipo : Venta#Estado : Normal#EAN13: 2102013002540#Importe : 2,54
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40005    0                              14,95   0,17     0           2,54     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 13#Fecha : 04/06/24 09:42:21#Tipo : Venta#Estado : Normal#EAN13: 2102013014772#Importe : 14,77
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41052    0                              3,95    2,35     0           9,28     0 (0,00 %)
+ 2   No        21876    1876 BUR. BIG-AMERICAN KG      9,95    0,315    0           3,13     0 (0,00 %)
+ 3   No        7249     7249 PELOTA DE COCIDO KG "CORT 7,25    0,325    0           2,36     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 14#Fecha : 04/06/24 12:33:40#Tipo : Venta#Estado : Normal#EAN13: 2102014003157#Importe : 3,15
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39245    0                              5,95    0,53     0           3,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 14#Fecha : 04/06/24 09:43:21#Tipo : Venta#Estado : Normal#EAN13: 2102014002822#Importe : 2,82
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20811    811  BUR. JAMON/QUESO POLLO/CE 8,95    0,315    0           2,82     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 15#Fecha : 04/06/24 12:35:28#Tipo : Venta#Estado : Normal#EAN13: 2102015003361#Importe : 3,36
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40392    0                              9,75    0,345    0           3,36     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 15#Fecha : 04/06/24 09:43:56#Tipo : Venta#Estado : Normal#EAN13: 2102015004405#Importe : 4,4
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41312    0                              6,99    0,285    0           1,99     0 (0,00 %)
+ 2   No        38406    0                              7,64    0,315    0           2,41     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 16#Fecha : 04/06/24 12:56:40#Tipo : Venta#Estado : Normal#EAN13: 2102016016674#Importe : 16,67
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39604    0                              9,95    1,675    0           16,67    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 16#Fecha : 04/06/24 09:50:03#Tipo : Venta#Estado : Normal#EAN13: 2102016008372#Importe : 8,37
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,585    0           3,48     0 (0,00 %)
+ 2   No        7254     7254 BUR. POLLO 100%           7,95    0,615    0           4,89     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 17#Fecha : 04/06/24 13:16:09#Tipo : Venta#Estado : Normal#EAN13: 2102017009088#Importe : 9,08
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39625    0                              8,25    1,1      0           9,08     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 17#Fecha : 04/06/24 09:54:58#Tipo : Venta#Estado : Normal#EAN13: 2102017004564#Importe : 4,56
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,38     0           4,56     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 18#Fecha : 04/06/24 09:57:19#Tipo : Venta#Estado : Normal#EAN13: 2102018017983#Importe : 17,98
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    2,42     0           9,56     0 (0,00 %)
+ 2   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    1,415    0           8,42     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 18#Fecha : 04/06/24 13:25:53#Tipo : Venta#Estado : Normal#EAN13: 2102018003924#Importe : 3,92
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39625    0                              8,25    0,475    0           3,92     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 19#Fecha : 04/06/24 09:59:39#Tipo : Venta#Estado : Normal#EAN13: 2102019001875#Importe : 1,87
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        10745    745  JAMON COC BONNATUR ORO KG 10,99   0,17     0           1,87     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 19#Fecha : 04/06/24 13:53:43#Tipo : Venta#Estado : Normal#EAN13: 2102019004838#Importe : 4,83
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39625    0                              8,25    0,585    0           4,83     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 20#Fecha : 04/06/24 10:03:17#Tipo : Venta#Estado : Normal#EAN13: 2102020007118#Importe : 7,11
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        27535    7535 CENTRO JAMON RESERVA KG " 14,5    0,49     0           7,11     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 20#Fecha : 04/06/24 13:55:53#Tipo : Venta#Estado : Normal#EAN13: 2102020005947#Importe : 5,94
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39584    0                              6,95    0,855    0           5,94     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 21#Fecha : 04/06/24 10:10:25#Tipo : Venta#Estado : Normal#EAN13: 2102021010575#Importe : 10,57
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     0,98     0           5,98     0 (0,00 %)
+ 2   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,46     0           2,3      0 (0,00 %)
+ 3   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,385    0           2,29     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 21#Fecha : 04/06/24 15:17:34#Tipo : Venta#Estado : Normal#EAN13: 2102021000002#Importe : 0
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 124#
+ Líneas : 1#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   Si        39598    0                              11,95   0,22     0           2,63     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 22#Fecha : 04/06/24 10:17:37#Tipo : Venta#Estado : Normal#EAN13: 2102022005051#Importe : 5,05
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   Si        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,565    0           6,77     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,195    0           2,34     0 (0,00 %)
+ 3   No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,255    0           1,78     0 (0,00 %)
+ 4   No        7156     7156 MORTADELA ACEITUNAS POZO" 5,99    0,155    0           0,93     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 22#Fecha : 04/06/24 15:21:41#Tipo : Venta#Estado : Normal#EAN13: 2102022007796#Importe : 7,79
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 603#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39994    0                              9,95    0,22     0           2,19     0 (0,00 %)
+ 2   No        39584    0                              6,95    0,15     0           1,04     0 (0,00 %)
+ 3   No        40337    0                              8,95    0,51     0           4,56     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 23#Fecha : 04/06/24 10:23:49#Tipo : Venta#Estado : Normal#EAN13: 2102023014588#Importe : 14,58
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7571     7571 FIAMBRE SANDWICH KG "CORT 5,75    0,21     0           1,21     0 (0,00 %)
+ 2   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,19     0           2,66     0 (0,00 %)
+ 3   No        7148     7148 QUESO SEMI GARCIA BAQUERO 13,55   0,415    0           5,62     0 (0,00 %)
+ 4   No        23251    3251 CENTRO CURADO NAVIDUL "CO 16,15   0,315    0           5,09     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 23#Fecha : 04/06/24 15:22:05#Tipo : Venta#Estado : Normal#EAN13: 2102023002462#Importe : 2,46
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 603#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39952    0                              10,95   0,225    0           2,46     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 24#Fecha : 04/06/24 18:17:20#Tipo : Venta#Estado : Normal#EAN13: 2102024003888#Importe : 3,88
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 603#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39685    0                              11,95   0,325    0           3,88     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 24#Fecha : 04/06/24 10:29:07#Tipo : Venta#Estado : Normal#EAN13: 2102024026511#Importe : 26,51
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    5,905    0           26,51    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 25#Fecha : 04/06/24 19:49:25#Tipo : Venta#Estado : Normal#EAN13: 2102025007700#Importe : 7,7
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 603#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39732    0                              14,95   0,515    0           7,7      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 25#Fecha : 04/06/24 10:30:59#Tipo : Venta#Estado : Normal#EAN13: 2102025003900#Importe : 3,9
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,325    0           3,9      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 26#Fecha : 04/06/24 20:31:20#Tipo : Venta#Estado : Normal#EAN13: 2102026020548#Importe : 20,54
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 603#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39604    0                              9,95    1,33     0           13,23    0 (0,00 %)
+ 2   No        39954    0                              9,95    0,735    0           7,31     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 26#Fecha : 04/06/24 10:36:14#Tipo : Venta#Estado : Normal#EAN13: 2102026025598#Importe : 25,59
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,69     0           7,59     0 (0,00 %)
+ 2   Si        20776    776  CHULETA DE CERDO KG       6,45    2,73     0           17,61    0 (0,00 %)
+ 3   No        41052    0                              3,95    2,7      0           10,67    0 (0,00 %)
+ 4   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,725    0           7,33     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 27#Fecha : 04/06/24 10:37:42#Tipo : Venta#Estado : Normal#EAN13: 2102027000662#Importe : 0,66
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41312    0                              6,99    0,095    0           0,66     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 27#Fecha : 04/06/24 20:36:05#Tipo : Venta#Estado : Normal#EAN13: 2102027011286#Importe : 11,28
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 603#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39245    0                              5,95    0,535    0           3,18     0 (0,00 %)
+ 2   No        39952    0                              10,95   0,415    0           4,54     0 (0,00 %)
+ 3   No        40228    0                              13,95   0,255    0           3,56     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 28#Fecha : 04/06/24 20:37:05#Tipo : Venta#Estado : Normal#EAN13: 2102028008353#Importe : 8,35
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 603#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39603    0                              12,95   0,645    0           8,35     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 28#Fecha : 04/06/24 10:38:23#Tipo : Venta#Estado : Normal#EAN13: 2102028013081#Importe : 13,08
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,52     0           3,09     0 (0,00 %)
+ 2   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,745    0           3,72     0 (0,00 %)
+ 3   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,815    0           6,27     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 29#Fecha : 04/06/24 20:51:00#Tipo : Venta#Estado : Normal#EAN13: 2102029012847#Importe : 12,84
+ Mostrador : 6#BALANZA : 6#Identificación Vendedor : 603#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        39604    0                              9,95    1,29     0           12,84    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 29#Fecha : 04/06/24 10:45:44#Tipo : Venta#Estado : Normal#EAN13: 2102029023270#Importe : 23,27
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,87     0           7,72     0 (0,00 %)
+ 2   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    1,135    0           6,75     0 (0,00 %)
+ 3   No        7201     7201 CONEJO EXTRA "CORTE"      7,55    1,165    0           8,8      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 30#Fecha : 04/06/24 10:49:17#Tipo : Venta#Estado : Normal#EAN13: 2102030021746#Importe : 21,74
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,125    0           5,72     0 (0,00 %)
+ 2   No        7207     7207 CANAL DE CORDERO 12/16 "C 13,95   1,05     0           14,65    0 (0,00 %)
+ 3   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,305    0           1,37     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 30#Fecha : 04/06/24 21:30:22#Tipo : Venta#Estado : Normal#EAN13: 2102030003896#Importe : 3,89
+ Mostrador : 6#BALANZA : 7#Identificación Vendedor : 606#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40005    0                              14,95   0,26     0           3,89     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 31#Fecha : 04/06/24 10:50:24#Tipo : Venta#Estado : Normal#EAN13: 2102031013504#Importe : 13,5
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,3      0           3,6      0 (0,00 %)
+ 2   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,2      0           1,59     0 (0,00 %)
+ 3   No        10181    181  SOBRASADA CULAR IBERICA K 7,39    0,31     0           2,29     0 (0,00 %)
+ 4   No        41312    0                              6,99    0,18     0           1,26     0 (0,00 %)
+ 5   No        7357     7357 QUESO MEZCLA SEMI KG "COR 8,99    0,53     0           4,76     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 32#Fecha : 04/06/24 10:51:37#Tipo : Venta#Estado : Normal#EAN13: 2102032017426#Importe : 17,42
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,09     0           2,93     0 (0,00 %)
+ 2   No        7221     7221 MORCILLA OREADA "ONTINYEN 6,75    0,955    0           6,45     0 (0,00 %)
+ 3   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    1,045    0           8,04     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 33#Fecha : 04/06/24 10:51:59#Tipo : Venta#Estado : Normal#EAN13: 2102033027561#Importe : 27,56
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41052    0                              3,95    2,235    0           8,83     0 (0,00 %)
+ 2   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,835    0           6,42     0 (0,00 %)
+ 3   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    2,075    0           8,2      0 (0,00 %)
+ 4   No        20779    779  PANCETA BACON KG          6,9     0,595    0           4,11     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 34#Fecha : 04/06/24 10:52:26#Tipo : Venta#Estado : Normal#EAN13: 2102034000488#Importe : 0,48
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,06     0           0,48     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 35#Fecha : 04/06/24 10:52:55#Tipo : Venta#Estado : Normal#EAN13: 2102035001873#Importe : 1,87
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        6973     6973 PUNTAS JAMON SERRANO KG C 7,95    0,235    0           1,87     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 36#Fecha : 04/06/24 10:57:05#Tipo : Venta#Estado : Normal#EAN13: 2102036003678#Importe : 3,67
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 102#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,165    0           0,82     0 (0,00 %)
+ 2   No        21946    1946 MORCILLA DE CEBOLLA "MURC 8,5     0,105    0           0,89     0 (0,00 %)
+ 3   No        7752     7752 TOCINO IBERICO C/PIEL KG  4,5     0,18     0           0,81     0 (0,00 %)
+ 4   No        37718    0                              7,95    0,145    0           1,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 37#Fecha : 04/06/24 10:57:58#Tipo : Venta#Estado : Normal#EAN13: 2102037192432#Importe : 192,43
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 115#
+ Líneas : 15#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20817    817  LOMO CINTA EXTRA "KG"     5,95    3,92     0           23,32    0 (0,00 %)
+ 2   No        32708    2708 FILETE PAPADA KG          4,95    2,17     0           10,74    0 (0,00 %)
+ 3   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    3,08     0           13,83    0 (0,00 %)
+ 4   No        20779    779  PANCETA BACON KG          6,9     3,425    0           23,63    0 (0,00 %)
+ 5   No        35427    5427 CHORIZO CRIOLLO KG        4,99    3,215    0           16,04    0 (0,00 %)
+ 6   No        33366    3366 POLLO ENTERO CANAL KG "CO 3,09    7,285    0           22,51    0 (0,00 %)
+ 7   No        33366    3366 POLLO ENTERO CANAL KG "CO 3,09    6,795    0           21       0 (0,00 %)
+ 8   No        33366    3366 POLLO ENTERO CANAL KG "CO 3,09    6,22     0           19,22    0 (0,00 %)
+ 9   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,565    0           6,77     0 (0,00 %)
+ 10  No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,51     0           6,11     0 (0,00 %)
+ 11  No        7571     7571 FIAMBRE SANDWICH KG "CORT 5,75    1,055    0           6,07     0 (0,00 %)
+ 12  No        33366    3366 POLLO ENTERO CANAL KG "CO 3,09    3,955    0           12,22    0 (0,00 %)
+ 13  No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,49     0           3,43     0 (0,00 %)
+ 14  No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,54     0           3,77     0 (0,00 %)
+ 15  No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,54     0           3,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 38#Fecha : 04/06/24 11:09:46#Tipo : Venta#Estado : Normal#EAN13: 2102038002549#Importe : 2,54
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        6973     6973 PUNTAS JAMON SERRANO KG C 7,95    0,32     0           2,54     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 39#Fecha : 04/06/24 11:13:01#Tipo : Venta#Estado : Normal#EAN13: 2102039067073#Importe : 67,07
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 10#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    5,305    0           14,27    0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    3,34     0           8,98     0 (0,00 %)
+ 3   No        7204     7204 MOLLEJAS DE POLLO KG "COR 5,2     0,535    0           2,78     0 (0,00 %)
+ 4   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    2,16     0           8,53     0 (0,00 %)
+ 5   No        7243     7243 HUESOS PARA COCIDO A¥OJO  4,2     1,25     0           5,25     0 (0,00 %)
+ 6   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,13     0           5,07     0 (0,00 %)
+ 7   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    1,025    0           6,1      0 (0,00 %)
+ 8   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,935    0           4,67     0 (0,00 %)
+ 9   No        41052    0                              3,95    2,215    0           8,75     0 (0,00 %)
+ 10  No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,535    0           2,67     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 40#Fecha : 04/06/24 11:16:37#Tipo : Venta#Estado : Normal#EAN13: 2102040007495#Importe : 7,49
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,72     0           3,23     0 (0,00 %)
+ 2   No        20817    817  LOMO CINTA EXTRA "KG"     5,95    0,355    0           2,11     0 (0,00 %)
+ 3   No        32534    2534 TRASERO POLLO "CORTE"     2,69    0,8      0           2,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 41#Fecha : 04/06/24 11:16:55#Tipo : Venta#Estado : Normal#EAN13: 2102041006299#Importe : 6,29
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,525    0           6,29     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 42#Fecha : 04/06/24 11:18:58#Tipo : Venta#Estado : Normal#EAN13: 2102042006175#Importe : 6,17
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,515    0           6,17     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 43#Fecha : 04/06/24 11:23:17#Tipo : Venta#Estado : Normal#EAN13: 2102043011833#Importe : 11,83
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20786    786  CARETA DE CERDO KG ELABOR 5,56    1,55     0           8,62     0 (0,00 %)
+ 2   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,54     0           3,21     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 44#Fecha : 04/06/24 11:23:55#Tipo : Venta#Estado : Normal#EAN13: 2102044016240#Importe : 16,24
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,62     0           7,43     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,735    0           8,81     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 45#Fecha : 04/06/24 11:29:59#Tipo : Venta#Estado : Normal#EAN13: 2102045009265#Importe : 9,26
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,32     0           3,55     0 (0,00 %)
+ 2   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,52     0           2,59     0 (0,00 %)
+ 3   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,525    0           3,12     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 46#Fecha : 04/06/24 11:30:14#Tipo : Venta#Estado : Normal#EAN13: 2102046050945#Importe : 50,94
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 102#
+ Líneas : 13#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        23251    3251 CENTRO CURADO NAVIDUL "CO 16,15   0,25     0           4,04     0 (0,00 %)
+ 2   No        23251    3251 CENTRO CURADO NAVIDUL "CO 16,15   0,245    0           3,96     0 (0,00 %)
+ 3   No        7359     7359 QUESO FRESCO SERVILLETA K 8,45    0,7      0           5,92     0 (0,00 %)
+ 4   No        37917    0                              12,55   0,585    0           7,34     0 (0,00 %)
+ 5   No        13458    3458 PECHUGA PAVO EL POZO "COR 8,49    0,265    0           2,25     0 (0,00 %)
+ 6   No        34731    4731 PECH PAVO SELECCION 5M KG 14,95   0,265    0           3,96     0 (0,00 %)
+ 7   No        10745    745  JAMON COC BONNATUR ORO KG 10,99   0,26     0           2,86     0 (0,00 %)
+ 8   No        10364    364  CHORIZO EXTRA KG "CORTE"  7,95    0,105    0           0,83     0 (0,00 %)
+ 9   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,105    0           0,83     0 (0,00 %)
+ 10  No        7295     7295 MAASDAM 12 KG "CORTE"     9,99    0,46     0           4,6      0 (0,00 %)
+ 11  No        39911    0                              13,41   0,155    0           2,08     0 (0,00 %)
+ 12  No        7357     7357 QUESO MEZCLA SEMI KG "COR 8,99    0,34     0           3,06     0 (0,00 %)
+ 13  No        40783    0                              24,9    0,37     0           9,21     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 47#Fecha : 04/06/24 11:31:07#Tipo : Venta#Estado : Normal#EAN13: 2102047005845#Importe : 5,84
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,3      0           5,84     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 48#Fecha : 04/06/24 11:34:10#Tipo : Venta#Estado : Normal#EAN13: 2102048002911#Importe : 2,91
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7157     7157 MORTADELA SICILIANA POZO  5,99    0,485    0           2,91     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 49#Fecha : 04/06/24 11:37:36#Tipo : Venta#Estado : Normal#EAN13: 2102049004501#Importe : 4,5
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,375    0           4,5      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 50#Fecha : 04/06/24 11:40:44#Tipo : Venta#Estado : Normal#EAN13: 2102050011680#Importe : 11,68
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,75     0           4,71     0 (0,00 %)
+ 2   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,535    0           3,18     0 (0,00 %)
+ 3   No        33587    3587 LENGUA CERDO KG           6,95    0,545    0           3,79     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 51#Fecha : 04/06/24 11:42:04#Tipo : Venta#Estado : Normal#EAN13: 2102051006913#Importe : 6,91
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,3      0           3,6      0 (0,00 %)
+ 2   No        13458    3458 PECHUGA PAVO EL POZO "COR 8,49    0,255    0           2,16     0 (0,00 %)
+ 3   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,145    0           1,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 52#Fecha : 04/06/24 11:43:51#Tipo : Venta#Estado : Normal#EAN13: 2102052009487#Importe : 9,48
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,5      0           6        0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,29     0           3,48     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 53#Fecha : 04/06/24 11:46:21#Tipo : Venta#Estado : Normal#EAN13: 2102053006652#Importe : 6,65
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,585    0           3,48     0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,705    0           3,17     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 54#Fecha : 04/06/24 11:48:14#Tipo : Venta#Estado : Normal#EAN13: 2102054006187#Importe : 6,18
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,25     0           3        0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,265    0           3,18     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 55#Fecha : 04/06/24 11:55:22#Tipo : Venta#Estado : Normal#EAN13: 2102055017953#Importe : 17,95
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 115#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41052    0                              3,95    4,545    0           17,95    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 56#Fecha : 04/06/24 11:57:37#Tipo : Venta#Estado : Normal#EAN13: 2102056015101#Importe : 15,1
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        13458    3458 PECHUGA PAVO EL POZO "COR 8,49    0,305    0           2,59     0 (0,00 %)
+ 2   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,13     0           1,82     0 (0,00 %)
+ 3   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,35     0           4,2      0 (0,00 %)
+ 4   No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,215    0           1,5      0 (0,00 %)
+ 5   No        7359     7359 QUESO FRESCO SERVILLETA K 8,45    0,59     0           4,99     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 57#Fecha : 04/06/24 11:59:29#Tipo : Venta#Estado : Normal#EAN13: 2102057004463#Importe : 4,46
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        37917    0                              12,55   0,355    0           4,46     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 58#Fecha : 04/06/24 12:01:32#Tipo : Venta#Estado : Normal#EAN13: 2102058020738#Importe : 20,73
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    4,225    0           11,37    0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,23     0           5,52     0 (0,00 %)
+ 3   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,645    0           3,84     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 59#Fecha : 04/06/24 12:03:24#Tipo : Venta#Estado : Normal#EAN13: 2102059025794#Importe : 25,79
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20793    793  VACUNO 1B                 8,95    0,925    0           8,28     0 (0,00 %)
+ 2   No        34875    4875 SOLOMILLO VACUNO 1/2 PIEZ 19,95   0,81     0           16,16    0 (0,00 %)
+ 3   No        7203     7203 HIGADOS DE POLLO KG "CORT 3,85    0,35     0           1,35     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 60#Fecha : 04/06/24 12:06:12#Tipo : Venta#Estado : Normal#EAN13: 2102060003637#Importe : 3,63
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,52     0           3,63     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 61#Fecha : 04/06/24 12:07:59#Tipo : Venta#Estado : Normal#EAN13: 2102061010214#Importe : 10,21
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        33588    3588 SESOS CERDO KG            4,95    0,47     0           2,33     0 (0,00 %)
+ 2   No        7207     7207 CANAL DE CORDERO 12/16 "C 13,95   0,565    0           7,88     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 62#Fecha : 04/06/24 12:10:46#Tipo : Venta#Estado : Normal#EAN13: 2102062015850#Importe : 15,85
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20790    790  ENTRECOT DE VACUNO "CORTE 12,95   0,64     0           8,29     0 (0,00 %)
+ 2   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    1,27     0           7,56     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 63#Fecha : 04/06/24 12:12:09#Tipo : Venta#Estado : Normal#EAN13: 2102063006079#Importe : 6,07
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,15     0           2,1      0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,155    0           1,86     0 (0,00 %)
+ 3   No        41312    0                              6,99    0,165    0           1,15     0 (0,00 %)
+ 4   No        7156     7156 MORTADELA ACEITUNAS POZO" 5,99    0,16     0           0,96     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 64#Fecha : 04/06/24 12:15:26#Tipo : Venta#Estado : Normal#EAN13: 2102064015193#Importe : 15,19
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20790    790  ENTRECOT DE VACUNO "CORTE 12,95   0,775    0           10,04    0 (0,00 %)
+ 2   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    1,305    0           5,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 65#Fecha : 04/06/24 12:17:39#Tipo : Venta#Estado : Normal#EAN13: 2102065006169#Importe : 6,16
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7357     7357 QUESO MEZCLA SEMI KG "COR 8,99    0,36     0           3,24     0 (0,00 %)
+ 2   No        12866    2866 JAMON CURADO LEON C/V RES 16,5    0,12     0           1,98     0 (0,00 %)
+ 3   No        24430    4430 MORTADELA BOLONIA KG CORT 8,15    0,115    0           0,94     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 66#Fecha : 04/06/24 12:32:11#Tipo : Venta#Estado : Normal#EAN13: 2102066005734#Importe : 5,73
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,4      0           2,38     0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,515    0           2,31     0 (0,00 %)
+ 3   No        7752     7752 TOCINO IBERICO C/PIEL KG  4,5     0,075    0           0,34     0 (0,00 %)
+ 4   No        7752     7752 TOCINO IBERICO C/PIEL KG  4,5     0,155    0           0,7      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 67#Fecha : 04/06/24 12:33:35#Tipo : Venta#Estado : Normal#EAN13: 2102067032272#Importe : 32,27
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 6#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    2,195    0           8,67     0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,405    0           3,78     0 (0,00 %)
+ 3   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,755    0           7,88     0 (0,00 %)
+ 4   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    1,175    0           6,99     0 (0,00 %)
+ 5   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,535    0           3,18     0 (0,00 %)
+ 6   No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,355    0           1,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 68#Fecha : 04/06/24 12:34:35#Tipo : Venta#Estado : Normal#EAN13: 2102068001956#Importe : 1,95
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40809    0                              6,5     0,3      0           1,95     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 69#Fecha : 04/06/24 12:37:19#Tipo : Venta#Estado : Normal#EAN13: 2102069004307#Importe : 4,3
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20793    793  VACUNO 1B                 8,95    0,32     0           2,86     0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,32     0           1,44     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 70#Fecha : 04/06/24 12:38:10#Tipo : Venta#Estado : Normal#EAN13: 2102070010724#Importe : 10,72
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7295     7295 MAASDAM 12 KG "CORTE"     9,99    0,35     0           3,5      0 (0,00 %)
+ 2   No        10364    364  CHORIZO EXTRA KG "CORTE"  7,95    0,255    0           2,03     0 (0,00 %)
+ 3   No        7158     7158 MORTADELA DE PAVO KG "COR 7,25    0,255    0           1,85     0 (0,00 %)
+ 4   No        7359     7359 QUESO FRESCO SERVILLETA K 8,45    0,395    0           3,34     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 71#Fecha : 04/06/24 12:41:14#Tipo : Venta#Estado : Normal#EAN13: 2102071006269#Importe : 6,26
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,465    0           2,09     0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,49     0           2,2      0 (0,00 %)
+ 3   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,18     0           0,9      0 (0,00 %)
+ 4   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,215    0           1,07     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 72#Fecha : 04/06/24 12:43:37#Tipo : Venta#Estado : Normal#EAN13: 2102072012962#Importe : 12,96
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        10364    364  CHORIZO EXTRA KG "CORTE"  7,95    0,31     0           2,46     0 (0,00 %)
+ 2   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,305    0           2,42     0 (0,00 %)
+ 3   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,33     0           3,96     0 (0,00 %)
+ 4   No        35779    5779 QUESO OVEJA CURADO KG "CO 14,99   0,275    0           4,12     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 73#Fecha : 04/06/24 12:43:49#Tipo : Venta#Estado : Normal#EAN13: 2102073015078#Importe : 15,07
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,615    0           7,03     0 (0,00 %)
+ 2   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    0,71     0           2,8      0 (0,00 %)
+ 3   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,88     0           5,24     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 74#Fecha : 04/06/24 12:45:34#Tipo : Venta#Estado : Normal#EAN13: 2102074004712#Importe : 4,71
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20791    0                              14,95   0,315    0           4,71     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 75#Fecha : 04/06/24 12:49:12#Tipo : Venta#Estado : Normal#EAN13: 2102075013966#Importe : 13,96
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    0,515    0           1,39     0 (0,00 %)
+ 2   No        7213     7213 CHULETA PALO O RI¤ONADA " 24,95   0,21     0           5,24     0 (0,00 %)
+ 3   No        33587    3587 LENGUA CERDO KG           6,95    0,815    0           5,66     0 (0,00 %)
+ 4   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,28     0           1,67     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 76#Fecha : 04/06/24 12:49:35#Tipo : Venta#Estado : Normal#EAN13: 2102076011206#Importe : 11,2
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,265    0           1,58     0 (0,00 %)
+ 2   No        7254     7254 BUR. POLLO 100%           7,95    0,61     0           4,85     0 (0,00 %)
+ 3   No        23831    3831 BUR. VACUNO 100%          7,95    0,6      0           4,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 77#Fecha : 04/06/24 12:54:30#Tipo : Venta#Estado : Normal#EAN13: 2102077019232#Importe : 19,23
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40095    0                              12,95   1,075    0           13,92    0 (0,00 %)
+ 2   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,74     0           3,69     0 (0,00 %)
+ 3   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,325    0           1,62     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 78#Fecha : 04/06/24 12:59:19#Tipo : Venta#Estado : Normal#EAN13: 2102078016728#Importe : 16,72
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7201     7201 CONEJO EXTRA "CORTE"      7,55    1,195    0           9,02     0 (0,00 %)
+ 2   No        20785    785  SOLOMILLO CERDO KG        9,95    0,51     0           5,07     0 (0,00 %)
+ 3   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,585    0           2,63     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 79#Fecha : 04/06/24 12:59:50#Tipo : Venta#Estado : Normal#EAN13: 2102079017724#Importe : 17,72
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7207     7207 CANAL DE CORDERO 12/16 "C 13,95   1,27     0           17,72    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 80#Fecha : 04/06/24 13:06:04#Tipo : Venta#Estado : Normal#EAN13: 2102080004874#Importe : 4,87
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,15     0           1,8      0 (0,00 %)
+ 2   No        7167     7167 CHORIZO IBERICO KG "CORTE 12,35   0,095    0           1,17     0 (0,00 %)
+ 3   No        7161     7161 SALCHICHON IBERICO KG "CO 12,35   0,1      0           1,24     0 (0,00 %)
+ 4   No        7156     7156 MORTADELA ACEITUNAS POZO" 5,99    0,11     0           0,66     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 81#Fecha : 04/06/24 13:07:36#Tipo : Venta#Estado : Normal#EAN13: 2102081016524#Importe : 16,52
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,205    0           5,41     0 (0,00 %)
+ 2   No        7222     7222 BLANQUET "ONTINYENT"      6,75    0,155    0           1,05     0 (0,00 %)
+ 3   No        37718    0                              7,95    0,33     0           2,62     0 (0,00 %)
+ 4   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    1,25     0           7,44     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 82#Fecha : 04/06/24 13:09:50#Tipo : Venta#Estado : Normal#EAN13: 2102082006777#Importe : 6,77
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 103#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,22     0           2,64     0 (0,00 %)
+ 2   No        38406    0                              7,64    0,54     0           4,13     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 83#Fecha : 04/06/24 13:12:30#Tipo : Venta#Estado : Normal#EAN13: 2102083006622#Importe : 6,62
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 103#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        9869     9869 QUESO FLOR ESGUEVA KG "CO 19,99   0,295    0           5,9      0 (0,00 %)
+ 2   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,09     0           0,72     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 84#Fecha : 04/06/24 13:17:51#Tipo : Venta#Estado : Normal#EAN13: 2102084020849#Importe : 20,84
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 10#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    2,055    0           8,12     0 (0,00 %)
+ 2   No        20779    779  PANCETA BACON KG          6,9     0,48     0           3,31     0 (0,00 %)
+ 3   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,115    0           0,57     0 (0,00 %)
+ 4   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,13     0           0,65     0 (0,00 %)
+ 5   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,155    0           0,77     0 (0,00 %)
+ 6   No        35427    5427 CHORIZO CRIOLLO KG        4,99    0,205    0           1,02     0 (0,00 %)
+ 7   No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,085    0           0,42     0 (0,00 %)
+ 8   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,385    0           2,29     0 (0,00 %)
+ 9   No        20793    793  VACUNO 1B                 8,95    0,255    0           2,28     0 (0,00 %)
+ 10  No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,315    0           1,41     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 85#Fecha : 04/06/24 13:18:09#Tipo : Venta#Estado : Normal#EAN13: 2102085008518#Importe : 8,51
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    2,155    0           8,51     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 86#Fecha : 04/06/24 13:19:53#Tipo : Venta#Estado : Normal#EAN13: 2102086003222#Importe : 3,22
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    0,815    0           3,22     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 87#Fecha : 04/06/24 13:23:18#Tipo : Venta#Estado : Normal#EAN13: 2102087005195#Importe : 5,19
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,495    0           2,47     0 (0,00 %)
+ 2   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,545    0           2,72     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 88#Fecha : 04/06/24 13:24:00#Tipo : Venta#Estado : Normal#EAN13: 2102088004296#Importe : 4,29
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,595    0           4,29     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 89#Fecha : 04/06/24 13:31:34#Tipo : Venta#Estado : Normal#EAN13: 2102089026662#Importe : 26,66
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    1,19     0           7,08     0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    2,4      0           10,78    0 (0,00 %)
+ 3   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,515    0           2,57     0 (0,00 %)
+ 4   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,64     0           3,19     0 (0,00 %)
+ 5   No        20779    779  PANCETA BACON KG          6,9     0,44     0           3,04     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 90#Fecha : 04/06/24 13:38:56#Tipo : Venta#Estado : Normal#EAN13: 2102090024312#Importe : 24,31
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,255    0           5,63     0 (0,00 %)
+ 2   No        7189     7189 RABO CARNUDO KG "CORTE"   4,95    1,135    0           5,62     0 (0,00 %)
+ 3   No        20786    786  CARETA DE CERDO KG ELABOR 5,56    0,965    0           5,37     0 (0,00 %)
+ 4   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    1        0           7,69     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 91#Fecha : 04/06/24 13:39:03#Tipo : Venta#Estado : Normal#EAN13: 2102091008243#Importe : 8,24
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,27     0           3,24     0 (0,00 %)
+ 2   No        30137    137  QUESO ROMERO CUADRADO KG  19,99   0,25     0           5        0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 92#Fecha : 04/06/24 13:39:35#Tipo : Venta#Estado : Normal#EAN13: 2102092021142#Importe : 21,14
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20824    824  HUESOS DE CERDO "ELAB. PR 4,95    0,66     0           3,27     0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,42     0           1,89     0 (0,00 %)
+ 3   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,85     0           6,54     0 (0,00 %)
+ 4   No        21947    1947 LONGANIZA ROJA 1 MURCIA   8,5     0,76     0           6,46     0 (0,00 %)
+ 5   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,5      0           2,98     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 93#Fecha : 04/06/24 13:46:28#Tipo : Venta#Estado : Normal#EAN13: 2102093009668#Importe : 9,66
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 102#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,27     0           3,24     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,16     0           1,92     0 (0,00 %)
+ 3   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,225    0           2,7      0 (0,00 %)
+ 4   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,15     0           1,8      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 94#Fecha : 04/06/24 13:48:36#Tipo : Venta#Estado : Normal#EAN13: 2102094018737#Importe : 18,73
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,685    0           4,08     0 (0,00 %)
+ 2   No        20793    793  VACUNO 1B                 8,95    0,695    0           6,22     0 (0,00 %)
+ 3   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,37     0           1,66     0 (0,00 %)
+ 4   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,88     0           6,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 95#Fecha : 04/06/24 13:53:24#Tipo : Venta#Estado : Normal#EAN13: 2102095021026#Importe : 21,02
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20794    794  COSTILLA/CHURRASCO VACUNO 9,95    1,645    0           16,37    0 (0,00 %)
+ 2   No        7240     7240 HIGADO DE A¥OJO KG "CORTE 9,2     0,505    0           4,65     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 96#Fecha : 04/06/24 13:54:50#Tipo : Venta#Estado : Normal#EAN13: 2102096016854#Importe : 16,85
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        23831    3831 BUR. VACUNO 100%          7,95    2,12     0           16,85    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 97#Fecha : 04/06/24 14:00:29#Tipo : Venta#Estado : Normal#EAN13: 2102097005338#Importe : 5,33
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 103#
+ Líneas : 4#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   Si        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    5,21     0           31       0 (0,00 %)
+ 2   No        27278    7278 CHORIZO TUNEL PIM BCA KG  13,55   0,17     0           2,3      0 (0,00 %)
+ 3   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,17     0           2,04     0 (0,00 %)
+ 4   No        10364    364  CHORIZO EXTRA KG "CORTE"  7,95    0,125    0           0,99     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 98#Fecha : 04/06/24 14:04:12#Tipo : Venta#Estado : Normal#EAN13: 2102098016685#Importe : 16,68
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41052    0                              3,95    2,215    0           8,75     0 (0,00 %)
+ 2   No        7201     7201 CONEJO EXTRA "CORTE"      7,55    1,05     0           7,93     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 99#Fecha : 04/06/24 14:06:50#Tipo : Venta#Estado : Normal#EAN13: 2102099002342#Importe : 2,34
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    0,87     0           2,34     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 100#Fecha : 04/06/24 14:14:13#Tipo : Venta#Estado : Normal#EAN13: 2102100004129#Importe : 4,12
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   Si        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,245    0           2,94     0 (0,00 %)
+ 2   No        20814    814  BUR. PIZZA POLLO/CERDO    8,95    0,46     0           4,12     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 101#Fecha : 04/06/24 14:17:47#Tipo : Venta#Estado : Normal#EAN13: 2102101005743#Importe : 5,74
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,2      0           2,8      0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,245    0           2,94     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 102#Fecha : 04/06/24 14:24:54#Tipo : Venta#Estado : Normal#EAN13: 2102102001898#Importe : 1,89
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40809    0                              6,5     0,29     0           1,89     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 103#Fecha : 04/06/24 14:32:06#Tipo : Venta#Estado : Normal#EAN13: 2102103012404#Importe : 12,4
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 106#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        27535    7535 CENTRO JAMON RESERVA KG " 14,5    0,42     0           6,09     0 (0,00 %)
+ 2   No        27535    7535 CENTRO JAMON RESERVA KG " 14,5    0,435    0           6,31     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 104#Fecha : 04/06/24 14:33:08#Tipo : Venta#Estado : Normal#EAN13: 2102104004125#Importe : 4,12
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20811    811  BUR. JAMON/QUESO POLLO/CE 8,95    0,46     0           4,12     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 105#Fecha : 04/06/24 14:38:21#Tipo : Venta#Estado : Normal#EAN13: 2102105027192#Importe : 27,19
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34875    4875 SOLOMILLO VACUNO 1/2 PIEZ 19,95   0,66     0           13,17    0 (0,00 %)
+ 2   No        20790    790  ENTRECOT DE VACUNO "CORTE 12,95   0,835    0           10,81    0 (0,00 %)
+ 3   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,54     0           3,21     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 106#Fecha : 04/06/24 14:48:12#Tipo : Venta#Estado : Normal#EAN13: 2102106008909#Importe : 8,9
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,375    0           2,23     0 (0,00 %)
+ 2   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,225    0           1,34     0 (0,00 %)
+ 3   No        32534    2534 TRASERO POLLO "CORTE"     2,69    0,975    0           2,62     0 (0,00 %)
+ 4   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,455    0           2,71     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 107#Fecha : 04/06/24 14:49:40#Tipo : Venta#Estado : Normal#EAN13: 2102107001879#Importe : 1,87
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,315    0           1,87     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 108#Fecha : 04/06/24 15:15:26#Tipo : Venta#Estado : Normal#EAN13: 2102108001342#Importe : 1,34
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,225    0           1,34     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 109#Fecha : 04/06/24 15:33:05#Tipo : Venta#Estado : Normal#EAN13: 2102109005172#Importe : 5,17
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,265    0           3,18     0 (0,00 %)
+ 2   No        38406    0                              7,64    0,26     0           1,99     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 110#Fecha : 04/06/24 15:36:34#Tipo : Venta#Estado : Normal#EAN13: 2102110008247#Importe : 8,24
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    1,045    0           6,22     0 (0,00 %)
+ 2   No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,175    0           0,87     0 (0,00 %)
+ 3   No        7222     7222 BLANQUET "ONTINYENT"      6,75    0,17     0           1,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 111#Fecha : 04/06/24 15:55:07#Tipo : Venta#Estado : Normal#EAN13: 2102111015350#Importe : 15,35
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    0,615    0           2,76     0 (0,00 %)
+ 2   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,975    0           7,5      0 (0,00 %)
+ 3   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,465    0           2,77     0 (0,00 %)
+ 4   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,39     0           2,32     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 112#Fecha : 04/06/24 15:56:01#Tipo : Venta#Estado : Normal#EAN13: 2102112002830#Importe : 2,83
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        38406    0                              7,64    0,37     0           2,83     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 113#Fecha : 04/06/24 15:57:54#Tipo : Venta#Estado : Normal#EAN13: 2102113001887#Importe : 1,88
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,18     0           0,9      0 (0,00 %)
+ 2   No        7222     7222 BLANQUET "ONTINYENT"      6,75    0,145    0           0,98     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 114#Fecha : 04/06/24 16:13:06#Tipo : Venta#Estado : Normal#EAN13: 2102114024793#Importe : 24,79
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 101#
+ Líneas : 6#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    1,02     0           4,03     0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,39     0           3,74     0 (0,00 %)
+ 3   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,585    0           3,48     0 (0,00 %)
+ 4   No        7197     7197 JAMONCITOS DE POLLO KG "C 3,9     1,31     0           5,11     0 (0,00 %)
+ 5   No        20817    817  LOMO CINTA EXTRA "KG"     5,95    0,75     0           4,46     0 (0,00 %)
+ 6   No        7190     7190 MANOS DE CERDO KG "CORTE" 6,2     0,64     0           3,97     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 115#Fecha : 04/06/24 16:26:01#Tipo : Venta#Estado : Normal#EAN13: 2102115008969#Importe : 8,96
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    0,815    0           2,19     0 (0,00 %)
+ 2   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,88     0           6,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 116#Fecha : 04/06/24 16:38:37#Tipo : Venta#Estado : Normal#EAN13: 2102116003789#Importe : 3,78
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     0,62     0           3,78     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 117#Fecha : 04/06/24 16:45:32#Tipo : Venta#Estado : Normal#EAN13: 2102117028224#Importe : 28,22
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 6#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        21946    1946 MORCILLA DE CEBOLLA "MURC 8,5     0,645    0           5,48     0 (0,00 %)
+ 2   No        20777    777  CHULETA AGUJA CERDO KG    6,1     1,03     0           6,28     0 (0,00 %)
+ 3   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,265    0           6,09     0 (0,00 %)
+ 4   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,16     0           3,12     0 (0,00 %)
+ 5   No        21947    1947 LONGANIZA ROJA 1 MURCIA   8,5     0,455    0           3,87     0 (0,00 %)
+ 6   No        20779    779  PANCETA BACON KG          6,9     0,49     0           3,38     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 118#Fecha : 04/06/24 16:47:24#Tipo : Venta#Estado : Normal#EAN13: 2102118017159#Importe : 17,15
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    6,375    0           17,15    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 119#Fecha : 04/06/24 17:00:07#Tipo : Venta#Estado : Normal#EAN13: 2102119005056#Importe : 5,05
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32350    0                              4,95    1,02     0           5,05     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 120#Fecha : 04/06/24 17:28:52#Tipo : Venta#Estado : Normal#EAN13: 2102120005717#Importe : 5,71
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    1,145    0           5,71     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 121#Fecha : 04/06/24 17:29:38#Tipo : Venta#Estado : Normal#EAN13: 2102121063594#Importe : 63,59
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 113#
+ Líneas : 16#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     0,62     0           3,78     0 (0,00 %)
+ 2   No        20787    787  CARRILLADA C/HUESO KG ELA 7,95    0,605    0           4,81     0 (0,00 %)
+ 3   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,43     0           2,56     0 (0,00 %)
+ 4   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,485    0           2,89     0 (0,00 %)
+ 5   No        41924    0                              15,99   0,195    0           3,12     0 (0,00 %)
+ 6   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,2      0           1,19     0 (0,00 %)
+ 7   No        20823    0                              12,95   0,405    0           5,24     0 (0,00 %)
+ 8   No        20817    817  LOMO CINTA EXTRA "KG"     5,95    0,675    0           4,02     0 (0,00 %)
+ 9   No        7225     7225 BOTIFARRON FINO "ONTINYEN 6,75    2,04     0           13,77    0 (0,00 %)
+ 10  No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    2,085    0           10,4     0 (0,00 %)
+ 11  No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,38     0           1,9      0 (0,00 %)
+ 12  No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,25     0           1,25     0 (0,00 %)
+ 13  No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,455    0           2,27     0 (0,00 %)
+ 14  No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,305    0           1,81     0 (0,00 %)
+ 15  No        20817    817  LOMO CINTA EXTRA "KG"     5,95    0,61     0           3,63     0 (0,00 %)
+ 16  No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,16     0           0,95     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 122#Fecha : 04/06/24 17:47:29#Tipo : Venta#Estado : Normal#EAN13: 2102122006118#Importe : 6,11
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,51     0           6,11     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 123#Fecha : 04/06/24 17:51:31#Tipo : Venta#Estado : Normal#EAN13: 2102123005004#Importe : 5
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20824    824  HUESOS DE CERDO "ELAB. PR 4,95    1,01     0           5        0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 124#Fecha : 04/06/24 17:53:35#Tipo : Venta#Estado : Normal#EAN13: 2102124002200#Importe : 2,2
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,37     0           2,2      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 125#Fecha : 04/06/24 17:57:59#Tipo : Venta#Estado : Normal#EAN13: 2102125009543#Importe : 9,54
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        12866    2866 JAMON CURADO LEON C/V RES 16,5    0,295    0           4,87     0 (0,00 %)
+ 2   No        10745    745  JAMON COC BONNATUR ORO KG 10,99   0,425    0           4,67     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 126#Fecha : 04/06/24 18:11:51#Tipo : Venta#Estado : Normal#EAN13: 2102126020370#Importe : 20,37
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20790    790  ENTRECOT DE VACUNO "CORTE 12,95   0,92     0           11,91    0 (0,00 %)
+ 2   No        7240     7240 HIGADO DE A¥OJO KG "CORTE 9,2     0,92     0           8,46     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 127#Fecha : 04/06/24 18:14:49#Tipo : Venta#Estado : Normal#EAN13: 2102127005642#Importe : 5,64
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7357     7357 QUESO MEZCLA SEMI KG "COR 8,99    0,36     0           3,24     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,2      0           2,4      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 128#Fecha : 04/06/24 18:18:34#Tipo : Venta#Estado : Normal#EAN13: 2102128010621#Importe : 10,62
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,555    0           6,65     0 (0,00 %)
+ 2   No        38406    0                              7,64    0,52     0           3,97     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 129#Fecha : 04/06/24 18:22:24#Tipo : Venta#Estado : Normal#EAN13: 2102129025594#Importe : 25,59
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    3,085    0           12,19    0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,43     0           6,54     0 (0,00 %)
+ 3   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,55     0           6,86     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 130#Fecha : 04/06/24 18:25:49#Tipo : Venta#Estado : Normal#EAN13: 2102130010565#Importe : 10,56
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,35     0           2,45     0 (0,00 %)
+ 2   No        41312    0                              6,99    0,5      0           3,5      0 (0,00 %)
+ 3   No        7159     7159 MORTADELA IBERICA LEGADO  8,45    0,545    0           4,61     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 131#Fecha : 04/06/24 18:30:17#Tipo : Venta#Estado : Normal#EAN13: 2102131003924#Importe : 3,92
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7164     7164 SALCHICHON EXTRA ROLFHO K 11,99   0,19     0           2,28     0 (0,00 %)
+ 2   No        34189    4189 CHORIZO PAMPLONA EXTRA KG 10,95   0,15     0           1,64     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 132#Fecha : 04/06/24 18:31:22#Tipo : Venta#Estado : Normal#EAN13: 2102132001752#Importe : 1,75
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        10072    72   PATE BOSQUES PLATO CERAM  12,95   0,135    0           1,75     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 133#Fecha : 04/06/24 18:35:39#Tipo : Venta#Estado : Normal#EAN13: 2102133003946#Importe : 3,94
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        10364    364  CHORIZO EXTRA KG "CORTE"  7,95    0,245    0           1,95     0 (0,00 %)
+ 2   No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,25     0           1,99     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 134#Fecha : 04/06/24 18:38:00#Tipo : Venta#Estado : Normal#EAN13: 2102134007288#Importe : 7,28
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32534    2534 TRASERO POLLO "CORTE"     2,69    2,705    0           7,28     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 135#Fecha : 04/06/24 18:53:51#Tipo : Venta#Estado : Normal#EAN13: 2102135010430#Importe : 10,43
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        12866    2866 JAMON CURADO LEON C/V RES 16,5    0,245    0           4,04     0 (0,00 %)
+ 2   No        12866    2866 JAMON CURADO LEON C/V RES 16,5    0,26     0           4,29     0 (0,00 %)
+ 3   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,15     0           2,1      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 136#Fecha : 04/06/24 18:56:41#Tipo : Venta#Estado : Normal#EAN13: 2102136004094#Importe : 4,09
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     0,67     0           4,09     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 137#Fecha : 04/06/24 18:58:10#Tipo : Venta#Estado : Normal#EAN13: 2102137004253#Importe : 4,25
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,715    0           4,25     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 138#Fecha : 04/06/24 19:00:03#Tipo : Venta#Estado : Normal#EAN13: 2102138009547#Importe : 9,54
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,3      0           3,6      0 (0,00 %)
+ 2   No        7171     7171 CA¥A LOMO CURADO KG "CORT 13,99   0,155    0           2,17     0 (0,00 %)
+ 3   No        37917    0                              12,55   0,3      0           3,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 139#Fecha : 04/06/24 19:04:40#Tipo : Venta#Estado : Normal#EAN13: 2102139008495#Importe : 8,49
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,33     0           3,96     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,24     0           2,88     0 (0,00 %)
+ 3   No        7157     7157 MORTADELA SICILIANA POZO  5,99    0,275    0           1,65     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 140#Fecha : 04/06/24 19:07:33#Tipo : Venta#Estado : Normal#EAN13: 2102140020677#Importe : 20,67
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 101#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20790    790  ENTRECOT DE VACUNO "CORTE 12,95   0,635    0           8,22     0 (0,00 %)
+ 2   No        20785    785  SOLOMILLO CERDO KG        9,95    0,8      0           7,96     0 (0,00 %)
+ 3   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,385    0           1,92     0 (0,00 %)
+ 4   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,255    0           1,27     0 (0,00 %)
+ 5   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,26     0           1,3      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 141#Fecha : 04/06/24 19:09:54#Tipo : Venta#Estado : Normal#EAN13: 2102141003754#Importe : 3,75
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,305    0           1,83     0 (0,00 %)
+ 2   No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,32     0           1,92     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 142#Fecha : 04/06/24 19:17:06#Tipo : Venta#Estado : Normal#EAN13: 2102142037307#Importe : 37,3
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 101#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     2,05     0           12,51    0 (0,00 %)
+ 2   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    0,675    0           5,19     0 (0,00 %)
+ 3   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    2,265    0           10,17    0 (0,00 %)
+ 4   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    1,585    0           9,43     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 143#Fecha : 04/06/24 19:18:54#Tipo : Venta#Estado : Normal#EAN13: 2102143010910#Importe : 10,91
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        32503    2503 JAMON COC. ARTESANO EL PO 11,99   0,305    0           3,66     0 (0,00 %)
+ 2   No        39242    0                              12,99   0,22     0           2,86     0 (0,00 %)
+ 3   No        10364    364  CHORIZO EXTRA KG "CORTE"  7,95    0,27     0           2,15     0 (0,00 %)
+ 4   No        30136    0                              16,6    0,135    0           2,24     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 144#Fecha : 04/06/24 19:23:42#Tipo : Venta#Estado : Normal#EAN13: 2102144009104#Importe : 9,1
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        11869    1869 BOLITAS DE POLLO KG "CORT 9,95    0,915    0           9,1      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 145#Fecha : 04/06/24 19:25:29#Tipo : Venta#Estado : Normal#EAN13: 2102145009158#Importe : 9,15
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        11869    1869 BOLITAS DE POLLO KG "CORT 9,95    0,92     0           9,15     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 146#Fecha : 04/06/24 19:25:55#Tipo : Venta#Estado : Normal#EAN13: 2102146169714#Importe : 169,71
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 115#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20817    817  LOMO CINTA EXTRA "KG"     5,95    12,595   0           74,94    0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    11,705   0           31,49    0 (0,00 %)
+ 3   No        32534    2534 TRASERO POLLO "CORTE"     2,69    7,82     0           21,04    0 (0,00 %)
+ 4   No        7203     7203 HIGADOS DE POLLO KG "CORT 3,85    2,92     0           11,24    0 (0,00 %)
+ 5   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    5,21     0           31       0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 147#Fecha : 04/06/24 19:26:26#Tipo : Venta#Estado : Normal#EAN13: 2102147009019#Importe : 9,01
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,52     0           3,11     0 (0,00 %)
+ 2   No        40331    0                              9,99    0,3      0           3        0 (0,00 %)
+ 3   No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,415    0           2,9      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 148#Fecha : 04/06/24 19:32:02#Tipo : Venta#Estado : Normal#EAN13: 2102148017051#Importe : 17,05
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 5#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   Si        30136    0                              16,6    0,075    0           1,25     0 (0,00 %)
+ 2   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,505    0           3        0 (0,00 %)
+ 3   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    0,515    0           2,57     0 (0,00 %)
+ 4   No        20779    779  PANCETA BACON KG          6,9     0,365    0           2,52     0 (0,00 %)
+ 5   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    1,165    0           8,96     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 149#Fecha : 04/06/24 19:33:19#Tipo : Venta#Estado : Normal#EAN13: 2102149005019#Importe : 5,01
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        33363    3363 LONGANIZA FRESCA "ELAB. P 4,99    1,005    0           5,01     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 150#Fecha : 04/06/24 19:35:35#Tipo : Venta#Estado : Normal#EAN13: 2102150005756#Importe : 5,75
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 118#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40809    0                              6,5     0,45     0           2,93     0 (0,00 %)
+ 2   No        20814    814  BUR. PIZZA POLLO/CERDO    8,95    0,315    0           2,82     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 151#Fecha : 04/06/24 19:37:20#Tipo : Venta#Estado : Normal#EAN13: 2102151009364#Importe : 9,36
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,215    0           5,46     0 (0,00 %)
+ 2   No        20777    777  CHULETA AGUJA CERDO KG    6,1     0,64     0           3,9      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 152#Fecha : 04/06/24 19:43:26#Tipo : Venta#Estado : Normal#EAN13: 2102152008410#Importe : 8,41
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    1,135    0           4,48     0 (0,00 %)
+ 2   No        32534    2534 TRASERO POLLO "CORTE"     2,69    1,46     0           3,93     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 153#Fecha : 04/06/24 19:48:16#Tipo : Venta#Estado : Normal#EAN13: 2102153009317#Importe : 9,31
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34688    4688 ALAS POLLO KG "CORTE"     3,95    0,96     0           3,79     0 (0,00 %)
+ 2   No        7197     7197 JAMONCITOS DE POLLO KG "C 3,9     1,415    0           5,52     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 154#Fecha : 04/06/24 19:48:36#Tipo : Venta#Estado : Normal#EAN13: 2102154009194#Importe : 9,19
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20790    790  ENTRECOT DE VACUNO "CORTE 12,95   0,71     0           9,19     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 155#Fecha : 04/06/24 19:52:24#Tipo : Venta#Estado : Normal#EAN13: 2102155057484#Importe : 57,48
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   2,65     0           31,77    0 (0,00 %)
+ 2   No        30136    0                              16,6    0,075    0           1,25     0 (0,00 %)
+ 3   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   2,04     0           24,46    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 156#Fecha : 04/06/24 19:53:44#Tipo : Venta#Estado : Normal#EAN13: 2102156012581#Importe : 12,58
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    1,145    0           6,81     0 (0,00 %)
+ 2   No        18107    8107 LOMO CINTA TIERNIZADO KG  5,95    0,97     0           5,77     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 157#Fecha : 04/06/24 19:56:18#Tipo : Venta#Estado : Normal#EAN13: 2102157009122#Importe : 9,12
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     1,495    0           9,12     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 158#Fecha : 04/06/24 19:57:27#Tipo : Venta#Estado : Normal#EAN13: 2102158004928#Importe : 4,92
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,155    0           1,86     0 (0,00 %)
+ 2   No        7164     7164 SALCHICHON EXTRA ROLFHO K 11,99   0,255    0           3,06     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 159#Fecha : 04/06/24 19:57:41#Tipo : Venta#Estado : Normal#EAN13: 2102159001919#Importe : 1,91
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        37718    0                              7,95    0,14     0           1,11     0 (0,00 %)
+ 2   No        37719    0                              7,95    0,1      0           0,8      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 160#Fecha : 04/06/24 19:58:42#Tipo : Venta#Estado : Normal#EAN13: 2102160003384#Importe : 3,38
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20779    779  PANCETA BACON KG          6,9     0,49     0           3,38     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 161#Fecha : 04/06/24 19:59:36#Tipo : Venta#Estado : Normal#EAN13: 2102161000986#Importe : 0,98
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        40809    0                              6,5     0,15     0           0,98     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 162#Fecha : 04/06/24 20:00:32#Tipo : Venta#Estado : Normal#EAN13: 2102162006536#Importe : 6,53
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,545    0           6,53     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 163#Fecha : 04/06/24 20:01:42#Tipo : Venta#Estado : Normal#EAN13: 2102163005019#Importe : 5,01
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,115    0           5,01     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 164#Fecha : 04/06/24 20:03:04#Tipo : Venta#Estado : Normal#EAN13: 2102164006855#Importe : 6,85
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,75     0           4,46     0 (0,00 %)
+ 2   No        7254     7254 BUR. POLLO 100%           7,95    0,3      0           2,39     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 165#Fecha : 04/06/24 20:04:08#Tipo : Venta#Estado : Normal#EAN13: 2102165003297#Importe : 3,29
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        13458    3458 PECHUGA PAVO EL POZO "COR 8,49    0,19     0           1,61     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,14     0           1,68     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 166#Fecha : 04/06/24 20:07:04#Tipo : Venta#Estado : Normal#EAN13: 2102166007744#Importe : 7,74
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,36     0           1,8      0 (0,00 %)
+ 2   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,35     0           1,75     0 (0,00 %)
+ 3   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,705    0           4,19     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 167#Fecha : 04/06/24 20:09:35#Tipo : Venta#Estado : Normal#EAN13: 2102167002939#Importe : 2,93
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        21947    1947 LONGANIZA ROJA 1 MURCIA   8,5     0,345    0           2,93     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 168#Fecha : 04/06/24 20:14:34#Tipo : Venta#Estado : Normal#EAN13: 2102168004840#Importe : 4,84
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        41312    0                              6,99    0,28     0           1,96     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,24     0           2,88     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 169#Fecha : 04/06/24 20:18:19#Tipo : Venta#Estado : Normal#EAN13: 2102169008717#Importe : 8,71
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        9945     9945 LONGANIZA DE PAYES KG "CO 19,95   0,265    0           5,29     0 (0,00 %)
+ 2   No        23551    3551 PECHUGA PAVO BRASEADA KG  12,65   0,27     0           3,42     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 170#Fecha : 04/06/24 20:19:42#Tipo : Venta#Estado : Normal#EAN13: 2102170007549#Importe : 7,54
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        37917    0                              12,55   0,4      0           5,02     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,21     0           2,52     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 171#Fecha : 04/06/24 20:20:34#Tipo : Venta#Estado : Normal#EAN13: 2102171037071#Importe : 37,07
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 114#
+ Líneas : 16#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        38403    0                              8,61    0,135    0           1,16     0 (0,00 %)
+ 2   No        13458    3458 PECHUGA PAVO EL POZO "COR 8,49    0,03     0           0,25     0 (0,00 %)
+ 3   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,02     0           0,24     0 (0,00 %)
+ 4   No        41312    0                              6,99    0,025    0           0,17     0 (0,00 %)
+ 5   No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,185    0           1,11     0 (0,00 %)
+ 6   No        34189    4189 CHORIZO PAMPLONA EXTRA KG 10,95   0,12     0           1,31     0 (0,00 %)
+ 7   No        7362     7362 CATALANA "CORTE"          9,5     0,05     0           0,48     0 (0,00 %)
+ 8   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,025    0           0,3      0 (0,00 %)
+ 9   No        23251    3251 CENTRO CURADO NAVIDUL "CO 16,15   0,045    0           0,73     0 (0,00 %)
+ 10  No        12866    2866 JAMON CURADO LEON C/V RES 16,5    0,02     0           0,33     0 (0,00 %)
+ 11  No        7361     7361 SALCHICHON EXTRA KG "CORT 7,95    0,07     0           0,56     0 (0,00 %)
+ 12  No        30137    137  QUESO ROMERO CUADRADO KG  19,99   0,025    0           0,5      0 (0,00 %)
+ 13  No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,665    0           7,97     0 (0,00 %)
+ 14  No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   1,72     0           20,62    0 (0,00 %)
+ 15  No        34676    4676 QUESO EDAM BARRA KG "CORT 6,99    0,11     0           0,77     0 (0,00 %)
+ 16  No        4992     4992 PECHUGA PAVO KG "CORTE"   5,99    0,095    0           0,57     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 172#Fecha : 04/06/24 20:25:21#Tipo : Venta#Estado : Normal#EAN13: 2102172015207#Importe : 15,2
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 101#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,37     0           2,2      0 (0,00 %)
+ 2   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,2      0           5,39     0 (0,00 %)
+ 3   No        20785    785  SOLOMILLO CERDO KG        9,95    0,765    0           7,61     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 173#Fecha : 04/06/24 20:31:00#Tipo : Venta#Estado : Normal#EAN13: 2102173010911#Importe : 10,91
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20777    777  CHULETA AGUJA CERDO KG    6,1     1,345    0           8,2      0 (0,00 %)
+ 2   No        20783    783  OSSOBUCO/CODILLO CERDO KG 5,95    0,455    0           2,71     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 174#Fecha : 04/06/24 20:31:54#Tipo : Venta#Estado : Normal#EAN13: 2102174006975#Importe : 6,97
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7357     7357 QUESO MEZCLA SEMI KG "COR 8,99    0,775    0           6,97     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 175#Fecha : 04/06/24 20:33:20#Tipo : Venta#Estado : Normal#EAN13: 2102175005403#Importe : 5,4
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        37917    0                              12,55   0,43     0           5,4      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 176#Fecha : 04/06/24 20:37:48#Tipo : Venta#Estado : Normal#EAN13: 2102176011021#Importe : 11,02
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7197     7197 JAMONCITOS DE POLLO KG "C 3,9     1,12     0           4,37     0 (0,00 %)
+ 2   No        20777    777  CHULETA AGUJA CERDO KG    6,1     1,09     0           6,65     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 177#Fecha : 04/06/24 20:41:51#Tipo : Venta#Estado : Normal#EAN13: 2102177034630#Importe : 34,63
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 101#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20780    780  MAGRO/PALETA/PICADA CERDO 4,49    1,625    0           7,3      0 (0,00 %)
+ 2   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    1,075    0           5,36     0 (0,00 %)
+ 3   No        33365    3365 LONGANIZA ROJA FRESCA "EL 4,99    0,56     0           2,79     0 (0,00 %)
+ 4   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,415    0           2,07     0 (0,00 %)
+ 5   No        34069    4069 COSTILLA CERDO ESP HORNO  7,69    2,225    0           17,11    0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 178#Fecha : 04/06/24 20:43:18#Tipo : Venta#Estado : Normal#EAN13: 2102178020441#Importe : 20,44
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        21947    1947 LONGANIZA ROJA 1 MURCIA   8,5     1,155    0           9,82     0 (0,00 %)
+ 2   No        20779    779  PANCETA BACON KG          6,9     0,465    0           3,21     0 (0,00 %)
+ 3   No        18467    8467 MORCILLA FRESCA "ONTINYEN 4,99    0,7      0           3,49     0 (0,00 %)
+ 4   No        33364    3364 CHORIZO FRESCO "ELAB. PRO 4,99    0,495    0           2,47     0 (0,00 %)
+ 5   No        35427    5427 CHORIZO CRIOLLO KG        4,99    0,29     0           1,45     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 179#Fecha : 04/06/24 20:44:57#Tipo : Venta#Estado : Normal#EAN13: 2102179003061#Importe : 3,06
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,255    0           3,06     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 180#Fecha : 04/06/24 20:45:35#Tipo : Venta#Estado : Normal#EAN13: 2102180006273#Importe : 6,27
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 108#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20785    785  SOLOMILLO CERDO KG        9,95    0,63     0           6,27     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 181#Fecha : 04/06/24 20:57:23#Tipo : Venta#Estado : Normal#EAN13: 2102181008672#Importe : 8,67
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        23831    3831 BUR. VACUNO 100%          7,95    0,31     0           2,46     0 (0,00 %)
+ 2   No        7249     7249 PELOTA DE COCIDO KG "CORT 7,25    0,29     0           2,1      0 (0,00 %)
+ 3   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    0,69     0           4,11     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 182#Fecha : 04/06/24 21:01:43#Tipo : Venta#Estado : Normal#EAN13: 2102182002082#Importe : 2,08
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,35     0           2,08     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 183#Fecha : 04/06/24 21:02:51#Tipo : Venta#Estado : Normal#EAN13: 2102183004146#Importe : 4,14
+ Mostrador : 1#BALANZA : 10#Identificación Vendedor : 108#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        7359     7359 QUESO FRESCO SERVILLETA K 8,45    0,17     0           1,44     0 (0,00 %)
+ 2   No        15155    5155 JAMON SERRANO BODEGA "COR 11,99   0,225    0           2,7      0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 184#Fecha : 04/06/24 21:04:51#Tipo : Venta#Estado : Normal#EAN13: 2102184011938#Importe : 11,93
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        20823    0                              12,95   0,565    0           7,32     0 (0,00 %)
+ 2   No        23831    3831 BUR. VACUNO 100%          7,95    0,58     0           4,61     0 (0,00 %)
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 185#Fecha : 04/06/24 21:21:43#Tipo : Venta#Estado : Normal#EAN13: 2102185012941#Importe : 12,94
+ Mostrador : 1#BALANZA : 12#Identificación Vendedor : 108#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        34560    4560 LOMO 1/2 HORNO ARTESANO K 5,95    0,54     0           3,21     0 (0,00 %)
+ 2   No        35508    5508 LOMO ADOBADO TIERNIZADO K 5,95    0,46     0           2,74     0 (0,00 %)
+ 3   No        34691    4691 PECHUGA POLLO ENTERA S/H  5,95    1,175    0           6,99     0 (0,00 %)

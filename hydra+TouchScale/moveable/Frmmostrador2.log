@@ -1,0 +1,7 @@
+Línea 9: la propiedad Icon de FrmMostrador2 tenía una referencia a archivo no válida.
+Línea 60: la propiedad ItemData de CmbCOM tenía una referencia a archivo no válida.
+Línea 62: la propiedad List de CmbCOM tenía una referencia a archivo no válida.
+Línea 132: la propiedad ItemData de CmbMostrador tenía una referencia a archivo no válida.
+Línea 134: la propiedad List de CmbMostrador tenía una referencia a archivo no válida.
+Línea 151: la propiedad ItemData de CmbEnviar tenía una referencia a archivo no válida.
+Línea 153: la propiedad List de CmbEnviar tenía una referencia a archivo no válida.

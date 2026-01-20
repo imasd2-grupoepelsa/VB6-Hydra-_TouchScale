@@ -1,0 +1,36 @@
+0
+"COD","Código",7,12,0
+"MOS","Mostrador",14,15,0
+"PLU","Plu",17,20,0
+"SUB","Subsección",22,24,0
+"FAM","Familia",26,29,0
+"PRC","Precio",31,37,0
+"WGH","Tipo de venta (pesado/no pesado)",39,39,0
+"CAD","Caducidad",41,43,0
+"TLT","Tipo de letra",45,45,0
+"TXT","Texto",47,71,0
+"TAR","Tara Asociada",73,77,0
+"JTEC","Juego de Tecla en la sección",79,80,0
+"TEC","Tecla",82,84,0
+"CAD","Caducidad",86,88,0
+"PRE","Consumo preferente",90,92,0
+"TXT","Texto",100,124,1
+"TXT","Texto",126,150,2
+"TXT","Texto",152,176,3
+"TXT","Texto",178,202,4
+"TXT","Texto",204,228,5
+"TXT","Texto",230,254,6
+"TXT","Texto",256,280,7
+"TXT","Texto",282,306,8
+"TXT","Texto",308,332,9
+"TXT","Texto",334,358,10
+"TXT","Texto",360,384,11
+"TXT","Texto",386,410,12
+"TXT","Texto",412,436,13
+"TXT","Texto",438,462,14
+"TXT","Texto",464,488,15
+"TXT","Texto",490,514,16
+"TXT","Texto",516,540,17
+"TXT","Texto",542,566,18
+"TXT","Texto",568,592,19
+"TXT","Texto",594,618,20

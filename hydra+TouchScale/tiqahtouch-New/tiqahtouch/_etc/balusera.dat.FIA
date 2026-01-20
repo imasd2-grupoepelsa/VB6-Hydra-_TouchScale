@@ -1,0 +1,18 @@
+0
+"COD","Código",1,6,0
+"MOS","Mostrador",7,8,0
+"PLU","Plu",9,12,0
+"PRC","Precio",13,18,0
+"FAM","Familia",19,20,0
+"IVA","Tipo de IVA",21,21,0
+"TXT","Texto",22,46,0
+"TXT","Texto",47,71,1
+"TXT","Texto",72,96,2
+"TXT","Texto",97,121,3
+"TXT","Texto",122,146,4
+"TXT","Texto",147,171,5
+"TXT","Texto",172,196,6
+"TXT","Texto",197,221,7
+"TXT","Texto",222,246,8
+"TXT","Texto",247,271,9
+"TXT","Texto",272,296,10

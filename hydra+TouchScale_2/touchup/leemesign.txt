@@ -1,0 +1,1 @@
+c:\hydra+touchscale>signtool sign /f "c:\hydra+touchscale\ccfhomologa.p12" /p 1154CcfCcf /t http://timestamp.digicert.com "c:\hydra+touchscale\hydratouch.exe"

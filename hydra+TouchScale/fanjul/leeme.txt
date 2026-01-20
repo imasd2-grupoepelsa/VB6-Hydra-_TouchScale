@@ -1,0 +1,8 @@
+roberto@instalacionesfanjul.com
+
+Queremos interconectar balanza colgante touch scale con bdp.El bdp ya genera un fichero directamente  
+para el hydra que es el artcon. lo absorbe bien pero le mete 5000 de tara a los articulos pesados, 
+ademas no envia los cambios automaticamente a las balanzas.
+Otra cosa es el fichero de tikets que generan las balanzas no tiene nada que ver el nuevo con el antiguo, 
+te paso unas pruebas.
+    un saludo

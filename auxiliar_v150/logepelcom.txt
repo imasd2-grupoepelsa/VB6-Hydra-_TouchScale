@@ -1,0 +1,6 @@
+08/06/2007 16:13:23-->Reset del OCX completado
+08/06/2007 16:13:23-->OCX Cargado
+08/06/2007 16:13:26-->Recibida Orden de RESET
+08/06/2007 16:13:26-->Reset del OCX completado
+08/06/2007 16:13:26-->Reset del OCX completado
+08/06/2007 16:13:26-->OCX Descargado

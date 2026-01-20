@@ -1,0 +1,29 @@
+Public Declare Function FtpGetFileSize Lib "wininet.dll" Alias "FtpGetFileSizeA" _
+(ByVal hFtpSession As Long, ByVal lpszFileSize As Long) As Long
+Public Declare Function FtpSetCurrentDirectory Lib "wininet.dll" Alias "FtpSetCurrentDirectoryA" _
+(ByVal hFtpSession As Long, ByVal lpszDirectory As String) As Boolean
+
+Private Const MAXDWORD As Double = (2 ^ 32) - 1
+
+private sub getfilesize()
+Dim hFile as long,filesize as long 
+bActiveSession = False
+hOpen = 0
+hConnection = 0
+dwType = FTP_TRANSFER_TYPE_BINARY
+Call Connect 'this connects to FTPserver
+'...change the current directory to the required one using FtpSetCurrentDirectory
+
+hFile = FtpOpenFile(hConnection, "20021219849324.wav", &H80000000, dwType, 0)
+If hFile = 0 Then
+ErrorOut Err.LastDllError, "FtpOpenFile"
+Exit Sub
+End If
+Dim nFileSizeLow As Long
+Dim nFileSizeHigh As Long
+Dim sfilesize As String
+nFileSizeLow = FtpGetFileSize(hFile, nFileSizeHigh)
+filesize = (nFileSizeHigh * (MAXDWORD + 1) + nFileSizeLow)
+msgbox "Filesize in bytes: " & filesize 
+end sub
+

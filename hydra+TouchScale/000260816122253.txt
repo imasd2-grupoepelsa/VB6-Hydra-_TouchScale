@@ -1,0 +1,72 @@
+ 
+ 
+ Fecha Inicial:26/08/2016 Fecha Inicial:26/08/2016
+ 
+ Resumen Impuestos del Listado
+ 
+                     % IVA        BASE            Impuesto
+                     _____________________________________
+                     11,00        5,13                0,57
+                     22,00       19,38                4,26
+                     33,00        0,00                0,00
+                     44,00        0,00                0,00
+                     _____________________________________
+              Totales:           89,46               4,83
+ TOTAL Base+Impuestos:           94,29
+ 
+ Detalle de Tiques realizados.
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 100000000
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 1#Fecha : 26/08/16 12:05:54#Tipo : Cancel.#Estado : Cancelado#EAN13: #Importe : 39,33
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 39,33
+ Descuentos : 0
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 100000000
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 2#Fecha : 26/08/16 12:06:40#Tipo : Venta#Estado : Normal#EAN13: 1111111111116#Importe : 52,32
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 52,32
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        1        0    MYWAY                     1,5     2        0           2,7      1 (11,00 %)
+ 2   No        2        0    Alas de pollo             12,99   0        0           12,99    0 (0,00 %)
+ 3   No        3        0    Albondigas jardinera      12,99   0        0           10,65    2 (22,00 %)
+ 4   No        4        0    Albondigas sanfaina       12,99   0        0           12,99    0 (0,00 %)
+ 5   No        4        0    Albondigas sanfaina       12,99   0        0           12,99    0 (0,00 %)
+ % IVA        BASE            Impuesto
+ 11,00        2,43                0,27
+ 22,00        8,73                1,92
+ 33,00        0,00                0,00
+ 44,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 10001#Fecha : 26/08/16 10:28:08#Tipo : Venta#Estado : Normal#EAN13: 6666666666666#Importe : 28,98
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 28,98
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        1        0    MYWAY                     1,5     2        0           3        1 (11,00 %)
+ 2   No        2        0    Alas de pollo             12,99   0        0           12,99    0 (0,00 %)
+ 3   No        3        0    Albondigas jardinera      12,99   0        0           12,99    2 (22,00 %)
+ % IVA        BASE            Impuesto
+ 11,00        2,70                0,30
+ 22,00       10,65                2,34
+ 33,00        0,00                0,00
+ 44,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada :                
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 10002#Fecha : 26/08/16 11:57:21#Tipo : Venta#Estado : Normal#EAN13: 1111111111116#Importe : 12,99
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 12,99
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        4        0    Albondigas sanfaina       12,99   0        0           12,99    0 (0,00 %)
+ % IVA        BASE            Impuesto
+ 11,00        0,00                0,00
+ 22,00        0,00                0,00
+ 33,00        0,00                0,00
+ 44,00        0,00                0,00

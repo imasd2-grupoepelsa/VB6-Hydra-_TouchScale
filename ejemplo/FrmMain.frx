@@ -1,0 +1,15 @@
+ÿ;Cabeceras de tique:
+.- NetStat: ‘N’, ‘L’.
+    Tique en red (‘N’) o local (‘L’).
+    Los tiques de red copiados en local se guardan en la tabla LocalHTicktes con NetStat=’N’.
+.- TckType: ‘N’, ‘O’
+    Tique “Normal” o  “Order” (encargo).
+    Los tiques encargo sólo se marcan como tales, no se realiza ninguna gestión especial.
+.- Status: ‘O’, ‘P’, ‘C’, ’D’, ‘R’, ‘N’, ‘X’
+    Estado del tique: abierto (‘O’), en impresión (‘P’), cerrado (‘C’), cancelado (‘D’),
+    recargado en tique abierto (‘R’),  recargado en tique cerrado (‘N’), cancelado manualmente (‘X’)
+Líneas de tique:
+.- LineType: ‘1’, ‘0’
+    Línea “normal” (‘1’) o cancelada (‘0’).
+.- TTare: ‘ ‘ , ‘W’, ‘M’, ‘I’  Tipo de tara aplicado en la operación. Tara 
+    acumulativa/pesada (‘W‘), manual (‘M’), programada en el artículo (‘I’), sin tara (‘ ‘)

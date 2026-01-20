@@ -1,0 +1,41 @@
+0
+"COD","Código",1,6,0
+"MOS","Mostrador",7,8,0
+"PLU","Plu",9,12,0
+"TXT","Texto",13,37,0
+"PRC","Precio",38,44,0
+"CAD","Caducidad",45,47,0
+"CBA","Código de barras",48,60,0
+"ETQ","Etiqueta",61,63,0
+"FAM","Familia",64,66,0
+"IVA","Tipo de IVA",67,67,0
+"MER","Merma en tanto por ciento",68,72,0
+"PRE","Consumo preferente",73,75,0
+"NPR","Nº de Paquete Preseleccionado",76,80,0
+"TAR","Tara",81,85,0
+"TXT","Texto",86,110,1
+"TXT","Texto",111,135,2
+"TXT","Texto",136,160,3
+"TXT","Texto",161,185,4
+"TXT","Texto",186,210,5
+"TXT","Texto",211,235,6
+"TXT","Texto",236,260,7
+"TXT","Texto",261,285,8
+"TXT","Texto",286,310,9
+"TXT","Texto",311,335,10
+"TXT","Texto",336,360,11
+"TXT","Texto",361,385,12
+"TXT","Texto",386,410,13
+"TXT","Texto",411,435,14
+"TXT","Texto",436,460,15
+"TXT","Texto",461,485,16
+"TXT","Texto",486,510,17
+"TXT","Texto",511,535,18
+"TXT","Texto",536,560,19
+"TXT","Texto",561,585,20
+"WGH","Pesado/No pesado",586,586,0
+"TRM1","Tramo 1",587,591,0
+"PRC1","Precio del Tramo 1",592,598,0
+"TRM2","Tramo 2",599,603,0
+"PRC2","Precio del Tramo 2",604,610,0
+"IMAGE","Path + fichero Imagen",611,660,0

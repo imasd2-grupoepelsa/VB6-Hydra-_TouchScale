@@ -1,0 +1,57 @@
+======================
+'--------------------------------------------------------------
+'Descargar una DLL o EXE que esté en memoria        ( 6/Jul/97)
+'
+'Basado en un código de Bruce McKinney y que realiza la misma
+'tarea que WPS.exe para descargar módulos y ejecutables.
+'(se supone)
+'--------------------------------------------------------------
+Option Explicit
+
+Declare Function GetModuleHandle Lib "Kernel" (ByVal lpModuleName As String) As Integer
+Declare Function GetModuleUsage Lib "Kernel" (ByVal hModule As Integer) As Integer
+Declare Sub FreeModule Lib "Kernel" (ByVal hModule As Integer)
+
+Public Sub Main()
+    Dim hModule As Integer
+
+    'El módulo a librerar se pasa en la línea de comandos
+    hModule = GetModuleHandle(Command$)
+    If hModule = 0 Then Exit Sub
+    'Libera todas copias de este módulo
+    Do While GetModuleUsage(hModule) > 0
+        Call FreeModule(hModule)
+    Loop
+End Sub
+======================
+
+
+
+
+'Esto puede servir para descargar una aplicación o
+'librería dinámica de la memoria de nuestro Windows.
+'La forma es sencilla, sólo hay que crear un módulo BAS
+'y escribir este código en el SUB MAIN, como parámetro
+'debemos pasarle la DLL o EXE que queremos "eliminar"
+'y este programita se encargará del resto... 
+
+
+'Descargar una DLL o EXE que esté en memoria
+
+Option Explicit
+
+Declare Function GetModuleHandle Lib "Kernel" (ByVal lpModuleName As String) As Integer
+Declare Function GetModuleUsage Lib "Kernel" (ByVal hModule As Integer) As Integer
+Declare Sub FreeModule Lib "Kernel" (ByVal hModule As Integer)
+
+Public Sub Main()
+Dim hModule As Integer
+'El módulo a librerar se pasa en la línea de comandos
+hModule = GetModuleHandle(Command$)
+If hModule = 0 Then Exit Sub
+'Libera todas copias de este módulo
+Do While GetModuleUsage(hModule) > 0
+Call FreeModule(hModule)
+Loop
+End Sub
+

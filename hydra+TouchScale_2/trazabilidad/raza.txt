@@ -1,0 +1,4 @@
+SIN RAZA                      001
+LECHERA                       002
+MIXTA                         003
+CARNE                         004

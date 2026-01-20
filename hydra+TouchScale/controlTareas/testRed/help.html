@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<style>
+BODY
+{
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: 10pt;
+  COLOR: #000040
+}
+TD
+{
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: 10pt;
+  COLOR: #000040
+}
+</style>
+	<title>OstroSoft ICMP Component (OSICMP.dll)</title>
+</head>
+
+<body>
+<table width="100%" cellpadding="0" cellspacing="0"><tr><td align="right" nowrap><a href="http://www.ostrosoft.com/" target="_blank" title="Visit our website">OstroSoft - Home of Internet Tools</a></td></tr></table>
+<font size="5"><b>OstroSoft ICMP Component (OSICMP.dll)</b></font><hr color="#9999cc" size="2"><p>
+
+OSICMP.dll is a COM library for Visual Basic 6, allowing to create custom ping and traceroute implementations.<br>
+<small>By using OSICMP.dll you agree to terms of <a href="http://www.ostrosoft.com/ICMP_component/ICMP_license.txt" target="_blank">License Agreement</a></small><p>
+
+for use with Visual Basic 6 (any edition):<br>
+1)download <a href="http://www.ostrosoft.com/download/ICMP_component.zip">ICMP_component.zip</a><br>
+2)unzip OSICMP.dll from it to Windows System directory<br>
+3)run "regsvr32 OSICMP.dll" from command-line<p>
+
+for use with .NET, Visual Basic 4 or 5, Visual C++, ASP, VBA, VBScript, JavaScript or any other language, supporting COM:<br>
+1)download <a href="http://www.ostrosoft.com/download/full/ICMP_component.exe">ICMP_component.exe</a><br>
+2)run downloaded file from Windows Explorer or command-line<p>
+
+<table width="100%" cellspacing="5">
+
+<tr><td align="left"><hr></td></tr>
+<tr><td align="left"><font size="3"><b>Ping object</b></font><br>allows to test network connectivity with remote host, by sending echo ICMP packet<p></td></tr>
+<tr><td align="left"><u><b>Methods:</b></u></td></tr>
+<tr><td align="left"><i>object</i>.<b>Send</b>([HostName As String], [Timeout As Long], [PacketSize As Long])
+<br>Send ICMP request to remote host</td></tr>
+<tr><td align="left"><i>object</i>.<b>Sleep</b>(n As Long)<br>Suspend program execution for a specified length of time, in milliseconds</td></tr>
+
+<tr><td align="left"><u><b>Properties:</b></u></td></tr>
+<tr><td align="left"><i>object.</i><b>HostName</b><br>Remote host name or IP address</td></tr>
+<tr><td align="left"><i>object.</i><b>IP</b><br>Replying (remote) host IP address</td></tr>
+<tr><td align="left"><i>object.</i><b>PacketSize</b><br>Size of the ICMP request, in bytes</td></tr>
+<tr><td align="left"><i>object.</i><b>RoundTripTime</b><br>Time taken by ICMP request to reach remote host and return, in milliseconds</td></tr>
+<tr><td align="left"><i>object.</i><b>Status</b><br>Status of ICMP request</td></tr>
+<tr><td align="left"><i>object.</i><b>Timeout</b><br>Time to wait for replies, in milliseconds</td></tr>
+<tr><td align="left"><i>object.</i><b>TTL</b><br>Time to live</td></tr>
+
+<tr><td align="left"><hr></td></tr>
+<tr><td align="left"><font size="3"><b>Traceroute object</b></font><br>allows to trace the network path to remote host<p></td></tr>
+<tr><td align="left"><u><b>Methods:</b></u></td></tr>
+<tr><td align="left"><i>object</i>.<b>Send</b>([HostName As String], [Timeout As Long], [PacketSize As Long], [Hop As Long])
+<br>Send ICMP request to remote host</td></tr>
+<tr><td align="left"><i>object</i>.<b>Sleep</b>(n As Long)<br>Suspend program execution for a specified length of time, in milliseconds</td></tr>
+
+<tr><td align="left"><u><b>Properties:</b></u></td></tr>
+<tr><td align="left"><i>object.</i><b>Hop</b><br>Hop number in a trace</td></tr>
+<tr><td align="left"><i>object.</i><b>HopIP</b><br>IP at specified hop</td></tr>
+<tr><td align="left"><i>object.</i><b>HostName</b><br>Remote host name or IP address</td></tr>
+<tr><td align="left"><i>object.</i><b>IP</b><br>Replying (remote) host IP address</td></tr>
+<tr><td align="left"><i>object.</i><b>PacketSize</b><br>Size of the ICMP request, in bytes</td></tr>
+<tr><td align="left"><i>object.</i><b>RoundTripTime</b><br>Time taken by ICMP request to reach remote host and return, in milliseconds</td></tr>
+<tr><td align="left"><i>object.</i><b>Status</b><br>Status of ICMP request</td></tr>
+<tr><td align="left"><i>object.</i><b>Timeout</b><br>Time to wait for replies, in milliseconds</td></tr>
+<tr><td align="left"><i>object.</i><b>TTL</b><br>Time to live</td></tr>
+
+</table>
+</body>
+</html>

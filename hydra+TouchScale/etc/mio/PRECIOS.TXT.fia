@@ -1,0 +1,13 @@
+0
+"MOS","Mostrador",1,2,0
+"COD","Código",3,8,0
+"FAM","Familia",9,11,0
+"TXT","Texto",12,36,0
+"PRC","Precio",37,43,0
+"CBA","Código de barras",44,56,0
+"IVA","Tipo de IVA",57,57,0
+"WGH","Pesado/No pesado",58,58,0
+"TRM1","Tramo 1",59,63,0
+"PRC1","Precio del Tramo 1",64,70,0
+"TRM2","Tramo 2",71,75,0
+"PRC2","Precio del Tramo 2",76,82,0

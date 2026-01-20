@@ -1,0 +1,9 @@
+Se ha incluido en Componentes SysTry.Ocx.
+    El proyecto arranca en la función Main() que pone a True la propiedad InTry del mencionado Control
+que está ubicado en el Formulario FORM2.
+    Cuando se haga dobleClick en el icono de la Barra de Tareas (Aparecerá una Tostadora) se
+verá el formulario 1.
+    Al hacer Click sobre el FORM1 se volvera a activar InTRy.
+
+    Creo que el OCX es compatible con VB5.
+    Descomprime en una carpeta cualquiera.

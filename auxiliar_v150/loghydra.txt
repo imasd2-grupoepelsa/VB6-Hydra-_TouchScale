@@ -1,0 +1,13 @@
+09/10/2006 18:19:22-->corregir nulos
+09/10/2006 18:19:23 Program Started *************************************
+09/10/2006 18:20:15-->corregir nulos
+09/10/2006 18:20:16 Program Started *************************************
+08/06/2007 16:13:23-->Función Crea_fichero_ini
+08/06/2007 16:13:23-->Hydra.ini = C:\hydra+1720\auxiliar_v150\hydra.ini
+08/06/2007 16:13:23-->pass.sec = C:\hydra+1720\auxiliar_v150\pass.sec
+08/06/2007 16:13:23-->Se revisa si necesario Actualizar: C:\hydra+1720\auxiliar_v150\dbase.mdb
+08/06/2007 16:13:24-->corregir nulos
+08/06/2007 16:13:24 Program Started *************************************
+03/11/2012 12:11:04 Program Started *************************************
+03/11/2012 12:19:29 Program Started *************************************
+16/07/2014 18:25:19 Program Started *************************************

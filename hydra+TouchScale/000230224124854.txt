@@ -1,0 +1,380 @@
+ 
+ 
+ Fecha Inicial:22/02/2024 Fecha Inicial:22/02/2024
+ 
+ Resumen Impuestos del Listado
+ 
+                     % IVA        BASE            Impuesto
+                     _____________________________________
+                     00,00       26,40                0,00
+                     00,00       50,20                0,00
+                     10,00     1099,24              109,91
+                     21,00       42,67                8,95
+                     05,00       16,67                0,83
+                     _____________________________________
+              Totales:         1235,18             119,69
+ TOTAL Base+Impuestos:         1354,87
+ 
+ Detalle de Tiques realizados.
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 125
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 51#Fecha : 22/02/24 11:11:45#Tipo : Venta#Estado : Normal#EAN13: #Importe : 23,74
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 101#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 23,74#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        42       42   PANCETA ADOBADA CURADA    9,55    0,415    0           3,96     2 (10,00 %)
+ 2   No        38       38   LACON CURADO              6,65    0,4      0           2,66     2 (10,00 %)
+ 3   No        3        3    CHICHOS.CAPONES           6,5     0,58     0           3,77     2 (10,00 %)
+ 4   No        136      136  LOMO ADOBADO OREADO       10,35   1,29     0           13,35    2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       21,59                2,15
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 127
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 52#Fecha : 22/02/24 12:03:58#Tipo : Venta#Estado : Normal#EAN13: #Importe : 43,75
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 10#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 43,75#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        19       19   SALCHICHA ROJA FRESCA     7,95    0,625    0           4,97     2 (10,00 %)
+ 2   No        7        7    COSTILLA FRESCA           7,35    1,675    0           12,31    2 (10,00 %)
+ 3   No        17       17   PANCETA FRESCA            7,15    0,735    0           5,26     2 (10,00 %)
+ 4   No        28       28   CHORIZO EXTRA SARTA       9       0,945    0           8,51     2 (10,00 %)
+ 5   No        30       30   CHORIZO EXTRA FRESCO      7,35    0,55     0           4,04     2 (10,00 %)
+ 6   No        997      997  BOLSA ZAPATERO            0,1     0        1           0,1      3 (21,00 %)
+ 7   No        9        9    ESPINAZO/ PIES FRESCOS    4,75    1,01     0           4,8      2 (10,00 %)
+ 8   No        958      958  GUANTE VILEDA MEDIANO     1,35    0        1           1,35     3 (21,00 %)
+ 9   No        506      506  PERA TEMPORADA            3,25    0,405    0           1,32     0 (0,00 %)
+ 10  No        512      512  MANZANA GOLDEN            1,99    0,55     0           1,09     0 (0,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       36,26                3,63
+ 21,00        1,20                0,25
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 132
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 53#Fecha : 22/02/24 13:56:39#Tipo : Venta#Estado : Normal#EAN13: #Importe : 450,82
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 6#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 450,82#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        28       28   CHORIZO EXTRA SARTA       9       4,06     0           36,54    2 (10,00 %)
+ 2   No        35       35   JAMON CURADO BODEGA       8,95    8,365    0           74,87    2 (10,00 %)
+ 3   No        23       23   CABECERO DE LOMO          11,65   6,405    0           74,62    2 (10,00 %)
+ 4   No        35       35   JAMON CURADO BODEGA       8,95    8,68     0           77,69    2 (10,00 %)
+ 5   No        36       36   JAMON CURADO RESERVA B.   10,95   8,905    0           97,51    2 (10,00 %)
+ 6   No        35       35   JAMON CURADO BODEGA       8,95    10,01    0           89,59    2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00      409,84               40,98
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 135
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 54#Fecha : 22/02/24 17:11:32#Tipo : Venta#Estado : Normal#EAN13: #Importe : 42,33
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 9#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 42,33#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        29       29   CHORIZO EXTRA PICANTE     9       0,465    0           4,19     2 (10,00 %)
+ 2   No        2        2    CARETA.PAPADA.OREJA FRES  4,65    1,635    0           7,6      2 (10,00 %)
+ 3   No        9        9    ESPINAZO/ PIES FRESCOS    4,75    0,995    0           4,73     2 (10,00 %)
+ 4   No        136      136  LOMO ADOBADO OREADO       10,35   0,55     0           5,69     2 (10,00 %)
+ 5   No        20       20   SOLOMILLO DE CERDO        9,5     0,985    0           9,36     2 (10,00 %)
+ 6   No        18       18   RIÑONES DE CERDO          2,25    1,075    0           2,42     2 (10,00 %)
+ 7   No        3        3    CHICHOS.CAPONES           6,5     0,37     0           2,41     2 (10,00 %)
+ 8   No        56       56   LONCHAS CHORIZO           11,75   0,18     0           2,12     2 (10,00 %)
+ 9   No        58       58   LONCHAS JAMON CURADO BOD  16,95   0,225    0           3,81     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       38,48                3,85
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 139
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 55#Fecha : 22/02/24 19:08:57#Tipo : Venta#Estado : Normal#EAN13: #Importe : 59,38
+ Mostrador : 1#BALANZA : 2#Identificación Vendedor : 106#
+ Líneas : 12#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 59,38#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        91       91   TROZOS VACIO              4,23    0        1           4,23     2 (10,00 %)
+ 2   No        56       56   LONCHAS CHORIZO           11,75   0,35     0           4,11     2 (10,00 %)
+ 3   No        91       91   TROZOS VACIO              4       0        1           4        2 (10,00 %)
+ 4   No        59       59   LONCHAS LOMO EMBUCHADO    17,95   0,215    0           3,86     2 (10,00 %)
+ 5   No        31       31   CHORIZO DE PRIMERA        6,95    0,435    0           3,02     2 (10,00 %)
+ 6   No        91       91   TROZOS VACIO              2,5     0        6           15       2 (10,00 %)
+ 7   No        91       91   TROZOS VACIO              4,2     0        1           4,2      2 (10,00 %)
+ 8   No        33       33   COSTILLA ADOBADA CURADA   9,55    0,35     0           3,34     2 (10,00 %)
+ 9   No        39       39   LENGUAS SECAS CERDO       2,5     0        2           5        2 (10,00 %)
+ 10  No        89       89   OREJAS-MORROS SECOS       4       0        1           4        2 (10,00 %)
+ 11  No        71       71   MARCOS CONDE SEMI MEZCLA  13,75   0,485    0           6,67     1 (0,00 %)
+ 12  No        525      525  PEPINILLO MINI (SABOR AN  1,95    0        1           1,95     0 (0,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       46,16                4,60
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 122
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 76#Fecha : 22/02/24 10:11:03#Tipo : Venta#Estado : Normal#EAN13: #Importe : 28,59
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 103#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 28,59#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        13       13   LOMO FRESCO CERDO         7,35    3,89     0           28,59    2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       25,99                2,60
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 123
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 77#Fecha : 22/02/24 10:22:53#Tipo : Venta#Estado : Normal#EAN13: #Importe : 13,6
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 107#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 13,6#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        300      300  CERVEZA 5 ESTRELLAS MAHO  0,85    0        16          13,6     3 (21,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        0,00                0,00
+ 21,00       11,24                2,36
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 124
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 78#Fecha : 22/02/24 10:37:59#Tipo : Venta#Estado : Normal#EAN13: #Importe : 20,6
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 2#Cancelaciones : 0#Forma de pago : Tarjeta Crédito#Importe entregado : 20,6#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        363      363  ACEITE OLIVA LA ESPAÑOLA  8,75    0        2           17,5     4 (5,00 %)
+ 2   No        634      634  AZUCAR AZUCARERA ESPAÑOL  1,55    0        2           3,1      2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        2,82                0,28
+ 21,00        0,00                0,00
+ 05,00       16,67                0,83
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 126
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 79#Fecha : 22/02/24 12:03:12#Tipo : Venta#Estado : Normal#EAN13: #Importe : 0
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 102#
+ Líneas : 1#Cancelaciones : 1#Forma de pago : Efectivo#Importe entregado : 0#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   Si        506      506  PERA TEMPORADA            3,25    0,405    0           1,32     0 (0,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        0,00                0,00
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 128
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 80#Fecha : 22/02/24 12:16:47#Tipo : Venta#Estado : Normal#EAN13: #Importe : 12,35
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 12,35#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        206      206  ACTIVIA MELOCOTON 0%      2,35    0        2           4,7      2 (10,00 %)
+ 2   No        618      618  HUEVOS DOCENA             2,9     0        1           2,9      1 (0,00 %)
+ 3   No        756      756  MEJILLON DARDO PANDERETA  4,75    0        1           4,75     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        8,59                0,86
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 129
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 81#Fecha : 22/02/24 12:21:43#Tipo : Venta#Estado : Normal#EAN13: #Importe : 43,61
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 43,61#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        529      529  PATATA                    1,39    5,195    0           7,22     0 (0,00 %)
+ 2   No        938      938  PIENSO PERROS 20 KG       21,75   0        1           21,75    2 (10,00 %)
+ 3   No        28       28   CHORIZO EXTRA SARTA       9       0,45     0           4,05     2 (10,00 %)
+ 4   No        58       58   LONCHAS JAMON CURADO BOD  16,95   0,35     0           5,93     2 (10,00 %)
+ 5   No        85       85   ESCABECHE DE TINTO        16,95   0,275    0           4,66     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       33,08                3,31
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 130
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 82#Fecha : 22/02/24 12:46:35#Tipo : Venta#Estado : Normal#EAN13: #Importe : 20,64
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Tarjeta Crédito#Importe entregado : 20,64#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        28       28   CHORIZO EXTRA SARTA       9       0,455    0           4,1      2 (10,00 %)
+ 2   No        71       71   MARCOS CONDE SEMI MEZCLA  13,75   0,735    0           10,11    1 (0,00 %)
+ 3   No        519      519  ALUBIA RIÑON              2,99    2,15     0           6,43     0 (0,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        3,73                0,37
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 131
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 83#Fecha : 22/02/24 13:26:38#Tipo : Venta#Estado : Normal#EAN13: #Importe : 46,3
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 9#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 46,3#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        285      285  CARAMELO LIQUIDO AG 300g  1,55    0        3           4,65     2 (10,00 %)
+ 2   No        647      647  CHOCO BLANCO MILKYBAR     1,49    0        2           2,98     2 (10,00 %)
+ 3   No        548      548  MANDARINA                 2,89    1,29     0           3,73     0 (0,00 %)
+ 4   No        514      514  PLATANO                   1,89    0,715    0           1,35     0 (0,00 %)
+ 5   No        9        9    ESPINAZO/ PIES FRESCOS    4,75    0,965    0           4,58     2 (10,00 %)
+ 6   No        381      381  CERVEZA COVIRAN 33CL      0,39    0        12          4,68     3 (21,00 %)
+ 7   No        945      945  AMBIENTADOR WC HOGAR BRE  2,98    0        2           5,96     3 (21,00 %)
+ 8   No        17       17   PANCETA FRESCA            7,15    0,42     0           3        2 (10,00 %)
+ 9   No        79       79   CARRILLERAS               12,65   1,215    0           15,37    2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       27,80                2,78
+ 21,00        8,80                1,84
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 133
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 84#Fecha : 22/02/24 14:50:42#Tipo : Venta#Estado : Normal#EAN13: #Importe : 2,6
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 101#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 2,6#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        91       91   TROZOS VACIO              1,3     0        2           2,6      2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        2,36                0,24
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 134
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 85#Fecha : 22/02/24 16:47:28#Tipo : Venta#Estado : Normal#EAN13: #Importe : 14,2
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 105#
+ Líneas : 5#Cancelaciones : 0#Forma de pago : Tarjeta Crédito#Importe entregado : 14,2#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        548      548  MANDARINA                 2,89    1,145    0           3,31     0 (0,00 %)
+ 2   No        223      223  YOGUR NATURAL x4          1       0        1           1        2 (10,00 %)
+ 3   No        91       91   TROZOS VACIO              1,59    0        1           1,59     2 (10,00 %)
+ 4   No        163      163  PATATAS SANTA ANA 120 g   1,5     0        1           1,5      2 (10,00 %)
+ 5   No        91       91   TROZOS VACIO              1,7     0        4           6,8      2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        9,90                0,99
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 136
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 86#Fecha : 22/02/24 17:34:00#Tipo : Venta#Estado : Normal#EAN13: #Importe : 373,96
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 8#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 373,96#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        35       35   JAMON CURADO BODEGA       8,95    8,58     0           76,79    2 (10,00 %)
+ 2   No        35       35   JAMON CURADO BODEGA       8,95    10,115   0           90,53    2 (10,00 %)
+ 3   No        35       35   JAMON CURADO BODEGA       8,95    8,845    0           79,16    2 (10,00 %)
+ 4   No        58       58   LONCHAS JAMON CURADO BOD  16,95   2,2      0           37,29    2 (10,00 %)
+ 5   No        58       58   LONCHAS JAMON CURADO BOD  16,95   2,095    0           35,51    2 (10,00 %)
+ 6   No        81       81   SANSUEÑA QUESO OVEJA PUR  19,5    1,565    0           30,52    1 (0,00 %)
+ 7   No        26       26   CHORIZO CULAR             10,25   2,005    0           20,55    2 (10,00 %)
+ 8   No        31       31   CHORIZO DE PRIMERA        6,95    0,52     0           3,61     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00      312,21               31,23
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 137
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 87#Fecha : 22/02/24 17:36:03#Tipo : Venta#Estado : Normal#EAN13: #Importe : 10,64
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 4#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 10,64#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        102      102  SANTOCILDES NEGRO ALMEND  3,5     0        1           3,5      2 (10,00 %)
+ 2   No        647      647  CHOCO BLANCO MILKYBAR     1,49    0        2           2,98     2 (10,00 %)
+ 3   No        223      223  YOGUR NATURAL x4          1       0        1           1        2 (10,00 %)
+ 4   No        31       31   CHORIZO DE PRIMERA        6,95    0,455    0           3,16     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        9,67                0,97
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 138
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 88#Fecha : 22/02/24 17:37:06#Tipo : Venta#Estado : Normal#EAN13: #Importe : 15,78
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 15,78#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        28       28   CHORIZO EXTRA SARTA       9       0,995    0           8,96     2 (10,00 %)
+ 2   No        103      103  TABLETA SANTOCILDES 300   2,5     0        1           2,5      2 (10,00 %)
+ 3   No        45       45   SALCHICHON EXTRA SARTA    9       0,48     0           4,32     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       14,34                1,44
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 140
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 89#Fecha : 22/02/24 19:12:35#Tipo : Venta#Estado : Normal#EAN13: #Importe : 77,91
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 3#Cancelaciones : 0#Forma de pago : Tarjeta Crédito#Importe entregado : 77,91#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        35       35   JAMON CURADO BODEGA       8,95    7,71     0           69       2 (10,00 %)
+ 2   No        19       19   SALCHICHA ROJA FRESCA     7,95    0,72     0           5,72     2 (10,00 %)
+ 3   No        2        2    CARETA.PAPADA.OREJA FRES  4,65    0,685    0           3,19     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       70,83                7,08
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 141
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 90#Fecha : 22/02/24 19:13:50#Tipo : Venta#Estado : Normal#EAN13: #Importe : 21,25
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 21,25#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        300      300  CERVEZA 5 ESTRELLAS MAHO  0,85    0        25          21,25    3 (21,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        0,00                0,00
+ 21,00       17,56                3,69
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 142
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 91#Fecha : 22/02/24 19:15:17#Tipo : Venta#Estado : Normal#EAN13: #Importe : 4,68
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 1#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 4,68#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        381      381  CERVEZA COVIRAN 33CL      0,39    0        12          4,68     3 (21,00 %)
+ % IVA        BASE            Impuesto
+ 10,00        0,00                0,00
+ 21,00        3,87                0,81
+ 05,00        0,00                0,00
+ -----------------------------------------------------------------------------------------------------------
+ Factura Simplificada : 143
+ Código de Cliente: 000000Nombre ClienteConsumidor FinalCliente Id.999999990
+ Tiquet : 92#Fecha : 22/02/24 19:24:25#Tipo : Venta#Estado : Normal#EAN13: #Importe : 28,14
+ Mostrador : 1#BALANZA : 1#Identificación Vendedor : 106#
+ Líneas : 6#Cancelaciones : 0#Forma de pago : Efectivo#Importe entregado : 28,14#Cambio : 0
+ Descuentos : 0
+ Nº  Cancelado Código   PLU  Texto                     Precio  Peso     Unidades    Total    Tipo de IVA
+ 1   No        28       28   CHORIZO EXTRA SARTA       9       0,48     0           4,32     2 (10,00 %)
+ 2   No        1        1    AGUJA DE CERDO            5,75    1,46     0           8,4      2 (10,00 %)
+ 3   No        700      700  BERBERECHO CABO DE PEÑAS  4,65    0        1           4,65     2 (10,00 %)
+ 4   No        99       99   MANTECA EN TARRINA        2,75    0        1           2,75     2 (10,00 %)
+ 5   No        20       20   SOLOMILLO DE CERDO        9,5     0,575    0           5,46     2 (10,00 %)
+ 6   No        44       44   SALCHICHON EXTRA CULAR    10,25   0,25     0           2,56     2 (10,00 %)
+ % IVA        BASE            Impuesto
+ 10,00       25,59                2,55
+ 21,00        0,00                0,00
+ 05,00        0,00                0,00

@@ -1,0 +1,17 @@
+FrmPrincipal = 129, 103, 617, 679, , 0, 0, 0, 0, C
+Arranque = 0, 0, 0, 0, C
+VarPublics = 0, 0, 0, 0, C
+Base_Datos = 0, 0, 0, 0, C
+HydraBasic = 0, 0, 0, 0, C
+FrmAsistente = 129, 103, 617, 679, , 0, 0, 0, 0, C
+Tools = 0, 0, 0, 0, C
+FrmConfiguracion = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+Idiomas = 129, 103, 617, 679, 
+FrmTools = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmLogin = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmDatosTienda = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmExportFormat = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmGrupos = 165, 103, 653, 679, , 0, 0, 0, 0, C
+frmWAIT = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FormP = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+FrmHecho = 0, 0, 0, 0, C, 0, 0, 0, 0, C

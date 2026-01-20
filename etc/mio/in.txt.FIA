@@ -1,0 +1,12 @@
+0
+"BAJA","Distinto de 0 Indica si baja de artículo",3,4,0
+"MOS","Mostrador",7,10,0
+"PLU","Plu",13,16,0
+"COD","Código",24,29,0
+"TXT","Texto",30,54,0
+"TXT","Texto",55,79,1
+"TXT","Texto",80,104,2
+"TXT","Texto",105,129,3
+"PRC","Precio",130,137,0
+"IVA","Tipo de IVA",146,146,0
+"WGH","Pesado/No pesado",198,198,0

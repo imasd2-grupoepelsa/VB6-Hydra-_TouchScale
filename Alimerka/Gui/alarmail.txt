@@ -1,0 +1,8 @@
+SMTPSERVER,   smtp.office365.com
+SENDERNAME,   PC BALANZAS EPELSA
+SENDEREMAIL,  ccampos@grupoepelsa.e.telefonica.net
+RECIPIENTNAME,              Servicio Atención Balanzas
+RECIPIENTEMAIL,             ccampos@grupoepelsa.com
+SUBJECT,      Estado General Alarmas Balanzas.
+MESSAGE,      Se adjunta fichero Informe_Alarmas.txt
+ATTACHMENT,   informe_alarmas.txt

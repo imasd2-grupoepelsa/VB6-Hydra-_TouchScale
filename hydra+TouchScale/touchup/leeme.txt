@@ -1,0 +1,11 @@
+Ejecutable: touchup.exe
+---------------------------------
+
+arrancar: touchup update
+
+en: <c:\balanzas\ia\entrada> ficheros a enviar
+crear <c:\balanzas\ia\salida>
+
+en fichero "hiper" número de Hiper
+en fichero "touchsrv.cfg" dirección IP servidora y puerto MySql (3306)
+si existe "noping" sin extensión, con cualquier contenido, no se realiza ping a Touch.

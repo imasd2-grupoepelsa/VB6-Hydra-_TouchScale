@@ -1,0 +1,8 @@
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\hydratouch.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP3" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\hydramulti.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP3" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\tiqahtouch.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP3" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\copiontouch.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP3" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\auxiliartouch.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP3" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\mizip.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP2" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\zip.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP2" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\HydraTouch\unzip.exe" /t REG_SZ /d "~ RUNASADMIN WINXPSP2" /f

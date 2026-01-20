@@ -1,0 +1,7 @@
+' Written by Ellis Dee of vbforums.com
+'
+' Thanks to...
+'   Edgemeal   http://www.vbforums.com/showthread.php?t=595193
+'   Mike D. Sutton   http://www.mvps.org/EDais/
+'   Steve McMahon   http://www.vbaccelerator.com/home/VB/Code/Libraries/Shell_Projects/SysTray_-_The_Easy_Way/article.asp
+'   Ben Baird for the original code

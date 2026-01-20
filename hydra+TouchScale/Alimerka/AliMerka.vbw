@@ -1,0 +1,5 @@
+ModMain = 670, 103, 1158, 679, CZ
+EpelOcx = 129, 103, 674, 679, CZ
+ICMP_PINGS = 129, 103, 617, 679, C
+clsSysTray = 129, 103, 617, 679, C
+frmSysTray = 129, 103, 617, 679, C, 0, 0, 0, 0, C

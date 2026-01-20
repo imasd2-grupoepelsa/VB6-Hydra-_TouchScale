@@ -1,0 +1,12 @@
+frmTest = 165, 103, 653, 679, , 0, 0, 0, 0, C
+cBMPparser = 0, 0, 0, 0, C
+c32bppDIB = 0, 0, 0, 0, C
+cICOparser = 0, 0, 0, 0, C
+cGIFparser = 0, 0, 0, 0, C
+cPNGparser = 0, 0, 0, 0, C
+modParsers = 0, 0, 0, 0, C
+cGDIPlus = 0, 0, 0, 0, C
+cCDECL = 0, 0, 0, 0, C
+cPNGwriter = 0, 0, 0, 0, C
+cTGAparser = 0, 0, 0, 0, C
+cJPGWriter = 0, 0, 0, 0, C

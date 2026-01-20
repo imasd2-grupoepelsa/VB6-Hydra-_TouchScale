@@ -1,0 +1,3 @@
+- SE GENERARÁ POR DEFECTO "PLUASC.DIR" con  "c:\telecom"
+  si se quiere otro path generarlo en el mencionado fichero.
+- El TIQAH.INI que se generará tendrá PATH exportación ficheros: "c:\grppv\Balanzas"

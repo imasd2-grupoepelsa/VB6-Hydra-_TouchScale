@@ -1,0 +1,42 @@
+tienda 15   (EuroScale)
+---------
+22614001010122012570002000004009028000000000.0000010.99000.37000004.07+PN2V210620221358150002201500-00022614
+22614001010122012570002000004009028000000000.0000010.99000.37000004.07-PS2V210620221358150002201500-00022614
+
+tienda 17   (TouchScale)
+---------
+00033001010124032091100039500000502000000039.5000002.49002.48500006.19+PN3V220620222017050002200400-00000033
+00033002010124032091100039500000203000000039.5000006.77002.08000014.08+PS3V220620222017050002200400-00000033
+00033003010124032091100039500006001050900039.5000005.99001.28000007.67+PN3V220620222017050002200400-00000033
+00033004010124032091100039500009001176200039.5000012.99000.68500008.90+PN3V220620222017050002200400-00000033
+00033005010124032091100039500000310000000039.5000003.99001.21500004.85+PN3V220620222017050002200400-00000033
+00033006010124032091100039500000503000000039.5000006.50001.08000007.02+PS3V220620222017050002200400-00000033
+00033007010124032091100039500000503000000039.5000005.99001.98500011.89+PN3V220620222017050002200400-00000033
+
+Desripción del registro:
+
+Campo		Longitud	Contenido
+---------       -----------     -------------------------------------------------------
+1		5		número de tique
+2		3		Número de línea del Tique
+3		2		Sección en la que se realiza el Tique
+4		2		Balanza en la que se finaliza el Tique
+5		4		Identificador Vendedor que realiza el Tique
+6		13		Código de barras del Tique
+7		6		Código de Artículo transacción (Línea)
+8		4		Número PLU del artículo
+9		8		Importe total del Tique, contiene punto decimal. Dos decimales
+10		8		Precio venta línea, contiene punto decimal (Valor
+				absoluto, sin signo). Dos decimales
+11		7		Peso o unidades vendidas en la línea, contiene punto
+				decimal (Valor absoluto, sin signo). Tres decimales
+12		8		Importe de la línea, contiene punto decimal (Valor
+				absoluto, sin signo). Dos decimales
+13		1		"-" o "+" signo de la transacción.
+14		1		"P" --> Venta al Peso, "U" --> Venta por Unidades
+15		1		"N" --> Línea NO anulada, "S" --> Línea anulada.
+16		1		Tipo de IVA del artículo
+17		1		Tipo de línea: "V" -> venta red, "L" -> venta local, "A" ->
+				venta anulado red, "B" -> venta anulado local
+18		8		Fecha del Tique "ddmmyyyy"
+19		4		Hora  "hhmm" del Tique

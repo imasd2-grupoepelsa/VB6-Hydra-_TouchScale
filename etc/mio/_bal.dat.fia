@@ -1,0 +1,33 @@
+0
+"MOS","Mostrador",1,2,0
+"COD","Código",3,8,0
+"PLU","Plu",9,12,0
+"TXT","Texto",13,37,0
+"PRC","Precio",38,44,0
+"WGH","Pesado/No pesado",45,45,0
+"CBA","Código de barras",46,57,0
+"CAD","Caducidad",58,60,0
+"TXT","Texto",61,85,1
+"TXT","Texto",86,110,2
+"TXT","Texto",111,135,3
+"TXT","Texto",136,160,4
+"TXT","Texto",161,185,5
+"TXT","Texto",186,210,6
+"TXT","Texto",211,235,7
+"TXT","Texto",236,260,8
+"TXT","Texto",261,285,9
+"TXT","Texto",286,310,10
+"TXT","Texto",311,335,11
+"TXT","Texto",336,360,12
+"TXT","Texto",361,385,13
+"TXT","Texto",386,410,14
+"TXT","Texto",411,435,15
+"TXT","Texto",436,460,16
+"TXT","Texto",461,485,17
+"TXT","Texto",486,510,18
+"TXT","Texto",511,535,19
+"TXT","Texto",536,560,20
+"TAR","Tara",561,565,0
+"JTEC","Juego de Tecla en la sección",566,566,0
+"TEC","Tecla",567,569,0
+"FAM","Familia",570,572,0
