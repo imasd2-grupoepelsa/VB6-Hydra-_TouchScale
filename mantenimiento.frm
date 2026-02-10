@@ -309,9 +309,9 @@ Public MostrarMsg As Boolean
 '\\\\\\\\\\\\\\
 '//////////////
 Private Sub Form_Load()
-Dim Fecha As Date
-Dim bucle As Integer
-Dim pepe As String
+    Dim Fecha As Date
+    Dim bucle As Integer
+    Dim pepe As String
     MostrarMsg = True
     Me.Icon = Form2.Icon
     If Dir(App.Path & "\etc\l_date.txt") <> "" Then
@@ -349,46 +349,46 @@ End Sub
 '\\\\\\\\\\\\\\
 '//////////////
 Public Sub cmdespere_Click()
-Dim Base As dao.Database
-Dim fecha_ini As Date
-Dim fecha_fin As Date
-Dim Fecha As Date
-Dim rege_sino
-Dim Registro As dao.Recordset
-Dim bucle As Integer
-Dim Max As Integer
-Dim MiTabla As String
-Dim MiNombre As String
-Dim lEsPrimera As Boolean
+    Dim Base As dao.Database
+    Dim fecha_ini As Date
+    Dim fecha_fin As Date
+    Dim Fecha As Date
+    Dim rege_sino
+    Dim Registro As dao.Recordset
+    Dim bucle As Integer
+    Dim Max As Integer
+    Dim MiTabla As String
+    Dim MiNombre As String
+    Dim lEsPrimera As Boolean
 
-lEsPrimera = False
+    lEsPrimera = False
 
     If Dir(App.Path & "\borrados", vbDirectory) = "" Then
         MkDir App.Path & "\borrados"
         Sleep (100)
     End If
-    
+
     If frmMantenimiento.Visible = True Then
         FileCopy Base_General, App.Path & "\borrados\" & Format(TiendaActual, "000") & Format(Now, "ddmmyyhhmmss") & "dbase.mdb"
     End If
-    
+
     '3.4.4
     'If lNoSi = False Then
     '    Interfaz.exe_copion "procsiosi"
     'End If
     ''''''
-    
+
     If Opttotal(0).Value = True Then
         If Dir(App.Path & "\etc\l_date.txt") = "" Then
             If (Not IsNumeric(left(TxtDesde(0).TexT, 2))) Or _
-            (Not IsNumeric(Right(TxtDesde(0).TexT, 2))) Or _
-            (Not IsNumeric(Mid(TxtDesde(0).TexT, 4, 2))) Then
+               (Not IsNumeric(Right(TxtDesde(0).TexT, 2))) Or _
+               (Not IsNumeric(Mid(TxtDesde(0).TexT, 4, 2))) Then
                 If MostrarMsg Then MsgBox CargaCadena(506), vbCritical
                 Exit Sub
             End If
             If (Not IsNumeric(left(TxtDesde(1).TexT, 2))) Or _
-            (Not IsNumeric(Right(TxtDesde(1).TexT, 2))) Or _
-            (Not IsNumeric(Mid(TxtDesde(1).TexT, 4, 2))) Then
+               (Not IsNumeric(Right(TxtDesde(1).TexT, 2))) Or _
+               (Not IsNumeric(Mid(TxtDesde(1).TexT, 4, 2))) Then
                 If MostrarMsg Then MsgBox CargaCadena(506), vbCritical
                 Exit Sub
             End If
@@ -429,10 +429,10 @@ lEsPrimera = False
     rege_sino = vbYes
     '''''''''''''''''''''''''''
     If rege_sino = vbYes Then
-    
-    'c2f prueba...
-    'CadenadeLog "HOLA INVICTA"
-    ''''''''''''''
+
+        'c2f prueba...
+        'CadenadeLog "HOLA INVICTA"
+        ''''''''''''''
         If Trim(Command) = "" Then
             Load frmWAIT
             frmWAIT.Label1.Caption = "Eliminando totales antiguos..."
@@ -440,7 +440,7 @@ lEsPrimera = False
             frmWAIT.Refresh
         End If
         Do_Events
-        
+
         Set Base = OpenDatabase(Base_General)
         fecha_ini = DateSerial(Right(TxtDesde(0).TexT, 2), Mid(TxtDesde(0).TexT, 4, 2), left(TxtDesde(0).TexT, 2))
         fecha_fin = DateSerial(Right(TxtDesde(1).TexT, 2), Mid(TxtDesde(1).TexT, 4, 2), left(TxtDesde(1).TexT, 2))
@@ -451,68 +451,68 @@ lEsPrimera = False
         End If
         For bucle = 0 To Max
             Select Case bucle
-                Case 0
-                    MiTabla = "gtsecs"
-                Case 1
-                    MiTabla = "gtarti"
-                Case 2
-                    MiTabla = "gtvend"
-                Case 3, 4, 7
-                    MiTabla = "tickets"
+            Case 0
+                MiTabla = "gtsecs"
+            Case 1
+                MiTabla = "gtarti"
+            Case 2
+                MiTabla = "gtvend"
+            Case 3, 4, 7
+                MiTabla = "tickets"
                 'Case 4
                 '    MiTabla = "ticketsSC10"
-                Case 5, 6, 8
-                    MiTabla = "cabecera"
+            Case 5, 6, 8
+                MiTabla = "cabecera"
                 'Case 6
                 '    MiTabla = "cabeceraSC10"
                 'Case 7
                 '    MiTabla = "ticketsTQ"
                 'Case 8
                 '    MiTabla = "cabeceraTQ"
-                Case 9
-                    MiTabla = "log"
-                Case 10
-                    MiTabla = "rechazos"
-                Case 11
-                    MiTabla = "gtInfVen"
-                Case 12
-                    MiTabla = "descuentos"
-                Case 13
-                    MiTabla = "gthora"
-                Case 14
-                    MiTabla = "gtvacuno"
+            Case 9
+                MiTabla = "log"
+            Case 10
+                MiTabla = "rechazos"
+            Case 11
+                MiTabla = "gtInfVen"
+            Case 12
+                MiTabla = "descuentos"
+            Case 13
+                MiTabla = "gthora"
+            Case 14
+                MiTabla = "gtvacuno"
             End Select
-            
+
             If Trim(Command) = "" Then
                 frmWAIT.Label2.Caption = "Tabla: " & MiTabla
                 frmWAIT.Refresh
             End If
             Do_Events
-            
+
             Set Registro = Base.OpenRecordset("select * from " & MiTabla)
             With Registro
                 Do While Not .EOF
                     If Opttotal(0).Value = True And MiTabla <> "rechazos" Then
-                    '    Fecha = Format(.Fields(1).Value, "ddmmyy")
-                    '    Fecha = Mid(Fecha, 5, 2) & Mid(Fecha, 3, 2) & Mid(Fecha, 1, 2)
+                        '    Fecha = Format(.Fields(1).Value, "ddmmyy")
+                        '    Fecha = Mid(Fecha, 5, 2) & Mid(Fecha, 3, 2) & Mid(Fecha, 1, 2)
                         If (bucle < 3) Or (bucle = 7) Or ((bucle >= 11) And (bucle <= 13)) Then
                             Select Case bucle
-                                Case 0 To 2
-                                    MiNombre = "fecha"
-                                Case 3 To 4
-                                    MiNombre = "date"
-                                Case 5 To 6
-                                    MiNombre = "fecha"
-                                Case 7
-                                    MiNombre = "date"
-                                Case 8
-                                    MiNombre = "fecha"
-                                Case 9
-                                    MiNombre = "fecha"
-                                Case 11 To 13
-                                    MiNombre = "fecha"
-                                Case 14
-                                    MiNombre = "fecha"
+                            Case 0 To 2
+                                MiNombre = "fecha"
+                            Case 3 To 4
+                                MiNombre = "date"
+                            Case 5 To 6
+                                MiNombre = "fecha"
+                            Case 7
+                                MiNombre = "date"
+                            Case 8
+                                MiNombre = "fecha"
+                            Case 9
+                                MiNombre = "fecha"
+                            Case 11 To 13
+                                MiNombre = "fecha"
+                            Case 14
+                                MiNombre = "fecha"
                             End Select
                             Fecha = .Fields(MiNombre).Value
                         Else
@@ -524,18 +524,18 @@ lEsPrimera = False
                                     Fecha = DateSerial(Right(!Fecha, 2), Mid(!Fecha, 4, 2), left(!Fecha, 2))
                                 Else
                                     Fecha = .Fields("fecha").Value
-                                
+
                                 End If
-                                
+
                             End If
-                        
+
                         End If
                         If Fecha >= fecha_ini And Fecha <= fecha_fin Then
                             'c2f copias a ficheros formato totales.dat si se van a borrar
                             '    y es multitienda.
                             If Dir(App.Path & "\hydramulti.exe") <> "" And lEsPrimera = False Then
-                               lEsPrimera = True
-                               ExportaTotalesDat True
+                                lEsPrimera = True
+                                ExportaTotalesDat True
                             End If
                             If Not .EOF Then Delete_Record Registro
                         End If
@@ -546,20 +546,20 @@ lEsPrimera = False
                 Loop
                 .Close
             End With
-       Next bucle
-       'If Trim(Command) = "" Then '2.0.26
-           CerrarBase Base
-       'End If
-       'c2f invicta no confirmación por parámetro
-       'If MostrarMsg Then MsgBox "OK"
-       ''''''''''''''''''''''''''''''''''''''''''
-       If Trim(Command) = "" Then
-           Unload frmWAIT
-           Set frmWAIT = Nothing
-       End If
-       
-       grventas
-   End If
+        Next bucle
+        'If Trim(Command) = "" Then '2.0.26
+        CerrarBase Base
+        'End If
+        'c2f invicta no confirmación por parámetro
+        'If MostrarMsg Then MsgBox "OK"
+        ''''''''''''''''''''''''''''''''''''''''''
+        If Trim(Command) = "" Then
+            Unload frmWAIT
+            Set frmWAIT = Nothing
+        End If
+
+        grventas
+    End If
     cmdespere_terminar_Click
 End Sub
 Private Sub cmdespere_terminar_Click()
@@ -585,20 +585,20 @@ Private Sub TxtFecha_Change(Index As Integer)
         End If
     End If
     Select Case Index
-        Case 0 To 2
-            TxtDesde(0).TexT = Format(Val(TxtFecha(0).TexT), "00") & "/" & Format(Val(TxtFecha(1).TexT), "00") & "/" & Format(Val(TxtFecha(2).TexT), "00")
-        Case 3 To 5
-            TxtDesde(1).TexT = Format(Val(TxtFecha(3).TexT), "00") & "/" & Format(Val(TxtFecha(4).TexT), "00") & "/" & Format(Val(TxtFecha(5).TexT), "00")
+    Case 0 To 2
+        TxtDesde(0).TexT = Format(Val(TxtFecha(0).TexT), "00") & "/" & Format(Val(TxtFecha(1).TexT), "00") & "/" & Format(Val(TxtFecha(2).TexT), "00")
+    Case 3 To 5
+        TxtDesde(1).TexT = Format(Val(TxtFecha(3).TexT), "00") & "/" & Format(Val(TxtFecha(4).TexT), "00") & "/" & Format(Val(TxtFecha(5).TexT), "00")
     End Select
 End Sub
 '\\\\\\\\\\\\\\
 '//////////////
 Private Sub TxtFecha_KeyPress(Index As Integer, KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub

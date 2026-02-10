@@ -44833,3 +44833,74 @@
 07/11/2025 10:51:24-->date="02/10/25" and val(nume)=211 and numbal=5 and val(secc)=1 and val(vendor)=101 and val(typtic)=1 and hour="10:04:14"
 07/11/2025 10:52:37-->date="02/10/25" and val(nume)=211 and numbal=5 and val(secc)=1 and val(vendor)=101 and val(typtic)=1 and hour="10:04:14"
 07/11/2025 10:52:37-->date="02/10/25" and val(nume)=211 and numbal=5 and val(secc)=1 and val(vendor)=101 and val(typtic)=1 and hour="10:04:14"
+10/02/2026 11:37:56-->Se detecta en MAIN() hydramulti.exe. Se arranca.
+10/02/2026 13:33:36-->Se detecta en MAIN() hydramulti.exe. Se arranca.
+10/02/2026 13:33:55-->Check_Multi()
+10/02/2026 13:33:55-->Check_Multi() --> Sin parámetro de arranque...
+10/02/2026 13:33:55-->Check_multi() --> Detectado multistart.ord
+10/02/2026 13:33:55-->Leido de multistart.ord, Hydra_INI=C:\Proyectos_VB6\hydra+TouchScale\t01\hydratouch.ini
+10/02/2026 13:33:55-->Leido de multistart.ord, Base_General=C:\Proyectos_VB6\hydra+TouchScale\t01\dbasetouch.mdb
+10/02/2026 13:33:56-->Función Crea_fichero_ini
+10/02/2026 13:33:56-->Hay multi...
+10/02/2026 13:33:56-->Tienda actual <> 0
+10/02/2026 13:33:56-->hydratouch.ini = C:\Proyectos_VB6\hydra+TouchScale\t01\hydratouch.ini
+10/02/2026 13:33:56-->pass.sec = C:\Proyectos_VB6\hydra+TouchScale\pass.sec
+10/02/2026 13:33:57-->Creación Base General. Tienda:1 Nombre:C:\Proyectos_VB6\hydra+TouchScale\t01\dbasetouch.mdb
+10/02/2026 13:33:57-->crea_cliente
+10/02/2026 13:33:58-->corregir nulos
+10/02/2026 13:33:59-->Se revisa si necesario Actualizar: C:\Proyectos_VB6\hydra+TouchScale\t01\dbasetouch.mdb
+10/02/2026 13:33:59-->corregir nulos
+10/02/2026 13:34:01-->Recibida Orden del plugin --> 61
+10/02/2026 13:34:18-->Check_Multi()
+10/02/2026 13:34:18-->Check_Multi() --> Sin parámetro de arranque...
+10/02/2026 13:34:18-->Check_multi() --> Detectado multistart.ord
+10/02/2026 13:34:18-->Leido de multistart.ord, Hydra_INI=C:\Proyectos_VB6\hydra+TouchScale\t01\hydratouch.ini
+10/02/2026 13:34:18-->Leido de multistart.ord, Base_General=C:\Proyectos_VB6\hydra+TouchScale\t01\dbasetouch.mdb
+10/02/2026 13:34:19-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.000.000.001:3306
+10/02/2026 13:34:19-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+10/02/2026 13:34:19-->Error: -2147467259 Descr.: [MySQL][ODBC 5.1 Driver]Access denied for user 'pcscale'@'localhost' (using password: YES)
+10/02/2026 13:34:19-->10/02/2026 13:34:19 --> Fin Recepción todos los tipos de tique.
+10/02/2026 13:34:19-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.000.000.001:3306
+10/02/2026 13:34:19-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+10/02/2026 13:34:19-->Error: -2147467259 Descr.: [MySQL][ODBC 5.1 Driver]Access denied for user 'pcscale'@'localhost' (using password: YES)
+10/02/2026 13:34:19-->10/02/2026 13:34:19 --> Fin Recepción todos los tipos de tique.
+10/02/2026 13:34:19-->Recogida 0007
+10/02/2026 13:34:19-->Escritura Tiques pendientes...
+10/02/2026 13:34:19-->Hay Cabecera...
+10/02/2026 13:34:19-->Código de Barras:2100211003550
+10/02/2026 13:34:19-->Construcción cabecera...
+10/02/2026 13:34:19-->Nombre Tique:100211.02A
+10/02/2026 13:34:19-->-MARCA-
+10/02/2026 13:34:19-->Hay Cabecera...
+10/02/2026 13:34:19-->Código de Barras:2100212006307
+10/02/2026 13:34:19-->Construcción cabecera...
+10/02/2026 13:34:19-->Nombre Tique:100212.15A
+10/02/2026 13:34:19-->-MARCA-
+10/02/2026 13:34:19-->Hay Cabecera...
+10/02/2026 13:34:19-->Código de Barras:2100213003855
+10/02/2026 13:34:19-->Construcción cabecera...
+10/02/2026 13:34:19-->Nombre Tique:100213.20A
+10/02/2026 13:34:19-->-MARCA-
+10/02/2026 13:34:19-->Hay Cabecera...
+10/02/2026 13:34:19-->Función Crea_fichero_ini
+3854
+10/02/2026 13:34:19-->Construcción cabecera...
+10/02/2026 13:34:19-->Tienda actual <> 0
+10/02/2026 13:34:19-->hydratouch.ini = C:\Proyectos_VB6\hydra+TouchScale\t01\hydratouch.ini
+10/02/2026 13:34:19-->pass.sec = C:\Proyectos_VB6\hydra+TouchScale\pass.sec
+10/02/2026 13:34:20-->Recogida 0008
+10/02/2026 13:34:20-->10/02/2026 13:34:20 --> Fin exportación Tique.
+10/02/2026 13:34:20-->Se revisa si necesario Actualizar: C:\Proyectos_VB6\hydra+TouchScale\t01\dbasetouch.mdb
+10/02/2026 13:34:21-->corregir nulos
+10/02/2026 13:34:47-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.000.000.001:3306
+10/02/2026 13:34:47-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+10/02/2026 13:34:47-->Error: -2147467259 Descr.: [MySQL][ODBC 5.1 Driver]Access denied for user 'pcscale'@'localhost' (using password: YES)
+10/02/2026 13:34:47-->10/02/2026 13:34:47 --> Fin Recepción todos los tipos de tique.
+10/02/2026 13:34:47-->Recibida orden de configuración.Máquina : 11.Tipo conexión : 0.Cadena Conexión : 127.000.000.001:3306
+10/02/2026 13:34:47-->Cadena de conexión(Uid y Pass no reales): DRIVER={MySQL ODBC 5.1 Driver};Uid=X;password=Y;DATABASE=pcscale;Data Source=127.0.0.1
+10/02/2026 13:34:47-->Error: -2147467259 Descr.: [MySQL][ODBC 5.1 Driver]Access denied for user 'pcscale'@'localhost' (using password: YES)
+10/02/2026 13:34:47-->10/02/2026 13:34:47 --> Fin Recepción todos los tipos de tique.
+10/02/2026 13:34:47-->Recogida 0007
+10/02/2026 13:34:47-->Escritura Tiques pendientes...
+10/02/2026 13:34:47-->Recogida 0008
+10/02/2026 13:34:47-->10/02/2026 13:34:47 --> Fin exportación Tique.

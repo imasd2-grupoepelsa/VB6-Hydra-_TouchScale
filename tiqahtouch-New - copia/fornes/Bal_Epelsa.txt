@@ -1,0 +1,1386 @@
+8702	#	0	#	B	#		#	MANZANA DELICIA BANDEJA	#	169	#	1	#		#	0	#	4	#	501	#	
+4090	#	0	#	B	#		#	PERA CONFERENCIA 1¦ BJA	#	200	#	1	#		#	0	#	4	#	501	#	
+4031	#	0	#	B	#		#	MANZANA DELICIA 1¦ BJA	#	200	#	1	#		#	0	#	4	#	501	#	
+4008	#	0	#	B	#		#	MANZANA GOLDEN 1¦ BJA	#	200	#	1	#		#	0	#	4	#	501	#	
+26767	#	0	#	B	#		#	LIMONES BANDEJA	#	99	#	1	#		#	0	#	4	#	501	#	
+26765	#	0	#	B	#		#	NARANJA BANDEJA	#	120	#	1	#		#	0	#	4	#	501	#	
+23954	#	0	#	B	#		#	MANZANA ROYAL GALA 1¦ BJA	#	200	#	1	#		#	0	#	4	#	501	#	
+23517	#	0	#	B	#		#	HIGOS SECOS TURCOS S/A	#	695	#	1	#		#	0	#	4	#	501	#	
+10622	#	0	#	B	#		#	MANZANA ROYAL GALA BANDEJA	#	169	#	1	#		#	0	#	4	#	501	#	
+39992	#	0	#	B	#		#	MACEDONIA FRUTA PELADA	#	349	#	1	#		#	0	#	4	#	501	#	
+38217	#	0	#	B	#		#	LOTE BANDEJA FRUTA	#	100	#	2	#		#	0	#	4	#	501	#	
+37798	#	0	#	B	#		#	ZUMO NARANJA RECIEN EXPRIMIDO	#	299	#	2	#		#	0	#	4	#	501	#	
+37797	#	0	#	B	#		#	ZUMO NARANJA RECIEN EXPRIMIDO	#	190	#	2	#		#	0	#	4	#	501	#	
+37796	#	0	#	B	#		#	ZUMO NARANJA RECIEN EXPRIMIDO	#	119	#	2	#		#	0	#	4	#	501	#	
+37779	#	0	#	B	#		#	FRUTA FRESCA PELADA VARIADA	#	295	#	1	#		#	0	#	4	#	501	#	
+37778	#	0	#	B	#		#	FRUTA FRESCA PELADA VARIADA	#	175	#	1	#		#	0	#	4	#	501	#	
+37777	#	0	#	B	#		#	FRUTA FRESCA PELADA VARIADA	#	100	#	1	#		#	0	#	4	#	501	#	
+37776	#	0	#	B	#		#	FRUTA FRESCA PELADA (1 FRUTA)	#	100	#	1	#		#	0	#	4	#	501	#	
+31434	#	0	#	B	#		#	FRUTA FRESCA PI¥A-MELON-UVA	#	0	#	1	#		#	0	#	4	#	501	#	
+31432	#	0	#	B	#		#	ZUMO FRESCO NARANJA/ZANAH/JENG	#	179	#	2	#		#	0	#	4	#	501	#	
+31431	#	0	#	B	#		#	ZUMO FRESCO MANZ/FRESA/GOJI/NA	#	179	#	2	#		#	0	#	4	#	501	#	
+31430	#	0	#	B	#		#	ZUMO FRESCO MANZANA LIMON ESP.	#	179	#	2	#		#	0	#	4	#	501	#	
+31326	#	0	#	B	#		#	ZUMO FRESCO NARANJA/ZANAH/JENG	#	390	#	2	#		#	0	#	4	#	501	#	
+31325	#	0	#	B	#		#	ZUMO FRESCO MANZ/FRESA/GOJI/NA	#	390	#	2	#		#	0	#	4	#	501	#	
+31324	#	0	#	B	#		#	ZUMO FRESCO MANZANA LIMON ESP.	#	390	#	2	#		#	0	#	4	#	501	#	
+31145	#	0	#	B	#		#	ZUMO FRESCO NARANJA/ZANAH/JENG	#	290	#	2	#		#	0	#	4	#	501	#	
+31144	#	0	#	B	#		#	ZUMO FRESCO MANZ/FRESA/GOJI/NA	#	290	#	2	#		#	0	#	4	#	501	#	
+31142	#	0	#	B	#		#	ZUMO FRESCO MANZANA LIMON ESP.	#	290	#	2	#		#	0	#	4	#	501	#	
+31139	#	0	#	B	#		#	FRUTA FRESCA PELADA VARIADA	#	129	#	1	#		#	0	#	4	#	501	#	
+42118	#	0	#	B	#		#	FRESAS CON CHOCOLATE	#	299	#	1	#		#	0	#	4	#	501	#	
+41882	#	0	#	B	#		#	CAQUIS	#	139	#	1	#		#	0	#	4	#	501	#	
+41621	#	0	#	B	#		#	HIGO CHUMBO	#	299	#	1	#		#	0	#	4	#	501	#	
+40696	#	0	#	B	#		#	FRESON PREMIUM	#	569	#	1	#		#	0	#	4	#	501	#	
+40170	#	0	#	B	#		#	MELON RICURA	#	125	#	1	#		#	0	#	4	#	501	#	
+39797	#	0	#	B	#		#	MELON PIEL DE SAPO	#	139	#	1	#		#	0	#	4	#	501	#	
+39506	#	0	#	B	#		#	FRESON CAJA	#	300	#	1	#		#	0	#	4	#	501	#	
+37441	#	0	#	B	#		#	SANDIA MINI	#	200	#	1	#		#	0	#	4	#	501	#	
+3733	#	0	#	B	#		#	SANDIA RAYADA	#	59	#	1	#		#	0	#	4	#	501	#	
+3719	#	0	#	B	#		#	MELON AMARILLO	#	169	#	1	#		#	0	#	4	#	501	#	
+36428	#	0	#	B	#		#	CAJA UVA NAVIDAD	#	100	#	1	#		#	0	#	4	#	501	#	
+35867	#	0	#	B	#		#	SANDIA NEGRA CORTADA SELECCION	#	85	#	1	#		#	0	#	4	#	501	#	
+35865	#	0	#	B	#		#	SANDIA NEGRA SELECCION	#	69	#	1	#		#	0	#	4	#	501	#	
+35651	#	0	#	B	#		#	SANDIA NEGRA CORTADA	#	179	#	1	#		#	0	#	4	#	501	#	
+35627	#	0	#	B	#		#	CAQUI SHARON	#	360	#	1	#		#	0	#	4	#	501	#	
+35620	#	0	#	B	#		#	MELON CANTALOUP	#	185	#	1	#		#	0	#	4	#	501	#	
+34762	#	0	#	B	#		#	AVELLANA	#	799	#	1	#		#	0	#	4	#	501	#	
+34761	#	0	#	B	#		#	ALMENDRAS	#	499	#	1	#		#	0	#	4	#	501	#	
+3465	#	0	#	B	#		#	HIGOS	#	495	#	1	#		#	0	#	4	#	501	#	
+34640	#	0	#	B	#		#	GROSELLA TARRINA	#	359	#	1	#		#	0	#	4	#	501	#	
+34428	#	0	#	B	#		#	SANDIA AMARILLA	#	100	#	1	#		#	0	#	4	#	501	#	
+34316	#	0	#	B	#		#	MELON CORTADO EXTRA	#	215	#	1	#		#	0	#	4	#	501	#	
+34315	#	0	#	B	#		#	SANDIA RAYADA CORTADA	#	75	#	1	#		#	0	#	4	#	501	#	
+31268	#	0	#	B	#		#	NUECES IBERICAS	#	495	#	1	#		#	0	#	4	#	501	#	
+2906	#	0	#	B	#		#	MELON GALIA	#	179	#	1	#		#	0	#	4	#	501	#	
+27293	#	0	#	B	#		#	FRESON TARRINA	#	325	#	1	#		#	0	#	4	#	501	#	
+25353	#	0	#	B	#		#	SANDIA NEGRA ENTERA	#	169	#	1	#		#	0	#	4	#	501	#	
+23534	#	0	#	B	#		#	NUECES GRANEL	#	395	#	1	#		#	0	#	4	#	501	#	
+15765	#	0	#	B	#		#	UVA MOSCATEL TERRENO	#	299	#	1	#		#	0	#	4	#	501	#	
+15740	#	0	#	B	#		#	FRESON GRANEL 1A	#	1500	#	1	#		#	0	#	4	#	501	#	
+15732	#	0	#	B	#		#	BREVAS	#	590	#	1	#		#	0	#	4	#	501	#	
+1035	#	0	#	B	#		#	GROSELLA	#	2500	#	1	#		#	0	#	4	#	501	#	
+4712	#	0	#	B	#		#	PERA BLANQUILLA BOLSA	#	100	#	1	#		#	0	#	4	#	501	#	
+44318	#	0	#	B	#		#	PERA ERCOLINA	#	380	#	1	#		#	0	#	4	#	501	#	
+43732	#	0	#	B	#		#	MANZANA FUJI	#	149	#	1	#		#	0	#	4	#	501	#	
+41954	#	0	#	B	#		#	PERA LIMONERA CESTA	#	129	#	1	#		#	0	#	4	#	501	#	
+40797	#	0	#	B	#		#	MANZANA FUJI PANDA	#	250	#	1	#		#	0	#	4	#	501	#	
+40650	#	0	#	B	#		#	MANZANA VERDEDONCELLA	#	149	#	1	#		#	0	#	4	#	501	#	
+40553	#	0	#	B	#		#	PERA LIMONERA CESTA	#	149	#	1	#		#	0	#	4	#	501	#	
+38060	#	0	#	B	#		#	PERA CONFERENCIA CESTA	#	132	#	1	#		#	0	#	4	#	501	#	
+37356	#	0	#	B	#		#	PERA BALL PREMIER	#	199	#	1	#		#	0	#	4	#	501	#	
+36244	#	0	#	B	#		#	MANZANA ROYAL GALA EXTRA	#	269	#	1	#		#	0	#	4	#	501	#	
+35351	#	0	#	B	#		#	PERA LECLERC	#	195	#	1	#		#	0	#	4	#	501	#	
+35284	#	0	#	B	#		#	MANZANA AMBROSIA	#	255	#	1	#		#	0	#	4	#	501	#	
+35261	#	0	#	B	#		#	PERA CONFERENCIA SELECCION	#	275	#	1	#		#	0	#	4	#	501	#	
+34999	#	0	#	B	#		#	PERA ROCHA	#	159	#	1	#		#	0	#	4	#	501	#	
+34180	#	0	#	B	#		#	PERA D'ANJOU	#	185	#	1	#		#	0	#	4	#	501	#	
+32698	#	0	#	B	#		#	MANZANA GOLDEN CESTA	#	100	#	1	#		#	0	#	4	#	501	#	
+32697	#	0	#	B	#		#	MANZANA ROYAL GALA CESTA	#	89	#	1	#		#	0	#	4	#	501	#	
+2748	#	0	#	B	#		#	PERA ERCOLINA	#	225	#	1	#		#	0	#	4	#	501	#	
+26511	#	0	#	B	#		#	MANZANA GOLDEN CAJA	#	179	#	1	#		#	0	#	4	#	501	#	
+25357	#	0	#	B	#		#	PERA BARLETT	#	198	#	1	#		#	0	#	4	#	501	#	
+23796	#	0	#	B	#		#	MANZANA GRAN SMITH	#	225	#	1	#		#	0	#	4	#	501	#	
+23587	#	0	#	B	#		#	MANZANA DELICIA	#	285	#	1	#		#	0	#	4	#	501	#	
+17416	#	0	#	B	#		#	MANZANA PINK LADY	#	329	#	1	#		#	0	#	4	#	501	#	
+15758	#	0	#	B	#		#	PERA CASTELL	#	240	#	1	#		#	0	#	4	#	501	#	
+15756	#	0	#	B	#		#	PERA LIMONERA	#	179	#	1	#		#	0	#	4	#	501	#	
+15755	#	0	#	B	#		#	PERA ITALIANA	#	225	#	1	#		#	0	#	4	#	501	#	
+15748	#	0	#	B	#		#	MEMBRILLO	#	195	#	1	#		#	0	#	4	#	501	#	
+15718	#	0	#	B	#		#	PERA FLOR DE INVIERNO	#	145	#	1	#		#	0	#	4	#	501	#	
+6820	#	0	#	B	#		#	PI¥A CORTADA	#	129	#	1	#		#	0	#	4	#	501	#	
+44577	#	0	#	B	#		#	PI¥A CYLINDER	#	259	#	1	#		#	0	#	4	#	501	#	
+4382	#	0	#	B	#		#	KIWIS GOLD BANDEJA	#	360	#	1	#		#	0	#	4	#	501	#	
+4381	#	0	#	B	#		#	PLATANOS FREIR/MACHO	#	160	#	1	#		#	0	#	4	#	501	#	
+42249	#	0	#	B	#		#	AGUACATE PREMADURO	#	125	#	1	#		#	0	#	4	#	501	#	
+41881	#	0	#	B	#		#	PLATANO ECOLOGICO	#	290	#	1	#		#	0	#	4	#	501	#	
+41269	#	0	#	B	#		#	MANGO 2 UNIDADES	#	169	#	1	#		#	0	#	4	#	501	#	
+40832	#	0	#	B	#		#	PLATANOS DE GABACERAS	#	225	#	1	#		#	0	#	4	#	501	#	
+40666	#	0	#	B	#		#	DATIL MEDJOUL	#	299	#	1	#		#	0	#	4	#	501	#	
+3953	#	0	#	B	#		#	KIWI ITALIA	#	199	#	1	#		#	0	#	4	#	501	#	
+39122	#	0	#	B	#		#	PI¥A DEL MONTE	#	139	#	1	#		#	0	#	4	#	501	#	
+38335	#	0	#	B	#		#	HABAS SECAS / MICHIRONES	#	295	#	1	#		#	0	#	4	#	501	#	
+37780	#	0	#	B	#		#	FRUTA FRESCA PELADA VARIADA	#	275	#	1	#		#	0	#	4	#	501	#	
+36423	#	0	#	B	#		#	FRUTOS EXOTICOS BANDEJA	#	675	#	1	#		#	0	#	4	#	501	#	
+35534	#	0	#	B	#		#	AGUACATE PACK	#	289	#	1	#		#	0	#	4	#	501	#	
+35260	#	0	#	B	#		#	KIWI VALENCIANO	#	249	#	1	#		#	0	#	4	#	501	#	
+35151	#	0	#	B	#		#	DATILES CONFITADOS	#	390	#	1	#		#	0	#	4	#	501	#	
+35058	#	0	#	B	#		#	PI¥A NATURAL PELADA	#	210	#	1	#		#	0	#	4	#	501	#	
+3291	#	0	#	B	#		#	BANANAS	#	125	#	1	#		#	0	#	4	#	501	#	
+31437	#	0	#	B	#		#	FRUTA FRESCA CAQUI-MELON	#	0	#	1	#		#	0	#	4	#	501	#	
+31436	#	0	#	B	#		#	FRUTA FRESCA  PI¥A-CAQUI	#	0	#	1	#		#	0	#	4	#	501	#	
+31435	#	0	#	B	#		#	FRUTA FRESCA MELON-CAQUI	#	0	#	1	#		#	0	#	4	#	501	#	
+31433	#	0	#	B	#		#	FRUTA FRESCA PI¥A-CAQUI	#	0	#	1	#		#	0	#	4	#	501	#	
+23737	#	0	#	B	#		#	LICHIE	#	490	#	1	#		#	0	#	4	#	501	#	
+23520	#	0	#	B	#		#	DATIL RAMA	#	499	#	1	#		#	0	#	4	#	501	#	
+1270	#	0	#	B	#		#	FRUTOS EXOTICOS	#	1195	#	1	#		#	0	#	4	#	501	#	
+10337	#	0	#	B	#		#	DATILES CONFITADOS	#	371	#	1	#		#	0	#	4	#	501	#	
+9675	#	0	#	B	#		#	MELOCOTON BANDEJA	#	125	#	1	#		#	0	#	4	#	501	#	
+44319	#	0	#	B	#		#	CIRUELA ROJA	#	340	#	1	#		#	0	#	4	#	501	#	
+4189	#	0	#	B	#		#	CIRUELA ROJA	#	449	#	1	#		#	0	#	4	#	501	#	
+4148	#	0	#	B	#		#	PARAGUAYOS / CHATOS	#	185	#	1	#		#	0	#	4	#	501	#	
+41214	#	0	#	B	#		#	CEREZAS SELECCION	#	399	#	1	#		#	0	#	4	#	501	#	
+40265	#	0	#	B	#		#	MELOCOTON AMARILLO SELECCION	#	325	#	1	#		#	0	#	4	#	501	#	
+40138	#	0	#	B	#		#	MELOCOTON ROJO CAJA	#	299	#	1	#		#	0	#	4	#	501	#	
+40137	#	0	#	B	#		#	MELOCOTON AMARILLO CAJA	#	288	#	1	#		#	0	#	4	#	501	#	
+40136	#	0	#	B	#		#	NECTARINA CAJA	#	299	#	1	#		#	0	#	4	#	501	#	
+40033	#	0	#	B	#		#	ALBARICOQUES CAJA	#	299	#	1	#		#	0	#	4	#	501	#	
+39962	#	0	#	B	#		#	CEREZAS BANDEJA	#	695	#	1	#		#	0	#	4	#	501	#	
+3919	#	0	#	B	#		#	CIRUELA AMARILLA	#	229	#	1	#		#	0	#	4	#	501	#	
+3875	#	0	#	B	#		#	CIRUELA CLAUDIA	#	225	#	1	#		#	0	#	4	#	501	#	
+38743	#	0	#	B	#		#	NECTARINA CAJA	#	175	#	1	#		#	0	#	4	#	501	#	
+38742	#	0	#	B	#		#	MELOCOTON AMARILLO CAJA	#	175	#	1	#		#	0	#	4	#	501	#	
+38531	#	0	#	B	#		#	COPA CEREZAS	#	169	#	1	#		#	0	#	4	#	501	#	
+37442	#	0	#	B	#		#	MELOCOTON AMARILLO BANDEJA	#	179	#	1	#		#	0	#	4	#	501	#	
+37284	#	0	#	B	#		#	CEREZAS EXTRA CAJA 2KG	#	680	#	1	#		#	0	#	4	#	501	#	
+3629	#	0	#	B	#		#	CEREZA PICOTA	#	480	#	1	#		#	0	#	4	#	501	#	
+3506	#	0	#	B	#		#	MELOCOTON AMARILLO	#	195	#	1	#		#	0	#	4	#	501	#	
+34656	#	0	#	B	#		#	MELOCOTON CAJA 1,8KG	#	225	#	1	#		#	0	#	4	#	501	#	
+3436	#	0	#	B	#		#	PRUNA NEGRA	#	165	#	1	#		#	0	#	4	#	501	#	
+34179	#	0	#	B	#		#	NISPERO TARRINA	#	180	#	1	#		#	0	#	4	#	501	#	
+3413	#	0	#	B	#		#	ALBARICOQUES	#	249	#	1	#		#	0	#	4	#	501	#	
+3234	#	0	#	B	#		#	CEREZAS	#	1449	#	1	#		#	0	#	4	#	501	#	
+2678	#	0	#	B	#		#	NISPEROS	#	285	#	1	#		#	0	#	4	#	501	#	
+15763	#	0	#	B	#		#	PRUNA ROJA	#	129	#	1	#		#	0	#	4	#	501	#	
+15762	#	0	#	B	#		#	CIRUELA PRUNA	#	199	#	1	#		#	0	#	4	#	501	#	
+15750	#	0	#	B	#		#	MELOCOTON ROJO	#	159	#	1	#		#	0	#	4	#	501	#	
+15736	#	0	#	B	#		#	CIRUELA TROMPELLOT	#	189	#	1	#		#	0	#	4	#	501	#	
+15710	#	0	#	B	#		#	NECTARINA	#	169	#	1	#		#	0	#	4	#	501	#	
+43715	#	0	#	B	#		#	MANDARINA CAJA	#	350	#	1	#		#	0	#	4	#	501	#	
+4212	#	0	#	B	#		#	NARANJA 2A.	#	50	#	1	#		#	0	#	4	#	501	#	
+41912	#	0	#	B	#		#	NARANJA MALLA	#	480	#	1	#		#	0	#	4	#	501	#	
+40895	#	0	#	B	#		#	NARANJA MALLA	#	299	#	1	#		#	0	#	4	#	501	#	
+35991	#	0	#	B	#		#	LIMA MALLA	#	149	#	1	#		#	0	#	4	#	501	#	
+34482	#	0	#	B	#		#	NARANJA MALLA 2KG	#	119	#	1	#		#	0	#	4	#	501	#	
+31323	#	0	#	B	#		#	ZUMO FRESCO PI¥A LIMA	#	179	#	2	#		#	0	#	4	#	501	#	
+31141	#	0	#	B	#		#	ZUMO FRESCO PI¥A LIMA	#	290	#	2	#		#	0	#	4	#	501	#	
+31140	#	0	#	B	#		#	ZUMO FRESCO NARANJA GRANADA	#	290	#	2	#		#	0	#	4	#	501	#	
+26766	#	0	#	B	#		#	MANDARINA BANDEJA	#	195	#	1	#		#	0	#	4	#	501	#	
+24817	#	0	#	B	#		#	MANDARINA MALLA	#	149	#	1	#		#	0	#	4	#	501	#	
+23882	#	0	#	B	#		#	LIMA GRANEL	#	290	#	1	#		#	0	#	4	#	501	#	
+15738	#	0	#	B	#		#	MANDARINA EXTRA	#	99	#	1	#		#	0	#	4	#	501	#	
+38217	#	0	#	M	#		#	LOTE BANDEJA FRUTA	#	100	#	2	#		#	0	#	4	#	501	#	
+37798	#	0	#	M	#		#	ZUMO NARANJA RECIEN EXPRIMIDO	#	299	#	2	#		#	0	#	4	#	501	#	
+37797	#	0	#	M	#		#	ZUMO NARANJA RECIEN EXPRIMIDO	#	190	#	2	#		#	0	#	4	#	501	#	
+37796	#	0	#	M	#		#	ZUMO NARANJA RECIEN EXPRIMIDO	#	119	#	2	#		#	0	#	4	#	501	#	
+37779	#	0	#	M	#		#	FRUTA FRESCA PELADA VARIADA	#	295	#	1	#		#	0	#	4	#	501	#	
+37778	#	0	#	M	#		#	FRUTA FRESCA PELADA VARIADA	#	175	#	1	#		#	0	#	4	#	501	#	
+37776	#	0	#	M	#		#	FRUTA FRESCA PELADA (1 FRUTA)	#	100	#	1	#		#	0	#	4	#	501	#	
+31432	#	0	#	M	#		#	ZUMO FRESCO NARANJA/ZANAH/JENG	#	179	#	2	#		#	0	#	4	#	501	#	
+31431	#	0	#	M	#		#	ZUMO FRESCO MANZ/FRESA/GOJI/NA	#	179	#	2	#		#	0	#	4	#	501	#	
+31430	#	0	#	M	#		#	ZUMO FRESCO MANZANA LIMON ESP.	#	179	#	2	#		#	0	#	4	#	501	#	
+31139	#	0	#	M	#		#	FRUTA FRESCA PELADA VARIADA	#	129	#	1	#		#	0	#	4	#	501	#	
+12094	#	0	#	M	#	304	#	LOTE FYV UNIDAD	#	299	#	2	#		#	0	#	4	#	501	#	
+42066	#	1	#	M	#	18	#	UVA BLANCA SIN SEMILLAS	#	479	#	1	#		#	0	#	4	#	501	#	
+40696	#	0	#	M	#		#	FRESON PREMIUM	#	569	#	1	#		#	0	#	4	#	501	#	
+3884	#	1	#	M	#	78	#	UVA NEGRA	#	359	#	1	#		#	0	#	4	#	501	#	
+35938	#	0	#	M	#		#	UVA NEGRA SIN SEMILLAS TARRINA	#	249	#	1	#		#	0	#	4	#	501	#	
+35867	#	0	#	M	#		#	SANDIA NEGRA CORTADA SELECCION	#	85	#	1	#		#	0	#	4	#	501	#	
+34639	#	0	#	M	#		#	MORAS	#	259	#	1	#		#	0	#	4	#	501	#	
+34517	#	0	#	M	#		#	UVA BLANCA SIN SEMILLA TARRINA	#	259	#	1	#		#	0	#	4	#	501	#	
+34316	#	0	#	M	#		#	MELON CORTADO EXTRA	#	215	#	1	#		#	0	#	4	#	501	#	
+34315	#	0	#	M	#		#	SANDIA RAYADA CORTADA	#	75	#	1	#		#	0	#	4	#	501	#	
+3155	#	1	#	M	#	55	#	CAQUIS	#	199	#	1	#		#	0	#	4	#	501	#	
+27293	#	0	#	M	#		#	FRESON TARRINA	#	325	#	1	#		#	0	#	4	#	501	#	
+23395	#	0	#	M	#	228	#	FRAMBUESA	#	229	#	1	#		#	0	#	4	#	501	#	
+17418	#	0	#	M	#	148	#	ARANDANOS	#	299	#	1	#		#	0	#	4	#	501	#	
+15747	#	1	#	M	#	58	#	MELON PIEL DE SAPO EXTRA	#	199	#	1	#		#	0	#	4	#	501	#	
+15740	#	1	#	M	#	80	#	FRESON GRANEL 1A	#	1500	#	1	#		#	0	#	4	#	501	#	
+45446	#	0	#	M	#		#	MANZANA GOLDEN ECOLOGICA	#	289	#	1	#		#	0	#	4	#	501	#	
+45445	#	0	#	M	#		#	MANZANA ROYAL GALA ECOLOGICA	#	289	#	1	#		#	0	#	4	#	501	#	
+4820	#	1	#	M	#	48	#	MANZANA ROYAL GALA	#	159	#	1	#		#	0	#	4	#	501	#	
+40817	#	1	#	M	#	93	#	MANZANA FUJI PANDA	#	299	#	1	#		#	0	#	4	#	501	#	
+40459	#	1	#	M	#	45	#	MANZANA ROYAL GALA SELECCION	#	225	#	1	#		#	0	#	4	#	501	#	
+3932	#	1	#	M	#	95	#	PERA ALEJANDRINA	#	189	#	1	#		#	0	#	4	#	501	#	
+39062	#	0	#	M	#		#	MANZANA GOLDEN BOLSA 1,5KG	#	100	#	1	#		#	0	#	4	#	501	#	
+37682	#	0	#	M	#		#	MANZANA ROYAL GALA BOLSA 1,7KG	#	235	#	1	#		#	0	#	4	#	501	#	
+3763	#	1	#	M	#	65	#	PERA BLANQUILLA	#	159	#	1	#		#	0	#	4	#	501	#	
+36243	#	1	#	M	#	7	#	MANZANA GOLDEN SELECCION	#	199	#	1	#		#	0	#	4	#	501	#	
+35261	#	1	#	M	#	33	#	PERA CONFERENCIA SELECCION	#	275	#	1	#		#	0	#	4	#	501	#	
+32696	#	0	#	M	#		#	PERA CONFERENCIA CESTA	#	139	#	1	#		#	0	#	4	#	501	#	
+29969	#	1	#	M	#	81	#	PERA PACKHAM	#	139	#	1	#		#	0	#	4	#	501	#	
+23955	#	1	#	M	#	25	#	MANZANA FUJI	#	179	#	1	#		#	0	#	4	#	501	#	
+23796	#	1	#	M	#	99	#	MANZANA GRAN SMITH	#	225	#	1	#		#	0	#	4	#	501	#	
+23795	#	1	#	M	#	98	#	PERA CONFERENCIA	#	169	#	1	#		#	0	#	4	#	501	#	
+23588	#	1	#	M	#	44	#	MANZANA GOLDEN	#	159	#	1	#		#	0	#	4	#	501	#	
+23423	#	1	#	M	#	16	#	MANZANA PARA ASAR REINETA	#	179	#	1	#		#	0	#	4	#	501	#	
+45549	#	1	#	M	#	46	#	PI¥A AVION	#	349	#	1	#		#	0	#	4	#	501	#	
+45373	#	0	#	M	#		#	PI¥A PELADA RODAJAS	#	269	#	1	#		#	0	#	4	#	501	#	
+9679	#	0	#	M	#	269	#	KIWI BANDEJA	#	249	#	1	#		#	0	#	4	#	501	#	
+6820	#	0	#	M	#		#	PI¥A CORTADA	#	129	#	1	#		#	3	#	4	#	501	#	
+4809	#	1	#	M	#	88	#	PI¥A	#	119	#	1	#		#	0	#	4	#	501	#	
+4808	#	1	#	M	#	59	#	KIWI	#	399	#	1	#		#	0	#	4	#	501	#	
+43745	#	0	#	M	#		#	AGUACATE ECOLOGICO	#	290	#	1	#		#	0	#	4	#	501	#	
+42249	#	0	#	M	#		#	AGUACATE PREMADURO	#	125	#	1	#		#	0	#	4	#	501	#	
+41881	#	0	#	M	#		#	PLATANO ECOLOGICO	#	290	#	1	#		#	0	#	4	#	501	#	
+41389	#	0	#	M	#		#	KIWI GREEN ECOLOGICO	#	380	#	1	#		#	0	#	4	#	501	#	
+40580	#	0	#	M	#		#	COCO NATURAL	#	149	#	1	#		#	0	#	4	#	501	#	
+3940	#	1	#	M	#	1	#	AGUACATES	#	499	#	1	#		#	0	#	4	#	501	#	
+37874	#	1	#	M	#	10	#	BANANAS	#	139	#	1	#		#	0	#	4	#	501	#	
+3776	#	1	#	M	#	9	#	PLATANOS	#	229	#	1	#		#	0	#	4	#	501	#	
+35260	#	1	#	M	#	70	#	KIWI VALENCIANO	#	249	#	1	#		#	0	#	4	#	501	#	
+3481	#	1	#	M	#	72	#	CHIRIMOYAS	#	349	#	1	#		#	0	#	4	#	501	#	
+32457	#	1	#	M	#	5	#	KIWI GOLD	#	349	#	1	#		#	0	#	4	#	501	#	
+23731	#	1	#	M	#	96	#	PAPAYA	#	495	#	1	#		#	0	#	4	#	501	#	
+15743	#	1	#	M	#	74	#	MANGOS	#	299	#	1	#		#	0	#	4	#	501	#	
+4189	#	1	#	M	#	34	#	CIRUELA ROJA	#	449	#	1	#		#	0	#	4	#	501	#	
+37284	#	0	#	M	#		#	CEREZAS EXTRA CAJA 2KG	#	680	#	1	#		#	0	#	4	#	501	#	
+42099	#	0	#	M	#		#	LIMA BANDEJA	#	125	#	1	#		#	0	#	4	#	501	#	
+3938	#	1	#	M	#	8	#	NARANJA	#	119	#	1	#		#	0	#	4	#	501	#	
+39123	#	0	#	M	#		#	NARANJA GRANEL ZUMO	#	130	#	1	#		#	0	#	4	#	501	#	
+3803	#	1	#	M	#	62	#	MANDARINAS EXTRA	#	159	#	1	#		#	0	#	4	#	501	#	
+36519	#	0	#	M	#		#	MANDARINA MALLA	#	210	#	1	#		#	0	#	4	#	501	#	
+31323	#	0	#	M	#		#	ZUMO FRESCO PI¥A LIMA	#	179	#	2	#		#	0	#	4	#	501	#	
+2745	#	1	#	M	#	3	#	LIMONES	#	169	#	1	#		#	0	#	4	#	501	#	
+2722	#	1	#	M	#	82	#	POMELOS	#	149	#	1	#		#	0	#	4	#	501	#	
+25354	#	0	#	M	#		#	NARANJA MALLA 3KG	#	325	#	1	#		#	0	#	4	#	501	#	
+23414	#	0	#	M	#	229	#	LIMONES MALLA	#	149	#	1	#		#	0	#	4	#	501	#	
+32646	#	0	#	B	#		#	BONIATOS BANDEJA	#	195	#	1	#		#	0	#	4	#	502	#	
+45611	#	0	#	B	#		#	ENSALADA TU PLATO MEDITERRANEO	#	299	#	1	#		#	0	#	4	#	502	#	
+44786	#	0	#	B	#		#	ENSALADA BABY LEAF ECOLOGICA	#	175	#	1	#		#	0	#	4	#	502	#	
+44785	#	0	#	B	#		#	ENSALADA COCKTAIL DEL MAR	#	295	#	1	#		#	0	#	4	#	502	#	
+44579	#	0	#	B	#		#	SALMOREJO	#	220	#	2	#		#	0	#	4	#	502	#	
+44578	#	0	#	B	#		#	CREMA DE PUERRO	#	220	#	2	#		#	0	#	4	#	502	#	
+44157	#	0	#	B	#		#	BONIATO ASADO	#	295	#	1	#		#	0	#	4	#	502	#	
+43744	#	0	#	B	#		#	ENSALADA ENROLLADOS DE SALMON	#	390	#	1	#		#	0	#	4	#	502	#	
+43722	#	0	#	B	#		#	ENSALADA ROMA	#	259	#	1	#		#	0	#	4	#	502	#	
+42634	#	0	#	B	#		#	ENSALADA ENROLLADOS DE SALMON	#	390	#	1	#		#	0	#	4	#	502	#	
+42376	#	0	#	B	#		#	TU PLATO MEDITERRANEO	#	390	#	1	#		#	0	#	4	#	502	#	
+41992	#	0	#	B	#		#	ENSALADA FUSILLI AL POMODORO	#	325	#	1	#		#	0	#	4	#	502	#	
+41894	#	0	#	B	#		#	HORTALISTAS BROCOLI  MICRO	#	155	#	1	#		#	0	#	4	#	502	#	
+41130	#	0	#	B	#		#	ENSALADA DE LA CASA	#	249	#	1	#		#	0	#	4	#	502	#	
+40867	#	0	#	B	#		#	ENSALADA SERRANA	#	325	#	1	#		#	0	#	4	#	502	#	
+40866	#	0	#	B	#		#	ENSALADA DEL MAR	#	325	#	1	#		#	0	#	4	#	502	#	
+40857	#	0	#	B	#		#	ENSALADA CESAR	#	279	#	1	#		#	0	#	4	#	502	#	
+40735	#	0	#	B	#		#	ENSALADA FAMILIAR MIXTA	#	250	#	1	#		#	0	#	4	#	502	#	
+40677	#	0	#	B	#		#	CREMA DE LEGUMBRES	#	199	#	2	#		#	0	#	4	#	502	#	
+40550	#	0	#	B	#		#	SALSA ROMESCO PARA CAL€OTS	#	149	#	1	#		#	0	#	4	#	502	#	
+40366	#	0	#	B	#		#	ENSALADA PASTA Y RUCULA	#	299	#	1	#		#	0	#	4	#	502	#	
+40196	#	0	#	B	#		#	ENSALADA ENROLLADOS DE POLLO	#	350	#	1	#		#	0	#	4	#	502	#	
+40180	#	0	#	B	#		#	CANONIGO	#	220	#	1	#		#	0	#	4	#	502	#	
+40178	#	0	#	B	#		#	BROTES CLASSICS	#	199	#	1	#		#	0	#	4	#	502	#	
+39585	#	0	#	B	#		#	ENSALADA NEW YORK	#	279	#	1	#		#	0	#	4	#	502	#	
+39584	#	0	#	B	#		#	CREMA DE CALABAZA	#	220	#	2	#		#	0	#	4	#	502	#	
+39583	#	0	#	B	#		#	CREMA DE VERDURAS	#	220	#	2	#		#	0	#	4	#	502	#	
+39520	#	0	#	B	#		#	SALSA ROMESCO PARA CAL€OTS	#	225	#	1	#		#	0	#	4	#	502	#	
+39448	#	0	#	B	#		#	BROCOLI MICROONDAS	#	139	#	1	#		#	0	#	4	#	502	#	
+39267	#	0	#	B	#		#	ENSALADA CESAR	#	269	#	1	#		#	0	#	4	#	502	#	
+39266	#	0	#	B	#		#	ENSALADA ROMA	#	279	#	1	#		#	0	#	4	#	502	#	
+39177	#	0	#	B	#		#	SOPA JULIANA	#	165	#	1	#		#	0	#	4	#	502	#	
+38705	#	0	#	B	#		#	SALSA MOSTAZA Y MIEL ARANDANOS	#	229	#	2	#		#	0	#	4	#	502	#	
+38704	#	0	#	B	#		#	SALSA YOGUR	#	229	#	2	#		#	0	#	4	#	502	#	
+38703	#	0	#	B	#		#	SALSA CESAR	#	229	#	2	#		#	0	#	4	#	502	#	
+38434	#	0	#	B	#		#	ENSALADA IBERICA	#	285	#	1	#		#	0	#	4	#	502	#	
+37641	#	0	#	B	#		#	ENSALADA NEW YORKER	#	285	#	1	#		#	0	#	4	#	502	#	
+3731	#	0	#	B	#		#	BERROS CORTADOS	#	160	#	1	#		#	0	#	4	#	502	#	
+36513	#	0	#	B	#		#	BROTES TIERNOS SENSATION	#	139	#	1	#		#	0	#	4	#	502	#	
+36453	#	0	#	B	#		#	GUACAMOLE	#	185	#	1	#		#	0	#	4	#	502	#	
+36400	#	0	#	B	#		#	SALSA CESAR	#	65	#	1	#		#	0	#	4	#	502	#	
+36050	#	0	#	B	#		#	CORAZON DE ESCAROLA	#	165	#	1	#		#	0	#	4	#	502	#	
+35866	#	0	#	B	#		#	ENSALADA FRESCA CESAR	#	269	#	1	#		#	0	#	4	#	502	#	
+35626	#	0	#	B	#		#	BROTES DE ALFALFA	#	159	#	1	#		#	0	#	4	#	502	#	
+35624	#	0	#	B	#		#	ENSALADA SUPREME BOLSA	#	159	#	1	#		#	0	#	4	#	502	#	
+34612	#	0	#	B	#		#	ENSALADA CAPRICCIO	#	135	#	1	#		#	0	#	4	#	502	#	
+34611	#	0	#	B	#		#	HORTALISTAS CLASICAS MICRO	#	160	#	1	#		#	0	#	4	#	502	#	
+34375	#	0	#	B	#		#	RUCULA BOLSA	#	140	#	1	#		#	0	#	4	#	502	#	
+32431	#	0	#	B	#		#	SALSA YOGUR	#	229	#	2	#		#	0	#	4	#	502	#	
+32430	#	0	#	B	#		#	SALSA CESAR	#	229	#	2	#		#	0	#	4	#	502	#	
+27230	#	0	#	B	#		#	ENSALADA GOURMET	#	165	#	1	#		#	0	#	4	#	502	#	
+27228	#	0	#	B	#		#	ACELGA	#	100	#	1	#		#	0	#	4	#	502	#	
+25856	#	0	#	B	#		#	ACELGA	#	109	#	1	#		#	0	#	4	#	502	#	
+25854	#	0	#	B	#		#	ENSALADA 4 ESTACIONES	#	79	#	1	#		#	0	#	4	#	502	#	
+11304	#	0	#	B	#		#	ENSALADA CESAR POLLO Y QUESO	#	295	#	1	#		#	0	#	4	#	502	#	
+43730	#	0	#	B	#		#	CEBOLLA MALLA 5KG	#	199	#	1	#		#	0	#	4	#	502	#	
+4200	#	0	#	B	#		#	AJOS SECOS GRANEL	#	480	#	1	#		#	0	#	4	#	502	#	
+39446	#	0	#	B	#		#	AJO PELADO	#	99	#	1	#		#	0	#	4	#	502	#	
+39235	#	0	#	B	#		#	CEBOLLA GRANEL GRANO	#	99	#	1	#		#	0	#	4	#	502	#	
+38747	#	0	#	B	#		#	AJO PUERRO TIERNO	#	155	#	1	#		#	0	#	4	#	502	#	
+35294	#	0	#	B	#		#	PUERROS	#	219	#	1	#		#	0	#	4	#	502	#	
+15248	#	0	#	B	#		#	CEBOLLA EXTRA TUBO 1KG	#	80	#	1	#		#	0	#	4	#	502	#	
+4804	#	0	#	B	#		#	NISCALO/ROVELLON	#	1390	#	1	#		#	0	#	4	#	502	#	
+43272	#	0	#	B	#		#	REBOLLON/NISCALOS	#	699	#	1	#		#	0	#	4	#	502	#	
+41991	#	0	#	B	#		#	MIX 4 SETAS	#	290	#	1	#		#	0	#	4	#	502	#	
+41934	#	0	#	B	#		#	CHAMPI¥ON CUARTOS	#	100	#	1	#		#	0	#	4	#	502	#	
+41933	#	0	#	B	#		#	NISCALOS / REBOLLONES	#	899	#	1	#		#	0	#	4	#	502	#	
+41913	#	0	#	B	#		#	CHAMPI¥ON BANDEJA	#	195	#	1	#		#	0	#	4	#	502	#	
+40737	#	0	#	B	#		#	CHAMPI¥ON SHII TAKE	#	169	#	1	#		#	0	#	4	#	502	#	
+39063	#	0	#	B	#		#	NISCALO / ROVELLON CAJA	#	1290	#	1	#		#	0	#	4	#	502	#	
+36431	#	0	#	B	#		#	CHAMPI¥ON CAJA 1KG	#	269	#	1	#		#	0	#	4	#	502	#	
+34920	#	0	#	B	#		#	REVUELTO COMBINADO	#	229	#	1	#		#	0	#	4	#	502	#	
+2973	#	0	#	B	#		#	CHAMPI¥ON GRANEL	#	420	#	1	#		#	0	#	4	#	502	#	
+25793	#	0	#	B	#		#	CHAMPI¥ON PIE CORT.BANDEJA	#	109	#	1	#		#	0	#	4	#	502	#	
+4810	#	0	#	B	#		#	NAPICOL BANDEJA	#	269	#	1	#		#	0	#	4	#	502	#	
+2839	#	0	#	B	#		#	CHIRIVIA	#	225	#	1	#		#	0	#	4	#	502	#	
+23801	#	0	#	B	#		#	CARLOTA TARRINA	#	100	#	1	#		#	0	#	4	#	502	#	
+23799	#	0	#	B	#		#	YUCA	#	220	#	1	#		#	0	#	4	#	502	#	
+23425	#	0	#	B	#		#	GENGIBRE	#	495	#	1	#		#	0	#	4	#	502	#	
+15708	#	0	#	B	#		#	NAPICOL	#	190	#	1	#		#	0	#	4	#	502	#	
+15246	#	0	#	B	#		#	CARLOTA BOLSA 5 KG.	#	65	#	1	#		#	0	#	4	#	502	#	
+42423	#	0	#	B	#		#	PATATAS SIN LAVAR	#	199	#	1	#		#	0	#	4	#	502	#	
+38746	#	0	#	B	#		#	PATATAS MALLA CEPILLADA	#	100	#	1	#		#	0	#	4	#	502	#	
+37880	#	0	#	B	#		#	PATATAS SACO	#	299	#	1	#		#	0	#	4	#	502	#	
+37615	#	0	#	B	#		#	PATATAS PARA FREIR	#	229	#	1	#		#	0	#	4	#	502	#	
+36016	#	0	#	B	#		#	PATATAS MICROONDAS	#	99	#	1	#		#	0	#	4	#	502	#	
+34917	#	0	#	B	#		#	PATATA HORNEAR	#	115	#	1	#		#	0	#	4	#	502	#	
+33634	#	0	#	B	#		#	PATATA BOLSA 5 KG. SIN LAVAR	#	360	#	1	#		#	0	#	4	#	502	#	
+45323	#	0	#	B	#		#	"JUDIA ROJA ""ROGET"""	#	249	#	1	#		#	0	#	4	#	502	#	
+41674	#	0	#	B	#		#	ENSALADA IBERICA BIO	#	225	#	1	#		#	0	#	4	#	502	#	
+41673	#	0	#	B	#		#	ESPINACAS BIO	#	225	#	1	#		#	0	#	4	#	502	#	
+4166	#	0	#	B	#		#	JUDIA VERDE FINA	#	380	#	1	#		#	0	#	4	#	502	#	
+4137	#	0	#	B	#		#	JUDIA ANCHA	#	280	#	1	#		#	0	#	4	#	502	#	
+41303	#	0	#	B	#		#	PEPINOS ECOLOGICOS	#	145	#	1	#		#	0	#	4	#	502	#	
+41301	#	0	#	B	#		#	VARIADO DE VERDURAS ECOLOGICAS	#	240	#	1	#		#	0	#	4	#	502	#	
+4087	#	0	#	B	#		#	HABAS	#	179	#	1	#		#	0	#	4	#	502	#	
+40568	#	0	#	B	#		#	JUDIA ROJA	#	169	#	1	#		#	0	#	4	#	502	#	
+3840	#	0	#	B	#		#	GUISANTES	#	360	#	1	#		#	0	#	4	#	502	#	
+35796	#	0	#	B	#		#	VERDURA FRESCA PARA PAELLA	#	185	#	1	#		#	0	#	4	#	502	#	
+3579	#	0	#	B	#		#	JUDIA GARROFON	#	350	#	1	#		#	0	#	4	#	502	#	
+45548	#	0	#	B	#		#	TOMATE ROSA	#	399	#	1	#		#	0	#	4	#	502	#	
+45322	#	0	#	B	#		#	FIDEOS DE CALABACIN	#	125	#	1	#		#	0	#	4	#	502	#	
+4814	#	0	#	B	#		#	PEPINO FRANCES LARGO	#	159	#	1	#		#	0	#	4	#	502	#	
+44938	#	0	#	B	#		#	TOMATE NATURAL RALLADO 2X120GR	#	159	#	1	#		#	0	#	4	#	502	#	
+43273	#	0	#	B	#		#	CALABAZA PARA ASAR CORTADA	#	159	#	1	#		#	0	#	4	#	502	#	
+42434	#	0	#	B	#		#	CALABACIN MALLA	#	85	#	1	#		#	0	#	4	#	502	#	
+42328	#	0	#	B	#		#	¥ORAS	#	1950	#	1	#		#	0	#	4	#	502	#	
+42327	#	0	#	B	#		#	CALABAZA TOTANERA	#	250	#	1	#		#	0	#	4	#	502	#	
+42277	#	0	#	B	#		#	TOMATE CHERRY TRICOLOR	#	139	#	1	#		#	0	#	4	#	502	#	
+42244	#	0	#	B	#		#	¥ORAS	#	1950	#	1	#		#	0	#	4	#	502	#	
+42243	#	0	#	B	#		#	CALABAZA TOTANERA	#	480	#	1	#		#	0	#	4	#	502	#	
+42117	#	0	#	B	#		#	TOMATE CHERRY RAMA BANDEJA	#	249	#	1	#		#	0	#	4	#	502	#	
+42022	#	0	#	B	#		#	TOMATE DE COLGAR	#	159	#	1	#		#	0	#	4	#	502	#	
+41818	#	0	#	B	#		#	CALABAZA HALLOWEEN	#	299	#	1	#		#	0	#	4	#	502	#	
+41817	#	0	#	B	#		#	CALABAZAS FANTASIA	#	329	#	1	#		#	0	#	4	#	502	#	
+41451	#	0	#	B	#		#	PIMIENTO ROJO PALERMO	#	159	#	1	#		#	0	#	4	#	502	#	
+41317	#	0	#	B	#		#	CALABACIN ECOLOGICO	#	169	#	1	#		#	0	#	4	#	502	#	
+41154	#	0	#	B	#		#	TOMATE RAF	#	100	#	1	#		#	0	#	4	#	502	#	
+40982	#	0	#	B	#		#	TOMATE CANARIO MALLA	#	100	#	1	#		#	0	#	4	#	502	#	
+40679	#	0	#	B	#		#	TOMATE NATURAL RALLADO P-2	#	139	#	1	#		#	0	#	4	#	502	#	
+40626	#	0	#	B	#		#	TOMATE CHERRY RAMA	#	299	#	1	#		#	0	#	4	#	502	#	
+40348	#	0	#	B	#		#	CALABAZA CACAHUETE	#	135	#	1	#		#	0	#	4	#	502	#	
+39643	#	0	#	B	#		#	TOMATE RAFF GOURMET	#	259	#	1	#		#	0	#	4	#	502	#	
+39223	#	0	#	B	#		#	TOMATE CHERRY VARIADO	#	210	#	1	#		#	0	#	4	#	502	#	
+39169	#	0	#	B	#		#	CALABACIN REDONDO	#	225	#	1	#		#	0	#	4	#	502	#	
+39121	#	0	#	B	#		#	CALABAZA PARTIDA	#	115	#	1	#		#	0	#	4	#	502	#	
+38581	#	0	#	B	#		#	TOMATE VALENCIANO	#	320	#	1	#		#	0	#	4	#	502	#	
+38541	#	0	#	B	#		#	TOMATE VALENCIANO	#	295	#	1	#		#	0	#	4	#	502	#	
+36452	#	0	#	B	#		#	TOMATE CHERRY PERA	#	295	#	1	#		#	0	#	4	#	502	#	
+36149	#	0	#	B	#		#	PIMIENTO SWEET	#	145	#	1	#		#	0	#	4	#	502	#	
+35936	#	0	#	B	#		#	TOMATE CHERRY TRIMIX	#	169	#	1	#		#	0	#	4	#	502	#	
+35900	#	0	#	B	#		#	CALABACIN BLANCO	#	189	#	1	#		#	0	#	4	#	502	#	
+35881	#	0	#	B	#		#	PIMIENTO ITALIANO ROJO	#	99	#	1	#		#	0	#	4	#	502	#	
+34647	#	0	#	B	#		#	TOMATE RALLADO NATURAL P-2	#	99	#	1	#		#	0	#	4	#	502	#	
+34489	#	0	#	B	#		#	TOMATE ENSALADA MALLA 1KG	#	119	#	1	#		#	0	#	4	#	502	#	
+34488	#	0	#	B	#		#	TOMATE CANARIO MALLA 1KG	#	89	#	1	#		#	0	#	4	#	502	#	
+33435	#	0	#	B	#		#	TOMATE KUMATO	#	149	#	1	#		#	0	#	4	#	502	#	
+29404	#	0	#	B	#		#	TOMATE CHERRY PERA	#	105	#	1	#		#	0	#	4	#	502	#	
+26730	#	0	#	B	#		#	CALABAZA HALLOWEEN	#	249	#	2	#		#	0	#	4	#	502	#	
+25986	#	0	#	B	#		#	MAIZ MAZORCA FRESCO 2U.	#	225	#	1	#		#	0	#	4	#	502	#	
+15731	#	0	#	B	#		#	TOMATE RAF	#	275	#	1	#		#	0	#	4	#	502	#	
+41849	#	0	#	B	#		#	BIMI	#	195	#	1	#		#	0	#	4	#	502	#	
+36424	#	0	#	B	#		#	COLIFLOR UNIDAD	#	220	#	1	#		#	0	#	4	#	502	#	
+35368	#	0	#	B	#		#	COLIFLOR KILO	#	169	#	1	#		#	0	#	4	#	502	#	
+15244	#	0	#	B	#		#	BROCUL GRANEL	#	199	#	1	#		#	0	#	4	#	502	#	
+4240	#	0	#	B	#		#	ESPINACAS	#	150	#	1	#		#	0	#	4	#	502	#	
+41668	#	0	#	B	#		#	KALE	#	139	#	1	#		#	0	#	4	#	502	#	
+41316	#	0	#	B	#		#	OREGANO-TOMILLO-ALBAHAC MACETA	#	295	#	2	#		#	0	#	4	#	502	#	
+41315	#	0	#	B	#		#	OREGANO-TOMILLO-CEBOLLI MACETA	#	295	#	2	#		#	0	#	4	#	502	#	
+41314	#	0	#	B	#		#	TOMILLO MACETA	#	129	#	2	#		#	0	#	4	#	502	#	
+41040	#	0	#	B	#		#	ROMERO	#	89	#	1	#		#	0	#	4	#	502	#	
+40806	#	0	#	B	#		#	COL DULCE	#	79	#	1	#		#	0	#	4	#	502	#	
+4066	#	0	#	B	#		#	COLES BRUSELAS GRANEL	#	299	#	1	#		#	0	#	4	#	502	#	
+4020	#	0	#	B	#		#	CARDOS	#	240	#	1	#		#	0	#	4	#	502	#	
+39842	#	0	#	B	#		#	LECHUGA ROMANA 2 PIEZAS	#	149	#	1	#		#	0	#	4	#	502	#	
+39758	#	0	#	B	#		#	ACELGAS MANOJO	#	79	#	1	#		#	0	#	4	#	502	#	
+39670	#	0	#	B	#		#	PREPARADO PARA HERVIDO	#	119	#	1	#		#	0	#	4	#	502	#	
+38784	#	0	#	B	#		#	LECHUGA BATAVIA VIVA	#	115	#	1	#		#	0	#	4	#	502	#	
+37847	#	0	#	B	#		#	COCIDO BANDEJA	#	119	#	1	#		#	0	#	4	#	502	#	
+3688	#	0	#	B	#		#	PEREJIL HOJA BOLSA	#	891	#	1	#		#	0	#	4	#	502	#	
+36410	#	0	#	B	#		#	CILANTRO MACETA	#	169	#	2	#		#	0	#	4	#	502	#	
+36409	#	0	#	B	#		#	CEBOLLINO MACETA	#	169	#	2	#		#	0	#	4	#	502	#	
+36408	#	0	#	B	#		#	ALBAHACA MACETA	#	149	#	2	#		#	0	#	4	#	502	#	
+36079	#	0	#	B	#		#	COLES DE BRUSELAS MALLA	#	299	#	1	#		#	0	#	4	#	502	#	
+35939	#	0	#	B	#		#	GUISANTES BANDEJAS	#	249	#	1	#		#	0	#	4	#	502	#	
+35788	#	0	#	B	#		#	TOMATE RALLADO	#	220	#	2	#		#	0	#	4	#	502	#	
+35499	#	0	#	B	#		#	ESPARRAGO NACIONAL	#	189	#	1	#		#	0	#	4	#	502	#	
+35385	#	0	#	B	#		#	CONDIMENTO AJO PICADO	#	320	#	1	#		#	0	#	4	#	502	#	
+35093	#	0	#	B	#		#	PENCAS BOLSA	#	169	#	1	#		#	0	#	4	#	502	#	
+34601	#	0	#	B	#		#	HOJA DE ROBLE VERDE	#	89	#	2	#		#	0	#	4	#	502	#	
+34562	#	0	#	B	#		#	COCIDO BANDEJA UNIDAD	#	135	#	1	#		#	0	#	4	#	502	#	
+33940	#	0	#	B	#		#	CONDIMENTO THAI	#	295	#	1	#		#	0	#	4	#	502	#	
+33938	#	0	#	B	#		#	CONDIMENTO MEDITERRANEO	#	295	#	1	#		#	0	#	4	#	502	#	
+3323	#	0	#	B	#		#	HINOJO	#	250	#	1	#		#	0	#	4	#	502	#	
+31651	#	0	#	B	#		#	SOBRES ENELDO	#	199	#	1	#		#	0	#	4	#	502	#	
+23798	#	0	#	B	#		#	APIO VERDE BANDEJA	#	150	#	1	#		#	0	#	4	#	502	#	
+17417	#	0	#	B	#		#	LECHUGA HOJA DE ROBLE	#	105	#	2	#		#	0	#	4	#	502	#	
+15698	#	0	#	B	#		#	ENDIVIA GRANEL	#	315	#	1	#		#	0	#	4	#	502	#	
+45611	#	0	#	M	#		#	ENSALADA TU PLATO MEDITERRANEO	#	299	#	1	#		#	0	#	4	#	502	#	
+45515	#	0	#	M	#		#	ENSALADA CLASICA	#	149	#	1	#		#	0	#	4	#	502	#	
+45382	#	0	#	M	#		#	PIMIENTO ASADO TIRAS ECOLOGICO	#	209	#	1	#		#	0	#	4	#	502	#	
+45253	#	0	#	M	#		#	ENSALADA COMPLETA PASTA INTEGR	#	299	#	1	#		#	0	#	4	#	502	#	
+44894	#	0	#	M	#		#	GUACAMOLE	#	185	#	1	#		#	0	#	4	#	502	#	
+44786	#	0	#	M	#		#	ENSALADA BABY LEAF ECOLOGICA	#	175	#	1	#		#	0	#	4	#	502	#	
+44785	#	0	#	M	#		#	ENSALADA COCKTAIL DEL MAR	#	295	#	1	#		#	0	#	4	#	502	#	
+44578	#	0	#	M	#		#	CREMA DE PUERRO	#	220	#	2	#		#	0	#	4	#	502	#	
+44071	#	0	#	M	#		#	ENSALADA CESAR LIGHT	#	279	#	1	#		#	0	#	4	#	502	#	
+43746	#	0	#	M	#		#	ENSALADA DEL HUERTO	#	199	#	1	#		#	0	#	4	#	502	#	
+43722	#	0	#	M	#		#	ENSALADA ROMA	#	259	#	1	#		#	0	#	4	#	502	#	
+43487	#	0	#	M	#		#	CANONIGOS	#	100	#	1	#		#	0	#	4	#	502	#	
+43143	#	0	#	M	#		#	ENSALADA GOURMET	#	299	#	1	#		#	0	#	4	#	502	#	
+42568	#	0	#	M	#		#	ENSALADA ENROLLADOS DE POLLO	#	360	#	1	#		#	0	#	4	#	502	#	
+42523	#	0	#	M	#		#	KALE	#	129	#	1	#		#	0	#	4	#	502	#	
+42469	#	0	#	M	#		#	ENSALADA QUINOA Y BROTES	#	310	#	1	#		#	0	#	4	#	502	#	
+42217	#	0	#	M	#		#	LECHUGA ICEBERG BOLSA	#	90	#	1	#		#	0	#	4	#	502	#	
+41893	#	0	#	M	#		#	ENSALADA LAZOS & RUCULA	#	295	#	1	#		#	0	#	4	#	502	#	
+41436	#	0	#	M	#		#	ENSALADA CESAR	#	259	#	1	#		#	0	#	4	#	502	#	
+41206	#	0	#	M	#		#	ENSALADA COMPLETA OPTIMA	#	279	#	1	#		#	0	#	4	#	502	#	
+40867	#	0	#	M	#		#	ENSALADA SERRANA	#	325	#	1	#		#	0	#	4	#	502	#	
+40678	#	0	#	M	#		#	MAIZ EN GRANO	#	179	#	1	#		#	0	#	4	#	502	#	
+40677	#	0	#	M	#		#	CREMA DE LEGUMBRES	#	199	#	2	#		#	0	#	4	#	502	#	
+40366	#	0	#	M	#		#	ENSALADA PASTA Y RUCULA	#	299	#	1	#		#	0	#	4	#	502	#	
+40350	#	0	#	M	#		#	ENSALADA CAPRESE	#	279	#	1	#		#	0	#	4	#	502	#	
+40074	#	0	#	M	#		#	ENSALADA NEW YORK	#	279	#	1	#		#	0	#	4	#	502	#	
+39584	#	0	#	M	#		#	CREMA DE CALABAZA	#	220	#	2	#		#	0	#	4	#	502	#	
+39583	#	0	#	M	#		#	CREMA DE VERDURAS	#	220	#	2	#		#	0	#	4	#	502	#	
+39447	#	0	#	M	#		#	VERDURA MICROONDAS	#	159	#	1	#		#	0	#	4	#	502	#	
+39137	#	0	#	M	#		#	ALCACHOFA MARINADA	#	179	#	1	#		#	0	#	4	#	502	#	
+39136	#	0	#	M	#		#	ESCALIVADA	#	195	#	1	#		#	0	#	4	#	502	#	
+37460	#	0	#	M	#		#	ENSALADA VARIADA	#	149	#	1	#		#	0	#	4	#	502	#	
+37357	#	0	#	M	#		#	ENSALADA MEDITERRANEA	#	159	#	1	#		#	0	#	4	#	502	#	
+37314	#	0	#	M	#		#	ENSALADA 4 ESTACIONES MAXI	#	110	#	1	#		#	0	#	4	#	502	#	
+35958	#	0	#	M	#		#	ENSALADA DELICIOUS	#	159	#	1	#		#	0	#	4	#	502	#	
+35957	#	0	#	M	#		#	ENSALADA LUXURE	#	159	#	1	#		#	0	#	4	#	502	#	
+35625	#	0	#	M	#		#	BROTES DE SOJA	#	199	#	1	#		#	0	#	4	#	502	#	
+35624	#	0	#	M	#		#	ENSALADA SUPREME BOLSA	#	159	#	1	#		#	0	#	4	#	502	#	
+35623	#	0	#	M	#		#	RUCULA BOLSA	#	135	#	1	#		#	0	#	4	#	502	#	
+34611	#	0	#	M	#		#	HORTALISTAS CLASICAS MICRO	#	160	#	1	#		#	0	#	4	#	502	#	
+30294	#	0	#	M	#	988	#	ENSALADA MEZCLUM	#	139	#	1	#		#	0	#	4	#	502	#	
+30293	#	0	#	M	#	990	#	ENSALADA GOURMET	#	149	#	1	#		#	0	#	4	#	502	#	
+30292	#	0	#	M	#	991	#	ESPINACA BOLSA	#	100	#	1	#		#	0	#	4	#	502	#	
+30291	#	0	#	M	#	992	#	ACELGA BOLSA	#	100	#	1	#		#	0	#	4	#	502	#	
+30287	#	0	#	M	#	996	#	ENSALADA 4 ESTACIONES	#	65	#	1	#		#	0	#	4	#	502	#	
+5269	#	0	#	M	#	262	#	CEBOLLA TIERNA  MANOJO	#	115	#	1	#		#	0	#	4	#	502	#	
+43723	#	0	#	M	#		#	CEBOLLA ECHALOTE	#	129	#	1	#		#	0	#	4	#	502	#	
+4220	#	0	#	M	#		#	CEBOLLA MALLA 2 KG	#	155	#	1	#		#	0	#	4	#	502	#	
+41305	#	0	#	M	#		#	AJOS SECOS ECOLOGICOS	#	190	#	1	#		#	0	#	4	#	502	#	
+41300	#	0	#	M	#		#	CEBOLLA ECOLOGICA	#	169	#	1	#		#	0	#	4	#	502	#	
+41298	#	0	#	M	#		#	PUERROS ECOLOGICOS	#	249	#	1	#		#	0	#	4	#	502	#	
+40651	#	0	#	M	#		#	AJOS NEGROS	#	549	#	1	#		#	0	#	4	#	502	#	
+39505	#	0	#	M	#		#	CAL€OTS 25U.	#	425	#	1	#		#	0	#	4	#	502	#	
+3929	#	0	#	M	#	120	#	PUERROS BANDEJA	#	225	#	1	#		#	0	#	4	#	502	#	
+38571	#	1	#	M	#	69	#	CEBOLLA MORADA	#	275	#	1	#		#	0	#	4	#	502	#	
+38501	#	1	#	M	#	68	#	CEBOLLA DULCE	#	240	#	1	#		#	0	#	4	#	502	#	
+37950	#	0	#	M	#		#	AJOS SECOS BLANCOS	#	100	#	1	#		#	0	#	4	#	502	#	
+35199	#	1	#	M	#	52	#	CEBOLLAS	#	100	#	1	#		#	0	#	4	#	502	#	
+31934	#	0	#	M	#		#	AJOS TIERNOS	#	179	#	1	#		#	0	#	4	#	502	#	
+31269	#	0	#	M	#	112	#	CEBOLLA EXTRA TUBO 1KG	#	125	#	1	#		#	0	#	4	#	502	#	
+27218	#	0	#	M	#		#	AJOS MORADOS MALLA	#	139	#	1	#		#	0	#	4	#	502	#	
+15247	#	0	#	M	#	134	#	CEBOLLA FRANCESA MALLA	#	130	#	1	#		#	0	#	4	#	502	#	
+45325	#	0	#	M	#		#	SHIMEJI BLANCO	#	169	#	1	#		#	0	#	4	#	502	#	
+45324	#	0	#	M	#		#	SHIMEJI MARRON	#	169	#	1	#		#	0	#	4	#	502	#	
+41913	#	0	#	M	#		#	CHAMPI¥ON BANDEJA	#	195	#	1	#		#	0	#	4	#	502	#	
+40738	#	0	#	M	#		#	CHAMPI¥ON PORTOBELLO	#	125	#	1	#		#	0	#	4	#	502	#	
+34919	#	0	#	M	#		#	SETAS	#	205	#	1	#		#	0	#	4	#	502	#	
+34918	#	0	#	M	#		#	CHAMPI¥ON PIE CORTADO	#	199	#	1	#		#	0	#	4	#	502	#	
+15720	#	0	#	M	#	168	#	CHAMPI¥ON LAMINADO BANDEJA	#	145	#	1	#		#	0	#	4	#	502	#	
+4810	#	0	#	M	#		#	NAPICOL BANDEJA	#	269	#	1	#		#	0	#	4	#	502	#	
+4714	#	0	#	M	#	216	#	CHIRIVIA BANDEJA	#	269	#	1	#		#	0	#	4	#	502	#	
+4713	#	0	#	M	#	215	#	NABETA BANDEJA	#	269	#	1	#		#	0	#	4	#	502	#	
+41297	#	0	#	M	#		#	ZANAHORIA ECOLOGICA	#	179	#	1	#		#	0	#	4	#	502	#	
+40736	#	0	#	M	#		#	ZANAHORIA BABY	#	105	#	1	#		#	0	#	4	#	502	#	
+35977	#	0	#	M	#		#	RABANITOS	#	149	#	1	#		#	0	#	4	#	502	#	
+35328	#	0	#	M	#		#	JENGIBRE	#	149	#	1	#		#	0	#	4	#	502	#	
+34331	#	0	#	M	#		#	ZANAHORIA BOLSA 1/2KG	#	69	#	1	#		#	0	#	4	#	502	#	
+15753	#	0	#	M	#	133	#	ZANAHORIA BOLSA  1 KG.	#	79	#	1	#		#	0	#	4	#	502	#	
+15722	#	1	#	M	#	89	#	RAIZ DE APIO	#	280	#	1	#		#	0	#	4	#	502	#	
+14112	#	0	#	M	#	125	#	REMOLACHA PRECOCIDA BANDEJA	#	99	#	1	#		#	0	#	4	#	502	#	
+45495	#	0	#	M	#		#	PATATA VIOLETA LAVADA	#	199	#	1	#		#	0	#	4	#	502	#	
+4870	#	0	#	M	#	218	#	PATATA BOLSA 3KG	#	370	#	1	#		#	0	#	4	#	502	#	
+41299	#	0	#	M	#		#	PATATAS ECOLOGICAS 2KG	#	349	#	1	#		#	0	#	4	#	502	#	
+39199	#	0	#	M	#		#	PATATA PARA FREIR 3KG	#	349	#	1	#		#	0	#	4	#	502	#	
+37775	#	1	#	M	#	23	#	BONIATO BLANCO	#	229	#	1	#		#	0	#	4	#	502	#	
+36016	#	0	#	M	#		#	PATATAS MICROONDAS	#	99	#	1	#		#	0	#	4	#	502	#	
+3276	#	1	#	M	#	85	#	BONIATO ROJO	#	185	#	1	#		#	0	#	4	#	502	#	
+25699	#	0	#	M	#	340	#	PATATA GUARNICION    1,5KG	#	189	#	1	#		#	0	#	4	#	502	#	
+15715	#	1	#	M	#	6	#	PATATA LAVADA	#	149	#	1	#		#	0	#	4	#	502	#	
+15714	#	0	#	M	#	152	#	PATATA ROJA 2 KG.	#	295	#	1	#		#	0	#	4	#	502	#	
+15712	#	0	#	M	#	123	#	PATATA BOLSA 5 KG.	#	475	#	1	#		#	0	#	4	#	502	#	
+45323	#	0	#	M	#		#	"JUDIA ROJA ""ROGET"""	#	249	#	1	#		#	0	#	4	#	502	#	
+34670	#	0	#	M	#		#	JUDIA FINA BANDEJA	#	100	#	1	#		#	0	#	4	#	502	#	
+12922	#	0	#	M	#		#	JUDIA ANCHA BANDEJA	#	249	#	1	#		#	0	#	4	#	502	#	
+45548	#	1	#	M	#	94	#	TOMATE ROSA	#	399	#	1	#		#	0	#	4	#	502	#	
+45372	#	0	#	M	#		#	TOMATE NATURAL RALLADO	#	95	#	1	#		#	0	#	4	#	502	#	
+45371	#	0	#	M	#		#	TOMATE NATURAL RALLADO ECOLOGI	#	169	#	1	#		#	0	#	4	#	502	#	
+45362	#	0	#	M	#		#	PIMIENTO PICANTE	#	199	#	1	#		#	0	#	4	#	502	#	
+45361	#	1	#	M	#	53	#	CALABAZA ECOLOGICA	#	135	#	1	#		#	0	#	4	#	502	#	
+45321	#	0	#	M	#		#	CALABAZA DADOS	#	195	#	1	#		#	0	#	4	#	502	#	
+5262	#	1	#	M	#	92	#	TOMATE RAMA	#	199	#	1	#		#	0	#	4	#	502	#	
+4807	#	1	#	M	#	67	#	PEPINO HOLANDES	#	220	#	1	#		#	0	#	4	#	502	#	
+43752	#	1	#	M	#	57	#	TOMATE MORESCO	#	299	#	1	#		#	0	#	4	#	502	#	
+42524	#	0	#	M	#		#	TOMATE RAF SELECCION	#	499	#	1	#		#	0	#	4	#	502	#	
+42277	#	0	#	M	#		#	TOMATE CHERRY TRICOLOR	#	139	#	1	#		#	0	#	4	#	502	#	
+41390	#	0	#	M	#		#	PEPINO HOLANDES ECOLOGICO	#	125	#	1	#		#	0	#	4	#	502	#	
+41317	#	0	#	M	#		#	CALABACIN ECOLOGICO	#	169	#	1	#		#	0	#	4	#	502	#	
+41304	#	0	#	M	#		#	TOMATE RAMA ECOLOGICO	#	170	#	1	#		#	0	#	4	#	502	#	
+41302	#	0	#	M	#		#	TOMATE CHERRY ECOLOGICO	#	150	#	1	#		#	0	#	4	#	502	#	
+4065	#	1	#	M	#	29	#	TOMATE CANARIO	#	159	#	1	#		#	0	#	4	#	502	#	
+4034	#	1	#	M	#	87	#	CALABAZA	#	100	#	1	#		#	0	#	4	#	502	#	
+4033	#	1	#	M	#	27	#	PIMIENTO ROJO	#	229	#	1	#		#	0	#	4	#	502	#	
+3965	#	1	#	M	#	73	#	PEPINO ESPA¥OL CORTO	#	175	#	1	#		#	0	#	4	#	502	#	
+3946	#	1	#	M	#	15	#	CALABACIN	#	249	#	1	#		#	0	#	4	#	502	#	
+3914	#	1	#	M	#	79	#	PIMIENTO VERDE	#	229	#	1	#		#	0	#	4	#	502	#	
+39121	#	0	#	M	#		#	CALABAZA PARTIDA	#	115	#	1	#		#	0	#	4	#	502	#	
+37757	#	0	#	M	#		#	TOMATE CHERRY KUMATO	#	139	#	1	#		#	0	#	4	#	502	#	
+3637	#	1	#	M	#	14	#	BERENJENA RAYADA	#	325	#	1	#		#	0	#	4	#	502	#	
+2716	#	1	#	M	#	26	#	PIMIENTO ITALIANO	#	199	#	1	#		#	0	#	4	#	502	#	
+26768	#	0	#	M	#		#	PIMIENTO TRICOLOR  BANDEJA	#	199	#	1	#		#	0	#	4	#	502	#	
+2655	#	1	#	M	#	13	#	BERENJENA NEGRA	#	279	#	1	#		#	0	#	4	#	502	#	
+25986	#	0	#	M	#		#	MAIZ MAZORCA FRESCO 2U.	#	225	#	1	#		#	0	#	4	#	502	#	
+15745	#	1	#	M	#	41	#	TOMATE PERA	#	169	#	1	#		#	0	#	4	#	502	#	
+15731	#	1	#	M	#	4	#	TOMATE RAF	#	275	#	1	#		#	0	#	4	#	502	#	
+15729	#	0	#	M	#	159	#	TOMATE CHERRY	#	99	#	1	#		#	0	#	4	#	502	#	
+15728	#	1	#	M	#	30	#	TOMATE ENSALADA	#	185	#	1	#		#	0	#	4	#	502	#	
+14111	#	0	#	M	#	129	#	PIMIENTOS PADRON BANDEJA	#	139	#	1	#		#	0	#	4	#	502	#	
+14106	#	0	#	M	#	147	#	MAIZ MAZORCA COCIDO 2U.	#	119	#	1	#		#	0	#	4	#	502	#	
+41880	#	0	#	M	#		#	BROCOLI ECOLOGICO	#	149	#	1	#		#	0	#	4	#	502	#	
+40886	#	0	#	M	#		#	COLIFLOR UNIDAD	#	199	#	1	#		#	0	#	4	#	502	#	
+40676	#	0	#	M	#		#	FLORETES DE BROCOLI	#	145	#	1	#		#	0	#	4	#	502	#	
+40675	#	0	#	M	#		#	FLORETES DE COLIFLOR	#	145	#	1	#		#	0	#	4	#	502	#	
+37637	#	0	#	M	#		#	BROCOLI	#	100	#	1	#		#	0	#	4	#	502	#	
+42713	#	0	#	M	#		#	CARDOS MANOJO	#	185	#	1	#		#	0	#	4	#	502	#	
+41170	#	0	#	M	#		#	HIERBABUENA FRESCA	#	115	#	1	#		#	0	#	4	#	502	#	
+41169	#	0	#	M	#		#	CILANTRO FRESCO	#	115	#	1	#		#	0	#	4	#	502	#	
+41168	#	0	#	M	#		#	CEBOLLINO FRESCO	#	115	#	1	#		#	0	#	4	#	502	#	
+41039	#	0	#	M	#		#	ALBAHACA FRESCA	#	115	#	1	#		#	0	#	4	#	502	#	
+4089	#	1	#	M	#	83	#	ALCACHOFAS	#	225	#	1	#		#	0	#	4	#	502	#	
+40268	#	0	#	M	#		#	ESPARRAGO VERDE GRUESO MANOJO	#	275	#	1	#		#	0	#	4	#	502	#	
+3922	#	0	#	M	#		#	APIO VERDE	#	110	#	1	#		#	0	#	4	#	502	#	
+36454	#	0	#	M	#		#	CORAZON DE COGOLLOS	#	199	#	1	#		#	0	#	4	#	502	#	
+36412	#	0	#	M	#		#	PEREJIL MACETA	#	149	#	2	#		#	0	#	4	#	502	#	
+36411	#	0	#	M	#		#	HIERBA BUENA MACETA	#	149	#	2	#		#	0	#	4	#	502	#	
+36408	#	0	#	M	#		#	ALBAHACA MACETA	#	149	#	2	#		#	0	#	4	#	502	#	
+36323	#	0	#	M	#		#	COLES DE BRUSELAS	#	199	#	1	#		#	0	#	4	#	502	#	
+36075	#	0	#	M	#		#	COGOLLOS	#	100	#	1	#		#	0	#	4	#	502	#	
+36001	#	0	#	M	#		#	ARREGLO COCIDO	#	139	#	1	#		#	0	#	4	#	502	#	
+35603	#	0	#	M	#		#	COL LISA REPOLLO KILO	#	119	#	1	#		#	0	#	4	#	502	#	
+34548	#	0	#	M	#	410	#	 LECHUGA HOJA DE ROBLE	#	129	#	1	#		#	0	#	4	#	502	#	
+2987	#	0	#	M	#	104	#	1/2 COL	#	100	#	1	#		#	0	#	4	#	502	#	
+2938	#	0	#	M	#	105	#	1/2 COL LOMBARDA	#	100	#	1	#		#	0	#	4	#	502	#	
+15719	#	0	#	M	#	156	#	PEREJIL	#	99	#	1	#		#	0	#	4	#	502	#	
+15705	#	0	#	M	#	118	#	LECHUGA ROMANA	#	100	#	1	#		#	0	#	4	#	502	#	
+15693	#	0	#	M	#	140	#	COL RIZADA 1,5KG	#	180	#	1	#		#	0	#	4	#	502	#	
+14110	#	0	#	M	#	146	#	LECHUGA ICEBERG	#	99	#	1	#		#	0	#	4	#	502	#	
+14108	#	0	#	M	#	116	#	ENDIBIA BANDEJA	#	159	#	1	#		#	0	#	4	#	502	#	
+14107	#	0	#	M	#		#	COL LOMBARDA UNIDAD	#	195	#	1	#		#	0	#	4	#	502	#	
+26769	#	0	#	B	#		#	CESTA NAVIDAD GRANDE	#	1795	#	1	#		#	0	#	4	#	503	#	
+44304	#	0	#	B	#		#	DATILES RAMA	#	245	#	1	#		#	0	#	4	#	505	#	
+43900	#	0	#	B	#		#	FRUTOS SECOS GRANEL	#	1650	#	1	#		#	0	#	4	#	505	#	
+43486	#	0	#	B	#		#	ALMENDRA PELADA CRUDA	#	1200	#	1	#		#	0	#	4	#	505	#	
+43396	#	0	#	B	#		#	ALMENDRA PELADA CRUDA	#	1200	#	1	#		#	0	#	4	#	505	#	
+42375	#	0	#	B	#		#	MACADAMIA CRUDA	#	2990	#	1	#		#	0	#	4	#	505	#	
+42216	#	0	#	B	#		#	DATIL HAYANI	#	660	#	1	#		#	0	#	4	#	505	#	
+42179	#	0	#	B	#		#	ALMENDRA CON CASCARA CRUDA	#	1150	#	1	#		#	0	#	4	#	505	#	
+42177	#	0	#	B	#		#	PIPAS CALABAZA PELADA CRUDA	#	790	#	1	#		#	0	#	4	#	505	#	
+35157	#	0	#	B	#		#	DATILES RAMA	#	595	#	1	#		#	0	#	4	#	505	#	
+15733	#	0	#	B	#		#	CASTA¥AS	#	549	#	1	#		#	0	#	4	#	505	#	
+45214	#	0	#	M	#		#	DATILES RAMA	#	279	#	1	#		#	0	#	4	#	505	#	
+43900	#	1	#	M	#	20	#	FRUTOS SECOS GRANEL	#	1650	#	1	#		#	0	#	4	#	505	#	
+43397	#	0	#	M	#		#	COCTEL FRUTOS SECOS ENSALADA	#	990	#	1	#		#	0	#	4	#	505	#	
+43395	#	0	#	M	#		#	ALMENDRAS TOSTADAS CASCARA	#	1200	#	1	#		#	0	#	4	#	505	#	
+43394	#	0	#	M	#		#	COCTEL FRUTOS SECOS NATURAL	#	990	#	1	#		#	0	#	4	#	505	#	
+42180	#	0	#	M	#		#	PISTACHOS TOSTADOS GIGANTES	#	1690	#	1	#		#	0	#	4	#	505	#	
+42178	#	0	#	M	#		#	NUECES CRUDAS PELADAS	#	1599	#	1	#		#	0	#	4	#	505	#	
+42176	#	0	#	M	#		#	AVELLANAS CRUDAS	#	1200	#	1	#		#	0	#	4	#	505	#	
+42175	#	0	#	M	#		#	ANACARDOS CRUDOS	#	1690	#	1	#		#	0	#	4	#	505	#	
+42174	#	0	#	M	#		#	ALMENDRAS CRUDAS PIEL	#	1690	#	1	#		#	0	#	4	#	505	#	
+37800	#	1	#	M	#	37	#	HIGOS SECOS	#	649	#	1	#		#	0	#	4	#	505	#	
+34836	#	1	#	M	#	64	#	NUECES	#	449	#	1	#		#	0	#	4	#	505	#	
+38000	#	1	#	M	#	1	#	PANES GRANEL	#	260	#	1	#		#	0	#	6	#	601	#	
+5261	#	0	#	B	#		#	PAN CENTENO REDONDO	#	348	#	2	#		#	0	#	6	#	601	#	
+5260	#	0	#	B	#		#	PAN SEMILLA CALABAZA REDONDO	#	359	#	2	#		#	0	#	6	#	601	#	
+5259	#	0	#	B	#		#	PAN CENTENO GIRASOL CUADRADO	#	348	#	2	#		#	0	#	6	#	601	#	
+42236	#	0	#	B	#		#	BARRA ESPELTA (49%) MASA MAD	#	240	#	2	#		#	0	#	6	#	601	#	
+41290	#	0	#	B	#		#	PAN CON ESPELTA ECOLOGICO	#	250	#	2	#		#	0	#	6	#	601	#	
+41289	#	0	#	B	#		#	PAN CON CEREALES ECOLOGICO	#	250	#	2	#		#	0	#	6	#	601	#	
+41288	#	0	#	B	#		#	PAN CON CENTENO ECOLOGICO	#	250	#	2	#		#	0	#	6	#	601	#	
+41287	#	0	#	B	#		#	PAN INTEGRAL ECOLOGICO	#	250	#	2	#		#	0	#	6	#	601	#	
+41286	#	0	#	B	#		#	PAN BLANCO ECOLOGICO	#	250	#	2	#		#	0	#	6	#	601	#	
+38774	#	0	#	B	#		#	PAN MINI PIPAS CALABAZA	#	20	#	2	#		#	0	#	6	#	601	#	
+38772	#	0	#	B	#		#	PAN CRISTAL	#	115	#	2	#		#	0	#	6	#	601	#	
+38771	#	0	#	B	#		#	PAN DE SOJA	#	55	#	2	#		#	0	#	6	#	601	#	
+38702	#	0	#	B	#		#	PAN FLAUTIN OLIVAS	#	33	#	2	#		#	0	#	6	#	601	#	
+3767	#	0	#	B	#		#	PAN SEMILLAS GIRASOL REDONDO	#	237	#	2	#		#	0	#	6	#	601	#	
+3726	#	0	#	B	#		#	PAN SEMILLA CALABAZA CUADRADO	#	237	#	2	#		#	0	#	6	#	601	#	
+35845	#	0	#	B	#		#	HOGAZA PIPAS DE CALABAZA	#	199	#	2	#		#	0	#	6	#	601	#	
+35844	#	0	#	B	#		#	HOGAZA MULTICEREALES	#	199	#	2	#		#	0	#	6	#	601	#	
+35843	#	0	#	B	#		#	HOGAZA DE MALTA	#	199	#	2	#		#	0	#	6	#	601	#	
+35399	#	0	#	B	#		#	PAN DE XIMOS FRITO	#	180	#	2	#		#	0	#	6	#	601	#	
+35379	#	0	#	B	#		#	FRIKORN CENTENO	#	165	#	2	#		#	0	#	6	#	601	#	
+35377	#	0	#	B	#		#	FRIKORN ESPELTA	#	165	#	2	#		#	0	#	6	#	601	#	
+32337	#	0	#	B	#		#	BREA CLASICO	#	250	#	2	#		#	0	#	6	#	601	#	
+32336	#	0	#	B	#		#	BREA CEREALES	#	230	#	2	#		#	0	#	6	#	601	#	
+31830	#	0	#	B	#		#	PANECILLO SALUD FIBRA	#	65	#	2	#		#	0	#	6	#	601	#	
+31829	#	0	#	B	#		#	PANECILLO SALUD OMEGA-3	#	65	#	2	#		#	0	#	6	#	601	#	
+31824	#	0	#	B	#		#	BARRITA MIMOLETTE GRAN RESERVA	#	80	#	2	#		#	0	#	6	#	601	#	
+27457	#	0	#	B	#		#	HOGAZA CHIA PAN	#	260	#	2	#		#	0	#	6	#	601	#	
+27456	#	0	#	B	#		#	HOGAZA BAVARIA	#	280	#	2	#		#	0	#	6	#	601	#	
+27455	#	0	#	B	#		#	HOGAZA KORN ESPECIAL	#	330	#	2	#		#	0	#	6	#	601	#	
+27454	#	0	#	B	#		#	HOGAZA ESPELTA	#	310	#	2	#		#	0	#	6	#	601	#	
+24795	#	0	#	B	#		#	BOCATA 6 CEREALES	#	79	#	2	#		#	0	#	6	#	601	#	
+21588	#	0	#	B	#		#	PULGA DE LE¥A UNIDAD	#	18	#	2	#		#	0	#	6	#	601	#	
+21582	#	0	#	B	#		#	BARRA RUSTICA	#	42	#	2	#		#	0	#	6	#	601	#	
+1113	#	0	#	B	#		#	PAN CHAPATA PEQUE¥A	#	50	#	2	#		#	0	#	6	#	601	#	
+3805	#	0	#	B	#		#	PAN DULCE DE PASAS ROSINENBROT	#	59	#	2	#		#	0	#	6	#	601	#	
+3801	#	0	#	B	#		#	PAN SEMILLA CALABAZA JUNIORBRO	#	59	#	2	#		#	0	#	6	#	601	#	
+3798	#	0	#	B	#		#	PAN CENTENO (ROGGENBROTCHEN)	#	36	#	2	#		#	0	#	6	#	601	#	
+3795	#	0	#	B	#		#	PAN SESAMO (SESAMBROTCHEN)	#	33	#	2	#		#	0	#	6	#	601	#	
+3788	#	0	#	B	#		#	PAN OVALADO (SPITZBROTCHEN)	#	27	#	2	#		#	0	#	6	#	601	#	
+3781	#	0	#	B	#		#	PAN DULCE PASAS VOLLMILCHPLATZ	#	236	#	2	#		#	0	#	6	#	601	#	
+3778	#	0	#	B	#		#	PAN CENTENO CRUJIENTE ROSTBROT	#	280	#	2	#		#	0	#	6	#	601	#	
+3770	#	0	#	B	#		#	PAN CENTENO (ROGGENBROT)	#	298	#	2	#		#	0	#	6	#	601	#	
+3769	#	0	#	B	#		#	PAN MEZCLA CENTENO (FEINBROT)	#	280	#	2	#		#	0	#	6	#	601	#	
+25591	#	0	#	B	#		#	PAN DE PASAS	#	335	#	2	#		#	0	#	6	#	601	#	
+25588	#	0	#	B	#		#	PANECILLOS DE CEREALES	#	40	#	2	#		#	0	#	6	#	601	#	
+25587	#	0	#	B	#		#	PANECILLO CALABAZA (KUERBISKE)	#	40	#	2	#		#	0	#	6	#	601	#	
+25585	#	0	#	B	#		#	PANECILLO PAYES (BAUERNBROTE.)	#	30	#	2	#		#	0	#	6	#	601	#	
+25582	#	0	#	B	#		#	PANECILLO NORMAL (BROETCHEN)	#	30	#	2	#		#	0	#	6	#	601	#	
+5274	#	0	#	B	#		#	BOCATIN CENTENO DIGESTIVO	#	32	#	2	#		#	0	#	6	#	601	#	
+42235	#	0	#	B	#		#	PANECILLO INTEGRAL	#	18	#	2	#		#	0	#	6	#	601	#	
+41318	#	0	#	B	#		#	PAN BARRA INTEGRAL 2U	#	110	#	2	#		#	0	#	6	#	601	#	
+41308	#	0	#	B	#		#	PAN INTEGRAL BAGUETTINA 4U	#	100	#	2	#		#	0	#	6	#	601	#	
+38773	#	0	#	B	#		#	PAN MINI INTEGRAL	#	15	#	2	#		#	0	#	6	#	601	#	
+38002	#	0	#	B	#		#	PAN GOURMET INTEGRAL	#	20	#	2	#		#	0	#	6	#	601	#	
+38001	#	0	#	B	#		#	PAN SUPREME CEREALES	#	21	#	2	#		#	0	#	6	#	601	#	
+35517	#	0	#	B	#		#	BARRA RUSTICA MULTICEREAL REB.	#	160	#	2	#		#	0	#	6	#	601	#	
+34475	#	0	#	B	#		#	PAN PAYES PASAS-NUECES REBANAD	#	165	#	2	#		#	0	#	6	#	601	#	
+34474	#	0	#	B	#		#	PAN PAYES CEREALES REBANADO	#	145	#	2	#		#	0	#	6	#	601	#	
+31828	#	0	#	B	#		#	BAGUETTE INTEGRAL	#	60	#	2	#		#	0	#	6	#	601	#	
+31827	#	0	#	B	#		#	CHAPATA 6 CEREALES	#	150	#	2	#		#	0	#	6	#	601	#	
+20415	#	0	#	B	#		#	PAN INTEGRAL	#	33	#	2	#		#	0	#	6	#	601	#	
+18469	#	0	#	B	#		#	BAGUETTE INTEGRAL PRECOCIDO	#	45	#	2	#		#	0	#	6	#	601	#	
+14226	#	0	#	B	#		#	PAN INTEGRAL	#	80	#	2	#		#	0	#	6	#	601	#	
+12559	#	0	#	B	#		#	PAN REDONDO INTEGRAL REBANADO	#	110	#	2	#		#	0	#	6	#	601	#	
+10462	#	0	#	B	#		#	PAN BARRA DE FIBRA	#	45	#	2	#		#	0	#	6	#	601	#	
+9447	#	0	#	B	#		#	PAN BARRA RUSTICA	#	50	#	2	#		#	0	#	6	#	601	#	
+9172	#	0	#	B	#		#	PAN CHURRA	#	78	#	2	#		#	0	#	6	#	601	#	
+43749	#	0	#	B	#		#	FLAUTIN RUSTICO	#	25	#	2	#		#	0	#	6	#	601	#	
+42358	#	0	#	B	#		#	BARRA RUSTICA	#	50	#	2	#		#	0	#	6	#	601	#	
+41196	#	0	#	B	#		#	PAN BARRA GALLEGA 2 UNIDADES	#	126	#	2	#		#	0	#	6	#	601	#	
+40707	#	0	#	B	#		#	PAN BOCADILLO 5U	#	110	#	2	#		#	0	#	6	#	601	#	
+39853	#	0	#	B	#		#	BAGUETTE RUSTICA PROVENZAL	#	65	#	2	#		#	0	#	6	#	601	#	
+38820	#	0	#	B	#		#	PAN MINI HAMBURGUESA	#	100	#	2	#		#	0	#	6	#	601	#	
+38775	#	0	#	B	#		#	PAN MINI LECHE	#	25	#	2	#		#	0	#	6	#	601	#	
+38030	#	0	#	B	#		#	VTA X 38004 BURGUER 4U	#	100	#	2	#		#	0	#	6	#	601	#	
+38028	#	0	#	B	#		#	VTA X 37998 CHAPATA BARRITA 3U	#	75	#	2	#		#	0	#	6	#	601	#	
+38000	#	0	#	B	#		#	PANES GRANEL	#	260	#	1	#		#	0	#	6	#	601	#	
+37999	#	0	#	B	#		#	PAN VIENA REDONDO	#	16	#	2	#		#	0	#	6	#	601	#	
+37998	#	0	#	B	#		#	PAN MINI CHAPATA	#	25	#	2	#		#	0	#	6	#	601	#	
+37811	#	0	#	B	#		#	PAN BOCADILLO 4U	#	90	#	2	#		#	0	#	6	#	601	#	
+36549	#	0	#	B	#		#	PAN DE CHIMO	#	40	#	2	#		#	0	#	6	#	601	#	
+35999	#	0	#	B	#		#	PAN BARRA	#	39	#	2	#		#	0	#	6	#	601	#	
+35770	#	0	#	B	#		#	PAN CHAPATA FAMILIAR	#	75	#	2	#		#	0	#	6	#	601	#	
+35715	#	0	#	B	#		#	BARRA FOURNIER	#	55	#	2	#		#	0	#	6	#	601	#	
+35588	#	0	#	B	#		#	PAN BARRA 2U	#	84	#	2	#		#	0	#	6	#	601	#	
+35516	#	0	#	B	#		#	BARRA RUSTICA REBANADA	#	140	#	2	#		#	0	#	6	#	601	#	
+35301	#	0	#	B	#		#	PAN MINI HAMBURGUESA	#	120	#	2	#		#	0	#	6	#	601	#	
+32282	#	0	#	B	#		#	PAN BARRA	#	45	#	2	#		#	0	#	6	#	601	#	
+31826	#	0	#	B	#		#	MAXI CHAPATA BAGUETTE	#	85	#	2	#		#	0	#	6	#	601	#	
+31822	#	0	#	B	#		#	BASTON GRAN RESERVA	#	85	#	2	#		#	0	#	6	#	601	#	
+28647	#	0	#	B	#		#	PAN PULGA P-6	#	100	#	2	#		#	0	#	6	#	601	#	
+28645	#	0	#	B	#		#	PAN CHAPATA ARTESANA	#	109	#	2	#		#	0	#	6	#	601	#	
+2845	#	0	#	B	#		#	BARRAS BARTOLO	#	165	#	2	#		#	0	#	6	#	601	#	
+27795	#	0	#	B	#		#	PAN NATURAL	#	295	#	2	#		#	0	#	6	#	601	#	
+27794	#	0	#	B	#		#	PAN QUEMAO	#	295	#	2	#		#	0	#	6	#	601	#	
+21591	#	0	#	B	#		#	BAGUETTE DE LE¥A UNIDAD	#	57	#	2	#		#	0	#	6	#	601	#	
+19179	#	0	#	B	#		#	PAN PAYES BARRA REBANADO	#	96	#	2	#		#	0	#	6	#	601	#	
+19177	#	0	#	B	#		#	PAN BARRA SIN SAL	#	41	#	2	#		#	0	#	6	#	601	#	
+19174	#	0	#	B	#		#	PAN PAYES BARRA COCIDA	#	49	#	2	#		#	0	#	6	#	601	#	
+19173	#	0	#	B	#		#	PAN BARRA PAYES PRECOCIDA	#	22	#	2	#		#	0	#	6	#	601	#	
+19172	#	0	#	B	#		#	PAN BAGUETTE	#	49	#	2	#		#	0	#	6	#	601	#	
+19082	#	0	#	B	#		#	BARRA PAN SIN SAL	#	48	#	2	#		#	0	#	6	#	601	#	
+19024	#	0	#	B	#		#	PAN BARRA 320GR	#	70	#	2	#		#	0	#	6	#	601	#	
+18482	#	0	#	B	#		#	PAN BARRA	#	49	#	2	#		#	0	#	6	#	601	#	
+18475	#	0	#	B	#		#	PAN BOMBON	#	34	#	2	#		#	0	#	6	#	601	#	
+18473	#	0	#	B	#		#	PAN BOMBON	#	25	#	2	#		#	0	#	6	#	601	#	
+18467	#	0	#	B	#		#	BAGUETTE PRECOCIDA	#	55	#	2	#		#	0	#	6	#	601	#	
+18466	#	0	#	B	#		#	PANECILLO PRECOCIDO	#	15	#	2	#		#	0	#	6	#	601	#	
+18465	#	0	#	B	#		#	PANECILLO PRECOCIDO	#	18	#	2	#		#	0	#	6	#	601	#	
+16700	#	0	#	B	#		#	BARRA CASERA	#	98	#	2	#		#	0	#	6	#	601	#	
+16693	#	0	#	B	#		#	BARRA HUERTA	#	136	#	2	#		#	0	#	6	#	601	#	
+16017	#	0	#	B	#		#	PAN BOCATIN	#	23	#	2	#		#	0	#	6	#	601	#	
+14893	#	0	#	B	#		#	PAN BARRA	#	90	#	2	#		#	0	#	6	#	601	#	
+14890	#	0	#	B	#		#	PAN BOCADILLO 100 GR	#	35	#	2	#		#	0	#	6	#	601	#	
+14229	#	0	#	B	#		#	PAN	#	150	#	2	#		#	0	#	6	#	601	#	
+14227	#	0	#	B	#		#	PAN BARRAS	#	80	#	2	#		#	0	#	6	#	601	#	
+14225	#	0	#	B	#		#	PAN LINIETES	#	55	#	2	#		#	0	#	6	#	601	#	
+13872	#	0	#	B	#		#	PAN PRECOCIDO BAGUETTE UNIDAD	#	57	#	2	#		#	0	#	6	#	601	#	
+12558	#	0	#	B	#		#	PAN REDONDO PAYES REBANADO	#	105	#	2	#		#	0	#	6	#	601	#	
+12557	#	0	#	B	#		#	PAN HAMBURGUESA	#	34	#	2	#		#	0	#	6	#	601	#	
+12550	#	0	#	B	#		#	PAN BARRA SIN SAL	#	52	#	2	#		#	0	#	6	#	601	#	
+12441	#	0	#	B	#		#	PAN BARRA SIN SAL	#	48	#	2	#		#	0	#	6	#	601	#	
+12334	#	0	#	B	#		#	PAN COLON 400GR	#	105	#	2	#		#	0	#	6	#	601	#	
+12332	#	0	#	B	#		#	PAN MEDIO ARTESANO S/SAL 140GR	#	45	#	2	#		#	0	#	6	#	601	#	
+12321	#	0	#	B	#		#	TORTA GALLEGA	#	109	#	2	#		#	0	#	6	#	601	#	
+10050	#	0	#	B	#		#	PAN BARRA VIRUTA BLANCA	#	55	#	2	#		#	0	#	6	#	601	#	
+10046	#	0	#	B	#		#	PAN BOCADILLO VIENA MEDIANA	#	40	#	2	#		#	0	#	6	#	601	#	
+10030	#	0	#	B	#		#	PAN BARRA VIRUTAS LATA	#	55	#	2	#		#	0	#	6	#	601	#	
+10026	#	0	#	B	#		#	PAN BARRA RUSTICO	#	75	#	2	#		#	0	#	6	#	601	#	
+10025	#	0	#	B	#		#	PAN REDONDO CASERO CHAPAO	#	75	#	2	#		#	0	#	6	#	601	#	
+10019	#	0	#	B	#		#	PAN BARRA SEMI	#	75	#	2	#		#	0	#	6	#	601	#	
+43751	#	0	#	M	#		#	MINI NORDICO AVENA	#	22	#	2	#		#	0	#	6	#	601	#	
+42429	#	0	#	M	#		#	MEDIA BAGUETTE CRISTALINA MASA	#	50	#	2	#		#	1	#	6	#	601	#	
+42237	#	0	#	M	#		#	PAN BURGER CRISTALINA MASA MAD	#	45	#	2	#		#	1	#	6	#	601	#	
+42234	#	0	#	M	#		#	PAN GRAN CRISTALINO MASA MADRE	#	165	#	2	#		#	1	#	6	#	601	#	
+40582	#	0	#	M	#		#	PANECILLO HOLANDES INTEGRAL 4U	#	159	#	2	#		#	5	#	6	#	601	#	
+40581	#	0	#	M	#		#	PANECILLO HOLANDES BLANCO 4U	#	159	#	2	#		#	5	#	6	#	601	#	
+39572	#	0	#	M	#		#	PAN DE PASAS	#	240	#	2	#		#	5	#	6	#	601	#	
+39571	#	0	#	M	#		#	PAN MULTICEREA MEDIO NEGRO	#	155	#	2	#		#	5	#	6	#	601	#	
+39570	#	0	#	M	#		#	PAN 6 CEREALES MEDI CORTADO	#	145	#	2	#		#	5	#	6	#	601	#	
+39569	#	0	#	M	#		#	PAN INTEGRAL MEDIO CORTADO	#	145	#	2	#		#	5	#	6	#	601	#	
+39568	#	0	#	M	#		#	PAN TIGRE MEDIO CORTADO	#	169	#	2	#		#	5	#	6	#	601	#	
+38770	#	0	#	M	#		#	PAN CENTENO	#	55	#	2	#		#	1	#	6	#	601	#	
+38768	#	0	#	M	#		#	PAN BARRA RUSTICA MASA MADRE	#	79	#	2	#		#	1	#	6	#	601	#	
+38767	#	0	#	M	#		#	PAN BARRA 5 SEMILLAS MASA MADR	#	79	#	2	#		#	1	#	6	#	601	#	
+35380	#	0	#	M	#		#	FRIKORN RUSTIKAL	#	165	#	2	#		#	1	#	6	#	601	#	
+35378	#	0	#	M	#		#	FRIKORN MULTICEREAL	#	165	#	2	#		#	1	#	6	#	601	#	
+31825	#	0	#	M	#		#	PAN CENTENO GRAN RESERVA	#	150	#	2	#		#	1	#	6	#	601	#	
+31823	#	0	#	M	#		#	BARRA MEDITERRANEA G. RESERVA	#	80	#	2	#		#	1	#	6	#	601	#	
+27457	#	0	#	M	#		#	HOGAZA CHIA PAN	#	260	#	2	#		#	0	#	6	#	601	#	
+27456	#	0	#	M	#		#	HOGAZA BAVARIA	#	280	#	2	#		#	0	#	6	#	601	#	
+27455	#	0	#	M	#		#	HOGAZA KORN ESPECIAL	#	330	#	2	#		#	0	#	6	#	601	#	
+27454	#	0	#	M	#		#	HOGAZA ESPELTA	#	310	#	2	#		#	0	#	6	#	601	#	
+12700	#	0	#	M	#		#	PAN FIBRA VERDE 170GR	#	75	#	2	#		#	1	#	6	#	601	#	
+5272	#	0	#	M	#		#	PAN INTEGRAL BAGUETTINA	#	25	#	2	#		#	1	#	6	#	601	#	
+43801	#	0	#	M	#		#	HOGAZA 100% INTEGRAL REBANADA	#	140	#	2	#		#	0	#	6	#	601	#	
+43747	#	0	#	M	#		#	BAGUETTE 100% INTEGRAL	#	169	#	2	#		#	0	#	6	#	601	#	
+41318	#	0	#	M	#		#	PAN BARRA INTEGRAL 2U	#	110	#	2	#		#	0	#	6	#	601	#	
+41308	#	0	#	M	#		#	PAN INTEGRAL BAGUETTINA 4U	#	100	#	2	#		#	0	#	6	#	601	#	
+40447	#	0	#	M	#		#	HOGAZA INTEGRAL MULTIGRAIN	#	160	#	2	#		#	1	#	6	#	601	#	
+38769	#	0	#	M	#		#	PAN 6 CEREALES	#	69	#	2	#		#	1	#	6	#	601	#	
+38701	#	0	#	M	#		#	PAN FLAUTIN CEREALES MASA MADR	#	33	#	2	#		#	1	#	6	#	601	#	
+38548	#	0	#	M	#		#	PAN REDONDO CENTENO REBANADO	#	195	#	2	#		#	0	#	6	#	601	#	
+38547	#	0	#	M	#		#	PAN GRANO ENTERO REBANADO	#	199	#	2	#		#	0	#	6	#	601	#	
+38035	#	0	#	M	#		#	BARRA RUSTICA MULTICEREAL REB.	#	119	#	2	#		#	0	#	6	#	601	#	
+24794	#	0	#	M	#		#	PAN 6 CEREALES	#	125	#	2	#		#	1	#	6	#	601	#	
+14226	#	0	#	M	#		#	PAN INTEGRAL	#	80	#	2	#		#	1	#	6	#	601	#	
+10060	#	0	#	M	#		#	PAN BARRA INTEGRAL	#	65	#	2	#		#	1	#	6	#	601	#	
+9446	#	0	#	M	#		#	PAN BARRA GALLEGA	#	80	#	2	#		#	1	#	6	#	601	#	
+43800	#	0	#	M	#		#	HOGAZA REBANADA NORMAL	#	120	#	2	#		#	0	#	6	#	601	#	
+43748	#	0	#	M	#		#	BOCATA PIAMONTE	#	27	#	2	#		#	0	#	6	#	601	#	
+43036	#	0	#	M	#		#	BARRA RUSTICA MASA MADRE	#	50	#	2	#		#	1	#	6	#	601	#	
+42233	#	0	#	M	#		#	PAN SALUD SIN SAL	#	45	#	2	#		#	1	#	6	#	601	#	
+41568	#	0	#	M	#		#	BAGUETTE ANTIGA	#	70	#	2	#		#	1	#	6	#	601	#	
+41196	#	0	#	M	#		#	PAN BARRA GALLEGA 2 UNIDADES	#	126	#	2	#		#	1	#	6	#	601	#	
+40707	#	0	#	M	#		#	PAN BOCADILLO 5U	#	110	#	2	#		#	1	#	6	#	601	#	
+38785	#	0	#	M	#		#	PAN DE LA ABUELA MASA MADRE	#	110	#	2	#		#	1	#	6	#	601	#	
+38776	#	0	#	M	#		#	PAN MINI RUSTICO	#	20	#	2	#		#	1	#	6	#	601	#	
+38034	#	0	#	M	#		#	BARRA RUSTICA REBANADA	#	100	#	2	#		#	0	#	6	#	601	#	
+38004	#	0	#	M	#		#	PAN BURGUER	#	25	#	2	#		#	0	#	6	#	601	#	
+38000	#	1	#	M	#	1	#	PANES GRANEL	#	260	#	1	#		#	0	#	6	#	601	#	
+36549	#	0	#	M	#		#	PAN DE CHIMO	#	40	#	2	#		#	1	#	6	#	601	#	
+35981	#	0	#	M	#		#	PAN PULGA	#	17	#	2	#		#	1	#	6	#	601	#	
+35588	#	0	#	M	#		#	PAN BARRA 2U	#	84	#	2	#		#	1	#	6	#	601	#	
+33309	#	0	#	M	#		#	PAN BARRA ACEITE	#	50	#	2	#		#	1	#	6	#	601	#	
+31821	#	0	#	M	#		#	BOCATA GRAN RESERVA MASA MADRE	#	50	#	2	#		#	1	#	6	#	601	#	
+31820	#	0	#	M	#		#	BARRA GRAN RESERVA MASA MADRE	#	90	#	2	#		#	1	#	6	#	601	#	
+28647	#	0	#	M	#		#	PAN PULGA P-6	#	100	#	2	#		#	1	#	6	#	601	#	
+27795	#	0	#	M	#		#	PAN NATURAL	#	295	#	2	#		#	0	#	6	#	601	#	
+27794	#	0	#	M	#		#	PAN QUEMAO	#	295	#	2	#		#	0	#	6	#	601	#	
+19077	#	0	#	M	#		#	PAN DE LECHE	#	33	#	2	#		#	1	#	6	#	601	#	
+18463	#	0	#	M	#		#	PAN BARRA	#	45	#	2	#		#	1	#	6	#	601	#	
+14229	#	0	#	M	#		#	PAN	#	150	#	2	#		#	2	#	6	#	601	#	
+14228	#	0	#	M	#		#	PAN	#	270	#	2	#		#	1	#	6	#	601	#	
+14227	#	0	#	M	#		#	PAN BARRAS	#	80	#	2	#		#	1	#	6	#	601	#	
+14225	#	0	#	M	#		#	PAN LINIETES	#	55	#	2	#		#	1	#	6	#	601	#	
+14224	#	0	#	M	#		#	PAN BOCADILLOS GRANDES	#	55	#	2	#		#	1	#	6	#	601	#	
+14223	#	0	#	M	#		#	PAN BOCADILLOS PEQUE¥OS	#	45	#	2	#		#	1	#	6	#	601	#	
+13871	#	0	#	M	#		#	PAN BAGUETTINA	#	22	#	2	#		#	1	#	6	#	601	#	
+38005	#	1	#	M	#	5	#	BOLLERIA GRANEL	#	750	#	1	#		#	0	#	6	#	602	#	
+7025	#	0	#	B	#		#	DELICAS ALMENDRA	#	902	#	2	#		#	0	#	6	#	602	#	
+7023	#	0	#	B	#		#	ROLLOS VINO	#	481	#	2	#		#	0	#	6	#	602	#	
+43913	#	0	#	B	#		#	MONITA MURCIANA	#	50	#	2	#		#	0	#	6	#	602	#	
+43315	#	0	#	B	#		#	ROSCON NATA-TRUFA	#	499	#	2	#		#	0	#	6	#	602	#	
+43275	#	0	#	B	#		#	DOTS RELLENOS CHOCOLATE  P-4	#	150	#	2	#		#	0	#	6	#	602	#	
+42592	#	0	#	B	#		#	DOTS PATRULLA CANINA P-2	#	199	#	2	#		#	0	#	6	#	602	#	
+42430	#	0	#	B	#		#	FARTON CASERO HOJALDRADO	#	150	#	2	#		#	0	#	6	#	602	#	
+42191	#	0	#	B	#		#	PANQUEMADO COBERTURA CHOCOLATE	#	330	#	2	#		#	0	#	6	#	602	#	
+42089	#	0	#	B	#		#	DOT SAN VALENTIN	#	65	#	2	#		#	0	#	6	#	602	#	
+41918	#	0	#	B	#		#	COCA DE CALABAZA	#	225	#	2	#		#	0	#	6	#	602	#	
+41917	#	0	#	B	#		#	COCA DE BIZCOCHO CASERA	#	145	#	2	#		#	0	#	6	#	602	#	
+41916	#	0	#	B	#		#	COCA DE NUECES	#	199	#	2	#		#	0	#	6	#	602	#	
+41915	#	0	#	B	#		#	COCA DE ALMENDRA	#	199	#	2	#		#	0	#	6	#	602	#	
+41914	#	0	#	B	#		#	COCA DE CHOCOLATE	#	199	#	2	#		#	0	#	6	#	602	#	
+41567	#	0	#	B	#		#	BERLINA CREMA	#	60	#	2	#		#	0	#	6	#	602	#	
+41565	#	0	#	B	#		#	HOJALDRE PRALINE	#	60	#	2	#		#	0	#	6	#	602	#	
+41425	#	0	#	B	#		#	COCA JAMON Y QUESO	#	125	#	2	#		#	0	#	6	#	602	#	
+41421	#	0	#	B	#		#	COCA ATUN Y QUESO	#	125	#	2	#		#	0	#	6	#	602	#	
+40936	#	0	#	B	#		#	FARTON CON AZUCAR	#	31	#	2	#		#	0	#	6	#	602	#	
+40887	#	0	#	B	#		#	FARTON CON CHOCOLATE	#	37	#	2	#		#	0	#	6	#	602	#	
+40833	#	0	#	B	#		#	PLUM CAKE DE YOGUR	#	200	#	2	#		#	0	#	6	#	602	#	
+40455	#	0	#	B	#		#	PLUM CAKE DE CARAMELO	#	200	#	2	#		#	0	#	6	#	602	#	
+40454	#	0	#	B	#		#	COCA AVELLANA Y CHOCOLATE	#	280	#	2	#		#	0	#	6	#	602	#	
+40367	#	0	#	B	#		#	DOT HALLOWEEN	#	60	#	2	#		#	0	#	6	#	602	#	
+39859	#	0	#	B	#		#	DOT LIMON	#	60	#	2	#		#	0	#	6	#	602	#	
+39858	#	0	#	B	#		#	DOT FRESA	#	60	#	2	#		#	0	#	6	#	602	#	
+39504	#	0	#	B	#		#	MONA COB. HUEVO SORPRESA	#	169	#	2	#		#	0	#	6	#	602	#	
+39503	#	0	#	B	#		#	MONA HUEVO CHOCOLATE SORPRESA	#	159	#	2	#		#	0	#	6	#	602	#	
+39502	#	0	#	B	#		#	MONA HUEVO COCIDO COLOR	#	159	#	2	#		#	0	#	6	#	602	#	
+39457	#	0	#	B	#		#	PANQUEMADO MINI BA¥ADO	#	110	#	2	#		#	0	#	6	#	602	#	
+39105	#	0	#	B	#		#	ROSEGON DE ALMENDRA	#	169	#	2	#		#	0	#	6	#	602	#	
+39089	#	0	#	B	#		#	ROSCON CREMA	#	695	#	2	#		#	0	#	6	#	602	#	
+39088	#	0	#	B	#		#	ROSCON TRUFA	#	695	#	2	#		#	0	#	6	#	602	#	
+39087	#	0	#	B	#		#	ROSCON NATA	#	695	#	2	#		#	0	#	6	#	602	#	
+39086	#	0	#	B	#		#	ROSCON SIN RELLENO	#	455	#	2	#		#	0	#	6	#	602	#	
+38786	#	0	#	B	#		#	ROLY DOT DE FRESA	#	60	#	2	#		#	0	#	6	#	602	#	
+38117	#	0	#	B	#		#	HOGAZA PASAS Y NUECES	#	250	#	2	#		#	0	#	6	#	602	#	
+38005	#	0	#	B	#		#	BOLLERIA GRANEL	#	750	#	1	#		#	0	#	6	#	602	#	
+37985	#	0	#	B	#		#	CARACOLA CHOCOLATE MINI	#	150	#	2	#		#	0	#	6	#	602	#	
+37816	#	0	#	B	#		#	ROSCON NATA-TRUFA	#	395	#	2	#		#	0	#	6	#	602	#	
+37569	#	0	#	B	#		#	ROSCON NATA-TRUFA	#	100	#	2	#		#	0	#	6	#	602	#	
+37500	#	0	#	B	#		#	TRENZA HOJALDRE DE CHOCOLATE	#	85	#	2	#		#	0	#	6	#	602	#	
+37010	#	0	#	B	#		#	PAN QUEMADO	#	190	#	2	#		#	0	#	6	#	602	#	
+36668	#	0	#	B	#		#	TORTA HOGAZA DE CREMA	#	280	#	2	#		#	0	#	6	#	602	#	
+36380	#	0	#	B	#		#	ROSCON REYES NATA/TRUFA	#	200	#	2	#		#	0	#	6	#	602	#	
+35771	#	0	#	B	#		#	CROISSANT ARTESANO FERMENTADO	#	59	#	2	#		#	0	#	6	#	602	#	
+35519	#	0	#	B	#		#	FARTON CASERO ARTESANO 4U	#	100	#	2	#		#	0	#	6	#	602	#	
+35392	#	0	#	B	#		#	MINI CROISSANT MANTEQUILLA	#	16	#	2	#		#	0	#	6	#	602	#	
+35388	#	0	#	B	#		#	CROISSANT ARTESANO	#	59	#	2	#		#	0	#	6	#	602	#	
+34416	#	0	#	B	#		#	COCA ALMENDRA	#	200	#	2	#		#	0	#	6	#	602	#	
+34415	#	0	#	B	#		#	COCA MANZANA	#	200	#	2	#		#	0	#	6	#	602	#	
+34414	#	0	#	B	#		#	COCA CHOCOLATE	#	210	#	2	#		#	0	#	6	#	602	#	
+33951	#	0	#	B	#		#	MONA HUEVO COLOR	#	140	#	2	#		#	0	#	6	#	602	#	
+33950	#	0	#	B	#		#	MONA FIGURA COBER-HUEVO COLOR	#	165	#	2	#		#	0	#	6	#	602	#	
+33949	#	0	#	B	#		#	MONA FIGURA HUEVO CHOCOLATE	#	150	#	2	#		#	0	#	6	#	602	#	
+33945	#	0	#	B	#		#	COCA CASERA CON NUECES	#	200	#	2	#		#	0	#	6	#	602	#	
+33944	#	0	#	B	#		#	COCA CASERA	#	145	#	2	#		#	0	#	6	#	602	#	
+33798	#	0	#	B	#		#	ROLLO PASCUA	#	295	#	2	#		#	0	#	6	#	602	#	
+33797	#	0	#	B	#		#	MONA PASCUA CHOCOLATE	#	240	#	2	#		#	0	#	6	#	602	#	
+33796	#	0	#	B	#		#	MONA PASCUA PAN QUEMADO	#	190	#	2	#		#	0	#	6	#	602	#	
+32612	#	0	#	B	#		#	FARTON MINUTE	#	30	#	2	#		#	0	#	6	#	602	#	
+31806	#	0	#	B	#		#	FARTONS MINUTE 4U	#	120	#	2	#		#	0	#	6	#	602	#	
+31802	#	0	#	B	#		#	MINI CARACOLA CHOCOLATE 6U	#	145	#	2	#		#	0	#	6	#	602	#	
+31798	#	0	#	B	#		#	MINIDELICIAS QUESO 16U	#	145	#	2	#		#	0	#	6	#	602	#	
+31795	#	0	#	B	#		#	MINIDELICIAS SOBRASADA 16U	#	145	#	2	#		#	0	#	6	#	602	#	
+31515	#	0	#	B	#		#	COCA RELLENA CHOCOLATE	#	132	#	2	#		#	0	#	6	#	602	#	
+30749	#	0	#	B	#		#	COCA DE TOMATE	#	100	#	2	#		#	0	#	6	#	602	#	
+30747	#	0	#	B	#		#	COCA DE CEBOLLA LISTO	#	100	#	2	#		#	0	#	6	#	602	#	
+29967	#	0	#	B	#		#	PASTEL DE NUEZ	#	125	#	2	#		#	0	#	6	#	602	#	
+2820	#	0	#	B	#		#	ROSQUILLETAS ANCHOA-MALLORQUI	#	69	#	2	#		#	0	#	6	#	602	#	
+2789	#	0	#	B	#		#	PANQUEMADOS	#	45	#	2	#		#	0	#	6	#	602	#	
+2763	#	0	#	B	#		#	COCA ESCALIBADA	#	1322	#	2	#		#	0	#	6	#	602	#	
+27300	#	0	#	B	#		#	TORTA PASAS Y NUEC CON BONIATO	#	359	#	2	#		#	0	#	6	#	602	#	
+27273	#	0	#	B	#		#	TORTA DE PASAS Y NUECES	#	240	#	2	#		#	0	#	6	#	602	#	
+27243	#	0	#	B	#		#	NAPOLITANA MIXTA	#	105	#	2	#		#	0	#	6	#	602	#	
+27239	#	0	#	B	#		#	ESPARTEROS BOLSA	#	159	#	2	#		#	0	#	6	#	602	#	
+27237	#	0	#	B	#		#	CROISSANT GRANDE CHOCO	#	105	#	2	#		#	0	#	6	#	602	#	
+2718	#	0	#	B	#		#	CREAM CREMA (PANADERIA)	#	54	#	2	#		#	0	#	6	#	602	#	
+25624	#	0	#	B	#		#	PASTEL DE MANZANA Y CANELA	#	155	#	2	#		#	0	#	6	#	602	#	
+25620	#	0	#	B	#		#	PASTEL-EIERSCHECKE	#	155	#	2	#		#	0	#	6	#	602	#	
+25289	#	0	#	B	#		#	COCA CON ANCHOA	#	80	#	2	#		#	0	#	6	#	602	#	
+25062	#	0	#	B	#		#	ROSCON CREMA	#	200	#	2	#		#	0	#	6	#	602	#	
+25008	#	0	#	B	#		#	MONA RELLENA CABELLO	#	329	#	2	#		#	0	#	6	#	602	#	
+24968	#	0	#	B	#		#	PAN QUEMADO	#	220	#	2	#		#	0	#	6	#	602	#	
+2395	#	0	#	B	#		#	PALMERA CHOCOLATE	#	60	#	2	#		#	0	#	6	#	602	#	
+21524	#	0	#	B	#		#	BRETZEL UNIDAD	#	54	#	2	#		#	0	#	6	#	602	#	
+21517	#	0	#	B	#		#	FARTON MINUTE	#	750	#	1	#		#	0	#	6	#	602	#	
+21516	#	0	#	B	#		#	FLAUTA DE CREMA	#	451	#	1	#		#	0	#	6	#	602	#	
+21515	#	0	#	B	#		#	FLAUTA DE CHOCOLATE	#	451	#	1	#		#	0	#	6	#	602	#	
+21512	#	0	#	B	#		#	NAPOLITANA DOS CHOCOLATES UNID	#	51	#	2	#		#	0	#	6	#	602	#	
+21507	#	0	#	B	#		#	MINI CARACOLA CREMA	#	451	#	1	#		#	0	#	6	#	602	#	
+18836	#	0	#	B	#		#	ROSCON REYES RELLENO GRANDE	#	592	#	2	#		#	0	#	6	#	602	#	
+18460	#	0	#	B	#		#	BARTOLO UNIDAD	#	54	#	2	#		#	0	#	6	#	602	#	
+18459	#	0	#	B	#		#	TORTELL CABELLO	#	54	#	2	#		#	0	#	6	#	602	#	
+15582	#	0	#	B	#		#	TORTA DE PASAS Y NUECES	#	210	#	2	#		#	0	#	6	#	602	#	
+15193	#	0	#	B	#		#	ROLLO SAN BLAI	#	80	#	2	#		#	0	#	6	#	602	#	
+13925	#	0	#	B	#		#	SNEECKEN MINI PASAS-NUECES KG.	#	653	#	1	#		#	0	#	6	#	602	#	
+13895	#	0	#	B	#		#	CARACOLA CHOCOLATE	#	70	#	2	#		#	0	#	6	#	602	#	
+12800	#	0	#	B	#		#	PANADERIA VARIOS	#	105	#	2	#		#	0	#	6	#	602	#	
+12691	#	0	#	B	#		#	GAFAS P-2	#	150	#	2	#		#	0	#	6	#	602	#	
+12685	#	0	#	B	#		#	NAPOLITANA CREMA P-2	#	115	#	2	#		#	0	#	6	#	602	#	
+1116	#	0	#	B	#		#	ROSCON SIN RELLENO	#	100	#	2	#		#	0	#	6	#	602	#	
+1099	#	0	#	B	#		#	BOLLOS DE CACAO	#	48	#	2	#		#	0	#	6	#	602	#	
+1087	#	0	#	B	#		#	BERLINAS	#	34	#	2	#		#	0	#	6	#	602	#	
+10062	#	0	#	B	#		#	NUDESNUTS GLASS UNIDAD	#	53	#	2	#		#	0	#	6	#	602	#	
+10061	#	0	#	B	#		#	NUDESNUTS CHOCOLATE UNIDAD	#	55	#	2	#		#	0	#	6	#	602	#	
+40937	#	0	#	B	#		#	MUFFIN TRIPLE CHOCOLATE 2U	#	165	#	2	#		#	0	#	6	#	602	#	
+38698	#	0	#	B	#		#	MINI TULIPA NOCILLA	#	34	#	2	#		#	0	#	6	#	602	#	
+33943	#	0	#	B	#		#	MAGDALENAS INTEGRALES P-6	#	200	#	2	#		#	0	#	6	#	602	#	
+33941	#	0	#	B	#		#	MAGDALENAS P-6	#	169	#	2	#		#	0	#	6	#	602	#	
+24974	#	0	#	B	#		#	MADALENAS CHOCO PACK-6	#	195	#	2	#		#	0	#	6	#	602	#	
+44581	#	0	#	B	#		#	COCA TONYINA (ATUN)	#	350	#	2	#		#	0	#	6	#	602	#	
+44580	#	0	#	B	#		#	COCA TONYINA (ATUN)	#	650	#	2	#		#	0	#	6	#	602	#	
+4068	#	0	#	B	#		#	EMPANADILLAS GUISANTES UNID.	#	48	#	2	#		#	0	#	6	#	602	#	
+4063	#	0	#	B	#		#	EMPANADILLAS DE TOMATE	#	48	#	2	#		#	0	#	6	#	602	#	
+40266	#	0	#	B	#		#	EMPANADA DE ATUN	#	250	#	2	#		#	0	#	6	#	602	#	
+40158	#	0	#	B	#		#	EMPANADA DE ATUN	#	900	#	2	#		#	0	#	6	#	602	#	
+39860	#	0	#	B	#		#	ENVOLTINI PIZZA	#	95	#	2	#		#	0	#	6	#	602	#	
+39857	#	0	#	B	#		#	HOJADRE VEGETAL	#	100	#	2	#		#	0	#	6	#	602	#	
+37923	#	0	#	B	#		#	EMPANADILLA VERDURA MINI	#	35	#	2	#		#	0	#	6	#	602	#	
+37922	#	0	#	B	#		#	EMPANADILLAS CEBOLLA/GUI MINI	#	35	#	2	#		#	0	#	6	#	602	#	
+37921	#	0	#	B	#		#	EMPANADILLA PISTO MINI	#	35	#	2	#		#	0	#	6	#	602	#	
+37498	#	0	#	B	#		#	HOJALDRE MIXTO DE JAMON QUESO	#	99	#	2	#		#	0	#	6	#	602	#	
+35768	#	0	#	B	#		#	EMPANADILLAS CEBOLLA/GUI MINI	#	700	#	1	#		#	0	#	6	#	602	#	
+31801	#	0	#	B	#		#	EMPANADILLAS MINI BONIATO 8U	#	225	#	2	#		#	0	#	6	#	602	#	
+31800	#	0	#	B	#		#	EMPANADILLAS PISTO MINI 8U	#	225	#	2	#		#	0	#	6	#	602	#	
+27999	#	0	#	B	#		#	EMPANADILLA SUPREMA ATUN/HUEVO	#	670	#	1	#		#	0	#	6	#	602	#	
+27998	#	0	#	B	#		#	EMPANADILLA SUPREMA ATUN	#	640	#	1	#		#	0	#	6	#	602	#	
+27785	#	0	#	B	#		#	EMPANADILLA ATUN HUEVO	#	40	#	2	#		#	0	#	6	#	602	#	
+27784	#	0	#	B	#		#	EMPANADILLA SUPREMA ATUN	#	40	#	2	#		#	0	#	6	#	602	#	
+27283	#	0	#	B	#		#	COCA CEBOLLA	#	85	#	2	#		#	0	#	6	#	602	#	
+24414	#	0	#	B	#		#	COCA MAL HECHA	#	731	#	2	#		#	0	#	6	#	602	#	
+21592	#	0	#	B	#		#	EMPANADILLA ESPINACAS MINI	#	750	#	1	#		#	0	#	6	#	602	#	
+21513	#	0	#	B	#		#	NAPOLITANA MIXTA JAMON Y QUESO	#	85	#	2	#		#	0	#	6	#	602	#	
+18493	#	0	#	B	#		#	PIZZETA CEBOLLA CONGELADA	#	53	#	2	#		#	0	#	6	#	602	#	
+18472	#	0	#	B	#		#	EMPANADILLA CEBOLLA/ATUN/GUISA	#	70	#	2	#		#	0	#	6	#	602	#	
+18462	#	0	#	B	#		#	COCA FASIDA GRANDE	#	1389	#	2	#		#	0	#	6	#	602	#	
+18458	#	0	#	B	#		#	EMPANADILLA VERDURA	#	85	#	2	#		#	0	#	6	#	602	#	
+18457	#	0	#	B	#		#	EMPANADILLAS PISTO	#	75	#	2	#		#	0	#	6	#	602	#	
+18456	#	0	#	B	#		#	COCA TOMATE	#	59	#	2	#		#	0	#	6	#	602	#	
+17901	#	0	#	B	#		#	NAPOLITANA SOBRASADA	#	58	#	2	#		#	0	#	6	#	602	#	
+13976	#	0	#	B	#		#	EMPANADILLAS PISTO MINI	#	625	#	1	#		#	0	#	6	#	602	#	
+12662	#	0	#	B	#		#	EMPANADILLAS BACON	#	129	#	2	#		#	0	#	6	#	602	#	
+12561	#	0	#	B	#		#	EMPANADILLAS TOMATE	#	65	#	2	#		#	0	#	6	#	602	#	
+35846	#	0	#	B	#		#	CA¥A CABELLO DE ANGEL	#	55	#	2	#		#	0	#	6	#	602	#	
+35398	#	0	#	B	#		#	HOJALDRES DE ASTORGA	#	135	#	2	#		#	0	#	6	#	602	#	
+35397	#	0	#	B	#		#	PALMERAS CEBRA.	#	135	#	2	#		#	0	#	6	#	602	#	
+35395	#	0	#	B	#		#	LAZOS CEBRA	#	135	#	2	#		#	0	#	6	#	602	#	
+34682	#	0	#	B	#		#	MINI SALADOS SURTIDO	#	119	#	2	#		#	0	#	6	#	602	#	
+32345	#	0	#	B	#		#	PALMERA AZUCAR	#	130	#	2	#		#	0	#	6	#	602	#	
+31510	#	0	#	B	#		#	PALMERA ZEBRA 2U.	#	99	#	2	#		#	0	#	6	#	602	#	
+21583	#	0	#	B	#		#	MAXI ESPIRAL CHOCO UNIDAD	#	51	#	2	#		#	0	#	6	#	602	#	
+21522	#	0	#	B	#		#	CA¥A DE CHOCOLATE	#	56	#	2	#		#	0	#	6	#	602	#	
+21519	#	0	#	B	#		#	MALLAS CHOCO-AVELLANA UNIDAD	#	27	#	2	#		#	0	#	6	#	602	#	
+16715	#	0	#	B	#		#	PALMERA CHOCOLATE	#	110	#	2	#		#	0	#	6	#	602	#	
+40159	#	0	#	B	#		#	ENSAIMADA CABELLO DE ANGEL	#	550	#	2	#		#	0	#	6	#	602	#	
+31803	#	0	#	B	#		#	ENSAIMADA MINI HOJALDRADA 6U	#	155	#	2	#		#	0	#	6	#	602	#	
+21535	#	0	#	B	#		#	ENSAIMADA MINI CREMA	#	598	#	1	#		#	0	#	6	#	602	#	
+15458	#	0	#	B	#		#	ENSAIMADA CABELLO 450 PTS.	#	290	#	2	#		#	0	#	6	#	602	#	
+38697	#	0	#	B	#		#	CROISSANT NOCILLA RELLENO	#	100	#	2	#		#	0	#	6	#	602	#	
+37589	#	0	#	B	#		#	CROISSANT MINI RECTO AZUC.G 6U	#	100	#	2	#		#	0	#	6	#	602	#	
+37557	#	0	#	B	#		#	CROISSANT ARTESANO	#	60	#	2	#		#	0	#	6	#	602	#	
+36568	#	0	#	B	#		#	CROISSANT ARTESANO DECORADO	#	60	#	2	#		#	0	#	6	#	602	#	
+31808	#	0	#	B	#		#	CROISSANT ARTESANITO 8U	#	145	#	2	#		#	0	#	6	#	602	#	
+31799	#	0	#	B	#		#	CROISSANT MINI RECTO 6U.	#	100	#	2	#		#	0	#	6	#	602	#	
+21509	#	0	#	B	#		#	CROISSANT F1 MARGARITA GIGANTE	#	39	#	2	#		#	0	#	6	#	602	#	
+10509	#	0	#	B	#		#	CROISSANT MINI P-6	#	100	#	2	#		#	0	#	6	#	602	#	
+44433	#	0	#	M	#		#	DOTS DUO P-4	#	159	#	2	#		#	3	#	6	#	602	#	
+43916	#	0	#	M	#		#	COCA ESCUDELL· ALMENDRA	#	298	#	2	#		#	7	#	6	#	602	#	
+43915	#	0	#	M	#		#	COCA ESCUDELL· CALABAZA	#	236	#	2	#		#	7	#	6	#	602	#	
+43914	#	0	#	M	#		#	TORTA NARANJA CHOCOLATE	#	339	#	2	#		#	7	#	6	#	602	#	
+43315	#	0	#	M	#		#	ROSCON NATA-TRUFA	#	250	#	2	#		#	0	#	6	#	602	#	
+43275	#	0	#	M	#		#	DOTS RELLENOS CHOCOLATE  P-4	#	150	#	2	#		#	3	#	6	#	602	#	
+43100	#	0	#	M	#		#	COCA CALABAZA CASERA	#	225	#	2	#		#	6	#	6	#	602	#	
+43099	#	0	#	M	#		#	COCA MANZANA CASERA	#	225	#	2	#		#	10	#	6	#	602	#	
+43098	#	0	#	M	#		#	COCA CHOCOLATE CASERA	#	225	#	2	#		#	10	#	6	#	602	#	
+43097	#	0	#	M	#		#	COCA DE ALMENDRA CASERA	#	225	#	2	#		#	10	#	6	#	602	#	
+43096	#	0	#	M	#		#	COCA DE NUECES CASERA	#	225	#	2	#		#	10	#	6	#	602	#	
+43095	#	0	#	M	#		#	COCA AZUCAR CASERA	#	175	#	2	#		#	10	#	6	#	602	#	
+41564	#	0	#	M	#		#	PAIN CHOC	#	60	#	2	#		#	2	#	6	#	602	#	
+40558	#	0	#	M	#		#	ROSEGON	#	825	#	1	#		#	30	#	6	#	602	#	
+40453	#	0	#	M	#		#	HOGAZA PASAS Y NUECES	#	269	#	2	#		#	14	#	6	#	602	#	
+40153	#	0	#	M	#		#	MAPLE PECAN	#	70	#	2	#		#	2	#	6	#	602	#	
+39856	#	0	#	M	#		#	SUSO DE CREMA	#	75	#	2	#		#	2	#	6	#	602	#	
+39456	#	0	#	M	#		#	PANQUEMADO	#	225	#	2	#		#	4	#	6	#	602	#	
+39102	#	0	#	M	#		#	ROLLOS DE ANIS	#	149	#	2	#		#	0	#	6	#	602	#	
+39089	#	0	#	M	#		#	ROSCON CREMA	#	348	#	2	#		#	0	#	6	#	602	#	
+39088	#	0	#	M	#		#	ROSCON TRUFA	#	348	#	2	#		#	0	#	6	#	602	#	
+39087	#	0	#	M	#		#	ROSCON NATA	#	348	#	2	#		#	0	#	6	#	602	#	
+39086	#	0	#	M	#		#	ROSCON SIN RELLENO	#	228	#	2	#		#	0	#	6	#	602	#	
+38700	#	0	#	M	#		#	BERLINA RELLENA CHOCOLATE	#	65	#	2	#		#	2	#	6	#	602	#	
+38005	#	1	#	M	#	5	#	BOLLERIA GRANEL	#	750	#	1	#		#	0	#	6	#	602	#	
+37985	#	0	#	M	#		#	CARACOLA CHOCOLATE MINI	#	150	#	2	#		#	2	#	6	#	602	#	
+37571	#	0	#	M	#		#	CALZONE QUESO/TOMATE	#	90	#	2	#		#	2	#	6	#	602	#	
+36576	#	0	#	M	#		#	TORTA CASERA LIMON	#	100	#	2	#		#	0	#	6	#	602	#	
+36575	#	0	#	M	#		#	TORTA CASERA	#	100	#	2	#		#	0	#	6	#	602	#	
+34681	#	0	#	M	#		#	MINI SALADAS SURTIDO	#	768	#	1	#		#	0	#	6	#	602	#	"Contiene:GLUTEN,SOJA Y DERIVADOS,LECHE Y DERIVADOS;Puede contener trazas de:HUEVO Y DERIVADOS,FRUTOS DE CµSCARA"
+32112	#	0	#	M	#		#	DOTS AZUCAR P-4	#	130	#	2	#		#	2	#	6	#	602	#	
+32111	#	0	#	M	#		#	DOT CHOCOLATE P-4	#	130	#	2	#		#	3	#	6	#	602	#	
+21518	#	0	#	M	#		#	TARTA DE MANZANA	#	125	#	2	#		#	2	#	6	#	602	#	
+21511	#	0	#	M	#		#	NAPOLITANA CREMA	#	60	#	2	#		#	2	#	6	#	602	#	
+21510	#	0	#	M	#		#	NAPOLITANA CHOCOLATE	#	49	#	2	#		#	2	#	6	#	602	#	
+21506	#	0	#	M	#		#	CARACOLA CHOCOLATE MINI	#	526	#	1	#		#	2	#	6	#	602	#	
+13922	#	0	#	M	#		#	SNEECKEN PASAS-NUECES UNIDAD	#	80	#	2	#		#	2	#	6	#	602	#	
+12800	#	0	#	M	#		#	PANADERIA VARIOS	#	105	#	2	#		#	0	#	6	#	602	#	
+40152	#	0	#	M	#		#	MAGDALENA INTEGRAL S/AZ 6U	#	200	#	2	#		#	15	#	6	#	602	#	
+40151	#	0	#	M	#		#	MAGDALENA CASERA 6U	#	169	#	2	#		#	21	#	6	#	602	#	
+40150	#	0	#	M	#		#	MAGDALENA CASERA CHOCO. 6U.	#	169	#	2	#		#	21	#	6	#	602	#	
+36578	#	0	#	M	#		#	MOJICON CHOCOLATE 4U	#	100	#	2	#		#	0	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,MANTEQUILLA (LECHE),agua,azucar,levadura,GLUTEN,sal,fibra vegetal,grasa de palma;Emulgentes:E-471;Relleno:azucar,pasta de cacao,manteca de cacao;Emulgentes:E-322 (SOJA);Cobertura:HUEVO LIQUIDO PASTEURIZADO,dextrosa;Puede contener trazas de:FRUTOS DE CµSCARA,MOSTAZA"
+36577	#	0	#	M	#		#	MOJICON 4U	#	100	#	2	#		#	0	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,azucar,ALMENDRAS,(12%),HUEVO,aceite de girasol,EXTRACTO DE Malta DE CEBADA,gasificantes:,E-503,E-500,aromas,limon,almendras,vainilla;Puede contener trazas de:LECHE,SOJA,FRUTOS DE CµSCARA,CACAHUETES"
+45257	#	0	#	M	#		#	PASTISSET CABELLO DE ANGEL	#	845	#	1	#		#	7	#	6	#	602	#	
+44749	#	0	#	M	#		#	COCA GUISANTES	#	85	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,margarina,grasa de palma,ACEITE DE SOJA,aceite de girasol,jarabe de glucosa-fructosa,agua;Emulgentes:E-322,E-471;Acidulantes:E-330,aromas;Colorantes:E-160a,agua,azucar,HUEVO LIQUIDO PASTEURIZADO,levadura,LECHE DES. EN POLVO,sal,GLUTEN;Relleno:azucar,agua;Almid¢n modificado:E-1442,LECHE CONDENSADA,aroma;Gelificantes:E-460,E-466,jarabe de azucar invertido;Acidulantes:E-270;Espesantes:E-415,azucar;Cobertura:NUEZ PECAN,HUEVO LIQUIDO PASTEURIZADO,estabilizador,E-440,regulador de acidez,E-450,conservantes,E-202;Puede contener trazas de:SOJA Y DERIVADOS,SESAMO"
+44748	#	0	#	M	#		#	COCA VERDURA INTEGRAL	#	90	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,grasa de palma,aceite de girasol,aceite de coco,dextrosa,levadura,HARINA DE SOJA,SUERO DE LECHE EN POLVO;Gasificantes:E-450,E-500,sal;Emulgentes:E-471,E-481,LECHE DES. EN POLVO,HUEVO ENTERO EN POLVO;Colorantes:E-160(a),aroma;Relleno:agua,jarabe de glucosa-fructosa,azucar;Almid¢n modificado:E-1442,grasa de palma,ALMIDON DE TRIGO,sal;Acidulantes:E-330,aroma;Emulgentes:E-435;Colorante natural:E-171,E-160(a);Puede contener trazas de:FRUTOS DE CµSCARA,producto descongelado"
+44747	#	0	#	M	#		#	COCA TOMATE	#	90	#	2	#		#	2	#	6	#	602	#	
+44657	#	0	#	M	#		#	MINI EMPANADILLA ESPINACAS	#	33	#	2	#		#	2	#	6	#	602	#	
+44656	#	0	#	M	#		#	MINI EMPANADILLA GUISANTES	#	33	#	2	#		#	2	#	6	#	602	#	
+44618	#	0	#	M	#		#	MINI EMPANADILLA TOMATE	#	33	#	2	#		#	2	#	6	#	602	#	
+44617	#	0	#	M	#		#	EMPANADILLA TOMATE	#	85	#	2	#		#	2	#	6	#	602	#	
+44581	#	0	#	M	#		#	COCA TONYINA (ATUN)	#	350	#	2	#		#	2	#	6	#	602	#	
+39855	#	0	#	M	#		#	EMPANADA DE ATUN MINI	#	95	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,grasa de palma,azucar,levadura,aceite de nabina,dextrosa,ALMIDON DE TRIGO;Gasificantes:E-450,E-500ii,sal,CLARA DE HUEVO;Emulgentes:E-471,E-481,E-472e,SUERO LACTEO;Estabilizadores:E-412,E-466,E-415;Antioxidante:E-300,LECHE DESNATADA;Colorantes:E-160(a);Relleno:azucar,aceite de girasol,grasa de palma,grasa de palmiste,cacao desgrasado en polvo,SUERO LACTEO,AVELLANAS;Emulgentes:E-322,aromas;Cobertura:azucar,grasa de coco,grasa de palmiste,cacao desgrasado en polvo,LECHE ENTERA EN POLVO;Emulgentes:E-322,aromas naturales;Contiene:SOJA,producto descongelado"
+39854	#	0	#	M	#		#	NAPOLITANA JAMON Y QUESO	#	50	#	2	#		#	2	#	6	#	602	#	GLUTEN,SOJA,FRUTOS DE CµSCARA,LECHE,SESAMO
+37499	#	0	#	M	#		#	HOJALDRE DE PAVO Y CAMEMBERT	#	85	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,grasa de palma,aceite de soja y girasol,emulgentes,E-471,sal,acidulante,E-330,aromas,antioxidantes,E-306,E-304,azucar,GLUTEN,levadura;Relleno:grasa de palma,aceite de girasol,cacao en polvo desgrasado,almidon de maiz,almidon de patata,PASTA DE AVELLANAS;Emulgentes:E-322,aromas;Cobertura:HUEVO,jarabe de glucosa,estabilizador,E-440,E-415,regulador de acidez,E-450,conservantes,E-202,talco E-553b;Puede contener trazas de:LECHE Y DERIVADOS,SOJA Y DERIVADOS,FRUTOS DE CµSCARA"
+27789	#	0	#	M	#		#	PASTEL CARNE	#	130	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:grasa de palma,agua,ACEITE DE SOJA,aceite de girasol;Emulgentes:E-471,sal;Acidulantes:E-330,aromas;Antioxidantes:E-306,E-304;Colorantes:E-160a,agua,sal,GLUTEN;Emulgentes:E-471;Relleno:QUESO RALLADO (LECHE),QUESO EN POLVO (LECHE);Pure de tomate:SUERO LACTEO;Almid¢n modificado:E-1414,almidon de maiz,grasa de palma,sal;Estabilizantes:E-412,E-401,oregano;Cobertura:HUEVO L¡QUIDO;Puede contener trazas de:PESCADO Y DERIVADOS,SOJA,MOSTAZA,SESAMO"
+27788	#	0	#	M	#		#	SUPER PIZZA YORK	#	115	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,azucar,aceite de girasol,HUEVO,aromas,SUERO DE LECHE EN POLVO;Gasificantes:difosfato dis¢dico,bicarbonato s¢dico,almidon de patata,carbonato c lcico;Estabilizadores:goma de guar,carbonato de calcio;Emulgentes:mono y diglic‚ridos,esteres de propanodiol,sales s¢dicas de  cidos grasos;Humectantes:sorbitol,almidon de maiz,µcido ortofosf¢rico,enzimas,carbonato c lcico,sal;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA,SESAMO"
+27787	#	0	#	M	#		#	EMPANADILLA MASA ROJA	#	56	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,azucar,aceite de girasol,HUEVO,aromas,SUERO DE LECHE EN POLVO;Gasificantes:difosfato s¢dico,bicarbonato s¢dico,almid¢n de patata,carbonato c lcico;Estabilizadores:goma de guar,carbonato c lcico;Emulgentes:mono y digliceridos,esteres de propanodiol,sales s¢dicas de  cidos grasos;Humectantes:sorbitol,almidon de maiz,µcido ortofosf¢rico,enzimas,carbonato c lcico,sal;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA"
+27786	#	0	#	M	#		#	EMPANADILLA AMARILLA	#	40	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,margarina,agua,azucar,levadura,sal,ATUN,aceite de girasol,tomate,PAN RALLADO,almidon de maiz;Almid¢n modificado:E-1414,SUERO LACTEO,LECHE,grasa vegetal,carne de cerdo,almidon de patata,dextrosa,PROTEINA DE SOJA,aromas,especias,aceite de girasol,fecula de patata,CLARA DE HUEVO,caseinato de sodio,linaza,SESAMO,SALVADO DE AVENA,semilla de amapola,jarabe de glucosa,HUEVO ENTERO EN POLVO;Emulgentes:E-471,E-339;Acidulantes:E-330;Estabilizantes:E-451,E-401,E-461,E-407,E-410,E-412,E-415,E-450;Antioxidante:E-301;Conservadores:E-250;Colorantes:E-120,E-171;Potenciador del sabor:E-621;Puede contener trazas de:FRUTOS DE CµSCARA"
+27785	#	0	#	M	#		#	EMPANADILLA ATUN HUEVO	#	40	#	2	#		#	2	#	6	#	602	#	"Contiene:GLUTEN,SOJA Y DERIVADOS,LECHE Y DERIVADOS,HUEVO Y DERIVADOS;Puede contener trazas de:FRUTOS DE CµSCARA"
+27784	#	0	#	M	#		#	EMPANADILLA SUPREMA ATUN	#	40	#	2	#		#	2	#	6	#	602	#	"Contiene:GLUTEN,SOJA Y DERIVADOS,LECHE Y DERIVADOS,HUEVO Y DERIVADOS;Puede contener trazas de:FRUTOS DE CµSCARA"
+13985	#	0	#	M	#		#	PASTISSET BONIATO	#	845	#	1	#		#	7	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,margarina,agua,sal,jarabe de glucosa;Emulgentes:E-472e;Antiapelmazantes:E-440,E-551;Relleno:manzana;Antioxidante:E-300,sal,agua;Crema:azucar;Almid¢n modificado:E-1414,SUERO DE LECHE EN POLVO,grasa de palma,dextrosa,aceite de coco;Estabilizantes:E-339,E-516,E-450;Espesantes:E-401;Acidulantes:E-504,E-330,ALBUMINA DE HUEVO,aroma,PROTEINAS LACTEAS,LACTOSA;Colorantes:E-160a,E-170,E-127,extracto de paprika,estabilizador,E-440,E-415,conservantes,E-202,CEREZA CONFITADA (SULFITOS);Puede contener trazas de:SOJA Y DERIVADOS,FRUTOS DE CµSCARA,SESAMO,APIO,PESCADO"
+43750	#	0	#	M	#		#	MINI MALLAS SALADAS	#	24	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:grasa de palma,aceite de soja,aceite de girasol;Emulgentes:E-471,sal;Acidulantes:E-330,aromas;Antioxidante:E-306,E-304;Colorantes:E-160a,agua,azucar,levadura,GLUTEN;Emulgentes:E-472e;Relleno:Almid¢n modificado:E-1414,SUERO LACTEO,dextrosa;Espesantes:E-401,ALBUMINA DE HUEVO;Estabilizantes:E-339,E-450,E-516,glucosa;Acidificantes:E-504,PROTEINAS LACTEAS;Colorantes:E-170,E-160a,E-160c,HUEVO,dextrosa,antiapelmazante,E-170;Puede contener trazas de:SOJA,SESAMO,PESCADO,FRUTOS DE CµSCARA"
+43094	#	0	#	M	#		#	BRETZEL CHOCOLATE	#	100	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:grasa de palma,agua,aceite de soja,aceite de girasol;Emulgentes:E-471,sal;Acidulantes:E-330;Antioxidante:E-306,E-304,aroma;Colorantes:E-160a,agua,azucar,levadura,sal,GLUTEN DE TRIGO;Emulgentes:E-471,E-472;Espesantes:E-466,FIBRA DE TRIGO;Relleno:azucar,grasa de palma,aceite de girasol,cacao en polvo desgrasado,almidon de maiz,PASTA DE AVELLANAS;Emulgentes:E-322,aromas;Cobertura:HUEVO,jarabe de glucosa,estabilizador,E-440,E-415,regulador de acidez,E-450,conservantes,E-202,talco E-553b;Puede contener trazas de:SOJA,LECHE Y DERIVADOS,FRUTOS DE CµSCARA"
+43093	#	0	#	M	#		#	BRETZEL CREMA ALMENDRA	#	100	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,grasa de palma,aceite de soja y girasol,emulgentes,E-471,sal,acidulante,E-330,aromas,antioxidantes,E-306,E-304,azucar,GLUTEN,levadura;Relleno:grasa de palma,aceite de girasol,cacao en polvo desgrasado,almidon de maiz,almidon de patata,PASTA DE AVELLANAS;Emulgentes:E-322,aromas;Cobertura:HUEVO,gelatina,fideo chocolate;Puede contener trazas de:LECHE Y DERIVADOS,SOJA Y DERIVADOS"
+43092	#	0	#	M	#		#	PRETZEL SALADO	#	65	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:agua,azucar,levadura,sal,vainilla,GLUTEN;Emulgentes:E-471;Relleno:Crema pastelera:Almid¢n modificado:E-1414,SUERO LACTEO,dextrosa,grasa de palma,grasa de coco,ALBUMINA DE HUEVO;Estabilizantes:E-339,E-450,E-516,jarabe de glucosa,sal,aroma;Espesantes:E-401;Acidificantes:E-504,PROTEINAS LACTEAS;Colorantes:E-170,E-160a,extracto de paprika,pasas,NUECES,HUEVO,estabilizador,E-440,E-415,conservantes,E-202,guindas;Puede contener trazas de:PESCADO Y DERIVADOS,SOJA Y DERIVADOS,SESAMO"
+41566	#	0	#	M	#		#	PA¥UELO CARBONARA	#	110	#	2	#		#	2	#	6	#	602	#	
+35396	#	0	#	M	#		#	PALMERAS AZUCAR	#	135	#	2	#		#	0	#	6	#	602	#	
+35394	#	0	#	M	#		#	LAZOS AZUCAR	#	135	#	2	#		#	0	#	6	#	602	#	
+34682	#	0	#	M	#		#	MINI SALADOS SURTIDO	#	119	#	2	#		#	2	#	6	#	602	#	
+21593	#	0	#	M	#		#	PALMERA HOJALDRE	#	60	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,aceite de girasol,azucar,HUEVO,cacao en polvo,aromas;Humectantes:glicerina,sorbitol,almidon de maiz,µcido ortofof¢rico,enzimas,carbonato c lcico,SUERO DE LECHE EN POLVO;Gasificantes:difosfato dis¢dico,bicarbonato s¢dico,almidon de patata,carbonato c lcio,sal;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA"
+41620	#	0	#	M	#		#	ENSAIMADA CHOCOLATE	#	275	#	2	#		#	0	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,azucar,aceite de girasol,HUEVO,aroma,SUERO DE LECHE EN POLVO;Gasificantes:difosfato dis¢dico,bicarbonato s¢dico,almidon de patata,carbonato c lcico;Estabilizadores:goma de guar,carbonato c lcico;Emulgentes:mono y diglic‚ridos,esteres de propanodiol,sales s¢dicas de  cidos grasos;Humectantes:sorbitol,almidon de maiz,µcido ortofosf¢rico,enzimas,carbonato c lcico,sal;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA"
+41291	#	0	#	M	#		#	ENSAIMADA CABELLO ANGEL	#	275	#	2	#		#	0	#	6	#	602	#	"Ingredientes:Cabello de angel:calabaza,azucar,almidon modificado,E-1422,espesante,E-410,E-412,conservador,E-202,E-223,acido citrico,aroma de anis,HARINA DE TRIGO,manteca de cerdo,agua,EXTRACTO DE Malta,aroma;Puede contener trazas de:PESCADO,LECHE,FRUTOS DE CµSCARA,SOJA,HUEVO"
+31803	#	0	#	M	#		#	ENSAIMADA MINI HOJALDRADA 6U	#	155	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,agua,guisantes,cebolla,tomate,aceite de oliva,aceite de girasol,levadura,sal,azucar,antiapelmazante,E-170,emulgentes,E-472e,E-322,antioxidante,E-300,acidulante,E-296,E-334,regulador de acidez,E-330,E-331,E-331(iii),E-332,conservantes,E-202,bicarbonato sodico,enzimas,almidon modificado,E-1422,espesante,E-410;Puede contener trazas de:HUEVO,PESCADO,SOJA,LECHE,FRUTOS DE CµSCARA,SESAMO,SULFITOS,ALTRAMUCES"
+21514	#	0	#	M	#		#	ENSAIMADA	#	70	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,HARINA INTEGRAL DE TRIGO,agua,cebolla,tomate,pimiento,aceite de oliva,aceite de girasol,levadura,sal,azucar,antiapelmazante,E-170,emulgentes,E-472e,E-322,acidulante,E-296,E-334,regulador de acidez,E-330,E-331,E-331(iii),E-332,bicarbonato sodico,antioxidante,E-300,enzimas,almidon modificado,E-1422,espesante,E-410,conservantes,E-202;Puede contener trazas de:HUEVO,PESCADO,SOJA,LECHE,FRUTOS DE CµSCARA,SESAMO,SULFITOS,ALTRAMUCES"
+17725	#	0	#	M	#		#	ENSAIMADA MINI HOJALDRADA	#	524	#	1	#		#	0	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO,agua,tomate,cebolla,pimiento,calabacin,berenjena,ajo,aceite de oliva,aceite de girasol,levadura,sal,azucar,antiapelmazante,E-170,emulgentes,E-472e,E-322,acidulante,E-296,E-334,regulador de acidez,E-330,E-331,E-331(iii),E-332,antioxidante,E-300,almidon modificado,E-1422,espesante,E-461,E-410,bicarbonato sodico,enzimas;Puede contener trazas de:HUEVO,PESCADO,SOJA,LECHE,FRUTOS DE CµSCARA,SESAMO,SULFITOS,ALTRAMUCES"
+42091	#	0	#	M	#		#	CROISS MANTEQ CHOCO	#	60	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO;Relleno:espinacas,aceite de girasol,ajo,sal,almidon modificado,E-1422,regulador de acidez,acido citrico,conservador,E-202,agua,harina de arroz,LECITINA DE SOJA,pimenton,mejorante,agente tratamiento harina;Contiene:HUEVO;Puede contener trazas de:PESCADO,FRUTOS DE CµSCARA,SESAMO,LECHE"
+42090	#	0	#	M	#		#	CROISSANT MANTEQUILLA	#	60	#	2	#		#	2	#	6	#	602	#	"Ingredientes:HARINA DE TRIGO;Relleno:cebolla,guisantes,ATUN,HUEVO,aceite de oliva,agua,sal,agua con gas,aceite de girasol,mejorante,enzimas,,vinagre;Puede contener trazas de:LECHE,FRUTOS DE CµSCARA,SESAMO"
+37501	#	0	#	M	#		#	CROISSANT VIENES CEREALES	#	75	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Relleno:tomate,pimiento verde,pimiento rojo,azucar,sal,aceite de oliva,HUEVO,CABALLA,PAN RALLADO;Masa:HARINA DE TRIGO,agua con gas,aceite de girasol,mejorante,enzimas,E-170 (i),vinagre;Puede contener trazas de:LECHE,FRUTOS DE CµSCARA,SESAMO"
+36568	#	0	#	M	#		#	CROISSANT ARTESANO DECORADO	#	60	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Relleno:tomate,pimiento verde,pimiento rojo,azucar,sal,aceite de oliva,HUEVO,CABALLA,PAN RALLADO;Masa:HARINA DE TRIGO,agua con gas,aceite de girasol,mejorante,enzimas,E-170 (i),vinagre;Puede contener trazas de:LECHE,FRUTOS DE CµSCARA,SESAMO"
+31808	#	0	#	M	#		#	CROISSANT ARTESANITO 8U	#	145	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,aceite de girasol,agua,aroma,anis,pimenton,sal,VINO BLANCO (SULFITOS),ALMIDON DE TRIGO;Relleno:cebolla,antioxidante,E-330,espesante,E-407,ATUN,tomate,azucar,almidon de maiz,pi¤ones,PAN RALLADO,perejil,huevo,S¢LIDOS LACTEOS;Cobertura:ALBUMINA DE HUEVO,HARINA DE SOJA,grasa vegetal,emulgentes,E-322,estabilizador,E-412;Puede contener trazas de:MOSTAZA,SULFITOS"
+31799	#	0	#	M	#		#	CROISSANT MINI RECTO 6U.	#	100	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,aceite de girasol,vino blanco;Manteca de cerdo:grasa de cerdo;Estabilizadores:E-471,sal,LECHE EN POLVO,LECITINA DE SOJA;Relleno:Pisto:cebolla,pimiento rojo,pimiento verde,aceite de oliva,tomate,azucar;Almid¢n modificado:E-1420,sal;Estabilizadores:E-412;Acidificantes:E-330,ATUN,aceite de girasol,sal,PAN RALLADO,caldo de carne,pimenton;Cobertura:HUEVO L¡QUIDO;Puede contener trazas de:FRUTOS DE CµSCARA,APIO Y DERIVADOS,SESAMO"
+21585	#	0	#	M	#		#	CROISSANT MINI RECTO	#	620	#	1	#		#	0	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:grasa de palma,agua,aceite de soja,aceite de girasol;Emulgentes:E-471,sal;Acidulantes:E-330,aromas;Antioxidante:E-306,E-304;Colorantes:E-160(a),azucar,levadura,GLUTEN DE TRIGO;Emulgentes:E-472e;Relleno:QUESO,SUERO LACTEO;Almid¢n modificado:E-1414,QUESO AZUL;Estabilizantes:E-401,E-415,E-412,PROTEINAS LACTEAS,almidon de maiz,jamon cocido,magro de cerdo,fecula,dextrosa,PROTEINA DE SOJA;Estabilizadores:E-451,E-407,E-410;Antioxidante:E-301,aroma carne,especias;Conservadores:E-250,colorante,E-120;Decoracion:HUEVO L¡QUIDO;Puede contener trazas de:PESCADO,FRUTOS DE CµSCARA,SESAMO"
+21508	#	0	#	M	#		#	CROISSANT ARTESANO	#	49	#	2	#		#	2	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:grasa de palma,ACEITE DE SOJA,aceite de girasol,agua;Emulgentes:E-471;Acidulantes:E-330,aromas;Conservantes:E-202;Colorantes:E-160a,agua,levadura,HUEVO ENTERO EN POLVO,dextrosa,sal,LECHE EN POLVO;Relleno:Crema de queso:queso fresco (leche),camembert (leche),agua,MANTEQUILLA (LECHE),queso fundido (leche),PROTEINAS LACTEAS,sal;Estabilizantes:E-452,E-450;Antioxidantes:E-341,E-339,E-331;Dados de pavo:pechuga de pavo,agua,fecula de patata,azucares;Estabilizantes:E-407,E-450,E-451;Antioxidantes:E-301,E-331;Potenciador del sabor:E-621;Conservadores:E-250,PROTEINA DE SOJA,sal,aroma,CLARA DE HUEVO,almidon de maiz;Puede contener trazas de:FRUTOS DE CµSCARA"
+13880	#	0	#	M	#		#	CROISSANT ARTESANITO	#	575	#	1	#		#	0	#	6	#	602	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,manteca de cerdo,antioxidante,E-310,sal;Relleno:carne de vacuno,aceite de girasol,HUEVO;Chorizo:carne de cerdo,azucares,fecula de patata,emulgentes,E-450,E-451,especias,antioxidante,E-301,antioxidante,E-316,E-331,conservador,E-252,colorante,E-120,proteina vegetal,ajo,pimienta;Puede contener trazas de:CRUSTµCEOS Y DERIVADOS,PESCADO,SOJA,LECHE,APIO"
+40330	#	1	#	M	#	20	#	SURTIDO BOMBONES	#	1499	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,aceite vegetal,margarina,(,grasa vegetal parcialmente hidrogenada,sal,emulgentes,E-471,E-322,aromas,acidulante,E-330,conservador,E-200,antioxidante,E-304,E-306,colorante,E-160a,),levadura,vino blanco,azucar;Relleno:tomate,aceite de girasol,carne de cerdo,fecula de patata,PROTEINAS LACTEAS,PROTEINA DE SOJA,dextrosa,LACTOSA,aromas,estabilizador,E-451,E-407,potenciador del sabor,E-621,conservador,E-250,E-252,antioxidante,E-316,colorante natural,E-120;Queso:queso mozzarella (leche);Sales fundentes:E-331,sal,ajo,oregano;Puede contener trazas de:CRUSTµCEOS Y DERIVADOS,PESCADO,APIO"
+23301	#	1	#	M	#	15	#	SURTIDO NAVIDAD	#	198	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,manteca de cerdo,emulgentes,E-471,antioxidante,E-320,E-321,aceite de girasol,vino blanco,pimenton,sal;Relleno:tomate,aceite de girasol,azucar,sal,ATUN,huevo,sal;Puede contener trazas de:CRUSTµCEOS Y DERIVADOS,SOJA,LECHE Y DERIVADOS,APIO"
+16160	#	1	#	M	#	10	#	SURTIDO DULCESOL	#	395	#	1	#		#	60	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,manteca,emulgentes,E-471,antioxidante,E-320,E-321,aceite de girasol,vino blanco,colorante,E-104*,maltodextrina de maiz,sal;Relleno:tomate,aceite de girasol,azucar,ATUN,HUEVO,*puede tener efectos negativos sobre la actividad y atencion de los ni¤os;Puede contener trazas de:CRUSTµCEOS Y DERIVADOS,SOJA,LECHE,APIO,"
+8230	#	0	#	B	#		#	TARTA TIRAMISU 10R	#	1079	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,ATUN,HUEVO,aceite vegetal;Bechamel:(,SUERO LACTEO,almidon modificado,aceite vegetal,jarabe de glucosa,sal,espesante,alginato sodico,YEMA DE HUEVO,LECHE DES. EN POLVO,emulgentes,E-472e,aroma,),sal"
+3659	#	0	#	B	#		#	TARTA BIZCOCHO 10 R. ENVASE	#	718	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO,aceite de oliva,aceite de girasol,agua,sal;Relleno:ATUN,aceite de girasol,sal,cebolla,azucar"
+3658	#	0	#	B	#		#	TARTA BIZCOCHO 10 R.	#	672	#	2	#		#	0	#	6	#	603	#	"Ingredientes:confitura de boniato,(,boniato,azucar,dextrosa;Espesantes:E-412,conservador,E-202,aroma de limon;Antioxidante:E-300,),HARINA DE TRIGO,manteca de cerdo,agua,azucar,EXTRACTO DE Malta,aroma de anis;Puede contener trazas de:PESCADO,LECHE,FRUTOS DE CµSCARA,SOJA,HUEVO"
+3645	#	0	#	B	#		#	TARTA BIZCOCHO 15 R.	#	1073	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:aceite de palma,aceite de soja,aceite de girasol,jarabe de glucosa-fructosa;Emulgentes:E-471,E-322;Colorantes:E-160a,agua,levadura,HUEVO,azucar,sal,LECHE EN POLVO,GLUTEN;Emulgentes:E-471,E-472e,E-322,grasa de palma,dextrosa,HARINA DE TRIGO;Agente de tratamiento de la harina:E-300;Relleno:espinacas,aceite de oliva,aceite de girasol,sal,aromas,almidon de maiz,CLARA DE HUEVO,pasta de sobrasada,queso emental,crema de queso,fiambre de cerdo;Contiene:SOJA Y DERIVADOS;Puede contener trazas de:FRUTOS DE CµSCARA"
+34973	#	0	#	B	#		#	PASTISSET BONIATO	#	225	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO,grasa de palma,aceite de soja y girasol,agua,emulgentes,E-471,acidulante,E-330,E-263,aromas,colorante,E-160,HUEVO,azucar,levadura,sal;Relleno:crema de chocolate,azucar,cacao,manteca de cacao,espesante,E-1414,glucosa,LECHE EN POLVO,estabilizador,E-450,E-339,cafe,copos de chocolate,emulgentes,E-322 (SOJA),ALMENDRAS,aceite de nabina,PROTEINAS LACTEAS,LACTOSA,almidon,FIBRA DE TRIGO;Contiene trazas de:PESCADO,APIO,SESAMO"
+33319	#	0	#	B	#		#	TARTA CACAO S/AZUCAR A¥ADIDO	#	385	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO,grasa de palma,aceite de soja y girasol,agua,emulgentes,E-471,acidulante,E-330,E-504,aromas,colorante,E-160,E-171,HUEVO,azucar,levadura,sal;Relleno:pulpa de calabaza,glucosa,espesante,E-407,E-1420,E-1414,conservador,E-223,SULFITOS,E-282,SUERO LACTEO,dextrosa,estabilizante,E-401,E-450,E-339,E-407,aceite de coco,ALMENDRAS,aceite de nabina,PROTEINAS LACTEAS,LACTOSA,almidon,FIBRA DE TRIGO;Contiene trazas de:PESCADO,SOJA,APIO,SESAMO"
+33318	#	0	#	B	#		#	TARTA DE MANZANA	#	375	#	2	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE TRIGO,agua,aceite de nabina,levadura,sal,HARINA Malta CEBADA,GLUTEN DE TRIGO,azucar,estabilizador,E-412,emulgentes,E-472e,acidulante,E-170,E-524
+30311	#	0	#	B	#		#	PASTISSET DE BONIATO	#	195	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO,margarina,agua,azucar;Emulgentes:E-471,E-472e;Espesantes:E-415,E-466,E-412,dextrosa,enzimas;Agente de tratamiento de la harina:E-920,levadura,sal;Relleno:almidon de patata,SUERO LACTEO,PROTEINAS LACTEAS,aceite de palma,HUEVO EN POLVO,ALMIDON DE TRIGO,sal,QUESO,jarabe de glucosa,cebolla,PROTEINA DE SOJA,aromas naturales,especias;Estabilizantes:E-412,aroma humo,bacon;Puede contener trazas de:PESCADO Y DERIVADOS,FRUTOS DE CµSCARA,APIO Y DERIVADOS,SESAMO,SULFITOS"
+2793	#	0	#	B	#		#	TARTA ESPECIAL	#	1503	#	2	#		#	0	#	6	#	603	#	
+2759	#	0	#	B	#		#	LAZOS	#	60	#	2	#		#	0	#	6	#	603	#	
+23493	#	0	#	B	#		#	BANDA DE MANZANA	#	180	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,margarina,agua,azucar,levadura,sal,ATUN,aceite de girasol,tomate,PAN RALLADO,almidon de maiz;Almid¢n modificado:E-1414,SUERO LACTEO,LECHE,grasa vegetal,carne de cerdo,almidon de patata,dextrosa,PROTEINA DE SOJA,aromas,especias,aceite de girasol,fecula de patata,CLARA DE HUEVO,caseinato de sodio,linaza,SESAMO,SALVADO DE AVENA,semilla de amapola,jarabe de glucosa,HUEVO ENTERO EN POLVO;Emulgentes:E-471,E-339;Acidulantes:E-330;Estabilizadores:E-451,E-401,E-461,E-407,E-410,E-412,E-415,E-450;Antioxidante:E-301;Conservadores:E-250;Colorantes:E-120,E-171;Potenciador del sabor:E-621;Puede contener trazas de:FRUTOS DE CµSCARA"
+1005	#	0	#	B	#		#	PASTISSETS BONIATO	#	530	#	1	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO;Margarina:grasa de palma,ACEITE DE SOJA,aceite de girasol,jarabe de glucosa-fructosa,agua;Emulgentes:E-471;Acidulantes:E-330,aromas;Colorantes:E-160a,agua,sal,jarabe de glucosa;Emulgentes:E-472e;Estabilizantes:E-440;Antiapelmazantes:E-551;Cobertura:azucar;Decoracion:chocolate fondant;Puede contener trazas de:SOJA,HUEVO,FRUTOS DE CµSCARA"
+8523	#	0	#	B	#		#	TARTA CORAZON CHOCO.PEQUE¥A	#	298	#	2	#		#	0	#	6	#	603	#	
+4530	#	0	#	B	#		#	(GRANEL) POLVORON AL CHOCOLATE	#	360	#	1	#		#	0	#	6	#	603	#	
+44511	#	0	#	B	#		#	BANDA OPERA	#	1590	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,levadura,grasa de cerdo;Estabilizantes:E-471,azucar,agua,azucar,levadura,HUEVO,sal,dextrosa,antiapelmazante,E-170;Puede contener trazas de:SOJA,APIO,LECHE,SESAMO,PESCADO Y DERIVADOS,FRUTOS DE CµSCARA"
+44510	#	0	#	B	#		#	HOJALDRE FRUTA FRESCA	#	1490	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,manteca de cerdo,azucar,levadura,HUEVO,sal,dextrosa,antiapelmazante,E-170;Puede contener trazas de:APIO,SOJA,LECHE,SESAMO,FRUTOS DE CµSCARA,PESCADO"
+44509	#	0	#	B	#		#	PASTEL TIRAMISU INDIVIDUAL	#	185	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,grasa de cerdo;Estabilizadores:E-471,azucar,agua,azucar,levadura,HUEVO,sal,dextrosa,antiapelmazante,E-170;Puede contener trazas de:APIO,SOJA Y DERIVADOS,LECHE Y DERIVADOS,SESAMO,PESCADO Y DERIVADOS,FRUTOS DE CµSCARA"
+44508	#	0	#	B	#		#	PASTEL DEL LIMN INDIVIDUAL	#	185	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO,agua,MANTEQUILLA (LECHE),azucar,levadura,emulgentes,E-472e,sal,espesante,E-466,FIBRA DE TRIGO;Relleno:19,azucar,grasa de palma,aceite de girasol,cacao en polvo desgrasado,2,almidon modificado,PASTA DE AVELLANAS,emulgentes,lecitina (girasol),aroma,aroma de vainilla;Cobertura:3,copos de chocolate,2,azucar,pasta de cacao,1,manteca de cacao,0,LECHE ENTERA,grasa anhidrica lactea,aroma de vainilla,HUEVO LIQUIDO PASTEURIZADO,dextrosa;Puede contener trazas de:SOJA,MOSTAZA,SESAMO"
+44507	#	0	#	B	#		#	MILHOJAS MERENGUE INDIVIDUAL	#	185	#	2	#		#	0	#	6	#	603	#	"Ingredientes:Masa:HARINA DE TRIGO,MANTEQUILLA (LECHE),25%,agua,azucar,levadura,GLUTEN DE TRIGO,sal,FIBRA DE TRIGO,grasa de palma;Cobertura:1,HUEVO LIQUIDO PASTEURIZADO,dextrosa;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA,MOSTAZA"
+44443	#	0	#	B	#		#	TARTA CARROT CARAMEL RACION	#	200	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MANTEQUILLA (LECHE),mix cereales,HARINA INTEGRAL,semillas de lino marr¢n,HARINA Malta CEBADA,semillas de girasol,semilla de ch¡a,azucar,levadura,sal,GLUTEN;Cobertura:semillas de lino dorado,semillas de lino marr¢n,COPOS DE AVENA,semillas de girasol,HUEVO,dextrosa;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA,SESAMO"
+44442	#	0	#	B	#		#	TARTA QUESO-GALLETA RACION	#	190	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO;Margarina:agua,azucar,levadura,sal,GLUTEN,HARINA DE Malta;Emulgentes:E-471;Antioxidante:E-300,HUEVO,gelatina;Puede contener trazas de:LECHE,SOJA,FRUTOS DE CµSCARA"
+44441	#	0	#	B	#		#	TARTA ALMENDRA-YEMA RACION	#	190	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO;Margarina:grasa de palma,aceite de soja,aceite de girasol,jarabe de glucosa-fructosa,agua;Emulgentes:E-322,E-471;Acidulantes:E-300,aromas;Colorante natural:E-160a,agua,azucar,levadura,sal,GLUTEN;Emulgentes:E-471,HUEVO,estabilizador,E-440,E-415,regulador de acidez,E-450,conservantes,E-202;Puede contener trazas de:SOJA,LECHE,FRUTOS DE CµSCARA"
+44440	#	0	#	B	#		#	TARTA MUERTE CHOCOLATE RACION	#	200	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO;Margarina:grasa de palma,aceite de soja,aceite de girasol,jarabe de glucosa-fructosa,agua;Emulgentes:E-322,E-471;Acidulantes:E-330,aroma;Colorantes:E-160a,agua,azucar,levadura,sal,GLUTEN,HUEVO;Puede contener trazas de:LECHE Y DERIVADOS,FRUTOS DE CµSCARA"
+44439	#	0	#	B	#		#	TARTA CARROT CARAMEL	#	2200	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO;Margarina:grasa de palma,ACEITE DE SOJA,aceite de girasol,jarabe de glucosa-fructosa,agua;Emulgentes:E-322,E-471;Acidulantes:E-330,aroma;Colorantes:E-160a,agua,azucar,levadura,sal,GLUTEN,HUEVO;Puede contener trazas de:LECHE Y DERIVADOS,FRUTOS DE CµSCARA"
+44438	#	0	#	B	#		#	TARTA QUESO-GALLETA	#	1800	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO;Margarina:grasa de palma,agua,aceite de girasol,aceite de soja;Emulgentes:E-471,sal,HUEVO;Acidificantes:E-330,aromas;Colorantes:E-160a,agua,levadura,azucar,sal,GLUTEN;Emulgentes:E-471;Puede contener trazas de:SOJA,LECHE"
+44437	#	0	#	B	#		#	TARTA ALMENDRA-YEMA	#	2000	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO;Margarina:grasa de palma,aceite de soja,aceite de girasol,jarabe de glucosa-fructosa,agua;Emulgentes:E-322,E-471;Acidulantes:E-330,aroma;Colorantes:E-160a,agua,levadura,azucar,sal,GLUTEN;Emulgentes:E-471,HUEVO;Puede contener trazas de:SOJA Y DERIVADOS,LECHE Y DERIVADOS"
+44436	#	0	#	B	#		#	TARTA MUERTE POR CHOCOLATE	#	2200	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura;Emulgentes:E-472e;Cobertura:copos de avena,pipas de girasol,lino dorado,lino marron,SESAMO,semillas de amapola;Puede contener trazas de:SOJA,ALTRAMUCES"
+43378	#	0	#	B	#		#	TRONCO DE TURRON	#	450	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MASA MADRE DE TRIGO,agua,aceite de oliva,sal,levadura,Malta DE TRIGO;Puede contener trazas de:HUEVO,SOJA,LECHE,SESAMO"
+43377	#	0	#	B	#		#	TRONCO CHOCOLATE	#	450	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MASA MADRE DE TRIGO,aceite de oliva,sal,levadura;Puede contener trazas de:HUEVO,SOJA,LECHE,SESAMO"
+43314	#	0	#	B	#		#	CORTADILLO CIDRA	#	395	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,SEMOLA DE TRIGO,MASA MADRE DE TRIGO,agua,aceite de oliva,sal,levadura,HARINA DE Malta DE TRIGO;Puede contener trazas de:HUEVO,SOJA,LECHE,SESAMO,FRUTOS DE CµSCARA"
+43035	#	0	#	B	#		#	CREPES	#	290	#	2	#		#	0	#	6	#	603	#	
+42493	#	0	#	B	#		#	TARTA QUESO CON CHOCOLATE	#	1150	#	2	#		#	0	#	6	#	603	#	
+42374	#	0	#	B	#		#	TARTA CHOCOLATE CAKE	#	395	#	2	#		#	0	#	6	#	603	#	
+42051	#	0	#	B	#		#	BRAZO DE TRUFA	#	500	#	2	#		#	0	#	6	#	603	#	
+4185	#	0	#	B	#		#	(GRANEL) MANTECADO ALMENDRA	#	358	#	1	#		#	0	#	6	#	603	#	
+41758	#	0	#	B	#		#	TARTA QUESO ESTILO NEW YORK	#	549	#	2	#		#	0	#	6	#	603	#	
+41757	#	0	#	B	#		#	TARTA SACHER	#	799	#	2	#		#	0	#	6	#	603	#	
+41748	#	0	#	B	#		#	TRONCO DE NAVIDAD	#	450	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE CENTENO,CENTENO,HARINA DE TRIGO,agua,sal,levadura,GLUTEN DE TRIGO,HARINA DE Malta DE TRIGO;Puede contener trazas de:SOJA,SESAMO"
+4173	#	0	#	B	#		#	(GRANEL) PALMERA CHOCOLATE PQ.	#	358	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MASA MADRE NATURAL (TRIGO),sal,levadura,AVENA,Malta DE TRIGO,emulgentes,lecitina de girasol;Puede contener trazas de:SOJA,SESAMO"
+4172	#	0	#	B	#		#	(GRANEL) ALMENDRADOS	#	345	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MASA MADRE NATURAL (TRIGO);Semillas:SESAMO,lino dorado,lino marron,pipas de girasol,trigo sarraceno,HARINA DE CENTENO,sal,levadura;Emulgentes:lecitina de girasol;Puede contener trazas de:SOJA"
+4171	#	0	#	B	#		#	(GRANEL) CUADRADOS CHOCOLATE	#	345	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,HARINA DE CENTENO,linaza,SESAMO,sal,COPOS DE AVENA,pipas de girasol,SALVADO DE TRIGO,HARINA DE Malta DE TRIGO,cascaras de guisantes,semola de maiz,SUERO DE LECHE EN POLVO;Acidulantes:E-270;Emulgentes:E-472e,pipas de calabaza,levadura,sal,citrato potasico,vinagre;Acidulantes:acido lactico;Puede contener trazas de:HUEVO,SOJA,ALTRAMUCES,SESAMO"
+4169	#	0	#	B	#		#	(GRANEL) BULGAROS CHOCOLATE	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,HARINA DE TRIGO,HARINA DE CENTENO,HARINA DE CEBADA,pipas de girasol,linaza,SOJA,GLUTEN DE TRIGO,SALVADO DE TRIGO,maiz,azucar,sal,aceite de palma;Emulgentes:E-472e,mijo,levadura,sal,citrato potasico,GLUTEN,vinagre,CEBADA,HARINA INTEG.CENTENO;Acidulantes: cido l ctico;Emulgentes:E-472e;Puede contener trazas de:HUEVO,SOJA,LECHE,SESAMO,ALTRAMUCES"
+4167	#	0	#	B	#		#	(GRANEL) VULCANITO CREMA	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,HARINA DE CENTENO,HARINA DE TRIGO,EXTRACTO DE Malta DE CEBADA;Acidulantes:E-270,sal,levadura;Emulgentes:E-472e;Puede contener trazas de:SOJA Y DERIVADOS,LECHE Y DERIVADOS,SESAMO"
+41645	#	0	#	B	#		#	CORTADILLO POLVORON CACAO	#	295	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura,MASA MADRE DE TRIGO;Emulgentes:E-472e;Contiene trazas de:SOJA Y DERIVADOS,LECHE Y DERIVADOS,SESAMO,FRUTOS DE CµSCARA"
+41644	#	0	#	B	#		#	TORTA POLVORON	#	295	#	1	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE TRIGO,cereales,SEMILLAS DE OLEAGINOSAS,agua,levadura,sal
+41643	#	0	#	B	#		#	POLVORON ALMENDRA CACAO	#	295	#	1	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE CENTENO,HARINA DE TRIGO,agua,MASA MADRE DE TRIGO,Malta tostada,levadura,sal,hinojo molido
+41642	#	0	#	B	#		#	POLVORON ALMENDRA	#	295	#	1	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE TRIGO,HARINA DE CENTENO,Malta tostada,levadura,agua,copos de avena,sal,semilla de s‚samo,semillas de girasol,linaza
+41641	#	0	#	B	#		#	ROSCO ANIS	#	295	#	1	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE Malta DE ESPELTA,agua,levadura,SEMILLAS DE OLEAGINOSAS,ALTRAMUCES TRITURADOS
+41640	#	0	#	B	#		#	ROSCO DE VINO	#	295	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua;Fibras:SALVADO DE TRIGO,espinacas,lino,estabilizante,E-410,emulgentes,E-472e,sal,levadura,GLUTEN DE TRIGO;Puede contener trazas de:SESAMO"
+41639	#	0	#	B	#		#	MANTECADO SESAMO	#	295	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,SALVADO DE TRIGO,levadura,sal,citrato de potasio;Emulgentes:E-472;Puede contener trazas de:LECHE,SOJA,SESAMO"
+41638	#	0	#	B	#		#	MANTECADO DOBLE LIMON	#	295	#	1	#		#	0	#	6	#	603	#	
+41637	#	0	#	B	#		#	MANTECADO CROCANTI	#	295	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA INTEGRAL DE TRIGO,agua,masa madre de trigo,sal,harina integral de cebada,GLUTEN,levadura;Puede contener trazas de:HUEVO,SOJA,LECHE,FRUTOS DE CµSCARA,SESAMO"
+41636	#	0	#	B	#		#	MANTECADO DOBLE CACAO COCO	#	295	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,SALVADO DE TRIGO,sal,levadura;Emulgentes:E-472e;Puede contener trazas de:LECHE,SOJA,SESAMO,FRUTOS DE CµSCARA"
+41635	#	0	#	B	#		#	MANTECADO DOBLE CANELA	#	295	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,SALVADO DE TRIGO,levadura,sal;Emulgentes:E-472;Antioxidante:E-300,E-322 (SOJA);Puede contener trazas de:LECHE Y DERIVADOS,SOJA Y DERIVADOS,SESAMO"
+4163	#	0	#	B	#		#	(GRANEL) VULCANITO CHOCOLATE	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MASA MADRE DE TRIGO,TRIGO,MASA MADRE DE CENTENO,mijo,CEBADA,CENTENO,AVENA,TRIGO SARRACENO,sal,teff,harina de quinoa,sorgo,amaranto,agua,SEMOLA DE TRIGO,sal,levadura;Puede contener trazas de:SOJA,FRUTOS DE CµSCARA,SESAMO"
+4162	#	0	#	B	#		#	(GRANEL) VULCANITO FRESA	#	345	#	1	#		#	0	#	6	#	603	#	"Ingredientes:Cereales:HARINA DE TRIGO,mijo,HARINA DE CENTENO,SEMOLA DE TRIGO,harina de arroz,TRIGO,TRIGO SARRACENO,MASA MADRE DE CENTENO,HARINA DE Malta DE TRIGO,agua;Semillas:lino,pipas de girasol,SESAMO,levadura,sal;Puede contener trazas de:SOJA Y DERIVADOS,SESAMO"
+4160	#	0	#	B	#		#	(GRANEL) BOER COCO	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,HARINA DE CENTENO,HARINA DE TRIGO,mijo pelado,lino marron,semillas de girasol,SESAMO,harina de arroz,GLUTEN,CEBADA,MASA MADRE DE TRIGO,sal,levadura,HARINA DE Malta DE TRIGO;Emulgentes:E-472e;Cobertura:alford¢n,lino dorado,lino marron,SESAMO,semillas de girasol;Puede contener trazas de:SOJA,ALTRAMUCES,SESAMO"
+4151	#	0	#	B	#		#	(GRANEL) CA¥AS CABELLO LARGAS	#	358	#	1	#		#	0	#	6	#	603	#	
+4146	#	0	#	B	#		#	(GRANEL) BIZCOCHADAS	#	375	#	1	#		#	0	#	6	#	603	#	
+4144	#	0	#	B	#		#	(GRANEL) BRACITOS TRUFA	#	358	#	1	#		#	0	#	6	#	603	#	
+4122	#	0	#	B	#		#	(GRANEL) CHAPELA CHOCO	#	358	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,HARINA DE CENTENO,TRIGO,GLUTEN DE TRIGO,TRIGO SARRACENO,linaza marron,pipas de girasol,SESAMO,harina de arroz,HARINA DE Malta DE TRIGO,MALTA DE TRIGO,lino dorado,sal,levadura;Emulgentes:E-472e;Puede contener trazas de:SOJA Y DERIVADOS,LECHE Y DERIVADOS,FRUTOS DE CµSCARA"
+4099	#	0	#	B	#		#	(GRANEL) PALMERITAS 2U	#	385	#	1	#		#	0	#	6	#	603	#	
+40855	#	0	#	B	#		#	GRANEL CHEESE CAKE	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,SALVADO DE TRIGO,sal,levadura;Emulgentes:E-472e;Puede contener trazas de:LECHE Y DERIVADOS,SOJA Y DERIVADOS,SESAMO,FRUTOS DE CµSCARA"
+40854	#	0	#	B	#		#	GRANEL PALMERA INTEGRAL GRANDE	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura;Emulgentes:E-472(e)"
+40708	#	0	#	B	#		#	TARTA SAN MARCOS	#	1150	#	2	#		#	0	#	6	#	603	#	
+40497	#	0	#	B	#		#	(GRANEL) CA¥A CREMA	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura;Emulgentes:E-472e;Puede contener trazas de:SESAMO,ALTRAMUCES"
+40494	#	0	#	B	#		#	(GRANEL) VALENCIANAS 2U	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua;Masa madre:HARINA FERMENTADA DE TRIGO,sal,levadura"
+40260	#	0	#	B	#		#	TARTA INFANTIL SUPERHEROES	#	790	#	2	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE TRIGO,agua,levadura,emulgentes,E-472e
+40259	#	0	#	B	#		#	TARTA INFANTIL PRINCESAS	#	790	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura;Emulgentes:E-472e"
+39977	#	0	#	B	#		#	TARTA QUESO PHILADELPHIA	#	550	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura;Emulgentes:E-472e"
+38973	#	0	#	B	#		#	POLVORONES INTEGRALES S/A	#	200	#	2	#		#	0	#	6	#	603	#	Ingredientes:HARINA DE TRIGO,agua,levadura,sal,emulgentes,E-472e
+38120	#	0	#	B	#		#	(GRANEL) PANDORINO CACO	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,MASA MADRE DE TRIGO,sal,levadura;Puede contener trazas de:SOJA,SESAMO,FRUTOS DE CµSCARA"
+38119	#	0	#	B	#		#	(GRANEL) BIZCOCHADAS	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,levadura,sal;Puede contener trazas de:SESAMO,SOJA"
+37915	#	0	#	B	#		#	CORAZON CHOCOLATE SAN VALENTIN	#	599	#	2	#		#	0	#	6	#	603	#	
+37667	#	0	#	B	#		#	GRANEL PAST YEMA Y HUESO SANTO	#	900	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,aceite de girasol,GLUTEN;Emulgentes:E-472e,levadura,S¢LIDOS LACTEOS,sal;Puede contener trazas de:SOJA Y DERIVADOS,SESAMO"
+37666	#	0	#	B	#		#	PASTEL HUESOS DE SANTO	#	900	#	1	#		#	0	#	6	#	603	#	
+37665	#	0	#	B	#		#	PASTEL YEMA EXTRA	#	900	#	1	#		#	0	#	6	#	603	#	
+37591	#	0	#	B	#		#	BANDEJA SURTIDA NAVIDAD S/AZUC	#	369	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura;Emulgentes:E-472e;Puede contener trazas de:SOJA Y DERIVADOS,LECHE Y DERIVADOS,SESAMO,FRUTOS DE CµSCARA"
+37590	#	0	#	B	#		#	BANDEJA SURTIDA BOMBONES	#	299	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,levadura,sal;Emulgentes:E-472(e);Puede contener trazas de:SOJA,LECHE,SESAMO"
+37567	#	0	#	B	#		#	HOJALDRADAS S/A	#	399	#	1	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,aceite de oliva,sal,levadura;Emulgentes:E-472(e);Puede contener trazas de:SOJA Y DERIVADOS,SESAMO,LECHE Y DERIVADOS,FRUTOS DE CµSCARA"
+36865	#	0	#	B	#		#	TARTA INFANTIL NI¥A NATA TRUFA	#	1099	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura,MASA MADRE DE TRIGO;Emulgentes:E-472(e);Puede contener trazas de:SOJA Y DERIVADOS,LECHE Y DERIVADOS,SESAMO"
+36864	#	0	#	B	#		#	TARTA INFANTIL NI¥O NATA TRUFA	#	1099	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura,MASA MADRE DE TRIGO,harina de trigo fermentada;Emulgentes:E-472e;Puede contener trazas de:SOJA,LECHE Y DERIVADOS,SESAMO"
+36705	#	0	#	B	#		#	TARTA CHOCOLATE MINILACASITOS	#	383	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura,dextrosa;Emulgentes:E-472(e);Agente de tratamiento de la harina:E-300;Puede contener trazas de:SOJA,SESAMO,LECHE,FRUTOS DE CµSCARA"
+36704	#	0	#	B	#		#	TARTA TRES CHOCOLATES	#	383	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua;Masa madre:(,HARINA DE TRIGO,agua,levadura,),sal;Puede contener trazas de:SESAMO,FRUTOS DE CµSCARA"
+36703	#	0	#	B	#		#	TARTA DE MUSICO	#	383	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,HARINA INTEG.CENTENO,agua,levadura,sal;Puede contener trazas de:LECHE Y DERIVADOS,SESAMO,FRUTOS DE CµSCARA"
+3642	#	0	#	B	#		#	MINI PASTELES SURTIDOS P-6	#	520	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,LECHE DES. EN POLVO;Margarina:aceite de palma,aceite de coco,aceite de girasol,agua,sal;Emulgentes:E-471,lecitina de girasol,aromas;Acidulantes:acido citrico;Conservadores:E-202;Colorante natural:E-160a,levadura,azucar,sal,HARINA DE Malta DE TRIGO,aroma;Puede contener trazas de:SESAMO,SOJA"
+36146	#	0	#	B	#		#	BOLLITOS ALMENDRA	#	205	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,levadura,sal;Emulgentes:E-472(e);Puede contener trazas de:SOJA,LECHE,SESAMO"
+34771	#	0	#	B	#		#	MOUSSE DE LIMON	#	498	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura,HARINA DE CENTENO,mejorante panario autorizado;Emulgentes:E-472;Antioxidante:E-300,amilasas,peso: 500g"
+34770	#	0	#	B	#		#	MOUSSE DE CHOCOLATE	#	500	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,sal,levadura,HARINA DE CENTENO,mejorante panario autorizado;Emulgentes:E-472;Antioxidante:E-300,amilasas,peso: 1kg"
+34769	#	0	#	B	#		#	BRAZO DE NATA Y YEMA	#	500	#	2	#		#	0	#	6	#	603	#	
+34768	#	0	#	B	#		#	BRAZO DE CHOCOLATE	#	498	#	2	#		#	0	#	6	#	603	#	
+34484	#	0	#	B	#		#	TARTA CREMA CATALANA	#	375	#	2	#		#	0	#	6	#	603	#	
+34462	#	0	#	B	#		#	(GRANEL) TIRAMISU	#	385	#	1	#		#	0	#	6	#	603	#	
+34412	#	0	#	B	#		#	TRIANGULO CREMA BA¥ADO 3U	#	180	#	2	#		#	0	#	6	#	603	#	"Ingredientes:HARINA DE TRIGO,agua,saborizantes,levadura;Emulgentes:E-472(e);Puede contener trazas de:SOJA,SESAMO"
+34410	#	0	#	B	#		#	XUXO CREMA AZUCAR 4U	#	169	#	2	#		#	0	#	6	#	603	#	
+34128	#	0	#	B	#		#	PROFITEROLES DE NATA	#	229	#	2	#		#	0	#	6	#	603	#	
+33212	#	0	#	B	#		#	(GRANEL) BLACK'S	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA;Contiene:SULFITOS"
+32380	#	0	#	B	#		#	GRANEL BARQUILLO INTEGRAL COCO	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA;Origen:espa¤a/Chile/usa;Variedad:mollar/non pareil,"
+32379	#	0	#	B	#		#	GRANEL GALLETA INTEGRAL SESAMO	#	385	#	1	#		#	0	#	6	#	603	#	Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA
+32378	#	0	#	B	#		#	GRANEL GALLETAS INTEGRAL SOJA	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA;Origen:iran;Calibre:20/22;Categoria:primera"
+32377	#	0	#	B	#		#	GRANEL COOKIES INTEGRAL PASAS	#	385	#	1	#		#	0	#	6	#	603	#	"Ingredientes:Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA;Origen:USA;Variedad:nuez grano;Categoria:primera"
+31671	#	0	#	B	#		#	TARTA SELVA NEGRA	#	1150	#	2	#		#	0	#	6	#	603	#	"Origen:Turqu¡a;Categoria:i;Calibre:13/15;Variedad:avellana grano;Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA"
+31670	#	0	#	B	#		#	TARTA INFANTIL	#	750	#	2	#		#	0	#	6	#	603	#	"Origen:India;Categoria:i;Calibre:w240;Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA"
+31514	#	0	#	B	#		#	MIGUELITOS 4U.	#	105	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Variedad:largueta;Categoria:i;Calibre:12/14;Puede contener trazas de:CACAHUETES,FRUTOS DE CµSCARA"
+31512	#	0	#	B	#		#	NAPOLITANA CHOCO 2U.	#	105	#	2	#		#	0	#	6	#	603	#	"Variedad:cuello dama;Categoria:i;Origen:Espa¤a;Calibre:80/100"
+30901	#	0	#	B	#		#	COQUITOS	#	200	#	2	#		#	0	#	6	#	603	#	"Origen:EEUU;Categoria:i;Calibre:+32;Variedad:yumbo"
+30336	#	0	#	B	#		#	BANDEJA TURRON Y MAZAPAN SURT.	#	475	#	2	#		#	0	#	6	#	603	#	
+30333	#	0	#	B	#		#	BOCADITO CRUJIENTE BA¥ADO CHOC	#	360	#	1	#		#	0	#	6	#	603	#	
+29302	#	0	#	B	#		#	CORTADILLO DE CABELLO DE ANGEL	#	399	#	1	#		#	0	#	6	#	603	#	
+28836	#	0	#	B	#		#	BANDEJA SURTIDA POLVORONES	#	369	#	2	#		#	0	#	6	#	603	#	
+28835	#	0	#	B	#		#	BANDEJA SURTIDA BOMBONES	#	395	#	2	#		#	0	#	6	#	603	#	
+28829	#	0	#	B	#		#	TURRONCILLO	#	395	#	1	#		#	0	#	6	#	603	#	
+28826	#	0	#	B	#		#	COQUITOS	#	360	#	1	#		#	0	#	6	#	603	#	
+28823	#	0	#	B	#		#	MANTECADO DE ARTESANIA	#	395	#	1	#		#	0	#	6	#	603	#	
+28822	#	0	#	B	#		#	ALMENDRAS RELLENAS	#	395	#	1	#		#	0	#	6	#	603	#	
+27926	#	0	#	B	#		#	TARTA TURRON	#	1800	#	2	#		#	0	#	6	#	603	#	
+27925	#	0	#	B	#		#	TARTA DOS CHOCOLATES	#	1800	#	2	#		#	0	#	6	#	603	#	
+27877	#	0	#	B	#		#	TARTA DOS CHOCOLATES RACION	#	275	#	2	#		#	0	#	6	#	603	#	
+27876	#	0	#	B	#		#	TARTA DOS CHOCOLATES	#	3200	#	2	#		#	0	#	6	#	603	#	
+27830	#	0	#	B	#		#	TARTA MANZANA RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27829	#	0	#	B	#		#	TARTA QUESO RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27828	#	0	#	B	#		#	TARTA DE ALMENDRA RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27827	#	0	#	B	#		#	TARTA CALABAZA RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27638	#	0	#	B	#		#	TARTA MERENGUE NARANJA RACION	#	280	#	2	#		#	0	#	6	#	603	#	
+27637	#	0	#	B	#		#	TARTA STRUDEL MANZANA RACION	#	240	#	2	#		#	0	#	6	#	603	#	
+27635	#	0	#	B	#		#	COCTEL DULCES	#	3500	#	1	#		#	0	#	6	#	603	#	
+27634	#	0	#	B	#		#	COCTEL DULCES	#	2500	#	2	#		#	0	#	6	#	603	#	
+27633	#	0	#	B	#		#	CROCANT COLLECTION	#	450	#	2	#		#	0	#	6	#	603	#	
+27471	#	0	#	B	#		#	TARTA DE ZANAHORIA RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+27470	#	0	#	B	#		#	TARTA AMERICANA CHOCO RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+27469	#	0	#	B	#		#	TARTA DE CHOCOLATE RACION	#	135	#	2	#		#	0	#	6	#	603	#	
+27468	#	0	#	B	#		#	TARTA MANZANA PREMIUM RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27467	#	0	#	B	#		#	TARTA QUESO ARANDANOS RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+27466	#	0	#	B	#		#	TARTA QUESO CON FRESAS RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27465	#	0	#	B	#		#	TARTA DE ZANAHORIA	#	2300	#	2	#		#	0	#	6	#	603	#	
+27464	#	0	#	B	#		#	TARTA AMERICANA CHOCOLATE	#	2300	#	2	#		#	0	#	6	#	603	#	
+27463	#	0	#	B	#		#	TARTA DE CHOCOLATE	#	1300	#	2	#		#	0	#	6	#	603	#	
+27462	#	0	#	B	#		#	TARTA DE MANZANA PREMIUM	#	1600	#	2	#		#	0	#	6	#	603	#	
+27461	#	0	#	B	#		#	TARTA QUESO SUPREMA ARANDANOS	#	2500	#	2	#		#	0	#	6	#	603	#	
+27460	#	0	#	B	#		#	TARTA DE QUESO CON FRESAS	#	1700	#	2	#		#	0	#	6	#	603	#	
+27459	#	0	#	B	#		#	TARTA MERENGUE Y NARANJA	#	3200	#	2	#		#	0	#	6	#	603	#	
+27458	#	0	#	B	#		#	TARTA STRUDEL CON MANZANA	#	2400	#	2	#		#	0	#	6	#	603	#	
+27453	#	0	#	B	#		#	VASITO QUESO CON FRAMBUESA	#	250	#	2	#		#	0	#	6	#	603	#	
+27452	#	0	#	B	#		#	VASITO MARACUYA	#	250	#	2	#		#	0	#	6	#	603	#	
+27451	#	0	#	B	#		#	VASITO 2 CHOCOLATES	#	250	#	2	#		#	0	#	6	#	603	#	
+27450	#	0	#	B	#		#	VASITO TURRON	#	250	#	2	#		#	0	#	6	#	603	#	
+27449	#	0	#	B	#		#	TRUFAS	#	3000	#	1	#		#	0	#	6	#	603	#	
+27448	#	0	#	B	#		#	TARTA DE ALMENDRA	#	1200	#	2	#		#	0	#	6	#	603	#	
+27447	#	0	#	B	#		#	TARTA DE QUESO	#	1200	#	2	#		#	0	#	6	#	603	#	
+27446	#	0	#	B	#		#	TARTA DE MANZANA	#	1200	#	2	#		#	0	#	6	#	603	#	
+27445	#	0	#	B	#		#	TARTA DE CALABAZA	#	1200	#	2	#		#	0	#	6	#	603	#	
+2726	#	0	#	B	#		#	LIONESAS	#	902	#	2	#		#	0	#	6	#	603	#	
+26725	#	0	#	B	#		#	ROSCOS VINO S/A	#	399	#	1	#		#	0	#	6	#	603	#	
+26640	#	0	#	B	#		#	SURTIDO NAVIDAD (GRANEL) S/A	#	399	#	1	#		#	0	#	6	#	603	#	
+26172	#	0	#	B	#		#	MANTECADOS S/A	#	399	#	1	#		#	0	#	6	#	603	#	
+26114	#	0	#	B	#		#	(GRANEL) LUNAS	#	385	#	1	#		#	0	#	6	#	603	#	
+26111	#	0	#	B	#		#	(GRANEL) MILHOJAS CHOCO. CREMA	#	385	#	1	#		#	0	#	6	#	603	#	
+26109	#	0	#	B	#		#	(GRANEL) CUADRADO MOKA	#	385	#	1	#		#	0	#	6	#	603	#	
+26108	#	0	#	B	#		#	(GRANEL) CHAPELA CHOCO	#	395	#	1	#		#	0	#	6	#	603	#	
+23301	#	0	#	B	#		#	SURTIDO ESPECIAL NAVIDAD GRANE	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:primera"
+18452	#	0	#	B	#		#	PASTELES SEMIFRIOS Y VARIADOS	#	75	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Variedad:roja;Calibre:60/80;Categoria:1§"
+16350	#	0	#	B	#		#	TARTA FRESA	#	795	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Variedad:dulce;Calibre:60/80;Categoria:1§"
+16160	#	0	#	B	#		#	PASTELERIA GRANEL	#	395	#	1	#		#	0	#	6	#	603	#	
+15380	#	0	#	B	#		#	GRANEL:MANCHEGOS KILO	#	495	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Variedad:grano;Calibre:70/90;Categoria:1§"
+12000	#	0	#	B	#		#	CAPRICHOS BANDEJA 2 UNIDADES	#	174	#	2	#		#	0	#	6	#	603	#	
+30712	#	0	#	M	#		#	POLVORON TRADICIONAL S/GLUTEN	#	395	#	1	#		#	0	#	6	#	603	#	
+44511	#	0	#	M	#		#	BANDA OPERA	#	1590	#	2	#		#	0	#	6	#	603	#	
+44510	#	0	#	M	#		#	HOJALDRE FRUTA FRESCA	#	1490	#	2	#		#	0	#	6	#	603	#	
+44509	#	0	#	M	#		#	PASTEL TIRAMISU INDIVIDUAL	#	185	#	2	#		#	0	#	6	#	603	#	
+44508	#	0	#	M	#		#	PASTEL DEL LIMN INDIVIDUAL	#	185	#	2	#		#	0	#	6	#	603	#	
+44507	#	0	#	M	#		#	MILHOJAS MERENGUE INDIVIDUAL	#	185	#	2	#		#	0	#	6	#	603	#	
+44443	#	0	#	M	#		#	TARTA CARROT CARAMEL RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+44442	#	0	#	M	#		#	TARTA QUESO-GALLETA RACION	#	190	#	2	#		#	0	#	6	#	603	#	
+44441	#	0	#	M	#		#	TARTA ALMENDRA-YEMA RACION	#	190	#	2	#		#	0	#	6	#	603	#	
+44440	#	0	#	M	#		#	TARTA MUERTE CHOCOLATE RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+44439	#	0	#	M	#		#	TARTA CARROT CARAMEL	#	2200	#	2	#		#	0	#	6	#	603	#	
+44438	#	0	#	M	#		#	TARTA QUESO-GALLETA	#	1800	#	2	#		#	0	#	6	#	603	#	
+44437	#	0	#	M	#		#	TARTA ALMENDRA-YEMA	#	2000	#	2	#		#	0	#	6	#	603	#	
+44436	#	0	#	M	#		#	TARTA MUERTE POR CHOCOLATE	#	2200	#	2	#		#	0	#	6	#	603	#	
+42577	#	0	#	M	#		#	LIONESAS NATA 10U	#	375	#	2	#		#	0	#	6	#	603	#	
+42576	#	0	#	M	#		#	TARTA INFANTIL CHOCOLATE	#	930	#	2	#		#	0	#	6	#	603	#	
+42575	#	0	#	M	#		#	TARTA GALLETAS CON CHOCOLATE	#	850	#	2	#		#	0	#	6	#	603	#	
+42574	#	0	#	M	#		#	MOUSSE DE CHOCOLATE	#	499	#	2	#		#	0	#	6	#	603	#	
+42573	#	0	#	M	#		#	MOUSSE DE LIMON	#	499	#	2	#		#	0	#	6	#	603	#	
+42572	#	0	#	M	#		#	BRAZO CHOCOLATE	#	499	#	2	#		#	0	#	6	#	603	#	"Origen:holanda;Categoria:i;Calibre:inf. 1 kg"
+42571	#	0	#	M	#		#	BRAZO NATA Y YEMA	#	499	#	2	#		#	0	#	6	#	603	#	
+42570	#	0	#	M	#		#	TARTA SAN MARCOS	#	899	#	2	#		#	0	#	6	#	603	#	
+42569	#	0	#	M	#		#	TARTA SELVA NEGRA	#	899	#	2	#		#	0	#	6	#	603	#	
+42495	#	0	#	M	#		#	COULANTS CHOCOLATE FRAMBUESA	#	270	#	2	#		#	0	#	6	#	603	#	
+42494	#	0	#	M	#		#	COULANTS CHOCOLATE	#	270	#	2	#		#	0	#	6	#	603	#	
+42493	#	0	#	M	#		#	TARTA QUESO CON CHOCOLATE	#	1150	#	2	#		#	0	#	6	#	603	#	"Categoria:i;Origen:Espa¤a;Variedad:blanco;Calibre:300 +"
+42492	#	0	#	M	#		#	TARTA CREMOSA ARANDANOS	#	1150	#	2	#		#	0	#	6	#	603	#	
+4179	#	0	#	M	#		#	(GRANEL) PALMERA CHOC.GRANDE	#	395	#	1	#		#	60	#	6	#	603	#	"Origen:Espa¤a;Categoria:primera;Calibre:+300;Variedad:rojo"
+41756	#	0	#	M	#		#	TARTA QUESO Y FRESAS	#	549	#	2	#		#	0	#	6	#	603	#	
+41755	#	0	#	M	#		#	TARTA MOUSSE TRES CHOCOLATES	#	799	#	2	#		#	0	#	6	#	603	#	"Origen:Francia;Variedad:agatha;Categoria:primera;Calibre:40"
+41672	#	0	#	M	#		#	TARTA MANZANA	#	185	#	2	#		#	0	#	6	#	603	#	
+41671	#	0	#	M	#		#	TARTA FRUTOS SECOS	#	185	#	2	#		#	0	#	6	#	603	#	
+4153	#	0	#	M	#		#	(GRANEL) CA¥AS CREMA CHOCO	#	395	#	1	#		#	60	#	6	#	603	#	
+4143	#	0	#	M	#		#	(GRANEL) BRACITOS TRUFA CHOCO	#	395	#	1	#		#	60	#	6	#	603	#	
+4142	#	0	#	M	#		#	(GRANEL) BRACITOS AZUCAR	#	395	#	1	#		#	60	#	6	#	603	#	
+4134	#	0	#	M	#		#	(GRANEL) TARTA MANZANA	#	395	#	1	#		#	60	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:g;Variedad:rosa"
+40500	#	0	#	M	#		#	(GRANEL) MIGUELITO CACAO	#	395	#	1	#		#	0	#	6	#	603	#	
+40499	#	0	#	M	#		#	(GRANEL) BIZCOCHO BA¥ADO CACAO	#	395	#	1	#		#	0	#	6	#	603	#	
+40498	#	0	#	M	#		#	(GRANEL) CA¥A CACAO	#	395	#	1	#		#	0	#	6	#	603	#	
+40496	#	0	#	M	#		#	(GRANEL) BORRACHO AL CACAO	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:1 kg;Variedad:cacahuete"
+40495	#	0	#	M	#		#	(GRANEL) BRACITO DE FRESA	#	395	#	1	#		#	0	#	6	#	603	#	
+39976	#	0	#	M	#		#	TARTA QUESO OREO	#	550	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:m;Variedad:racimo"
+38972	#	0	#	M	#		#	TRONQUITO DE ALMENDRA	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:primera;Calibre:l"
+38971	#	0	#	M	#		#	BOMBON ALMENDRADO	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Variedad:moresco;Calibre:m/g;Categoria:i"
+38124	#	0	#	M	#		#	(GRANEL) CUADRADITO CACAO	#	395	#	1	#		#	0	#	6	#	603	#	
+38123	#	0	#	M	#		#	(GRANEL) CA¥A CREMA ZEBRA	#	395	#	1	#		#	0	#	6	#	603	#	
+38122	#	0	#	M	#		#	(GRANEL) TRIANGULO CREMA	#	395	#	1	#		#	0	#	6	#	603	#	
+38121	#	0	#	M	#		#	(GRANEL) TRIANGULO CABELLO ANG	#	395	#	1	#		#	0	#	6	#	603	#	
+34975	#	0	#	M	#		#	BOLITA COCO ARTESANO	#	165	#	2	#		#	0	#	6	#	603	#	
+34461	#	0	#	M	#		#	(GRANEL) PINKY'S	#	395	#	1	#		#	0	#	6	#	603	#	
+31749	#	0	#	M	#		#	TRUFAS CONGELADAS	#	299	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:m;Variedad:long life"
+28831	#	0	#	M	#		#	POLVORONES DE ALMENDRA	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Variedad:pasty delice;Calibre:1 kg"
+28828	#	0	#	M	#		#	MANTECADO DE LIMON	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:1;Calibre:g;Variedad:lamuyo"
+27926	#	0	#	M	#		#	TARTA TURRON	#	1800	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:primera;Calibre:l;Variedad:corto"
+27925	#	0	#	M	#		#	TARTA DOS CHOCOLATES	#	1800	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:primera;Calibre:g (14);Variedad:verde"
+27877	#	0	#	M	#		#	TARTA DOS CHOCOLATES RACION	#	275	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:g;Variedad:lamuyo verde"
+27876	#	0	#	M	#		#	TARTA DOS CHOCOLATES	#	3200	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Variedad:cacahuet/tasky delice"
+27830	#	0	#	M	#		#	TARTA MANZANA RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27829	#	0	#	M	#		#	TARTA QUESO RACION	#	175	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:280+;Variedad:rayada"
+27828	#	0	#	M	#		#	TARTA DE ALMENDRA RACION	#	175	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:1§;Calibre:g;Variedad:largo poniente"
+27827	#	0	#	M	#		#	TARTA CALABAZA RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27638	#	0	#	M	#		#	TARTA MERENGUE NARANJA RACION	#	280	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:primera;Calibre:g (300-400 g.);Variedad:negra"
+27637	#	0	#	M	#		#	TARTA STRUDEL MANZANA RACION	#	240	#	2	#		#	0	#	6	#	603	#	Origen:Espa¤a
+27635	#	0	#	M	#		#	COCTEL DULCES	#	3500	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:47/57;Variedad:ruth/baobab"
+27634	#	0	#	M	#		#	COCTEL DULCES	#	2500	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Variedad:raff;Calibre:57/82"
+27633	#	0	#	M	#		#	CROCANT COLLECTION	#	450	#	2	#		#	0	#	6	#	603	#	
+27471	#	0	#	M	#		#	TARTA DE ZANAHORIA RACION	#	200	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:g;Variedad:caramba"
+27470	#	0	#	M	#		#	TARTA AMERICANA CHOCO RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+27469	#	0	#	M	#		#	TARTA DE CHOCOLATE RACION	#	135	#	2	#		#	0	#	6	#	603	#	
+27468	#	0	#	M	#		#	TARTA MANZANA PREMIUM RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27467	#	0	#	M	#		#	TARTA QUESO ARANDANOS RACION	#	200	#	2	#		#	0	#	6	#	603	#	
+27466	#	0	#	M	#		#	TARTA QUESO CON FRESAS RACION	#	175	#	2	#		#	0	#	6	#	603	#	
+27465	#	0	#	M	#		#	TARTA DE ZANAHORIA	#	2300	#	2	#		#	0	#	6	#	603	#	
+27464	#	0	#	M	#		#	TARTA AMERICANA CHOCOLATE	#	2300	#	2	#		#	0	#	6	#	603	#	
+27463	#	0	#	M	#		#	TARTA DE CHOCOLATE	#	1300	#	2	#		#	0	#	6	#	603	#	
+27462	#	0	#	M	#		#	TARTA DE MANZANA PREMIUM	#	1600	#	2	#		#	0	#	6	#	603	#	
+27461	#	0	#	M	#		#	TARTA QUESO SUPREMA ARANDANOS	#	2500	#	2	#		#	0	#	6	#	603	#	
+27460	#	0	#	M	#		#	TARTA DE QUESO CON FRESAS	#	1700	#	2	#		#	0	#	6	#	603	#	
+27459	#	0	#	M	#		#	TARTA MERENGUE Y NARANJA	#	3200	#	2	#		#	0	#	6	#	603	#	
+27458	#	0	#	M	#		#	TARTA STRUDEL CON MANZANA	#	2400	#	2	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:i;Calibre:5/6;Variedad:tudela"
+27453	#	0	#	M	#		#	VASITO QUESO CON FRAMBUESA	#	250	#	2	#		#	0	#	6	#	603	#	
+27452	#	0	#	M	#		#	VASITO MARACUYA	#	250	#	2	#		#	0	#	6	#	603	#	
+27451	#	0	#	M	#		#	VASITO 2 CHOCOLATES	#	250	#	2	#		#	0	#	6	#	603	#	
+27450	#	0	#	M	#		#	VASITO TURRON	#	250	#	2	#		#	0	#	6	#	603	#	
+27449	#	0	#	M	#		#	TRUFAS	#	3000	#	1	#		#	0	#	6	#	603	#	
+27448	#	0	#	M	#		#	TARTA DE ALMENDRA	#	1200	#	2	#		#	0	#	6	#	603	#	
+27447	#	0	#	M	#		#	TARTA DE QUESO	#	1200	#	2	#		#	0	#	6	#	603	#	
+27446	#	0	#	M	#		#	TARTA DE MANZANA	#	1200	#	2	#		#	0	#	6	#	603	#	
+27445	#	0	#	M	#		#	TARTA DE CALABAZA	#	1200	#	2	#		#	0	#	6	#	603	#	
+26115	#	0	#	M	#		#	(GRANEL) MIGUELITOS CREMA	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Variedad:lisa;Calibre:8;Categoria:1§"
+26113	#	0	#	M	#		#	(GRANEL) PETISU CREMA	#	395	#	1	#		#	0	#	6	#	603	#	Origen:Espa¤a
+26112	#	0	#	M	#		#	(GRANEL) CA¥AS CABELLO  LARGAS	#	395	#	1	#		#	0	#	6	#	603	#	Origen:Espa¤a
+26110	#	0	#	M	#		#	(GRANEL) CUADRADOS TRUFA	#	395	#	1	#		#	0	#	6	#	603	#	"Origen:Espa¤a;Categoria:1¦;Variedad:roja"
+26108	#	0	#	M	#		#	(GRANEL) CHAPELA CHOCO	#	395	#	1	#		#	0	#	6	#	603	#	
+23301	#	1	#	M	#	15	#	SURTIDO ESPECIAL NAVIDAD GRANE	#	198	#	1	#		#	0	#	6	#	603	#	
+16160	#	1	#	M	#	10	#	PASTELERIA GRANEL	#	395	#	1	#		#	60	#	6	#	603	#	"Origen:Espa¤a;Categoria:1§;Variedad:rizada;Calibre:6"
+7003	#	0	#	B	#		#	PANADERIA (T-1)	#	0	#	2	#		#	0	#	6	#	604	#	
+21123	#	0	#	B	#		#	PANADERIA. PAN COMUN.	#	0	#	2	#		#	0	#	6	#	604	#	
+45124	#	0	#	B	#		#	ARROZ HORNO	#	350	#	2	#		#	0	#	8	#	2001	#	"Origen:Espa¤a;Categoria:1§;Variedad:rojo;Calibre:8"
+45123	#	0	#	B	#		#	FIDEUA MARISC	#	350	#	2	#		#	0	#	8	#	2001	#	
+45122	#	0	#	B	#		#	ARROZ BANDA	#	350	#	2	#		#	0	#	8	#	2001	#	
+45121	#	0	#	B	#		#	ARROZ NEGRO	#	350	#	2	#		#	0	#	8	#	2001	#	
+45120	#	0	#	B	#		#	PAELLA MAGRO	#	350	#	2	#		#	0	#	8	#	2001	#	
+45119	#	0	#	B	#		#	PAELLA VALENCI	#	350	#	2	#		#	0	#	8	#	2001	#	
+45118	#	0	#	B	#		#	PAELLA ALCACH	#	350	#	2	#		#	0	#	8	#	2001	#	
+44192	#	0	#	B	#		#	RACION ARROZ DEL DIA	#	300	#	2	#		#	0	#	8	#	2001	#	
+45124	#	1	#	M	#	20	#	ARROZ HORNO	#	350	#	2	#		#	0	#	8	#	2001	#	
+45123	#	1	#	M	#	21	#	FIDEUA MARISC	#	350	#	2	#		#	0	#	8	#	2001	#	
+45122	#	1	#	M	#	22	#	ARROZ BANDA	#	350	#	2	#		#	0	#	8	#	2001	#	
+45121	#	1	#	M	#	23	#	ARROZ NEGRO	#	350	#	2	#		#	0	#	8	#	2001	#	
+45120	#	1	#	M	#	24	#	PAELLA MAGRO	#	350	#	2	#		#	0	#	8	#	2001	#	
+45119	#	1	#	M	#	25	#	PAELLA VALENCI	#	350	#	2	#		#	0	#	8	#	2001	#	"Variedad:sugraone;Origen:peru;Calibre:xl;Categoria:i"
+45118	#	1	#	M	#	26	#	PAELLA ALCACH	#	350	#	2	#		#	0	#	8	#	2001	#	"Categoria:i;Origen:Espa¤a;Variedad:primori"
+44192	#	1	#	M	#	13	#	RACION ARROZ DEL DIA	#	300	#	2	#		#	0	#	8	#	2001	#	"Origen:peru;Categoria:i;Variedad:red globe;Calibre:l"
+45117	#	0	#	B	#		#	LASA¥A BOLO¥	#	350	#	2	#		#	0	#	8	#	2002	#	,
+45116	#	0	#	B	#		#	MUSACA	#	350	#	2	#		#	0	#	8	#	2002	#	"Variedad:style;Calibre:3/4;Origen:Espa¤a;Categoria:i"
+45115	#	0	#	B	#		#	TAGLIATELLE	#	350	#	2	#		#	0	#	8	#	2002	#	
+45114	#	0	#	B	#		#	MACARRONES	#	300	#	2	#		#	0	#	8	#	2002	#	
+45113	#	0	#	B	#		#	ENSAL.PASTA	#	300	#	2	#		#	0	#	8	#	2002	#	"Origen:Espa¤a;Variedad:piel de sapo;Categoria:i;Calibre:6"
+45112	#	0	#	B	#		#	ESPAGUETIS	#	300	#	2	#		#	0	#	8	#	2002	#	"Origen:Espa¤a;Calibre:3/4;Variedad:boston;Categoria:i"
+44195	#	0	#	B	#		#	RACION PASTA DEL DIA	#	300	#	2	#		#	0	#	8	#	2002	#	"Origen:Espa¤a;Categoria:i;Variedad:rojo brillante persimon;Calibre:20/22"
+45117	#	1	#	M	#	47	#	LASA¥A BOLO¥	#	350	#	2	#		#	0	#	8	#	2002	#	"Origen:Espa¤a;Categoria:i;Calibre:25;Variedad:fortuna"
+45116	#	1	#	M	#	27	#	MUSACA	#	350	#	2	#		#	0	#	8	#	2002	#	
+45115	#	1	#	M	#	28	#	TAGLIATELLE	#	350	#	2	#		#	0	#	8	#	2002	#	
+45114	#	1	#	M	#	29	#	MACARRONES	#	300	#	2	#		#	0	#	8	#	2002	#	"Origen:Brasil;Categoria:i;Calibre:5;Variedad:piel de sapo"
+45113	#	1	#	M	#	30	#	ENSAL.PASTA	#	300	#	2	#		#	0	#	8	#	2002	#	"Origen:Espa¤a;Categoria:i;Calibre:25;Variedad:fortuna"
+45112	#	1	#	M	#	31	#	ESPAGUETIS	#	300	#	2	#		#	0	#	8	#	2002	#	
+44195	#	1	#	M	#	16	#	RACION PASTA DEL DIA	#	300	#	2	#		#	0	#	8	#	2002	#	
+44197	#	0	#	B	#		#	RACION CREMA DEL DIA	#	200	#	2	#		#	0	#	8	#	2003	#	"Origen:Espa¤a;Categoria:i;Calibre:70/+;Variedad:royal gala"
+44197	#	1	#	M	#	18	#	RACION CREMA DEL DIA	#	200	#	2	#		#	0	#	8	#	2003	#	"Variedad:fuji;Origen:China;Calibre:80;Categoria:i"
+45133	#	0	#	B	#		#	CARNE MECHA	#	350	#	2	#		#	0	#	8	#	2004	#	"Variedad:royal gala;Origen:Italia;Categoria:i;Calibre:80/85"
+45132	#	0	#	B	#		#	MUSLO POLLO	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Calibre:70/75;Variedad:alejandrina"
+45131	#	0	#	B	#		#	MAGRO TOMATE	#	350	#	2	#		#	0	#	8	#	2004	#	"Variedad:golden;Origen:Espa¤a;Categoria:primera;Calibre:60mm/+"
+45130	#	0	#	B	#		#	POLLO AL WOK	#	350	#	2	#		#	0	#	8	#	2004	#	
+45129	#	0	#	B	#		#	COSTILLA MIEL	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Calibre:55+;Variedad:blanquilla"
+45128	#	0	#	B	#		#	CUSCUS POLLO	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Italia;Categoria:i;Calibre:80/85;Variedad:golden delicius"
+45127	#	0	#	B	#		#	POLLO CURRY	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Variedad:conferencia;Categoria:i;Calibre:70/75"
+45126	#	0	#	B	#		#	POLLO JARDINE	#	350	#	2	#		#	0	#	8	#	2004	#	
+45125	#	0	#	B	#		#	CROQU.JAMON	#	300	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Variedad:packhams;Calibre:60+"
+44193	#	0	#	B	#		#	RACION CARNE DEL DIA	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Calibre:75/85;Variedad:fuji"
+44191	#	0	#	B	#		#	POLLO ASADO	#	750	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Calibre:70/80;Variedad:gran smith"
+44190	#	0	#	B	#		#	MEDIO POLLO ASADO	#	400	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Calibre:18/20;Variedad:conferencia"
+45133	#	1	#	M	#	32	#	CARNE MECHA	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Espa¤a;Categoria:i;Calibre:70+;Variedad:golden"
+45132	#	1	#	M	#	33	#	MUSLO POLLO	#	350	#	2	#		#	0	#	8	#	2004	#	"Calibre:75/80;Categoria:i;Origen:Espa¤a;Variedad:reineta verde"
+45131	#	1	#	M	#	34	#	MAGRO TOMATE	#	350	#	2	#		#	0	#	8	#	2004	#	"Variedad:md2;Calibre:6-7;Origen:Costa Rica;Categoria:1¦"
+45130	#	1	#	M	#	35	#	POLLO AL WOK	#	350	#	2	#		#	0	#	8	#	2004	#	
+45129	#	1	#	M	#	36	#	COSTILLA MIEL	#	350	#	2	#		#	0	#	8	#	2004	#	
+45128	#	1	#	M	#	37	#	CUSCUS POLLO	#	350	#	2	#		#	0	#	8	#	2004	#	
+45127	#	1	#	M	#	38	#	POLLO CURRY	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Costa Rica;Categoria:extra;Variedad:cavendish;Calibre:6/7"
+45126	#	1	#	M	#	39	#	POLLO JARDINE	#	350	#	2	#		#	0	#	8	#	2004	#	"Origen:Nueva Zelanda;Categoria:primera;Calibre:33/36;Variedad:hayward green"
+45125	#	1	#	M	#	40	#	CROQU.JAMON	#	300	#	2	#		#	0	#	8	#	2004	#	
+44193	#	1	#	M	#	14	#	RACION CARNE DEL DIA	#	350	#	2	#		#	0	#	8	#	2004	#	
+44191	#	1	#	M	#	12	#	POLLO ASADO	#	750	#	2	#		#	0	#	8	#	2004	#	
+44190	#	1	#	M	#	11	#	MEDIO POLLO ASADO	#	400	#	2	#		#	0	#	8	#	2004	#	
+45136	#	0	#	B	#		#	MERLUZA SALSA	#	400	#	2	#		#	0	#	8	#	2005	#	
+45135	#	0	#	B	#		#	RAPE MARINERA	#	400	#	2	#		#	0	#	8	#	2005	#	"Origen:Per£;Categoria:i;Calibre:14-16;Variedad:hass"
+45134	#	0	#	B	#		#	BACALAO VIZCAI	#	400	#	2	#		#	0	#	8	#	2005	#	"Origen:mexico;Variedad:cavendish;Calibre:19+;Categoria:i"
+44196	#	0	#	B	#		#	RACION PESCADO DEL DIA	#	400	#	2	#		#	0	#	8	#	2005	#	"Origen:canarias (Espa¤a);Categoria:i;Variedad:cavendish;Calibre:+14"
+45136	#	1	#	M	#	41	#	MERLUZA SALSA	#	400	#	2	#		#	0	#	8	#	2005	#	"Origen:valencia;Categoria:primera;Variedad:hayward;Calibre:18/20"
+45135	#	1	#	M	#	42	#	RAPE MARINERA	#	400	#	2	#		#	0	#	8	#	2005	#	"Origen:Espa¤a;Categoria:i;Calibre:25;Variedad:fina de jete"
+45134	#	1	#	M	#	43	#	BACALAO VIZCAI	#	400	#	2	#		#	0	#	8	#	2005	#	"Variedad:sungold;Origen:Italia;Categoria:i;Calibre:22/25"
+44196	#	1	#	M	#	17	#	RACION PESCADO DEL DIA	#	400	#	2	#		#	0	#	8	#	2005	#	"Origen:Brasil;Categoria:primera"
+45111	#	0	#	B	#		#	TABULE	#	250	#	2	#		#	0	#	8	#	2008	#	"Origen:Espa¤a;Categoria:i;Variedad:osteen;Calibre:7"
+45110	#	0	#	B	#		#	ENSAL.MARISCO	#	250	#	2	#		#	0	#	8	#	2008	#	"Origen:sudafrica;Categoria:i;Variedad:rubin sun;Calibre:aa"
+45109	#	0	#	B	#		#	ENSAL.RUSA	#	250	#	2	#		#	0	#	8	#	2008	#	Origen:Espa¤a
+44194	#	0	#	B	#		#	RACION ENSALADILLA DEL DIA	#	250	#	2	#		#	0	#	8	#	2008	#	
+45111	#	1	#	M	#	44	#	TABULE	#	250	#	2	#		#	0	#	8	#	2008	#	"Origen:Espa¤a;Categoria:i;Calibre:73/84;Variedad:navelina"
+45110	#	1	#	M	#	45	#	ENSAL.MARISCO	#	250	#	2	#		#	0	#	8	#	2008	#	"Variedad:navelina;Origen:Espa¤a;Calibre:6/8;Categoria:ii"
+45109	#	1	#	M	#	46	#	ENSAL.RUSA	#	250	#	2	#		#	0	#	8	#	2008	#	"Origen:Espa¤a;Categoria:i;Calibre:2/3;Variedad:oronules"
+44194	#	1	#	M	#	15	#	RACION ENSALADILLA DEL DIA	#	250	#	2	#		#	0	#	8	#	2008	#	

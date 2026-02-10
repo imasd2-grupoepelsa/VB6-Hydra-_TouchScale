@@ -37,43 +37,43 @@ End Property
 
 
 Public Property Get LabelID() As Long
-    
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-    
+
     If CurrentParent = -1 Then
         LabelID = -1
     Else
         LabelID = Buffer(CurrentPos).nID
     End If
-    
+
 End Property
 Public Property Get LabelData() As String
-    
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-    
+
     If CurrentParent = -1 Then
         LabelData = ""
     Else
         LabelData = Buffer(CurrentPos).sString
     End If
-    
+
 End Property
 Public Property Get LabelName() As String
-    
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-    
+
     If CurrentParent = -1 Then
         LabelName = ""
     Else
@@ -81,132 +81,132 @@ Public Property Get LabelName() As String
     End If
 End Property
 Public Sub GetAttributes(nAttrib As Long, sAttribName() As String, sAttribValue() As String)
-    
-    Dim Bucle As Long
-    
+
+    Dim bucle As Long
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Sub
     End If
-    
+
     nAttrib = 0
     If CurrentParent <> -1 Then
         nAttrib = Buffer(CurrentPos).nAttributes
         ReDim sAttribName(nAttrib)
         ReDim sAttribValue(nAttrib)
-        For Bucle = 0 To nAttrib - 1
-            sAttribName(Bucle) = Buffer(CurrentPos).Attributes(Bucle)
-            sAttribValue(Bucle) = Buffer(CurrentPos).Values(Bucle)
-        Next Bucle
-        
+        For bucle = 0 To nAttrib - 1
+            sAttribName(bucle) = Buffer(CurrentPos).Attributes(bucle)
+            sAttribValue(bucle) = Buffer(CurrentPos).Values(bucle)
+        Next bucle
+
     End If
-    
+
 End Sub
 
 Public Function GetChildren(Ids() As Long, sNames() As String) As Long
-    Dim Bucle As Long
+    Dim bucle As Long
     Dim Resp As Long
-    
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-    
+
     Resp = 0
-    For Bucle = 0 To nBuffer - 1
-        If Buffer(Bucle).nIDParent = Buffer(CurrentPos).nID Then
-            If Buffer(Bucle).CloseLabel = False Then
+    For bucle = 0 To nBuffer - 1
+        If Buffer(bucle).nIDParent = Buffer(CurrentPos).nID Then
+            If Buffer(bucle).CloseLabel = False Then
                 Resp = Resp + 1
                 ReDim Preserve Ids(Resp)
                 ReDim Preserve sNames(Resp)
-                Ids(Resp - 1) = Buffer(Bucle).nID
-                sNames(Resp - 1) = Buffer(Bucle).sName
+                Ids(Resp - 1) = Buffer(bucle).nID
+                sNames(Resp - 1) = Buffer(bucle).sName
             End If
         End If
-    Next Bucle
+    Next bucle
     GetChildren = Resp
 End Function
 '****************************************************************************
 ' Movimiento por el fichero
 '****************************************************************************
 Public Sub Reset()
-    
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Sub
     End If
-    
+
     CurrentParent = -1
     CurrentPos = 0
 End Sub
 Public Function GoBack()
-    Dim Bucle As Long
-    
+    Dim bucle As Long
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-       
+
     CurrentParent = Buffer(CurrentPos).nIDParent
-    For Bucle = 0 To nBuffer - 1
-        If Buffer(Bucle).nID = CurrentParent Then
-            CurrentPos = Bucle
+    For bucle = 0 To nBuffer - 1
+        If Buffer(bucle).nID = CurrentParent Then
+            CurrentPos = bucle
             Exit For
         End If
-    Next Bucle
-    
+    Next bucle
+
 End Function
 Public Function SearchChildID(ByVal nNum As Long) As Boolean
     Dim MyOK As Boolean
-    Dim Bucle As Long
-    
+    Dim bucle As Long
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-    
+
     MyOK = False
-    For Bucle = 0 To nBuffer - 1
-        If Buffer(Bucle).nIDParent = CurrentParent Then
-            If nNum = Buffer(Bucle).nID Then
+    For bucle = 0 To nBuffer - 1
+        If Buffer(bucle).nIDParent = CurrentParent Then
+            If nNum = Buffer(bucle).nID Then
                 MyOK = True
-                CurrentParent = Buffer(Bucle).nID
-                CurrentPos = Bucle
+                CurrentParent = Buffer(bucle).nID
+                CurrentPos = bucle
                 Exit For
             End If
         End If
-        
-    Next Bucle
-    
+
+    Next bucle
+
     SearchChildID = MyOK
 End Function
 Public Function SearchString(ByVal scad As String) As Boolean
     Dim MyOK As Boolean
-    Dim Bucle As Long
-    
+    Dim bucle As Long
+
     If Not Ready Then
         On Error GoTo 0
         Err.Raise 10003, , "No document Opened"
         Exit Function
     End If
-    
+
     MyOK = False
-    For Bucle = 0 To nBuffer - 1
-        If Buffer(Bucle).nIDParent = CurrentParent Then
-            If Trim(UCase(scad)) = Trim(UCase(Buffer(Bucle).sName)) Then
+    For bucle = 0 To nBuffer - 1
+        If Buffer(bucle).nIDParent = CurrentParent Then
+            If Trim(UCase(scad)) = Trim(UCase(Buffer(bucle).sName)) Then
                 MyOK = True
-                CurrentParent = Buffer(Bucle).nID
-                CurrentPos = Bucle
+                CurrentParent = Buffer(bucle).nID
+                CurrentPos = bucle
                 Exit For
             End If
         End If
-        
-    Next Bucle
+
+    Next bucle
     SearchString = MyOK
 End Function
 Public Sub OpenDoc()
@@ -234,7 +234,7 @@ Public Sub OpenDoc()
                     nBuftmp = nBuftmp + 1
                     ReDim Preserve BufTmp(nBuftmp)
                     BufTmp(nBuftmp - 1) = sBuf
-                    
+
                 End If
             Loop
             Close #Arch
@@ -255,21 +255,21 @@ Public Sub OpenDoc()
             End If
         End If
     End If
-    
+
 End Sub
 Private Function Parse_Consistence() As Boolean
-    Dim Bucle As Long
+    Dim bucle As Long
     Dim BRet As Long
     Dim nID As Long
-    Dim Encontrado As Boolean
+    Dim eNCONTRADO As Boolean
     Dim CurParent() As Long
     Dim NCur As Long
     Dim MyOK As Boolean
     MyOK = True
     NCur = 0
     nID = -1
-    For Bucle = 0 To nBuffer - 1
-        If Left(Buffer(Bucle).sName, 1) = "/" Then
+    For bucle = 0 To nBuffer - 1
+        If left(Buffer(bucle).sName, 1) = "/" Then
             If NCur = 0 Then
                 '!!
                 MsgBox "ERR"
@@ -277,36 +277,36 @@ Private Function Parse_Consistence() As Boolean
                 MyOK = False
                 Exit For
             Else
-                Encontrado = False
-                
-                For BRet = Bucle - 1 To 0 Step -1
+                eNCONTRADO = False
+
+                For BRet = bucle - 1 To 0 Step -1
                     If NCur >= 2 Then
                         If CurParent(NCur - 2) = Buffer(BRet).nIDParent Then
-                            If Mid(Buffer(Bucle).sName, 2) = Buffer(BRet).sName Then
-                                Encontrado = True
+                            If Mid(Buffer(bucle).sName, 2) = Buffer(BRet).sName Then
+                                eNCONTRADO = True
                                 Exit For
                             End If
                         End If
                     Else
                         If Buffer(BRet).nIDParent = -1 Then
-                            If Mid(Buffer(Bucle).sName, 2) = Buffer(BRet).sName Then
-                                Encontrado = True
+                            If Mid(Buffer(bucle).sName, 2) = Buffer(BRet).sName Then
+                                eNCONTRADO = True
                                 Exit For
                             End If
                         End If
                     End If
                 Next BRet
                 NCur = NCur - 1
-                If Not Encontrado Then
+                If Not eNCONTRADO Then
                     MyOK = False
                     '!!
-                MsgBox "ERR"
-                '!!
+                    MsgBox "ERR"
+                    '!!
                     Exit For
                 Else
-                    Buffer(Bucle).CloseLabel = True
-                    Buffer(Bucle).nID = Buffer(BRet).nID
-                    Buffer(Bucle).nIDParent = Buffer(BRet).nIDParent
+                    Buffer(bucle).CloseLabel = True
+                    Buffer(bucle).nID = Buffer(BRet).nID
+                    Buffer(bucle).nIDParent = Buffer(BRet).nIDParent
                 End If
             End If
         Else
@@ -314,19 +314,19 @@ Private Function Parse_Consistence() As Boolean
             NCur = NCur + 1
             ReDim Preserve CurParent(NCur)
             CurParent(NCur - 1) = nID
-            Buffer(Bucle).nID = nID
-            Buffer(Bucle).CloseLabel = False
+            Buffer(bucle).nID = nID
+            Buffer(bucle).CloseLabel = False
             If NCur > 1 Then
-                Buffer(Bucle).nIDParent = CurParent(NCur - 2)
+                Buffer(bucle).nIDParent = CurParent(NCur - 2)
             Else
-                Buffer(Bucle).nIDParent = -1
+                Buffer(bucle).nIDParent = -1
             End If
         End If
-    Next Bucle
+    Next bucle
     Parse_Consistence = MyOK
 End Function
 Private Function Parse_Buffer(ByVal nBuftmp As Long, BufTmp() As String) As Boolean
-    Dim Bucle As Long
+    Dim bucle As Long
     Dim BigBuf As String
     Dim Zone As Long
     Dim MyOK As Boolean
@@ -350,80 +350,80 @@ Private Function Parse_Buffer(ByVal nBuftmp As Long, BufTmp() As String) As Bool
         BigBuf = Replace(BigBuf, Chr(9), " ")
     End If
     '
-    For Bucle = 1 To Len(BigBuf)
-        scad = Mid(BigBuf, Bucle, 1)
+    For bucle = 1 To Len(BigBuf)
+        scad = Mid(BigBuf, bucle, 1)
         Select Case Zone
-            Case 0
-                ZoneName = ""
-                Zone = 1
-                If scad <> "<" Then
+        Case 0
+            ZoneName = ""
+            Zone = 1
+            If scad <> "<" Then
+                MyOK = False
+                Exit For
+            End If
+        Case 1
+            If scad = ">" Then
+                If parse_name(ZoneName, MyXML) Then
+                    If left(ZoneName, 1) <> "?" Then
+                        AutoCierra = False
+                        If Right(MyXML.sName, 1) = "/" Then
+                            AutoCierra = True
+                            MyXML.sName = left(MyXML.sName, Len(MyXML.sName) - 1)
+                        End If
+
+                        nBuffer = nBuffer + 1
+                        ReDim Preserve Buffer(nBuffer)
+
+                        Buffer(nBuffer - 1).sName = MyXML.sName
+                        Buffer(nBuffer - 1).nAttributes = MyXML.nAttributes
+                        If MyXML.nAttributes > 0 Then
+                            ReDim Buffer(nBuffer - 1).Attributes(MyXML.nAttributes)
+                            ReDim Buffer(nBuffer - 1).Values(MyXML.nAttributes)
+                            For BLite = 0 To MyXML.nAttributes - 1
+                                Buffer(nBuffer - 1).Attributes(BLite) = MyXML.Attributes(BLite)
+                                Buffer(nBuffer - 1).Values(BLite) = MyXML.Values(BLite)
+                                Buffer(nBuffer - 1).sString = ""
+                            Next BLite
+                        End If
+
+                        If AutoCierra Then
+                            nBuffer = nBuffer + 1
+                            ReDim Preserve Buffer(nBuffer)
+                            Buffer(nBuffer - 1).sName = "/" & MyXML.sName
+                            Buffer(nBuffer - 1).nAttributes = 0
+                        End If
+
+                    End If
+                    Zone = 2
+                Else
                     MyOK = False
                     Exit For
                 End If
-            Case 1
-                If scad = ">" Then
-                    If parse_name(ZoneName, MyXML) Then
-                        If Left(ZoneName, 1) <> "?" Then
-                            AutoCierra = False
-                            If Right(MyXML.sName, 1) = "/" Then
-                                AutoCierra = True
-                                MyXML.sName = Left(MyXML.sName, Len(MyXML.sName) - 1)
-                            End If
-                            
-                            nBuffer = nBuffer + 1
-                            ReDim Preserve Buffer(nBuffer)
-                            
-                            Buffer(nBuffer - 1).sName = MyXML.sName
-                            Buffer(nBuffer - 1).nAttributes = MyXML.nAttributes
-                            If MyXML.nAttributes > 0 Then
-                                ReDim Buffer(nBuffer - 1).Attributes(MyXML.nAttributes)
-                                ReDim Buffer(nBuffer - 1).Values(MyXML.nAttributes)
-                                For BLite = 0 To MyXML.nAttributes - 1
-                                    Buffer(nBuffer - 1).Attributes(BLite) = MyXML.Attributes(BLite)
-                                    Buffer(nBuffer - 1).Values(BLite) = MyXML.Values(BLite)
-                                    Buffer(nBuffer - 1).sString = ""
-                                Next BLite
-                            End If
-                            
-                            If AutoCierra Then
-                                nBuffer = nBuffer + 1
-                                ReDim Preserve Buffer(nBuffer)
-                                Buffer(nBuffer - 1).sName = "/" & MyXML.sName
-                                Buffer(nBuffer - 1).nAttributes = 0
-                            End If
-                            
-                        End If
-                        Zone = 2
-                    Else
-                        MyOK = False
-                        Exit For
-                    End If
+            Else
+                ZoneName = ZoneName & scad
+            End If
+        Case 2
+            If scad = "<" Then
+                AttrName = Trim(AttrName)
+                If nBuffer > 0 Then Buffer(nBuffer - 1).sString = AttrName
+                AttrName = ""
+                bucle = bucle - 1
+                Zone = 0
+            Else
+                If scad <> Chr(13) Then
+                    AttrName = AttrName & scad
                 Else
-                    ZoneName = ZoneName & scad
+                    If bucle = Len(BigBuf) Then Zone = 0
                 End If
-            Case 2
-                If scad = "<" Then
-                    AttrName = Trim(AttrName)
-                    If nBuffer > 0 Then Buffer(nBuffer - 1).sString = AttrName
-                    AttrName = ""
-                    Bucle = Bucle - 1
-                    Zone = 0
-                Else
-                    If scad <> Chr(13) Then
-                        AttrName = AttrName & scad
-                    Else
-                        If Bucle = Len(BigBuf) Then Zone = 0
-                    End If
-                End If
+            End If
         End Select
-    Next Bucle
+    Next bucle
     If Zone <> 0 Then MyOK = False
     Parse_Buffer = MyOK
 End Function
 Private Function parse_name(ByVal scad As String, MyXML As TXmlLabel) As Boolean
 
     Dim MyOK As Boolean
-    Dim Bucle As Long
+    Dim bucle As Long
     Dim Buf As String
     Dim Zone As Long
     Dim AttrOpen As Boolean
@@ -438,97 +438,97 @@ Private Function parse_name(ByVal scad As String, MyXML As TXmlLabel) As Boolean
     If Len(scad) = 0 Then
         MyOK = False
     Else
-        For Bucle = 1 To Len(scad)
-            
+        For bucle = 1 To Len(scad)
+
             Select Case Zone
-                Case 0
-                    If Mid(scad, Bucle, 1) = Chr(13) Then MyOK = False
-                    If Mid(scad, Bucle, 1) = " " And Buf = "" Then MyOK = False
-                    If MyOK Then
-                        If Mid(scad, Bucle, 1) = " " Then
-                            AttrOpen = True
-                            Zone = 1
-                            Bucle = Bucle - 1
-                            MyXML.sName = Buf  ' nombre
-                            Buf = ""
-                        Else
-                            Buf = Buf & Mid(scad, Bucle, 1)
-                            If Bucle = Len(scad) Then MyXML.sName = Buf
-                        End If
+            Case 0
+                If Mid(scad, bucle, 1) = Chr(13) Then MyOK = False
+                If Mid(scad, bucle, 1) = " " And Buf = "" Then MyOK = False
+                If MyOK Then
+                    If Mid(scad, bucle, 1) = " " Then
+                        AttrOpen = True
+                        Zone = 1
+                        bucle = bucle - 1
+                        MyXML.sName = Buf  ' nombre
+                        Buf = ""
                     Else
+                        Buf = Buf & Mid(scad, bucle, 1)
+                        If bucle = Len(scad) Then MyXML.sName = Buf
+                    End If
+                Else
+                    Exit For
+                End If
+
+            Case 1
+                If Mid(scad, bucle, 1) <> " " Then
+                    '************************
+                    ' nombre
+                    Buf = ""
+                    bucle = bucle - 1
+                    Zone = 2
+                Else
+                    AttrOpen = True
+                    If bucle = Len(scad) Then
+                        MyOK = False
                         Exit For
                     End If
-                    
-                Case 1
-                    If Mid(scad, Bucle, 1) <> " " Then
-                        '************************
-                        ' nombre
-                        Buf = ""
-                        Bucle = Bucle - 1
-                        Zone = 2
-                    Else
-                        AttrOpen = True
-                        If Bucle = Len(scad) Then
+                End If
+            Case 2
+                If Mid(scad, bucle, 1) = "=" Then
+                    '******************
+                    ' nombre attrib
+                    tmpAttr = Buf
+                    If Buf = "" Then
+                        MyOK = False
+                        Exit For
+                    End If
+                    Zone = 3
+                Else
+                    If Mid(scad, bucle, 1) <> " " Then
+                        Buf = Buf & Mid(scad, bucle, 1)
+                        If Buf = "?" Then
+                            AttrOpen = False
+                            Zone = 1
+                        End If
+                    End If
+                End If
+            Case 3
+                If Mid(scad, bucle, 1) <> " " Then
+                    If Mid(scad, bucle, 1) <> Chr(13) Then
+                        If Mid(scad, bucle, 1) = Chr(34) Then
+                            Zone = 4
+                            Buf = ""
+                        Else
                             MyOK = False
                             Exit For
                         End If
                     End If
-                Case 2
-                    If Mid(scad, Bucle, 1) = "=" Then
-                        '******************
-                        ' nombre attrib
-                        tmpAttr = Buf
-                        If Buf = "" Then
-                            MyOK = False
-                            Exit For
-                        End If
-                        Zone = 3
-                    Else
-                        If Mid(scad, Bucle, 1) <> " " Then
-                            Buf = Buf & Mid(scad, Bucle, 1)
-                            If Buf = "?" Then
-                                AttrOpen = False
-                                Zone = 1
-                            End If
-                        End If
-                    End If
-                Case 3
-                    If Mid(scad, Bucle, 1) <> " " Then
-                        If Mid(scad, Bucle, 1) <> Chr(13) Then
-                            If Mid(scad, Bucle, 1) = Chr(34) Then
-                                Zone = 4
-                                Buf = ""
-                            Else
-                                MyOK = False
-                                Exit For
-                            End If
-                        End If
-                    End If
-                Case 4
-                    If Mid(scad, Bucle, 1) <> Chr(34) Then
-                        Buf = Buf & Mid(scad, Bucle, 1)
-                    Else
-                        ' attr
-                        MyXML.nAttributes = MyXML.nAttributes + 1
-                        ReDim Preserve MyXML.Attributes(MyXML.nAttributes)
-                        ReDim Preserve MyXML.Values(MyXML.nAttributes)
-                        MyXML.Attributes(MyXML.nAttributes - 1) = tmpAttr
-                        MyXML.Values(MyXML.nAttributes - 1) = Buf
-                        Buf = ""
-                        AttrOpen = False
-                        Zone = 1
-                    End If
+                End If
+            Case 4
+                If Mid(scad, bucle, 1) <> Chr(34) Then
+                    Buf = Buf & Mid(scad, bucle, 1)
+                Else
+                    ' attr
+                    MyXML.nAttributes = MyXML.nAttributes + 1
+                    ReDim Preserve MyXML.Attributes(MyXML.nAttributes)
+                    ReDim Preserve MyXML.Values(MyXML.nAttributes)
+                    MyXML.Attributes(MyXML.nAttributes - 1) = tmpAttr
+                    MyXML.Values(MyXML.nAttributes - 1) = Buf
+                    Buf = ""
+                    AttrOpen = False
+                    Zone = 1
+                End If
             End Select
-                
-         
-        Next Bucle
+
+
+        Next bucle
     End If
     If MyOK Then
-        If Left(MyXML.sName, 1) = "/" And MyXML.nAttributes > 0 Then
+        If left(MyXML.sName, 1) = "/" And MyXML.nAttributes > 0 Then
             MyOK = False
         End If
-       
-        
+
+
     End If
     If AttrOpen Then MyOK = False
     parse_name = MyOK

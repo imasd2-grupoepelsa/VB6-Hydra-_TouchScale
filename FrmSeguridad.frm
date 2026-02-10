@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form FrmSeguridad 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Seguridad"
@@ -75,69 +75,69 @@ Begin VB.Form FrmSeguridad
       TabCaption(0)   =   "General"
       TabPicture(0)   =   "FrmSeguridad.frx":041A
       Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "TxtTienda"
-      Tab(0).Control(1)=   "ChkTienda"
-      Tab(0).Control(2)=   "TxtMostrador"
-      Tab(0).Control(3)=   "ChkAsociar"
-      Tab(0).Control(4)=   "Command2"
-      Tab(0).Control(5)=   "TxtNombre"
-      Tab(0).Control(6)=   "CmdCancelar"
-      Tab(0).Control(7)=   "cmdAceptar"
-      Tab(0).Control(8)=   "TxtPassword(1)"
-      Tab(0).Control(9)=   "TxtPassword(0)"
-      Tab(0).Control(10)=   "Command1"
-      Tab(0).Control(11)=   "Label2(1)"
-      Tab(0).Control(12)=   "Label2(0)"
-      Tab(0).Control(13)=   "Label1"
+      Tab(0).Control(0)=   "Label1"
+      Tab(0).Control(1)=   "Label2(0)"
+      Tab(0).Control(2)=   "Label2(1)"
+      Tab(0).Control(3)=   "Command1"
+      Tab(0).Control(4)=   "TxtPassword(0)"
+      Tab(0).Control(5)=   "TxtPassword(1)"
+      Tab(0).Control(6)=   "cmdAceptar"
+      Tab(0).Control(7)=   "CmdCancelar"
+      Tab(0).Control(8)=   "TxtNombre"
+      Tab(0).Control(9)=   "Command2"
+      Tab(0).Control(10)=   "ChkAsociar"
+      Tab(0).Control(11)=   "TxtMostrador"
+      Tab(0).Control(12)=   "ChkTienda"
+      Tab(0).Control(13)=   "TxtTienda"
       Tab(0).ControlCount=   14
       TabCaption(1)   =   "Tienda"
       TabPicture(1)   =   "FrmSeguridad.frx":0436
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "Check1(25)"
-      Tab(1).Control(1)=   "Check1(24)"
-      Tab(1).Control(2)=   "Check1(23)"
-      Tab(1).Control(3)=   "Check1(18)"
-      Tab(1).Control(4)=   "Check1(10)"
-      Tab(1).Control(5)=   "Check1(9)"
-      Tab(1).Control(6)=   "Check1(8)"
-      Tab(1).Control(7)=   "Check1(7)"
-      Tab(1).Control(8)=   "Check1(6)"
-      Tab(1).Control(9)=   "Check1(5)"
-      Tab(1).Control(10)=   "Check1(4)"
-      Tab(1).Control(11)=   "Check1(3)"
-      Tab(1).Control(12)=   "Check1(2)"
-      Tab(1).Control(13)=   "Check1(1)"
-      Tab(1).Control(14)=   "Check1(0)"
-      Tab(1).Control(15)=   "LblInfo(0)"
+      Tab(1).Control(0)=   "LblInfo(0)"
+      Tab(1).Control(1)=   "Check1(0)"
+      Tab(1).Control(2)=   "Check1(1)"
+      Tab(1).Control(3)=   "Check1(2)"
+      Tab(1).Control(4)=   "Check1(3)"
+      Tab(1).Control(5)=   "Check1(4)"
+      Tab(1).Control(6)=   "Check1(5)"
+      Tab(1).Control(7)=   "Check1(6)"
+      Tab(1).Control(8)=   "Check1(7)"
+      Tab(1).Control(9)=   "Check1(8)"
+      Tab(1).Control(10)=   "Check1(9)"
+      Tab(1).Control(11)=   "Check1(10)"
+      Tab(1).Control(12)=   "Check1(18)"
+      Tab(1).Control(13)=   "Check1(23)"
+      Tab(1).Control(14)=   "Check1(24)"
+      Tab(1).Control(15)=   "Check1(25)"
       Tab(1).ControlCount=   16
       TabCaption(2)   =   "Comunicaciones"
       TabPicture(2)   =   "FrmSeguridad.frx":0452
       Tab(2).ControlEnabled=   0   'False
-      Tab(2).Control(0)=   "Check1(27)"
-      Tab(2).Control(1)=   "Check1(26)"
-      Tab(2).Control(2)=   "Check1(19)"
-      Tab(2).Control(3)=   "Check1(22)"
+      Tab(2).Control(0)=   "LblInfo(1)"
+      Tab(2).Control(1)=   "Check1(11)"
+      Tab(2).Control(2)=   "Check1(12)"
+      Tab(2).Control(3)=   "Check1(13)"
       Tab(2).Control(4)=   "Check1(14)"
-      Tab(2).Control(5)=   "Check1(13)"
-      Tab(2).Control(6)=   "Check1(12)"
-      Tab(2).Control(7)=   "Check1(11)"
-      Tab(2).Control(8)=   "LblInfo(1)"
+      Tab(2).Control(5)=   "Check1(22)"
+      Tab(2).Control(6)=   "Check1(19)"
+      Tab(2).Control(7)=   "Check1(26)"
+      Tab(2).Control(8)=   "Check1(27)"
       Tab(2).ControlCount=   9
       TabCaption(3)   =   "Ficheros"
       TabPicture(3)   =   "FrmSeguridad.frx":046E
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "Check1(33)"
-      Tab(3).Control(1)=   "Check1(32)"
-      Tab(3).Control(2)=   "Check1(31)"
-      Tab(3).Control(3)=   "Check1(30)"
-      Tab(3).Control(4)=   "Check1(29)"
-      Tab(3).Control(5)=   "Check1(28)"
-      Tab(3).Control(6)=   "Check1(17)"
-      Tab(3).Control(7)=   "Check1(21)"
-      Tab(3).Control(8)=   "Check1(20)"
-      Tab(3).Control(9)=   "Check1(16)"
-      Tab(3).Control(10)=   "Check1(15)"
-      Tab(3).Control(11)=   "LblInfo(2)"
+      Tab(3).Control(0)=   "LblInfo(2)"
+      Tab(3).Control(1)=   "Check1(15)"
+      Tab(3).Control(2)=   "Check1(16)"
+      Tab(3).Control(3)=   "Check1(20)"
+      Tab(3).Control(4)=   "Check1(21)"
+      Tab(3).Control(5)=   "Check1(17)"
+      Tab(3).Control(6)=   "Check1(28)"
+      Tab(3).Control(7)=   "Check1(29)"
+      Tab(3).Control(8)=   "Check1(30)"
+      Tab(3).Control(9)=   "Check1(31)"
+      Tab(3).Control(10)=   "Check1(32)"
+      Tab(3).Control(11)=   "Check1(33)"
       Tab(3).ControlCount=   12
       TabCaption(4)   =   "Tab 4"
       TabPicture(4)   =   "FrmSeguridad.frx":048A
@@ -934,17 +934,17 @@ Attribute VB_Exposed = False
 Option Explicit
 Private HabiaSeguridad As Boolean
 Private CantidadUsuarios As Integer
-Private QuantumLeap  As Boolean
+Private QuantumLeap As Boolean
 Private QL2 As Boolean
 Private QL3 As Boolean
 '\\\\\\\\\\\\\\\\\\\\\
 '/////////////////////
 Private Sub Form_Load()
-Dim Arch As Integer
-Dim Buf1 As String
-Dim Buf2 As String
+    Dim Arch As Integer
+    Dim Buf1 As String
+    Dim Buf2 As String
     HabiaSeguridad = HaySeguridad
-    
+
     If HayMulti Then
         ChkTienda.Visible = True
         txtTienda.Visible = True
@@ -959,7 +959,7 @@ Dim Buf2 As String
     Arbol.ImageList = Imagenes
     mnuGeneral.Visible = False
     Modo_password (False)
-    If Dir(MiruTa & "\hydplugin.exe") <> "" Then
+    If Dir(Miruta & "\hydplugin.exe") <> "" Then
         Tabla.TabVisible(4) = True
         Tabla.TabCaption(4) = "Plugin"
     Else
@@ -1015,63 +1015,63 @@ Dim Buf2 As String
 End Sub
 
 Private Sub Arbol_Click()
-    Dim Bucle As Integer
+    Dim bucle As Integer
     If QuantumLeap Then Exit Sub
     Refresca_Datos
 End Sub
 Public Sub Desglosa_Permisos(Permisos() As Byte)
-Dim Valor As Integer
-Dim Bucle As Integer
+    Dim Valor As Integer
+    Dim bucle As Integer
     Valor = Permisos(0)
     QL2 = True
-    For Bucle = 0 To 7
-        If (Valor And (2 ^ Bucle)) = 0 Then
-            Check1(Bucle).Value = vbUnchecked
+    For bucle = 0 To 7
+        If (Valor And (2 ^ bucle)) = 0 Then
+            Check1(bucle).Value = vbUnchecked
         Else
-            Check1(Bucle).Value = vbChecked
+            Check1(bucle).Value = vbChecked
         End If
-    Next Bucle
+    Next bucle
     Valor = Permisos(1)
-    For Bucle = 0 To 7
-        If (Valor And (2 ^ Bucle)) = 0 Then
-            Check1(Bucle + 8).Value = vbUnchecked
+    For bucle = 0 To 7
+        If (Valor And (2 ^ bucle)) = 0 Then
+            Check1(bucle + 8).Value = vbUnchecked
         Else
-            Check1(Bucle + 8).Value = vbChecked
+            Check1(bucle + 8).Value = vbChecked
         End If
-    Next Bucle
+    Next bucle
     Valor = Permisos(2)
-    For Bucle = 0 To 7
-        If (Valor And (2 ^ Bucle)) = 0 Then
-            Check1(Bucle + 16).Value = vbUnchecked
+    For bucle = 0 To 7
+        If (Valor And (2 ^ bucle)) = 0 Then
+            Check1(bucle + 16).Value = vbUnchecked
         Else
-            Check1(Bucle + 16).Value = vbChecked
+            Check1(bucle + 16).Value = vbChecked
         End If
-    Next Bucle
+    Next bucle
     Valor = Permisos(3)
-    
-    For Bucle = 0 To 7
-        If (Valor And (2 ^ Bucle)) = 0 Then
-            Check1(Bucle + 24).Value = vbUnchecked
+
+    For bucle = 0 To 7
+        If (Valor And (2 ^ bucle)) = 0 Then
+            Check1(bucle + 24).Value = vbUnchecked
         Else
-            Check1(Bucle + 24).Value = vbChecked
+            Check1(bucle + 24).Value = vbChecked
         End If
-    Next Bucle
+    Next bucle
     Valor = Permisos(4)
-    For Bucle = 0 To 7
-        If (Valor And (2 ^ Bucle)) = 0 Then
-            Check1(Bucle + 32).Value = vbUnchecked
+    For bucle = 0 To 7
+        If (Valor And (2 ^ bucle)) = 0 Then
+            Check1(bucle + 32).Value = vbUnchecked
         Else
-            Check1(Bucle + 32).Value = vbChecked
+            Check1(bucle + 32).Value = vbChecked
         End If
-    Next Bucle
+    Next bucle
     Valor = Permisos(5)
-    For Bucle = 0 To 3
-        If (Valor And (2 ^ Bucle)) = 0 Then
-            Check1(Bucle + 40).Value = vbUnchecked
+    For bucle = 0 To 3
+        If (Valor And (2 ^ bucle)) = 0 Then
+            Check1(bucle + 40).Value = vbUnchecked
         Else
-            Check1(Bucle + 40).Value = vbChecked
+            Check1(bucle + 40).Value = vbChecked
         End If
-    Next Bucle
+    Next bucle
     QL2 = False
 End Sub
 Private Sub Arbol_MouseUp(Button As Integer, Shift As Integer, x As Single, y As Single)
@@ -1089,34 +1089,34 @@ Private Sub Arbol_MouseUp(Button As Integer, Shift As Integer, x As Single, y As
 End Sub
 
 Private Sub BorraUsuario_Click()
-Dim Bucle As Integer
-Dim B2 As Integer
-Dim BufUser() As Tipo_User
-Dim usrAct As Integer
-Dim Inc As Integer
+    Dim bucle As Integer
+    Dim B2 As Integer
+    Dim BufUser() As Tipo_User
+    Dim usrAct As Integer
+    Dim Inc As Integer
     Inc = 0
     ReDim BufUser(CantidadUsuarios)
     usrAct = Arbol.SelectedItem.Index
-    For Bucle = 1 To CantidadUsuarios
-        If Bucle <> usrAct Then
-            BufUser(Bucle - Inc).Nombre = usuarios(Bucle).Nombre
-            BufUser(Bucle - Inc).Password = usuarios(Bucle).Password
+    For bucle = 1 To CantidadUsuarios
+        If bucle <> usrAct Then
+            BufUser(bucle - Inc).Nombre = usuarios(bucle).Nombre
+            BufUser(bucle - Inc).password = usuarios(bucle).password
             For B2 = 0 To 7
-                BufUser(Bucle - Inc).Permisos(B2) = usuarios(Bucle).Permisos(B2)
+                BufUser(bucle - Inc).Permisos(B2) = usuarios(bucle).Permisos(B2)
             Next B2
         Else
             Inc = 1
         End If
-    Next Bucle
+    Next bucle
     CantidadUsuarios = CantidadUsuarios - 1
     ReDim usuarios(CantidadUsuarios)
-    For Bucle = 1 To CantidadUsuarios
-        usuarios(Bucle).Nombre = BufUser(Bucle).Nombre
-        usuarios(Bucle).Password = BufUser(Bucle).Password
+    For bucle = 1 To CantidadUsuarios
+        usuarios(bucle).Nombre = BufUser(bucle).Nombre
+        usuarios(bucle).password = BufUser(bucle).password
         For B2 = 0 To 7
-            usuarios(Bucle).Permisos(B2) = BufUser(Bucle).Permisos(B2)
+            usuarios(bucle).Permisos(B2) = BufUser(bucle).Permisos(B2)
         Next B2
-    Next Bucle
+    Next bucle
     EscribirUsuarios
     CargaUsuarios
     Arbol.Nodes(1).Selected = True
@@ -1126,36 +1126,36 @@ End Sub
 
 Private Sub Check1_Click(Index As Integer)
     Dim UsAct As Integer
-    Dim Bucle As Integer
+    Dim bucle As Integer
     If QL2 Then Exit Sub
     UsAct = Arbol.SelectedItem.Index
-    
+
     usuarios(UsAct).Permisos(0) = Check1(0).Value
-    
-    For Bucle = 1 To 7
-        usuarios(UsAct).Permisos(0) = usuarios(UsAct).Permisos(0) + (2 * Check1(Bucle).Value) ^ Bucle
-    Next Bucle
-    
+
+    For bucle = 1 To 7
+        usuarios(UsAct).Permisos(0) = usuarios(UsAct).Permisos(0) + (2 * Check1(bucle).Value) ^ bucle
+    Next bucle
+
     usuarios(UsAct).Permisos(1) = Check1(8).Value
-    For Bucle = 1 To 7
-        usuarios(UsAct).Permisos(1) = usuarios(UsAct).Permisos(1) + (2 * Check1(Bucle + 8).Value) ^ Bucle
-    Next Bucle
+    For bucle = 1 To 7
+        usuarios(UsAct).Permisos(1) = usuarios(UsAct).Permisos(1) + (2 * Check1(bucle + 8).Value) ^ bucle
+    Next bucle
     usuarios(UsAct).Permisos(2) = Check1(16).Value
-    For Bucle = 1 To 7
-        usuarios(UsAct).Permisos(2) = usuarios(UsAct).Permisos(2) + (2 * Check1(Bucle + 16).Value) ^ Bucle
-    Next Bucle
+    For bucle = 1 To 7
+        usuarios(UsAct).Permisos(2) = usuarios(UsAct).Permisos(2) + (2 * Check1(bucle + 16).Value) ^ bucle
+    Next bucle
     usuarios(UsAct).Permisos(3) = Check1(24).Value
-    For Bucle = 1 To 7
-        usuarios(UsAct).Permisos(3) = usuarios(UsAct).Permisos(3) + (2 * Check1(Bucle + 24).Value) ^ Bucle
-    Next Bucle
+    For bucle = 1 To 7
+        usuarios(UsAct).Permisos(3) = usuarios(UsAct).Permisos(3) + (2 * Check1(bucle + 24).Value) ^ bucle
+    Next bucle
     usuarios(UsAct).Permisos(4) = Check1(32).Value
-    For Bucle = 1 To 7
-        usuarios(UsAct).Permisos(4) = usuarios(UsAct).Permisos(4) + (2 * Check1(Bucle + 32).Value) ^ Bucle
-    Next Bucle
+    For bucle = 1 To 7
+        usuarios(UsAct).Permisos(4) = usuarios(UsAct).Permisos(4) + (2 * Check1(bucle + 32).Value) ^ bucle
+    Next bucle
     usuarios(UsAct).Permisos(5) = Check1(40).Value
-    For Bucle = 1 To 3
-        usuarios(UsAct).Permisos(5) = usuarios(UsAct).Permisos(5) + (2 * Check1(Bucle + 40).Value) ^ Bucle
-    Next Bucle
+    For bucle = 1 To 3
+        usuarios(UsAct).Permisos(5) = usuarios(UsAct).Permisos(5) + (2 * Check1(bucle + 40).Value) ^ bucle
+    Next bucle
     EscribirUsuarios
     Arbol.Nodes(UsAct).Selected = True
 End Sub
@@ -1201,13 +1201,13 @@ Private Sub ChkSeguridad_Click()
     End If
 End Sub
 Private Sub Activa_Seguridad_Multi()
-    '
+'
     Dim MiValor As Integer
     Dim MiValor2 As Integer
     Dim Arch As Integer
     Dim Buf() As String
     Dim BufCont As Integer
-    Dim Bucle As Integer
+    Dim bucle As Integer
     If HayMulti Then
         If Dir(App.Path & "\hydramulti.ini") <> "" Then
             BufCont = 0
@@ -1229,9 +1229,9 @@ Private Sub Activa_Seguridad_Multi()
             Arch = FreeFile()
             Open App.Path & "\hydramulti.ini" For Output As #Arch
             Write #Arch, Encripta(Format(MiValor, "0000") & Format(MiValor2, "0000")), "NEVER EDIT NOR REMOVE THIS LINE"
-            For Bucle = 1 To BufCont - 1
-                Print #Arch, Buf(Bucle)
-            Next Bucle
+            For bucle = 1 To BufCont - 1
+                Print #Arch, Buf(bucle)
+            Next bucle
             Close #Arch
         End If
     End If
@@ -1258,7 +1258,7 @@ Private Sub Cmdaceptar_Click()
         MsgBox CargaCadena(770)  '"Las contraseñas no coinciden", vbCritical
         Exit Sub
     End If
-    usuarios(Arbol.SelectedItem.Index).Password = Trim(TxtPassword(0).TexT)
+    usuarios(Arbol.SelectedItem.Index).password = Trim(TxtPassword(0).TexT)
     EscribirUsuarios
     Modo_password (False)
 End Sub
@@ -1278,7 +1278,7 @@ Private Sub Command1_Click()
 End Sub
 
 Private Sub Command2_Click()
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim Buffer As Integer
     If Trim(TxtNombre.TexT) = "" Then
         MsgBox CargaCadena(771)  '"Nombre no válido"
@@ -1288,17 +1288,17 @@ Private Sub Command2_Click()
         MsgBox CargaCadena(771)  '"Nombre no válido"
         Exit Sub
     End If
-    For Bucle = 1 To CantidadUsuarios
-        If Trim(Arbol.Nodes(Bucle).TexT) = Trim(TxtNombre.TexT) Then
+    For bucle = 1 To CantidadUsuarios
+        If Trim(Arbol.Nodes(bucle).TexT) = Trim(TxtNombre.TexT) Then
             MsgBox CargaCadena(771)  '"Nombre no válido"
             Exit Sub
         End If
-    Next Bucle
+    Next bucle
     usuarios(Arbol.SelectedItem.Index).Nombre = TxtNombre.TexT
     Buffer = Arbol.SelectedItem.Index
-    lblinfo(0).Caption = TxtNombre.TexT
-    lblinfo(1).Caption = TxtNombre.TexT
-    lblinfo(2).Caption = TxtNombre.TexT
+    LblInfo(0).Caption = TxtNombre.TexT
+    LblInfo(1).Caption = TxtNombre.TexT
+    LblInfo(2).Caption = TxtNombre.TexT
     EscribirUsuarios
     CargaUsuarios
     Arbol.Nodes(Buffer).Selected = True
@@ -1306,36 +1306,36 @@ Private Sub Command2_Click()
 End Sub
 
 Private Sub CreaUsuario_Click()
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim cadena As String
     Dim Contador As Integer
-    Dim Encontrado As Boolean
+    Dim eNCONTRADO As Boolean
     Dim MiNodo As Integer
     Contador = 1
     cadena = "user"
-    Do Until Encontrado
-        For Bucle = 1 To Arbol.Nodes.Count
-            If Trim(Arbol.Nodes(Bucle).TexT) = (cadena & Contador) Then
+    Do Until eNCONTRADO
+        For bucle = 1 To Arbol.Nodes.Count
+            If Trim(Arbol.Nodes(bucle).TexT) = (cadena & Contador) Then
                 Contador = Contador + 1
                 Exit For
             End If
-        Next Bucle
-        If Arbol.Nodes.Count < Bucle Then
-            Encontrado = True
+        Next bucle
+        If Arbol.Nodes.Count < bucle Then
+            eNCONTRADO = True
             cadena = cadena & Contador
         End If
     Loop
     QL2 = True
-    For Bucle = 0 To 19
-        Check1(Bucle).Value = vbChecked
-    Next Bucle
+    For bucle = 0 To 19
+        Check1(bucle).Value = vbChecked
+    Next bucle
     QL2 = False
     Arbol.Nodes.Add , tvwChild, cadena, cadena
-    
+
     CantidadUsuarios = CantidadUsuarios + 1
     ReDim Preserve usuarios(CantidadUsuarios + 1)
     usuarios(CantidadUsuarios).Nombre = cadena
-    usuarios(CantidadUsuarios).Password = "drake"
+    usuarios(CantidadUsuarios).password = "drake"
     usuarios(CantidadUsuarios).Permisos(0) = 255
     usuarios(CantidadUsuarios).Permisos(1) = 255
     usuarios(CantidadUsuarios).Permisos(2) = 255
@@ -1356,7 +1356,7 @@ Public Sub EscribirUsuarios()
     Dim B2 As Integer
     Dim MiPerm(4) As Byte
     Dim MiTienda As Byte
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim Bucle2 As Integer
     Archivo = FreeFile
     'Open MiruTa & "\pass.sec" For Output As #Archivo
@@ -1367,17 +1367,17 @@ Public Sub EscribirUsuarios()
     Open App.Path & "\pass.sec" For Binary As #Archivo
     For Bucle2 = 1 To CantidadUsuarios
         Buffer = usuarios(Bucle2).Nombre & Space(8 - Len(usuarios(Bucle2).Nombre))
-        Buffer = Buffer & usuarios(Bucle2).Password & Space(8 - Len(usuarios(Bucle2).Password))
+        Buffer = Buffer & usuarios(Bucle2).password & Space(8 - Len(usuarios(Bucle2).password))
         MiPerm(0) = usuarios(Bucle2).Permisos(0)
         MiPerm(1) = usuarios(Bucle2).Permisos(1)
         MiPerm(2) = usuarios(Bucle2).Permisos(2)
         MiPerm(3) = usuarios(Bucle2).Permisos(3)
         MiPerm(4) = usuarios(Bucle2).Permisos(4)
         MiTienda = usuarios(Bucle2).Permisos(7)
-        
-        
+
+
         Buffer = Buffer & Chr(MiPerm(0)) & Chr(MiPerm(1)) & Chr(MiPerm(2)) _
-        & Chr(MiPerm(3)) & Chr(MiPerm(4)) & Chr(0) & Chr(0) & Chr(MiTienda)
+               & Chr(MiPerm(3)) & Chr(MiPerm(4)) & Chr(0) & Chr(0) & Chr(MiTienda)
         Buffer = Buffer & Format(usuarios(Bucle2).Asociado, "000")
         Buffer = Buffer & Chr(Bucle2)
         calcheck Buffer, MiCheck
@@ -1402,7 +1402,7 @@ Private Sub CambiarIdioma()
     Label2(1).Caption = CargaCadena(756)
     Command2.Caption = CargaCadena(759)
     Command1.Caption = CargaCadena(758)
-    cmdAceptar.Caption = CargaCadena(287)
+    CmdAceptar.Caption = CargaCadena(287)
     CmdCancelar.Caption = CargaCadena(288)
     CmdExit.Caption = CargaCadena(7)
     ChkSeguridad.Caption = CargaCadena(757)
@@ -1451,7 +1451,7 @@ Private Sub Modo_password(Si_o_no As Boolean)
     Label2(1).Visible = Si_o_no
     TxtPassword(0).Visible = Si_o_no
     TxtPassword(1).Visible = Si_o_no
-    cmdAceptar.Visible = Si_o_no
+    CmdAceptar.Visible = Si_o_no
     CmdCancelar.Visible = Si_o_no
     Arbol.Enabled = Not (Si_o_no)
     ChkSeguridad.Enabled = Not (Si_o_no)
@@ -1468,7 +1468,7 @@ Private Sub Form_Unload(Cancel As Integer)
     frmEpelsa.Enabled = True
     If Not HayMulti And HabiaSeguridad <> HaySeguridad Then salir_programa
     Exit Sub
-FIN:
+fin:
 End Sub
 
 
@@ -1501,17 +1501,17 @@ Private Sub TxtNombre_KeyPress(KeyAscii As Integer)
     TxtNombre.Locked = False
     If KeyAscii = 8 Then Exit Sub
     If KeyAscii < 48 Or (KeyAscii > 57 And KeyAscii < 65) _
-    Or (KeyAscii > 90 And KeyAscii < 97) Or KeyAscii > 122 Then
+       Or (KeyAscii > 90 And KeyAscii < 97) Or KeyAscii > 122 Then
         TxtNombre.Locked = True
     End If
 End Sub
 
 
 Private Sub TxtPassword_KeyPress(Index As Integer, KeyAscii As Integer)
-TxtPassword(Index).Locked = False
+    TxtPassword(Index).Locked = False
     If KeyAscii = 8 Then Exit Sub
     If KeyAscii < 48 Or (KeyAscii > 57 And KeyAscii < 65) _
-    Or (KeyAscii > 90 And KeyAscii < 97) Or KeyAscii > 122 Then
+       Or (KeyAscii > 90 And KeyAscii < 97) Or KeyAscii > 122 Then
         TxtPassword(Index).Locked = True
     End If
 End Sub
@@ -1519,11 +1519,11 @@ End Sub
 
 Private Sub TxtTienda_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 57
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case Else
-            KeyAscii = 0
+    Case 48 To 57
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case Else
+        KeyAscii = 0
     End Select
     If KeyAscii >= 48 And KeyAscii <= 57 Then
         If Len(txtTienda.TexT) = 0 Then
@@ -1531,21 +1531,21 @@ Private Sub TxtTienda_KeyPress(KeyAscii As Integer)
         End If
         If Len(txtTienda.TexT) = 2 Then
             If Val((txtTienda.TexT) & Chr(KeyAscii)) <> 999 Then
-            
-            
+
+
                 Select Case Val(left(txtTienda.TexT, 1))
-                    Case 0
-                    Case 1
-                    Case 2
-                        Select Case Val(Right(txtTienda.TexT, 1))
-                            Case 0 To 4
-                            Case 5
-                                If Not (KeyAscii >= 48 And KeyAscii <= 53) Then KeyAscii = 0
-                            Case Else
-                                KeyAscii = 0
-                        End Select
+                Case 0
+                Case 1
+                Case 2
+                    Select Case Val(Right(txtTienda.TexT, 1))
+                    Case 0 To 4
+                    Case 5
+                        If Not (KeyAscii >= 48 And KeyAscii <= 53) Then KeyAscii = 0
                     Case Else
                         KeyAscii = 0
+                    End Select
+                Case Else
+                    KeyAscii = 0
                 End Select
             End If
         End If
@@ -1577,7 +1577,7 @@ End Sub
 '////////////////////////////////////////////////////////////////
 '//////////////////////////////////////////////////////// METODOS
 Private Sub Refresca_Datos()
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Tabla.Tab = 0
     Select Case Arbol.SelectedItem.TexT
     Case "cmdline"
@@ -1625,36 +1625,36 @@ Private Sub Refresca_Datos()
         ChkTienda.Enabled = True
         txtTienda.Enabled = True
     End Select
-    For Bucle = 1 To CantidadUsuarios
-        If Trim(Arbol.SelectedItem.TexT) = Trim(usuarios(Bucle).Nombre) Then
-            TxtNombre.TexT = usuarios(Bucle).Nombre
-            lblinfo(0).Caption = TxtNombre.TexT
-            lblinfo(1).Caption = TxtNombre.TexT
-            lblinfo(2).Caption = TxtNombre.TexT
-            TxtPassword(0).TexT = usuarios(Bucle).Password
-            TxtPassword(1).TexT = usuarios(Bucle).Password
-            If usuarios(Bucle).Asociado = 0 Then
+    For bucle = 1 To CantidadUsuarios
+        If Trim(Arbol.SelectedItem.TexT) = Trim(usuarios(bucle).Nombre) Then
+            TxtNombre.TexT = usuarios(bucle).Nombre
+            LblInfo(0).Caption = TxtNombre.TexT
+            LblInfo(1).Caption = TxtNombre.TexT
+            LblInfo(2).Caption = TxtNombre.TexT
+            TxtPassword(0).TexT = usuarios(bucle).password
+            TxtPassword(1).TexT = usuarios(bucle).password
+            If usuarios(bucle).Asociado = 0 Then
                 ChkAsociar.Value = vbUnchecked
                 TxtMostrador.TexT = "0"
             Else
                 ChkAsociar.Value = vbChecked
-                TxtMostrador.TexT = usuarios(Bucle).Asociado
+                TxtMostrador.TexT = usuarios(bucle).Asociado
             End If
-            If usuarios(Bucle).Permisos(7) = 255 Then
+            If usuarios(bucle).Permisos(7) = 255 Then
                 ChkTienda.Value = vbUnchecked
                 txtTienda.TexT = "0"
             Else
                 ChkTienda.Value = vbChecked
-                
-                If usuarios(Bucle).Permisos(7) = 254 Then
+
+                If usuarios(bucle).Permisos(7) = 254 Then
                     txtTienda.TexT = "999"
                 Else
-                    txtTienda.TexT = (usuarios(Bucle).Permisos(7) + 1)
+                    txtTienda.TexT = (usuarios(bucle).Permisos(7) + 1)
                 End If
             End If
-            Desglosa_Permisos usuarios(Bucle).Permisos
+            Desglosa_Permisos usuarios(bucle).Permisos
         End If
-    Next Bucle
+    Next bucle
 End Sub
 '//////
 '//////
@@ -1681,7 +1681,7 @@ Public Sub CargaUsuarios()
                 CantidadUsuarios = CantidadUsuarios + 1
                 ReDim Preserve usuarios(Contador + 1)
                 usuarios(Contador).Nombre = left(Buffer, 8)
-                usuarios(Contador).Password = Mid(Buffer, 9, 8)
+                usuarios(Contador).password = Mid(Buffer, 9, 8)
                 usuarios(Contador).Asociado = Val(Mid(Buffer, 25, 3))
                 CargaPermisos usuarios(Contador), Buffer
                 If Trim(usuarios(Contador).Nombre) = "admin" Then

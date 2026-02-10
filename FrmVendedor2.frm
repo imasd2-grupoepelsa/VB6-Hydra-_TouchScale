@@ -236,20 +236,20 @@ End Type
 
 
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
     Dim bucle As Integer
     Dim Buffer As String
     Dim Token As Long
-    
+
     CmbMostrador.Enabled = True
     CmbNombre.TexT = ""
     LblInfo.BackColor = vbWhite
     LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
     CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
     If Text1.TexT = "" Then Exit Sub
- 
+
     If CmbMostrador.TexT = "" Then
         If CmbMostrador.ListCount > 0 Then
             CmbMostrador.ListIndex = 0
@@ -257,19 +257,19 @@ Private Sub Refresca_Datos()
     End If
 
     Registro.OpenRecordset _
-    ("select * from vendedor where borrado=false and ident_vend=" & Text1.TexT & " and secc_maqui=" & CStr(Val(CmbMostrador.TexT)))
+            ("select * from vendedor where borrado=false and ident_vend=" & Text1.TexT & " and secc_maqui=" & CStr(Val(CmbMostrador.TexT)))
     With Registro
         If Not .EOF Then
             If .Fields("prog_vend") = "*" Or .Fields("prog_vend") = "-" Then
-#If BALSAM = True Then
-                If Dir(App.Path & "\" & "notecvend") = "" Then
-                    CmbTecla.TexT = .Fields("tec_vend")
-                End If
-#Else
-                If .Fields("tec_vend") > 0 And .Fields("tec_vend") < 31 Then
-                    CmbTecla.TexT = .Fields("tec_vend")
-                End If
-#End If
+                #If BALSAM = True Then
+                    If Dir(App.Path & "\" & "notecvend") = "" Then
+                        CmbTecla.TexT = .Fields("tec_vend")
+                    End If
+                #Else
+                    If .Fields("tec_vend") > 0 And .Fields("tec_vend") < 31 Then
+                        CmbTecla.TexT = .Fields("tec_vend")
+                    End If
+                #End If
             Else
                 CmbMostrador.TexT = 0
             End If
@@ -282,35 +282,35 @@ Private Sub Refresca_Datos()
 
 End Sub
 Private Sub refresca_Nombres()
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
-    
+
     Text1.Clear
-'#If BALSAM = false Then
+    '#If BALSAM = false Then
     Registro.OpenRecordset _
-    ("select distinct(ident_vend) from vendedor where borrado=false order by ident_vend")
-'#Else
-'    Registro.OpenRecordset _
-'    ("select distinct(ident_vend) from vendedor where borrado=false order by ident_vend")
-'#End If
+            ("select distinct(ident_vend) from vendedor where borrado=false order by ident_vend")
+    '#Else
+    '    Registro.OpenRecordset _
+         '    ("select distinct(ident_vend) from vendedor where borrado=false order by ident_vend")
+    '#End If
     With Registro
         If Not .EOF Then
             .MoveFirst
             Do Until .EOF
                 Text1.AddItem .Fields("ident_vend")
-'#If BALSAM = false Then
-'                If .Fields("tec_vend") <> 0 Then
-'                    CmbTecla.AddItem .Fields("TEC_VEND")
-'                Else
-'                    CmbTecla.AddItem .Fields("ident_vend")
-'                End If
-'#End If
-               .Movenext
+                '#If BALSAM = false Then
+                '                If .Fields("tec_vend") <> 0 Then
+                '                    CmbTecla.AddItem .Fields("TEC_VEND")
+                '                Else
+                '                    CmbTecla.AddItem .Fields("ident_vend")
+                '                End If
+                '#End If
+                .Movenext
             Loop
         End If
     End With
-  
+
 End Sub
 
 'Private Sub refresca_teclas()
@@ -320,7 +320,7 @@ End Sub
 '    CmbTeclas.Clear
 '
 '    Registro.OpenRecordset _
-'    ("select distinct(ident_vend) from vendedor where borrado=false order by ident_vend")
+     '    ("select distinct(ident_vend) from vendedor where borrado=false order by ident_vend")
 '    With Registro
 '        If Not .EOF Then
 '            .MoveFirst
@@ -334,20 +334,20 @@ End Sub
 'End Sub
 
 Private Sub Refresca_Mostrador()
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
     Dim Buffer As String
     CmbMostrador.Clear
     Registro.OpenRecordset _
-    ("select distinct secc_maqui,borrado from seccion where (borrado=false and secc_maqui<>0) order by secc_maqui")
+            ("select distinct secc_maqui,borrado from seccion where (borrado=false and secc_maqui<>0) order by secc_maqui")
     With Registro
         If Not .EOF Then
             .MoveFirst
             Do Until .EOF
                 Buffer = ""
                 Reg2.OpenRecordset _
-                ("select codi_ident,secc_maqui from seccion where borrado=false and secc_maqui=" & .Fields("secc_Maqui") & " order by codi_ident")
+                        ("select codi_ident,secc_maqui from seccion where borrado=false and secc_maqui=" & .Fields("secc_Maqui") & " order by codi_ident")
                 With Reg2
                     If Not .EOF Then
                         .MoveFirst
@@ -359,7 +359,7 @@ Private Sub Refresca_Mostrador()
                         CmbMostrador.AddItem Buffer
                     End If
                 End With
-               .Movenext
+                .Movenext
             Loop
         End If
     End With
@@ -386,7 +386,7 @@ Private Sub Text1_LostFocus()
 End Sub
 
 Private Sub Cmdaceptar_Click()
-    
+
     Dim Registro As New RecordNet
     Dim bucle As Long
     Dim Mostradores As TipoMostradores
@@ -395,58 +395,58 @@ Private Sub Cmdaceptar_Click()
     ' *********************
     ' Condiciones de error
     If Text1.TexT = "" Then Exit Sub
-    If CmbMostrador.TexT = "" Or (CmbMostrador.TexT = "0") Then ' And OptAlta(0).Value = True) Then
+    If CmbMostrador.TexT = "" Or (CmbMostrador.TexT = "0") Then    ' And OptAlta(0).Value = True) Then
         MsgBox CargaCadena(559)  '"Introduzca el número de mostrador"
         CmbMostrador.SetFocus
         Exit Sub
     End If
-#If BALSAM = True Then
-    If Dir(App.Path & "\" & "notecvend") = "" Then
-        If CmbTecla.TexT = "" Or (CmbTecla.TexT = "0") Then ' And OptAlta(0).Value = True) Then
-            MsgBox CargaCadena(1377) 'CargaCadena(645)  '"Introduzca Tecla"
+    #If BALSAM = True Then
+        If Dir(App.Path & "\" & "notecvend") = "" Then
+            If CmbTecla.TexT = "" Or (CmbTecla.TexT = "0") Then    ' And OptAlta(0).Value = True) Then
+                MsgBox CargaCadena(1377)    'CargaCadena(645)  '"Introduzca Tecla"
+                CmbTecla.SetFocus
+                Exit Sub
+            End If
+        End If
+    #Else
+        If CmbTecla.TexT = "" Or (CmbTecla.TexT = "0") Then    ' And OptAlta(0).Value = True) Then
+            MsgBox CargaCadena(1377)    'CargaCadena(645)  '"Introduzca Tecla"
             CmbTecla.SetFocus
             Exit Sub
         End If
-    End If
-#Else
-        If CmbTecla.TexT = "" Or (CmbTecla.TexT = "0") Then ' And OptAlta(0).Value = True) Then
-            MsgBox CargaCadena(1377) 'CargaCadena(645)  '"Introduzca Tecla"
-            CmbTecla.SetFocus
-            Exit Sub
-        End If
-#End If
+    #End If
     MiVendedor.seccion = CmbMostrador.TexT  'Mostradores.Mostrador(1)
-        If CmbTecla.TexT = "" Then
+    If CmbTecla.TexT = "" Then
         MiVendedor.tecla = 0
     Else
         MiVendedor.tecla = CmbTecla.TexT
     End If
     MiVendedor.Descripcion = CmbNombre.TexT
     MiVendedor.NVendedor = Text1.TexT
-    
+
     Retorno = Alta_Vendedor(MiVendedor)
     Select Case Retorno
-        Case 0
-            LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos. Envíe Modificaciones"
-            refresca_Nombres
-            'refresca_teclas
-            Refresca_Datos
-        Case 1
-            LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados. Envíe Modificaciones"
-            refresca_Nombres
-            'refresca_teclas
-            Refresca_Datos
-        Case 20, 3
-            MsgBox CargaCadena(1378) 'CargaCadena(182)  '"Tecla ya asignada a otro vendedor"
-            Text1.SetFocus
+    Case 0
+        LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos. Envíe Modificaciones"
+        refresca_Nombres
+        'refresca_teclas
+        Refresca_Datos
+    Case 1
+        LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados. Envíe Modificaciones"
+        refresca_Nombres
+        'refresca_teclas
+        Refresca_Datos
+    Case 20, 3
+        MsgBox CargaCadena(1378)    'CargaCadena(182)  '"Tecla ya asignada a otro vendedor"
+        Text1.SetFocus
     End Select
-    
+
 
 End Sub
 
 Private Sub CmdBorrar_Click()
     Dim Interruptor As Boolean
-    
+
     Dim Registro As New RecordNet
     Dim MiVendedor As DB_Vendedor
     If Text1.TexT = "" Then Exit Sub
@@ -460,9 +460,9 @@ Private Sub CmdBorrar_Click()
 End Sub
 
 Private Sub CmdListado_Click()
-     Me.Enabled = False
-     Aux_Ejecuta "rpvendor", ""
-     Me.Enabled = True
+    Me.Enabled = False
+    Aux_Ejecuta "rpvendor", ""
+    Me.Enabled = True
 End Sub
 
 Private Sub CmdSalir_Click()
@@ -470,7 +470,7 @@ Private Sub CmdSalir_Click()
 End Sub
 
 Private Sub CambiarIdioma()
-    
+
     LblInfo.Caption = CargaCadena(524)
     Label2(3).Caption = CargaCadena(18)
     Label2(0).Caption = CargaCadena(552)
@@ -484,20 +484,20 @@ Private Sub CambiarIdioma()
 End Sub
 Private Sub Form_Load()
     Dim n As Integer
-    
+
     Me.Icon = Form2.Icon
 
-#If BALSAM = True Then
-    CmbTecla.Clear
-    For n = 1 To 9999
-        CmbTecla.AddItem CStr(n)
-    Next n
-#Else
-    CmbTecla.Clear
-    For n = 1 To 30
-        CmbTecla.AddItem CStr(n)
-    Next n
-#End If
+    #If BALSAM = True Then
+        CmbTecla.Clear
+        For n = 1 To 9999
+            CmbTecla.AddItem CStr(n)
+        Next n
+    #Else
+        CmbTecla.Clear
+        For n = 1 To 30
+            CmbTecla.AddItem CStr(n)
+        Next n
+    #End If
 
     CambiarIdioma
     refresca_Nombres
@@ -520,20 +520,20 @@ End Sub
 Private Function Busca_Mostrador(LaCadena As String, elDato As Integer) As Boolean
     Dim Buffer As String
     Dim bucle As Long
-    Dim Encontrado As Boolean
-    Encontrado = False
+    Dim eNCONTRADO As Boolean
+    eNCONTRADO = False
     Buffer = ""
     For bucle = 1 To Len(LaCadena)
         If Mid(LaCadena, bucle, 1) = " " Or bucle = Len(LaCadena) Then
             If bucle = Len(LaCadena) Then Buffer = Buffer & Mid(LaCadena, bucle, 1)
             bucle = bucle + 2
-            If Val(Buffer) = elDato Then Encontrado = True
+            If Val(Buffer) = elDato Then eNCONTRADO = True
             Buffer = ""
         Else
             Buffer = Buffer & Mid(LaCadena, bucle, 1)
         End If
     Next bucle
-    Busca_Mostrador = Encontrado
+    Busca_Mostrador = eNCONTRADO
 End Function
 Private Function Desglosa_mostradores(LaCadena As String) As TipoMostradores
     Dim LosMostradores As TipoMostradores

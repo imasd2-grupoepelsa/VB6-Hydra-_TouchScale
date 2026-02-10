@@ -406,14 +406,14 @@ End Sub
 
 Private Sub CmbCodigo_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case vbKeyBack
-        Case vbKeyDelete
-        Case 48 To 59
-            
-            If Len(CmbCodigo.TexT) >= 5 Then KeyAscii = 0
-        Case Else
-            If KeyAscii = 13 Then TxtNombre.SetFocus
-            KeyAscii = 0
+    Case vbKeyBack
+    Case vbKeyDelete
+    Case 48 To 59
+
+        If Len(CmbCodigo.TexT) >= 5 Then KeyAscii = 0
+    Case Else
+        If KeyAscii = 13 Then TxtNombre.SetFocus
+        KeyAscii = 0
     End Select
 End Sub
 
@@ -426,53 +426,53 @@ Private Sub Command1_Click(Index As Integer)
     Dim bucle As Integer
     Dim MiCli As DB_Cliente
     Select Case Index
-        Case 0
-            If IsNumeric(CmbCodigo.TexT) Then
-                MiCli.codigo = CmbCodigo.TexT
-                MiCli.Nombre = TxtNombre.TexT
-                MiCli.Datos(0) = TxtData(0).TexT 'nif
-                MiCli.Datos(1) = TxtData(1).TexT
-                MiCli.Datos(2) = TxtData(2).TexT
-                MiCli.Datos(3) = TxtData(3).TexT
-                If MaskDescuento.TexT <> "" Then
-                    MiCli.discount = MaskDescuento.TexT
-                Else
-                    MiCli.discount = 0
-                End If
-                If ChkFactura.Value = vbChecked Then
-                    MiCli.factura = True
-                Else
-                    MiCli.factura = False
-                End If
-                Resp = Alta_Clientes(MiCli)
+    Case 0
+        If IsNumeric(CmbCodigo.TexT) Then
+            MiCli.codigo = CmbCodigo.TexT
+            MiCli.Nombre = TxtNombre.TexT
+            MiCli.Datos(0) = TxtData(0).TexT    'nif
+            MiCli.Datos(1) = TxtData(1).TexT
+            MiCli.Datos(2) = TxtData(2).TexT
+            MiCli.Datos(3) = TxtData(3).TexT
+            If MaskDescuento.TexT <> "" Then
+                MiCli.discount = MaskDescuento.TexT
+            Else
+                MiCli.discount = 0
             End If
-        Case 1
-            If IsNumeric(CmbCodigo.TexT) Then
-                Resp = Baja_Clientes(CmbCodigo.TexT)
+            If ChkFactura.Value = vbChecked Then
+                MiCli.factura = True
+            Else
+                MiCli.factura = False
             End If
-        Case 2
-            Unload Me
+            Resp = Alta_Clientes(MiCli)
+        End If
+    Case 1
+        If IsNumeric(CmbCodigo.TexT) Then
+            Resp = Baja_Clientes(CmbCodigo.TexT)
+        End If
+    Case 2
+        Unload Me
     End Select
     If Index = 0 Or Index = 1 Then
         Select Case Resp
-            Case 0
-                
-                LblInfo.Caption = CargaCadena(527)
+        Case 0
+
+            LblInfo.Caption = CargaCadena(527)
+            'Rellena_Datos
+        Case 1
+
+            If Index = 0 Then
+                LblInfo.Caption = CargaCadena(439)
+            Else
+                LblInfo.Caption = CargaCadena(529)
+                TxtNombre.TexT = ""
+                For bucle = 0 To 3
+                    TxtData(bucle).TexT = ""
+                Next bucle
+                ChkFactura.Value = vbUnchecked
+                MaskDescuento.TexT = ""
                 'Rellena_Datos
-            Case 1
-                
-                If Index = 0 Then
-                    LblInfo.Caption = CargaCadena(439)
-                Else
-                    LblInfo.Caption = CargaCadena(529)
-                    TxtNombre.TexT = ""
-                    For bucle = 0 To 3
-                        TxtData(bucle).TexT = ""
-                    Next bucle
-                    ChkFactura.Value = vbUnchecked
-                    MaskDescuento.TexT = ""
-                    'Rellena_Datos
-                End If
+            End If
         End Select
     End If
     Rellena_Datos
@@ -509,16 +509,16 @@ Private Sub Pon_Cliente()
         For bucle = 0 To NClientes - 1
             If MyCliente(bucle).codigo = Val(CmbCodigo.TexT) Then
                 eNCONTRADO = True
-                    TxtNombre.TexT = MyCliente(bucle).Nombre
-                    For B2 = 0 To 3
-                        TxtData(B2).TexT = MyCliente(bucle).Datos(B2)
-                    Next B2
-                    If MyCliente(bucle).factura Then
-                        ChkFactura.Value = vbChecked
-                    Else
-                        ChkFactura.Value = vbUnchecked
-                    End If
-                    MaskDescuento.TexT = MyCliente(bucle).discount
+                TxtNombre.TexT = MyCliente(bucle).Nombre
+                For B2 = 0 To 3
+                    TxtData(B2).TexT = MyCliente(bucle).Datos(B2)
+                Next B2
+                If MyCliente(bucle).factura Then
+                    ChkFactura.Value = vbChecked
+                Else
+                    ChkFactura.Value = vbUnchecked
+                End If
+                MaskDescuento.TexT = MyCliente(bucle).discount
                 Exit For
             End If
         Next bucle
@@ -527,7 +527,7 @@ Private Sub Pon_Cliente()
     End If
     If Not eNCONTRADO Then
         TxtData(2).Enabled = True
-        LblInfo2.Caption = CargaCadena(524) '"Nuevo Dato"
+        LblInfo2.Caption = CargaCadena(524)    '"Nuevo Dato"
         LblInfo2.BackColor = vbWhite
         TxtNombre.TexT = ""
         For bucle = 0 To 3
@@ -535,15 +535,15 @@ Private Sub Pon_Cliente()
         Next bucle
         ChkFactura.Value = vbUnchecked
         MaskDescuento.TexT = ""
-        
+
     Else
-        LblInfo2.Caption = CargaCadena(525) '"Modificación"
+        LblInfo2.Caption = CargaCadena(525)    '"Modificación"
         LblInfo2.BackColor = vbYellow
         TxtData(2).Enabled = False
     End If
 End Sub
 Private Sub Rellena_Datos()
-    
+
     Dim Registro As New RecordNet
     NClientes = 0
     CmbCodigo.Clear
@@ -576,28 +576,28 @@ End Sub
 
 Private Sub TxtData_KeyPress(Index As Integer, KeyAscii As Integer)
     Select Case Index
-        Case 3
-            Select Case KeyAscii
-                Case 13
-                    KeyAscii = 0
-                    Command1(0).SetFocus
-                Case Else
-            End Select
+    Case 3
+        Select Case KeyAscii
+        Case 13
+            KeyAscii = 0
+            Command1(0).SetFocus
         Case Else
-            Select Case KeyAscii
-                Case 13
-                    KeyAscii = 0
-                    TxtData(Index + 1).SetFocus
-                Case Else
-            End Select
+        End Select
+    Case Else
+        Select Case KeyAscii
+        Case 13
+            KeyAscii = 0
+            TxtData(Index + 1).SetFocus
+        Case Else
+        End Select
     End Select
 End Sub
 
 Private Sub TxtNombre_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 13
-            KeyAscii = 0
-            TxtData(0).SetFocus
-        Case Else
+    Case 13
+        KeyAscii = 0
+        TxtData(0).SetFocus
+    Case Else
     End Select
 End Sub

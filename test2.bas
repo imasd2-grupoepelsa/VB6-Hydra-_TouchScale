@@ -46,12 +46,12 @@ Option Explicit
 
 ''Sys call to convert multiple byte chars to a char
 'Private Declare Function MultiByteToWideChar Lib "KERNEL32" ( _
-'    ByVal CodePage As Long, _
-'    ByVal dwFlags As Long, _
-'    ByVal lpMultiByteStr As Long, _
-'    ByVal cchMultiByte As Long, _
-'    ByVal lpWideCharStr As Long, _
-'    ByVal cchWideChar As Long) As Long
+ '    ByVal CodePage As Long, _
+ '    ByVal dwFlags As Long, _
+ '    ByVal lpMultiByteStr As Long, _
+ '    ByVal cchMultiByte As Long, _
+ '    ByVal lpWideCharStr As Long, _
+ '    ByVal cchWideChar As Long) As Long
 
 ''------------------------------------------------------------------
 '' NAME:         DecodeURI (PUBLIC)
@@ -103,7 +103,7 @@ Option Explicit
 '    lDataLength = MultiByteToWideChar(CP_UTF8, 0, VarPtr(UTF8(0)), Length, 0, 0)  ' Get the length of the data.
 '    FromUTF8 = String$(lDataLength, 0)                                         ' Create array big enough
 '    MultiByteToWideChar CP_UTF8, 0, VarPtr(UTF8(0)), _
-'                        Length, StrPtr(FromUTF8), lDataLength                  '
+     '                        Length, StrPtr(FromUTF8), lDataLength                  '
 'End Function
 
 'Private Declare Function GetStringTypeW Lib "kernel32" (ByVal dwInfoType As Long, ByVal lpSrcStr As Long, ByVal cchSrc As Long, lpCharType As Integer) As Long
@@ -171,8 +171,8 @@ Public Function WToA(ByVal st As String, Optional ByVal cpg As Long = -1, Option
     Dim pwz As Long
     Dim pwzBuffer As Long
     Dim lpUsedDefaultChar As Long
-    
-    If cpg = -1 Then cpg = 1253 'GetACP()
+
+    If cpg = -1 Then cpg = 1253    'GetACP()
     pwz = StrPtr(st)
     cwch = WideCharToMultiByte(cpg, lFlags, pwz, -1, 0&, 0&, ByVal 0&, ByVal 0&)
     stBuffer = String$(cwch + 1, vbNullChar)
@@ -187,36 +187,36 @@ End Function
 ' ANSI to UNICODE conversion, via a given codepage.
 '--------------------------------
 Public Function AToW(ByVal st As String, Optional ByVal cpg As Long = -1, Optional lFlags As Long = 0) As String
-Dim stBuffer As String
-Dim cwch As Long
-Dim pwz As Long
-Dim pwzBuffer As Long
-Dim sResp As String
+    Dim stBuffer As String
+    Dim cwch As Long
+    Dim pwz As Long
+    Dim pwzBuffer As Long
+    Dim sResp As String
 
-sResp = ""
+    sResp = ""
 
-'CadenadeLog "st:" & st
+    'CadenadeLog "st:" & st
 
-    If cpg = -1 Then cpg = 1253 'GetACP()
+    If cpg = -1 Then cpg = 1253    'GetACP()
     pwz = StrPtr(st)
     cwch = MultiByteToWideChar(cpg, lFlags, pwz, Len(st), 0&, 0&)
-'CadenadeLog "Respuesta MultiByteToWideChar:" & CStr(cwch)
-'CadenadeLog "como va st:" & st
+    'CadenadeLog "Respuesta MultiByteToWideChar:" & CStr(cwch)
+    'CadenadeLog "como va st:" & st
     stBuffer = String$(cwch * 2, Chr(2))
-'CadenadeLog "a"
+    'CadenadeLog "a"
 
     pwzBuffer = StrPtr(stBuffer)
-'CadenadeLog "b"
+    'CadenadeLog "b"
 
     cwch = MultiByteToWideChar(cpg, lFlags, pwz, Len(st) * 2, pwzBuffer, Len(stBuffer))
-'CadenadeLog "2ºcomo va st:" & st
-'CadenadeLog "2ºRespuesta MultiByteToWideChar:" & CStr(cwch)
-'CadenadeLog "stbuffer:" & stBuffer
+    'CadenadeLog "2ºcomo va st:" & st
+    'CadenadeLog "2ºRespuesta MultiByteToWideChar:" & CStr(cwch)
+    'CadenadeLog "stbuffer:" & stBuffer
     For pwz = 1 To Len(stBuffer) Step 2
-    '    CadenadeLog "asc(" & CStr(pwz) & "):" & Asc(Mid(stBuffer, pwz, 1))
+        '    CadenadeLog "asc(" & CStr(pwz) & "):" & Asc(Mid(stBuffer, pwz, 1))
         sResp = sResp & Mid(stBuffer, pwz, 1)
     Next pwz
-'CadenadeLog sResp
+    'CadenadeLog sResp
 
-    AToW = sResp 'Replace(left$(stBuffer, Len(stBuffer)), Chr(2), "")
+    AToW = sResp    'Replace(left$(stBuffer, Len(stBuffer)), Chr(2), "")
 End Function

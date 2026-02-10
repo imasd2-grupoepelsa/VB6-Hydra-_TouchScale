@@ -1,0 +1,12 @@
+0
+"PLU","Plu",1,4,0
+"COD","Código",5,10,0
+"MOS","Mostrador",11,12,0
+"SUB","Subsección",13,15,0
+"FAM","Familia",16,19,0
+"TLT","Tipo de letra",20,20,0
+"TXT","Texto",21,45,0
+"PRC","Precio",46,52,0
+"WGH","Pesado/No pesado",53,53,0
+"CAD","Caducidad",54,56,0
+"TAR","Tara",57,61,0

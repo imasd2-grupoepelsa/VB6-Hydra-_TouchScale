@@ -79,7 +79,7 @@ Private Sub Command1_Click(Index As Integer)
 End Sub
 
 Public Sub LoadData()
-    Dim Bucle As Long
+    Dim bucle As Long
     Dim B2 As Long
     Dim Buf As String
     SelectedSys = -1
@@ -94,20 +94,20 @@ Public Sub LoadData()
     MUE_Sistemas
     If SisEur.NSistemas > 0 Then
         Combo1.Clear
-        For Bucle = 0 To SisEur.NSistemas - 1
+        For bucle = 0 To SisEur.NSistemas - 1
             Buf = ""
-            For B2 = 0 To SisEur.Sistemas(Bucle).NSecciones - 1
-                Buf = Buf & Str(SisEur.Sistemas(Bucle).Secciones(B2)) & " , "
+            For B2 = 0 To SisEur.Sistemas(bucle).NSecciones - 1
+                Buf = Buf & Str(SisEur.Sistemas(bucle).Secciones(B2)) & " , "
             Next B2
             If Len(Buf) > 3 Then
                 Buf = left(Buf, Len(Buf) - 3)
                 Combo1.AddItem Buf
             End If
-        Next Bucle
+        Next bucle
         If Combo1.ListCount > 0 Then
             Combo1.Enabled = True
             Command1(1).Enabled = True
-            
+
         Else
             Combo1.AddItem "(no system)"
         End If

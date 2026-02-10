@@ -124,7 +124,7 @@ Option Explicit
 '\\\\\\\\\\\\\\
 '//////////////
 Private Sub Form_Load()
-Dim cnt As Long
+    Dim cnt As Long
     With Me
         .Picture = Form2.Imagen.Picture
         For cnt = 0 To 3
@@ -136,21 +136,21 @@ Dim cnt As Long
         'If AhorraMas Then
         '    .lblTexto(1).Caption = .lblTexto(1).Caption & " AH"
         'Else
-            'If Sabeco Then
-            '    .lblTexto(1).Caption = .lblTexto(1).Caption & " SB"
-            'Else
-                'If AHOLD Then
-                '    .lblTexto(1).Caption = .lblTexto(1).Caption & " Dinosol"
-                'Else
-                    'If StoreFlow Then
-                    '    .lblTexto(1).Caption = .lblTexto(1).Caption & " SRV"
-                    'Else
-                    '    If Supeco Then
-                    '        .lblTexto(1).Caption = .lblTexto(1).Caption & " AT"
-                    '    End If
-                    'End If
-                'End If
-            'End If
+        'If Sabeco Then
+        '    .lblTexto(1).Caption = .lblTexto(1).Caption & " SB"
+        'Else
+        'If AHOLD Then
+        '    .lblTexto(1).Caption = .lblTexto(1).Caption & " Dinosol"
+        'Else
+        'If StoreFlow Then
+        '    .lblTexto(1).Caption = .lblTexto(1).Caption & " SRV"
+        'Else
+        '    If Supeco Then
+        '        .lblTexto(1).Caption = .lblTexto(1).Caption & " AT"
+        '    End If
+        'End If
+        'End If
+        'End If
         'End If
         '.lblTexto(2).Visible = True
         '.lblTexto(2).Caption = "epelcom v" & frmControl.Balanza.Version

@@ -921,7 +921,7 @@ Private Sub CambiarIdioma()
     CmdAceptar.Caption = CargaCadena(550)
     CmdBorrar.Caption = CargaCadena(38)
     CmdSalir.Caption = CargaCadena(7)
-   
+
     CmbTipo.AddItem CargaCadena(302)
     CmbTipo.AddItem CargaCadena(303)
     ChkSimultaneo.Caption = CargaCadena(726)
@@ -931,48 +931,48 @@ Private Sub CambiarIdioma()
 
 
     'touchscale Barna
-'Z precio
-'M País
-'W   Peso o unidades(excepto modo Venta/Mixto)
-'F Fabricante
-'(I,i) Importe
-'B   Número de balanza
-'T   Número de tiquet
-'Y   Mostrador
-'P   Número de Plu
-'0..9    Dígitos fijos
-'C   Código de Plu
-'D   Peso /10  (Imprime peso sin último decimal)
-'V   Vendedor
-'K   Check-digit intermedio (posición 7)
-'O   Número de orden
-'J   Importe en moneda del país.(Independiente de la fase Euro)
-'A   Número de línea
-'X   Código de cliente
-'L   Número de lote
-'U   Unidades
-'G   Peso neto antes de merma(solo envasado)
-'Q   Importe sin IVA
-''''''''''''''''''''''''''''''''''''''''
-'1385    W: un dígito de peso
-'1386    Z: un dígito de precio.
-'1387    I: un dígito de importe Total
-'1388    i: un dígito de importe operación
-'1389    T: un dígito de tique
-'1390    P: un dígito de numero de plu
-'1391    C: un dígito del codigo artículo
-'1392    V: un dígito del numero del vendedor
-'1393    N: un dígito número de equipo
-'1394    Y: un dígito del numero de mostrador o sección.
-'1395    J: un digito de Importe Total en moneda nacional.
-'1396    j: un digito de Importe operación en moneda nacional.
-''''''''''''''''''''''''''''''''''''''''
+    'Z precio
+    'M País
+    'W   Peso o unidades(excepto modo Venta/Mixto)
+    'F Fabricante
+    '(I,i) Importe
+    'B   Número de balanza
+    'T   Número de tiquet
+    'Y   Mostrador
+    'P   Número de Plu
+    '0..9    Dígitos fijos
+    'C   Código de Plu
+    'D   Peso /10  (Imprime peso sin último decimal)
+    'V   Vendedor
+    'K   Check-digit intermedio (posición 7)
+    'O   Número de orden
+    'J   Importe en moneda del país.(Independiente de la fase Euro)
+    'A   Número de línea
+    'X   Código de cliente
+    'L   Número de lote
+    'U   Unidades
+    'G   Peso neto antes de merma(solo envasado)
+    'Q   Importe sin IVA
+    ''''''''''''''''''''''''''''''''''''''''
+    '1385    W: un dígito de peso
+    '1386    Z: un dígito de precio.
+    '1387    I: un dígito de importe Total
+    '1388    i: un dígito de importe operación
+    '1389    T: un dígito de tique
+    '1390    P: un dígito de numero de plu
+    '1391    C: un dígito del codigo artículo
+    '1392    V: un dígito del numero del vendedor
+    '1393    N: un dígito número de equipo
+    '1394    Y: un dígito del numero de mostrador o sección.
+    '1395    J: un digito de Importe Total en moneda nacional.
+    '1396    j: un digito de Importe operación en moneda nacional.
+    ''''''''''''''''''''''''''''''''''''''''
     FrmCodBar14.Label3(28).Caption = CargaCadena(1385)
     FrmCodBar14.Label3(27).Caption = CargaCadena(1386)
     FrmCodBar14.Label3(26).Caption = CargaCadena(1387)
-    
+
     FrmCodBar14.Label1.Caption = CargaCadena(1388)
-    
+
     FrmCodBar14.Label3(25).Caption = CargaCadena(1389)
     FrmCodBar14.Label3(24).Caption = CargaCadena(1390)
     FrmCodBar14.Label3(23).Caption = CargaCadena(1391)
@@ -983,7 +983,7 @@ Private Sub CambiarIdioma()
     FrmCodBar14.Label3(14).Caption = CargaCadena(1393)
     FrmCodBar14.Label4.Caption = CargaCadena(1396)
     ''''''''''''''''''
-    
+
 End Sub
 Private Function Desglosa_Codigos(LaCadena As String) As TipoCodigos
     Dim LosCodigos As TipoCodigos
@@ -1010,7 +1010,7 @@ End Function
 
 
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     Dim bucle As Integer
     Dim posicion As Integer
@@ -1025,7 +1025,7 @@ Private Sub Refresca_Datos()
     CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
     If (CmbNumero.TexT = "") And (CmbTipo.ListIndex < 2) Then Exit Sub
     eNCONTRADO = False
-    
+
     Select Case CmbTipo.ListIndex
     Case 0
         bucle = 1
@@ -1035,29 +1035,29 @@ Private Sub Refresca_Datos()
             bucle = bucle + 1
         Loop
         Registro.OpenRecordset _
-        ("select * from gen_sam where baja=false and tipo='cb14' and destino=1 and numero=" & ElCodigo)
-     
+                ("select * from gen_sam where baja=false and tipo='cb14' and destino=1 and numero=" & ElCodigo)
+
     Case 1
         Registro.OpenRecordset _
-        ("select * from gen_sam where baja=false and tipo='cb14' and destino=2 and numero=" & CmbNumero.TexT)
-        
+                ("select * from gen_sam where baja=false and tipo='cb14' and destino=2 and numero=" & CmbNumero.TexT)
+
     End Select
     With Registro
         If Not .EOF Then
             eNCONTRADO = True
-            Text1(0).TexT = .Fields("txt01") '("cb_vnt")
-            Text1(1).TexT = .Fields("txt02") '.Fields("cb_sup")
-            Text1(2).TexT = .Fields("txt03") '.Fields("cb_mix")
-            Text1(3).TexT = .Fields("txt04") '.Fields("cb_ev1")
-            Text1(4).TexT = .Fields("txt05") '.Fields("cb_ev2")
-            Text1(5).TexT = .Fields("txt06") '("cb_vnt")
-            Text1(6).TexT = .Fields("txt07") '.Fields("cb_sup")
-            Text1(7).TexT = .Fields("txt08") '.Fields("cb_mix")
-            Text1(8).TexT = .Fields("txt09") '.Fields("cb_ev1")
-            Text1(9).TexT = .Fields("txt10") '.Fields("cb_ev2")
+            Text1(0).TexT = .Fields("txt01")    '("cb_vnt")
+            Text1(1).TexT = .Fields("txt02")    '.Fields("cb_sup")
+            Text1(2).TexT = .Fields("txt03")    '.Fields("cb_mix")
+            Text1(3).TexT = .Fields("txt04")    '.Fields("cb_ev1")
+            Text1(4).TexT = .Fields("txt05")    '.Fields("cb_ev2")
+            Text1(5).TexT = .Fields("txt06")    '("cb_vnt")
+            Text1(6).TexT = .Fields("txt07")    '.Fields("cb_sup")
+            Text1(7).TexT = .Fields("txt08")    '.Fields("cb_mix")
+            Text1(8).TexT = .Fields("txt09")    '.Fields("cb_ev1")
+            Text1(9).TexT = .Fields("txt10")    '.Fields("cb_ev2")
         End If
     End With
-    
+
 
     If eNCONTRADO Then
         LblInfo.BackColor = vbYellow
@@ -1105,14 +1105,14 @@ Private Sub Ajusta_Visible()
     Dim bucle As Integer
     Dim Deshabilitar As Boolean
     Dim SoyV8 As Boolean
-    
+
     Dim MyNum As TipoCodigos
     Dim Registro As New RecordNet
     CmbNumero.Enabled = True
     If (CmbTipo.ListIndex = 1) And IsNumeric(CmbNumero.TexT) Then
-     
+
         Registro.OpenRecordset ("select * from gen_sam where baja=false and tipo='cb14' and destino=2 and numero=" & CmbNumero.TexT)
-        
+
     End If
     If CmbTipo.ListIndex = 0 Then
         If Trim(CmbNumero.TexT) <> "" Then
@@ -1121,8 +1121,8 @@ Private Sub Ajusta_Visible()
         End If
     End If
     For bucle = 1 To 9
-            Text1(bucle).Visible = True
-            Label3(bucle).Visible = True
+        Text1(bucle).Visible = True
+        Label3(bucle).Visible = True
     Next bucle
     Label3(0).Caption = CargaCadena(721)
     Label3(3).Caption = CargaCadena(724) & " 1"
@@ -1133,13 +1133,13 @@ Private Sub Ajusta_Visible()
     Label3(4).Visible = True
 End Sub
 Private Sub Cmdaceptar_Click()
-    
+
     Dim Registro As New RecordNet
     Dim bucle As Integer
     Dim ElCodigo As TipoCodigos
     Dim MiCodigo As DB_CodigoBarras
     Dim nR As Integer
-    
+
     '******************
     ' Condiciones de Error
     If CmbTipo.ListIndex < 2 Then
@@ -1161,33 +1161,33 @@ Private Sub Cmdaceptar_Click()
         End If
     Next bucle
     '********************
-    
+
     Select Case CmbTipo.ListIndex
-        Case 0
-            ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
-            MiCodigo.Mostrador = ElCodigo.codigo(1)
-            MiCodigo.Equipo = 0
-        Case 1
-            ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
-            Registro.OpenRecordset ("select codi_ident from equipos where borrado=false and numero_eqp=" & _
-            CmbNumero.TexT)
-            MiCodigo.Mostrador = Registro.Fields("codi_ident")
-            MiCodigo.Equipo = CmbNumero.TexT
+    Case 0
+        ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
+        MiCodigo.Mostrador = ElCodigo.codigo(1)
+        MiCodigo.Equipo = 0
+    Case 1
+        ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
+        Registro.OpenRecordset ("select codi_ident from equipos where borrado=false and numero_eqp=" & _
+                                CmbNumero.TexT)
+        MiCodigo.Mostrador = Registro.Fields("codi_ident")
+        MiCodigo.Equipo = CmbNumero.TexT
     End Select
     For bucle = 0 To 9
         MiCodigo.Datos(bucle) = Text1(bucle).TexT
     Next bucle
     nR = Alta_Barras14(MiCodigo)
     Select Case nR
-        Case 0
-            LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos. Envíe Modificaciones"
-        Case 1
-            LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados. Envíe Modificaciones"
+    Case 0
+        LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos. Envíe Modificaciones"
+    Case 1
+        LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados. Envíe Modificaciones"
     End Select
 End Sub
 
 Private Sub CmdBorrar_Click()
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
     Dim bucle As Integer
@@ -1201,17 +1201,17 @@ Private Sub CmdBorrar_Click()
         MiCodigo.Equipo = 0
         MiCodigo.Mostrador = ElCodigo.codigo(1)
     Else
-        
+
         Registro.OpenRecordset ("select codi_ident from equipos where numero_eqp=" & _
-        CmbNumero.TexT & " and borrado=false")
+                                CmbNumero.TexT & " and borrado=false")
         MiCodigo.Mostrador = Registro.Fields("codi_ident")
         MiCodigo.Equipo = ElCodigo.codigo(1)
-        
+
     End If
     If Baja_Barras14(MiCodigo) = 0 Then
-        
+
         LblInfo2.Caption = CargaCadena(556)  '"Datos Eliminados.Envíe Modificaciones"
-        
+
     End If
     If CmbTipo.TexT = CmbTipo.List(0) Then
         Aux_Refresca_Mostradores CmbNumero
@@ -1219,7 +1219,7 @@ Private Sub CmdBorrar_Click()
         Aux_Refresca_equipos CmbNumero
     End If
     Refresca_Datos
-    
+
 End Sub
 
 Private Sub CmdCopiar_Click()
@@ -1230,7 +1230,7 @@ Private Sub CmdCopiar_Click()
 End Sub
 
 Private Sub cmdpegar_click()
-Dim bucle As Integer
+    Dim bucle As Integer
     For bucle = 0 To 9
         Text1(bucle).TexT = Portapapeles(bucle)
     Next bucle
@@ -1270,21 +1270,21 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
-LockBase = False
-frmEpelsa.Enabled = True
-'If SoyMaster Or SoyReserva Then
-'        Me.Enabled = False
-'        MS_EnviaBaseRemota
-'        Me.Enabled = True
-'End If
+    LockBase = False
+    frmEpelsa.Enabled = True
+    'If SoyMaster Or SoyReserva Then
+    '        Me.Enabled = False
+    '        MS_EnviaBaseRemota
+    '        Me.Enabled = True
+    'End If
 
 End Sub
 
 Private Sub Text1_Change(Index As Integer)
-If ChkSimultaneo.Value = vbChecked Then
+    If ChkSimultaneo.Value = vbChecked Then
         If Index < 5 Then
             Text1(Index + 5).TexT = Text1(Index).TexT
-        
+
         End If
     End If
 End Sub
@@ -1312,14 +1312,14 @@ Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
     'If Dir(App.Path & "\digitonuba.txt") <> "" Then
     '    Matriz = "SWZITPCVALFMXDNYQJUKOGR"
     'Else
-        'Matriz = "SWZITPCVALFMXDNYQJUKOG"
-        'Matriz = "ZWIiTPCVOALGMFBYDKJjXUQ"
-        Matriz = "ZWIiTPCVYJjN"
+    'Matriz = "SWZITPCVALFMXDNYQJUKOG"
+    'Matriz = "ZWIiTPCVOALGMFBYDKJjXUQ"
+    Matriz = "ZWIiTPCVYJjN"
     'End If
     'Text1(Index).Locked = True
     Text1(Index).Locked = False
     If KeyAscii = 8 Then Exit Sub
-    
+
     If Len(Text1(Index).TexT) >= 13 Then
         Text1(Index).Locked = True
         Exit Sub
@@ -1329,7 +1329,7 @@ Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
         Conforme = True
     Else
         'If KeyAscii >= 97 And KeyAscii <= 122 Then KeyAscii = KeyAscii - 32
-    
+
         For bucle = 1 To Len(Matriz)
             If Mid(Matriz, bucle, 1) = Chr(KeyAscii) Then
                 Conforme = True
@@ -1339,8 +1339,8 @@ Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
     If Not Conforme Then
         Text1(Index).Locked = True
     End If
-    
-    
+
+
 End Sub
 
 Private Sub Text1_LostFocus(Index As Integer)
@@ -1352,11 +1352,11 @@ Private Sub Text1_LostFocus(Index As Integer)
 End Sub
 
 Private Function Alta_Barras14(MiCabecera As DB_CodigoBarras) As Integer
-Dim myRs As DAO.Recordset
-Dim myB As DAO.Database
-Dim Resp As Integer
-Dim Dest As Integer
-Dim numero As Integer
+    Dim myRs As dao.Recordset
+    Dim myB As dao.Database
+    Dim Resp As Integer
+    Dim Dest As Integer
+    Dim numero As Integer
     Set myB = AbrirBase
     If MiCabecera.Equipo = 0 Then
         Set myRs = myB.OpenRecordset("select * from gen_sam where tipo='cb14' and destino=1 and numero=" & CStr(MiCabecera.Mostrador) & " and baja=false")
@@ -1395,18 +1395,18 @@ Dim numero As Integer
     Set myRs = Nothing
     CerrarBase myB
     Set myB = Nothing
-    
+
     Alta_Barras14 = Resp
 End Function
 
 'Baja_Cabeceras
 Private Function Baja_Barras14(MiCabecera As DB_CodigoBarras) As Integer
-Dim myRs As DAO.Recordset
-Dim myB As DAO.Database
-Dim Resp As Integer
-Dim Dest As Integer
-Dim numero As Integer
-Dim cm As String
+    Dim myRs As dao.Recordset
+    Dim myB As dao.Database
+    Dim Resp As Integer
+    Dim Dest As Integer
+    Dim numero As Integer
+    Dim cm As String
     Set myB = AbrirBase
     If MiCabecera.Equipo = 0 Then
         Set myRs = myB.OpenRecordset("select * from gen_sam where tipo='cb14' and destino=1 and numero=" & CStr(MiCabecera.Mostrador) & " and baja=false")
@@ -1423,7 +1423,7 @@ Dim cm As String
         myRs.Fields("tran_txt") = " "
         myRs.Update
     End If
-    
+
     Baja_Barras14 = Resp
 End Function
 

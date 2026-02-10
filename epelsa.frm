@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{65E121D4-0C60-11D2-A9FC-0000F8754DA1}#2.0#0"; "mschrt20.ocx"
+Object = "{65E121D4-0C60-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCHRT20.OCX"
 Begin VB.Form frmEpelsa 
    AutoRedraw      =   -1  'True
    BackColor       =   &H00000000&
@@ -1005,8 +1005,8 @@ Option Explicit
 'Private Declare Function CreateEllipticRgn Lib "gdi32" (ByVal X1 As Long, ByVal Y1 As Long, ByVal X2 As Long, ByVal Y2 As Long) As Long
 'Private Declare Function SetWindowRgn Lib "user32" (ByVal hwnd As Long, ByVal hRgn As Long, ByVal bRedraw As Long) As Long
 'Private Declare Function SetWindowPos Lib "user32" _
-'         (ByVal hwnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, _
-'          ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
+ '         (ByVal hwnd As Long, ByVal hWndInsertAfter As Long, ByVal X As Long, ByVal Y As Long, _
+ '          ByVal cx As Long, ByVal cy As Long, ByVal wFlags As Long) As Long
 'Const HWND_TOPMOST = -1
 'Const SWP_NOMOVE = &H2
 'Const SWP_NOSIZE = &H1
@@ -1034,7 +1034,7 @@ Private QLResize As Boolean
 #Const BALSAM = False
 
 Private Sub CambiarIdioma()
-    'mnuSubSec.Caption = CargaCadena(677)
+'mnuSubSec.Caption = CargaCadena(677)
     mnuFamilias.Caption = CargaCadena(678)
     mnuEnvioCLientes.Caption = CargaCadena(225) & " " & CargaCadena(1056)
     KillTec.Caption = CargaCadena(1454)
@@ -1055,16 +1055,16 @@ Private Sub CambiarIdioma()
     CmdTienda(1).Caption = CargaCadena(678)
     CmdTienda(2).Caption = CargaCadena(13)
     CmdTienda(3).Caption = CargaCadena(12)
-    CmdTienda(4).Caption = CargaCadena(81) 'CargaCadena(24)
+    CmdTienda(4).Caption = CargaCadena(81)    'CargaCadena(24)
     CmdTienda(5).Caption = CargaCadena(214)
     CmdTienda(6).Caption = CargaCadena(1056)
     CmdTienda(7).Caption = CargaCadena(23)
-    
+
     CmdTienda(8).Caption = CargaCadena(1397)
     CmdTienda(9).Caption = CargaCadena(1398)
-    
+
     CmdComunicaciones(0).Caption = CargaCadena(151)
-    CmdComunicaciones(1).Caption = CargaCadena(1030) 'CargaCadena( 161)
+    CmdComunicaciones(1).Caption = CargaCadena(1030)    'CargaCadena( 161)
     CmdComunicaciones(2).Caption = CargaCadena(204)
     CmdComunicaciones(3).Caption = CargaCadena(704)
     CmdTotales(0).Caption = CargaCadena(153)
@@ -1087,7 +1087,7 @@ Private Sub CambiarIdioma()
     mnuArticulos.Caption = CargaCadena(12)  ' "Articulos"
     mnuCambioPrecio.Caption = CargaCadena(24)  ' "Cambios de Precio"
     mnuVendedores.Caption = CargaCadena(25)  ' "Vendedores"
-    mnuTeclas.Caption = CargaCadena(1397) 'CargaCadena(22)  ' "Teclas de balanza" 'revisar texto
+    mnuTeclas.Caption = CargaCadena(1397)    'CargaCadena(22)  ' "Teclas de balanza" 'revisar texto
     mnuCbarras.Caption = CargaCadena(23)  ' "Codigos de barras"
     mnuCerrarSesion.Caption = CargaCadena(26)  ' "Cerrar Sesión"
     mnuSalir.Caption = CargaCadena(7)  ' "Salir"
@@ -1095,7 +1095,7 @@ Private Sub CambiarIdioma()
     mnutotalsec.Caption = CargaCadena(153)  ' "Total por Sección"
     mnutotalarticulos.Caption = CargaCadena(156)  ' "Total por Articulos"
     mnutotalvendedores.Caption = CargaCadena(157)  ' "Total por Vendedores"
-    mnuInformeVen.Caption = CargaCadena(1239) ' "Informe total por Vendedores"
+    mnuInformeVen.Caption = CargaCadena(1239)    ' "Informe total por Vendedores"
     MnuBaseVacuno.Caption = CargaCadena(642)  ' "Total Fichas de Vacuno"
     'mnutotalgeneral.Caption = CargaCadena(115)  ' "Total Diario/Acumulado"
     mnumantener.Caption = CargaCadena(282)  ' "Mantenimiento"
@@ -1119,13 +1119,13 @@ Private Sub CambiarIdioma()
     mnuModSeparado.Caption = CargaCadena(809)  ' "Envío de Modificaciones por separado"
     'mnuModSec.Caption = CargaCadena(679) & CargaCadena(9)   ' "Modificaciones de Secciones"
     'mnuModSub.Caption = CargaCadena(679) & CargaCadena(677)   ' "Modificaciones de Subsecciones"
-'    mnuModFam.Caption = CargaCadena(679) & CargaCadena(678)   ' "Modificaciones de Familias"
-'    mnuModEqp.Caption = CargaCadena(679) & CargaCadena(11)   ' "Modificaciones de Equipos"
+    '    mnuModFam.Caption = CargaCadena(679) & CargaCadena(678)   ' "Modificaciones de Familias"
+    '    mnuModEqp.Caption = CargaCadena(679) & CargaCadena(11)   ' "Modificaciones de Equipos"
     mnuModPais.Caption = CargaCadena(679) & CargaCadena(212)   ' "Modificaciones de Países"
     mnuModFichas.Caption = CargaCadena(679) & CargaCadena(619)   ' "Modificaciones de Fichas de Vacuno"
     mnuModIVA.Caption = CargaCadena(679) & CargaCadena(8)   ' "Modificaciones de tipos de IVA"
     mnuModArt.Caption = CargaCadena(679) & CargaCadena(12)   ' "Modificaciones de Artículos"
-'    mnuModPubli.Caption = CargaCadena(679) & CargaCadena(14)   ' "Modificaciones de Publicidad/Ofertas"
+    '    mnuModPubli.Caption = CargaCadena(679) & CargaCadena(14)   ' "Modificaciones de Publicidad/Ofertas"
     'menuModCabley.Caption = CargaCadena(679) & CargaCadena(21)   ' "Modificaciones de Cabeceras/Leyendas"
     mnuModCodBar.Caption = CargaCadena(679) & CargaCadena(23)   ' "Modificaciones de Códigos de Barras"
     mnuModVend.Caption = CargaCadena(679) & CargaCadena(13)   ' "Modificaciones de Vendedores"
@@ -1137,8 +1137,8 @@ Private Sub CambiarIdioma()
     mnuhistorico(1).Caption = CargaCadena(691)  ' "Historico desde base de datos"
     rechazos.Caption = CargaCadena(688) & " " & CargaCadena(689)   ' "Listado rechazos"
     mnuListadoCambiosPrecio.Caption = CargaCadena(688) & " " & CargaCadena(24)   ' "Listado Cambios de Precio"
-'    mnuconectar_ventas.Caption = CargaCadena(247)  ' "Conectar Ventas"
-'    mnudesconectar_ventas.Caption = CargaCadena(248)  ' "Desconectar Ventas"
+    '    mnuconectar_ventas.Caption = CargaCadena(247)  ' "Conectar Ventas"
+    '    mnudesconectar_ventas.Caption = CargaCadena(248)  ' "Desconectar Ventas"
     mnuBorrado_totales.Caption = CargaCadena(237)  ' "Borrados"
     BorradoGeneral(0).Caption = CargaCadena(238)  ' "Borrar Todo"
     BorradoGeneral(1).Caption = CargaCadena(38) & " " & CargaCadena(9)   ' "Borrar Mostradores"
@@ -1158,7 +1158,7 @@ Private Sub CambiarIdioma()
     mnuseuridad.Caption = CargaCadena(684)  ' "Configuración de Seguridad"
     mnucdmlibres.Caption = CargaCadena(605)  ' "Comandos Libres"
     mnuHelpAbout.Caption = CargaCadena(296)  ' "Acerca de ..."
-    Me.mnuInformeDes.Caption = CargaCadena(1281) ' "Acerca de ..."
+    Me.mnuInformeDes.Caption = CargaCadena(1281)    ' "Acerca de ..."
     mnuTe.Caption = CargaCadena(1398)
     mnuTrade.Caption = CargaCadena(1399)
     mnuTextLibre.Caption = CargaCadena(215)
@@ -1167,102 +1167,102 @@ Private Sub CambiarIdioma()
 End Sub
 
 Private Sub BorradoGeneral_Click(Index As Integer)
-        Dim Resp1
-        Dim Resp2
-        If HaySeguridad Then
-            If ConsultarPermiso(19) = False Then
-                MsgBox CargaCadena(693), vbCritical
-                Exit Sub
-            End If
+    Dim Resp1
+    Dim Resp2
+    If HaySeguridad Then
+        If ConsultarPermiso(19) = False Then
+            MsgBox CargaCadena(693), vbCritical
+            Exit Sub
         End If
-        Resp1 = MsgBox(CargaCadena(694), vbYesNoCancel + vbQuestion)
-        If Resp1 = vbCancel Then Exit Sub
-        If Resp1 = vbYes Then
-            Resp2 = MsgBox(CargaCadena(695), vbOKCancel + vbExclamation)
-            If Resp2 = vbOK Then AN_BorrarBases Index, True
-        Else
-            Resp2 = MsgBox(CargaCadena(696), vbOKCancel + vbExclamation)
-            If Resp2 = vbOK Then AN_BorrarBases Index, False
-        End If
+    End If
+    Resp1 = MsgBox(CargaCadena(694), vbYesNoCancel + vbQuestion)
+    If Resp1 = vbCancel Then Exit Sub
+    If Resp1 = vbYes Then
+        Resp2 = MsgBox(CargaCadena(695), vbOKCancel + vbExclamation)
+        If Resp2 = vbOK Then AN_BorrarBases Index, True
+    Else
+        Resp2 = MsgBox(CargaCadena(696), vbOKCancel + vbExclamation)
+        If Resp2 = vbOK Then AN_BorrarBases Index, False
+    End If
 End Sub
 '******
 '******
 '******
 Private Sub CmdComunicaciones_Click(Index As Integer)
-Dim Arch As Integer
-Dim Resp As Long
+    Dim Arch As Integer
+    Dim Resp As Long
 
     lCogeTiquet = False
     Select Case Index
-        Case 0
-            If HaySeguridad Then
-                If ConsultarPermiso(13) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+    Case 0
+        If HaySeguridad Then
+            If ConsultarPermiso(13) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-            mnuEnvio_modificaciones_Click
+        End If
+        mnuEnvio_modificaciones_Click
+    Case 1
+        If HaySeguridad Then
+            If ConsultarPermiso(14) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
+            End If
+        End If
+        If Not Supeco Then
+            mnuRecibeTiquet_Click
+        Else
+            Resp = MsgBox(CargaCadena(1013), vbYesNo + vbDefaultButton2 + vbExclamation)
+            If Resp = vbYes Then mnuGrandes_totales_Click
+        End If
+    Case 2
+        If HaySeguridad Then
+            If ConsultarPermiso(12) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
+            End If
+        End If
+        mnuBaseMaestra_Click
+    Case 3
+        If PausaTiquets = False Then
+            PausaTiquets = True
+            CmdComunicaciones(3).Enabled = False
+            CmdComunicaciones(3).Caption = CargaCadena(273)
+            canCelar = 1
+            On Error Resume Next
+            Arch = FreeFile()
+            Open App.Path & "\cancel.tqt" For Output As #Arch
+            Close #Arch
+            On Error GoTo 0
+            'c2f 1.7.2
+            frmEpelsa.HabilitarMenues
+            '''''''''''''''''''''''''
+        Else
+            PausaTiquets = False
+            BloquearMenues
+            CmdComunicaciones(3).Caption = CargaCadena(704)
+            'c2f 1.7.2
+            CmdComunicaciones(3).Enabled = True
+            frmControl.timetqt.Enabled = True
+            '''''''''''''''''''''''''''''''''
+        End If
+    Case 4
+        Select Case TqStatus
         Case 1
-            If HaySeguridad Then
-                If ConsultarPermiso(14) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
-            End If
-            If Not Supeco Then
-                mnuRecibeTiquet_Click
-            Else
-                Resp = MsgBox(CargaCadena(1013), vbYesNo + vbDefaultButton2 + vbExclamation)
-                If Resp = vbYes Then mnuGrandes_totales_Click
-            End If
+            frmControl.ControlImport1.CancelarImportacion
         Case 2
-            If HaySeguridad Then
-                If ConsultarPermiso(12) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
-            End If
-            mnuBaseMaestra_Click
-        Case 3
-            If PausaTiquets = False Then
-                PausaTiquets = True
-                CmdComunicaciones(3).Enabled = False
-                CmdComunicaciones(3).Caption = CargaCadena(273)
-                canCelar = 1
-                On Error Resume Next
-                Arch = FreeFile()
-                Open App.Path & "\cancel.tqt" For Output As #Arch
-                Close #Arch
-                On Error GoTo 0
-                'c2f 1.7.2
-                frmEpelsa.HabilitarMenues
-                '''''''''''''''''''''''''
-            Else
-                PausaTiquets = False
-                BloquearMenues
-                CmdComunicaciones(3).Caption = CargaCadena(704)
-                'c2f 1.7.2
-                CmdComunicaciones(3).Enabled = True
-                frmControl.timetqt.Enabled = True
-                '''''''''''''''''''''''''''''''''
-            End If
-        Case 4
-            Select Case TqStatus
-                Case 1
-                    frmControl.ControlImport1.CancelarImportacion
-                Case 2
-                    canCelar = 1
-            End Select
-        Case 5
-            frmEpelsa.Enabled = False
+            canCelar = 1
+        End Select
+    Case 5
+        frmEpelsa.Enabled = False
 
-            CmdComunicaciones(5).Visible = False
-            frmEpelsa.Enabled = True
-            
-        Case 6 'digitonuba entrada modo inventario
-            
+        CmdComunicaciones(5).Visible = False
+        frmEpelsa.Enabled = True
+
+    Case 6    'digitonuba entrada modo inventario
+
     End Select
-    
+
     'c2f/caspiunza **
     On Error Resume Next
     If Trim(Command) = "" Then
@@ -1270,7 +1270,7 @@ Dim Resp As Long
     End If
     On Error GoTo 0
     '''''''''''''''
-    
+
     lCogeTiquet = True
 End Sub
 Public Sub BloquearMenues()
@@ -1287,7 +1287,7 @@ Public Sub BloquearMenues()
     'frmEpelsa.mnuCambioDirecto.Enabled = False
     mnuPlugin.Enabled = False
     CmdTienda(4).Enabled = False
-    
+
 End Sub
 Public Sub HabilitarMenues()
     If StoreFlow Then Exit Sub
@@ -1328,7 +1328,7 @@ Private Sub cmdlibre_Click(Index As Integer)
         Do_Events
     Loop
     PlugActivo = False
-Exit Sub
+    Exit Sub
 errorcomando:
     MsgBox CargaCadena(383), vbCritical
 End Sub
@@ -1339,70 +1339,70 @@ End Sub
 
 Private Sub CmdTienda_Click(Index As Integer)
     Select Case Index
-        Case 0
-            If HaySeguridad Then
-                If ConsultarPermiso(0) = False Then
+    Case 0
+        If HaySeguridad Then
+            If ConsultarPermiso(0) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
+            End If
+        End If
+        MostrarModal FrmSeccionyMaquina
+    Case 1
+        If HaySeguridad Then
+            If ConsultarPermiso(0) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
+            End If
+        End If
+        MostrarModal FrmFamilias    ' 'FrmFamilias
+    Case 2
+        If HaySeguridad Then
+            If ConsultarPermiso(9) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
+            End If
+        End If
+        MostrarModal FrmVendedor2
+    Case 3
+        'artículos...
+        If HaySeguridad Then
+            If ConsultarPermiso(1) = False Then
+                If ConsultarPermiso(24) = False Then
                     MsgBox CargaCadena(693), vbCritical
                     Exit Sub
                 End If
             End If
-            MostrarModal FrmSeccionyMaquina
-        Case 1
-            If HaySeguridad Then
-                If ConsultarPermiso(0) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+        End If
+        MostrarModal FrmArticulo2
+        ''''''''''''''''
+        'If HaySeguridad Then
+        '    If ConsultarPermiso(2) = False Then
+        '        MsgBox CargaCadena(693), vbCritical
+        '        Exit Sub
+        '    End If
+        'End If
+        'lCogeTiquet = False
+        'MostrarModal FrmCambioRapido
+    Case 4
+        'cambios de precio...
+        If HaySeguridad Then
+            If ConsultarPermiso(2) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-            MostrarModal FrmFamilias ' 'FrmFamilias
-        Case 2
-            If HaySeguridad Then
-                If ConsultarPermiso(9) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+        End If
+        'textart MostrarModal FrmCambiosPrecio
+        MostrarModal FrmArtText
+        '''''''''''''''''''''
+    Case 5
+        If HaySeguridad Then
+            If ConsultarPermiso(5) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-            MostrarModal FrmVendedor2
-        Case 3
-            'artículos...
-            If HaySeguridad Then
-                If ConsultarPermiso(1) = False Then
-                    If ConsultarPermiso(24) = False Then
-                        MsgBox CargaCadena(693), vbCritical
-                        Exit Sub
-                    End If
-                End If
-            End If
-            MostrarModal FrmArticulo2
-            ''''''''''''''''
-            'If HaySeguridad Then
-            '    If ConsultarPermiso(2) = False Then
-            '        MsgBox CargaCadena(693), vbCritical
-            '        Exit Sub
-            '    End If
-            'End If
-            'lCogeTiquet = False
-            'MostrarModal FrmCambioRapido
-        Case 4
-            'cambios de precio...
-            If HaySeguridad Then
-                If ConsultarPermiso(2) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
-            End If
-            'textart MostrarModal FrmCambiosPrecio
-            MostrarModal FrmArtText
-            '''''''''''''''''''''
-        Case 5
-            If HaySeguridad Then
-                If ConsultarPermiso(5) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
-            End If
-            MostrarModal FrmIVA
-        
+        End If
+        MostrarModal FrmIVA
+
         '    If HaySeguridad Then
         '        If ConsultarPermiso(6) = False Then
         '            MsgBox CargaCadena(693), vbCritical
@@ -1410,14 +1410,14 @@ Private Sub CmdTienda_Click(Index As Integer)
         '        End If
         '    End If
         '    MostrarModal FrmCabley2
-        Case 6
-            If HaySeguridad Then
-                If ConsultarPermiso(6) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+    Case 6
+        If HaySeguridad Then
+            If ConsultarPermiso(6) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-            MostrarModal FrmClientes
+        End If
+        MostrarModal FrmClientes
         '    If HaySeguridad Then
         '        If ConsultarPermiso(8) = False Then
         '            MsgBox CargaCadena(693), vbCritical
@@ -1425,15 +1425,15 @@ Private Sub CmdTienda_Click(Index As Integer)
         '        End If
         '    End If
         '    MostrarModal FrmPublicidad2
-        Case 7
-            'códigos de barras...
-            If HaySeguridad Then
-                If ConsultarPermiso(7) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+    Case 7
+        'códigos de barras...
+        If HaySeguridad Then
+            If ConsultarPermiso(7) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-#If BALSAM = True Then
+        End If
+        #If BALSAM = True Then
             Dim message, title, defaultValue As String
             Dim myValue As String
             ' Set prompt.
@@ -1441,69 +1441,69 @@ Private Sub CmdTienda_Click(Index As Integer)
             ' Set title.
             title = "Tipo Código de Barras"
             defaultValue = "1"   ' Set default value.
-            
+
             ' Display message, title, and default value.
             myValue = InputBox(message, title, defaultValue)
             ' If user has clicked Cancel, set myValue to defaultValue
             If myValue = "" Then myValue = defaultValue
-            
+
             Select Case myValue
             Case "1"
-            MostrarModal FrmCodBar2
+                MostrarModal FrmCodBar2
             Case "2"
-            MostrarModal FrmCodBar14
+                MostrarModal FrmCodBar14
             Case "3"
-            MostrarModal FrmEan128
+                MostrarModal FrmEan128
             Case "4"
-            MostrarModal FrmEanCod
+                MostrarModal FrmEanCod
             Case "5"
-            MostrarModal FrmEanGs1
-            
+                MostrarModal FrmEanGs1
+
             End Select
-            
-#Else
+
+        #Else
             MostrarModal FrmCodBar2
             '''''''''''''''''''''
-#End If
-        Case 8
-            If HaySeguridad Then
-                If ConsultarPermiso(10) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+        #End If
+    Case 8
+        If HaySeguridad Then
+            If ConsultarPermiso(10) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-            If Dir(App.Path & "\test.tst") <> "" Then
-                MostrarModal FrmOrdTec
-            Else
-                MostrarModal FrmTeclas2T
+        End If
+        If Dir(App.Path & "\test.tst") <> "" Then
+            MostrarModal FrmOrdTec
+        Else
+            MostrarModal FrmTeclas2T
+        End If
+    Case 9
+        If HaySeguridad Then
+            If ConsultarPermiso(10) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-        Case 9
-            If HaySeguridad Then
-                If ConsultarPermiso(10) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
+        End If
+        If Dir(App.Path & "\test.tst") <> "" Then
+            MsgBox "Se ha seleccionado un modo de trabajo que no permite esta opción...", vbExclamation
+        Else
+            MostrarModal FrmTeclas2TE
+        End If
+    Case 10
+        If HaySeguridad Then
+            If ConsultarPermiso(9) = False Then
+                MsgBox CargaCadena(693), vbCritical
+                Exit Sub
             End If
-            If Dir(App.Path & "\test.tst") <> "" Then
-                MsgBox "Se ha seleccionado un modo de trabajo que no permite esta opción...", vbExclamation
-            Else
-                MostrarModal FrmTeclas2TE
-            End If
-        Case 10
-            If HaySeguridad Then
-                If ConsultarPermiso(9) = False Then
-                    MsgBox CargaCadena(693), vbCritical
-                    Exit Sub
-                End If
-            End If
-            MostrarModal FrmDatosTique
-            
+        End If
+        MostrarModal FrmDatosTique
+
     End Select
 End Sub
 
 
 Private Sub CmdTotales_Click(Index As Integer)
-    
+
 'prueba leclerc quitar
 'Dim n As Integer
 'n = fVerLeclerc()
@@ -1516,12 +1516,12 @@ Private Sub CmdTotales_Click(Index As Integer)
     End If
     lCogeTiquet = False
     Select Case Index
-        Case 0
-            mnutotalsec_Click
-        Case 1
-            mnutotalarticulos_Click
-        Case 2
-            mnutotalvendedores_Click
+    Case 0
+        mnutotalsec_Click
+    Case 1
+        mnutotalarticulos_Click
+    Case 2
+        mnutotalvendedores_Click
     End Select
     lCogeTiquet = True
 End Sub
@@ -1575,13 +1575,13 @@ Private Sub exportarttodos_Click()
 End Sub
 
 Private Sub Form_Activate()
-Dim a
-a = a
+    Dim a
+    a = a
 End Sub
 
 Private Sub Form_Click()
-Dim a
-a = a
+    Dim a
+    a = a
 End Sub
 
 Private Sub Form_DblClick()
@@ -1598,8 +1598,8 @@ End Sub
 
 
 Private Sub ImportTeclasTXT_Click()
-Dim nf As Integer
-Dim sS As String
+    Dim nf As Integer
+    Dim sS As String
     If Dir(App.Path & "\tecimp.cfg") <> "" Then
         On Error GoTo finTECIMP
         nf = FreeFile()
@@ -1616,10 +1616,10 @@ Dim sS As String
         MsgBox "No existe fichero:" & sS, vbExclamation
     End If
 finTECIMP:
-If Err.Number <> 0 Then
-    MsgBox "tecimp.cfg Erroneo.", vbCritical
-End If
-On Error GoTo 0
+    If Err.Number <> 0 Then
+        MsgBox "tecimp.cfg Erroneo.", vbCritical
+    End If
+    On Error GoTo 0
 End Sub
 
 Private Sub KILLART_Click()
@@ -1635,7 +1635,7 @@ Private Sub mnuEstadoGA_Click()
 End Sub
 
 Public Sub mnuTeclas_Click()
-    'CmdTienda_Click (8)
+'CmdTienda_Click (8)
     If HaySeguridad Then
         If ConsultarPermiso(10) = False Then
             MsgBox CargaCadena(693), vbCritical
@@ -1650,7 +1650,7 @@ Public Sub mnuTeclas_Click()
     'MostrarModal FrmTeclas2T
 End Sub
 Public Sub mnuTE_Click()
-    'CmdTienda_Click (8)
+'CmdTienda_Click (8)
     If HaySeguridad Then
         If ConsultarPermiso(10) = False Then
             MsgBox CargaCadena(693), vbCritical
@@ -1664,83 +1664,83 @@ Public Sub mnuTE_Click()
     End If
 End Sub
 Private Sub Form_GotFocus()
-   lCogeTiquet = True
+    lCogeTiquet = True
 End Sub
 
 Public Sub Activar_Menues()
-Dim bucle As Integer
+    Dim bucle As Integer
 
-CmdTienda(0).Visible = True
-CmdTienda(1).Visible = True
-CmdTienda(2).Visible = True
-CmdTienda(3).Visible = True
-CmdTienda(4).Visible = True
-CmdTienda(8).Visible = True
-CmdTienda(7).Visible = True
-CmdTienda(6).Visible = True
-CmdTienda(5).Visible = True
-mnuVendedores.Visible = True
-mnuTrade.Visible = True
-'mnuCambioDirecto.Visible = True
-mnuConsultaTiquets.Visible = True
-'mnuEnviarSecciones.Visible = True
-'mnu_envio_publicidad.Visible = True
-mnu_envio_vendedor.Visible = True
-'mnu_envio_teclas_rapidas.Visible = True
-mnuRecibeTiquet.Visible = True
-CmdComunicaciones(1).Visible = True
-mnuModVend.Visible = True
-mnuTeclas.Visible = True
-'*********************************************
+    CmdTienda(0).Visible = True
+    CmdTienda(1).Visible = True
+    CmdTienda(2).Visible = True
+    CmdTienda(3).Visible = True
+    CmdTienda(4).Visible = True
+    CmdTienda(8).Visible = True
+    CmdTienda(7).Visible = True
+    CmdTienda(6).Visible = True
+    CmdTienda(5).Visible = True
+    mnuVendedores.Visible = True
+    mnuTrade.Visible = True
+    'mnuCambioDirecto.Visible = True
+    mnuConsultaTiquets.Visible = True
+    'mnuEnviarSecciones.Visible = True
+    'mnu_envio_publicidad.Visible = True
+    mnu_envio_vendedor.Visible = True
+    'mnu_envio_teclas_rapidas.Visible = True
+    mnuRecibeTiquet.Visible = True
+    CmdComunicaciones(1).Visible = True
+    mnuModVend.Visible = True
+    mnuTeclas.Visible = True
+    '*********************************************
 
-'Sam
-#If BALSAM = True Then
-    mnuTextLibre.Visible = True
-#Else
-    mnuTextLibre.Visible = False
-#End If
+    'Sam
+    #If BALSAM = True Then
+        mnuTextLibre.Visible = True
+    #Else
+        mnuTextLibre.Visible = False
+    #End If
 
-If HaySeguridad Then
-    frmEpelsa.mnuCerrarSesion.Visible = True
-Else
-    frmEpelsa.mnuCerrarSesion.Visible = False
-End If
-If ComandoLibre(0) <> "" Or ComandoLibre(1) <> "" Or ComandoLibre(2) <> "" _
-Or ComandoLibre(3) <> "" Or ComandoLibre(4) <> "" Then
-    frmEpelsa.mnucdmlibres.Visible = True
-Else
-    frmEpelsa.mnucdmlibres.Visible = False
-End If
-For bucle = 0 To 4
-    If ComandoLibre(bucle) <> "" Then
-        frmEpelsa.cmdlibre(bucle).Visible = True
-        frmEpelsa.cmdlibre(bucle).Caption = ComandoLibre(bucle)
+    If HaySeguridad Then
+        frmEpelsa.mnuCerrarSesion.Visible = True
     Else
-        If frmEpelsa.mnucdmlibres.Visible = True Then
-            frmEpelsa.cmdlibre(bucle).Visible = False
-        End If
+        frmEpelsa.mnuCerrarSesion.Visible = False
     End If
-Next bucle
-'************
-' /comandos libres
-'************
-'frmEpelsa.mnuExportarFcihero.Visible = True
-If lBoka = False And lFornes = False Then
-    frmEpelsa.mnuExportarFcihero.Visible = True
-Else
-    frmEpelsa.mnuExportarFcihero.Visible = False
-End If
-frmEpelsa.expmsb100.Caption = CargaCadena(706) & " TOTALES.DAT"
+    If ComandoLibre(0) <> "" Or ComandoLibre(1) <> "" Or ComandoLibre(2) <> "" _
+       Or ComandoLibre(3) <> "" Or ComandoLibre(4) <> "" Then
+        frmEpelsa.mnucdmlibres.Visible = True
+    Else
+        frmEpelsa.mnucdmlibres.Visible = False
+    End If
+    For bucle = 0 To 4
+        If ComandoLibre(bucle) <> "" Then
+            frmEpelsa.cmdlibre(bucle).Visible = True
+            frmEpelsa.cmdlibre(bucle).Caption = ComandoLibre(bucle)
+        Else
+            If frmEpelsa.mnucdmlibres.Visible = True Then
+                frmEpelsa.cmdlibre(bucle).Visible = False
+            End If
+        End If
+    Next bucle
+    '************
+    ' /comandos libres
+    '************
+    'frmEpelsa.mnuExportarFcihero.Visible = True
+    If lBoka = False And lFornes = False Then
+        frmEpelsa.mnuExportarFcihero.Visible = True
+    Else
+        frmEpelsa.mnuExportarFcihero.Visible = False
+    End If
+    frmEpelsa.expmsb100.Caption = CargaCadena(706) & " TOTALES.DAT"
 
-If (descAuto And Right(descautotime, 3) = "sec") And (Not StoreFlow) Then
-    mnuBorrado_totales.Enabled = False
-    CmdComunicaciones(3).Visible = True
-    mnuConfiguracion2.Enabled = False
-Else
-    mnuBorrado_totales.Enabled = True
-    CmdComunicaciones(3).Visible = False
-    mnuConfiguracion2.Enabled = True
-End If
+    If (descAuto And Right(descautotime, 3) = "sec") And (Not StoreFlow) Then
+        mnuBorrado_totales.Enabled = False
+        CmdComunicaciones(3).Visible = True
+        mnuConfiguracion2.Enabled = False
+    Else
+        mnuBorrado_totales.Enabled = True
+        CmdComunicaciones(3).Visible = False
+        mnuConfiguracion2.Enabled = True
+    End If
 
 
     frmEpelsa.mnu_Envio_IVA.Visible = True
@@ -1754,72 +1754,72 @@ End If
     frmEpelsa.mnuEnviarPaises.Visible = True
     frmEpelsa.mnuModPais.Visible = True
     frmEpelsa.mnuModFichas.Visible = True
-If (Not UsaGamaAlta And Not usaSC10) Or (Not UsaGamaAlta And (usaSC10 And TipoC9)) Then
-    'frmEpelsa.mnuconectar_ventas.Visible = False
-    'frmEpelsa.mnudesconectar_ventas.Visible = False
-    frmEpelsa.BorradoGeneral(0).Visible = False
-    frmEpelsa.BorradoGeneral(1).Visible = False
-    frmEpelsa.BorradoGeneral(2).Visible = False
-    frmEpelsa.BorradoGeneral(3).Visible = False
-    frmEpelsa.BorradoGeneral(4).Visible = False
-    frmEpelsa.BorradoGeneral(5).Visible = False
-    frmEpelsa.BorradoGeneral(7).Visible = False
-    frmEpelsa.BorradoGeneral(9).Visible = False
-    frmEpelsa.BorradoGeneral(24).Visible = False
-Else
-    frmEpelsa.BorradoGeneral(0).Visible = True
-    frmEpelsa.BorradoGeneral(1).Visible = True
-    frmEpelsa.BorradoGeneral(2).Visible = True
-    frmEpelsa.BorradoGeneral(3).Visible = True
-    frmEpelsa.BorradoGeneral(4).Visible = True
-    frmEpelsa.BorradoGeneral(5).Visible = True
-    frmEpelsa.BorradoGeneral(7).Visible = True
-    frmEpelsa.BorradoGeneral(9).Visible = True
-    frmEpelsa.BorradoGeneral(24).Visible = True
-End If
-
-mnuAbsorver.Visible = False
-If UsaGamaAlta Or (usaSC10 And (Not TipoC9) And SC10Rs232) Then
-    mnuAbsorver.Visible = True
-End If
-'If (Not UsaECO2) And ((Not UsaECO1) Or (UsaECO1 And TipoV8)) And (Not UsaEcoPrint) And usaSC10 And (Not UsaGamaAlta) And (Not TipoC9) And (Not SC10Rs232) Then
-'    frmEpelsa.mnuConsultaArt.Visible = False
-'Else
-'
-'    frmEpelsa.mnuConsultaArt.Visible = True'
-'
-'End If
-If usaSC10 And (Not UsaGamaAlta) And TipoC9 Then
-    frmEpelsa.CmdComunicaciones(1).Visible = False
-    frmEpelsa.mnuRecibeTiquet.Visible = False
-Else
-    If usaSC10 Or UsaGamaAlta Then
-        frmEpelsa.CmdComunicaciones(1).Visible = True
-        frmEpelsa.mnuRecibeTiquet.Visible = True
+    If (Not UsaGamaAlta And Not usaSC10) Or (Not UsaGamaAlta And (usaSC10 And TipoC9)) Then
+        'frmEpelsa.mnuconectar_ventas.Visible = False
+        'frmEpelsa.mnudesconectar_ventas.Visible = False
+        frmEpelsa.BorradoGeneral(0).Visible = False
+        frmEpelsa.BorradoGeneral(1).Visible = False
+        frmEpelsa.BorradoGeneral(2).Visible = False
+        frmEpelsa.BorradoGeneral(3).Visible = False
+        frmEpelsa.BorradoGeneral(4).Visible = False
+        frmEpelsa.BorradoGeneral(5).Visible = False
+        frmEpelsa.BorradoGeneral(7).Visible = False
+        frmEpelsa.BorradoGeneral(9).Visible = False
+        frmEpelsa.BorradoGeneral(24).Visible = False
+    Else
+        frmEpelsa.BorradoGeneral(0).Visible = True
+        frmEpelsa.BorradoGeneral(1).Visible = True
+        frmEpelsa.BorradoGeneral(2).Visible = True
+        frmEpelsa.BorradoGeneral(3).Visible = True
+        frmEpelsa.BorradoGeneral(4).Visible = True
+        frmEpelsa.BorradoGeneral(5).Visible = True
+        frmEpelsa.BorradoGeneral(7).Visible = True
+        frmEpelsa.BorradoGeneral(9).Visible = True
+        frmEpelsa.BorradoGeneral(24).Visible = True
     End If
-End If
-If HayMulti Then
-    CmdSalir.Visible = True
-    configurator.Visible = False
-    mnuficherosexportacion.Visible = False
-    mnuParamInic.Visible = False
-    mnuseuridad.Visible = False
-    mnuCopiasSeguridad.Visible = False
-Else
-    mnuParamInic.Visible = True
-    mnuParamInic.Enabled = True
-End If
-'If (Not UsaECO1) And (Not UsaECO2) And (Not UsaEcoPrint) Then
-'    mnuTotalesGB.Visible = False
-'Else
+
+    mnuAbsorver.Visible = False
+    If UsaGamaAlta Or (usaSC10 And (Not TipoC9) And SC10Rs232) Then
+        mnuAbsorver.Visible = True
+    End If
+    'If (Not UsaECO2) And ((Not UsaECO1) Or (UsaECO1 And TipoV8)) And (Not UsaEcoPrint) And usaSC10 And (Not UsaGamaAlta) And (Not TipoC9) And (Not SC10Rs232) Then
+    '    frmEpelsa.mnuConsultaArt.Visible = False
+    'Else
+    '
+    '    frmEpelsa.mnuConsultaArt.Visible = True'
+    '
+    'End If
+    If usaSC10 And (Not UsaGamaAlta) And TipoC9 Then
+        frmEpelsa.CmdComunicaciones(1).Visible = False
+        frmEpelsa.mnuRecibeTiquet.Visible = False
+    Else
+        If usaSC10 Or UsaGamaAlta Then
+            frmEpelsa.CmdComunicaciones(1).Visible = True
+            frmEpelsa.mnuRecibeTiquet.Visible = True
+        End If
+    End If
+    If HayMulti Then
+        CmdSalir.Visible = True
+        configurator.Visible = False
+        mnuficherosexportacion.Visible = False
+        mnuParamInic.Visible = False
+        mnuseuridad.Visible = False
+        mnuCopiasSeguridad.Visible = False
+    Else
+        mnuParamInic.Visible = True
+        mnuParamInic.Enabled = True
+    End If
+    'If (Not UsaECO1) And (Not UsaECO2) And (Not UsaEcoPrint) Then
+    '    mnuTotalesGB.Visible = False
+    'Else
     'mnuTotalesGB.Visible = True
-'End If
-mnuFamilias.Visible = False
-'mnuSubSec.Visible = False
-'If FamiliasFijas Then
-mnuFamilias.Visible = True
-'If SubSeccionesFijas Then mnuSubSec.Visible = True
-Form_Resize
+    'End If
+    mnuFamilias.Visible = False
+    'mnuSubSec.Visible = False
+    'If FamiliasFijas Then
+    mnuFamilias.Visible = True
+    'If SubSeccionesFijas Then mnuSubSec.Visible = True
+    Form_Resize
 End Sub
 
 Public Sub Form_Load()
@@ -1832,7 +1832,7 @@ Public Sub Form_Load()
     '    frmEpelsa.WindowState = 2
     '    frmEpelsa.BorderStyle = 0
     'End If
-    
+
     CommandMarcar.Visible = False
     CommandMarcar.Enabled = False
     CmdComunicaciones(6).Visible = False
@@ -1875,7 +1875,7 @@ Public Sub Form_Load()
     '************************
     ' botón de parar recogida
     '************************
-    
+
     If descAuto = False Or Right(descautotime, 3) <> "sec" Or StoreFlow Then
         CmdComunicaciones(3).Visible = False
     Else
@@ -1943,7 +1943,7 @@ Private Sub Form_OLEDragDrop(data As DataObject, Effect As Long, Button As Integ
                 frmControl.ControlImport1.Importar_Background Buf2
                 Corregir_Nulos
                 frmEpelsa.Enabled = True
-                
+
             Else
                 MsgBox CargaCadena(1031), vbCritical
             End If
@@ -1956,16 +1956,16 @@ End Sub
 
 Private Sub Form_Resize()
     Dim bucle As Integer
-    
+
     'If Dir(App.Path & "\etc\ekobal.dat.fia") <> "" Then
     '    Me.WindowState = vbMaximized
     'End If
-    
+
     If Me.WindowState = vbMinimized Then Exit Sub
     If EstiloInterfaz = 1 Then Exit Sub
     If Me.Width < (0.74 * Screen.Width) Then Me.Width = (0.74 * Screen.Width)
     If Me.Height < (0.7 * Screen.Height) Then Me.Height = (0.7 * Screen.Height)
-    
+
     Imagen.Width = frmEpelsa.Width
     Imagen.Height = frmEpelsa.Height * 5940 / 6996
     gRafico.top = (Imagen.Height * 50) / 5940
@@ -1981,14 +1981,14 @@ Private Sub Form_Resize()
     CmdComunicaciones(4).top = (Imagen.Height * 4560) / 5940
     CmdComunicaciones(5).top = (Imagen.Height * 4920) / 5940
     'If Dir(App.Path & "\digitonuba.txt") <> "" Then
-        CmdComunicaciones(6).top = (Imagen.Height * 5280) / 5940
-        CmdComunicaciones(6).Height = Imagen.Height * 372 / 5940 - 5
+    CmdComunicaciones(6).top = (Imagen.Height * 5280) / 5940
+    CmdComunicaciones(6).Height = Imagen.Height * 372 / 5940 - 5
     'End If
     If AhorraMas Then
         CommandMarcar.Height = Imagen.Height * 372 / 5940 - 5
         CommandMarcar.top = (Imagen.Height * 5280) / 5940
     End If
-    
+
     LblGA.top = (Imagen.Height * 3480) / 5940 + 10
     LblGA.Height = Imagen.Height * 372 / 5940 - 2
     LblSC10.top = (Imagen.Height * 3840) / 5940 + 10
@@ -2026,15 +2026,15 @@ Private Sub Form_Resize()
         End If
     Next bucle
     For bucle = 1 To 9
-        
+
         'If Bucle = 8 Then
         'Else
-            CmdTienda(bucle).Height = CmdTienda(0).Height
-            'If (CmdTienda(3).Visible = True) Or (Bucle <> 4 And Bucle <> 5) Then
-                CmdTienda(bucle).top = CmdTienda(0).top + (CmdTienda(0).Height * bucle)
-            'Else
-            '    CmdTienda(Bucle).top = CmdTienda(0).top + (CmdTienda(0).Height * (Bucle - 1))
-            'End If
+        CmdTienda(bucle).Height = CmdTienda(0).Height
+        'If (CmdTienda(3).Visible = True) Or (Bucle <> 4 And Bucle <> 5) Then
+        CmdTienda(bucle).top = CmdTienda(0).top + (CmdTienda(0).Height * bucle)
+        'Else
+        '    CmdTienda(Bucle).top = CmdTienda(0).top + (CmdTienda(0).Height * (Bucle - 1))
+        'End If
         'End If
     Next bucle
     gRafico.left = Imagen.Width * 7000 / 10800
@@ -2055,7 +2055,7 @@ Private Sub Form_Resize()
         CmdComunicaciones(6).left = Imagen.Width * 4000 / 10800
         CmdComunicaciones(6).Width = Imagen.Width * 2870 / 10800
     End If
-    
+
     LblGA.left = Imagen.Width * 4000 / 10800
     LblSC10.left = Imagen.Width * 4000 / 10800
     LblGA.Width = Imagen.Width * 2892 / 10800
@@ -2083,20 +2083,20 @@ Private Sub Form_Resize()
     For bucle = 1 To 9
         'If Bucle = 8 Then
         'Else
-            CmdTienda(bucle).left = CmdTienda(0).left
-            CmdTienda(bucle).Width = CmdTienda(0).Width
-            'If Bucle = 8 Then  '2.0.9 Dir(App.Path & "\marte.new") <> ""  Then
-            '    CmdTienda(Bucle).left = CmdTienda(4).left
-            '    CmdTienda(Bucle).Width = CmdTienda(4).Width
-            '    CmdTienda(Bucle).top = CmdTienda(4).top + CmdTienda(4).Height
-            '
-            'End If
+        CmdTienda(bucle).left = CmdTienda(0).left
+        CmdTienda(bucle).Width = CmdTienda(0).Width
+        'If Bucle = 8 Then  '2.0.9 Dir(App.Path & "\marte.new") <> ""  Then
+        '    CmdTienda(Bucle).left = CmdTienda(4).left
+        '    CmdTienda(Bucle).Width = CmdTienda(4).Width
+        '    CmdTienda(Bucle).top = CmdTienda(4).top + CmdTienda(4).Height
+        '
+        'End If
         'End If
     Next bucle
     'If Dir(App.Path & "\nover1.txt") = "" Then
     '    grventas
     'End If
-    DrawGradient Me, 12, 81, 179, 0, 50, 0, Me.ScaleHeight, 1, True, 1, 1, 1 '3 Color (Green-Blue-White)
+    DrawGradient Me, 12, 81, 179, 0, 50, 0, Me.ScaleHeight, 1, True, 1, 1, 1    '3 Color (Green-Blue-White)
     If Dir(App.Path & "\backgrounde.jpg") <> "" Then
         Me.Picture = LoadPicture(App.Path & "\backgrounde.jpg")
     End If
@@ -2109,7 +2109,7 @@ Private Sub Form_Resize()
             Me.Picture = LoadPicture(App.Path & "\hydra-background-1024x768_1.jpg")
         End If
     End If
-    
+
     frmEpelsa.Refresh
     On Error Resume Next
     If Not QLResize Then
@@ -2123,11 +2123,11 @@ Private Sub Form_Resize()
             SaveSetting "hydra", "interface", "principal_max", "0"
         End If
     End If
-    
+
     'If Dir(App.Path & "\nover1.txt") <> "" Then
-        gRafico.Visible = False
+    gRafico.Visible = False
     'End If
-    
+
     On Error GoTo 0
 End Sub
 Private Sub Carga_Logo()
@@ -2145,8 +2145,8 @@ End Sub
 
 
 Public Sub Form_Unload(Cancel As Integer)
-    'If PlugActivo = True Then Exit Sub
-    
+'If PlugActivo = True Then Exit Sub
+
     If cgdtiquet = True Then
         Cancel = 1
     Else
@@ -2167,10 +2167,10 @@ End Sub
 
 
 Private Sub Importfichero_Click()
-Dim AL_Exito As Integer
-Dim nLcLr As Integer
-Dim sPath As String
-Dim MyFich As Integer
+    Dim AL_Exito As Integer
+    Dim nLcLr As Integer
+    Dim sPath As String
+    Dim MyFich As Integer
 
     If HaySeguridad Then
         If ConsultarPermiso(20) = False Then
@@ -2178,7 +2178,7 @@ Dim MyFich As Integer
             Exit Sub
         End If
     End If
-    
+
     If lFornes Then
         lCogeTiquet = False
         If Dir(App.Path & "\pluasc.dir") <> "" Then
@@ -2198,7 +2198,7 @@ Dim MyFich As Integer
             Load frmWAIT
             frmWAIT.Label1.Caption = "Tratar fichero: Bal_Epelsa.txt"
             frmWAIT.Label2.Caption = "Espere unos instantes ..."
-            
+
             frmWAIT.Visible = True
             frmWAIT.Refresh
             Call transforma_Fornes
@@ -2213,7 +2213,7 @@ Dim MyFich As Integer
             MsgBox "No existe fichero: " & sPath & "Bal_Epelsa.txt", vbInformation
         End If
     Else
-    
+
         If DebugActivo Then
             If id <> 0 Then
                 CadenadeLog "Accesing to Import Menu..."
@@ -2221,7 +2221,7 @@ Dim MyFich As Integer
                 CadenadeLog "Acceso a Formulario de Importación..."
             End If
         End If
-        
+
         'leclerc....
         CadenadeLog "ImportFichero_click.:" & CStr(lClR) & " :" & sPathMaj
         If lClR And sPathMaj <> "" Then
@@ -2232,7 +2232,7 @@ Dim MyFich As Integer
             End If
         End If
         '...........
-    
+
         frmControl.ini_import
         lCogeTiquet = False
         frmEpelsa.Enabled = False
@@ -2256,7 +2256,7 @@ Dim MyFich As Integer
         ' /especial
         '**********
         frmControl.ControlImport1.importar
-    
+
         On Error GoTo errorexito
         Sleep (200)
         Do While frmControl.ControlImport1.Exito = 4
@@ -2267,17 +2267,17 @@ errorexito:
                 On Error GoTo 0
                 Exit Do
             End If
-            
+
         Loop
         Corregir_Nulos
         On Error GoTo 0
-    'ERROREXITO:
-    '    If Err.Number <> 0 Then
-    '        If Err.Number <> 0 Then
-    '
-    '        End If
-    '        On Error GoTo 0
-    '    End If
+        'ERROREXITO:
+        '    If Err.Number <> 0 Then
+        '        If Err.Number <> 0 Then
+        '
+        '        End If
+        '        On Error GoTo 0
+        '    End If
         If AHOLD Or lClR Then
             If Dir(App.Path & "\bal.dat") <> "" Then
                 If lClR Then
@@ -2291,7 +2291,7 @@ errorexito:
         End If
         'If Sabeco Then
         '    If frmControl.ControlImport1.Exito = 0 Or frmControl.ControlImport1.Exito = 1 _
-        '    Or frmControl.ControlImport1.Exito = 10 Then
+             '    Or frmControl.ControlImport1.Exito = 10 Then
         '        ChDir MiruTa
         '        On Error Resume Next
         '        Shell ("XMSB200 /RETURN")
@@ -2308,32 +2308,32 @@ errorexito:
         '    End If
         'End If
         On Error GoTo salSinExito
-            Select Case frmControl.ControlImport1.Exito
-                Case 0
-                    MsgBox CargaCadena(697)
-                Case 1
-                    MsgBox CargaCadena(698)
-                Case 10
-                    MsgBox CargaCadena(699)
-                Case 11
-                    MsgBox CargaCadena(700)
-                    If DebugActivo Then
-                        If id <> 0 Then
-                            CadenadeLog "Import File not Found..."
-                        Else
-                            CadenadeLog "Fichero de importación no encontrado..."
-                        End If
-                    End If
-            End Select
+        Select Case frmControl.ControlImport1.Exito
+        Case 0
+            MsgBox CargaCadena(697)
+        Case 1
+            MsgBox CargaCadena(698)
+        Case 10
+            MsgBox CargaCadena(699)
+        Case 11
+            MsgBox CargaCadena(700)
+            If DebugActivo Then
+                If id <> 0 Then
+                    CadenadeLog "Import File not Found..."
+                Else
+                    CadenadeLog "Fichero de importación no encontrado..."
+                End If
+            End If
+        End Select
         'Else
-            AL_Exito = frmControl.ControlImport1.Exito
+        AL_Exito = frmControl.ControlImport1.Exito
         'End If
 salSinExito:
         On Error GoTo 0
         If Dir(App.Path & "\asign.tst") <> "" Then
             Call AsignTec
         End If
-        
+
         frmEpelsa.Enabled = True
         Unload frmControl
         Set frmControl = Nothing
@@ -2414,7 +2414,7 @@ End Sub
 
 
 Private Sub mnuAbsorver_Click()
-Dim Resp As Integer
+    Dim Resp As Integer
     If HaySeguridad And UsuarioActual.Nombre <> "admin" Then
         MsgBox CargaCadena(703), vbCritical
         Exit Sub
@@ -2442,10 +2442,10 @@ Public Sub mnuBaseMaestra_Click()
     '    FrmNewLogin.Show vbModal
     '    If LoginSucceeded Then
     '        Resp = MsgBox(CargaCadena(1000) & vbCrLf & _
-    '        CargaCadena(1001) & vbCrLf & _
-    '        CargaCadena(1002) & vbCrLf & _
-    '        CargaCadena(1003) & vbCrLf & vbCrLf & _
-    '        CargaCadena(1004), vbExclamation + vbYesNo + vbDefaultButton2)
+             '        CargaCadena(1001) & vbCrLf & _
+             '        CargaCadena(1002) & vbCrLf & _
+             '        CargaCadena(1003) & vbCrLf & vbCrLf & _
+             '        CargaCadena(1004), vbExclamation + vbYesNo + vbDefaultButton2)
     '        If Resp = vbNo Then
     '            Exit Sub
     '        Else
@@ -2483,11 +2483,11 @@ Private Sub mnuBorrarSecBal_Click()
     Dim Res As String
     Dim Conf
     If HaySeguridad Then
-            If ConsultarPermiso(19) = False Then
-                MsgBox CargaCadena(693), vbCritical
-                Exit Sub
-            End If
+        If ConsultarPermiso(19) = False Then
+            MsgBox CargaCadena(693), vbCritical
+            Exit Sub
         End If
+    End If
     Res = InputBox(CargaCadena(1007))
     If Trim(Res) = "" Then Exit Sub
     If IsNumeric(Res) Then
@@ -2517,8 +2517,8 @@ Private Sub mnuBorrarTotAcum_Click()
     If Resp = vbYes Then
         canCelar = 0
         MostrarMonitor
-        
-        
+
+
         If UsaGamaAlta Then
             MUE_Sistemas
             If SisEur.NSistemas > 0 Then
@@ -2528,10 +2528,10 @@ Private Sub mnuBorrarTotAcum_Click()
             End If
         End If
         canCelar = 0
-        
+
         frmMonitor.cmdmonitorstop.Enabled = False
         HabilitarSalir
-        frmMonitor.Label1.Caption = CargaCadena(445) '"Comunicación Finalizada"
+        frmMonitor.Label1.Caption = CargaCadena(445)    '"Comunicación Finalizada"
     Else
         MsgBox CargaCadena(1011), vbInformation
     End If
@@ -2546,8 +2546,8 @@ End Sub
 'End Sub
 
 Public Sub mnuCambioPrecio_Click()
-    'CmdTienda_Click (4)
-    'cambios de precio...
+'CmdTienda_Click (4)
+'cambios de precio...
     If HaySeguridad Then
         If ConsultarPermiso(2) = False Then
             MsgBox CargaCadena(693), vbCritical
@@ -2558,7 +2558,7 @@ Public Sub mnuCambioPrecio_Click()
 End Sub
 
 Public Sub mnuCbarras_Click()
-   CmdTienda_Click (7)
+    CmdTienda_Click (7)
 End Sub
 
 
@@ -2576,7 +2576,7 @@ Private Sub mnuCerrarSesion_Click()
                     On Error Resume Next
                     Kill App.Path & "\hydrarun.txt"
                     On Error GoTo 0
-                    
+
                 End If
                 salir_programa
             Else
@@ -2604,7 +2604,7 @@ Private Sub mnuConfiguracion2_Click()
             Exit Sub
         End If
     End If
-    
+
     lCogeTiquet = False
     Me.Enabled = False
     FrmConfiguracion2.Form_Load
@@ -2615,12 +2615,12 @@ Private Sub mnuConfiguracion2_Click()
     Me.Enabled = True
     CambiarIdioma
     Activar_Menues
-    
+
     'If frmControl.Enlazado = True Then
     '    frmControl.Balanza.RemoteUnlink
     '    EstadoBal = 1000
     'End If
-    
+
     If descAuto Then frmControl.timetqt.Enabled = True
     lCogeTiquet = True
 End Sub
@@ -2694,17 +2694,17 @@ Public Sub mnuEnvio_modificaciones_Click()
     AN_BaseMaestra True
 End Sub
 Public Sub mnuEnvioCLientes_Click()
-    'MostrarMonitor
-    
+'MostrarMonitor
+
     AN_BaseMaestra False, , 2
-    
+
     'FrmExportar.AN_CLientes False
 End Sub
 Public Sub mnumodCLi_Click()
-    'MostrarMonitor
-    
+'MostrarMonitor
+
     AN_BaseMaestra True, , 2
-    
+
     'FrmExportar.AN_CLientes False
 End Sub
 
@@ -2766,7 +2766,7 @@ Private Sub mnuFamilias_Click()
             Exit Sub
         End If
     End If
-    MostrarModal FrmFamilias ' 'FrmFamilias
+    MostrarModal FrmFamilias    ' 'FrmFamilias
 End Sub
 
 Public Sub mnuFichaVacuno_Click()
@@ -2778,7 +2778,7 @@ Public Sub mnuFichaVacuno_Click()
     End If
     frmEpelsa.Enabled = False
     frmFichasVacuno.Show
-    
+
 End Sub
 Public Sub mnuficherosexportacion_Click()
     If HaySeguridad Then
@@ -2797,49 +2797,49 @@ End Sub
 
 
 Private Sub mnugenerabasevacia_Click()
-Dim Resp
-If HaySeguridad Then
-    If ConsultarPermiso(18) = False Then
-        MsgBox CargaCadena(693), vbCritical
+    Dim Resp
+    If HaySeguridad Then
+        If ConsultarPermiso(18) = False Then
+            MsgBox CargaCadena(693), vbCritical
+            Exit Sub
+        End If
+    End If
+    FrmNewLogin.ElUsuario = "FABRICA"
+    FrmNewLogin.Form_Load
+    FrmNewLogin.Show vbModal
+    If LoginSucceeded Then
+        If HaySeguridad Then
+            CadenadeLog "Recibida orden de borrar base de datos por parte del usuario : " & UsuarioActual.Nombre
+        Else
+            CadenadeLog "Recibida orden de borrar base de datos por parte de un usuario"
+        End If
+    Else
         Exit Sub
     End If
-End If
-FrmNewLogin.ElUsuario = "FABRICA"
-FrmNewLogin.Form_Load
-FrmNewLogin.Show vbModal
-If LoginSucceeded Then
-    If HaySeguridad Then
-        CadenadeLog "Recibida orden de borrar base de datos por parte del usuario : " & UsuarioActual.Nombre
-    Else
-        CadenadeLog "Recibida orden de borrar base de datos por parte de un usuario"
-    End If
-Else
+    Resp = MsgBox(CargaCadena(701), vbOKCancel + vbExclamation + vbDefaultButton2)
+    If Resp = vbCancel Then Exit Sub
+    Resp = MsgBox(CargaCadena(1012), vbOKCancel + vbExclamation + vbDefaultButton2)
+    If Resp = vbCancel Then Exit Sub
+    On Error GoTo errorborrar
+    Kill Base_General
+    On Error GoTo 0
+    Crear_Base_Maestra
+    grventas
+    MsgBox CargaCadena(362)
     Exit Sub
-End If
-Resp = MsgBox(CargaCadena(701), vbOKCancel + vbExclamation + vbDefaultButton2)
-If Resp = vbCancel Then Exit Sub
-Resp = MsgBox(CargaCadena(1012), vbOKCancel + vbExclamation + vbDefaultButton2)
-If Resp = vbCancel Then Exit Sub
-On Error GoTo errorborrar
-Kill Base_General
-On Error GoTo 0
-Crear_Base_Maestra
-grventas
-MsgBox CargaCadena(362)
-Exit Sub
 errorborrar:
     MsgBox CargaCadena(702), vbCritical
 End Sub
 
 
 Private Sub mnuGlobalDat_Click()
- Me.Enabled = False
- Importa_Global_Dat
- Me.Enabled = True
+    Me.Enabled = False
+    Importa_Global_Dat
+    Me.Enabled = True
 End Sub
 
 Public Sub mnuGrandes_totales_Click()
-Dim Resp As Variant
+    Dim Resp As Variant
     If HaySeguridad Then
         If ConsultarPermiso(14) = False Then
             MsgBox CargaCadena(693), vbCritical
@@ -2894,7 +2894,7 @@ End Sub
 '    Set frmhistorico = Nothing
 'End Sub
 Private Sub mnuhistorico_Click(Index As Integer)
-    
+
     If (lBoka Or lFornes Or lBelRos) And Index = 0 Then
         MsgBox "No es posible desde fichero...", vbExclamation
         Exit Sub
@@ -2907,19 +2907,19 @@ Private Sub mnuhistorico_Click(Index As Integer)
         If lAlba Then
             frmhistorico.Caption = "TQGEN HIST."
         Else
-        
-        If lBoka Then
-            frmhistorico.Caption = "BOKA.txt " & CargaCadena(708)
-        Else
-            If lFornes Then
-                frmhistorico.Caption = "RX / BL " & CargaCadena(708)
+
+            If lBoka Then
+                frmhistorico.Caption = "BOKA.txt " & CargaCadena(708)
             Else
-                frmhistorico.Caption = "TOTALES.DAT " & CargaCadena(708)
+                If lFornes Then
+                    frmhistorico.Caption = "RX / BL " & CargaCadena(708)
+                Else
+                    frmhistorico.Caption = "TOTALES.DAT " & CargaCadena(708)
+                End If
             End If
+
         End If
-        
-        End If
-        
+
         If Index = 0 Then
             frmhistorico.Tag = 0
             frmhistorico.Label2.Caption = CargaCadena(690)
@@ -2951,7 +2951,7 @@ Private Sub mnuListadoCambiosPrecio_Click()
             Exit Sub
         End If
     End If
-    
+
     Me.Enabled = False
     Aux_Ejecuta "rpcprecios", ""
     Me.Enabled = True
@@ -2982,7 +2982,7 @@ Private Sub mnuModArt_Click()
         End If
     End If
     AN_BaseMaestra True, , 7
-    
+
     'FrmExportar.AN_Articulos True
 End Sub
 
@@ -2994,7 +2994,7 @@ Private Sub mnuModCodBar_Click()
         End If
     End If
     AN_BaseMaestra True, , 4
-    
+
     'FrmExportar.AN_CodigosBarras True
 End Sub
 
@@ -3116,7 +3116,7 @@ Private Sub mnuRecibeTiquet_Click()
     'TouchScale -->
     FrmExportar.AN_FinDeDia False
     lCogeTiquet = True
-    
+
 End Sub
 
 Private Sub mnuSalir_Click()
@@ -3162,10 +3162,10 @@ Private Sub mnutemporales_Click()
             Exit Sub
         End If
     End If
-    
+
     Me.Enabled = False
     Aux_Ejecuta "rpcptemporal"
-                 
+
     Me.Enabled = True
 End Sub
 
@@ -3314,7 +3314,7 @@ Private Sub rechazos_Click()
             Exit Sub
         End If
     End If
-    
+
     frmEpelsa.Enabled = False
     Aux_Ejecuta "rrechazos", ""
     frmEpelsa.Enabled = True

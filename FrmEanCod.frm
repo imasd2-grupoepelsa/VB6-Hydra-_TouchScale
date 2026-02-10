@@ -219,17 +219,17 @@ Private Type TipoCodigos
 End Type
 Private Sub CambiarIdioma()
     FrmEanCod.Caption = CargaCadena(725) & " (Code 128)"
-    
+
     LblNumero.Caption = CargaCadena(302)
     LblInfo.Caption = CargaCadena(524)
-    
+
     CmdAceptar.Caption = CargaCadena(550)
     CmdBorrar.Caption = CargaCadena(38)
     CmdSalir.Caption = CargaCadena(7)
-   
+
     CmbTipo.AddItem CargaCadena(302)
     CmbTipo.AddItem CargaCadena(303)
-    
+
 End Sub
 Private Function Desglosa_Codigos(LaCadena As String) As TipoCodigos
     Dim LosCodigos As TipoCodigos
@@ -255,13 +255,13 @@ Private Function Desglosa_Codigos(LaCadena As String) As TipoCodigos
 End Function
 
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     Dim bucle As Integer
     Dim posicion As Integer
     Dim eNCONTRADO As Boolean
     Dim ElCodigo As String
-    
+
     Text1.TexT = ""
 
     LblInfo.BackColor = vbWhite
@@ -269,7 +269,7 @@ Private Sub Refresca_Datos()
     CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
     If (CmbNumero.TexT = "") And (CmbTipo.ListIndex < 2) Then Exit Sub
     eNCONTRADO = False
-    
+
     Select Case CmbTipo.ListIndex
     Case 0
         bucle = 1
@@ -279,12 +279,12 @@ Private Sub Refresca_Datos()
             bucle = bucle + 1
         Loop
         Registro.OpenRecordset _
-        ("select * from gen_sam where baja=false and tipo='cbCod' and destino=1 and numero=" & ElCodigo)
-     
+                ("select * from gen_sam where baja=false and tipo='cbCod' and destino=1 and numero=" & ElCodigo)
+
     Case 1
         Registro.OpenRecordset _
-        ("select * from gen_sam where baja=false and tipo='cbCod' and destino=2 and numero=" & CmbNumero.TexT)
-        
+                ("select * from gen_sam where baja=false and tipo='cbCod' and destino=2 and numero=" & CmbNumero.TexT)
+
     End Select
     With Registro
         If Not .EOF Then
@@ -292,7 +292,7 @@ Private Sub Refresca_Datos()
             Text1.TexT = .Fields("txt01")
         End If
     End With
-    
+
 
     If eNCONTRADO Then
         LblInfo.BackColor = vbYellow
@@ -318,13 +318,13 @@ Private Sub CmbTipo_Click()
 End Sub
 
 Private Sub Cmdaceptar_Click()
-    
+
     Dim Registro As New RecordNet
     Dim bucle As Integer
     Dim ElCodigo As TipoCodigos
     Dim MiCodigo As dB_EanCod
     Dim nR As Integer
-    
+
     '******************
     ' Condiciones de Error
     If CmbTipo.ListIndex < 2 Then
@@ -338,38 +338,38 @@ Private Sub Cmdaceptar_Click()
         End If
     End If
     '********************
-    
+
     Select Case CmbTipo.ListIndex
-        Case 0
-            ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
-            MiCodigo.Mostrador = ElCodigo.codigo(1)
-            MiCodigo.Equipo = 0
-        Case 1
-            ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
-            Registro.OpenRecordset ("select codi_ident from equipos where borrado=false and numero_eqp=" & _
-            CmbNumero.TexT)
-            MiCodigo.Mostrador = Registro.Fields("codi_ident")
-            MiCodigo.Equipo = CmbNumero.TexT
+    Case 0
+        ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
+        MiCodigo.Mostrador = ElCodigo.codigo(1)
+        MiCodigo.Equipo = 0
+    Case 1
+        ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
+        Registro.OpenRecordset ("select codi_ident from equipos where borrado=false and numero_eqp=" & _
+                                CmbNumero.TexT)
+        MiCodigo.Mostrador = Registro.Fields("codi_ident")
+        MiCodigo.Equipo = CmbNumero.TexT
     End Select
     MiCodigo.Cod = Trim(Text1.TexT)
     nR = Alta_BarrasCod(MiCodigo)
     Select Case nR
-        Case 0
-            LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos. Envíe Modificaciones"
-        Case 1
-            LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados. Envíe Modificaciones"
+    Case 0
+        LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos. Envíe Modificaciones"
+    Case 1
+        LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados. Envíe Modificaciones"
     End Select
 End Sub
 
 Private Sub CmdBorrar_Click()
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
     Dim bucle As Integer
     Dim BucleGrande As Integer
     Dim ElCodigo As TipoCodigos
     Dim MiCodigo As dB_EanCod
-    
+
     If CmbNumero.TexT = "" Then Exit Sub
     bucle = 1
     ElCodigo = Desglosa_Codigos(CmbNumero.TexT)
@@ -377,17 +377,17 @@ Private Sub CmdBorrar_Click()
         MiCodigo.Equipo = 0
         MiCodigo.Mostrador = ElCodigo.codigo(1)
     Else
-        
+
         Registro.OpenRecordset ("select codi_ident from equipos where numero_eqp=" & _
-        CmbNumero.TexT & " and borrado=false")
+                                CmbNumero.TexT & " and borrado=false")
         MiCodigo.Mostrador = Registro.Fields("codi_ident")
         MiCodigo.Equipo = ElCodigo.codigo(1)
-        
+
     End If
     If Baja_BarrasCod(MiCodigo) = 0 Then
-        
+
         LblInfo2.Caption = CargaCadena(556)  '"Datos Eliminados.Envíe Modificaciones"
-        
+
     End If
     If CmbTipo.TexT = CmbTipo.List(0) Then
         Aux_Refresca_Mostradores CmbNumero
@@ -395,7 +395,7 @@ Private Sub CmdBorrar_Click()
         Aux_Refresca_equipos CmbNumero
     End If
     Refresca_Datos
-    
+
 End Sub
 
 
@@ -421,11 +421,11 @@ Private Sub Form_Unload(Cancel As Integer)
 End Sub
 
 Private Function Alta_BarrasCod(MiCabecera As dB_EanCod) As Integer
-Dim myRs As DAO.Recordset
-Dim myB As DAO.Database
-Dim Resp As Integer
-Dim Dest As Integer
-Dim numero As Integer
+    Dim myRs As dao.Recordset
+    Dim myB As dao.Database
+    Dim Resp As Integer
+    Dim Dest As Integer
+    Dim numero As Integer
     Set myB = AbrirBase
     If MiCabecera.Equipo = 0 Then
         Set myRs = myB.OpenRecordset("select * from gen_sam where tipo='cbCod' and destino=1 and numero=" & CStr(MiCabecera.Mostrador) & " and baja=false")
@@ -455,18 +455,18 @@ Dim numero As Integer
     Set myRs = Nothing
     CerrarBase myB
     Set myB = Nothing
-    
+
     Alta_BarrasCod = Resp
 End Function
 
 'Baja_Cabeceras
 Private Function Baja_BarrasCod(MiCabecera As dB_EanCod) As Integer
-Dim myRs As DAO.Recordset
-Dim myB As DAO.Database
-Dim Resp As Integer
-Dim Dest As Integer
-Dim numero As Integer
-Dim cm As String
+    Dim myRs As dao.Recordset
+    Dim myB As dao.Database
+    Dim Resp As Integer
+    Dim Dest As Integer
+    Dim numero As Integer
+    Dim cm As String
     Set myB = AbrirBase
     If MiCabecera.Equipo = 0 Then
         Set myRs = myB.OpenRecordset("select * from gen_sam where tipo='cbCod' and destino=1 and numero=" & CStr(MiCabecera.Mostrador) & " and baja=false")
@@ -483,7 +483,7 @@ Dim cm As String
         myRs.Fields("tran_txt") = " "
         myRs.Update
     End If
-    
+
     Baja_BarrasCod = Resp
 End Function
 

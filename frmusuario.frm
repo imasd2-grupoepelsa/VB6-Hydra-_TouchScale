@@ -78,7 +78,7 @@ Private Sub Command1_Click()
     Else
         UsuarioActual.Nombre = StrConv(Trim(Text1.TexT), vbLowerCase)
     End If
-    UsuarioActual.Password = StrConv(Trim(Text2.TexT), vbLowerCase)
+    UsuarioActual.password = StrConv(Trim(Text2.TexT), vbLowerCase)
     frmusuario.Hide
 End Sub
 
@@ -89,7 +89,7 @@ End Sub
 
 Private Sub Form_Load()
     UsuarioActual.Nombre = ""
-    UsuarioActual.Password = ""
+    UsuarioActual.password = ""
     Command1.Caption = CargaCadena(287)
     Command2.Caption = CargaCadena(288)
     Label1.Caption = CargaCadena(520)

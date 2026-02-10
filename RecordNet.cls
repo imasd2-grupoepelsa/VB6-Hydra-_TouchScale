@@ -17,17 +17,17 @@ Option Explicit
 ' - Pantallas Remotas
 '***********************************************
 Public Fields As Collection
-Private Base As DAO.Database
-Private Registro As DAO.Recordset
+Private Base As dao.Database
+Private Registro As dao.Recordset
 Private bEOF As Boolean
 Private bBOF As Boolean
 Private Sub FillData()
-    Dim Bucle As Integer
+    Dim bucle As Integer
     If (Not Registro.EOF) And (Not Registro.BOF) Then
         Set Fields = New Collection
-        For Bucle = 0 To Registro.Fields.Count - 1
-            Fields.Add Registro.Fields(Bucle), Registro.Fields(Bucle).Name
-        Next Bucle
+        For bucle = 0 To Registro.Fields.Count - 1
+            Fields.Add Registro.Fields(bucle), Registro.Fields(bucle).name
+        Next bucle
     Else
         Set Fields = Nothing
     End If
@@ -68,11 +68,11 @@ End Sub
 
 Private Sub Class_Initialize()
 
-    'On Error Resume Next
-    'If Base.Name <> "" Then
-    '    If Err.Number <> 0 Then
-    '        On Error GoTo 0
-            Set Base = OpenDatabase(Base_General)
+'On Error Resume Next
+'If Base.Name <> "" Then
+'    If Err.Number <> 0 Then
+'        On Error GoTo 0
+    Set Base = OpenDatabase(Base_General)
     '    End If
     'End If
     'On Error GoTo 0

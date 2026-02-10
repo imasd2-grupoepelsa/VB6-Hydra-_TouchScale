@@ -7,7 +7,7 @@ Private Declare Function FindWindowEx Lib "user32" Alias "FindWindowExA" (ByVal 
 Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" (ByVal hWnd As Long, ByVal wMsg As Long, ByVal wParam As Long, lParam As Any) As Long
 
 Private Const ID_VIEW_ICONS = 28713
-Private Const ID_VIEW_SMALLICONS = 28714 '98 only
+Private Const ID_VIEW_SMALLICONS = 28714    '98 only
 Private Const ID_VIEW_LIST = 28715
 Private Const ID_VIEW_DETAILS = 28716
 Private Const ID_VIEW_THUMBNAIL = 28717  'xp only

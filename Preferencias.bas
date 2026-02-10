@@ -2,9 +2,9 @@ Attribute VB_Name = "Preferencias"
 Option Explicit
 Private Sub Check_Preferencias()
     Dim Arch As Integer
-    If Dir(MiruTa & "\etc\preferencias.ini") = "" Then
+    If Dir(Miruta & "\etc\preferencias.ini") = "" Then
         Arch = FreeFile()
-        Open MiruTa & "\etc\preferencias.ini" For Output As #Arch
+        Open Miruta & "\etc\preferencias.ini" For Output As #Arch
         Print #Arch, "TECLAS    " & "01" & "0" & "0" & "056"
         Print #Arch, "CHGPRECIO1" & "01" & "0"
         Close #Arch
@@ -14,16 +14,16 @@ Public Function RPreferencias(Tipo As String, tienda As Integer) As String
     Dim Arch As Integer
     Dim Buffer As String
     On Error GoTo fin
-    If Dir(MiruTa & "\etc\preferencias.ini") = "" Then
+    If Dir(Miruta & "\etc\preferencias.ini") = "" Then
         Check_Preferencias
     End If
     Arch = FreeFile()
-    Open MiruTa & "\etc\preferencias.ini" For Input As #Arch
+    Open Miruta & "\etc\preferencias.ini" For Input As #Arch
     Buffer = ""
     Do Until EOF(Arch)
         Line Input #Arch, Buffer
         If Len(Buffer) > 12 Then
-            If UCase(Left(Buffer, 10)) = UCase(Tipo) Then
+            If UCase(left(Buffer, 10)) = UCase(Tipo) Then
                 If Val(Mid(Buffer, 11, 2)) = tienda Then
                     Exit Do
                 End If
@@ -49,18 +49,18 @@ Public Sub WPreferencias(Tipo As String, tienda As Integer, texto As String)
     Dim Buffer As String
     Dim eNCONTRADO As Boolean
     On Error GoTo fin
-    If Dir(MiruTa & "\etc\preferencias.ini") = "" Then
+    If Dir(Miruta & "\etc\preferencias.ini") = "" Then
         Check_Preferencias
     End If
     Arch = FreeFile()
-    Open MiruTa & "\etc\preferencias.ini" For Input As #Arch
+    Open Miruta & "\etc\preferencias.ini" For Input As #Arch
     ArchTemp = FreeFile()
-    Open MiruTa & "\etc\preferencias.tmp" For Output As #ArchTemp
+    Open Miruta & "\etc\preferencias.tmp" For Output As #ArchTemp
     Buffer = ""
     Do Until EOF(Arch)
         Line Input #Arch, Buffer
         If Len(Buffer) > 12 Then
-            If UCase(Left(Buffer, 10)) = UCase(Tipo) Then
+            If UCase(left(Buffer, 10)) = UCase(Tipo) Then
                 If Val(Mid(Buffer, 11, 2)) = tienda Then
                     Print #ArchTemp, Tipo & Format(tienda, "00") & texto
                     eNCONTRADO = True
@@ -76,8 +76,8 @@ Public Sub WPreferencias(Tipo As String, tienda As Integer, texto As String)
     Close #Arch
     Close #ArchTemp
     On Error Resume Next
-    If Dir(MiruTa & "\etc\preferencias.tmp") <> "" Then
-        FileCopy MiruTa & "\etc\preferencias.tmp", MiruTa & "\etc\preferencias.ini"
+    If Dir(Miruta & "\etc\preferencias.tmp") <> "" Then
+        FileCopy Miruta & "\etc\preferencias.tmp", Miruta & "\etc\preferencias.ini"
     End If
     On Error GoTo 0
     Exit Sub

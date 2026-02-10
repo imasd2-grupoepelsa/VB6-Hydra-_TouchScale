@@ -4,10 +4,10 @@ Option Explicit
 Private Type CodeList
     Code As String
     Status As String               'P=Pending;A=Active;G=Paragraph;D=Dead;K=Killed
-                                   '"Dead" means the code is active but will be killed at next text
-                                   '"Pending" means it's waiting for text - if the code is canceled before text appears it will be killed
-                                   '"Active" means there is text using the code at this moment
-                                   '"Paragraph" means that the code stays active until the next paragraph: "/pard" or "/pntext"
+    '"Dead" means the code is active but will be killed at next text
+    '"Pending" means it's waiting for text - if the code is canceled before text appears it will be killed
+    '"Active" means there is text using the code at this moment
+    '"Paragraph" means that the code stays active until the next paragraph: "/pard" or "/pntext"
 End Type
 
 Public strCurPhrase As String
@@ -57,8 +57,8 @@ Function ClearCodes()
 End Function
 
 Function ClearNext(Optional strExcept As String)
-    Dim l As Long
-    
+    Dim L As Long
+
     If Len(strExcept) > 0 Then
         If InNext(strExcept) Then
             While NextCodes(1) <> strExcept
@@ -68,10 +68,10 @@ Function ClearNext(Optional strExcept As String)
             GoTo finally
         End If
     End If
-        
+
     ReDim NextCodes(0)
     ReDim NextCodesBeg(0)
-    
+
 finally:
 End Function
 
@@ -87,26 +87,26 @@ End Function
 Function Codes2NextTill(strCode As String)
     Dim strTmp As String
     Dim strTmpbeg As String
-    Dim l As Long
+    Dim L As Long
 
-    For l = 1 To UBound(Codes)
-        If Codes(l).Code = strCode Then Exit For
-        If Codes(l).Status <> "K" And Codes(l).Status <> "D" Then
+    For L = 1 To UBound(Codes)
+        If Codes(L).Code = strCode Then Exit For
+        If Codes(L).Status <> "K" And Codes(L).Status <> "D" Then
             If Not InNext(strCode) Then
-                UnShiftNext (Codes(l).Code)
-                UnShiftNextBeg (CodesBeg(l).Code)
+                UnShiftNext (Codes(L).Code)
+                UnShiftNextBeg (CodesBeg(L).Code)
             End If
         End If
-    Next l
+    Next L
 End Function
 
 Function GetColorTable(strSecTmp As String, strColorTable() As String)
-    'get color table data and fill in strColorTable array
+'get color table data and fill in strColorTable array
     Dim lColors As Long
     Dim lBOS As Long
     Dim lEOS As Long
     Dim strTmp As String
-    
+
     lBOS = InStr(strSecTmp, "\colortbl")
     ReDim strColorTable(0)
     lColors = 1
@@ -136,14 +136,14 @@ Function GetColorTable(strSecTmp As String, strColorTable() As String)
 End Function
 
 Function GetFontTable(strSecTmp As String, strFontTable() As String)
-    'get font table data and fill in strFontTable array
+'get font table data and fill in strFontTable array
     Dim lFonts As Long
     Dim lBOS As Long
     Dim lEOS As Long
     Dim strTmp As String
     Dim lLvl As Long
     Dim strNextChar As String
-    
+
     lBOS = InStr(strSecTmp, "\fonttbl")
     ReDim strFontTable(0)
     lFonts = 0
@@ -184,83 +184,83 @@ End Function
 
 Function InNext(strTmp) As Boolean
     Dim gTmp As Boolean
-    Dim l As Long
-    
-    l = 1
+    Dim L As Long
+
+    L = 1
     gTmp = False
-    While l <= UBound(NextCodes) And Not gTmp
-        If NextCodes(l) = strTmp Then gTmp = True
-        l = l + 1
+    While L <= UBound(NextCodes) And Not gTmp
+        If NextCodes(L) = strTmp Then gTmp = True
+        L = L + 1
     Wend
     InNext = gTmp
 End Function
 
 Function InNextBeg(strTmp) As Boolean
     Dim gTmp As Boolean
-    Dim l As Long
-    
-    l = 1
+    Dim L As Long
+
+    L = 1
     gTmp = False
-    While l <= UBound(NextCodesBeg) And Not gTmp
-        If NextCodesBeg(l) = strTmp Then gTmp = True
-        l = l + 1
+    While L <= UBound(NextCodesBeg) And Not gTmp
+        If NextCodesBeg(L) = strTmp Then gTmp = True
+        L = L + 1
     Wend
     InNextBeg = gTmp
 End Function
 
 Function InCodes(strTmp, Optional gActiveOnly As Boolean = False) As Boolean
     Dim gTmp As Boolean
-    Dim l As Long
-    
-    l = 1
+    Dim L As Long
+
+    L = 1
     gTmp = False
-    While l <= UBound(Codes) And Not gTmp
+    While L <= UBound(Codes) And Not gTmp
         If gActiveOnly Then
-            If Codes(l).Code = strTmp And (Codes(l).Status = "A" Or Codes(l).Status = "G") Then gTmp = True
+            If Codes(L).Code = strTmp And (Codes(L).Status = "A" Or Codes(L).Status = "G") Then gTmp = True
         Else
-            If Codes(l).Code = strTmp Then gTmp = True
+            If Codes(L).Code = strTmp Then gTmp = True
         End If
-        l = l + 1
+        L = L + 1
     Wend
     InCodes = gTmp
 End Function
 
 Function InCodesBeg(strTmp) As Boolean
     Dim gTmp As Boolean
-    Dim l As Long
-    
-    l = 1
+    Dim L As Long
+
+    L = 1
     gTmp = False
-    While l <= UBound(CodesBeg) And Not gTmp
-        If CodesBeg(l).Code = strTmp Then gTmp = True
-        l = l + 1
+    While L <= UBound(CodesBeg) And Not gTmp
+        If CodesBeg(L).Code = strTmp Then gTmp = True
+        L = L + 1
     Wend
     InCodesBeg = gTmp
 End Function
 
 Function NabNextLine(strRTF As String) As String
-    Dim l As Long
-    
-    l = InStr(strRTF, vbCrLf)
-    If l = 0 Then l = Len(strRTF)
-    NabNextLine = TrimAll(left(strRTF, l))
-    If l = Len(strRTF) Then
+    Dim L As Long
+
+    L = InStr(strRTF, vbCrLf)
+    If L = 0 Then L = Len(strRTF)
+    NabNextLine = TrimAll(left(strRTF, L))
+    If L = Len(strRTF) Then
         strRTF = ""
     Else
-        strRTF = TrimAll(Mid(strRTF, l))
+        strRTF = TrimAll(Mid(strRTF, L))
     End If
 End Function
 
 
 Function NabNextWord(strLine As String) As String
-    Dim l As Long
+    Dim L As Long
     Dim lvl As Integer
     Dim gEndofWord As Boolean
     Dim gInCommand As Boolean    'current word is command instead of plain word
     Dim lTmp As Long
-    
+
     gInCommand = False
-    l = 0
+    L = 0
     lvl = 0
     'strLine = TrimifCmd(strLine)
     If left(strLine, 1) = "}" Then
@@ -284,42 +284,42 @@ Function NabNextWord(strLine As String) As String
         GoTo finally
     End If
     While Not gEndofWord
-        l = l + 1
-        If l >= Len(strLine) Then
-            If l = Len(strLine) Then l = l + 1
+        L = L + 1
+        If L >= Len(strLine) Then
+            If L = Len(strLine) Then L = L + 1
             gEndofWord = True
-        ElseIf InStr("\{}", Mid(strLine, l, 1)) Then
-            If l = 1 And Mid(strLine, l, 1) = "\" Then gInCommand = True
-'            If Mid(strLine, l + 1, 1) <> "\" And l > 1 And lvl = 0 Then    'avoid...what?
-            If l > 1 And lvl = 0 Then
+        ElseIf InStr("\{}", Mid(strLine, L, 1)) Then
+            If L = 1 And Mid(strLine, L, 1) = "\" Then gInCommand = True
+            '            If Mid(strLine, l + 1, 1) <> "\" And l > 1 And lvl = 0 Then    'avoid...what?
+            If L > 1 And lvl = 0 Then
                 gEndofWord = True
             End If
-        ElseIf Mid(strLine, l, 1) = " " And lvl = 0 And gInCommand Then
+        ElseIf Mid(strLine, L, 1) = " " And lvl = 0 And gInCommand Then
             gEndofWord = True
         End If
     Wend
-    
-    If l = 0 Then l = Len(strLine)
-    NabNextWord = left(strLine, l - 1)
-    While Len(NabNextWord) > 0 And InStr("{}", Right(NabNextWord, 1)) And l > 0
+
+    If L = 0 Then L = Len(strLine)
+    NabNextWord = left(strLine, L - 1)
+    While Len(NabNextWord) > 0 And InStr("{}", Right(NabNextWord, 1)) And L > 0
         NabNextWord = left(NabNextWord, Len(NabNextWord) - 1)
-        l = l - 1
+        L = L - 1
     Wend
-    strLine = Mid(strLine, l)
+    strLine = Mid(strLine, L)
     If left(strLine, 1) = " " Then strLine = Mid(strLine, 2)
 finally:
 End Function
 
 Function NabSection(strRTF As String, lPos As Long) As String
-    'grab section surrounding lPos, strip section out of strRTF and return it
+'grab section surrounding lPos, strip section out of strRTF and return it
     Dim lBOS As Long         'beginning of section
     Dim lEOS As Long         'ending of section
     Dim strChar As String
     Dim lLev As Long         'level of brackets/parens
     Dim lRTFLen As Long
-    
+
     lRTFLen = Len(strRTF)
-    
+
     lBOS = lPos
     strChar = Mid(strRTF, lBOS, 1)
     lLev = 1
@@ -338,7 +338,7 @@ Function NabSection(strRTF As String, lPos As Long) As String
     Wend
     lBOS = lBOS - 1
     If lBOS < 1 Then lBOS = 1
-    
+
     lEOS = lPos
     strChar = Mid(strRTF, lEOS, 1)
     lLev = 1
@@ -363,62 +363,62 @@ Function NabSection(strRTF As String, lPos As Long) As String
 End Function
 
 Function Next2Codes()
-    'move codes from pending ("next") stack to front of current stack
+'move codes from pending ("next") stack to front of current stack
     Dim lNumCodes As Long
     Dim lNumNext As Long
-    Dim l As Long
-    
+    Dim L As Long
+
     If UBound(NextCodes) > 0 Then
         If InNext("</li>") Then
-            For l = UBound(NextCodes) To 1 Step -1
-                If NextCodes(l) = "</li>" And l > 1 Then
-                    NextCodes(l) = NextCodes(l - 1)
-                    NextCodesBeg(l) = NextCodesBeg(l - 1)
-                    NextCodes(l - 1) = "</li>"
-                    NextCodesBeg(l - 1) = "<li>"
+            For L = UBound(NextCodes) To 1 Step -1
+                If NextCodes(L) = "</li>" And L > 1 Then
+                    NextCodes(L) = NextCodes(L - 1)
+                    NextCodesBeg(L) = NextCodesBeg(L - 1)
+                    NextCodes(L - 1) = "</li>"
+                    NextCodesBeg(L - 1) = "<li>"
                 End If
-            Next l
+            Next L
         End If
-        
+
         lNumCodes = UBound(Codes)
         lNumNext = UBound(NextCodes)
         ReDim Preserve Codes(lNumCodes + lNumNext)
         ReDim Preserve CodesBeg(lNumCodes + lNumNext)
-        For l = UBound(Codes) To 1 Step -1
-            If l > lNumNext Then
-                Codes(l) = Codes(l - lNumNext)
-                CodesBeg(l) = CodesBeg(l - lNumNext)
+        For L = UBound(Codes) To 1 Step -1
+            If L > lNumNext Then
+                Codes(L) = Codes(L - lNumNext)
+                CodesBeg(L) = CodesBeg(L - lNumNext)
             Else
-                Codes(l).Code = NextCodes(lNumNext - l + 1)
-                CodesBeg(l).Code = NextCodesBeg(lNumNext - l + 1)
-                Select Case Codes(l).Code
+                Codes(L).Code = NextCodes(lNumNext - L + 1)
+                CodesBeg(L).Code = NextCodesBeg(lNumNext - L + 1)
+                Select Case Codes(L).Code
                 Case "</td></tr></table>", "</li>"
-                    Codes(l).Status = "PG"
-                    CodesBeg(l).Status = "PG"
+                    Codes(L).Status = "PG"
+                    CodesBeg(L).Status = "PG"
                 Case Else
-                    Codes(l).Status = "P"
-                    CodesBeg(l).Status = "P"
+                    Codes(L).Status = "P"
+                    CodesBeg(L).Status = "P"
                 End Select
             End If
-        Next l
+        Next L
         ReDim NextCodes(0)
         ReDim NextCodesBeg(0)
     End If
 End Function
 
 Function Codes2Next()
-    'move codes from "current" stack to pending ("next") stack
+'move codes from "current" stack to pending ("next") stack
     Dim lNumCodes As Long
-    Dim l As Long
-    
+    Dim L As Long
+
     If UBound(Codes) > 0 Then
         lNumCodes = UBound(NextCodes)
         ReDim Preserve NextCodes(lNumCodes + UBound(Codes))
         ReDim Preserve NextCodesBeg(lNumCodes + UBound(Codes))
-        For l = 1 To UBound(Codes)
-            NextCodes(lNumCodes + l) = Codes(l).Code
-            NextCodesBeg(lNumCodes + l) = CodesBeg(l).Code
-        Next l
+        For L = 1 To UBound(Codes)
+            NextCodes(lNumCodes + L) = Codes(L).Code
+            NextCodesBeg(lNumCodes + L) = CodesBeg(L).Code
+        Next L
         ReDim Codes(0)
         ReDim CodesBeg(0)
     End If
@@ -426,16 +426,16 @@ End Function
 
 Function ParseFont(strColor As String, strSize As String, strFace As String) As String
     Dim strTmpFont As String
-    
+
     If strColor & strSize & strFace = "" Then
         strTmpFont = ""
     Else
         strTmpFont = "<font"
         If strFace <> "" Then
-           strTmpFont = strTmpFont & " face=""" & strFace & """"
+            strTmpFont = strTmpFont & " face=""" & strFace & """"
         End If
         If strColor <> "" Then
-           strTmpFont = strTmpFont & " color=""" & strColor & """"
+            strTmpFont = strTmpFont & " color=""" & strColor & """"
         End If
         If strSize <> "" And Val(strSize) <> iDefFontSize Then
             strTmpFont = strTmpFont & " size=" & strSize
@@ -454,10 +454,10 @@ End Function
 
 Function ProcessAfterTextCodes() As String
     Dim strTmp As String
-    Dim l As Long
+    Dim L As Long
     Dim lLastKilled As Long
     Dim lRetVal As Long
-    
+
     'check for/handle font change
     If strFont <> GetLastFont Then
         KillCode ("</font>")
@@ -471,130 +471,130 @@ Function ProcessAfterTextCodes() As String
     Else
         If Not InNext("</li>") Then ReviveCode ("</font>")
     End If
-        
+
     'now handle everything killed and move codes farther in to next
     '    ie: \b B\i B \u B\i0 B \u0\b0 => <b>B<i>B<u>B</u>B</i><u>B</u></b>
     strTmp = ""
     If UBound(Codes) > 0 Then
         lLastKilled = 0
-        For l = UBound(Codes) To 1 Step -1
-            If Codes(l).Status = "K" Then
-                lLastKilled = l
+        For L = UBound(Codes) To 1 Step -1
+            If Codes(L).Status = "K" Then
+                lLastKilled = L
                 Exit For
             End If
-        Next l
+        Next L
         If lLastKilled > 0 Then
-            For l = 1 To lLastKilled
-                strTmp = strTmp & Codes(l).Code
-                If Codes(l).Code = "</li>" Then strTmp = strTmp & strCR
-            Next l
-            For l = lLastKilled To 1 Step -1
-                If Codes(l).Status <> "D" And Codes(l).Status <> "K" Then
-                    If Not InNext(Codes(l).Code) Then
-                        PushNext (Codes(l).Code)
-                        PushNextBeg (CodesBeg(l).Code)
+            For L = 1 To lLastKilled
+                strTmp = strTmp & Codes(L).Code
+                If Codes(L).Code = "</li>" Then strTmp = strTmp & strCR
+            Next L
+            For L = lLastKilled To 1 Step -1
+                If Codes(L).Status <> "D" And Codes(L).Status <> "K" Then
+                    If Not InNext(Codes(L).Code) Then
+                        PushNext (Codes(L).Code)
+                        PushNextBeg (CodesBeg(L).Code)
                     End If
-                    Codes(l).Status = "K"
-                    CodesBeg(l).Status = "K"
+                    Codes(L).Status = "K"
+                    CodesBeg(L).Status = "K"
                 End If
-            Next l
+            Next L
         End If
     End If
     ProcessAfterTextCodes = strTmp
 End Function
 Function GetActiveCodes() As String
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = ""
     If UBound(Codes) > 0 Then
-        For l = 1 To UBound(Codes)
-            strTmp = strTmp & Codes(l).Code
-        Next l
+        For L = 1 To UBound(Codes)
+            strTmp = strTmp & Codes(L).Code
+        Next L
     End If
     GetActiveCodes = strTmp
 End Function
 
 Function GetLastFont() As String
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = ""
     If UBound(Codes) > 0 Then
-        For l = UBound(Codes) To 1 Step -1
-            If Codes(l).Code = "</font>" Then
-                strTmp = CodesBeg(l).Code
+        For L = UBound(Codes) To 1 Step -1
+            If Codes(L).Code = "</font>" Then
+                strTmp = CodesBeg(L).Code
                 Exit For
             End If
-        Next l
+        Next L
     End If
     GetLastFont = strTmp
 End Function
 
 Function SetPendingCodesActive()
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = ""
     If UBound(Codes) > 0 Then
-        For l = 1 To UBound(Codes)
-            If Codes(l).Status = "P" Then
-                Codes(l).Status = "A"
-                CodesBeg(l).Status = "A"
-            ElseIf Codes(l).Status = "PG" Then
-                Codes(l).Status = "G"
-                CodesBeg(l).Status = "G"
+        For L = 1 To UBound(Codes)
+            If Codes(L).Status = "P" Then
+                Codes(L).Status = "A"
+                CodesBeg(L).Status = "A"
+            ElseIf Codes(L).Status = "PG" Then
+                Codes(L).Status = "G"
+                CodesBeg(L).Status = "G"
             End If
-        Next l
+        Next L
     End If
 End Function
 
 Function KillCode(strCode As String, Optional strExcept As String = "") As Long
-    'mark all codes of type strCode as killed
-    '    except where status = strExcept
-    '    if strCode = "*" then mark all killed
+'mark all codes of type strCode as killed
+'    except where status = strExcept
+'    if strCode = "*" then mark all killed
     Dim strTmp As String
-    Dim l As Long
-        
+    Dim L As Long
+
     strTmp = ""
     If UBound(Codes) > 0 Then
         If left(strExcept, 1) = "<" Then    'strExcept is either a code or a status
-            For l = 1 To UBound(Codes)
-                If (Codes(l).Code = strCode Or strCode = "*") And Codes(l).Code <> strExcept Then
-                    Codes(l).Status = "K"
-                    CodesBeg(l).Status = "K"
+            For L = 1 To UBound(Codes)
+                If (Codes(L).Code = strCode Or strCode = "*") And Codes(L).Code <> strExcept Then
+                    Codes(L).Status = "K"
+                    CodesBeg(L).Status = "K"
                 End If
-                If strCode = "*" And Codes(l).Code = strExcept Then Exit For
-            Next l
+                If strCode = "*" And Codes(L).Code = strExcept Then Exit For
+            Next L
         Else
-            For l = 1 To UBound(Codes)
-                If (Codes(l).Code = strCode Or strCode = "*") And Codes(l).Status <> strExcept Then
-                    Codes(l).Status = "K"
-                    CodesBeg(l).Status = "K"
+            For L = 1 To UBound(Codes)
+                If (Codes(L).Code = strCode Or strCode = "*") And Codes(L).Status <> strExcept Then
+                    Codes(L).Status = "K"
+                    CodesBeg(L).Status = "K"
                 End If
-            Next l
+            Next L
         End If
     End If
 End Function
 
 Function GetAllCodesTill(strTill As String) As String
-    'get all codes except strTill
+'get all codes except strTill
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = ""
     If UBound(Codes) > 0 Then
-        For l = UBound(Codes) To 1 Step -1
-            If Codes(l).Code = strTill Then
+        For L = UBound(Codes) To 1 Step -1
+            If Codes(L).Code = strTill Then
                 Exit For
             Else
-                If Not InNextBeg(CodesBeg(l).Code) And Codes(l).Status <> "D" Then
-                    strTmp = strTmp & Codes(l).Code
-                    Codes(l).Status = "K"
-                    CodesBeg(l).Status = "K"
+                If Not InNextBeg(CodesBeg(L).Code) And Codes(L).Status <> "D" Then
+                    strTmp = strTmp & Codes(L).Code
+                    Codes(L).Status = "K"
+                    CodesBeg(L).Status = "K"
                 End If
             End If
-        Next l
+        Next L
     End If
     GetAllCodesTill = strTmp
 End Function
@@ -602,48 +602,48 @@ End Function
 
 Function GetAllCodesBeg() As String
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = ""
     If UBound(CodesBeg) > 0 Then
-        For l = UBound(CodesBeg) To 1 Step -1
-            If CodesBeg(l).Status = "P" Then
-                strTmp = strTmp & CodesBeg(l).Code
-                CodesBeg(l).Status = "A"
-                Codes(l).Status = "A"
-            ElseIf CodesBeg(l).Status = "PG" Then
-                strTmp = strTmp & CodesBeg(l).Code
-                CodesBeg(l).Status = "G"
-                Codes(l).Status = "G"
+        For L = UBound(CodesBeg) To 1 Step -1
+            If CodesBeg(L).Status = "P" Then
+                strTmp = strTmp & CodesBeg(L).Code
+                CodesBeg(L).Status = "A"
+                Codes(L).Status = "A"
+            ElseIf CodesBeg(L).Status = "PG" Then
+                strTmp = strTmp & CodesBeg(L).Code
+                CodesBeg(L).Status = "G"
+                Codes(L).Status = "G"
             End If
-        Next l
+        Next L
     End If
     GetAllCodesBeg = strTmp
 End Function
 
 Function GetAllCodesBegTill(strTill As String) As String
-    'get all codes except strTill - stop if strTill reached
-    '"<table"
+'get all codes except strTill - stop if strTill reached
+'"<table"
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = ""
     If UBound(CodesBeg) > 0 Then
-        For l = 1 To UBound(CodesBeg)
-            If Codes(l).Code = strTill Then
+        For L = 1 To UBound(CodesBeg)
+            If Codes(L).Code = strTill Then
                 Exit For
             Else
-                If CodesBeg(l).Status = "P" Then
-                    strTmp = strTmp & CodesBeg(l).Code
-                    Codes(l).Status = "A"
-                    CodesBeg(l).Status = "A"
-                ElseIf CodesBeg(l).Status = "PG" Then
-                    strTmp = strTmp & CodesBeg(l).Code
-                    Codes(l).Status = "G"
-                    CodesBeg(l).Status = "G"
+                If CodesBeg(L).Status = "P" Then
+                    strTmp = strTmp & CodesBeg(L).Code
+                    Codes(L).Status = "A"
+                    CodesBeg(L).Status = "A"
+                ElseIf CodesBeg(L).Status = "PG" Then
+                    strTmp = strTmp & CodesBeg(L).Code
+                    Codes(L).Status = "G"
+                    CodesBeg(L).Status = "G"
                 End If
             End If
-        Next l
+        Next L
     End If
     GetAllCodesBegTill = strTmp
 End Function
@@ -654,26 +654,26 @@ End Function
 
 
 Function ShiftNext() As String
-    'get 1st code off list and shorten list
-    Dim l As Long
-    
+'get 1st code off list and shorten list
+    Dim L As Long
+
     If UBound(NextCodes) > 0 Then
         ShiftNext = NextCodes(1)
-        For l = 1 To UBound(NextCodes) - 1
-            NextCodes(l) = NextCodes(l + 1)
-        Next l
+        For L = 1 To UBound(NextCodes) - 1
+            NextCodes(L) = NextCodes(L + 1)
+        Next L
         ReDim Preserve NextCodes(UBound(NextCodes) - 1)
     End If
 End Function
 Function ShiftNextBeg() As String
-    'get 1st code off list and shorten list
-    Dim l As Long
-    
+'get 1st code off list and shorten list
+    Dim L As Long
+
     If UBound(NextCodesBeg) > 0 Then
         ShiftNextBeg = NextCodesBeg(1)
-        For l = 1 To UBound(NextCodesBeg) - 1
-            NextCodesBeg(l) = NextCodesBeg(l + 1)
-        Next l
+        For L = 1 To UBound(NextCodesBeg) - 1
+            NextCodesBeg(L) = NextCodesBeg(L + 1)
+        Next L
         ReDim Preserve NextCodesBeg(UBound(NextCodesBeg) - 1)
     End If
 End Function
@@ -682,13 +682,13 @@ End Function
 Function ProcessWord(strWord As String)
     Dim strTmp As String
     Dim strTmpbeg As String
-    Dim l As Long
+    Dim L As Long
     Dim gPopAll As Boolean
     Dim lRetVal As Long
-    
+
     Dim strTableAlign As String    'current table alignment for setting up tablestring
     Dim strTableWidth As String    'current table width for setting up tablestring
-    
+
     If lSkipWords > 0 Then
         lSkipWords = lSkipWords - 1
         Exit Function
@@ -713,7 +713,7 @@ Function ProcessWord(strWord As String)
         Case "\b"    'bold
             If strWord = "\b" Then
                 If InCodes("</b>", True) Then
-'                    Codes2NextTill ("</b>")
+                    '                    Codes2NextTill ("</b>")
                 Else
                     PushNext ("</b>")
                     PushNextBeg ("<b>")
@@ -738,11 +738,11 @@ Function ProcessWord(strWord As String)
                 strFont = ParseFont(strFontColor, strFontSize, strFace)
             ElseIf left(strWord, 3) = "\cf" And IsNumeric(Mid(strWord, 4)) Then  'color font
                 'get color code
-                l = Val(Mid(strWord, 4))
-                If l <= UBound(strColorTable) And l > 0 Then
-                    strFontColor = "#" & strColorTable(l)
+                L = Val(Mid(strWord, 4))
+                If L <= UBound(strColorTable) And L > 0 Then
+                    strFontColor = "#" & strColorTable(L)
                 End If
-                
+
                 'insert color
                 If strFontColor <> "#" Then
                     strFont = ParseFont(strFontColor, strFontSize, strFace)
@@ -761,8 +761,8 @@ Function ProcessWord(strWord As String)
             End If
         Case "\f"
             If left(strWord, 3) = "\fs" And IsNumeric(Mid(strWord, 4)) Then  'font size
-                l = Val(Mid(strWord, 4))
-                lFontSize = Int((l / 7) - 0)    'calc to convert RTF to HTML sizes
+                L = Val(Mid(strWord, 4))
+                lFontSize = Int((L / 7) - 0)    'calc to convert RTF to HTML sizes
                 If lFontSize > 8 Then lFontSize = 8
                 If lFontSize < 1 Then lFontSize = 1
                 strFontSize = Trim(lFontSize)
@@ -774,14 +774,14 @@ Function ProcessWord(strWord As String)
                 strFont = ParseFont(strFontColor, strFontSize, strFace)
             End If
         Case "\i"
-            If strWord = "\i" Then 'italics
+            If strWord = "\i" Then    'italics
                 If InCodes("</i>", True) Then
-'                    Codes2NextTill ("</i>")
+                    '                    Codes2NextTill ("</i>")
                 Else
                     PushNext ("</i>")
                     PushNextBeg ("<i>")
                 End If
-            ElseIf strWord = "\i0" Then 'italics off
+            ElseIf strWord = "\i0" Then    'italics off
                 If InCodes("</i>") Then
                     Codes2NextTill ("</i>")
                     KillCode ("</i>")
@@ -826,12 +826,12 @@ Function ProcessWord(strWord As String)
                 '    PushNextBeg ("<li>")
                 'End If
             ElseIf strWord = "\pard" Then
-                For l = 1 To UBound(CodesBeg)
-                    If Codes(l).Status = "G" Or Codes(l).Status = "PG" Then
-                        Codes(l).Status = "K"
-                        CodesBeg(l).Status = "K"
+                For L = 1 To UBound(CodesBeg)
+                    If Codes(L).Status = "G" Or Codes(L).Status = "PG" Then
+                        Codes(L).Status = "K"
+                        CodesBeg(L).Status = "K"
                     End If
-                Next l
+                Next L
                 If Not gIgnorePard Then
                     If InCodes("</li>") Then
                         lRetVal = KillCode("</li>")
@@ -842,18 +842,18 @@ Function ProcessWord(strWord As String)
             ElseIf strWord = "\plain" Then
                 lRetVal = KillCode("*", "G")
                 ClearFont
-            ElseIf strWord = "\pnlvlblt" Then 'bulleted list
+            ElseIf strWord = "\pnlvlblt" Then    'bulleted list
                 If Not InNext("</li>") Then
                     PushNext ("</li>")
                     PushNextBeg ("<li>")
                 End If
                 'PushNext ("</ul>")
                 'PushNextBeg ("<ul>")
-            ElseIf strWord = "\pntxta" Then 'numbered list?
+            ElseIf strWord = "\pntxta" Then    'numbered list?
                 lSkipWords = 1
-            ElseIf strWord = "\pntxtb" Then 'numbered list?
+            ElseIf strWord = "\pntxtb" Then    'numbered list?
                 lSkipWords = 1
-            ElseIf strWord = "\pntext" Then 'bullet
+            ElseIf strWord = "\pntext" Then    'bullet
                 If Not InNext("</li>") Then
                     PushNext ("</li>")
                     PushNextBeg ("<li>")
@@ -935,7 +935,7 @@ Function ProcessWord(strWord As String)
         Case "\u"
             If strWord = "\ul" Then    'underline
                 If InCodes("</u>", True) Then
-'                    Codes2NextTill ("</u>")
+                    '                    Codes2NextTill ("</u>")
                 Else
                     PushNext ("</u>")
                     PushNextBeg ("<u>")
@@ -969,7 +969,7 @@ Function ProcessWord(strWord As String)
                     strBeforeText3 = GetAllCodesBegTill("</td></tr></table>")
                 End If
                 RemoveBlanks
-                
+
                 strCurPhrase = strCurPhrase & strBeforeText
                 strBeforeText = ""
                 strCurPhrase = strCurPhrase & strBeforeText2
@@ -990,29 +990,29 @@ Function PushNext(strCode As String)
 End Function
 
 Function UnShiftNext(strCode As String)
-    'stick strCode on front of list and move everything over to make room
-    Dim l As Long
-    
+'stick strCode on front of list and move everything over to make room
+    Dim L As Long
+
     If Len(strCode) > 0 Then
         ReDim Preserve NextCodes(UBound(NextCodes) + 1)
         If UBound(NextCodes) > 1 Then
-            For l = UBound(NextCodes) To 1 Step -1
-                NextCodes(l) = NextCodes(l - 1)
-            Next l
+            For L = UBound(NextCodes) To 1 Step -1
+                NextCodes(L) = NextCodes(L - 1)
+            Next L
         End If
         NextCodes(1) = strCode
     End If
 End Function
 
 Function UnShiftNextBeg(strCode As String)
-    Dim l As Long
-    
+    Dim L As Long
+
     If Len(strCode) > 0 Then
         ReDim Preserve NextCodesBeg(UBound(NextCodesBeg) + 1)
         If UBound(NextCodesBeg) > 1 Then
-            For l = UBound(NextCodesBeg) To 1 Step -1
-                NextCodesBeg(l) = NextCodesBeg(l - 1)
-            Next l
+            For L = UBound(NextCodesBeg) To 1 Step -1
+                NextCodesBeg(L) = NextCodesBeg(L - 1)
+            Next L
         End If
         NextCodesBeg(1) = strCode
     End If
@@ -1025,20 +1025,20 @@ End Function
 
 
 Function RemoveBlanks()
-    Dim l As Long
+    Dim L As Long
     Dim lOffSet As Long
-    
-    l = 1
+
+    L = 1
     lOffSet = 0
-    While l <= UBound(CodesBeg) And l + lOffSet <= UBound(CodesBeg)
-        If CodesBeg(l).Status = "K" Or CodesBeg(l).Status = "" Then     'And Not (Codes(l) = "</font>" And Len(strFont) > 0) Then
+    While L <= UBound(CodesBeg) And L + lOffSet <= UBound(CodesBeg)
+        If CodesBeg(L).Status = "K" Or CodesBeg(L).Status = "" Then     'And Not (Codes(l) = "</font>" And Len(strFont) > 0) Then
             lOffSet = lOffSet + 1
         Else
-            l = l + 1
+            L = L + 1
         End If
-        If l + lOffSet <= UBound(CodesBeg) Then
-            Codes(l) = Codes(l + lOffSet)
-            CodesBeg(l) = CodesBeg(l + lOffSet)
+        If L + lOffSet <= UBound(CodesBeg) Then
+            Codes(L) = Codes(L + lOffSet)
+            CodesBeg(L) = CodesBeg(L + lOffSet)
         End If
     Wend
     If lOffSet > 0 Then
@@ -1048,20 +1048,20 @@ Function RemoveBlanks()
 End Function
 
 Function RemoveFromNext(strRem As String)
-    Dim l As Long
+    Dim L As Long
     Dim m As Long
-    
+
     If UBound(NextCodes) < 1 Then GoTo finally
-    l = 1
-    While l < UBound(NextCodes)
-        If NextCodes(l) = strRem Then
-            For m = l To UBound(NextCodes) - 1
+    L = 1
+    While L < UBound(NextCodes)
+        If NextCodes(L) = strRem Then
+            For m = L To UBound(NextCodes) - 1
                 NextCodes(m) = NextCodes(m + 1)
                 NextCodesBeg(m) = NextCodesBeg(m + 1)
             Next m
-            l = m
+            L = m
         Else
-            l = l + 1
+            L = L + 1
         End If
     Wend
     ReDim Preserve NextCodes(UBound(NextCodes) - 1)
@@ -1070,9 +1070,9 @@ finally:
 End Function
 
 Function rtf2html_replace(ByVal strIn As String, ByVal strRepl As String, ByVal strWith As String) As String
-    'replace all instances of strRepl in strIn with strWith
+'replace all instances of strRepl in strIn with strWith
     Dim i As Integer
-    
+
     If ((Len(strRepl) = 0) Or (Len(strIn) = 0)) Then
         rtf2html_replace = strIn
         Exit Function
@@ -1086,62 +1086,62 @@ Function rtf2html_replace(ByVal strIn As String, ByVal strRepl As String, ByVal 
 End Function
 
 Function ReviveCode(strCode As String)
-    Dim l As Long
-    
-    For l = 1 To UBound(Codes)
-        If Codes(l).Code = strCode Then
-            Codes(l).Status = "A"
-            CodesBeg(l).Status = "A"
+    Dim L As Long
+
+    For L = 1 To UBound(Codes)
+        If Codes(L).Code = strCode Then
+            Codes(L).Status = "A"
+            CodesBeg(L).Status = "A"
         End If
-    Next l
+    Next L
 End Function
 
 Function ReplaceInNextBeg(strCode As String, strWith As String) As Long
-    Dim l As Long
+    Dim L As Long
     Dim lCount As Long    'number of codes replaced
-    
+
     lCount = 0
-    For l = 1 To UBound(NextCodes)
-        If NextCodes(l) = strCode Then
-            NextCodesBeg(l) = strWith
+    For L = 1 To UBound(NextCodes)
+        If NextCodes(L) = strCode Then
+            NextCodesBeg(L) = strWith
             lCount = lCount + 1
         End If
-    Next l
+    Next L
     ReplaceInNextBeg = lCount
 End Function
 
 Function ReplaceInCodesBeg(strCode As String, strWith As String)
-    Dim l As Long
-    
-    l = 1
-    While l <= UBound(Codes) And Codes(l).Code <> strCode
-        l = l + 1
+    Dim L As Long
+
+    L = 1
+    While L <= UBound(Codes) And Codes(L).Code <> strCode
+        L = L + 1
     Wend
-    If Codes(l).Code = strCode Then
-        If CodesBeg(l).Code <> strWith Then
-            CodesBeg(l).Code = strWith
-            Codes(l).Status = "P"
-            CodesBeg(l).Status = "P"
+    If Codes(L).Code = strCode Then
+        If CodesBeg(L).Code <> strWith Then
+            CodesBeg(L).Code = strWith
+            Codes(L).Status = "P"
+            CodesBeg(L).Status = "P"
         Else
-            Codes(l).Status = "P"
-            CodesBeg(l).Status = "P"
+            Codes(L).Status = "P"
+            CodesBeg(L).Status = "P"
         End If
     End If
 End Function
 
 Public Function rtf2html3(strRTF As String, Optional strOptions As String) As String
-    'Options:
-    '+H              add an HTML header and footer
-    '+G              add a generator Metatag
-    '+T="MyTitle"    add a title (only works if +H is used)
-    '+CR             add a carraige return after all <br>s
-    '+I              keep html codes intact
-    '+F=X            default font size (blanks out any changes to this size - saves on space)
-    '-FF             ignore font faces
-    
+'Options:
+'+H              add an HTML header and footer
+'+G              add a generator Metatag
+'+T="MyTitle"    add a title (only works if +H is used)
+'+CR             add a carraige return after all <br>s
+'+I              keep html codes intact
+'+F=X            default font size (blanks out any changes to this size - saves on space)
+'-FF             ignore font faces
+
     Dim strHTML As String
     Dim strRTFTmp As String
-    Dim l As Long
+    Dim L As Long
     Dim lTmp As Long
     Dim lTmp2 As Long
     Dim lTmp3 As Long
@@ -1178,29 +1178,29 @@ Public Function rtf2html3(strRTF As String, Optional strOptions As String) As St
     gBOL = True
     gPar = False
     strCurPhrase = ""
-    
+
     'setup +CR option
     If InStr(strOptions, "+CR") <> 0 Then strCR = vbCrLf Else strCR = ""
     'setup +HTML option
     If InStr(strOptions, "+I") <> 0 Then gHTML = True Else gHTML = False
     'setup default font size option
     If InStr(strOptions, "+F=") <> 0 Then
-        l = InStr(strOptions, "+F=") + 3
-        strTmp = Mid(strOptions, l, 1)
+        L = InStr(strOptions, "+F=") + 3
+        strTmp = Mid(strOptions, L, 1)
         iDefFontSize = 0
         While IsDig(strTmp)
             iDefFontSize = iDefFontSize * 10 + Val(strTmp)
-            l = l + 1
-            strTmp = Mid(strOptions, l, 1)
+            L = L + 1
+            strTmp = Mid(strOptions, L, 1)
         Wend
     End If
     'setup to use different fonts or not
     If InStr(strOptions, "-FF") <> 0 Then gUseFontFace = False Else gUseFontFace = True
-    
+
     strRTFTmp = TrimAll(strRTF)
 
     If left(strRTFTmp, 1) = "{" And Right(strRTFTmp, 1) = "}" Then strRTFTmp = Mid(strRTFTmp, 2, Len(strRTFTmp) - 2)
-    
+
     'setup list (bullets) status
     If InStr(strRTFTmp, "\list\") <> 0 Then
         'I'm not sure if this is in any way correct but it seems to work for me
@@ -1209,42 +1209,42 @@ Public Function rtf2html3(strRTF As String, Optional strOptions As String) As St
     Else
         gIgnorePard = False
     End If
-    
+
     'setup color table
     lBOS = InStr(strRTFTmp, "\colortbl")
     If lBOS > 0 Then
         strSecTmp = NabSection(strRTFTmp, lBOS)
         GetColorTable strSecTmp, strColorTable()
     End If
-    
+
     'setup font table
     lBOS = InStr(strRTFTmp, "\fonttbl")
     If lBOS > 0 Then
         strSecTmp = NabSection(strRTFTmp, lBOS)
         GetFontTable strSecTmp, strFontTable()
     End If
-    
+
     'setup stylesheets
     lBOS = InStr(strRTFTmp, "\stylesheet")
     If lBOS > 0 Then
         strSecTmp = NabSection(strRTFTmp, lBOS)
         'ignore stylesheets for now
     End If
-    
+
     'setup info
     lBOS = InStr(strRTFTmp, "\info")
     If lBOS > 0 Then
         strSecTmp = NabSection(strRTFTmp, lBOS)
         'ignore info for now
     End If
-    
+
     'list table
     lBOS = InStr(strRTFTmp, "\listtable")
     If lBOS > 0 Then
         strSecTmp = NabSection(strRTFTmp, lBOS)
         'ignore info for now
     End If
-    
+
     'list override table
     lBOS = InStr(strRTFTmp, "\listoverridetable")
     If lBOS > 0 Then
@@ -1280,7 +1280,7 @@ Public Function rtf2html3(strRTF As String, Optional strOptions As String) As St
             End If
         Wend
     Wend
-    
+
     'get any remaining codes in stack
     strEndText = strEndText & GetActiveCodes
     strBeforeText2 = rtf2html_replace(strBeforeText2, "<br>", "")
@@ -1305,8 +1305,8 @@ End Function
 
 Function GetCodes(strWordTmp As String) As String
     Dim strTmp As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = "CurWord: "
     If Len(strWordTmp) > 20 Then
         strTmp = strTmp & left(strWordTmp, 20) & "..."
@@ -1314,33 +1314,33 @@ Function GetCodes(strWordTmp As String) As String
         strTmp = strTmp & strWordTmp
     End If
     strTmp = strTmp & vbCrLf & vbCrLf & "BegCodes: "
-    For l = 1 To UBound(CodesBeg)
-        strTmp = strTmp & CodesBeg(l).Code & " (" & CodesBeg(l).Status & "), "
-    Next l
+    For L = 1 To UBound(CodesBeg)
+        strTmp = strTmp & CodesBeg(L).Code & " (" & CodesBeg(L).Status & "), "
+    Next L
     strTmp = strTmp & vbCrLf & "Codes: "
-    For l = 1 To UBound(Codes)
-        strTmp = strTmp & Codes(l).Code & " (" & Codes(l).Status & "), "
-    Next l
+    For L = 1 To UBound(Codes)
+        strTmp = strTmp & Codes(L).Code & " (" & Codes(L).Status & "), "
+    Next L
     strTmp = strTmp & vbCrLf & vbCrLf & "NextBegCodes: "
-    For l = 1 To UBound(NextCodesBeg)
-        strTmp = strTmp & NextCodesBeg(l) & ", "
-    Next l
+    For L = 1 To UBound(NextCodesBeg)
+        strTmp = strTmp & NextCodesBeg(L) & ", "
+    Next L
     strTmp = strTmp & vbCrLf & "NextCodes: "
-    For l = 1 To UBound(NextCodes)
-        strTmp = strTmp & NextCodes(l) & ", "
-    Next l
+    For L = 1 To UBound(NextCodes)
+        strTmp = strTmp & NextCodes(L) & ", "
+    Next L
     strTmp = strTmp & vbCrLf & vbCrLf & "Font String: " & strFont
     strTmp = strTmp & vbCrLf & vbCrLf & "Before Text: " & strBeforeText2
     GetCodes = strTmp
 End Function
 
 Function TrimAll(ByVal strTmp As String) As String
-    Dim l As Long
-    
+    Dim L As Long
+
     strTmp = Trim(strTmp)
-    l = Len(strTmp) + 1
-    While l <> Len(strTmp)
-        l = Len(strTmp)
+    L = Len(strTmp) + 1
+    While L <> Len(strTmp)
+        L = Len(strTmp)
         If Right(strTmp, 1) = vbCrLf Then strTmp = left(strTmp, Len(strTmp) - 1)
         If left(strTmp, 1) = vbCrLf Then strTmp = Right(strTmp, Len(strTmp) - 1)
         If Right(strTmp, 1) = vbCr Then strTmp = left(strTmp, Len(strTmp) - 1)
@@ -1352,7 +1352,7 @@ Function TrimAll(ByVal strTmp As String) As String
 End Function
 
 Function HTMLCode(strRTFCode As String) As String
-    'given rtf code return html code
+'given rtf code return html code
     Select Case strRTFCode
     Case "00"
         HTMLCode = "&nbsp;"
@@ -1554,13 +1554,13 @@ Function HTMLCode(strRTFCode As String) As String
 End Function
 
 Function TrimifCmd(ByVal strTmp As String) As String
-    Dim l As Long
-    
-    l = 1
-    While Mid(strTmp, l, 1) = " "
-        l = l + 1
+    Dim L As Long
+
+    L = 1
+    While Mid(strTmp, L, 1) = " "
+        L = L + 1
     Wend
-    If Mid(strTmp, l, 1) = "\" Or Mid(strTmp, l, 1) = "{" Then
+    If Mid(strTmp, L, 1) = "\" Or Mid(strTmp, L, 1) = "{" Then
         strTmp = Trim(strTmp)
     Else
         If left(strTmp, 1) = " " Then strTmp = Mid(strTmp, 2)

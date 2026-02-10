@@ -61,8 +61,8 @@ Private Sub SockRem_ConnectionRequest(ByVal requestID As Long)
         TmrEspera.Enabled = True
         SockRem.Accept requestID
     Else
-        
-        
+
+
     End If
 End Sub
 
@@ -76,7 +76,7 @@ Private Sub SockRem_DataArrival(ByVal bytesTotal As Long)
         Procesa_Orden_Remota
         TmrEspera.Enabled = True
     End If
-    
+
 End Sub
 Public Sub Enviar_Respuesta()
     SeHaEnviado = False

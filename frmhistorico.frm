@@ -119,7 +119,7 @@ Private Sub cmdgo_Click()
     Me.Label2.Caption = "Trabajando..."
     Do_Events
     If Not IsNumeric(Right(TxtFecha.TexT, 2)) Or Not IsNumeric(left(TxtFecha.TexT, 2)) _
-    Or Not IsNumeric(Mid(TxtFecha.TexT, 4, 2)) Then
+       Or Not IsNumeric(Mid(TxtFecha.TexT, 4, 2)) Then
         MsgBox CargaCadena(506), vbInformation
     End If
     If frmhistorico.Tag = "" Then
@@ -133,121 +133,121 @@ Private Sub cmdgo_Click()
         GoTo SigueTrasGian
         'Exit Sub
     End If
-    
+
     Select Case frmhistorico.Tag
-        Case 0
-            antiguo = Miruta & "\" & Right(TxtFecha.TexT, 2) & Mid(TxtFecha.TexT, 4, 2) & left(TxtFecha.TexT, 2)
-            '
-            ' Comprueba si existe el fichero
-            '
-            If Dir(antiguo) = "" Then
-                MsgBox CargaCadena(864)
-                Me.Enabled = True
-                cmdcancel.Enabled = True
-                cmdcancel.Caption = "Salir"
-                Me.Label2.Caption = "Finalizado"
-                Exit Sub
-            End If
-            '
-            ' Copia el fichero con el nombre totales.dat
-            '
-            On Error GoTo manejaerror
-            FileCopy antiguo, PathOrden & "\" & "totales.dat"
-            On Error GoTo 0
-        Case 1
-            If lAlba Then
-                Alba_EnviaTiquetsPendientes True, Mid(TxtFecha.TexT, 4, 2) & "/" & left(TxtFecha.TexT, 2) & "/" & Right(TxtFecha.TexT, 2)
+    Case 0
+        antiguo = Miruta & "\" & Right(TxtFecha.TexT, 2) & Mid(TxtFecha.TexT, 4, 2) & left(TxtFecha.TexT, 2)
+        '
+        ' Comprueba si existe el fichero
+        '
+        If Dir(antiguo) = "" Then
+            MsgBox CargaCadena(864)
+            Me.Enabled = True
+            cmdcancel.Enabled = True
+            cmdcancel.Caption = "Salir"
+            Me.Label2.Caption = "Finalizado"
+            Exit Sub
+        End If
+        '
+        ' Copia el fichero con el nombre totales.dat
+        '
+        On Error GoTo manejaerror
+        FileCopy antiguo, PathOrden & "\" & "totales.dat"
+        On Error GoTo 0
+    Case 1
+        If lAlba Then
+            Alba_EnviaTiquetsPendientes True, Mid(TxtFecha.TexT, 4, 2) & "/" & left(TxtFecha.TexT, 2) & "/" & Right(TxtFecha.TexT, 2)
+        Else
+            If lBoka Then
+                FrmExportKuups.ExportarFichero_BOKA 0, "boka.txt", Mid(TxtFecha.TexT, 4, 2) & "/" & left(TxtFecha.TexT, 2) & "/" & Right(TxtFecha.TexT, 2), True, True
+                'FrmExportKuups.ExportarFichero_BOKA 0, "boka.txt", 0, True, True
             Else
-                If lBoka Then
-                    FrmExportKuups.ExportarFichero_BOKA 0, "boka.txt", Mid(TxtFecha.TexT, 4, 2) & "/" & left(TxtFecha.TexT, 2) & "/" & Right(TxtFecha.TexT, 2), True, True
-                    'FrmExportKuups.ExportarFichero_BOKA 0, "boka.txt", 0, True, True
+                '''
+                If lFornes Then
+                    Call export_BL(True)
                 Else
-                    '''
-                    If lFornes Then
-                        Call export_BL(True)
-                    Else
-                        ExportaTotalesDat False, Mid(TxtFecha.TexT, 4, 2) & "/" & left(TxtFecha.TexT, 2) & "/" & Right(TxtFecha.TexT, 2)
-                    End If
+                    ExportaTotalesDat False, Mid(TxtFecha.TexT, 4, 2) & "/" & left(TxtFecha.TexT, 2) & "/" & Right(TxtFecha.TexT, 2)
                 End If
             End If
-            
-   End Select
-            '*******************************
-            ' tras generar el archivo
-            ' llama a msb100
-            '*******************************
- 
+        End If
+
+    End Select
+    '*******************************
+    ' tras generar el archivo
+    ' llama a msb100
+    '*******************************
+
 SigueTrasGian:
 
- Me.Enabled = True
- cmdcancel.Enabled = True
- cmdcancel.Caption = "Salir"
- Me.Label2.Caption = "Finalizado"
- Do_Events
-If Me.Tag = 0 Then
-If Dir(MiPath & "\xmsb100.exe") <> "" Or Dir(Miruta & "\fedeiv8.exe") <> "" Or Dir(Miruta & "\fede386.exe") <> "" Then
-    ChDir MiPath
-    If Dir(MiPath & "\xmsb100.exe") <> "" Then
-        MiResultado = STILL_ACTIVE
-        MiProceso = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(MiPath & "\" & "xmsb100.exe", vbHide))
-        Do While MiResultado = STILL_ACTIVE
-            GetExitCodeProcess MiProceso, MiResultado
-            Do_Events
-        Loop
+    Me.Enabled = True
+    cmdcancel.Enabled = True
+    cmdcancel.Caption = "Salir"
+    Me.Label2.Caption = "Finalizado"
+    Do_Events
+    If Me.Tag = 0 Then
+        If Dir(MiPath & "\xmsb100.exe") <> "" Or Dir(Miruta & "\fedeiv8.exe") <> "" Or Dir(Miruta & "\fede386.exe") <> "" Then
+            ChDir MiPath
+            If Dir(MiPath & "\xmsb100.exe") <> "" Then
+                MiResultado = STILL_ACTIVE
+                MiProceso = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(MiPath & "\" & "xmsb100.exe", vbHide))
+                Do While MiResultado = STILL_ACTIVE
+                    GetExitCodeProcess MiProceso, MiResultado
+                    Do_Events
+                Loop
+            End If
+            If Dir(MiPath & "\fedeiv8.exe") <> "" Then
+                MiResultado = STILL_ACTIVE
+                MiProceso = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(MiPath & "\" & "fedeiv8.exe", vbHide))
+                Do While MiResultado = STILL_ACTIVE
+                    GetExitCodeProcess MiProceso, MiResultado
+                    Do_Events
+                Loop
+            End If
+            If Dir(MiPath & "\fede386.exe") <> "" Then
+                MiResultado = STILL_ACTIVE
+                MiProceso = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(MiPath & "\" & "fede386.exe", vbHide))
+                Do While MiResultado = STILL_ACTIVE
+                    GetExitCodeProcess MiProceso, MiResultado
+                    Do_Events
+                Loop
+            End If
+
+            If Dir(MiPath & "\msb100") = "" Then
+                MsgBox (CargaCadena(861))
+                lCogeTiquet = True
+                Exit Sub
+            End If
+
+            lCogeTiquet = True
+        End If
     End If
-    If Dir(MiPath & "\fedeiv8.exe") <> "" Then
-        MiResultado = STILL_ACTIVE
-        MiProceso = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(MiPath & "\" & "fedeiv8.exe", vbHide))
-        Do While MiResultado = STILL_ACTIVE
-            GetExitCodeProcess MiProceso, MiResultado
-            Do_Events
-        Loop
-    End If
-    If Dir(MiPath & "\fede386.exe") <> "" Then
-        MiResultado = STILL_ACTIVE
-        MiProceso = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(MiPath & "\" & "fede386.exe", vbHide))
-        Do While MiResultado = STILL_ACTIVE
-            GetExitCodeProcess MiProceso, MiResultado
-            Do_Events
-        Loop
-    End If
-    
-    If Dir(MiPath & "\msb100") = "" Then
-        MsgBox (CargaCadena(861))
-        lCogeTiquet = True
-        Exit Sub
-    End If
-    
-    lCogeTiquet = True
-End If
-End If
     'Unload Me
     If lAlba Then
         MsgBox "Generado TQGEN para la fecha indicada.", vbExclamation
         frmEpelsa.Enabled = True
         Unload Me
     End If
-    
+
     Exit Sub
     '
     ' Maneja errores de archivo
     '
 manejaerror:
-        MsgBox (Error)
-    
+    MsgBox (Error)
+
 End Sub
 
 Private Sub Form_Load()
-        frmhistorico.TxtFecha = AdaptaFecha(Format(Date, "dd/mm/yy"))
-        cmdgo.Caption = CargaCadena(287)
-        cmdcancel.Caption = CargaCadena(288)
+    frmhistorico.TxtFecha = AdaptaFecha(Format(Date, "dd/mm/yy"))
+    cmdgo.Caption = CargaCadena(287)
+    cmdcancel.Caption = CargaCadena(288)
+    Label1.Caption = CargaCadena(831)
+    If lFornes Then
+        TxtFecha.Enabled = False
+        Label1.Caption = ""
+    Else
         Label1.Caption = CargaCadena(831)
-        If lFornes Then
-            TxtFecha.Enabled = False
-            Label1.Caption = ""
-        Else
-            Label1.Caption = CargaCadena(831)
-        End If
+    End If
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)

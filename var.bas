@@ -15,23 +15,23 @@ Public Const PROCESS_QUERY_INFORMATION = &H400
 '''''''''''''''''''''''''''''''''''''''''''''''
 'Api FindWindowEx
 Public Declare Function FindWindowEx Lib "user32" _
-   Alias "FindWindowExA" _
-  (ByVal hWndParent As Long, _
-   ByVal hWndChildAfter As Long, _
-   ByVal lpClassName As String, _
-   ByVal lpWindowName As String) As Long
+                                     Alias "FindWindowExA" _
+                                     (ByVal hWndParent As Long, _
+                                      ByVal hWndChildAfter As Long, _
+                                      ByVal lpClassName As String, _
+                                      ByVal lpWindowName As String) As Long
 
 'Api GetParent
 Public Declare Function GetParent Lib "user32" _
-  (ByVal hWnd As Long) As Long
+                                  (ByVal hWnd As Long) As Long
 
 'Api SendMessage
 Public Declare Function SendMessage Lib "user32" _
-   Alias "SendMessageA" _
-   (ByVal hWnd As Long, _
-    ByVal wMsg As Long, _
-    ByVal wParam As Long, _
-    lParam As Any) As Long
+                                    Alias "SendMessageA" _
+                                    (ByVal hWnd As Long, _
+                                     ByVal wMsg As Long, _
+                                     ByVal wParam As Long, _
+                                     lParam As Any) As Long
 
 '/////////////////////////////////////////////version de programa
 
@@ -125,7 +125,7 @@ Global ModificacionesPendientes(3) As Byte
 Global DiasBorrado As Integer
 Global UsuarioRemoto As Tipo_User
 Global UsarPantallas As Boolean
-Public MultiEuroscale As Boolean ' Varias servidoras (una por sección)
+Public MultiEuroscale As Boolean    ' Varias servidoras (una por sección)
 Public PuertoPantallas As Long
 Public OrdenRemota As String
 Public RespuestaRemota As String
@@ -205,19 +205,19 @@ Global LogArticulos As Boolean
 '*****************************
 ' enlace Supeco
 Global Supeco As Boolean
-Global Supeco_Path As String ' path para depositar tickets
-Global Supeco_Art As String ' path para recoger artibal
+Global Supeco_Path As String    ' path para depositar tickets
+Global Supeco_Art As String    ' path para recoger artibal
 '*****************
 ' comandos libres
 Public ComandoLibre(5) As String
 Public EjecutarLibre(5) As String
 '******************
 ' Master / Slave
-    Public MS_LPort As Integer
-    Public MS_RPath As String
-    Public MS_RHost As String
-    Public MS_Salir As Boolean
-    Public MS_Lock As Boolean
+Public MS_LPort As Integer
+Public MS_RPath As String
+Public MS_RHost As String
+Public MS_Salir As Boolean
+Public MS_Lock As Boolean
 '''públicas
 '********************************************
 ' ESPACIO RESERVADO
@@ -231,29 +231,29 @@ Public EjecutarLibre(5) As String
 ' interruptores
 '********************************************
 Global AhorraMas As Boolean
-    Public PathDBF As String
-    Public RecibirTotalVacuno As Boolean
-    Public BorrarTotalVacuno As Boolean
-    Public GA_RecibirTotalVenta As Boolean
-    Public GA_RecibirTotalSuper As Boolean
-    Public GA_RecibirTotalEnvasado As Boolean
-    Public GA_RecibirTotalAutoservicio As Boolean
-    Public GA_RecibirTotalVentaL As Boolean
-    Public GA_RecibirTotalSuperL As Boolean
-    Public GA_RecibirTotalEnvasadoL As Boolean
-    Public GA_RecibirTotalAutoservicioL As Boolean
-    Public GA_BorrarTotal As Boolean
-    Public GA_Reinit As Boolean
-    Public SimboloMonetario As String
+Public PathDBF As String
+Public RecibirTotalVacuno As Boolean
+Public BorrarTotalVacuno As Boolean
+Public GA_RecibirTotalVenta As Boolean
+Public GA_RecibirTotalSuper As Boolean
+Public GA_RecibirTotalEnvasado As Boolean
+Public GA_RecibirTotalAutoservicio As Boolean
+Public GA_RecibirTotalVentaL As Boolean
+Public GA_RecibirTotalSuperL As Boolean
+Public GA_RecibirTotalEnvasadoL As Boolean
+Public GA_RecibirTotalAutoservicioL As Boolean
+Public GA_BorrarTotal As Boolean
+Public GA_Reinit As Boolean
+Public SimboloMonetario As String
 
 Global Taquion As Boolean
-    Public TaquionFichero As String
-    Public TaquionTiquets As Boolean
-    Public TqStatus As Integer
-    Public TqNombre As String
-    Public TqDirecto As Boolean
-    Public bunTicket As Boolean
-    Public sunTicket As String
+Public TaquionFichero As String
+Public TaquionTiquets As Boolean
+Public TqStatus As Integer
+Public TqNombre As String
+Public TqDirecto As Boolean
+Public bunTicket As Boolean
+Public sunTicket As String
 
 'Global Sabeco As Boolean
 '**********************
@@ -473,36 +473,36 @@ Public lAutoRecEnv As Boolean
 
 'Public lUpperNW As Boolean 'atencionfamilia
 Public Function sToUTF8(ByVal sS As String) As String
-Dim objStream As ADODB.Stream
-Dim data() As Byte
-Dim sDes As String
-Dim ncont As Integer
+    Dim objStream As ADODB.Stream
+    Dim data() As Byte
+    Dim sDes As String
+    Dim ncont As Integer
     If sS <> "" Then
-    
-    Set objStream = New ADODB.Stream
-    objStream.Charset = "utf-8"
-    objStream.mode = adModeReadWrite
-    objStream.type = adTypeText
-    objStream.Open
-    
-    objStream.WriteText sS
-    objStream.Flush
-    
-    objStream.Position = 0
-    objStream.type = adTypeBinary
-    objStream.Read 3
-    
-    data = objStream.Read()
-    objStream.Close
-    
-    On Error GoTo salir
-    sDes = ""
-    For ncont = 0 To 1000
-        sDes = sDes & Chr(data(ncont))
-    Next ncont
-    
+
+        Set objStream = New ADODB.Stream
+        objStream.Charset = "utf-8"
+        objStream.mode = adModeReadWrite
+        objStream.type = adTypeText
+        objStream.Open
+
+        objStream.WriteText sS
+        objStream.Flush
+
+        objStream.Position = 0
+        objStream.type = adTypeBinary
+        objStream.Read 3
+
+        data = objStream.Read()
+        objStream.Close
+
+        On Error GoTo salir
+        sDes = ""
+        For ncont = 0 To 1000
+            sDes = sDes & Chr(data(ncont))
+        Next ncont
+
 salir:
-    On Error GoTo 0
+        On Error GoTo 0
     Else
         sDes = " "
     End If

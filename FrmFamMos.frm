@@ -299,13 +299,17 @@ Option Explicit
 Private YaExiste As Boolean
 Private nEvents As Long
 Private WithEvents MyEvento As ClsEvento
+Attribute MyEvento.VB_VarUserMemId = 1073938438
 Attribute MyEvento.VB_VarHelpID = -1
 Dim MyX, MyY As Single
+Attribute MyY.VB_VarUserMemId = 1073938434
 Dim lEnCarga As Boolean
+Attribute lEnCarga.VB_VarUserMemId = 1073938436
 Dim lRefresca As Boolean
+Attribute lRefresca.VB_VarUserMemId = 1073938437
 
 Private Sub Cambiar_idioma()
-    Me.Caption = "Asociación de Familias a Mostradores" 'CargaCadena(678)
+    Me.Caption = "Asociación de Familias a Mostradores"    'CargaCadena(678)
     Label1.Caption = CargaCadena(67)
     Label2.Caption = CargaCadena(539)
     Label3.Caption = CargaCadena(593)
@@ -326,13 +330,13 @@ End Sub
 Private Sub Refresca_Datos()
     Dim Registro As New RecordNet
     Dim Token As Long
-    
-    
+
+
     Text1.TexT = ""
     If IsNumeric(Val(CmbFamilias.TexT)) Then
         'sQueNombreImagen = Trim((CmbFamilias.TexT))
         Registro.OpenRecordset "select codi_fam,txt_fam,imagen from fam_code where codi_fam=" & Val(CmbFamilias.TexT)
-        
+
         If Not Registro.EOF Then
             If Not IsNull(Registro.Fields("txt_fam")) Then
                 Text1.TexT = Registro.Fields("txt_fam")
@@ -344,11 +348,11 @@ Private Sub Refresca_Datos()
 End Sub
 Private Sub CmbFamilias_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case vbKeyBack
-        Case vbKeyDelete
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case vbKeyBack
+    Case vbKeyDelete
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 'CUIDADO ERROR
@@ -386,7 +390,7 @@ Private Sub Command1_Click()
     Dim nSecs As Long
     Dim secs() As Long
     Dim Resp As Long
-    
+
     If Not IsNumeric(CmbFamilias.TexT) Then
         MsgBox CargaCadena(1205), vbCritical
         Me.Enabled = True
@@ -406,47 +410,47 @@ Private Sub Command1_Click()
             If Resp = 2 Then
                 TxtOrden.TexT = "0"
                 MsgBox "Posición ya existente en la Sección... Posición no Válida.", vbOKOnly
-                
+
             End If
         End If
-        
+
     Else
-    '
-    '    Me.Enabled = False
-    '
-    '    For bucle = 0 To List1.ListCount - 1
-    '        If List1.Selected(bucle) Then
-    '            nSecs = nSecs + 1
-    '            ReDim Preserve secs(nSecs)
-    '            secs(nSecs - 1) = Val(left(List1.List(bucle), 4))
-    '        End If
-    '    Next bucle
-    '    If nSecs = 0 Then
-    '        ReDim secs(1)
-    '        secs(0) = 0
-    '    End If
-    '    LblInfo.Caption = ""
-    '    LblInfo.Visible = True
-    '    Resp = Alta_Familias_Counter(Val(CmbFamilias.TexT), Text1.TexT, nSecs, secs, False, MyEvento, sQueNombreImagen, secs(0), 32767)
-    '    Select Case Resp
-    '        Case 0
-    '            MsgBox CargaCadena(421), vbInformation
-    '            'Refresca_Familias
-    '            'Refresca_Datos
-    '            'Refresca_Secciones
-    '        Case 1
-    '            MsgBox CargaCadena(751), vbInformation
-    '        Case 4
-    '        Case 61
-    '            MsgBox CargaCadena(1207), vbInformation
-    '    End Select
-    '    LblInfo.Visible = False
-    '    Me.Enabled = True
-    '    If CmbFamilias.Enabled = True Then CmbFamilias.SetFocus
-    '
+        '
+        '    Me.Enabled = False
+        '
+        '    For bucle = 0 To List1.ListCount - 1
+        '        If List1.Selected(bucle) Then
+        '            nSecs = nSecs + 1
+        '            ReDim Preserve secs(nSecs)
+        '            secs(nSecs - 1) = Val(left(List1.List(bucle), 4))
+        '        End If
+        '    Next bucle
+        '    If nSecs = 0 Then
+        '        ReDim secs(1)
+        '        secs(0) = 0
+        '    End If
+        '    LblInfo.Caption = ""
+        '    LblInfo.Visible = True
+        '    Resp = Alta_Familias_Counter(Val(CmbFamilias.TexT), Text1.TexT, nSecs, secs, False, MyEvento, sQueNombreImagen, secs(0), 32767)
+        '    Select Case Resp
+        '        Case 0
+        '            MsgBox CargaCadena(421), vbInformation
+        '            'Refresca_Familias
+        '            'Refresca_Datos
+        '            'Refresca_Secciones
+        '        Case 1
+        '            MsgBox CargaCadena(751), vbInformation
+        '        Case 4
+        '        Case 61
+        '            MsgBox CargaCadena(1207), vbInformation
+        '    End Select
+        '    LblInfo.Visible = False
+        '    Me.Enabled = True
+        '    If CmbFamilias.Enabled = True Then CmbFamilias.SetFocus
+        '
     End If
     Refresca_Arbol Val(left(List1.TexT, 3))
-    
+
 End Sub
 
 Private Sub Command2_Click()
@@ -482,14 +486,14 @@ Private Sub Command4_Click(Index As Integer)
     Dim nSecs As Long
     Dim secs() As Long
     Dim Resp As Long
-    
+
     If List1.ListCount > 0 Then
         For bucle = 0 To List1.ListCount - 1
             Select Case Index
-                Case 0
-                    List1.Selected(bucle) = True
-                Case 1
-                    List1.Selected(bucle) = False
+            Case 0
+                List1.Selected(bucle) = True
+            Case 1
+                List1.Selected(bucle) = False
             End Select
         Next bucle
     End If
@@ -514,7 +518,7 @@ Private Sub Form_Load()
         CmbFamilias.ListIndex = 0
     End If
     lEnCarga = False
-    
+
 End Sub
 Public Sub Refresca_Familias()
     Dim Registro As New RecordNet
@@ -538,7 +542,7 @@ Private Sub Refresca_Secciones()
     Command3.Visible = False
     YaExiste = False
     List1.Clear
-    
+
     If Not IsNumeric(CmbFamilias.TexT) Then Exit Sub
     Registro.OpenRecordset ("select distinct(codi_ident),descripcio,nombre,secc_maqui from seccion where borrado=false")
     With Registro
@@ -549,8 +553,8 @@ Private Sub Refresca_Secciones()
                 FamMaqui(.Fields("codi_ident")) = .Fields("secc_maqui")
                 If Len(MyMos) < 4 Then MyMos = MyMos & Space(4 - Len(MyMos))
                 List1.AddItem MyMos & " - " & .Fields("nombre")
-                
-               
+
+
                 .Movenext
             Loop
         End If
@@ -565,20 +569,20 @@ Private Sub Refresca_Secciones()
                 MyMos = Str(.Fields("codi_ident"))
                 For bucle = 0 To List1.ListCount - 1
                     'If Val(left(List1.List(bucle), 4)) = Val(MyMos) Then
-                        List1.Selected(bucle) = False
-                        List1.List(bucle) = List1.List(bucle) '& " Pos.:" & Format(.Fields("index"), "0000")
-                        'If .Fields("index") <> 0 Then
-                        '    TxtOrden.TexT = CStr(.Fields("index"))
-                        'Else
-                        '    TxtOrden.TexT = "0"
-                        'End If
-                        'Exit For
-                    
+                    List1.Selected(bucle) = False
+                    List1.List(bucle) = List1.List(bucle)    '& " Pos.:" & Format(.Fields("index"), "0000")
+                    'If .Fields("index") <> 0 Then
+                    '    TxtOrden.TexT = CStr(.Fields("index"))
+                    'Else
+                    '    TxtOrden.TexT = "0"
+                    'End If
+                    'Exit For
+
                     'End If
                 Next bucle
                 .Movenext
             Loop
-            
+
             .MoveFirst
             Do Until .EOF
                 MyMos = Str(.Fields("codi_ident"))
@@ -592,10 +596,10 @@ Private Sub Refresca_Secciones()
                             List1.List(bucle) = List1.List(bucle) & " Pos.:" & Format(.Fields("index"), "0000")
                         Else
                             TxtOrden.TexT = "0"
-                            List1.List(bucle) = List1.List(bucle) '& " Pos.:" & Format(.Fields("index"), "0000")
+                            List1.List(bucle) = List1.List(bucle)    '& " Pos.:" & Format(.Fields("index"), "0000")
                         End If
                         Exit For
-                    
+
                     End If
                 Next bucle
                 .Movenext
@@ -614,19 +618,19 @@ End Sub
 
 
 Private Sub List1_Click()
-Dim nOrd As Integer
-Dim nSecs As Long
-Dim secs() As Long
-Dim Resp As Long
-Dim lBaja As Boolean
+    Dim nOrd As Integer
+    Dim nSecs As Long
+    Dim secs() As Long
+    Dim Resp As Long
+    Dim lBaja As Boolean
     If lRefresca Then Exit Sub
-    
+
     lRefresca = True
-    
+
     lBaja = False
-    
+
     Refresca_Arbol Val(left(List1.TexT, 3))
-    
+
     nOrd = Val(Right(List1.TexT, 4))
     If List1.Selected(List1.ListIndex) Then
         If nOrd <> 0 Then
@@ -634,7 +638,7 @@ Dim lBaja As Boolean
         Else
             TxtOrden.TexT = "0"
         End If
-    Else 'poner a cero y refrescar
+    Else    'poner a cero y refrescar
         TxtOrden.TexT = "0"
     End If
     If lEnCarga = False Then
@@ -646,7 +650,7 @@ Dim lBaja As Boolean
             Resp = Alta_Familias_Counter(Val(CmbFamilias.TexT), Text1.TexT, nSecs, secs, False, MyEvento, sQueNombreImagen, secs(0), Val(TxtOrden.TexT), lBaja)
         End If
     End If
-    
+
     lRefresca = False
 End Sub
 
@@ -663,18 +667,18 @@ End Sub
 
 
 Private Sub Text1_KeyDown(KeyCode As Integer, Shift As Integer)
- 
+
     Select Case KeyCode
-        Case 40
-            If List1.ListCount > 0 Then List1.SetFocus
-        Case 38
-            If CmbFamilias.Enabled = True Then CmbFamilias.SetFocus
+    Case 40
+        If List1.ListCount > 0 Then List1.SetFocus
+    Case 38
+        If CmbFamilias.Enabled = True Then CmbFamilias.SetFocus
     End Select
 End Sub
 
 
 Private Sub TxtOrden_KeyPress(KeyAscii As Integer)
-    If KeyAscii = 13 Then 'guardar y refrescar
+    If KeyAscii = 13 Then    'guardar y refrescar
         lRefresca = True
         If lEnCarga = False Then
             'If Val(TxtOrden.TexT) > 0 Then
@@ -697,14 +701,14 @@ End Sub
 'End Sub
 
 Public Sub Refresca_Arbol(nS As Integer)
-    
+
     Dim Registro As New RecordNet
     Dim Regfamilia As New RecordNet
     Arbol.Nodes.Clear
     'Arbol.ImageList = Imagenes
     'Arbol.Nodes.Add , , "S", "Sección"
     Arbol.Nodes.Add , "S", "S" & CStr(nS), CargaCadena(47) & ":" & nS
-    
+
     Registro.OpenRecordset ("select codi_fam,index from familias where index<>0 and secc_maqui=" & CStr(nS) & " order by index")
     With Registro
         If Not .EOF Then
@@ -715,7 +719,7 @@ Public Sub Refresca_Arbol(nS As Integer)
                 ''
                 Arbol.Nodes.Add "S" & CStr(nS), tvwChild, "F" & .Fields("codi_fam"), CargaCadena(67) & ":" & CStr(.Fields("codi_fam")) & "  Pos.:" & CStr(.Fields("index"))
                 .Movenext
-            
+
             Loop
         End If
     End With

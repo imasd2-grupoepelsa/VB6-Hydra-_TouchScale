@@ -95,14 +95,14 @@ End Sub
 
 Private Sub Image1_Click(Index As Integer)
     Select Case Index
-        Case 1
-            Label1.Caption = "Se ha detectado una base de datos con formato antiguo,anterior a la versión HydraTouch. En el cambio de formato a realizar, se eliminarán algunos campos obsoletos de la base para mejorar la eficiencia de ésta. Estos campos no tienen importancia para HydraTouch, no obstante, si su sistema de gestión ataca directamente a la base y utiliza estos campos para algún fin, habrá de crearlos de nuevo (la aplicación no los volverá a eliminar). Tras el cambio, quedará en la carpeta de programa una copia de la base antigua con el nombre dbase5.mdb. Antes de continuar asegurese de que ninguna otra aplicación está haciendo uso de la base, en otro caso fallará el proceso."
-            Command2.Caption = "Cancelar"
-            Command1.Caption = "Continuar"
-            
-        Case 0
-            Label1.Caption = "An old database has been detected (format older than this version of HydraTouch). An automatic format adaptation will be performed, erasing some older fields in order to improve performance. These fields are not used by HydraTouch, however, if your backoffice uses them directly by any reason, you will need to create it again after this proccess (HydraTouch will not erase them again). After this proccess, a backup of the old database will be placed into program folder named dbase5.mdb. Before continue, please be sure that no any other application is using the database now, or the proccess will fail."
-            Command2.Caption = "Cancel"
-            Command1.Caption = "Continue"
+    Case 1
+        Label1.Caption = "Se ha detectado una base de datos con formato antiguo,anterior a la versión HydraTouch. En el cambio de formato a realizar, se eliminarán algunos campos obsoletos de la base para mejorar la eficiencia de ésta. Estos campos no tienen importancia para HydraTouch, no obstante, si su sistema de gestión ataca directamente a la base y utiliza estos campos para algún fin, habrá de crearlos de nuevo (la aplicación no los volverá a eliminar). Tras el cambio, quedará en la carpeta de programa una copia de la base antigua con el nombre dbase5.mdb. Antes de continuar asegurese de que ninguna otra aplicación está haciendo uso de la base, en otro caso fallará el proceso."
+        Command2.Caption = "Cancelar"
+        Command1.Caption = "Continuar"
+
+    Case 0
+        Label1.Caption = "An old database has been detected (format older than this version of HydraTouch). An automatic format adaptation will be performed, erasing some older fields in order to improve performance. These fields are not used by HydraTouch, however, if your backoffice uses them directly by any reason, you will need to create it again after this proccess (HydraTouch will not erase them again). After this proccess, a backup of the old database will be placed into program folder named dbase5.mdb. Before continue, please be sure that no any other application is using the database now, or the proccess will fail."
+        Command2.Caption = "Cancel"
+        Command1.Caption = "Continue"
     End Select
 End Sub

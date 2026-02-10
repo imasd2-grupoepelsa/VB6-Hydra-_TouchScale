@@ -62,19 +62,19 @@ Private Sub Form_Load()
     TimerWait.Enabled = True
     Me.Refresh
     Do_Events
-    
+
 End Sub
 
 Private Sub Form_Terminate()
-TimerWait.Enabled = False
+    TimerWait.Enabled = False
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
-TimerWait.Enabled = False
+    TimerWait.Enabled = False
 End Sub
 
 Private Sub TimerWait_Timer()
-Do_Events
-Me.Refresh
-Do_Events
+    Do_Events
+    Me.Refresh
+    Do_Events
 End Sub

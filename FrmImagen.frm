@@ -24,41 +24,41 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Form_Activate()
-Dim s As String
-Dim e As Variant
+    Dim s As String
+    Dim e As Variant
 
     Do_Events
     Me.Visible = False
     Do_Events
     Select Case nQueImagen
-        Case 0
+    Case 0
         s = "Familias"
-        Case 1
+    Case 1
         s = "Artículos"
-        Case 2
+    Case 2
         s = "Vendedores"
-        Case Else
+    Case Else
         FrmImagen.Hide
     End Select
     CommImage.DialogTitle = "Imagenes " & s
     CommImage.Filter = "ALL Files|*.*|BMP Files|*.bmp|DIB Files|*.dib|GIF FILES|*.gif|JPG Files|*.jpg|WMF Files|*.wmf|EMF Files|*.emf|PNG Files|*.png"
     CommImage.DefaultExt = "*.*"
     CommImage.FileName = ""
-    CommImage.FilterIndex = 0 '0=ALL , 5=jpg
+    CommImage.FilterIndex = 0    '0=ALL , 5=jpg
     CommImage.InitDir = App.Path & "\images"
-    
+
     SetDetailsView
     CommImage.ShowOpen
     e = CommImage.FileName
-    If e = "" Then 'Or InStr(1, LCase(e), "vacio.jpg")<>0 Then
-    '    On Error Resume Next
-    '    FileCopy e, sQuePathImagen & sQueNombreImagen
-    '    On Error GoTo 0
-    'Else
+    If e = "" Then    'Or InStr(1, LCase(e), "vacio.jpg")<>0 Then
+        '    On Error Resume Next
+        '    FileCopy e, sQuePathImagen & sQueNombreImagen
+        '    On Error GoTo 0
+        'Else
         sQueNombreImagen = ""
     Else
         sQueNombreImagen = e
     End If
     FrmImagen.Hide
-    
+
 End Sub

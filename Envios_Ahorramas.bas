@@ -1,17 +1,17 @@
 Attribute VB_Name = "Envios_Ahorramas"
 Option Explicit
 Public Sub Exportar_VAcuno()
-    ' Formato de la exportación :
-    ' 1 caracter modo (local-->1, venta -->0)
-    ' 3 caracteres Número de ficha(1-255)
-    ' 10 caracteres fecha dd/mm/aaaa
-    ' 5 caracteres nº de operaciones
-    ' 5 caracteres nº de unidades
-    ' 10 caracteres Importe
-    ' 10 caracteres peso (en gramos)
+' Formato de la exportación :
+' 1 caracter modo (local-->1, venta -->0)
+' 3 caracteres Número de ficha(1-255)
+' 10 caracteres fecha dd/mm/aaaa
+' 5 caracteres nº de operaciones
+' 5 caracteres nº de unidades
+' 10 caracteres Importe
+' 10 caracteres peso (en gramos)
     Dim Fichero As Integer
-    Dim Base As DAO.Database
-    Dim Registro As DAO.Recordset
+    Dim Base As dao.Database
+    Dim Registro As dao.Recordset
     Dim Buffer As String
     Fichero = FreeFile
     Set Base = OpenDatabase(Base_General)
@@ -19,7 +19,7 @@ Public Sub Exportar_VAcuno()
     With Registro
         If Not .EOF Then
             .MoveFirst
-            Open MiruTa & "\totficha.vac" For Append As Fichero
+            Open Miruta & "\totficha.vac" For Append As Fichero
             Do Until .EOF
                 Buffer = "0"
                 Buffer = Buffer & Format(!ficha + 1, "000")
@@ -49,6 +49,6 @@ Public Sub Exportar_VAcuno()
     Set Registro = Nothing
     Set Base = Nothing
     'Workspaces(0).close
-    
+
 End Sub
 

@@ -489,7 +489,7 @@ Private Sub CambiarIdioma()
     'FrmTextoLibre.Caption = CargaCadena( 716)
     'Label1.Caption = CargaCadena( 716)
     Me.Caption = CargaCadena(919)
-  
+
     LblInfo.Caption = CargaCadena(524)
     CmdCopiar.Caption = CargaCadena(717)
     CmdPegar.Caption = CargaCadena(718)
@@ -500,7 +500,7 @@ Private Sub CambiarIdioma()
     CmdSalir.Caption = CargaCadena(7)
     'CmdAdicionales.Caption = CargaCadena(1351)
     For bucle = 0 To 9
-        Label2(bucle).Caption = CargaCadena(539) & " " & (bucle + 1) 'CargaCadena( 317) & " " & (Bucle + 1)
+        Label2(bucle).Caption = CargaCadena(539) & " " & (bucle + 1)    'CargaCadena( 317) & " " & (Bucle + 1)
     Next bucle
 End Sub
 Private Function Desglosa_Codigos(LaCadena As String) As TipoCodigos
@@ -541,13 +541,13 @@ End Sub
 '        Max = 25
 '    Else
 '        If a = 8 Or a = 9 Or a = 14 Or a = 15 Or a = 24 Or a = 25 Or a = 30 Or a = 31 _
-'        Or a = 36 Or a = 37 Or a = 42 Or a = 43 Or a = 48 Or a = 49 Or a = 54 Or a = 55 _
-'        Or a = 60 Or a = 61 Or a = 66 Or a = 67 Or a = 72 Or a = 73 Then
+         '        Or a = 36 Or a = 37 Or a = 42 Or a = 43 Or a = 48 Or a = 49 Or a = 54 Or a = 55 _
+         '        Or a = 60 Or a = 61 Or a = 66 Or a = 67 Or a = 72 Or a = 73 Then
 '            Max = 12
 '        Else
 '            If a = 6 Or a = 7 Or a = 12 Or a = 13 Or a = 22 Or a = 23 Or a = 28 Or a = 29 _
-'            Or a = 34 Or a = 35 Or a = 40 Or a = 41 Or a = 46 Or a = 47 Or a = 52 Or a = 53 _
-'            Or a = 58 Or a = 59 Or a = 64 Or a = 65 Or a = 70 Or a = 71 Or a = 76 Or a = 77 Then
+             '            Or a = 34 Or a = 35 Or a = 40 Or a = 41 Or a = 46 Or a = 47 Or a = 52 Or a = 53 _
+             '            Or a = 58 Or a = 59 Or a = 64 Or a = 65 Or a = 70 Or a = 71 Or a = 76 Or a = 77 Then
 '                Max = 16
 '            Else
 '                Max = 24
@@ -565,7 +565,7 @@ Private Sub CmbSeccion_Click()
 End Sub
 
 Private Sub Cmdaceptar_Click()
-   
+
     Dim Registro As New RecordNet
     Dim ElNumero As TipoCodigos
     Dim bucle As Integer
@@ -577,12 +577,12 @@ Private Sub Cmdaceptar_Click()
         MiCabecera.Mostrador = ElNumero.codigo(1)
         MiCabecera.Equipo = 0
     Else
-        
+
         Registro.OpenRecordset ("select * from equipos where numero_eqp=" _
-        & CmbEquipo.TexT & " and borrado=false")
+                              & CmbEquipo.TexT & " and borrado=false")
         ElNumero = Desglosa_Codigos(CmbEquipo.TexT)
         MiCabecera.Mostrador = Registro.Fields("codi_ident")
-     
+
         MiCabecera.Equipo = ElNumero.codigo(1)
     End If
     'For bucle = 0 To 4
@@ -594,10 +594,10 @@ Private Sub Cmdaceptar_Click()
     '    MiCabecera.TLLeyenda(bucle) = CmbFuente(bucle + 5).TexT
     'Next bucle
     Select Case Alta_cabeceras(MiCabecera)
-        Case 1
-            LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados.Envíe Modificaciones."
-        Case 0
-            LblInfo2.Caption = CargaCadena(527)  '"Datos Agregados.Envíe Modificaciones."
+    Case 1
+        LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados.Envíe Modificaciones."
+    Case 0
+        LblInfo2.Caption = CargaCadena(527)  '"Datos Agregados.Envíe Modificaciones."
     End Select
     Refresca_Datos
     If UsaSeccion Then
@@ -608,11 +608,11 @@ Private Sub Cmdaceptar_Click()
 End Sub
 
 Private Function Alta_cabeceras(MiCabecera As DB_Cabeceras) As Integer
-Dim myRs As DAO.Recordset
-Dim myB As DAO.Database
-Dim Resp As Integer
-Dim Dest As Integer
-Dim numero As Integer
+    Dim myRs As dao.Recordset
+    Dim myB As dao.Database
+    Dim Resp As Integer
+    Dim Dest As Integer
+    Dim numero As Integer
     Set myB = AbrirBase
     If MiCabecera.Equipo = 0 Then
         Set myRs = myB.OpenRecordset("select * from gen_sam where tipo='free' and destino=1 and numero=" & CStr(MiCabecera.Mostrador) & " and baja=false")
@@ -651,18 +651,18 @@ Dim numero As Integer
     Set myRs = Nothing
     CerrarBase myB
     Set myB = Nothing
-    
+
     Alta_cabeceras = Resp
 End Function
 
 'Baja_Cabeceras
 Private Function Baja_cabeceras(MiCabecera As DB_Cabeceras) As Integer
-Dim myRs As DAO.Recordset
-Dim myB As DAO.Database
-Dim Resp As Integer
-Dim Dest As Integer
-Dim numero As Integer
-Dim cm As String
+    Dim myRs As dao.Recordset
+    Dim myB As dao.Database
+    Dim Resp As Integer
+    Dim Dest As Integer
+    Dim numero As Integer
+    Dim cm As String
     Set myB = AbrirBase
     If MiCabecera.Equipo = 0 Then
         Set myRs = myB.OpenRecordset("select * from gen_sam where tipo='free' and destino=1 and numero=" & CStr(MiCabecera.Mostrador) & " and baja=false")
@@ -679,7 +679,7 @@ Dim cm As String
         myRs.Fields("tran_txt") = " "
         myRs.Update
     End If
-    
+
     Baja_cabeceras = Resp
 End Function
 
@@ -690,7 +690,7 @@ End Function
 'End Sub
 
 Private Sub CmdBorrar_Click()
-   
+
     Dim Registro As New RecordNet
     Dim ElCodigo As TipoCodigos
     Dim MiCabecera As DB_Cabeceras
@@ -704,11 +704,11 @@ Private Sub CmdBorrar_Click()
         MiCabecera.Mostrador = ElCodigo.codigo(1)
         MiCabecera.Equipo = 0
     Else
-       
+
         Registro.OpenRecordset ("select * from equipos where borrado=false and numero_eqp=" & _
-        CmbEquipo.TexT)
+                                CmbEquipo.TexT)
         MiCabecera.Mostrador = Registro.Fields("codi_ident")
-      
+
         MiCabecera.Equipo = CmbEquipo.TexT
     End If
     If Baja_cabeceras(MiCabecera) = 0 Then
@@ -719,7 +719,7 @@ Private Sub CmdBorrar_Click()
     CmbSeccion.TexT = CmbSeccion.List(0)
     CmbEquipo.TexT = CmbEquipo.List(0)
     Refresca_Datos
-    
+
     If UsaSeccion Then
         CmbSeccion.SetFocus
     Else
@@ -752,7 +752,7 @@ End Sub
 Private Sub Form_Load()
     Dim bucle As Integer
     Dim Bucle2 As Integer
-  
+
     CambiarIdioma
     Me.Icon = Form2.Icon
     Image1.Picture = Form2.Imagen.Picture
@@ -763,8 +763,8 @@ Private Sub Form_Load()
     UsaSeccion = True
     Modificacion = False
     'If lNewArt = False Then
-        CmdAdicionales.Enabled = False
-        CmdAdicionales.Visible = False
+    CmdAdicionales.Enabled = False
+    CmdAdicionales.Visible = False
     'End If
     For bucle = 0 To 9
         CmbFuente(bucle).Clear
@@ -787,14 +787,14 @@ Private Sub RefrescaSeccion()
 End Sub
 Private Sub RefrescaEquipo()
     Aux_Refresca_equipos CmbEquipo
-    
-    
+
+
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
 
-LockBase = False
-frmEpelsa.Enabled = True
+    LockBase = False
+    frmEpelsa.Enabled = True
 
 End Sub
 Private Sub deborefrescar()
@@ -866,7 +866,7 @@ End Sub
 '    Next Bucle1
 'End Sub
 Private Sub Refresca_Datos()
-   
+
     Dim Registro As New RecordNet
     Dim RegSec As New RecordNet
     Dim RegBal As New RecordNet
@@ -876,15 +876,15 @@ Private Sub Refresca_Datos()
     Dim Limite As Boolean
     Dim ElMostrador As TipoCodigos
     Dim B2 As Integer
- 
+
     'Actualiza_Fuentes 77
     ElMostrador = Desglosa_Codigos(CmbSeccion.TexT)
     If UsaSeccion Then
         Registro.OpenRecordset _
-        ("select * from gen_sam where tipo='free' and destino=1 and numero=" & ElMostrador.codigo(1) & " and baja=FALSE")
+                ("select * from gen_sam where tipo='free' and destino=1 and numero=" & ElMostrador.codigo(1) & " and baja=FALSE")
     Else
         Registro.OpenRecordset _
-        ("select * from gen_sam where tipo='free' and destino=2 and numero=" & CmbEquipo.TexT & " and baja=FALSE")
+                ("select * from gen_sam where tipo='free' and destino=2 and numero=" & CmbEquipo.TexT & " and baja=FALSE")
     End If
     With Registro
         For bucle = 0 To 9
@@ -926,7 +926,7 @@ Private Sub Refresca_Datos()
             'For B2 = 10 To 49
             '    FrmAdicionales.TxtA(B2 - 10).TexT = Trim(.Fields("texto" & Format(B2, "00")))
             'Next B2
-            
+
         End If
     End With
 End Sub

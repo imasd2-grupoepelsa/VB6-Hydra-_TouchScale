@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form FrmCambiosPrecio 
    Caption         =   "Cambios de Precio"
    ClientHeight    =   5565
@@ -315,13 +315,13 @@ Private Sub Me_Resize()
         CT_Width(bucle) = Me.Controls(bucle).Width
         Me.Controls(bucle).left = RelW * CT_Left(bucle)
         CT_Left(bucle) = Me.Controls(bucle).left
-        
+
         '
         RelW = Me.Height / Me_Height
         If TypeName(Me.Controls(bucle)) <> "TextBox" _
-        And TypeName(Me.Controls(bucle)) <> "CommandButton" _
-        And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
-        Then
+           And TypeName(Me.Controls(bucle)) <> "CommandButton" _
+           And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
+           Then
             Me.Controls(bucle).Height = RelW * CT_Height(bucle)
             CT_Height(bucle) = Me.Controls(bucle).Height
         End If
@@ -352,17 +352,17 @@ Private Sub CambiarIdioma()
     Lbl100g.Caption = CargaCadena(1194)
 End Sub
 Private Sub Refresca_porCodigo()
-    
+
     Dim Registro As New RecordNet
     Dim MiNumero As Long
     If Not (IsNumeric(tXTcODIGO.TexT)) Then Exit Sub
     MiNumero = tXTcODIGO.TexT
-   
+
     If Option1(0).Value Then
         Registro.OpenRecordset ("select codi_ident from articulo where borrado=false and codigo=" & Val(tXTcODIGO.TexT))
     Else
         Registro.OpenRecordset ("select codi_ident from articulo where borrado=false and plu=" & Val(tXTcODIGO.TexT) & " and codi_ident=" & Combo1.TexT)
-        
+
     End If
     With Registro
         If .EOF Then
@@ -394,15 +394,15 @@ Private Sub Refresca_porCodigo()
         End If
     End With
 
-        
+
 End Sub
 
 Private Sub Text1_Change()
-Refresca_Datos
+    Refresca_Datos
 End Sub
 Private Sub Combo1_Click()
     Text1.TexT = ""
-    
+
     If Combo1.TexT <> "" Then
         Refresca_Datos
         TxtNuevoPrecio.Enabled = True
@@ -415,64 +415,64 @@ End Sub
 Private Sub Command1_Click(Index As Integer)
     Dim Miarticulo As DB_Articulo
     Select Case Index
-        Case 0
-            If Trim(TxtNuevoPrecio.TexT <> "") Then
-                If RechazarPlu0 Then
-                    If Val(TxtNuevoPrecio.TexT) = 0 Then
-                        MsgBox CargaCadena(368), vbCritical
-                        Exit Sub
-                    End If
+    Case 0
+        If Trim(TxtNuevoPrecio.TexT <> "") Then
+            If RechazarPlu0 Then
+                If Val(TxtNuevoPrecio.TexT) = 0 Then
+                    MsgBox CargaCadena(368), vbCritical
+                    Exit Sub
                 End If
-                Miarticulo.codigo = Lista.SelectedItem.TexT
-                Miarticulo.Mostrador = Combo1.TexT
-                Miarticulo.precio = ToDouble(TxtNuevoPrecio.TexT)
-                Select Case Modificacion_Articulo_Precio(Miarticulo)
-                    Case 1
-                        LblInfo.Caption = CargaCadena(436)  '"Precio Modificado, envíe modificaciones"
-                        'If xlcampo Then
-                        '    If descAuto Then
-                        '        ModificacionesPendientes(0) = (ModificacionesPendientes(0) Or 128)
-                        '    Else
-                        '        lCogeTiquet = False
-                        '        AN_Articulos True
-                        '        lCogeTiquet = True
-                        '    End If
-                        'End If
-                    Case Else
-                        LblInfo.Caption = CargaCadena(660)  '"Sin Modificación"
-                End Select
-            Else
+            End If
+            Miarticulo.codigo = Lista.SelectedItem.TexT
+            Miarticulo.Mostrador = Combo1.TexT
+            Miarticulo.precio = ToDouble(TxtNuevoPrecio.TexT)
+            Select Case Modificacion_Articulo_Precio(Miarticulo)
+            Case 1
+                LblInfo.Caption = CargaCadena(436)  '"Precio Modificado, envíe modificaciones"
+                'If xlcampo Then
+                '    If descAuto Then
+                '        ModificacionesPendientes(0) = (ModificacionesPendientes(0) Or 128)
+                '    Else
+                '        lCogeTiquet = False
+                '        AN_Articulos True
+                '        lCogeTiquet = True
+                '    End If
+                'End If
+            Case Else
                 LblInfo.Caption = CargaCadena(660)  '"Sin Modificación"
-            End If
-            If TxtNuevoPrecio.TexT <> "" Then
-                Lista.SelectedItem.SubItems(4) = TxtNuevoPrecio.TexT
+            End Select
+        Else
+            LblInfo.Caption = CargaCadena(660)  '"Sin Modificación"
+        End If
+        If TxtNuevoPrecio.TexT <> "" Then
+            Lista.SelectedItem.SubItems(4) = TxtNuevoPrecio.TexT
+        Else
+            Lista.SelectedItem.SubItems(4) = TxtPrecioActual.TexT
+        End If
+        If Check1.Value = vbChecked Then
+            If Lista.SelectedItem.Index < Lista.ListItems.Count Then
+                Lista.ListItems(Lista.SelectedItem.Index + 1).Selected = True
             Else
-                Lista.SelectedItem.SubItems(4) = TxtPrecioActual.TexT
+                Lista.ListItems(Lista.SelectedItem.Index).Selected = True
             End If
-            If Check1.Value = vbChecked Then
-                If Lista.SelectedItem.Index < Lista.ListItems.Count Then
-                    Lista.ListItems(Lista.SelectedItem.Index + 1).Selected = True
-                Else
-                    Lista.ListItems(Lista.SelectedItem.Index).Selected = True
-                End If
-                Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
-                Refresca_Item
-                TxtNuevoPrecio.SetFocus
-                    'Refresca_Datos
-           Else
-                If Lista.SelectedItem.Index < Lista.ListItems.Count Then
-                    'Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
-                    'Refresca_Item
-                    tXTcODIGO.TexT = ""
-                    TxtNuevoPrecio.TexT = ""
-                    tXTcODIGO.SetFocus
-                End If
+            Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
+            Refresca_Item
+            TxtNuevoPrecio.SetFocus
+            'Refresca_Datos
+        Else
+            If Lista.SelectedItem.Index < Lista.ListItems.Count Then
+                'Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
+                'Refresca_Item
+                tXTcODIGO.TexT = ""
+                TxtNuevoPrecio.TexT = ""
+                tXTcODIGO.SetFocus
             End If
-        Case 1
-            If Dir(App.Path & "\gigante.txt") <> "" Then
-                Call generaGIAN
-            End If
-            Unload Me
+        End If
+    Case 1
+        If Dir(App.Path & "\gigante.txt") <> "" Then
+            Call generaGIAN
+        End If
+        Unload Me
     End Select
 End Sub
 Private Sub Form_Load()
@@ -507,7 +507,7 @@ Private Sub Form_Load()
     If Retorno Then Refresca_Datos
 End Sub
 Private Function Refresca_Combo() As Boolean
-    
+
     Dim Registro As New RecordNet
     Dim Retorno As Boolean
     Retorno = True
@@ -533,11 +533,11 @@ Private Function Refresca_Combo() As Boolean
             Retorno = False
         End If
     End With
- 
+
     Refresca_Combo = Retorno
 End Function
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     Dim Miorden As String
     Lbl100g.Visible = False
@@ -554,17 +554,17 @@ Private Sub Refresca_Datos()
 
     Lista.ListItems.Clear
     If Text1.TexT = "" Then
-    Registro.OpenRecordset _
-    ("select codigo,plu,des_plu1,euros,precio,prc100g from articulo where borrado=false and codi_ident=" & Val(Combo1.TexT) & " order by " & Miorden)
-    If sMyOrder <> "" Then
-        sLastOrder = sMyOrder
-    End If
+        Registro.OpenRecordset _
+                ("select codigo,plu,des_plu1,euros,precio,prc100g from articulo where borrado=false and codi_ident=" & Val(Combo1.TexT) & " order by " & Miorden)
+        If sMyOrder <> "" Then
+            sLastOrder = sMyOrder
+        End If
     Else
-    Registro.OpenRecordset _
-    ("select codigo,plu,des_plu1,euros,precio,prc100g from articulo where borrado=false and codi_ident=" & Val(Combo1.TexT) & " and instr(1,des_plu1,'" & Trim(Text1.TexT) & "')<>0 order by " & Miorden)
-    
+        Registro.OpenRecordset _
+                ("select codigo,plu,des_plu1,euros,precio,prc100g from articulo where borrado=false and codi_ident=" & Val(Combo1.TexT) & " and instr(1,des_plu1,'" & Trim(Text1.TexT) & "')<>0 order by " & Miorden)
+
     End If
-    
+
     sMyOrder = ""
     Elementos = 1
     With Registro
@@ -590,7 +590,7 @@ Private Sub Refresca_Datos()
                 End If
                 Lista.ListItems(Elementos).SubItems(4) = ""
                 Elementos = Elementos + 1
-                
+
                 .Movenext
             Loop
             Lista.Enabled = True
@@ -603,7 +603,7 @@ Private Sub Refresca_Datos()
         End If
     End With
 
-    
+
 End Sub
 
 
@@ -613,17 +613,17 @@ Private Sub Form_Resize()
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
-If Option1(1).Value = True Then
-    WPreferencias "CHGPRECIO1", 1, "1"
-Else
-    WPreferencias "CHGPRECIO1", 1, "0"
-End If
-If Check1.Value = vbChecked Then
-    WPreferencias "CHGPRECIO2", 1, "1"
-Else
-    WPreferencias "CHGPRECIO2", 1, "0"
-End If
-frmEpelsa.Enabled = True
+    If Option1(1).Value = True Then
+        WPreferencias "CHGPRECIO1", 1, "1"
+    Else
+        WPreferencias "CHGPRECIO1", 1, "0"
+    End If
+    If Check1.Value = vbChecked Then
+        WPreferencias "CHGPRECIO2", 1, "1"
+    Else
+        WPreferencias "CHGPRECIO2", 1, "0"
+    End If
+    frmEpelsa.Enabled = True
     Me.Enabled = False
 End Sub
 
@@ -632,39 +632,39 @@ Private Sub Lista_Click()
 End Sub
 
 Private Sub Lista_ColumnClick(ByVal ColumnHeader As MSComctlLib.ColumnHeader)
-    
+
     Lista.ColumnHeaders(1).TexT = CargaCadena(69)
     Lista.ColumnHeaders(2).TexT = CargaCadena(68)
     Lista.ColumnHeaders(3).TexT = CargaCadena(70)
     Lista.ColumnHeaders(4).TexT = CargaCadena(658)
-    
+
     Select Case ColumnHeader.Index
-        Case 1
-            Option1(0).Value = True
-            Lista.ColumnHeaders(1).TexT = "==> " & CargaCadena(69) & " <=="
-        Case 2
-            Option1(1).Value = True
-            Lista.ColumnHeaders(2).TexT = "==> " & CargaCadena(68) & " <=="
-        Case Else
-            If ColumnHeader.Index = 3 Then
-                sMyOrder = "des_plu1"
-                Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
-            Else
-                If ColumnHeader.Index = 4 Then
-                    If UsaEuro Then
-                        sMyOrder = "euros"
-                    Else
-                        sMyOrder = "precio"
-                    End If
-                    Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
+    Case 1
+        Option1(0).Value = True
+        Lista.ColumnHeaders(1).TexT = "==> " & CargaCadena(69) & " <=="
+    Case 2
+        Option1(1).Value = True
+        Lista.ColumnHeaders(2).TexT = "==> " & CargaCadena(68) & " <=="
+    Case Else
+        If ColumnHeader.Index = 3 Then
+            sMyOrder = "des_plu1"
+            Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
+        Else
+            If ColumnHeader.Index = 4 Then
+                If UsaEuro Then
+                    sMyOrder = "euros"
                 Else
-                    If sLastOrder <> "" Then
-                        sMyOrder = sLastOrder
-                        If sMyOrder = "des_plu1" Then Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
-                        If sMyOrder = "euros" Or sMyOrder = "precio" Then Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
-                    End If
+                    sMyOrder = "precio"
+                End If
+                Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
+            Else
+                If sLastOrder <> "" Then
+                    sMyOrder = sLastOrder
+                    If sMyOrder = "des_plu1" Then Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
+                    If sMyOrder = "euros" Or sMyOrder = "precio" Then Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
                 End If
             End If
+        End If
     End Select
     If Combo1.TexT <> "" Then Refresca_Datos
 End Sub
@@ -674,7 +674,7 @@ Private Sub Lista_ItemClick(ByVal Item As MSComctlLib.ListItem)
 End Sub
 
 Private Sub Option1_Click(Index As Integer)
-Text1.TexT = ""
+    Text1.TexT = ""
     If Combo1.TexT <> "" Then Refresca_Datos
     If Option1(0).Value = True Then
         LblcoDIGO.Caption = CargaCadena(69)  '"Código"
@@ -691,7 +691,7 @@ Private Sub Refresca_Item()
     TxtPrecioActual.TexT = Lista.SelectedItem.SubItems(3)
     TxtNuevoPrecio.TexT = Lista.SelectedItem.SubItems(4)
     If IsNumeric(tXTcODIGO.TexT) Then CompruebaPrecio100 (Val(tXTcODIGO.TexT))
-    
+
 End Sub
 Private Sub CompruebaPrecio100(MyCod As Long)
     Dim bucle As Long
@@ -705,7 +705,7 @@ Private Sub CompruebaPrecio100(MyCod As Long)
 End Sub
 Private Sub tXTcODIGO_KeyDown(KeyCode As Integer, Shift As Integer)
     If Lista.ListItems.Count > 0 Then
-    Select Case KeyCode
+        Select Case KeyCode
         Case 40
             If Lista.SelectedItem.Index < Lista.ListItems.Count Then
                 Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
@@ -730,8 +730,8 @@ Private Sub tXTcODIGO_KeyDown(KeyCode As Integer, Shift As Integer)
                 Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
                 Refresca_Item
             End If
-        
-    End Select
+
+        End Select
     End If
 End Sub
 
@@ -746,7 +746,7 @@ Private Sub tXTcODIGO_KeyPress(KeyAscii As Integer)
     Else
         tXTcODIGO.Locked = Checktexto(KeyAscii, 4, tXTcODIGO.TexT, True, False)
     End If
-    
+
 End Sub
 
 Private Sub tXTcODIGO_LostFocus()
@@ -757,30 +757,30 @@ End Sub
 Private Sub TxtNuevoPrecio_KeyDown(KeyCode As Integer, Shift As Integer)
     If Lista.ListItems.Count > 0 Then
         Select Case KeyCode
-            Case 40
-                If Lista.SelectedItem.Index < Lista.ListItems.Count Then
-                    Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
-                    Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
-                    Refresca_Item
-                End If
-            Case 38
-                If Lista.SelectedItem.Index > 1 Then
-                    Lista.ListItems.Item(Lista.SelectedItem.Index - 1).Selected = True
-                    Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
-                    Refresca_Item
-                End If
-            Case 33
-                If Lista.SelectedItem.Index > 10 Then
-                    Lista.ListItems.Item(Lista.SelectedItem.Index - 10).Selected = True
-                    Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
-                    Refresca_Item
-                End If
-            Case 34
-                If Lista.SelectedItem.Index < (Lista.ListItems.Count - 10) Then
-                    Lista.ListItems.Item(Lista.SelectedItem.Index + 10).Selected = True
-                    Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
-                    Refresca_Item
-                End If
+        Case 40
+            If Lista.SelectedItem.Index < Lista.ListItems.Count Then
+                Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
+                Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
+                Refresca_Item
+            End If
+        Case 38
+            If Lista.SelectedItem.Index > 1 Then
+                Lista.ListItems.Item(Lista.SelectedItem.Index - 1).Selected = True
+                Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
+                Refresca_Item
+            End If
+        Case 33
+            If Lista.SelectedItem.Index > 10 Then
+                Lista.ListItems.Item(Lista.SelectedItem.Index - 10).Selected = True
+                Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
+                Refresca_Item
+            End If
+        Case 34
+            If Lista.SelectedItem.Index < (Lista.ListItems.Count - 10) Then
+                Lista.ListItems.Item(Lista.SelectedItem.Index + 10).Selected = True
+                Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
+                Refresca_Item
+            End If
         End Select
     End If
 End Sub
@@ -798,7 +798,7 @@ Private Sub TxtNuevoPrecio_KeyPress(KeyAscii As Integer)
     Else
         TxtNuevoPrecio.Locked = Checktexto(KeyAscii, 7, TxtNuevoPrecio.TexT, True, False)
     End If
-    If KeyAscii = 13 And Command1(0).Enabled = True Then Command1_Click (0) 'Command1(0).SetFocus
+    If KeyAscii = 13 And Command1(0).Enabled = True Then Command1_Click (0)    'Command1(0).SetFocus
     If KeyAscii = 8 Then Exit Sub
     Comas = False
     For bucle = 1 To Len(TxtNuevoPrecio.TexT)
@@ -810,7 +810,7 @@ Private Sub TxtNuevoPrecio_KeyPress(KeyAscii As Integer)
     If Comas Then
         'TxtNuevoPrecio.Locked = Checktexto(KeyAscii, 10, TxtNuevoPrecio.Text, True, True)
         If (Not UsaEuro And Len(TxtNuevoPrecio.TexT) - bucle >= decimales) _
-        Or (UsaEuro And Len(TxtNuevoPrecio.TexT) - bucle >= 2) Then
+           Or (UsaEuro And Len(TxtNuevoPrecio.TexT) - bucle >= 2) Then
             TxtNuevoPrecio.Locked = True
         End If
     End If

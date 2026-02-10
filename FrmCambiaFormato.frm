@@ -160,20 +160,20 @@ End Sub
 '******
 '******
 Public Sub CambiarFormatoBase()
-Dim Res
-Dim bucle As Long
-Dim B2 As Integer
-Dim Base As dao.Database
-Dim ElNumero As Integer
-Dim Registro As dao.Recordset
-Dim RegAux As dao.Recordset
-Dim regAux2 As dao.Recordset
-Dim RegOld As dao.Recordset
-Dim RegSeccion As dao.Recordset
-Dim ElAnterior As Long
-Dim eNCONTRADO As Boolean
-Dim nMyFich As Integer
-Dim nf As Integer
+    Dim Res
+    Dim bucle As Long
+    Dim B2 As Integer
+    Dim Base As dao.Database
+    Dim ElNumero As Integer
+    Dim Registro As dao.Recordset
+    Dim RegAux As dao.Recordset
+    Dim regAux2 As dao.Recordset
+    Dim RegOld As dao.Recordset
+    Dim RegSeccion As dao.Recordset
+    Dim ElAnterior As Long
+    Dim eNCONTRADO As Boolean
+    Dim nMyFich As Integer
+    Dim nf As Integer
 
     If Dir(Base_General) = "" Then Exit Sub
     On Error GoTo ErrorBase
@@ -277,70 +277,70 @@ Dim nf As Integer
         creaOnKey
         Set Base = OpenDatabase(Base_General)
     End If
-    
-    
+
+
     Set Registro = Base.OpenRecordset("SELECT * FROM linTxt2040")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_7_1
         Set Base = OpenDatabase(Base_General)
     End If
-'crea_Gen_sam
+    'crea_Gen_sam
     Set Registro = Base.OpenRecordset("SELECT * FROM gen_sam")
     If Err.Number <> 0 Then
         Base.Close
         crea_Gen_sam
         Set Base = OpenDatabase(Base_General)
     End If
-'nutrición
-'cm = "CREATE TABLE nutrition (card long,portion_weight double,energy_kj_100 double," & _
-'  "energy_kj_portion double,energy_kcal_100 double,energy_kcal_portion double," & _
-'  "fat_100 double,fat_portion double,saturates_100 double,saturates_portion double," & _
-'  "mono_unsaturates_100 double,mono_unsaturates_portion double,polyunsaturates_100 double," & _
-'  "polyunsaturates_portion double,carbohydrate_100 double,carbohydrate_portion double," & _
-'  "sugars_100 double,sugars_portion double,polyols_100 double," & _
-'  "polyols_portion double,starch_100 double,starch_portion double," & _
-'  "fibre_100 double,fibre_portion double,protein_100 double,protein_portion double," & _
-'  "salt_100 double,salt_portion double)"
+    'nutrición
+    'cm = "CREATE TABLE nutrition (card long,portion_weight double,energy_kj_100 double," & _
+     '  "energy_kj_portion double,energy_kcal_100 double,energy_kcal_portion double," & _
+     '  "fat_100 double,fat_portion double,saturates_100 double,saturates_portion double," & _
+     '  "mono_unsaturates_100 double,mono_unsaturates_portion double,polyunsaturates_100 double," & _
+     '  "polyunsaturates_portion double,carbohydrate_100 double,carbohydrate_portion double," & _
+     '  "sugars_100 double,sugars_portion double,polyols_100 double," & _
+     '  "polyols_portion double,starch_100 double,starch_portion double," & _
+     '  "fibre_100 double,fibre_portion double,protein_100 double,protein_portion double," & _
+     '  "salt_100 double,salt_portion double)"
     Set Registro = Base.OpenRecordset("SELECT * FROM nutrition")
     If Err.Number <> 0 Then
         Base.Execute "CREATE TABLE nutrition (card long,portion_weight double,energy_kj_100 double," & _
-        "energy_kj_portion double,energy_kcal_100 double,energy_kcal_portion double," & _
-        "fat_100 double,fat_portion double,saturates_100 double,saturates_portion double," & _
-        "mono_unsaturates_100 double,mono_unsaturates_portion double,polyunsaturates_100 double," & _
-        "polyunsaturates_portion double,carbohydrate_100 double,carbohydrate_portion double," & _
-        "sugars_100 double,sugars_portion double,polyols_100 double," & _
-        "polyols_portion double,starch_100 double,starch_portion double," & _
-        "fibre_100 double,fibre_portion double,protein_100 double,protein_portion double," & _
-        "salt_100 double,salt_portion double,tran_nutri Text(1), borrado Text(1), cadena Text(200))"
+                     "energy_kj_portion double,energy_kcal_100 double,energy_kcal_portion double," & _
+                     "fat_100 double,fat_portion double,saturates_100 double,saturates_portion double," & _
+                     "mono_unsaturates_100 double,mono_unsaturates_portion double,polyunsaturates_100 double," & _
+                     "polyunsaturates_portion double,carbohydrate_100 double,carbohydrate_portion double," & _
+                     "sugars_100 double,sugars_portion double,polyols_100 double," & _
+                     "polyols_portion double,starch_100 double,starch_portion double," & _
+                     "fibre_100 double,fibre_portion double,protein_100 double,protein_portion double," & _
+                     "salt_100 double,salt_portion double,tran_nutri Text(1), borrado Text(1), cadena Text(200))"
         Base.Close
         Set Base = OpenDatabase(Base_General)
     End If
-'DROP TABLE IF EXISTS `pcscale`.`vitamins`;
-'CREATE TABLE  `pcscale`.`vitamins` (
-'  `id` int(11) NOT NULL AUTO_INCREMENT,
-'  `card` int(11) NOT NULL,
-'  `identifier` int(11) NOT NULL,
-'  `type` char(1) DEFAULT NULL,
-'  `name` varchar(50) DEFAULT NULL,
-'  `units` varchar(2) DEFAULT NULL,
-'  `daily_ref` float DEFAULT NULL,
-'  `per100` float DEFAULT '0',
-'  `perportion` float DEFAULT '0',
-'  PRIMARY KEY (`id`),
-'  UNIQUE KEY `vtm` (`card`,`identifier`),
-'  CONSTRAINT `vitamins_ibfk_1` FOREIGN KEY (`card`) REFERENCES `nutrition` (`card`) ON DELETE CASCADE
-') ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    'DROP TABLE IF EXISTS `pcscale`.`vitamins`;
+    'CREATE TABLE  `pcscale`.`vitamins` (
+    '  `id` int(11) NOT NULL AUTO_INCREMENT,
+    '  `card` int(11) NOT NULL,
+    '  `identifier` int(11) NOT NULL,
+    '  `type` char(1) DEFAULT NULL,
+    '  `name` varchar(50) DEFAULT NULL,
+    '  `units` varchar(2) DEFAULT NULL,
+    '  `daily_ref` float DEFAULT NULL,
+    '  `per100` float DEFAULT '0',
+    '  `perportion` float DEFAULT '0',
+    '  PRIMARY KEY (`id`),
+    '  UNIQUE KEY `vtm` (`card`,`identifier`),
+    '  CONSTRAINT `vitamins_ibfk_1` FOREIGN KEY (`card`) REFERENCES `nutrition` (`card`) ON DELETE CASCADE
+    ') ENGINE=InnoDB DEFAULT CHARSET=utf8;
     Set Registro = Base.OpenRecordset("SELECT * FROM vitamins")
     If Err.Number <> 0 Then
         Base.Execute "CREATE TABLE vitamins (card long,identifier long,type Text(1)," & _
-        "name Text(50),units Text(2),daily_ref double," & _
-        "per100 double,perportion double,tran_vita Text(1),borrado Text(1), cadena Text(100))"
+                     "name Text(50),units Text(2),daily_ref double," & _
+                     "per100 double,perportion double,tran_vita Text(1),borrado Text(1), cadena Text(100))"
         Base.Close
         Set Base = OpenDatabase(Base_General)
     End If
 
-''''''''''
+    ''''''''''
     'Base.Execute "drop table text15"
     'Base.Execute "insert into text15 values(1,1,1,String(1500,'1'),String(1500,'2'),String(1500,'3'),String(1500,'4'),String(1500,'5'),' ')"
     Set Registro = Base.OpenRecordset("SELECT * FROM text15")
@@ -353,35 +353,35 @@ Dim nf As Integer
         RevisaText15
         Set Base = OpenDatabase(Base_General)
     End If
-    
+
     Set Registro = Base.OpenRecordset("select ss165 from equipos")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_9_0
         Set Base = OpenDatabase(Base_General)
     End If
-    
+
     Set Registro = Base.OpenRecordset("SELECT txt_80 FROM linTxt2040")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_7_1_1
-        Set Base = OpenDatabase(Base_General) 'abrirbase 'OpenDatabase(Base_General)
+        Set Base = OpenDatabase(Base_General)    'abrirbase 'OpenDatabase(Base_General)
     End If
-    
+
     Set Registro = Base.OpenRecordset("select etiqueta,index from fam_code")
     If Err.Number <> 0 Then
         Base.Close
         Crea_2_0_0
         Set Base = OpenDatabase(Base_General)
     End If
-'Crea_Traza_fam_Sam
+    'Crea_Traza_fam_Sam
     Set Registro = Base.OpenRecordset("select istraza from fam_code")
     If Err.Number <> 0 Then
         Base.Close
         Crea_Traza_fam_Sam
         Set Base = OpenDatabase(Base_General)
     End If
-'Crea_Tax_fam
+    'Crea_Tax_fam
     Set Registro = Base.OpenRecordset("select tax from fam_code")
     If Err.Number <> 0 Then
         Base.Close
@@ -389,24 +389,24 @@ Dim nf As Integer
         Set Base = OpenDatabase(Base_General)
     End If
 
-    
-'      .Fields.Append .CreateField("ART_CB14", dbText, 14)
-'      .Fields.Append .CreateField("label2", dbText, 60)
-'Crea_art_sam1
+
+    '      .Fields.Append .CreateField("ART_CB14", dbText, 14)
+    '      .Fields.Append .CreateField("label2", dbText, 60)
+    'Crea_art_sam1
     Set Registro = Base.OpenRecordset("select label2 from articulo")
     If Err.Number <> 0 Then
         Base.Close
         Crea_art_sam1
         Set Base = OpenDatabase(Base_General)
     End If
-'Crea_art_label1
+    'Crea_art_label1
     Set Registro = Base.OpenRecordset("select label1 from articulo")
     If Err.Number <> 0 Then
         Base.Close
         Crea_art_label1
         Set Base = OpenDatabase(Base_General)
     End If
-'Etiquetas familias
+    'Etiquetas familias
     Set Registro = Base.OpenRecordset("select label1 from fam_code")
     If Err.Number <> 0 Then
         Base.Close
@@ -427,7 +427,7 @@ Dim nf As Integer
         Set Base = OpenDatabase(Base_General)
     End If
 
-'Crea_Cliente_72
+    'Crea_Cliente_72
     Set Registro = Base.OpenRecordset("select discount from cliente")
     If Err.Number <> 0 Then
         Base.Close
@@ -446,9 +446,9 @@ Dim nf As Integer
         Base.Close
         Crea_1_1_0
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     '**********************************************************************
     '* 8º Las bases de HydraTouch anteriores a HydraTouch 1.0.1 no tienen         *
     '*    datos de cabecera/tickets d_fecha,d_hora, ni tabla de familias  *
@@ -468,59 +468,59 @@ Dim nf As Integer
         Crea_Familias
         Set Base = OpenDatabase(Base_General)
     End If
-    
+
     '************************************************************************************************
     '* 10º Las bases de HydraTouch anteriores a HydraTouch 1.1.7 no tienen cabeceras de tickes para cambios *
     '************************************************************************************************
     On Error Resume Next
-'    Set Registro = Base.OpenRecordset("select * from cabecera")
-'    Registro.Fields("tipoPago") = CLng(0)
+    '    Set Registro = Base.OpenRecordset("select * from cabecera")
+    '    Registro.Fields("tipoPago") = CLng(0)
     Set Registro = Base.OpenRecordset("select tipoPago from cabecera")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_1_7
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     On Error Resume Next
     Set Registro = Base.OpenRecordset("select totalweight from cabecera")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_1_7_T
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     On Error Resume Next
     Set Registro = Base.OpenRecordset("select ivapercent from tickets")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_1_7_T_1
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     If Dir(App.Path & "\" & Format(TiendaActual, "000") & "factumas") = "" Then
-       
-       Base.Execute "alter table cabecera alter column factura TEXT(25)"
-       Base.Close
-       Set Base = OpenDatabase(Base_General)
-       Base.Execute "alter table tickets  alter column factura TEXT(25)"
-       Base.Close
-       Set Base = OpenDatabase(Base_General)
-       nf = FreeFile()
-       Open App.Path & "\" & Format(TiendaActual, "000") & "factumas" For Output As #nf
-       Print #nf, "campo factura simplificada pasa a 25 caracteres"
-       Close #nf
+
+        Base.Execute "alter table cabecera alter column factura TEXT(25)"
+        Base.Close
+        Set Base = OpenDatabase(Base_General)
+        Base.Execute "alter table tickets  alter column factura TEXT(25)"
+        Base.Close
+        Set Base = OpenDatabase(Base_General)
+        nf = FreeFile()
+        Open App.Path & "\" & Format(TiendaActual, "000") & "factumas" For Output As #nf
+        Print #nf, "campo factura simplificada pasa a 25 caracteres"
+        Close #nf
     End If
-    
+
     'c2f ah
     'Set Registro = Base.OpenRecordset("select tipoPago from cabecerasc10")
     'If Err.Number <> 0 Then
     '    Base.Close
     '    Crea_1_1_7_ahSc10
     '    Set Base = OpenDatabase(Base_General)
-   '
+    '
     'End If
     'c2f ah
     'Set Registro = Base.OpenRecordset("select tipopago from cabeceratq")
@@ -528,7 +528,7 @@ Dim nf As Integer
     '    Base.Close
     '    Crea_1_1_7_ahTq
     '    Set Base = OpenDatabase(Base_General)
-   '
+    '
     'End If
     'c2f invicta
     Set Registro = Base.OpenRecordset("select importe_bruto from cabecera")
@@ -536,14 +536,14 @@ Dim nf As Integer
         Base.Close
         Crea_1_6_5_C
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     Set Registro = Base.OpenRecordset("select Cobrado from cabecera")
     If Err.Number <> 0 Then
         Base.Close
         adapta_Cobro
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     'c2f invicta
     'Set Registro = Base.OpenRecordset("select importe_bruto from cabecerasc10")
@@ -551,7 +551,7 @@ Dim nf As Integer
     '    Base.Close
     '    Crea_1_6_5_ahSc10
     '    Set Base = OpenDatabase(Base_General)
-   '
+    '
     'End If
     'c2f ah
     'Set Registro = Base.OpenRecordset("select importe_bruto from cabeceratq")
@@ -559,7 +559,7 @@ Dim nf As Integer
     '    Base.Close
     '    Crea_1_6_5_ahTq
     '    Set Base = OpenDatabase(Base_General)
-   '
+    '
     'End If
     'c2f Lote
     Set Registro = Base.OpenRecordset("select descuento from cabecera")
@@ -567,14 +567,14 @@ Dim nf As Integer
         Base.Close
         Crea_1_6_6
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     Set Registro = Base.OpenRecordset("select numlote from tickets")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_6_6_lin
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     Set Registro = Base.OpenRecordset("select cliente from tickets")
     If Err.Number <> 0 Then
@@ -589,58 +589,58 @@ Dim nf As Integer
         VerTipoCliente
         Set Base = OpenDatabase(Base_General)
     End If
-    
+
     Set Registro = Base.OpenRecordset("select imp4 from cabecera")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_6_6_1
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     Set Registro = Base.OpenRecordset("select factura from cabecera")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_6_6_2
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     Set Registro = Base.OpenRecordset("select factura from tickets")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_6_6_3
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     Set Registro = Base.OpenRecordset("select porcentaje from tickets")
     'CadenadeLog "Tabla: tickets 2"
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_6_6_lin_1
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     Set Registro = Base.OpenRecordset("select descuento from tickets")
     'CadenadeLog "Tabla: tickets 2"
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_6_6_Descuento
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     'Set Registro = Base.OpenRecordset("select cliente from tickets")
     ''CadenadeLog "Tabla: tickets 3"
     'If Err.Number <> 0 Then
     '    Base.Close
     '    Crea_1_6_6_Cli
     '    Set Base = OpenDatabase(Base_General)
-   '
+    '
     'End If
-    
+
     '*****************************************************************************************
     '* 11º Las bases de HydraTouch anteriores a HydraTouch 1.1.8 no tienen informacion de vendedores *
     '*****************************************************************************************
@@ -652,32 +652,32 @@ Dim nf As Integer
         Crea_1_1_8
         Set Base = OpenDatabase(Base_General)
 
-'    Else
-'        Registro.Close
-'        Base.Execute "drop table gtInfVen"
+        '    Else
+        '        Registro.Close
+        '        Base.Execute "drop table gtInfVen"
     End If
     Set Registro = Base.OpenRecordset("SELECT imporNeg FROM gtInfVen")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_1_8_punto2
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     Set Registro = Base.OpenRecordset("SELECT exported FROM gtInfVen")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_1_8_punto3
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
     Set Registro = Base.OpenRecordset("SELECT ntotal FROM gtpend")
     If Err.Number <> 0 Then
         Base.Close
         Crea_1_1_8_punto4
         Set Base = OpenDatabase(Base_General)
-    
+
     End If
-    
+
     Set Registro = Base.OpenRecordset("SELECT * FROM descuentos")
     If Err.Number <> 0 Then
         Base.Close
@@ -690,7 +690,7 @@ Dim nf As Integer
         Crea_1_4_1
         Set Base = OpenDatabase(Base_General)
     End If
-    
+
     '\\\\\
     '/////
     'c2f invicta
@@ -725,7 +725,7 @@ Dim nf As Integer
     '    Call Crea_Tara_Leclerc
     '    Set Base = OpenDatabase(Base_General)
     'End If
-    
+
     '\\\\\
     '/////
     Base.Close
@@ -740,9 +740,9 @@ Dim nf As Integer
     '        Close #nMyFich
     'End If
     If (Dir(App.Path & "\upper.txt") = "") Then
-    
+
         Corregir_Nulos
-        
+
     End If
     On Error GoTo 0
     'If (Dir(App.Path & "\nover1.txt") = "") And (Dir(App.Path & "\upper.txt") = "") Then
@@ -751,7 +751,7 @@ Dim nf As Integer
         Set frmWAIT = Nothing
     End If
     'End If
-    
+
     Unload Me
     Exit Sub
 ErrorBase:

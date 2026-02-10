@@ -5,7 +5,7 @@ Public Sub Do_EstadoGA()
     Dim Instring$
     Dim cadena$
     Dim envio
-    
+
     MostrarMonitor
     frmMonitor.cmdmonitorstop.Enabled = False
     If MyConnObj.State <> 0 Or MyConnObj.Errors.Count <> 0 Then
@@ -18,11 +18,11 @@ Public Sub Do_EstadoGA()
     frmMonitor.Label1.Caption = "ERROR"
     frmControl.Switch_mode 0
     If EstadoBal = 0 Then
-            frmMonitor.MostrarDato "OK"
-            frmMonitor.Label1.Caption = "OK"
+        frmMonitor.MostrarDato "OK"
+        frmMonitor.Label1.Caption = "OK"
     Else
-            frmMonitor.MostrarDato "ERROR"
-            frmMonitor.Label1.Caption = "ERROR"
+        frmMonitor.MostrarDato "ERROR"
+        frmMonitor.Label1.Caption = "ERROR"
     End If
     frmMonitor.Command1.Enabled = True
 
@@ -324,7 +324,7 @@ Public Sub AN_BorrarBases(Que_base As Integer, BorrarNTQ As Boolean)
                     Loop
                 End If
             End With
-            
+
         End If
         If Que_base = 0 Or Que_base = 1 Or Que_base = 2 Or Que_base = 24 Then
             '***********************************************************
@@ -347,97 +347,97 @@ Public Sub AN_BorrarBases(Que_base As Integer, BorrarNTQ As Boolean)
     End If
     If BorrarNTQ Then
         Select Case Que_base
-            Case 0
-                Kill Miruta & "\dbasetouch.mdb"
-                Crear_Base_Maestra
-            Case 1
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from seccion")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from articulo")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from tramos")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from subsec")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from familia")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from cabley")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from codbar")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from publi")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from vendedor")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from equipos")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from textlibre")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from teclas")
-                Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 2
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from articulo")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from tramos")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from subsec")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from familia")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from teclas")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from lintxt2040")
-                Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 3
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from vendedor")
-                Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 4
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from equipos")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from cabley where not isnull(!numero_eqp)")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from codbar where not isnull(!numero_eqp)")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from publi where not isnull(!numero_eqp)")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from textlibre where not isnull(!numero_eqp)")
-                Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 5
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from publi")
-                Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from cabley")
-                Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 7
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from cabecera")
-                Borra_la_Tabla Registro
-                'Set Registro = Base.OpenRecordset("select * from cabecerasc10")
-                'Borra_la_Tabla Registro
-                Set Registro = Base.OpenRecordset("select * from tickets")
-                Borra_la_Tabla Registro
-                'Set Registro = Base.OpenRecordset("select * from ticketsSC10")
-                'Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 9
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from codbar")
-                Borra_la_Tabla Registro
-                CerrarBase Base
-            Case 24
-                Set Base = OpenDatabase(Base_General)
-                Set Registro = Base.OpenRecordset("select * from teclas")
-                Borra_la_Tabla Registro
-                CerrarBase Base
+        Case 0
+            Kill Miruta & "\dbasetouch.mdb"
+            Crear_Base_Maestra
+        Case 1
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from seccion")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from articulo")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from tramos")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from subsec")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from familia")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from cabley")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from codbar")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from publi")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from vendedor")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from equipos")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from textlibre")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from teclas")
+            Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 2
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from articulo")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from tramos")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from subsec")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from familia")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from teclas")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from lintxt2040")
+            Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 3
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from vendedor")
+            Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 4
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from equipos")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from cabley where not isnull(!numero_eqp)")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from codbar where not isnull(!numero_eqp)")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from publi where not isnull(!numero_eqp)")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from textlibre where not isnull(!numero_eqp)")
+            Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 5
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from publi")
+            Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from cabley")
+            Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 7
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from cabecera")
+            Borra_la_Tabla Registro
+            'Set Registro = Base.OpenRecordset("select * from cabecerasc10")
+            'Borra_la_Tabla Registro
+            Set Registro = Base.OpenRecordset("select * from tickets")
+            Borra_la_Tabla Registro
+            'Set Registro = Base.OpenRecordset("select * from ticketsSC10")
+            'Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 9
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from codbar")
+            Borra_la_Tabla Registro
+            CerrarBase Base
+        Case 24
+            Set Base = OpenDatabase(Base_General)
+            Set Registro = Base.OpenRecordset("select * from teclas")
+            Borra_la_Tabla Registro
+            CerrarBase Base
         End Select
     End If
     lCogeTiquet = True

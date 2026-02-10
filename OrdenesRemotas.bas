@@ -30,40 +30,40 @@ Public Sub Procesa_Orden_Remota()
     '************************
     If Mid(OrdenRemota, 4, 3) = "CST" Then
         Select Case Mid(OrdenRemota, 25, 2)
-            Case "CL"
-                If Len(OrdenRemota) < 33 Then
-                    Orden_Fallida
-                Else
-                    Or_EnviaLista Mid(OrdenRemota, 27, 7)
-                End If
-           Case "CA"
-                If Len(OrdenRemota) < 33 Then
-                    Orden_Fallida
-                Else
-                    Or_EnviaArticulo Mid(OrdenRemota, 27, 6)
-                End If
-            Case "CP"
-                If Len(OrdenRemota) < 34 Then
-                    Orden_Fallida
-                Else
-                    If Not IsNumeric(Mid(OrdenRemota, 27, 8)) Then
-                        Orden_Fallida
-                    Else
-                        Or_EnviaPrecios Mid(OrdenRemota, 27, 8)
-                    End If
-                End If
-            Case "CM"
-                If Len(OrdenRemota) < 29 Then
-                    Orden_Fallida
-                Else
-                    If Not IsNumeric(Mid(OrdenRemota, 27, 3)) Then
-                        Orden_Fallida
-                    Else
-                        OR_EnviaMostradores Val(Mid(OrdenRemota, 27, 3))
-                    End If
-                End If
-            Case Else
+        Case "CL"
+            If Len(OrdenRemota) < 33 Then
                 Orden_Fallida
+            Else
+                Or_EnviaLista Mid(OrdenRemota, 27, 7)
+            End If
+        Case "CA"
+            If Len(OrdenRemota) < 33 Then
+                Orden_Fallida
+            Else
+                Or_EnviaArticulo Mid(OrdenRemota, 27, 6)
+            End If
+        Case "CP"
+            If Len(OrdenRemota) < 34 Then
+                Orden_Fallida
+            Else
+                If Not IsNumeric(Mid(OrdenRemota, 27, 8)) Then
+                    Orden_Fallida
+                Else
+                    Or_EnviaPrecios Mid(OrdenRemota, 27, 8)
+                End If
+            End If
+        Case "CM"
+            If Len(OrdenRemota) < 29 Then
+                Orden_Fallida
+            Else
+                If Not IsNumeric(Mid(OrdenRemota, 27, 3)) Then
+                    Orden_Fallida
+                Else
+                    OR_EnviaMostradores Val(Mid(OrdenRemota, 27, 3))
+                End If
+            End If
+        Case Else
+            Orden_Fallida
         End Select
     Else
         '***************************
@@ -71,26 +71,26 @@ Public Sub Procesa_Orden_Remota()
         '***************************
         If Mid(OrdenRemota, 4, 3) = "PRG" Then
             Select Case Mid(OrdenRemota, 25, 2)
-                Case "PA" ' programación artículo
-                    Or_AltaArticulo Mid(OrdenRemota, 27)
-                Case "BA" ' baja articulo
-                    If Len(OrdenRemota) < 32 Then
-                        Orden_Fallida
-                    Else
-                        Or_BajaArticulo Mid(OrdenRemota, 27, 6)
-                    End If
-                Case "PP" ' cambio de precio
-                    If Len(OrdenRemota) < 41 Then
-                        Orden_Fallida
-                    Else
-                        If Not IsNumeric(Mid(OrdenRemota, 27, 15)) Then
-                            Orden_Fallida
-                        Else
-                            Or_ProgramaPrecios Mid(OrdenRemota, 27, 15)
-                        End If
-                    End If
-                Case Else
+            Case "PA"    ' programación artículo
+                Or_AltaArticulo Mid(OrdenRemota, 27)
+            Case "BA"    ' baja articulo
+                If Len(OrdenRemota) < 32 Then
                     Orden_Fallida
+                Else
+                    Or_BajaArticulo Mid(OrdenRemota, 27, 6)
+                End If
+            Case "PP"    ' cambio de precio
+                If Len(OrdenRemota) < 41 Then
+                    Orden_Fallida
+                Else
+                    If Not IsNumeric(Mid(OrdenRemota, 27, 15)) Then
+                        Orden_Fallida
+                    Else
+                        Or_ProgramaPrecios Mid(OrdenRemota, 27, 15)
+                    End If
+                End If
+            Case Else
+                Orden_Fallida
             End Select
         Else
             If Mid(OrdenRemota, 4, 3) <> "CST" And Mid(OrdenRemota, 4, 3) <> "PRG" Then
@@ -178,7 +178,7 @@ Private Sub Or_AltaArticulo(Miorden As String)
             ModificacionesPendientes(0) = (ModificacionesPendientes(0) Or 128)
         Else
             'FrmExportar.AN_Articulos True
-            AN_BaseMaestra True, , 7 'modificaciones artículos.
+            AN_BaseMaestra True, , 7    'modificaciones artículos.
         End If
     End If
     RespuestaRemota = "PRG12345678PABA" & Format(MiRespuesta, "00") & Chr(13)
@@ -194,7 +194,7 @@ Private Sub Or_BajaArticulo(Miorden As String)
             ModificacionesPendientes(0) = (ModificacionesPendientes(0) Or 128)
         Else
             'FrmExportar.AN_Articulos True
-            AN_BaseMaestra True, , 7 'modificaciones artículos.
+            AN_BaseMaestra True, , 7    'modificaciones artículos.
         End If
     End If
     RespuestaRemota = "PRG12345678PABA" & Format(MiRespuesta, "00") & Chr(13)
@@ -223,7 +223,7 @@ Private Sub Or_ProgramaPrecios(Miorden As String)
             ModificacionesPendientes(0) = (ModificacionesPendientes(0) Or 128)
         Else
             'FrmExportar.AN_Articulos True
-            AN_BaseMaestra True, , 7 'modificaciones artículos.
+            AN_BaseMaestra True, , 7    'modificaciones artículos.
         End If
     End If
     RespuestaRemota = "PRG12345678PAPP" & Format(MiRespuesta, "00") & Chr(13)
@@ -245,21 +245,21 @@ Private Sub Or_EnviaArticulo(Miorden As String)
     If left(Miorden, 1) = "0" Then
         If UsuarioRemoto.Asociado <> 0 Then
             Set Registro = Base.OpenRecordset _
-            ("select * from articulo where borrado=false and codigo=" & Val(Mid(Miorden, 3, 6)) _
-            & " and codi_ident=" & UsuarioRemoto.Asociado)
+                           ("select * from articulo where borrado=false and codigo=" & Val(Mid(Miorden, 3, 6)) _
+                          & " and codi_ident=" & UsuarioRemoto.Asociado)
         Else
             Set Registro = Base.OpenRecordset _
-            ("select * from articulo where borrado=false and codigo=" & Val(Mid(Miorden, 3, 6)))
+                           ("select * from articulo where borrado=false and codigo=" & Val(Mid(Miorden, 3, 6)))
         End If
     Else
         If UsuarioRemoto.Asociado <> 0 Then
             Set Registro = Base.OpenRecordset _
-            ("select * from articulo where borrado=false and plu=" & Val(Mid(Miorden, 2, 3)) _
-            & " and codi_ident=" & Val(Mid(Miorden, 5, 4)) & " and codi_ident=" & UsuarioRemoto.Asociado)
+                           ("select * from articulo where borrado=false and plu=" & Val(Mid(Miorden, 2, 3)) _
+                          & " and codi_ident=" & Val(Mid(Miorden, 5, 4)) & " and codi_ident=" & UsuarioRemoto.Asociado)
         Else
             Set Registro = Base.OpenRecordset _
-            ("select * from articulo where borrado=false and plu=" & Val(Mid(Miorden, 2, 3)) _
-            & " and codi_ident=" & Val(Mid(Miorden, 5, 4)))
+                           ("select * from articulo where borrado=false and plu=" & Val(Mid(Miorden, 2, 3)) _
+                          & " and codi_ident=" & Val(Mid(Miorden, 5, 4)))
         End If
     End If
     cantidad = 0
@@ -291,7 +291,7 @@ Private Sub Or_EnviaArticulo(Miorden As String)
                 Buffer = Buffer & "000000000000000000000000000000000"
             Else
                 Set RegAux = Base.OpenRecordset _
-                ("select * from tramos where borrado=false and codigo=" & !codigo)
+                             ("select * from tramos where borrado=false and codigo=" & !codigo)
                 If RegAux.EOF Then
                     Buffer = Buffer & "000000000000000000000000000000000"
                 Else
@@ -322,22 +322,22 @@ Private Sub Or_EnviaArticulo(Miorden As String)
             End If
             For bucle = 0 To 20
                 Select Case bucle
-                    Case 0 To 8
-                        MiNombre = "des_plu" & Val(bucle + 1)
-                    Case 9
-                        MiNombre = "des_plu0"
-                    Case 10
-                        MiNombre = "des_plux"
-                    Case 11 To 20
-                        MiNombre = "des_plu" & Val(bucle)
+                Case 0 To 8
+                    MiNombre = "des_plu" & Val(bucle + 1)
+                Case 9
+                    MiNombre = "des_plu0"
+                Case 10
+                    MiNombre = "des_plux"
+                Case 11 To 20
+                    MiNombre = "des_plu" & Val(bucle)
                 End Select
                 Buffer = Buffer & Trim(.Fields(MiNombre)) & Space(25 - Len(Trim(.Fields(MiNombre))))
                 If bucle < 10 Then
                     Select Case bucle
-                        Case 0 To 8
-                            MiNombre = "tip_let" & Val(bucle + 1)
-                        Case 9
-                            MiNombre = "tip_let0"
+                    Case 0 To 8
+                        MiNombre = "tip_let" & Val(bucle + 1)
+                    Case 9
+                        MiNombre = "tip_let0"
                     End Select
                     Buffer = Buffer & .Fields(MiNombre)
                 Else
@@ -356,16 +356,16 @@ Private Sub Or_EnviaLista(Miorden As String)
     Dim Registro As dao.Recordset
     Dim cantidad As Integer
     Dim Buffer As String
-        
+
     Set Base = OpenDatabase(Base_General)
     If UsuarioRemoto.Asociado <> 0 Then
         Set Registro = Base.OpenRecordset _
-        ("select * from articulo where borrado=false and codi_ident=" & Val(left(Miorden, 3)) _
-        & " and plu>" & Val(Right(Miorden, 4)) & " and codi_ident=" & UsuarioRemoto.Asociado & " ORDER BY val(PLU)")
+                       ("select * from articulo where borrado=false and codi_ident=" & Val(left(Miorden, 3)) _
+                      & " and plu>" & Val(Right(Miorden, 4)) & " and codi_ident=" & UsuarioRemoto.Asociado & " ORDER BY val(PLU)")
     Else
         Set Registro = Base.OpenRecordset _
-        ("select * from articulo where borrado=false and codi_ident=" & Val(left(Miorden, 3)) _
-        & " and plu>" & Val(Right(Miorden, 4)) & " ORDER BY val(plu)")
+                       ("select * from articulo where borrado=false and codi_ident=" & Val(left(Miorden, 3)) _
+                      & " and plu>" & Val(Right(Miorden, 4)) & " ORDER BY val(plu)")
     End If
     cantidad = 0
     Buffer = ""
@@ -375,7 +375,7 @@ Private Sub Or_EnviaLista(Miorden As String)
             .MoveFirst
             Do
                 Buffer = Buffer & Format(!Plu, "0000") _
-                & Format(!codigo, "000000")
+                       & Format(!codigo, "000000")
                 cantidad = cantidad + 1
                 .Movenext
             Loop Until .EOF Or cantidad = 60
@@ -397,11 +397,11 @@ Private Sub Or_EnviaPrecios(Miorden As String)
     Set Base = OpenDatabase(Base_General)
     If left(Miorden, 1) = "0" Then
         Set Registro = Base.OpenRecordset _
-        ("select * from articulo where codigo >" & Val(Right(Miorden, 6)) & " and borrado=false " & Limitacion & " order by codigo")
+                       ("select * from articulo where codigo >" & Val(Right(Miorden, 6)) & " and borrado=false " & Limitacion & " order by codigo")
     Else
         Set Registro = Base.OpenRecordset _
-        ("select * from articulo where plu >" & Val(Right(Miorden, 4)) _
-        & " and codi_ident=" & Val(Mid(Miorden, 2, 3)) & " and borrado=false " & Limitacion & " order by plu")
+                       ("select * from articulo where plu >" & Val(Right(Miorden, 4)) _
+                      & " and codi_ident=" & Val(Mid(Miorden, 2, 3)) & " and borrado=false " & Limitacion & " order by plu")
     End If
     cantidad = 0
     Buffer = ""
@@ -412,12 +412,12 @@ Private Sub Or_EnviaPrecios(Miorden As String)
             Do
                 If Len(!des_plu1) < 25 Then
                     Buffer = Buffer & Format(!codigo, "000000") _
-                    & Format(!codi_ident, "000") & Format(!Plu, "0000") & _
-                    Trim(!des_plu1) & Space(25 - Len(Trim(!des_plu1)))
+                           & Format(!codi_ident, "000") & Format(!Plu, "0000") & _
+                             Trim(!des_plu1) & Space(25 - Len(Trim(!des_plu1)))
                 Else
                     Buffer = Buffer & Format(!codigo, "000000") _
-                    & Format(!codi_ident, "000") & Format(!Plu, "0000") & _
-                    Mid(!des_plu1, 1, 25)
+                           & Format(!codi_ident, "000") & Format(!Plu, "0000") & _
+                             Mid(!des_plu1, 1, 25)
                     'Trim (!des_plu1) & Space(25 - Len(Trim(!des_plu1)))
                 End If
                 If UsaEuro Then
@@ -433,7 +433,7 @@ Private Sub Or_EnviaPrecios(Miorden As String)
     CerrarBase Base
     RespuestaRemota = "CST" & "12345678" & "PA" & "CP" & Format(cantidad, "00") & Buffer & Chr(13)
     FrmRemoto.Enviar_Respuesta
-        
+
 End Sub
 Private Sub OR_EnviaMostradores(MiNumero As Integer)
     Dim Base As dao.Database
@@ -443,10 +443,10 @@ Private Sub OR_EnviaMostradores(MiNumero As Integer)
     Set Base = OpenDatabase(Base_General)
     If UsuarioRemoto.Asociado <> 0 Then
         Set Registro = Base.OpenRecordset _
-        ("select * from seccion where borrado=false and codi_ident>" & MiNumero & " and codi_ident=" & UsuarioRemoto.Asociado)
+                       ("select * from seccion where borrado=false and codi_ident>" & MiNumero & " and codi_ident=" & UsuarioRemoto.Asociado)
     Else
         Set Registro = Base.OpenRecordset _
-        ("select * from seccion where borrado=false and codi_ident>" & MiNumero & " order by codi_ident")
+                       ("select * from seccion where borrado=false and codi_ident>" & MiNumero & " order by codi_ident")
     End If
     cantidad = 0
     Buffer = ""
@@ -455,7 +455,7 @@ Private Sub OR_EnviaMostradores(MiNumero As Integer)
         If Not .EOF Then
             .MoveFirst
             Do
-                Buffer = Buffer & Format(!codi_ident, "000") & Format(!secc_Maqui, "00")
+                Buffer = Buffer & Format(!codi_ident, "000") & Format(!secc_maqui, "00")
                 cantidad = cantidad + 1
                 .Movenext
             Loop Until .EOF Or cantidad = 40

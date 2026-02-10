@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form FrmTeclas2T 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Gestión de Teclas TouchScale"
@@ -3423,40 +3423,40 @@ Private Sub CambiarIdioma()
     Label2.Caption = CargaCadena(321)
     Label3.Caption = CargaCadena(223)
     LblMostrador.Caption = CargaCadena(302)
-    CmdParte(0).Caption = "1 a 60" 'CargaCadena(712) & " 1"
-    CmdParte(1).Caption = "61 a 120" 'CargaCadena(712) & " 2"
-    CmdParte(2).Caption = "121 a 180" 'CargaCadena(712) & " 3"
-    CmdParte(3).Caption = "181 a 240" 'CargaCadena(712) & " 4"
-    CmdParte(4).Caption = "241 a 300" 'CargaCadena(712) & " 5"
-    CmdParte(5).Caption = "301 a 360" 'CargaCadena(712) & " 6"
-    CmdParte(6).Caption = "361 a 420" 'CargaCadena(712) & " 7"
-    CmdParte(7).Caption = "421 a 480" 'CargaCadena(712) & " 8"
-    CmdParte(8).Caption = "481 a 540" 'CargaCadena(712) & " 9"
-    CmdParte(9).Caption = "541 a 600" 'CargaCadena(712) & " 10"
-    CmdParte(10).Caption = "601 a 660" 'CargaCadena(712) & " 11"
-    CmdParte(11).Caption = "661 a 720" 'CargaCadena(712) & " 12"
-    
+    CmdParte(0).Caption = "1 a 60"    'CargaCadena(712) & " 1"
+    CmdParte(1).Caption = "61 a 120"    'CargaCadena(712) & " 2"
+    CmdParte(2).Caption = "121 a 180"    'CargaCadena(712) & " 3"
+    CmdParte(3).Caption = "181 a 240"    'CargaCadena(712) & " 4"
+    CmdParte(4).Caption = "241 a 300"    'CargaCadena(712) & " 5"
+    CmdParte(5).Caption = "301 a 360"    'CargaCadena(712) & " 6"
+    CmdParte(6).Caption = "361 a 420"    'CargaCadena(712) & " 7"
+    CmdParte(7).Caption = "421 a 480"    'CargaCadena(712) & " 8"
+    CmdParte(8).Caption = "481 a 540"    'CargaCadena(712) & " 9"
+    CmdParte(9).Caption = "541 a 600"    'CargaCadena(712) & " 10"
+    CmdParte(10).Caption = "601 a 660"    'CargaCadena(712) & " 11"
+    CmdParte(11).Caption = "661 a 720"    'CargaCadena(712) & " 12"
+
     Command3.Caption = CargaCadena(7)
     Frame1.Caption = CargaCadena(713)
-    Frame2.Caption = CargaCadena(1406) & "/" & CargaCadena(9) 'CargaCadena(714)
+    Frame2.Caption = CargaCadena(1406) & "/" & CargaCadena(9)    'CargaCadena(714)
     FrmTeclas2T.Caption = CargaCadena(1397)
     FrmTeclas2TE.Caption = CargaCadena(1398)
     CmdPrint.Caption = CargaCadena(466)
     LblGrupo.Caption = CargaCadena(442)
     'CmdConsulta.Caption = CargaCadena(742)
-    
+
 End Sub
 Private Sub Refresca_Numero()
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
     Dim Agregar As Boolean
     Dim Buffer As String
     Select Case OptTipo(0).Value
-        Case True
-            Aux_Refresca_Mostradores CmbNumero
-        Case False
-            Aux_Refresca_equipos CmbNumero, True
+    Case True
+        Aux_Refresca_Mostradores CmbNumero
+    Case False
+        Aux_Refresca_equipos CmbNumero, True
     End Select
     If CmbNumero.ListCount > 0 Then
         CmbNumero.TexT = CmbNumero.List(0)
@@ -3464,7 +3464,7 @@ Private Sub Refresca_Numero()
     Else
         HabilitarTeclas False
     End If
-        
+
 End Sub
 Private Function Desglosa_Codigos(LaCadena As String) As TipoCodigos
     Dim LosCodigos As TipoCodigos
@@ -3491,32 +3491,32 @@ End Function
 
 Private Sub Refresca_Datos()
     Dim Modificacion As Boolean
-    
+
     Dim Registro As New RecordNet
     Dim bucle As Integer
     Dim LaSeccion As TipoCodigos
     Dim Mimaximo As Integer
     Dim MiFactor As Integer
     Dim MiMinimo As Integer
-    
+
     '1.9.0
     lss165 = False
     ''''''''
     QuantumLeap = True
-    
+
     For bucle = 0 To 99
         Text1(bucle).TexT = ""
         Text1(bucle).ToolTipText = ""
         Text1(bucle).BackColor = vbWhite
     Next bucle
-    
+
     If OptTipo(1).Value = True Then
         Registro.OpenRecordset ("select * from equipos where numero_eqp=" & CmbNumero.TexT & " and borrado=false")
         If Not Registro.EOF Then
             lss165 = Registro.Fields("ss165")
         End If
     End If
-    
+
     If lss165 Then
         CmbTeclas.ListIndex = 4
         CmbTeclas.Enabled = False
@@ -3526,177 +3526,177 @@ Private Sub Refresca_Datos()
         CmbTeclas.Enabled = True
         CmbJuego.Enabled = True
     End If
-    
+
     If QueParte = 0 Then
         MiMinimo = 1
         Select Case Val(CmbTeclas.TexT)
-            Case 30
-                Mimaximo = 30
-            Case 56
-                Mimaximo = 56
-            Case 80
-                Mimaximo = 40
-            Case 96
-                Mimaximo = 50
-            Case 165
-                If lss165 Then
-                    Mimaximo = 88
-                Else
-                    Mimaximo = 90
-                End If
-            Case 240
-                Mimaximo = 60
-            Case 360
-                Mimaximo = 60
-            Case 720
-                Mimaximo = 60
-                
+        Case 30
+            Mimaximo = 30
+        Case 56
+            Mimaximo = 56
+        Case 80
+            Mimaximo = 40
+        Case 96
+            Mimaximo = 50
+        Case 165
+            If lss165 Then
+                Mimaximo = 88
+            Else
+                Mimaximo = 90
+            End If
+        Case 240
+            Mimaximo = 60
+        Case 360
+            Mimaximo = 60
+        Case 720
+            Mimaximo = 60
+
         End Select
     Else
         Select Case Val(CmbTeclas.TexT)
-            Case 30
-                Mimaximo = 30
-                MiMinimo = 1
-            Case 56
-                Mimaximo = 56
-                MiMinimo = 1
-            Case 80
-                Mimaximo = 80
-                MiMinimo = 41
-            Case 96
-                Mimaximo = 96
-                MiMinimo = 50
-            Case 165
-                If lss165 Then
-                    Mimaximo = 165
-                    MiMinimo = 89
-                Else
-                    Mimaximo = 165
-                    MiMinimo = 91
-                End If
-            Case 240
-                Select Case QueParte
-                Case 1
+        Case 30
+            Mimaximo = 30
+            MiMinimo = 1
+        Case 56
+            Mimaximo = 56
+            MiMinimo = 1
+        Case 80
+            Mimaximo = 80
+            MiMinimo = 41
+        Case 96
+            Mimaximo = 96
+            MiMinimo = 50
+        Case 165
+            If lss165 Then
+                Mimaximo = 165
+                MiMinimo = 89
+            Else
+                Mimaximo = 165
+                MiMinimo = 91
+            End If
+        Case 240
+            Select Case QueParte
+            Case 1
                 MiMinimo = 61
                 Mimaximo = 120
-                
-                Case 2
+
+            Case 2
                 MiMinimo = 121
                 Mimaximo = 180
-                
-                Case 3
+
+            Case 3
                 MiMinimo = 181
                 Mimaximo = 240
-                
-                End Select
-                
-            Case 360
-                Select Case QueParte
-                Case 1
+
+            End Select
+
+        Case 360
+            Select Case QueParte
+            Case 1
                 MiMinimo = 61
                 Mimaximo = 120
-                
-                Case 2
+
+            Case 2
                 MiMinimo = 121
                 Mimaximo = 180
-                
-                Case 3
+
+            Case 3
                 MiMinimo = 181
                 Mimaximo = 240
-                
-                Case 4
+
+            Case 4
                 MiMinimo = 241
                 Mimaximo = 300
-                
-                Case 5
+
+            Case 5
                 MiMinimo = 301
                 Mimaximo = 360
-                End Select
-                
-            Case 720
-                Select Case QueParte
-                Case 1
+            End Select
+
+        Case 720
+            Select Case QueParte
+            Case 1
                 MiMinimo = 61
                 Mimaximo = 120
-                
-                Case 2
+
+            Case 2
                 MiMinimo = 121
                 Mimaximo = 180
-                
-                Case 3
+
+            Case 3
                 MiMinimo = 181
                 Mimaximo = 240
-                
-                Case 4
+
+            Case 4
                 MiMinimo = 241
                 Mimaximo = 300
-                
-                Case 5
+
+            Case 5
                 MiMinimo = 301
                 Mimaximo = 360
-                
-                Case 6
+
+            Case 6
                 MiMinimo = 361
                 Mimaximo = 420
-                Case 7
+            Case 7
                 MiMinimo = 421
                 Mimaximo = 480
-                Case 8
+            Case 8
                 MiMinimo = 481
                 Mimaximo = 540
-                Case 9
+            Case 9
                 MiMinimo = 541
                 Mimaximo = 600
-                Case 10
+            Case 10
                 MiMinimo = 601
                 Mimaximo = 660
-                Case 11
+            Case 11
                 MiMinimo = 661
                 Mimaximo = 720
-                
-                End Select
-                
+
+            End Select
+
         End Select
     End If
     If CmbNumero.TexT = "" Then
         For bucle = 0 To 99
             Text1(bucle).TexT = ""
-           
+
         Next bucle
         QuantumLeap = False
         Exit Sub
     End If
     Modificacion = False
-    
-    
+
+
     If OptTipo(1).Value = True Then
         If lss165 Then
             If QueParte = 0 Then
-            Registro.OpenRecordset _
-                     ("select * from teclas where borrado=false and numero_eqp=" & CmbNumero.TexT & " and prog_tec='TOUCH' and tabla=0 and tran_tecsc10='" & cmbgrupo.TexT & "'")
-        
+                Registro.OpenRecordset _
+                        ("select * from teclas where borrado=false and numero_eqp=" & CmbNumero.TexT & " and prog_tec='TOUCH' and tabla=0 and tran_tecsc10='" & cmbgrupo.TexT & "'")
+
             Else
-            Registro.OpenRecordset _
-                     ("select * from teclas where borrado=false and numero_eqp=" & CmbNumero.TexT & " and prog_tec='TOUCH' and tabla=1 and tran_tecsc10='" & cmbgrupo.TexT & "'")
+                Registro.OpenRecordset _
+                        ("select * from teclas where borrado=false and numero_eqp=" & CmbNumero.TexT & " and prog_tec='TOUCH' and tabla=1 and tran_tecsc10='" & cmbgrupo.TexT & "'")
             End If
         Else
             Registro.OpenRecordset _
-            ("select * from teclas where borrado=false and tabla=" & CmbJuego.TexT & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
+                    ("select * from teclas where borrado=false and tabla=" & CmbJuego.TexT & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
             '("select * from teclas where borrado=false and tabla=" & CmbJuego.TexT & "  and numero_eqp=" & CmbNumero.TexT & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
         End If
         With Registro
             If Not .EOF Then
-            
+
                 .MoveFirst
                 Do Until .EOF
-                    
+
                     If lss165 Then
                         If (.Fields("tabla") = 0) Then
                             If (.Fields("codi_tec")) >= MiMinimo And (.Fields("codi_tec")) <= Mimaximo Then
                                 Text1(.Fields("codi_tec") - MiMinimo).BackColor = vbGreen
                                 Text1(.Fields("codi_tec") - MiMinimo).ToolTipText = .Fields("desc_plu")
                                 If OptSeccion(0).Value = True Then
-                    
+
                                     Text1(.Fields("codi_tec") - MiMinimo).TexT = .Fields("codigo")
                                 Else
                                     Text1(.Fields("codi_tec") - MiMinimo).TexT = .Fields("plu")
@@ -3707,22 +3707,22 @@ Private Sub Refresca_Datos()
                                 Text1(.Fields("codi_tec") - (MiMinimo - 88)).BackColor = vbGreen
                                 Text1(.Fields("codi_tec") - (MiMinimo - 88)).ToolTipText = .Fields("desc_plu")
                                 If OptSeccion(0).Value = True Then
-                    
+
                                     Text1(.Fields("codi_tec") - (MiMinimo - 88)).TexT = .Fields("codigo")
                                 Else
                                     Text1(.Fields("codi_tec") - (MiMinimo - 88)).TexT = .Fields("plu")
                                 End If
                             End If
-                    
-                    
+
+
                         End If
-                   
+
                     Else
                         If (.Fields("codi_tec")) >= MiMinimo And (.Fields("codi_tec")) <= Mimaximo Then
                             Text1(.Fields("codi_tec") - MiMinimo).BackColor = vbGreen
                             Text1(.Fields("codi_tec") - MiMinimo).ToolTipText = .Fields("desc_plu")
                             If OptSeccion(0).Value = True Then
-                                
+
                                 Text1(.Fields("codi_tec") - MiMinimo).TexT = .Fields("codigo")
                             Else
                                 Text1(.Fields("codi_tec") - MiMinimo).TexT = .Fields("plu")
@@ -3732,7 +3732,7 @@ Private Sub Refresca_Datos()
                     .Movenext
                 Loop
                 Modificacion = True
-                
+
             Else
                 For bucle = 0 To 99
                     Text1(bucle).TexT = ""
@@ -3744,11 +3744,11 @@ Private Sub Refresca_Datos()
         LaSeccion = Desglosa_Codigos(CmbNumero.TexT)
         '1.4.9
         'Registro.OpenRecordset _
-        '("select * from teclas where borrado=false  and tabla=" & CmbJuego.TexT _
-        '& " and codi_ident=" & LaSeccion.codigo(1) & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
+         '("select * from teclas where borrado=false  and tabla=" & CmbJuego.TexT _
+         '& " and codi_ident=" & LaSeccion.codigo(1) & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
         Registro.OpenRecordset _
-        ("select * from teclas where borrado=false  and tabla=" & CmbJuego.TexT _
-        & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
+                ("select * from teclas where borrado=false  and tabla=" & CmbJuego.TexT _
+               & " and prog_tec='TOUCH' and tran_tecsc10='" & cmbgrupo.TexT & "'")
         '''''''''
         With Registro
             If Not .EOF Then
@@ -3758,16 +3758,16 @@ Private Sub Refresca_Datos()
                         Text1(.Fields("codi_tec") - MiMinimo).BackColor = vbGreen
                         Text1(.Fields("codi_tec") - MiMinimo).ToolTipText = .Fields("desc_plu")
                         If OptSeccion(0).Value = True Then
-                            
+
                             Text1(.Fields("codi_tec") - MiMinimo).TexT = .Fields("codigo")
                         Else
-                            
+
                             Text1(.Fields("codi_tec") - MiMinimo).TexT = .Fields("plu")
                         End If
                     End If
-                .Movenext
-            Loop
-            Modificacion = True
+                    .Movenext
+                Loop
+                Modificacion = True
             Else
                 For bucle = 0 To 99
                     Text1(bucle).TexT = ""
@@ -3778,9 +3778,9 @@ Private Sub Refresca_Datos()
     End If
 
     If Modificacion = False Then
-       
+
     Else
-        
+
     End If
     QuantumLeap = False
 End Sub
@@ -3823,18 +3823,18 @@ Private Sub CmbJuego_Click()
     'Else
     '    lblresul.Caption = ""
     'End If
-    
+
 End Sub
 
 Private Sub CmbNumero_Click()
     Dim Registro As New RecordNet
     'CmdConsulta.Visible = False
     'If OptTipo(1).Value And IsNumeric(CmbNumero.Text) Then
-        Registro.OpenRecordset "select secc_maqui from seccion where codi_ident=" & CStr(Val(CmbNumero.TexT))
-        If Not Registro.EOF Then
-            'CmdConsulta.Visible = True
-            cmbgrupo.TexT = CStr(Registro.Fields("secc_maqui"))
-        End If
+    Registro.OpenRecordset "select secc_maqui from seccion where codi_ident=" & CStr(Val(CmbNumero.TexT))
+    If Not Registro.EOF Then
+        'CmdConsulta.Visible = True
+        cmbgrupo.TexT = CStr(Registro.Fields("secc_maqui"))
+    End If
     'End If
     'If Dir(App.Path & "\ikea.exe") <> "" Then
     '    CmdConsulta.Visible = True
@@ -3842,7 +3842,7 @@ Private Sub CmbNumero_Click()
     QueParte = 0
     Refresca_Teclas
     Refresca_Datos
-    Refresca_Teclas 'añadido
+    Refresca_Teclas    'añadido
     'If Val(cmbgrupo.Text) = 8 Or Val(cmbgrupo.Text) = 9 Then
     '    Select Case Val(CmbJuego.Text)
     '    Case 0
@@ -3855,7 +3855,7 @@ Private Sub CmbNumero_Click()
     'Else
     '    lblresul.Caption = ""
     'End If
-    
+
     '''''''''''''''
     refresca_lista
 End Sub
@@ -3868,8 +3868,8 @@ End Sub
 
 Private Sub CmdAvan_Click()
     If (QueParte < 11 And Val(CmbTeclas.TexT) = 720) Or (QueParte < 5 And Val(CmbTeclas.TexT) = 360) Or (QueParte < 3 And Val(CmbTeclas.TexT) = 240) Then _
-        QueParte = QueParte + 1
-    
+       QueParte = QueParte + 1
+
     Refresca_Teclas
     Refresca_Datos
 
@@ -3989,9 +3989,9 @@ Private Sub CmdPrint_Click()
 End Sub
 
 Private Sub CmdRetro_Click()
-If QueParte > 0 Then QueParte = QueParte - 1
-Refresca_Teclas
-Refresca_Datos
+    If QueParte > 0 Then QueParte = QueParte - 1
+    Refresca_Teclas
+    Refresca_Datos
 
 End Sub
 
@@ -4007,11 +4007,11 @@ End Sub
 
 
 Private Sub Consulta_Art()
-    
+
     Dim Registro As New RecordNet
     Dim RegAux As New RecordNet
     Dim MiCodigo As TipoCodigos
-    
+
     LblInfo.Caption = ""
     If OptSeccion(0).Value = True Then
         Registro.OpenRecordset ("select des_plu1 from articulo where borrado=false and codigo=" & Txtconsulta.TexT)
@@ -4030,7 +4030,7 @@ Private Sub Consulta_Art()
             End If
             If Not RegAux.EOF Then
                 Registro.OpenRecordset _
-                ("select des_plu1 from articulo where borrado=false and secc_maqui=" & RegAux.Fields("secc_Maqui") & " and borrado=false and plu=" & Txtconsulta.TexT)
+                        ("select des_plu1 from articulo where borrado=false and secc_maqui=" & RegAux.Fields("secc_Maqui") & " and borrado=false and plu=" & Txtconsulta.TexT)
                 If Not Registro.EOF Then
                     lblresul.Caption = Registro.Fields("des_plu1")
                 Else
@@ -4039,52 +4039,52 @@ Private Sub Consulta_Art()
             End If
         End If
     End If
-  
+
 End Sub
 Private Sub refresca_lista()
-    
+
     Dim Registro As New RecordNet
     Dim Cad1 As String
     Dim MiSec As Integer
     Dim MyError As Boolean
     Dim lAccess As Boolean
-    
+
     Lista.ListItems.Clear
-    
+
     Select Case OptSeccion(0).Value
-        Case True
-            Cad1 = "codigo="
-            lAccess = True
-        Case False
-            Cad1 = "plu="
-            lAccess = False
+    Case True
+        Cad1 = "codigo="
+        lAccess = True
+    Case False
+        Cad1 = "plu="
+        lAccess = False
     End Select
     MyError = False
     If Trim(CmbNumero.TexT) <> "" Then
         Select Case OptTipo(0).Value
-            Case True
-                If InStr(1, CmbNumero.TexT, ",") Then
-                    MiSec = Val(left(CmbNumero.TexT, InStr(1, CmbNumero.TexT, ",") - 1))
+        Case True
+            If InStr(1, CmbNumero.TexT, ",") Then
+                MiSec = Val(left(CmbNumero.TexT, InStr(1, CmbNumero.TexT, ",") - 1))
+            Else
+                MiSec = Val(CmbNumero.TexT)
+            End If
+            Registro.OpenRecordset ("select secc_maqui from seccion where codi_ident = " & MiSec & " and borrado=false")
+            With Registro
+                If Not .EOF Then
+                    MiSec = .Fields("secc_Maqui")
                 Else
-                    MiSec = Val(CmbNumero.TexT)
+                    MyError = True
                 End If
-                Registro.OpenRecordset ("select secc_maqui from seccion where codi_ident = " & MiSec & " and borrado=false")
-                With Registro
-                    If Not .EOF Then
-                        MiSec = .Fields("secc_Maqui")
-                    Else
-                        MyError = True
-                    End If
-                End With
-            Case False
-                Registro.OpenRecordset ("select secc_maqui from equipos where numero_eqp=" & Val(CmbNumero.TexT) & " and borrado=false")
-                With Registro
-                    If Not .EOF Then
-                        MiSec = .Fields("secc_Maqui")
-                    Else
-                        MyError = True
-                    End If
-                End With
+            End With
+        Case False
+            Registro.OpenRecordset ("select secc_maqui from equipos where numero_eqp=" & Val(CmbNumero.TexT) & " and borrado=false")
+            With Registro
+                If Not .EOF Then
+                    MiSec = .Fields("secc_Maqui")
+                Else
+                    MyError = True
+                End If
+            End With
         End Select
     Else
         MyError = True
@@ -4093,7 +4093,7 @@ Private Sub refresca_lista()
         'c2f 1.7.19... todos los códigos visibles.
         'If OptTipo(0).Value = False Then
         '    If lAccess Then
-                Registro.OpenRecordset ("select codigo,plu,des_plu1 from articulo where borrado=false order by codigo")
+        Registro.OpenRecordset ("select codigo,plu,des_plu1 from articulo where borrado=false order by codigo")
         '    Else
         '        Registro.OpenRecordset ("select codigo,plu,des_plu1 from articulo where borrado=false order by plu")
         '    End If
@@ -4113,8 +4113,8 @@ Private Sub refresca_lista()
                         Lista.ListItems.Add , , .Fields("plu")
                     End If
                     If Not IsNull(.Fields("des_plu1")) Then Lista.ListItems(Lista.ListItems.Count).SubItems(1) = .Fields("des_plu1")
-            
-                    
+
+
                     .Movenext
                 Loop
             End If
@@ -4149,8 +4149,8 @@ Private Sub Form_Load()
     For bucle = 1 To 99
         Text1(bucle).Appearance = 0
     Next bucle
-        
-   'CmbGrupo.Text = CmbGrupo.List(0)
+
+    'CmbGrupo.Text = CmbGrupo.List(0)
     cmbgrupo.TexT = "1"
     ''''''''''''''''''''''''''''''''
     Registro.OpenRecordset ("select codigo,codi_ident,plu from articulo where borrado=false")
@@ -4174,7 +4174,7 @@ Private Sub Form_Load()
     If ElArticulo.cantidad = 0 Then
         LblInfo.Caption = CargaCadena(715)
         HabilitarTeclas False
-        
+
     End If
     XX = PTeclas.Width
     YY = PTeclas.Height
@@ -4188,7 +4188,7 @@ Private Sub Form_Load()
         Text1(bucle).TexT = ""
     Next bucle
     CmbTeclas.ListIndex = 2
-    
+
     CmbJuego.TexT = CmbJuego.List(0)
     OptTipo(0).Value = True
     OptTipo(1).Value = False
@@ -4202,14 +4202,14 @@ Private Sub Form_Load()
     End If
     On Error GoTo 0
     'If Not UsaGamaAlta Then
-        'OptTipo(0).Value = True
-        OptTipo(0).Value = True
-        OptTipo(1).Enabled = False
-        OptTipo(0).Visible = False
-        OptTipo(1).Visible = False
-    
+    'OptTipo(0).Value = True
+    OptTipo(0).Value = True
+    OptTipo(1).Enabled = False
+    OptTipo(0).Visible = False
+    OptTipo(1).Visible = False
+
     'End If
-    
+
     'If Val(cmbgrupo.Text) = 8 Or Val(cmbgrupo.Text) = 9 Then
     '    Select Case Val(CmbJuego.Text)
     '    Case 0
@@ -4223,20 +4223,20 @@ Private Sub Form_Load()
     '    lblresul.Caption = ""
     'End If
     'If Dir(App.Path & "\10tablas") <> "" Then
-        CmbJuego.Clear
-        For nJ = 0 To 99
-            CmbJuego.AddItem CStr(nJ)
-        Next nJ
+    CmbJuego.Clear
+    For nJ = 0 To 99
+        CmbJuego.AddItem CStr(nJ)
+    Next nJ
     'Else
     '    CmbJuego.Clear
     '    For nJ = 0 To 1
     '        CmbJuego.AddItem CStr(nJ)
     '    Next nJ
-   '
+    '
     'End If
-    
+
     CmbJuego.TexT = "0"
-    
+
     'If Val(cmbgrupo.Text) = 8 Or Val(cmbgrupo.Text) = 9 Then
     '    Select Case Val(CmbJuego.Text)
     '    Case 0
@@ -4249,10 +4249,10 @@ Private Sub Form_Load()
     'Else
     '    lblresul.Caption = ""
     'End If
-    
+
     Refresca_Numero
     Refresca_Teclas
-    
+
 
 End Sub
 Private Sub Refresca_Teclas()
@@ -4272,7 +4272,7 @@ Private Sub Refresca_Teclas()
         CmdParte(9).Visible = False
         CmdParte(10).Visible = False
         CmdParte(11).Visible = False
-    
+
     Else
         CmdParte(0).Visible = True
         CmdParte(1).Visible = True
@@ -4331,7 +4331,7 @@ Private Sub Refresca_Teclas()
                 Label1(Y1 * 5 + bucle).Visible = True
                 Text1(Y1 * 5 + bucle).Visible = True
             Next bucle
-            
+
         Next Y1
         Horizontal.Enabled = False
         Vertical.Enabled = False
@@ -4343,7 +4343,7 @@ Private Sub Refresca_Teclas()
     If CmbTeclas.TexT = "80" Then
         For Y1 = 0 To 4
             For bucle = 0 To 7
-                
+
                 Label1(Y1 * 8 + bucle).BackColor = vbYellow
                 Label1(Y1 * 8 + bucle).top = 120 + (600 * Y1)
                 Label1(Y1 * 8 + bucle).left = 120 + (720 * bucle)
@@ -4353,7 +4353,7 @@ Private Sub Refresca_Teclas()
                 Text1(Y1 * 8 + bucle).Visible = True
                 Label1(Y1 * 8 + bucle).Caption = ((Y1 * 8) + bucle + 1 + (40 * QueParte))
             Next bucle
-            
+
         Next Y1
         Horizontal.Enabled = False
         Vertical.Enabled = True
@@ -4383,9 +4383,9 @@ Private Sub Refresca_Teclas()
         PTeclas.Height = 10 * 720
         Horizontal.Max = (PTeclas.Width - Frame3.Width) / 100
         Vertical.Max = (PTeclas.Height - Frame3.Height) / 100
-    
+
     End If
-    
+
     If CmbTeclas.TexT = "720" Then
         For Y1 = 0 To 5
             For bucle = 0 To 9
@@ -4407,10 +4407,10 @@ Private Sub Refresca_Teclas()
         PTeclas.Height = 10 * 720
         Horizontal.Max = (PTeclas.Width - Frame3.Width) / 100
         Vertical.Max = (PTeclas.Height - Frame3.Height) / 100
-    
-    
+
+
     End If
-    
+
     If CmbTeclas.TexT = "360" Then
         For Y1 = 0 To 5
             For bucle = 0 To 9
@@ -4432,12 +4432,12 @@ Private Sub Refresca_Teclas()
         PTeclas.Height = 10 * 720
         Horizontal.Max = (PTeclas.Width - Frame3.Width) / 100
         Vertical.Max = (PTeclas.Height - Frame3.Height) / 100
-            
-    
+
+
     End If
-    
+
     If CmbTeclas.TexT = "165" Then
-        
+
         If lss165 Then
             For Y1 = 0 To 8
                 For bucle = 0 To 9
@@ -4447,19 +4447,19 @@ Private Sub Refresca_Teclas()
                         Label1(Y1 * 10 + bucle).left = 120 + (720 * bucle)
                         Text1(Y1 * 10 + bucle).top = 360 + (600 * Y1)
                         Text1(Y1 * 10 + bucle).left = 120 + (720 * bucle)
-        
+
                         If QueParte = 0 And (Y1 * 10 + bucle) > 87 Then
                         Else
                             Label1(Y1 * 10 + bucle).Visible = True
                             Text1(Y1 * 10 + bucle).Visible = True
                         End If
-        
+
                         Label1(Y1 * 10 + bucle).Caption = ((Y1 * 10) + bucle + 1 + (88 * QueParte))
                     End If
                 Next bucle
-        
+
             Next Y1
-        
+
         Else
             For Y1 = 0 To 8
                 For bucle = 0 To 9
@@ -4474,7 +4474,7 @@ Private Sub Refresca_Teclas()
                         Label1(Y1 * 10 + bucle).Caption = ((Y1 * 10) + bucle + 1 + (90 * QueParte))
                     End If
                 Next bucle
-                
+
             Next Y1
         End If
         Horizontal.Enabled = True
@@ -4485,7 +4485,7 @@ Private Sub Refresca_Teclas()
         Vertical.Max = (PTeclas.Height - Frame3.Height) / 100
     End If
     If CmbTeclas.TexT = "96" Then
-        
+
         For Y1 = 0 To 6
             For bucle = 0 To 6
                 If (Y1 * 7 + bucle + QueParte * 50) < 97 Then
@@ -4504,7 +4504,7 @@ Private Sub Refresca_Teclas()
                 End If
             Next bucle
         Next Y1
-        
+
         PTeclas.Width = Y1 * 720 + 120
         Horizontal.Enabled = True
         Vertical.Enabled = True
@@ -4524,18 +4524,18 @@ Private Sub Refresca_Teclas()
             Label1(bucle).Visible = True
             Text1(bucle).Visible = True
         Next bucle
-        
+
         For Y1 = 1 To 6
-        For bucle = 6 To 0 Step -1
-            Label1(7 + (Y1 * 7 + bucle)).Caption = 8 + (Y1 * 7 + bucle)
-            Label1(7 + (Y1 * 7 + bucle)).BackColor = vbYellow
-            Label1(7 + (Y1 * 7 + bucle)).top = 120 + 600 * Y1
-            Label1(7 + (Y1 * 7 + bucle)).left = 120 + (720 * (bucle))
-            Text1(7 + (Y1 * 7 + bucle)).top = 360 + 600 * Y1
-            Text1(7 + (Y1 * 7 + bucle)).left = 120 + (720 * (bucle))
-            Label1(7 + (Y1 * 7 + bucle)).Visible = True
-            Text1(7 + (Y1 * 7 + bucle)).Visible = True
-        Next bucle
+            For bucle = 6 To 0 Step -1
+                Label1(7 + (Y1 * 7 + bucle)).Caption = 8 + (Y1 * 7 + bucle)
+                Label1(7 + (Y1 * 7 + bucle)).BackColor = vbYellow
+                Label1(7 + (Y1 * 7 + bucle)).top = 120 + 600 * Y1
+                Label1(7 + (Y1 * 7 + bucle)).left = 120 + (720 * (bucle))
+                Text1(7 + (Y1 * 7 + bucle)).top = 360 + 600 * Y1
+                Text1(7 + (Y1 * 7 + bucle)).left = 120 + (720 * (bucle))
+                Label1(7 + (Y1 * 7 + bucle)).Visible = True
+                Text1(7 + (Y1 * 7 + bucle)).Visible = True
+            Next bucle
         Next Y1
         Horizontal.Enabled = True
         Vertical.Enabled = True
@@ -4546,15 +4546,15 @@ Private Sub Refresca_Teclas()
     End If
     If CmbTeclas.TexT = "65" Then
         For Y1 = 0 To 7
-        For bucle = 6 To 0 Step -1
-            Label1(Y1 * 7 + bucle).BackColor = vbYellow
-            Label1(Y1 * 7 + bucle).top = 120 + 600 * Y1
-            Label1(Y1 * 7 + bucle).left = 120 + (720 * (6 - bucle))
-            Text1(Y1 * 7 + bucle).top = 360 + 600 * Y1
-            Text1(Y1 * 7 + bucle).left = 120 + (720 * (6 - bucle))
-            Label1(Y1 * 7 + bucle).Visible = True
-            Text1(Y1 * 7 + bucle).Visible = True
-        Next bucle
+            For bucle = 6 To 0 Step -1
+                Label1(Y1 * 7 + bucle).BackColor = vbYellow
+                Label1(Y1 * 7 + bucle).top = 120 + 600 * Y1
+                Label1(Y1 * 7 + bucle).left = 120 + (720 * (6 - bucle))
+                Text1(Y1 * 7 + bucle).top = 360 + 600 * Y1
+                Text1(Y1 * 7 + bucle).left = 120 + (720 * (6 - bucle))
+                Label1(Y1 * 7 + bucle).Visible = True
+                Text1(Y1 * 7 + bucle).Visible = True
+            Next bucle
         Next Y1
         Horizontal.Enabled = False
         Vertical.Enabled = True
@@ -4568,22 +4568,22 @@ End Sub
 
 
 Private Sub Form_Unload(Cancel As Integer)
-Dim MyPref As String
-frmEpelsa.Enabled = True
-LockBase = False
-If OptSeccion(1).Value = True Then
-    MyPref = "1"
-Else
-    MyPref = "0"
-End If
-If OptTipo(1).Value = True Then
-    MyPref = MyPref & "1"
-Else
-    MyPref = MyPref & "0"
-End If
-MyPref = MyPref & Format(Val(CmbTeclas.TexT), "000")
-WPreferencias "TECLAS    ", 1, MyPref
-frmEpelsa.Enabled = True
+    Dim MyPref As String
+    frmEpelsa.Enabled = True
+    LockBase = False
+    If OptSeccion(1).Value = True Then
+        MyPref = "1"
+    Else
+        MyPref = "0"
+    End If
+    If OptTipo(1).Value = True Then
+        MyPref = MyPref & "1"
+    Else
+        MyPref = MyPref & "0"
+    End If
+    MyPref = MyPref & Format(Val(CmbTeclas.TexT), "000")
+    WPreferencias "TECLAS    ", 1, MyPref
+    frmEpelsa.Enabled = True
 End Sub
 
 
@@ -4632,7 +4632,7 @@ Private Sub OptTipo_Click(Index As Integer)
         'If UsaGamaAlta Then CmdConsulta.Visible = True
     End If
     Refresca_Numero
-    
+
     'QueParte = 1
     '1.9.0
     Refresca_Teclas
@@ -4674,23 +4674,23 @@ End Sub
 Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
     Text1(Index).Locked = False
     Select Case KeyAscii
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case 48 To 57
-            If OptSeccion(0).Value = False Then
-                If Len(Text1(Index).TexT) >= 4 Then Text1(Index).Locked = True
-            Else
-                If Len(Text1(Index).TexT) >= 6 Then Text1(Index).Locked = True
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case 48 To 57
+        If OptSeccion(0).Value = False Then
+            If Len(Text1(Index).TexT) >= 4 Then Text1(Index).Locked = True
+        Else
+            If Len(Text1(Index).TexT) >= 6 Then Text1(Index).Locked = True
         End If
-        Case Else
-            KeyAscii = 0
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 
 
 
 Private Sub Text1_LostFocus(Index As Integer)
-    
+
     Dim Registro As New RecordNet
     Dim Reg2 As New RecordNet
     Dim bucle As Long
@@ -4699,14 +4699,14 @@ Private Sub Text1_LostFocus(Index As Integer)
     Dim ElMostrador As TipoCodigos
     Dim MisTeclas As DB_Teclas
     Dim MiRespuesta As Integer
-    Dim artBase As DAO.Database
-    Dim RegArt As DAO.Recordset
+    Dim artBase As dao.Database
+    Dim RegArt As dao.Recordset
     Dim ncont As Long
-    
+
     'If lEsSalir Then Exit Sub
-    
+
     ElMostrador = Desglosa_Codigos(CmbNumero.TexT)
-    
+
     eNCONTRADO = False
     If Text1(Index).TexT = "" Then
         Text1(Index).BackColor = vbWhite
@@ -4731,11 +4731,11 @@ Private Sub Text1_LostFocus(Index As Integer)
         Else
             MisTeclas.Destino_Tabla = Val(CmbJuego.TexT)
         End If
-        
+
         MisTeclas.Tipo = "TOUCH"
-        
+
         MisTeclas.Section = Trim(cmbgrupo.TexT)
-        
+
         MiRespuesta = Baja_Teclas(MisTeclas)
         Text1(Index).BackColor = vbWhite
         Text1(Index).TexT = ""
@@ -4745,11 +4745,11 @@ Private Sub Text1_LostFocus(Index As Integer)
     ' mira si existe el
     ' artículo indicado
     '*****************
-    
+
     If OptSeccion(0).Value = True Then
         ' por codigo
         Registro.OpenRecordset _
-        ("select codigo from articulo where borrado=false and codigo=" & Val(Text1(Index).TexT))
+                ("select codigo from articulo where borrado=false and codigo=" & Val(Text1(Index).TexT))
         If Registro.EOF Then
             eNCONTRADO = False
         Else
@@ -4801,24 +4801,24 @@ Private Sub Text1_LostFocus(Index As Integer)
         If OptTipo(0).Value = True Then
             ' teclas de un mostrador
             Reg2.OpenRecordset _
-            ("select secc_maqui from seccion where borrado=false and codi_ident=" & ElMostrador.codigo(1))
+                    ("select secc_maqui from seccion where borrado=false and codi_ident=" & ElMostrador.codigo(1))
         Else
             ' teclas de un equipo
             Reg2.OpenRecordset _
-            ("select secc_maqui from equipos where borrado=false and numero_eqp=" & ElMostrador.codigo(1))
+                    ("select secc_maqui from equipos where borrado=false and numero_eqp=" & ElMostrador.codigo(1))
         End If
-        
+
         If Reg2.EOF Then
             eNCONTRADO = False
         Else
             Registro.OpenRecordset _
-            ("select codi_ident from articulo where borrado=false and plu=" & Text1(Index).TexT & " and secc_maqui=" & Reg2.Fields("secc_Maqui"))
+                    ("select codi_ident from articulo where borrado=false and plu=" & Text1(Index).TexT & " and secc_maqui=" & Reg2.Fields("secc_Maqui"))
             If Registro.EOF Then
                 eNCONTRADO = False
             Else
                 eNCONTRADO = True
                 MisTeclas.SecArticulo = Registro.Fields("codi_ident")
-                
+
                 '2.0.9 If Dir(App.Path & "\marte.new") <> "" Then
                 'If lMarteNew Then
                 '
@@ -4861,7 +4861,7 @@ Private Sub Text1_LostFocus(Index As Integer)
                 '    artBase.Close
                 '    Set artBase = Nothing
                 'End If
-            
+
             End If
         End If
     End If
@@ -4906,7 +4906,7 @@ Private Sub Text1_LostFocus(Index As Integer)
         End If
         MisTeclas.Tipo = "TOUCH"
         MisTeclas.Section = Trim(cmbgrupo.TexT)
-        
+
         MiRespuesta = Alta_Teclas(MisTeclas)
         If MiRespuesta = 0 Or MiRespuesta = 1 Then Text1(Index).BackColor = vbGreen
     End If
@@ -4920,7 +4920,7 @@ Private Sub Txtconsulta_KeyPress(KeyAscii As Integer)
         KeyAscii = 0
         Consulta_Art
     End If
-        
+
     If OptSeccion(0).Value = True Then
         Txtconsulta.Locked = Checktexto(KeyAscii, 6, Txtconsulta.TexT, True, False)
     Else

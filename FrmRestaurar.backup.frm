@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form FrmResturarBackup 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "S"
@@ -189,12 +189,12 @@ Private Sub cmdEliminar_Click()
 errorred:
     On Error GoTo 0
     MsgBox CargaCadena(733)
-    
+
 End Sub
 
 Private Sub CmdRestaurar_Click()
     Dim Resp
-    
+
     CmdRestaurar.Enabled = False
     CmdEliminar.Enabled = False
     Resp = MsgBox(CargaCadena(734), vbExclamation + vbYesNo)
@@ -204,7 +204,7 @@ Private Sub CmdRestaurar_Click()
         On Error GoTo 0
         MsgBox CargaCadena(735)
     End If
-    
+
     Exit Sub
 errorred:
     On Error GoTo 0
@@ -216,20 +216,20 @@ Private Sub CmdSalir_Click()
 End Sub
 
 Private Sub CmhHacer_Click()
-    
+
     CmdRestaurar.Enabled = False
     CmdEliminar.Enabled = False
     Realizar_Backup True
     refresca_lista
-    
+
 End Sub
 
 Private Sub Form_Load()
-  CambiarIdioma
-  Me.Icon = Form2.Icon
-  Image1.Picture = Form2.Imagen.Picture
-  MIERROR = False
-  refresca_lista
+    CambiarIdioma
+    Me.Icon = Form2.Icon
+    Image1.Picture = Form2.Imagen.Picture
+    MIERROR = False
+    refresca_lista
 End Sub
 '''''''
 '''''''
@@ -262,19 +262,19 @@ Public Function Realizar_Backup(MostrarMsg As Boolean) As Integer
     Dim extension As String
     Dim Contador As Long
     Dim Resp As Integer
-    
+
     'C2F 29/07/02-->intento no dejar colgada copia seguridad.
     Dim MiProceso As Long
     Dim MiResultado As Long
     '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    
+
     lCogeTiquet = False
     Resp = 0
     If FrmResturarBackup.Visible = False Then
         frmMonitor.MostrarDato CargaCadena(737)
         frmMonitor.Command1.Enabled = False
-   End If
-   If MIERROR = True Then
+    End If
+    If MIERROR = True Then
         If frmMonitor.Visible = True Then
             Resp = 1
             frmMonitor.MostrarDato CargaCadena(267)  '"FALLO EN COPIA DE SEGURIDAD"
@@ -288,7 +288,7 @@ Public Function Realizar_Backup(MostrarMsg As Boolean) As Integer
     End If
     CmdRestaurar.Enabled = False
     CmdEliminar.Enabled = False
-    
+
     If Trim(pathred) = "" Then
         If MostrarMsg Then MsgBox CargaCadena(736)
         If FrmResturarBackup.Visible = False Then
@@ -384,32 +384,32 @@ fin:
 
 End Function
 Private Function ConfirmarNombre(ElNumero As Long) As Boolean
-Dim Devuelve As Boolean
-Dim Encontrado As Boolean
-Dim bucle As Integer
-Dim Buclelite As Long
-Dim extension As String
-Dim nombrecopia As String
-Devuelve = True
-    
-        For bucle = ElNumero + 1 To 999
-            extension = "_" & Format(bucle, "0000") & ".mdb"
-            nombrecopia = pathred & "\dbase_" & Format(Now(), "yymmdd")
-            Encontrado = False
-            For Buclelite = 1 To File1.ListCount
-                If pathred & "\" & File1.List(Buclelite) = nombrecopia & extension Then Encontrado = True
-            Next Buclelite
-            
-                If Encontrado = True Then
-                    Devuelve = False
-                    Exit For
-                End If
-        Next bucle
-            
-           
-            
-            
-        ConfirmarNombre = Devuelve
+    Dim Devuelve As Boolean
+    Dim eNCONTRADO As Boolean
+    Dim bucle As Integer
+    Dim Buclelite As Long
+    Dim extension As String
+    Dim nombrecopia As String
+    Devuelve = True
+
+    For bucle = ElNumero + 1 To 999
+        extension = "_" & Format(bucle, "0000") & ".mdb"
+        nombrecopia = pathred & "\dbase_" & Format(Now(), "yymmdd")
+        eNCONTRADO = False
+        For Buclelite = 1 To File1.ListCount
+            If pathred & "\" & File1.List(Buclelite) = nombrecopia & extension Then eNCONTRADO = True
+        Next Buclelite
+
+        If eNCONTRADO = True Then
+            Devuelve = False
+            Exit For
+        End If
+    Next bucle
+
+
+
+
+    ConfirmarNombre = Devuelve
 End Function
 Private Sub refresca_lista()
     Dim bucle As Long
@@ -426,7 +426,7 @@ Private Sub refresca_lista()
     File1.Refresh
     Lista.ListItems.Clear
     Lista.ColumnHeaders.Clear
-     
+
     Lista.ColumnHeaders.Add 1, , CargaCadena(434)
     Lista.ColumnHeaders.Add 2, , CargaCadena(552), 4130
     CuentaBucle = 0
@@ -454,7 +454,7 @@ Private Sub ordenar_copias()
     Dim Fecha1 As Double
     Dim Fecha2 As Double
     Dim Buffer As String
-    
+
     For Bucle1 = 1 To (Lista.ListItems.Count - 1)
         Fecha1 = Val(Right(Lista.ListItems(Bucle1).TexT, 2) & Mid(Lista.ListItems(Bucle1).TexT, 4, 2) & left(Lista.ListItems(Bucle1).TexT, 2) & Mid(Lista.ListItems(Bucle1).SubItems(1), 14, 4))
         For Bucle2 = (Bucle1 + 1) To Lista.ListItems.Count
@@ -471,13 +471,13 @@ Private Sub ordenar_copias()
     Next Bucle1
     Exit Sub
 
-        
+
 End Sub
 
 
 
 Private Sub Lista_Click()
-    
+
     CmdRestaurar.Enabled = True
     CmdEliminar.Enabled = True
 End Sub

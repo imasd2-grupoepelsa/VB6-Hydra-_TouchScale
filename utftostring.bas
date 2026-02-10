@@ -35,10 +35,10 @@ Public Function ConvertUtf8BytesToString(ByRef data() As Byte) As String
     Dim strTmp As String
     Dim nL As Integer
     Dim nC As Integer
-    
+
     ' init stream
     Set objStream = New ADODB.Stream
-    If Dir(App.Path & "\linux.txt") <> "" Then '5.4.3
+    If Dir(App.Path & "\linux.txt") <> "" Then    '5.4.3
         objStream.Charset = "utf-8"
     Else
         If id = 6000 Then
@@ -50,16 +50,16 @@ Public Function ConvertUtf8BytesToString(ByRef data() As Byte) As String
     objStream.mode = adModeReadWrite
     objStream.type = adTypeBinary
     objStream.Open
-    
+
     ' write bytes into stream
     objStream.Write data
     objStream.Flush
-    
+
     ' rewind stream and read text
     objStream.Position = 0
     objStream.type = adTypeText
     strTmp = objStream.ReadText
-    
+
     ' close up and return
     objStream.Close
     Set objStream = Nothing
@@ -74,23 +74,23 @@ Public Function ConvertUtf8BytesToStringnW(ByRef data() As Byte) As String
     Dim strTmp As String
     Dim nL As Integer
     Dim nC As Integer
-    
+
     ' init stream
     Set objStream = New ADODB.Stream
     objStream.Charset = "iso-8859-7"
     objStream.mode = adModeReadWrite
     objStream.type = adTypeBinary
     objStream.Open
-    
+
     ' write bytes into stream
     objStream.Write data
     objStream.Flush
-    
+
     ' rewind stream and read text
     objStream.Position = 0
     objStream.type = adTypeText
     strTmp = objStream.ReadText
-    
+
     ' close up and return
     objStream.Close
     Set objStream = Nothing
@@ -105,46 +105,46 @@ Public Function ConvertStringToUtf8Bytes(ByRef strText As String) As String
     Dim data() As Byte
     Dim nC, nL As Long
     Dim s As String
-    
+
     If id = 6000 Then
         s = UniToAnsi(strText)
     End If
     '''''''''''''''
-'    If Dir(App.Path & "\linux.txt") <> "" Then '5.4.3
-'
-'    If strText = "" Or IsNull(strText) Then
-'        s = ""
-'        GoTo salconver
-'    End If
-'    ' init stream
-'    Set objStream = New ADODB.Stream
-'    objStream.Charset = "utf-8"
-'    objStream.mode = adModeReadWrite
-'    objStream.type = adTypeText
-'    objStream.Open
-'
-'    ' write bytes into stream
-'    objStream.WriteText strText
-'    objStream.Flush
-'
-'    ' rewind stream and read text
-'    objStream.Position = 0
-'    objStream.type = adTypeBinary
-'    objStream.Read 3 ' skip first 3 bytes as this is the utf8 detection header
-'    data = objStream.Read()
-'    nL = objStream.size
-'    ' close up and return
-'    objStream.Close
-'    On Error GoTo salconver
-'    s = ""
-'    For nC = 0 To nL - 1
-'        s = s & Chr(data(nC))
-'    Next nC
-'salconver:
-'    On Error GoTo 0
-'    Else
-        s = strText
-'    End If
+    '    If Dir(App.Path & "\linux.txt") <> "" Then '5.4.3
+    '
+    '    If strText = "" Or IsNull(strText) Then
+    '        s = ""
+    '        GoTo salconver
+    '    End If
+    '    ' init stream
+    '    Set objStream = New ADODB.Stream
+    '    objStream.Charset = "utf-8"
+    '    objStream.mode = adModeReadWrite
+    '    objStream.type = adTypeText
+    '    objStream.Open
+    '
+    '    ' write bytes into stream
+    '    objStream.WriteText strText
+    '    objStream.Flush
+    '
+    '    ' rewind stream and read text
+    '    objStream.Position = 0
+    '    objStream.type = adTypeBinary
+    '    objStream.Read 3 ' skip first 3 bytes as this is the utf8 detection header
+    '    data = objStream.Read()
+    '    nL = objStream.size
+    '    ' close up and return
+    '    objStream.Close
+    '    On Error GoTo salconver
+    '    s = ""
+    '    For nC = 0 To nL - 1
+    '        s = s & Chr(data(nC))
+    '    Next nC
+    'salconver:
+    '    On Error GoTo 0
+    '    Else
+    s = strText
+    '    End If
     ConvertStringToUtf8Bytes = s
 
 End Function
@@ -170,9 +170,9 @@ End Function
 'End Function
 'se sustituye por:
 Public Function DecodeBase64(ByVal strData As String) As Byte()
-Dim s() As Byte
-Dim nL As Integer
-Dim nC As Integer
+    Dim s() As Byte
+    Dim nL As Integer
+    Dim nC As Integer
     If IsNull(strData) Then GoTo salDecode
     nL = Len(strData)
     ReDim s(nL)

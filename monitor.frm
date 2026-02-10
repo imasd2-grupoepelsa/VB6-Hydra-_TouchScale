@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form frmMonitor 
    BackColor       =   &H00C0C0C0&
    BorderStyle     =   1  'Fixed Single
@@ -227,19 +227,19 @@ Option Explicit
 Private CIconos As Integer
 
 Private Sub cmdmonitorstop_Click()
-Dim Arch As Integer
-Dim nC As Long
+    Dim Arch As Integer
+    Dim nC As Long
 
-If Not HayComandos Then
-    frmMonitor.LuzEnvio.BackColor = vbBlack
-    frmMonitor.LuzRecibe.BackColor = vbBlack
-    frmMonitor.Label1.Caption = CargaCadena(273) '"Deteniendo..."
-    If DebugActivo Then CadenadeLog "Proceso de Comunicaciones Cancelado por Usuario"
-    canCelar = 1
-    CancelHumano = True
-    HabilitarSalir
-    frmMonitor.cmdmonitorstop.Enabled = False
-End If
+    If Not HayComandos Then
+        frmMonitor.LuzEnvio.BackColor = vbBlack
+        frmMonitor.LuzRecibe.BackColor = vbBlack
+        frmMonitor.Label1.Caption = CargaCadena(273)    '"Deteniendo..."
+        If DebugActivo Then CadenadeLog "Proceso de Comunicaciones Cancelado por Usuario"
+        canCelar = 1
+        CancelHumano = True
+        HabilitarSalir
+        frmMonitor.cmdmonitorstop.Enabled = False
+    End If
 End Sub
 
 
@@ -254,23 +254,23 @@ Private Sub Command1_Click()
         frmEpelsa.SetFocus
     End If
     If HayMulti Then Multi_Salir = True
-    
+
     frmMonitor.Hide
 End Sub
 
 
 Private Sub Form_Load()
-Me.Icon = Form2.Icon
-LblError.Caption = CargaCadena(544)
-Image1.Picture = Form2.Imagen.Picture
-left = (Screen.Width - Width) / 2
-top = (Screen.Height - Height) / 2
-Command1.Caption = CargaCadena(7)
-cmdmonitorstop.Caption = CargaCadena(908)
-frmMonitor.Caption = CargaCadena(4)
-LuzEnvio.BackColor = vbRed
-LuzRecibe.BackColor = vbBlue
-'DrawGradient Me, 12, 81, 179, 0, 50, 0, Me.ScaleHeight, 1, True, 1, 1, 1
+    Me.Icon = Form2.Icon
+    LblError.Caption = CargaCadena(544)
+    Image1.Picture = Form2.Imagen.Picture
+    left = (Screen.Width - Width) / 2
+    top = (Screen.Height - Height) / 2
+    Command1.Caption = CargaCadena(7)
+    cmdmonitorstop.Caption = CargaCadena(908)
+    frmMonitor.Caption = CargaCadena(4)
+    LuzEnvio.BackColor = vbRed
+    LuzRecibe.BackColor = vbBlue
+    'DrawGradient Me, 12, 81, 179, 0, 50, 0, Me.ScaleHeight, 1, True, 1, 1, 1
 End Sub
 Public Sub MostrarDato(LaCadena As String)
     If List1.ListCount > 10000 Then
@@ -279,11 +279,11 @@ Public Sub MostrarDato(LaCadena As String)
     frmMonitor.List1.AddItem LaCadena
     If DebugActivo Then CadenadeLog LaCadena
     'If List1.ListCount > 13 Then
-        'If List1.ListCount Mod 20 = 0 Then
-            On Error Resume Next
-            List1.TopIndex = List1.ListCount - 1
-            On Error GoTo 0
-     '   End If
+    'If List1.ListCount Mod 20 = 0 Then
+    On Error Resume Next
+    List1.TopIndex = List1.ListCount - 1
+    On Error GoTo 0
+    '   End If
     'End If
 End Sub
 Public Sub MostrarInfo(LaCadena As String)
@@ -296,16 +296,16 @@ Public Sub MostrarInfo(LaCadena As String)
     If DebugActivo Then CadenadeLog LaCadena
     'If List1.ListCount > 13 Then
     '    If List1.ListCount Mod 20 = 0 Then
-            On Error Resume Next
-            List1.TopIndex = List1.ListCount - 13
-            On Error GoTo 0
+    On Error Resume Next
+    List1.TopIndex = List1.ListCount - 13
+    On Error GoTo 0
     'End If
     'End If
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
     frmEpelsa.Enabled = True
-   canCelar = 1
+    canCelar = 1
 End Sub
 
 Private Sub TmrEnableCancel_Timer()
@@ -317,7 +317,7 @@ Private Sub List1_MouseDown(Button As Integer, Shift As Integer, x As Single, y 
     If Button = 2 Then
         PopupMenu mnuCopiar2
     End If
-        
+
 End Sub
 
 Private Sub mnuCopiar_Click()
@@ -331,12 +331,12 @@ End Sub
 
 Private Sub TmrConecta_Timer()
     Select Case CIconos
-        Case 0
-            Image2.Picture = ImageList1.ListImages(1).Picture
-        Case 1
-            Image2.Picture = ImageList1.ListImages(2).Picture
-        Case 2
-            Image2.Picture = ImageList1.ListImages(3).Picture
+    Case 0
+        Image2.Picture = ImageList1.ListImages(1).Picture
+    Case 1
+        Image2.Picture = ImageList1.ListImages(2).Picture
+    Case 2
+        Image2.Picture = ImageList1.ListImages(3).Picture
     End Select
     CIconos = CIconos + 1
     If CIconos = 3 Then CIconos = 0

@@ -778,7 +778,7 @@ Private Sub CambiarIdioma()
         .Label7(1) = CargaCadena(1042)
         '.Label7(2) = CargaCadena(1043)
         .Label7(3) = CargaCadena(1044)
-        
+
         ''''''''''''''''''''''''''''''
         'Call CargaRazaCategoria
         'Hydra+Touch ... En carga de categorias tener en cuenta cargacadena
@@ -803,7 +803,7 @@ Private Sub CambiarIdioma()
         '.CmbRaza.AddItem db.CargaCadena(1250) '"Mixta"
         '.CmbRaza.AddItem db.CargaCadena(1251) '"Carne"
         '''''''''''''''''''''''''''''''''''''''''''''''''''''''
-        
+
     End With
 End Sub
 Private Sub Refresca_Identificacion()
@@ -816,7 +816,7 @@ Private Sub Refresca_Identificacion()
         If Not .EOF Then
             .MoveFirst
             Do Until .EOF
-                CmbIdentificacion.AddItem !codigo '+ 1
+                CmbIdentificacion.AddItem !codigo    '+ 1
                 .Movenext
             Loop
         End If
@@ -827,16 +827,16 @@ Private Sub Refresca_Identificacion()
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
 End Sub
 Private Sub Refresca_Datos()
-Dim Identificador As String
-Dim Base As dao.Database
-Dim Registro As dao.Recordset
-Dim sSQL As String
-    
-    If CmbIdentificacion.TexT = "" Then Exit Sub 'Or CmbCategoria.ListIndex = -1 Then Exit Sub
-    
+    Dim Identificador As String
+    Dim Base As dao.Database
+    Dim Registro As dao.Recordset
+    Dim sSQL As String
+
+    If CmbIdentificacion.TexT = "" Then Exit Sub    'Or CmbCategoria.ListIndex = -1 Then Exit Sub
+
     Identificador = CmbIdentificacion.TexT
     If Identificador = "" Then Identificador = "999"
     Set Base = OpenDatabase(Base_General)
@@ -884,10 +884,10 @@ Dim sSQL As String
             '    Combo1(4).Enabled = True
             '    CmbDef.TexT = CmbDef.List(0)
             'Else
-                Combo1(0).Enabled = True
-                Combo1(1).Enabled = True
-                'Combo1(4).Enabled = False
-                'CmbDef.TexT = CmbDef.List(1)
+            Combo1(0).Enabled = True
+            Combo1(1).Enabled = True
+            'Combo1(4).Enabled = False
+            'CmbDef.TexT = CmbDef.List(1)
             'End If
             '*****************************
             ' versión D
@@ -899,9 +899,9 @@ Dim sSQL As String
             '''''''''''''''''''
             TxtVerD(3).TexT = !lote
             'TxtVerD(4).TexT = !texto
-          
+
             'TxtPeso.TexT = !Peso
-            
+
             MaskD(0).TexT = AdaptaFecha(Format(!fecha_nac, "dd/mm/yy"))
             'touchscale barna no tiene fecha despiece
             'MaskD(1).TexT = AdaptaFecha(Format(!fecha_des, "dd/mm/yy"))
@@ -926,7 +926,7 @@ Dim sSQL As String
         'CmbCategoria.ListIndex = 0
         'CmbRaza.ListIndex = 0
         'CmbSexo.ListIndex = 0
-        
+
         'Text1(3).Text = ""
         'TxtVerD(0).TexT = ""
 
@@ -943,7 +943,7 @@ Dim sSQL As String
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
 End Sub
 Private Sub Command1_Click()
 
@@ -1023,8 +1023,8 @@ End Sub
 'Private Sub CmbRaza_KeyPress(KeyAscii As Integer)
 '    If KeyAscii = 13 Then
 '        KeyAscii = 0
- '       If VacunoD Then
- '           TxtVerD(0).SetFocus
+'       If VacunoD Then
+'           TxtVerD(0).SetFocus
 '        Else
 '            CmbDef.SetFocus
 '        End If
@@ -1046,9 +1046,9 @@ Private Sub Cmdaceptar_Click()
     '    End If
     'End If
     'If TxtVerD(0).TexT = "" Then TxtVerD(0).TexT = "0"
-    
+
     For bucle = 0 To 2
-        If bucle <> 1 Then 'touchscale Barna no tiene fecha despiece...
+        If bucle <> 1 Then    'touchscale Barna no tiene fecha despiece...
             If (Not IsNumeric(left(MaskD(bucle).TexT, 2))) Or (Not IsNumeric(Right(MaskD(bucle).TexT, 2))) Or (Not IsNumeric(Mid(MaskD(bucle).TexT, 4, 2))) Then
                 MsgBox CargaCadena(506), vbCritical
                 MaskD(bucle).SetFocus
@@ -1062,18 +1062,18 @@ Private Sub Cmdaceptar_Click()
         End If
     Next bucle
     '*********************************
-    
+
     If CmbIdentificacion.TexT = "" Then
         MsgBox CargaCadena(394)  '"Debe introducir un Número de ficha"
         Exit Sub
     End If
-    
+
     Set Base = OpenDatabase(Base_General)
     '
     ' condiciones
     '
     If CmbIdentificacion.TexT = "" Then
-        
+
         MsgBox CargaCadena(363)  '"Introduzca un identificador del Animal"
         Exit Sub
     End If
@@ -1093,16 +1093,16 @@ Private Sub Cmdaceptar_Click()
         frmFichasVacuno.Caption = CargaCadena(527)  '"Registro Añadido. Envíe Modificaciones."
         Registro.AddNew
         Registro!Modificado = False
-        
-        
+
+
     Else
         Set Registro = Base.OpenRecordset _
-        ("select * from fichavacuno where borrado=false and codigo=" _
-        & Chr(34) & Val(CmbIdentificacion.TexT) & Chr(34))
+                       ("select * from fichavacuno where borrado=false and codigo=" _
+                      & Chr(34) & Val(CmbIdentificacion.TexT) & Chr(34))
         frmFichasVacuno.Caption = CargaCadena(439)  '"Registro Modificado. Envíe Modificaciones."
-        
+
         'On Error Resume Next
-        
+
         Registro.Edit
         If Err.Number <> 0 Then
             On Error GoTo 0
@@ -1111,9 +1111,9 @@ Private Sub Cmdaceptar_Click()
         Else
             Registro!Modificado = True
         End If
-        
-        
-        
+
+
+
     End If
     With Registro
         !borrado = False
@@ -1143,17 +1143,17 @@ Private Sub Cmdaceptar_Click()
         Else
             !coddespiece = Val(Trim(Combo1(3).TexT))
         End If
-        
-        
-        
+
+
+
         '!codcrianza = Mid(Combo1(1).TexT, 1, InStr(1, Combo1(1).TexT, "-") - 1)
         '!codsacrificio = Mid(Combo1(2).TexT, 1, InStr(1, Combo1(2).TexT, "-") - 1)
         '!coddespiece = Mid(Combo1(3).TexT, 1, InStr(1, Combo1(3).TexT, "-") - 1)
-        
+
         'touchscale Barna no tiene pais de producción
         '!codproduccion = Mid(Combo1(4).TexT, 1, InStr(1, Combo1(4).TexT, "-") - 1)
         '''''''''''''''''''''''''''''''''''''''''''''
-        
+
         '*************************************
         ' versión D
         '*************************************
@@ -1177,7 +1177,7 @@ Private Sub Cmdaceptar_Click()
         !valorpsacrificio = Trim(Mid(Combo1(2).TexT, 5))
         !valorpdespiece = Trim(Mid(Combo1(3).TexT, 5))
         '!valorpproduccion = Trim(Mid(Combo1(4).TexT, 5))
-        
+
         !tranficha = " "
         .Update
     End With
@@ -1187,22 +1187,22 @@ Private Sub Cmdaceptar_Click()
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
     Refresca_Identificacion
     Refresca_Datos
-    
+
 End Sub
 
 
 Private Sub CmdBorrar_Click()
     Dim Base As dao.Database
     Dim Registro As dao.Recordset
-    
+
     If CmbIdentificacion.TexT = "" Then Exit Sub
     Set Base = OpenDatabase(Base_General)
     Set Registro = Base.OpenRecordset _
-    ("select * from fichavacuno where codigo = " & Chr(34) & Val(CmbIdentificacion.TexT) _
-    & Chr(34))
+                   ("select * from fichavacuno where codigo = " & Chr(34) & Val(CmbIdentificacion.TexT) _
+                  & Chr(34))
     If Registro.EOF Then Exit Sub
     With Registro
         Edit_Record Registro
@@ -1215,12 +1215,12 @@ Private Sub CmdBorrar_Click()
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
     '1.7.2 CerrarBase Base
     Refresca_Identificacion
     Refresca_Datos
     frmFichasVacuno.Caption = CargaCadena(528)  '"Registro Borrado. Envíe Modificaciones."
-    
+
 End Sub
 
 Private Sub CmdSalir_Click()
@@ -1232,16 +1232,16 @@ Private Sub Combo1_KeyPress(Index As Integer, KeyAscii As Integer)
     If KeyAscii = 8 Then Exit Sub
     If KeyAscii = 13 Then
         Select Case Index
-            Case 4
-                Combo1(2).SetFocus
-            Case 0
-                Combo1(1).SetFocus
-            Case 1
-                Combo1(2).SetFocus
-            Case 2
-                Combo1(3).SetFocus
-            Case 3
-                CmdAceptar.SetFocus
+        Case 4
+            Combo1(2).SetFocus
+        Case 0
+            Combo1(1).SetFocus
+        Case 1
+            Combo1(2).SetFocus
+        Case 2
+            Combo1(3).SetFocus
+        Case 3
+            CmdAceptar.SetFocus
         End Select
         Exit Sub
     End If
@@ -1253,7 +1253,7 @@ Private Sub Combo1_KeyPress(Index As Integer, KeyAscii As Integer)
         Combo1(Index).Locked = True
         Exit Sub
     End If
-    
+
 End Sub
 
 Private Sub Combo1_LostFocus(Index As Integer)
@@ -1261,7 +1261,7 @@ Private Sub Combo1_LostFocus(Index As Integer)
     Dim eNCONTRADO As Boolean
     Dim Buffer As String
     eNCONTRADO = False
-    
+
     If Combo1(Index).TexT = "" Then Exit Sub
     If Combo1(Index).ListCount > 0 Then
         For bucle = 0 To Combo1(Index).ListCount - 1
@@ -1292,20 +1292,20 @@ Private Sub Combo1_LostFocus(Index As Integer)
         Combo1(Index).TexT = Buffer
         '
         Select Case Index
-            Case 4
+        Case 4
+            Combo1(2).SetFocus
+        Case 0
+            Combo1(1).SetFocus
+        Case 1
+            Combo1(2).SetFocus
+        Case 2
+            If Combo1(3).Enabled = True Then
+                Combo1(3).SetFocus
+            Else
                 Combo1(2).SetFocus
-            Case 0
-                Combo1(1).SetFocus
-            Case 1
-                Combo1(2).SetFocus
-            Case 2
-                If Combo1(3).Enabled = True Then
-                    Combo1(3).SetFocus
-                Else
-                    Combo1(2).SetFocus
-                End If
-            Case 3
-                CmdAceptar.SetFocus
+            End If
+        Case 3
+            CmdAceptar.SetFocus
         End Select
     End If
 End Sub
@@ -1321,7 +1321,7 @@ Private Sub Form_Load()
         'TxtVerD(4).Enabled = False
         'TxtPeso.Enabled = False
         MaskD(0).Enabled = False
-'        MaskD(1).Enabled = False
+        '        MaskD(1).Enabled = False
         MaskD(2).Enabled = False
         'Label10(1).Enabled = False
         'Label10(2).Enabled = False
@@ -1357,9 +1357,9 @@ Private Sub Refresca_codigoPais()
         If Not .EOF Then .MoveFirst
         Do Until .EOF
             For bucle = 0 To 4
-                Combo1(bucle).AddItem CStr(!codigo) & "-" & Trim(!Valor) 'Format(!codigo, "000") & "-" & Trim(!Valor)
+                Combo1(bucle).AddItem CStr(!codigo) & "-" & Trim(!Valor)    'Format(!codigo, "000") & "-" & Trim(!Valor)
             Next bucle
-             .Movenext
+            .Movenext
         Loop
     End With
     '1.7.2 CerrarBase Base
@@ -1368,7 +1368,7 @@ Private Sub Refresca_codigoPais()
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
     For bucle = 0 To 4
         Combo1(bucle).TexT = Buffer(bucle)
     Next bucle
@@ -1398,7 +1398,7 @@ Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
                 Exit Sub
             End If
             'If Combo1(0).Enabled = True Then
-                Combo1(0).SetFocus
+            Combo1(0).SetFocus
             'Else
             '    Combo1(4).SetFocus
             'End If
@@ -1419,19 +1419,19 @@ Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
             Text1(Index).Locked = True
         End If
     End If
-        
+
 End Sub
 
 
 
 Private Sub Text1_LostFocus(Index As Integer)
-        'If Index = 2 Or Index = 3 Then
-        '    If Val(Text1(Index).Text) > 65535 Then
-        '        If Index = 2 Then MsgBox "La categoría del animal debe estar comprendida entre 0 y 65535"
-        '        If Index = 3 Then MsgBox "La raza debe estar comprendida entre 0 y 65535"
-        '        Text1(Index).SetFocus
-        '    End If
-        'End If
+'If Index = 2 Or Index = 3 Then
+'    If Val(Text1(Index).Text) > 65535 Then
+'        If Index = 2 Then MsgBox "La categoría del animal debe estar comprendida entre 0 y 65535"
+'        If Index = 3 Then MsgBox "La raza debe estar comprendida entre 0 y 65535"
+'        Text1(Index).SetFocus
+'    End If
+'End If
 End Sub
 
 Private Sub TxtAnimal_KeyPress(KeyAscii As Integer)
@@ -1483,14 +1483,14 @@ End Sub
 
 Private Sub TxtVerD_KeyPress(Index As Integer, KeyAscii As Integer)
     Select Case Index
-        Case 0
-            Select Case KeyAscii
-                Case vbKeyDelete
-                Case vbKeyBack
-                Case 48 To 59
-                Case Else
-                    KeyAscii = 0
-            End Select
+    Case 0
+        Select Case KeyAscii
+        Case vbKeyDelete
+        Case vbKeyBack
+        Case 48 To 59
+        Case Else
+            KeyAscii = 0
+        End Select
     End Select
 End Sub
 Private Function CheckFecha(myFecha As String) As Boolean
@@ -1524,7 +1524,7 @@ Private Function CheckFecha(myFecha As String) As Boolean
             Else
                 Resp = False
             End If
-            
+
         End If
     End If
     CheckFecha = Resp

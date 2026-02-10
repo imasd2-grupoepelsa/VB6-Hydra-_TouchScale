@@ -89,29 +89,29 @@ Public Sub Check_CDKEY()
 End Sub
 Public Function ResuelvePar(P1 As String)
     Dim P2 As String
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim MyAsc As Integer
     Dim Continuar As Boolean
     Dim MyVal As Integer
     P2 = ""
-    For Bucle = 1 To 16
-        P2 = P2 & Chr(91 - (CInt(Mid(P1, Bucle, 1)) + Bucle))
-    Next Bucle
+    For bucle = 1 To 16
+        P2 = P2 & Chr(91 - (CInt(Mid(P1, bucle, 1)) + bucle))
+    Next bucle
     ResuelvePar = P2
 End Function
 Private Function DameUnidad() As String
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim Buffer As String
     Dim Buf2 As String
-    For Bucle = 0 To 25
-        Buffer = Chr(65 + Bucle) & ":\"
+    For bucle = 0 To 25
+        Buffer = Chr(65 + bucle) & ":\"
         If GetDriveType(Buffer) <> DRIVE_CDROM Then
             On Error Resume Next
             Buf2 = Dir(Buffer & "util\exa_fr.fsd")
             If Err.Number = 0 Then
                 If Buf2 <> "" Then
                     Buffer = Buffer & "util\exa_fr.fsd"
-                    Bucle = 30
+                    bucle = 30
                 Else
                     Buffer = ""
                 End If
@@ -119,7 +119,7 @@ Private Function DameUnidad() As String
                 Buffer = ""
             End If
         End If
-    Next Bucle
-    If Bucle <> 31 Then Buffer = ""
+    Next bucle
+    If bucle <> 31 Then Buffer = ""
     DameUnidad = Buffer
 End Function

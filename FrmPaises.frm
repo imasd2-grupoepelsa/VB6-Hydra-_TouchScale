@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form FrmPaises 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Códigos de Países"
@@ -198,7 +198,7 @@ Option Explicit
 Private EsNuevo As Boolean
 Public BloquearBase As Boolean
 Private Sub CambiarIdioma()
-  
+
     Label2(0).Caption = CargaCadena(415)
     Label2(1).Caption = CargaCadena(423)
     LblInfo.Caption = CargaCadena(524)
@@ -208,15 +208,15 @@ Private Sub CambiarIdioma()
     FrmPaises.Caption = CargaCadena(412)
 End Sub
 Private Sub Refresca_Datos(EsCodigo As Boolean)
-    Dim Base As DAO.Database
-    Dim Registro As DAO.Recordset
+    Dim Base As dao.Database
+    Dim Registro As dao.Recordset
     Set Base = OpenDatabase(Base_General)
     If EsCodigo Then
         Set Registro = Base.OpenRecordset _
-        ("select * from paises where borrado=false and tipo=1 and codigo=" & Val(CmbCodigo.TexT))
+                       ("select * from paises where borrado=false and tipo=1 and codigo=" & Val(CmbCodigo.TexT))
     Else
         Set Registro = Base.OpenRecordset _
-        ("select * from paises where tipo=1 and nombre=" & Chr(34) & Trim(CmbNombre.TexT) & Chr(34))
+                       ("select * from paises where tipo=1 and nombre=" & Chr(34) & Trim(CmbNombre.TexT) & Chr(34))
     End If
     With Registro
         If Not .EOF Then
@@ -224,12 +224,12 @@ Private Sub Refresca_Datos(EsCodigo As Boolean)
             LblInfo.Caption = CargaCadena(525)  '"Modificación"
             LblInfo.BackColor = vbYellow
             CmdAceptar.Caption = CargaCadena(36)  '"Modific&ar"
-            
+
             Select Case EsCodigo
-                Case False
-                    CmbCodigo.TexT = .Fields("codigo")
-                Case True
-                    CmbNombre.TexT = .Fields("Nombre")
+            Case False
+                CmbCodigo.TexT = .Fields("codigo")
+            Case True
+                CmbNombre.TexT = .Fields("Nombre")
             End Select
         Else
             EsNuevo = True
@@ -245,22 +245,22 @@ Private Sub Refresca_Datos(EsCodigo As Boolean)
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
 End Sub
-    
+
 
 Private Sub Refresca_Codigos()
-    Dim Base As DAO.Database
-    Dim Registro As DAO.Recordset
+    Dim Base As dao.Database
+    Dim Registro As dao.Recordset
     CmbCodigo.Clear
     Set Base = OpenDatabase(Base_General)
     Set Registro = Base.OpenRecordset("select * from paises where borrado=false and tipo=1")
     With Registro
         If Not .EOF Then .MoveFirst
-    Do Until .EOF
-        CmbCodigo.AddItem .Fields("codigo")
-        .Movenext
-    Loop
+        Do Until .EOF
+            CmbCodigo.AddItem .Fields("codigo")
+            .Movenext
+        Loop
     End With
     '1.7.2 CerrarBase Base
     Registro.Close
@@ -268,7 +268,7 @@ Private Sub Refresca_Codigos()
     Base.Close
     Set Base = Nothing
     'Workspaces(0).close
-    
+
 End Sub
 
 Private Sub CmbCodigo_Click()
@@ -296,14 +296,14 @@ End Sub
 
 Private Sub CmbCodigo_LostFocus()
     Refresca_Datos True
-    
+
 End Sub
 
 Private Sub CmbNombre_Click()
-   
-    'If EsNuevo Then CmbCodigo.Text = ""
-    'Refresca_datos False
-     
+
+'If EsNuevo Then CmbCodigo.Text = ""
+'Refresca_datos False
+
 End Sub
 
 Private Sub CmbNombre_KeyPress(KeyAscii As Integer)
@@ -320,15 +320,15 @@ Private Sub CmbNombre_KeyPress(KeyAscii As Integer)
 End Sub
 
 Private Sub CmbNombre_LostFocus()
- 
-    'If EsNuevo Then CmbCodigo.Text = ""
-    'Refresca_datos False
-    
+
+'If EsNuevo Then CmbCodigo.Text = ""
+'Refresca_datos False
+
 End Sub
 
-Private Sub CmdAceptar_Click()
-    Dim Base As DAO.Database
-    Dim Registro As DAO.Recordset
+Private Sub Cmdaceptar_Click()
+    Dim Base As dao.Database
+    Dim Registro As dao.Recordset
     Dim CodigoPais As String
     CmbCodigo.Enabled = True
     CmbCodigo.SetFocus
@@ -349,7 +349,7 @@ Private Sub CmdAceptar_Click()
         FrmPaises.Caption = CargaCadena(527)  '"Dato Añadido.Envíe Modificaciones"
     Else
         Set Registro = Base.OpenRecordset _
-        ("select * from paises where borrado=false and tipo=1 and codigo=" & CmbCodigo.TexT)
+                       ("select * from paises where borrado=false and tipo=1 and codigo=" & CmbCodigo.TexT)
         Edit_Record Registro
         Registro!Modificado = True
         FrmPaises.Caption = CargaCadena(439)  '"Dato Modificado.Envíe Modificaciones"
@@ -359,7 +359,7 @@ Private Sub CmdAceptar_Click()
     Registro!Valor = Trim(CmbNombre.TexT)
     Registro.Fields("abrv_2") = "  "
     Registro.Fields("abrv_3") = "   "
-    
+
     Registro!borrado = False
     Registro!tran_pais = " "
     Registro.Update
@@ -368,12 +368,12 @@ Private Sub CmdAceptar_Click()
     Set Registro = Nothing
     Set Base = Nothing
     'Workspaces(0).close
-    
+
     CodigoPais = CmbCodigo.TexT
     Refresca_Codigos
-    
+
     Call Carga_Codigos
-    
+
     CmbCodigo.TexT = ""
     CmbNombre.TexT = ""
     If FrmPaises.Tag <> "" Then
@@ -394,7 +394,7 @@ End Sub
 '    ' 1º Comprueba que el país no está siendo utilizado en ninguna ficha de vacuno
 '    '********************************************************************
 '    Set Registro = Base.OpenRecordset _
-'    ("select codigo,codnacimiento,codcrianza,codsacrificio,coddespiece,codproduccion from fichavacuno where borrado=false")
+     '    ("select codigo,codnacimiento,codcrianza,codsacrificio,coddespiece,codproduccion from fichavacuno where borrado=false")
 '    With Registro
 '        If Not .EOF Then
 '            .MoveFirst
@@ -416,7 +416,7 @@ End Sub
 '    '*************************************
 '
 '    Set Registro = Base.OpenRecordset _
-'    ("select * from paises where tipo=1 and borrado=false and codigo=" & CmbCodigo.TexT)
+     '    ("select * from paises where tipo=1 and borrado=false and codigo=" & CmbCodigo.TexT)
 '    Edit_Record Registro
 '    Registro!borrado = True
 '    Registro!tran_pais = " "
@@ -453,29 +453,29 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
-    
+
     frmEpelsa.Enabled = True
 End Sub
 Private Sub Carga_Codigos()
-Dim Mybase As DAO.Database
-Dim myRec As DAO.Recordset
-Set Mybase = OpenDatabase(Base_General)
-Set myRec = Mybase.OpenRecordset("select * from paises where tipo=1")
-If Not myRec.EOF Then
-    Lista.ListItems.Clear
-    myRec.MoveFirst
-    Do While Not myRec.EOF
-        Lista.ListItems.Add , , myRec.Fields("valor")
-        Lista.ListItems(Lista.ListItems.Count).SubItems(1) = Format(myRec.Fields("codigo"), "000")
-    
-        myRec.Movenext
-    Loop
+    Dim Mybase As dao.Database
+    Dim myRec As dao.Recordset
+    Set Mybase = OpenDatabase(Base_General)
+    Set myRec = Mybase.OpenRecordset("select * from paises where tipo=1")
+    If Not myRec.EOF Then
+        Lista.ListItems.Clear
+        myRec.MoveFirst
+        Do While Not myRec.EOF
+            Lista.ListItems.Add , , myRec.Fields("valor")
+            Lista.ListItems(Lista.ListItems.Count).SubItems(1) = Format(myRec.Fields("codigo"), "000")
 
-End If
-myRec.Close
-Set myRec = Nothing
-Mybase.Close
-Set Mybase = Nothing
+            myRec.Movenext
+        Loop
+
+    End If
+    myRec.Close
+    Set myRec = Nothing
+    Mybase.Close
+    Set Mybase = Nothing
 
 
 End Sub
@@ -487,5 +487,5 @@ Private Sub Lista_ItemClick(ByVal Item As MSComctlLib.ListItem)
     If Trim(CmbNombre.TexT) = "" Then
         CmbNombre.TexT = left(Item.TexT, 25)
     End If
-    
+
 End Sub

@@ -2,7 +2,7 @@ Attribute VB_Name = "ParametrosdeInicio"
 Option Explicit
 
 Public Sub EscribirParametrosInicio()
-    ' Esta función depende de FrmConfiguracion2
+' Esta función depende de FrmConfiguracion2
     Dim Fichero As Integer
     Dim ParametrosSerie As String
     Dim SC10ParSerie As String
@@ -86,9 +86,9 @@ Public Sub EscribirParametrosInicio()
     Write #Fichero, "0", "Reservado"
     Write #Fichero, FrmConfiguracion2.OptSC10Comu(1).Value, "Comunicación Rs232 con SC10"
     Write #Fichero, SC10ParSerie, "Parametros del Puerto Serie RS-232 SC10"
-  
+
     Write #Fichero, True, "Reservado"
-        
+
     If IsNumeric(FrmConfiguracion2.TxtCI_HORA) Then
         Write #Fichero, FrmConfiguracion2.TxtCI_HORA, "Hora de Cierre"
         Write #Fichero, FrmConfiguracion2.txtCI_MINUTO, "Minuto de Cierre"
@@ -150,7 +150,7 @@ Public Sub EscribirParametrosInicio()
     'If FrmConfiguracion2.Option2(1).Value = True Then
     '    Write #Fichero, "1", "Ticket ASCII en fichero único"
     'Else
-        Write #Fichero, "0", "Ticket ASCII en fichero único"
+    Write #Fichero, "0", "Ticket ASCII en fichero único"
     'End If
     Write #Fichero, FrmConfiguracion2.TxtAllTicket.TexT, "Nombre Fichero Tiquets Único"
     Write #Fichero, FrmConfiguracion2.ChkGaReinit.Value, "Reiniciar Numeración de Tiquets TouchScale"
@@ -187,7 +187,7 @@ Public Sub EscribirParametrosInicio()
     Write #Fichero, FrmConfiguracion2.CmbPortV8.ListIndex, "puerto RS-232 Marte IC-ILC/V8"
     Write #Fichero, FrmConfiguracion2.CmbPortLabel.ListIndex, "puerto RS-232 Marte IC-ILC"
     Write #Fichero, FrmConfiguracion2.ChkEcoPrint.Value, "Equipos IV4 LCD / IV4"
-    For bucle = 0 To 3 'c2f iv4 ic+ 3
+    For bucle = 0 To 3    'c2f iv4 ic+ 3
         If FrmConfiguracion2.OptIV4(bucle) = True Then
             MyModeloV4 = bucle
         End If
@@ -234,7 +234,7 @@ Public Sub LeerParametrosInicio()
     Dim W_5_2_2 As Boolean
     Dim ConfiguracionINI(151) As String
     Dim lReW As Boolean
-    
+
     W_5_2_2 = False
 
     '
@@ -247,14 +247,14 @@ Public Sub LeerParametrosInicio()
         'If Sabeco Then Los_Parametros_Defecto_Sabeco
         'If AHOLD Then Los_parametros_Defecto_Ahold
         'If Supeco Then Los_Parametros_Defecto_Supeco
-        
+
         'If Dir(App.Path & "\hydraserver.exe") <> "" Then Los_Parametros_Defecto_StoreFlow
-        
+
         CrearPassSec
     Else
-    '
-    ' Leer ntq.ini
-    '
+        '
+        ' Leer ntq.ini
+        '
         Fichero = FreeFile
         Open Hydra_INI For Input As Fichero
         Contador = 0
@@ -264,7 +264,7 @@ Public Sub LeerParametrosInicio()
         Loop
         Close Fichero
         If Contador > 116 And Contador < 119 Then W_5_2_2 = True
-        
+
         '*************
         ' sec
         '*************
@@ -289,14 +289,14 @@ Public Sub LeerParametrosInicio()
         If Not HayMulti Then
             If Not IsNumeric(ConfiguracionINI(1)) Then
                 Select Case ConfiguracionINI(1)
-                    Case "Spanish"
-                        id = 0
-                    Case "English"
-                        id = 1000
-                    Case "French"
-                        id = 2000
-                    Case "German"
-                        id = 3000
+                Case "Spanish"
+                    id = 0
+                Case "English"
+                    id = 1000
+                Case "French"
+                    id = 2000
+                Case "German"
+                    id = 3000
                 End Select
                 Reescribe = True
             Else
@@ -309,12 +309,12 @@ Public Sub LeerParametrosInicio()
             Open App.Path & "\greek.txt" For Output As #Fichero
             Print #Fichero, Chr(130) & Chr(131) & Chr(135)
             Close #Fichero
-            
+
         End If
         '''''''
         Empresa = ConfiguracionINI(2)
         UsaGamaAlta = ConfiguracionINI(3)
-        
+
         '**************************
         ' ML100 --> Si el peso está
         ' entre 15 y 30 kg, sólo
@@ -330,8 +330,8 @@ Public Sub LeerParametrosInicio()
             Line Input #nMyFich, sNum100
             Close #nMyFich
             If Err.Number <> 0 Then
-               sNumdec = "03"
-               sNum100 = "00"
+                sNumdec = "03"
+                sNum100 = "00"
             End If
             On Error GoTo 0
             If Len(sNumdec) > 1 Then
@@ -404,7 +404,7 @@ Public Sub LeerParametrosInicio()
             UsaEuro = True
             decimales = 2
         End If
-        
+
         If ConfiguracionINI(36) = "1" Then
             UsaBackup = True
         Else
@@ -436,9 +436,9 @@ Public Sub LeerParametrosInicio()
         Else
             SC10ParametrosSerie = "19200,E,8,1,2"
         End If
-       ' 47 --> sIN USO ACTUALMENTE
-       ' If ConfiguracionINI(47) <> "" Then
-       
+        ' 47 --> sIN USO ACTUALMENTE
+        ' If ConfiguracionINI(47) <> "" Then
+
         '*********************************
         ' Parámetros de hora de cierre
         ' automática
@@ -465,7 +465,7 @@ Public Sub LeerParametrosInicio()
         CI_HOST = ConfiguracionINI(52)
         CI_TCP = ConfiguracionINI(53)
         CI_UDP = ConfiguracionINI(54)
-        
+
         'StoreFlow = ConfiguracionINI(55)
         If Dir(App.Path & "\hydraserver.exe") <> "" Then
             StoreFlow = True
@@ -535,7 +535,7 @@ Public Sub LeerParametrosInicio()
         Else
             lReW = False
         End If
-        
+
         If ConfiguracionINI(77) <> "" Then BorrarBackup = ConfiguracionINI(77)
         'If ConfiguracionINI(79) <> ""        Then
         Exp_Fecha = ConfiguracionINI(78)
@@ -671,7 +671,7 @@ Public Sub LeerParametrosInicio()
             RechazarPlu0 = True
         Else
             'If Not Sabeco Then
-                RechazarPlu0 = False
+            RechazarPlu0 = False
             'Else
             '    RechazarPlu0 = True
             'End If
@@ -691,7 +691,7 @@ Public Sub LeerParametrosInicio()
         End If
         If ConfiguracionINI(110) = "" Or ConfiguracionINI(110) = "1" Then
             'If Not Sabeco Then
-                BorrarPedidoFin = True
+            BorrarPedidoFin = True
             'Else
             '    BorrarPedidoFin = False
             'End If
@@ -710,7 +710,7 @@ Public Sub LeerParametrosInicio()
         End If
         If ConfiguracionINI(113) = "" Or ConfiguracionINI(113) = "1" Then
             'If Not Sabeco Then
-                BorrarInventarioFin = True
+            BorrarInventarioFin = True
             'Else
             '    BorrarInventarioFin = False
             'End If
@@ -814,7 +814,7 @@ Public Sub LeerParametrosInicio()
                 leco19200 = True
                 Kill App.Path & "\eco19200.txt"
             End If
-            
+
         End If
         '2.0.23
         If Contador > 145 Then
@@ -843,7 +843,7 @@ Public Sub LeerParametrosInicio()
     Lee_Multi_INI
 End Sub
 Private Sub Lee_Multi_INI()
-Dim Arch As Integer
+    Dim Arch As Integer
     Dim Buffer(9) As String
     Dim bucle As Integer
     Dim Buf As String
@@ -924,115 +924,115 @@ End Sub
 '            DiasBorrado = 10
 'End Sub
 Private Sub Los_parametros_Defecto()
-            id = 0
-            HaySeguridad = False
-            Empresa = ""
-            UsaGamaAlta = True
-            usaSC10 = False
-            UsaFichasVacuno = False
-            UsaGruposdeConservacion = False
-            gedit = 0
-            tcpip = True
-            cngvelocidad = "19200,E,8,1,1"
-            sPortBal = 3306
-            pathSC10 = "z:\sc10"
-            descAuto = False
-            descautotime = ""
-            frmControl.timetqt.Enabled = False
-            frmControl.timetqt.Interval = 0
-            GA_RecibirTotalVenta = True
-            GA_RecibirTotalSuper = False
-            GA_RecibirTotalEnvasado = False
-            GA_RecibirTotalAutoservicio = False
-            GA_RecibirTotalVentaL = True
-            GA_RecibirTotalSuperL = False
-            GA_RecibirTotalEnvasadoL = False
-            GA_RecibirTotalAutoservicioL = False
-            GA_BorrarTotal = True
-            SC10_BorrarTotal = False
-            SC10_ProcesarTotalVenta = True
-            SC10_ProcesarTotalSuper = False
-            SC10_ProcesarTotalEnvasado = False
-            SC10_ProcesarTotalAutoservicio = False
-            SC10_Borrar_Ticket_dat = False
-            SC10_Borrar_Eti_dat = False
-            RecibirTotalVacuno = False
-            BorrarTotalVacuno = False
-            decimales = 0
-            SimboloMonetario = "Pta."
-            '********************
-            ' Obsoleto
-            ValorEuro = 1
-            '********************
-            UsaEuro = True
-            UsaBackup = False
-            pathred = ""
-            FamiliaEspecial = "0"
-            EtiquetaEspecial = 0
-            PathDBF = ""
-            Usa20Lineas = True
-            SC10Rs232 = False
-            SC10ParametrosSerie = "19200,E,8,1,2"
-            CI_HORA = 25
-            CI_MINUTO = 61
-            RE_HORA = 25
-            RE_MINUTO = 61
-            CI_HOST = "127.000.000.001"
-            CI_TCP = 5580
-            CI_UDP = 6001
-            If Dir(App.Path & "\hydraserver.exe") <> "" Then
-                StoreFlow = True
-            Else
-                StoreFlow = False
-            End If
-            Taquion = False
-            TaquionFichero = "artcon.dat"
-            TaquionTiquets = True
-  
-            Iconificar = False
-            IconificarInicio = False
-            DebugActivo = False
-            LogArticulos = False
-            ComandoLibre(0) = ""
-            EjecutarLibre(0) = ""
-            ComandoLibre(1) = ""
-            EjecutarLibre(1) = ""
-            ComandoLibre(2) = ""
-            EjecutarLibre(2) = ""
-            ComandoLibre(3) = ""
-            EjecutarLibre(3) = ""
-            ComandoLibre(4) = ""
-            EjecutarLibre(4) = ""
-            UsarPantallas = False
-            PuertoPantallas = 32337
-            DiasBorrado = 0
-            Exp_Fecha = 0
-            Exp_hora = 0
-            Exp_Mas = "+"
-            Exp_Menos = "-"
-            Exp_Absoluto = False
-            Exp_Path = Miruta
-            Exp_Diario = True
-            bunTicket = False
-            sunTicket = ""
-            GA_Reinit = True
-            CheckNoTiquet = False
-            PuertoModem = 1
-            VelocidadModem = 1
-            TelefonoModem = ""
-            CadModem1 = ""
-            CadModem2 = ""
-            CadModem3 = ""
-            ColgarModem = True
-            Pasarela = False
-            PasarelaHost = "127.000.000.001"
-            PasarelaPuerto = 32340
-            AbsorverCambios = False
-            BorrarPedidoFin = True
-            BorrarInventarioFin = True
-            CommRetries = 3
-            FamiliasFijas = True
-            SubSeccionesFijas = False
+    id = 0
+    HaySeguridad = False
+    Empresa = ""
+    UsaGamaAlta = True
+    usaSC10 = False
+    UsaFichasVacuno = False
+    UsaGruposdeConservacion = False
+    gedit = 0
+    tcpip = True
+    cngvelocidad = "19200,E,8,1,1"
+    sPortBal = 3306
+    pathSC10 = "z:\sc10"
+    descAuto = False
+    descautotime = ""
+    frmControl.timetqt.Enabled = False
+    frmControl.timetqt.Interval = 0
+    GA_RecibirTotalVenta = True
+    GA_RecibirTotalSuper = False
+    GA_RecibirTotalEnvasado = False
+    GA_RecibirTotalAutoservicio = False
+    GA_RecibirTotalVentaL = True
+    GA_RecibirTotalSuperL = False
+    GA_RecibirTotalEnvasadoL = False
+    GA_RecibirTotalAutoservicioL = False
+    GA_BorrarTotal = True
+    SC10_BorrarTotal = False
+    SC10_ProcesarTotalVenta = True
+    SC10_ProcesarTotalSuper = False
+    SC10_ProcesarTotalEnvasado = False
+    SC10_ProcesarTotalAutoservicio = False
+    SC10_Borrar_Ticket_dat = False
+    SC10_Borrar_Eti_dat = False
+    RecibirTotalVacuno = False
+    BorrarTotalVacuno = False
+    decimales = 0
+    SimboloMonetario = "Pta."
+    '********************
+    ' Obsoleto
+    ValorEuro = 1
+    '********************
+    UsaEuro = True
+    UsaBackup = False
+    pathred = ""
+    FamiliaEspecial = "0"
+    EtiquetaEspecial = 0
+    PathDBF = ""
+    Usa20Lineas = True
+    SC10Rs232 = False
+    SC10ParametrosSerie = "19200,E,8,1,2"
+    CI_HORA = 25
+    CI_MINUTO = 61
+    RE_HORA = 25
+    RE_MINUTO = 61
+    CI_HOST = "127.000.000.001"
+    CI_TCP = 5580
+    CI_UDP = 6001
+    If Dir(App.Path & "\hydraserver.exe") <> "" Then
+        StoreFlow = True
+    Else
+        StoreFlow = False
+    End If
+    Taquion = False
+    TaquionFichero = "artcon.dat"
+    TaquionTiquets = True
+
+    Iconificar = False
+    IconificarInicio = False
+    DebugActivo = False
+    LogArticulos = False
+    ComandoLibre(0) = ""
+    EjecutarLibre(0) = ""
+    ComandoLibre(1) = ""
+    EjecutarLibre(1) = ""
+    ComandoLibre(2) = ""
+    EjecutarLibre(2) = ""
+    ComandoLibre(3) = ""
+    EjecutarLibre(3) = ""
+    ComandoLibre(4) = ""
+    EjecutarLibre(4) = ""
+    UsarPantallas = False
+    PuertoPantallas = 32337
+    DiasBorrado = 0
+    Exp_Fecha = 0
+    Exp_hora = 0
+    Exp_Mas = "+"
+    Exp_Menos = "-"
+    Exp_Absoluto = False
+    Exp_Path = Miruta
+    Exp_Diario = True
+    bunTicket = False
+    sunTicket = ""
+    GA_Reinit = True
+    CheckNoTiquet = False
+    PuertoModem = 1
+    VelocidadModem = 1
+    TelefonoModem = ""
+    CadModem1 = ""
+    CadModem2 = ""
+    CadModem3 = ""
+    ColgarModem = True
+    Pasarela = False
+    PasarelaHost = "127.000.000.001"
+    PasarelaPuerto = 32340
+    AbsorverCambios = False
+    BorrarPedidoFin = True
+    BorrarInventarioFin = True
+    CommRetries = 3
+    FamiliasFijas = True
+    SubSeccionesFijas = False
 End Sub
 
 'Private Sub Los_Parametros_Defecto_Sabeco()
@@ -1042,8 +1042,8 @@ End Sub
 '    Exp_Menos = "1"
 '    Exp_Absoluto = True
 '    Exp_Diario = True
- '   BorrarPedidoFin = False
- '   BorrarInventarioFin = False
+'   BorrarPedidoFin = False
+'   BorrarInventarioFin = False
 'End Sub
 'Private Sub Los_Parametros_Defecto_StoreFlow()
 '

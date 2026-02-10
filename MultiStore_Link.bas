@@ -1,57 +1,57 @@
 Attribute VB_Name = "MultiStore_Link"
 Option Explicit
 Public Type TTienda_Data
-    Numero As Long
+    numero As Long
     Path As String
- 
+
 End Type
 Public Sub Dame_Tiendas(Tiendas() As TTienda_Data, NTiendas As Long)
     Dim sPath As String
     Dim MyPath As String
-    Dim Bucle As Long
+    Dim bucle As Long
     Dim Posibles() As Long
     Dim NPosibles As Long
     NTiendas = 0
     sPath = Dir(App.Path & "\T*", vbDirectory)
     If sPath <> "" Then
         Do While sPath <> ""
-            
-                If UCase(Mid(sPath, 1, 1)) = "T" Then
-                    If IsNumeric(Mid(sPath, 2, 3)) Then
-                        If Val(Mid(sPath, 2, 3)) <= 255 Then
-                            NPosibles = NPosibles + 1
-                            ReDim Preserve Posibles(NPosibles)
-                            Posibles(NPosibles - 1) = Val(Mid(sPath, 2, 3))
-                        End If
+
+            If UCase(Mid(sPath, 1, 1)) = "T" Then
+                If IsNumeric(Mid(sPath, 2, 3)) Then
+                    If Val(Mid(sPath, 2, 3)) <= 255 Then
+                        NPosibles = NPosibles + 1
+                        ReDim Preserve Posibles(NPosibles)
+                        Posibles(NPosibles - 1) = Val(Mid(sPath, 2, 3))
                     End If
                 End If
+            End If
 
             sPath = Dir()
         Loop
     End If
     If NPosibles > 0 Then
-        For Bucle = 0 To NPosibles
-            MyPath = App.Path & "\t" & Format(Posibles(Bucle), "00")
+        For bucle = 0 To NPosibles
+            MyPath = App.Path & "\t" & Format(Posibles(bucle), "00")
             If Dir(MyPath, vbDirectory) <> "" Then
                 If Dir(MyPath & "\dbasetouch.mdb") <> "" Then
                     If Dir(MyPath & "\hydratouch.ini") <> "" Then
                         NTiendas = NTiendas + 1
                         ReDim Preserve Tiendas(NTiendas)
                         Tiendas(NTiendas - 1).Path = MyPath
-                        Tiendas(NTiendas - 1).Numero = Posibles(Bucle)
+                        Tiendas(NTiendas - 1).numero = Posibles(bucle)
                     End If
                 End If
             End If
-        Next Bucle
+        Next bucle
     End If
 End Sub
 Public Function ArticuloCompatible(ByVal nTienda As Long, ByVal nCod As Long, ByVal nPlu As Long, ByVal nMos As Long) As Long
-    ' articulo compatible:
-    ' 0 --> No existe
-    ' 1 --> OK
-    ' 2 --> Plu incorrecto
-    ' 3 --> Mostrador incorrecto
-    ' 4 --> Codigo incorrecto
+' articulo compatible:
+' 0 --> No existe
+' 1 --> OK
+' 2 --> Plu incorrecto
+' 3 --> Mostrador incorrecto
+' 4 --> Codigo incorrecto
     Dim sPath As String
     Dim Resp As Long
     Dim Registro As RecordNet

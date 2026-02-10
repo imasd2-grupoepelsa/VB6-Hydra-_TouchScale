@@ -1,8 +1,8 @@
 VERSION 5.00
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "MSMASK32.OCX"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form FrmConfiguracion2 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Configuración"
@@ -164,21 +164,21 @@ Begin VB.Form FrmConfiguracion2
       TabCaption(1)   =   "Tab 1"
       TabPicture(1)   =   "FrmConfiguracion2.frx":11BC
       Tab(1).ControlEnabled=   0   'False
-      Tab(1).Control(0)=   "ChkInventarioFinal"
+      Tab(1).Control(0)=   "Frame2"
       Tab(1).Control(0).Enabled=   0   'False
-      Tab(1).Control(1)=   "ChkBorrarInventario"
+      Tab(1).Control(1)=   "Frame29"
       Tab(1).Control(1).Enabled=   0   'False
-      Tab(1).Control(2)=   "ChkSolicitarInventario"
+      Tab(1).Control(2)=   "Frame16"
       Tab(1).Control(2).Enabled=   0   'False
-      Tab(1).Control(3)=   "ChkSolicitarPedido"
+      Tab(1).Control(3)=   "Frame14"
       Tab(1).Control(3).Enabled=   0   'False
-      Tab(1).Control(4)=   "Frame14"
+      Tab(1).Control(4)=   "ChkSolicitarPedido"
       Tab(1).Control(4).Enabled=   0   'False
-      Tab(1).Control(5)=   "Frame16"
+      Tab(1).Control(5)=   "ChkSolicitarInventario"
       Tab(1).Control(5).Enabled=   0   'False
-      Tab(1).Control(6)=   "Frame29"
+      Tab(1).Control(6)=   "ChkBorrarInventario"
       Tab(1).Control(6).Enabled=   0   'False
-      Tab(1).Control(7)=   "Frame2"
+      Tab(1).Control(7)=   "ChkInventarioFinal"
       Tab(1).Control(7).Enabled=   0   'False
       Tab(1).ControlCount=   8
       TabCaption(2)   =   "Tab 2"
@@ -190,157 +190,157 @@ Begin VB.Form FrmConfiguracion2
       TabCaption(3)   =   "Tab 3"
       TabPicture(3)   =   "FrmConfiguracion2.frx":11F4
       Tab(3).ControlEnabled=   0   'False
-      Tab(3).Control(0)=   "ChkParked"
+      Tab(3).Control(0)=   "Frame8"
       Tab(3).Control(0).Enabled=   0   'False
-      Tab(3).Control(1)=   "ChkAcuET"
+      Tab(3).Control(1)=   "Frame7"
       Tab(3).Control(1).Enabled=   0   'False
-      Tab(3).Control(2)=   "ChkAcuSS"
+      Tab(3).Control(2)=   "Frame6"
       Tab(3).Control(2).Enabled=   0   'False
-      Tab(3).Control(3)=   "ChkNoPre"
+      Tab(3).Control(3)=   "Frame28"
       Tab(3).Control(3).Enabled=   0   'False
-      Tab(3).Control(4)=   "ChkNoPack"
+      Tab(3).Control(4)=   "ChkGaReinit"
       Tab(3).Control(4).Enabled=   0   'False
-      Tab(3).Control(5)=   "ChkNoLabel"
+      Tab(3).Control(5)=   "ChkBorrarTotalGA"
       Tab(3).Control(5).Enabled=   0   'False
-      Tab(3).Control(6)=   "ChkBorrarEti"
+      Tab(3).Control(6)=   "ChkBorrarTotalSC10"
       Tab(3).Control(6).Enabled=   0   'False
-      Tab(3).Control(7)=   "ChkBorrarTotalSC10"
+      Tab(3).Control(7)=   "ChkBorrarEti"
       Tab(3).Control(7).Enabled=   0   'False
-      Tab(3).Control(8)=   "ChkBorrarTotalGA"
+      Tab(3).Control(8)=   "ChkNoLabel"
       Tab(3).Control(8).Enabled=   0   'False
-      Tab(3).Control(9)=   "ChkGaReinit"
+      Tab(3).Control(9)=   "ChkNoPack"
       Tab(3).Control(9).Enabled=   0   'False
-      Tab(3).Control(10)=   "Frame28"
+      Tab(3).Control(10)=   "ChkNoPre"
       Tab(3).Control(10).Enabled=   0   'False
-      Tab(3).Control(11)=   "Frame6"
+      Tab(3).Control(11)=   "ChkAcuSS"
       Tab(3).Control(11).Enabled=   0   'False
-      Tab(3).Control(12)=   "Frame7"
+      Tab(3).Control(12)=   "ChkAcuET"
       Tab(3).Control(12).Enabled=   0   'False
-      Tab(3).Control(13)=   "Frame8"
+      Tab(3).Control(13)=   "ChkParked"
       Tab(3).Control(13).Enabled=   0   'False
       Tab(3).ControlCount=   14
       TabCaption(4)   =   "Tab 4"
       TabPicture(4)   =   "FrmConfiguracion2.frx":1210
       Tab(4).ControlEnabled=   0   'False
-      Tab(4).Control(0)=   "Frame10"
+      Tab(4).Control(0)=   "Frame11"
       Tab(4).Control(0).Enabled=   0   'False
-      Tab(4).Control(1)=   "Frame11"
+      Tab(4).Control(1)=   "Frame10"
       Tab(4).Control(1).Enabled=   0   'False
       Tab(4).ControlCount=   2
       TabCaption(5)   =   "Tab 5"
       TabPicture(5)   =   "FrmConfiguracion2.frx":122C
       Tab(5).ControlEnabled=   0   'False
-      Tab(5).Control(0)=   "Frame30"
+      Tab(5).Control(0)=   "Frame3"
       Tab(5).Control(0).Enabled=   0   'False
       Tab(5).Control(1)=   "Frame23"
       Tab(5).Control(1).Enabled=   0   'False
-      Tab(5).Control(2)=   "Frame3"
+      Tab(5).Control(2)=   "Frame30"
       Tab(5).Control(2).Enabled=   0   'False
       Tab(5).ControlCount=   3
       TabCaption(6)   =   "Tab 6"
       TabPicture(6)   =   "FrmConfiguracion2.frx":1248
       Tab(6).ControlEnabled=   0   'False
-      Tab(6).Control(0)=   "Frame17"
+      Tab(6).Control(0)=   "Frame21"
       Tab(6).Control(0).Enabled=   0   'False
-      Tab(6).Control(1)=   "ChkStoreFlow"
+      Tab(6).Control(1)=   "ChkTaquion"
       Tab(6).Control(1).Enabled=   0   'False
-      Tab(6).Control(2)=   "ChkTaquion"
+      Tab(6).Control(2)=   "ChkStoreFlow"
       Tab(6).Control(2).Enabled=   0   'False
-      Tab(6).Control(3)=   "Frame21"
+      Tab(6).Control(3)=   "Frame17"
       Tab(6).Control(3).Enabled=   0   'False
       Tab(6).ControlCount=   4
       TabCaption(7)   =   "Tab 7"
       TabPicture(7)   =   "FrmConfiguracion2.frx":1264
       Tab(7).ControlEnabled=   0   'False
-      Tab(7).Control(0)=   "Txtdias"
+      Tab(7).Control(0)=   "Label33(0)"
       Tab(7).Control(0).Enabled=   0   'False
-      Tab(7).Control(1)=   "Frame15"
+      Tab(7).Control(1)=   "Label32"
       Tab(7).Control(1).Enabled=   0   'False
-      Tab(7).Control(2)=   "ChkLogArticulos"
+      Tab(7).Control(2)=   "Frame18"
       Tab(7).Control(2).Enabled=   0   'False
-      Tab(7).Control(3)=   "ChklogSistema"
+      Tab(7).Control(3)=   "Frame19"
       Tab(7).Control(3).Enabled=   0   'False
       Tab(7).Control(4)=   "Frame13"
       Tab(7).Control(4).Enabled=   0   'False
-      Tab(7).Control(5)=   "Frame19"
+      Tab(7).Control(5)=   "ChklogSistema"
       Tab(7).Control(5).Enabled=   0   'False
-      Tab(7).Control(6)=   "Frame18"
+      Tab(7).Control(6)=   "ChkLogArticulos"
       Tab(7).Control(6).Enabled=   0   'False
-      Tab(7).Control(7)=   "Label32"
+      Tab(7).Control(7)=   "Frame15"
       Tab(7).Control(7).Enabled=   0   'False
-      Tab(7).Control(8)=   "Label33(0)"
+      Tab(7).Control(8)=   "Txtdias"
       Tab(7).Control(8).Enabled=   0   'False
       Tab(7).ControlCount=   9
       TabCaption(8)   =   "Tab 8"
       TabPicture(8)   =   "FrmConfiguracion2.frx":1280
       Tab(8).ControlEnabled=   0   'False
-      Tab(8).Control(0)=   "Dialogo"
+      Tab(8).Control(0)=   "Label29(3)"
       Tab(8).Control(0).Enabled=   0   'False
-      Tab(8).Control(1)=   "CmdPath(4)"
+      Tab(8).Control(1)=   "Label29(2)"
       Tab(8).Control(1).Enabled=   0   'False
-      Tab(8).Control(2)=   "CmdPath(3)"
+      Tab(8).Control(2)=   "Label29(1)"
       Tab(8).Control(2).Enabled=   0   'False
-      Tab(8).Control(3)=   "CmdPath(2)"
+      Tab(8).Control(3)=   "Label28(4)"
       Tab(8).Control(3).Enabled=   0   'False
-      Tab(8).Control(4)=   "CmdPath(1)"
+      Tab(8).Control(4)=   "Label28(3)"
       Tab(8).Control(4).Enabled=   0   'False
-      Tab(8).Control(5)=   "CmdPath(0)"
+      Tab(8).Control(5)=   "Label28(2)"
       Tab(8).Control(5).Enabled=   0   'False
-      Tab(8).Control(6)=   "TxtComando(0)"
+      Tab(8).Control(6)=   "Label28(1)"
       Tab(8).Control(6).Enabled=   0   'False
-      Tab(8).Control(7)=   "TxtEjecutar(0)"
+      Tab(8).Control(7)=   "Label29(0)"
       Tab(8).Control(7).Enabled=   0   'False
-      Tab(8).Control(8)=   "TxtComando(1)"
+      Tab(8).Control(8)=   "Label28(0)"
       Tab(8).Control(8).Enabled=   0   'False
-      Tab(8).Control(9)=   "TxtEjecutar(1)"
+      Tab(8).Control(9)=   "Label29(4)"
       Tab(8).Control(9).Enabled=   0   'False
-      Tab(8).Control(10)=   "TxtComando(2)"
+      Tab(8).Control(10)=   "TxtEjecutar(4)"
       Tab(8).Control(10).Enabled=   0   'False
-      Tab(8).Control(11)=   "TxtEjecutar(2)"
+      Tab(8).Control(11)=   "TxtComando(4)"
       Tab(8).Control(11).Enabled=   0   'False
-      Tab(8).Control(12)=   "TxtComando(3)"
+      Tab(8).Control(12)=   "TxtEjecutar(3)"
       Tab(8).Control(12).Enabled=   0   'False
-      Tab(8).Control(13)=   "TxtEjecutar(3)"
+      Tab(8).Control(13)=   "TxtComando(3)"
       Tab(8).Control(13).Enabled=   0   'False
-      Tab(8).Control(14)=   "TxtComando(4)"
+      Tab(8).Control(14)=   "TxtEjecutar(2)"
       Tab(8).Control(14).Enabled=   0   'False
-      Tab(8).Control(15)=   "TxtEjecutar(4)"
+      Tab(8).Control(15)=   "TxtComando(2)"
       Tab(8).Control(15).Enabled=   0   'False
-      Tab(8).Control(16)=   "Label29(4)"
+      Tab(8).Control(16)=   "TxtEjecutar(1)"
       Tab(8).Control(16).Enabled=   0   'False
-      Tab(8).Control(17)=   "Label28(0)"
+      Tab(8).Control(17)=   "TxtComando(1)"
       Tab(8).Control(17).Enabled=   0   'False
-      Tab(8).Control(18)=   "Label29(0)"
+      Tab(8).Control(18)=   "TxtEjecutar(0)"
       Tab(8).Control(18).Enabled=   0   'False
-      Tab(8).Control(19)=   "Label28(1)"
+      Tab(8).Control(19)=   "TxtComando(0)"
       Tab(8).Control(19).Enabled=   0   'False
-      Tab(8).Control(20)=   "Label28(2)"
+      Tab(8).Control(20)=   "CmdPath(0)"
       Tab(8).Control(20).Enabled=   0   'False
-      Tab(8).Control(21)=   "Label28(3)"
+      Tab(8).Control(21)=   "CmdPath(1)"
       Tab(8).Control(21).Enabled=   0   'False
-      Tab(8).Control(22)=   "Label28(4)"
+      Tab(8).Control(22)=   "CmdPath(2)"
       Tab(8).Control(22).Enabled=   0   'False
-      Tab(8).Control(23)=   "Label29(1)"
+      Tab(8).Control(23)=   "CmdPath(3)"
       Tab(8).Control(23).Enabled=   0   'False
-      Tab(8).Control(24)=   "Label29(2)"
+      Tab(8).Control(24)=   "CmdPath(4)"
       Tab(8).Control(24).Enabled=   0   'False
-      Tab(8).Control(25)=   "Label29(3)"
+      Tab(8).Control(25)=   "Dialogo"
       Tab(8).Control(25).Enabled=   0   'False
       Tab(8).ControlCount=   26
       TabCaption(9)   =   "Tab 9"
       TabPicture(9)   =   "FrmConfiguracion2.frx":129C
       Tab(9).ControlEnabled=   0   'False
-      Tab(9).Control(0)=   "Frame22"
+      Tab(9).Control(0)=   "ChkMaestro"
       Tab(9).Control(0).Enabled=   0   'False
-      Tab(9).Control(1)=   "ChkMaestro"
+      Tab(9).Control(1)=   "Frame22"
       Tab(9).Control(1).Enabled=   0   'False
       Tab(9).ControlCount=   2
       TabCaption(10)  =   "Tab 10"
       TabPicture(10)  =   "FrmConfiguracion2.frx":12B8
       Tab(10).ControlEnabled=   0   'False
-      Tab(10).Control(0)=   "Frame24"
+      Tab(10).Control(0)=   "Frame25"
       Tab(10).Control(0).Enabled=   0   'False
-      Tab(10).Control(1)=   "Frame25"
+      Tab(10).Control(1)=   "Frame24"
       Tab(10).Control(1).Enabled=   0   'False
       Tab(10).ControlCount=   2
       TabCaption(11)  =   "Tab 11"
@@ -3842,7 +3842,7 @@ Private Type TRS232
 End Type
 
 Private Sub CheckMarteAlfa_Click()
-    If (ChkEcoLabel.Value = vbChecked) Then 'And (CheckMarteNew.Value = vbChecked) Then
+    If (ChkEcoLabel.Value = vbChecked) Then    'And (CheckMarteNew.Value = vbChecked) Then
         If CheckMarteAlfa.Value = vbChecked Then
             lMarteAlfa = True
             l49T = True
@@ -3856,7 +3856,7 @@ Private Sub CheckMarteAlfa_Click()
             Check49T.Value = 0
             Check66T = 0
         End If
-    
+
     End If
 End Sub
 
@@ -3912,7 +3912,7 @@ Private Sub CheckMarteNew_Click()
 'Dim n As Integer
     If (ChkEcoLabel.Value = vbChecked) Then
         If CheckMarteNew.Value Then
-            
+
             'n = FreeFile()
             'Open App.Path & "\marte.new" For Output As #n
             'Close #n
@@ -3928,7 +3928,7 @@ Private Sub CheckMarteNew_Click()
             CheckMarteAlfa.Value = 0
             Check49T.Value = 0
             Check66T.Value = 0
-            
+
         End If
     End If
 End Sub
@@ -3939,15 +3939,15 @@ Private Sub ChkBorrarTotalGA_Click()
         GA_Reinit = False
         ChkGaReinit.Value = False
         ChkGaReinit.Enabled = False
-        
+
         SC10_BorrarTotal = False
         ChkBorrarTotalSC10.Value = False
         ChkBorrarTotalSC10.Enabled = False
-        
+
         SC10_Borrar_Eti_dat = False
         ChkBorrarEti.Value = False
         ChkBorrarEti.Enabled = False
-        
+
         ChkParked.Value = False
         ChkParked.Enabled = False
         If Dir(App.Path & "\nopark") <> "" Then
@@ -3970,7 +3970,7 @@ Private Sub ChkL000_Click()
 End Sub
 
 Private Sub ChkNoLabel_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkNoLabel.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\nolabel.txt" For Output As #nf
@@ -3993,7 +3993,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub ChkNopack_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkNoPack.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\nopack.txt" For Output As #nf
@@ -4009,7 +4009,7 @@ Dim nf As Integer
 
 End Sub
 Private Sub Chknopre_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkNoPre.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\nopre.txt" For Output As #nf
@@ -4026,7 +4026,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub Chkacuss_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkAcuSS.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\acumulass" For Output As #nf
@@ -4042,7 +4042,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub Chkacuet_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkAcuET.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\acumulaet" For Output As #nf
@@ -4059,20 +4059,20 @@ End Sub
 
 
 Private Sub ChkParked_Click()
-Dim nf As Integer
-If ChkParked.Value = vbChecked Then
-    nf = FreeFile()
-    Open App.Path & "\nopark" For Output As #nf
-    Close #nf
-Else
-    If Dir(App.Path & "\nopark") <> "" Then
-        Kill App.Path & "\nopark"
+    Dim nf As Integer
+    If ChkParked.Value = vbChecked Then
+        nf = FreeFile()
+        Open App.Path & "\nopark" For Output As #nf
+        Close #nf
+    Else
+        If Dir(App.Path & "\nopark") <> "" Then
+            Kill App.Path & "\nopark"
+        End If
     End If
-End If
 End Sub
 
 Private Sub ChkPosFam_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkPosFam.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\test.tst" For Output As #nf
@@ -4091,7 +4091,7 @@ Dim nf As Integer
     'Else
     '    lUpperNW = False
     'End If
-    
+
 End Sub
 Private Sub disableOrden()
     Option5.Value = False
@@ -4102,7 +4102,7 @@ Private Sub disableOrden()
     Option6.Enabled = False
     Option7.Enabled = False
     Option8.Enabled = False
-    
+
     If Dir(App.Path & "\asign1.tst") <> "" Then
         Kill App.Path & "\asign1.tst"
     End If
@@ -4115,11 +4115,11 @@ Private Sub disableOrden()
     If Dir(App.Path & "\asign4.tst") <> "" Then
         Kill App.Path & "\asign4.tst"
     End If
-    
+
 End Sub
 
 Private Sub ChkSHname_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If ChkSHname.Value = vbChecked Then
         nf = FreeFile()
         Open App.Path & "\shname.txt" For Output As #nf
@@ -4133,7 +4133,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub Option5_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If Option5.Value = True Then
         nf = FreeFile()
         Open App.Path & "\asign1.tst" For Output As #nf
@@ -4163,7 +4163,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub Option6_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If Option6.Value = True Then
         nf = FreeFile()
         Open App.Path & "\asign2.tst" For Output As #nf
@@ -4180,7 +4180,7 @@ Dim nf As Integer
         If Dir(App.Path & "\asign4.tst") <> "" Then
             Kill App.Path & "\asign4.tst"
         End If
-        
+
         If enLoad = False Then
             If Dir(Base_General) <> "" Then
                 AsignTec
@@ -4194,7 +4194,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub Option7_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If Option7.Value = True Then
         nf = FreeFile()
         Open App.Path & "\asign3.tst" For Output As #nf
@@ -4211,7 +4211,7 @@ Dim nf As Integer
         If Dir(App.Path & "\asign4.tst") <> "" Then
             Kill App.Path & "\asign4.tst"
         End If
-        
+
         If enLoad = False Then
             If Dir(Base_General) <> "" Then
                 AsignTec
@@ -4225,7 +4225,7 @@ Dim nf As Integer
 End Sub
 
 Private Sub Option8_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If Option8.Value = True Then
         nf = FreeFile()
         Open App.Path & "\asign4.tst" For Output As #nf
@@ -4242,7 +4242,7 @@ Dim nf As Integer
         If Dir(App.Path & "\asign3.tst") <> "" Then
             Kill App.Path & "\asign3.tst"
         End If
-        
+
         If enLoad = False Then
             If Dir(Base_General) <> "" Then
                 AsignTec
@@ -4257,7 +4257,7 @@ End Sub
 
 
 Private Sub chkAsignTec_Click()
-Dim nf As Integer
+    Dim nf As Integer
 
 
     If ChkAsignTec.Value = vbChecked Then
@@ -4314,14 +4314,14 @@ End Sub
 '\\\\\\\
 '///////
 Public Sub Form_Load()
-Dim Buffer As String
-Dim Contador As Long
-Dim PSerie As TRS232
-Dim bucle As Integer
-Dim MasterFile As Integer
+    Dim Buffer As String
+    Dim Contador As Long
+    Dim PSerie As TRS232
+    Dim bucle As Integer
+    Dim MasterFile As Integer
 
     enLoad = True
-    
+
     CheckAHO.Enabled = False
     LabelAHO.Enabled = False
     CheckAHO.Visible = False
@@ -4347,7 +4347,7 @@ Dim MasterFile As Integer
     Else
         ChkSHname.Value = vbUnchecked
     End If
-    
+
     If Dir(App.Path & "\asign.tst") <> "" Then
         ChkAsignTec.Value = vbChecked
     Else
@@ -4373,7 +4373,7 @@ Dim MasterFile As Integer
     Else
         Option8.Value = False
     End If
-    
+
     ''''''''''''''''''''''''''''''''''''''''''''''
     If Dir(App.Path & "\nolabel.txt") <> "" Then
         ChkNoLabel.Value = vbChecked
@@ -4406,7 +4406,7 @@ Dim MasterFile As Integer
     Else
         ChkParked.Value = vbUnchecked
     End If
-    
+
     '1.0.4
     Option2(0).Visible = False
     Option2(1).Visible = False
@@ -4443,8 +4443,8 @@ Dim MasterFile As Integer
         OptECO(0).Value = True
         If TipoV8 Then OptECO(1).Value = True
     End If
-    
-    
+
+
     If UsaECO2 Then
         ChkEcoLabel.Value = vbChecked
         If leco9600 Then option3.Value = vbChecked
@@ -4454,7 +4454,7 @@ Dim MasterFile As Integer
         If l49T Then Check49T.Value = vbChecked
         If l66T Then Check66T.Value = vbChecked
     Else
-    ' inhabilitar ...
+        ' inhabilitar ...
         option3.Enabled = False
         option4.Enabled = False
         CheckMarteNew.Enabled = False
@@ -4467,8 +4467,8 @@ Dim MasterFile As Integer
         If lMarteAlfa Then CheckMarteAlfa.Value = vbUnchecked
         If l49T Then Check49T.Value = vbUnchecked
         If l66T Then Check66T.Value = vbUnchecked
-   
-    '''''''''''''''''
+
+        '''''''''''''''''
     End If
     CmbPortV8.ListIndex = PuertoV8 - 1
     CmbPortLabel.ListIndex = PuertoLabel - 1
@@ -4479,7 +4479,7 @@ Dim MasterFile As Integer
     ChkPedidoFinalDia.Value = BoolToCheck(BorrarPedidoFin)
     ChkBorrarInventario.Value = BoolToCheck(BorrarInventario)
     ChkSolicitarInventario.Value = BoolToCheck(SolicitarInventario)
-    ChkInventarioFinal.Value = BoolToCheck(BorrarInventarioFin) 'BorrarInventario
+    ChkInventarioFinal.Value = BoolToCheck(BorrarInventarioFin)    'BorrarInventario
     ChkSolicitarPedidoFin.Value = BoolToCheck(SolicitarPedidoFin)
     ChkSolicitarInventarioFin.Value = BoolToCheck(SolicitarInventarioFin)
     If RechazarPlu0 Then ChkPlu0.Value = vbChecked
@@ -4506,7 +4506,7 @@ Dim MasterFile As Integer
     Else
         ChkModem.Value = vbUnchecked
     End If
-'    ChkModem_Click
+    '    ChkModem_Click
     If AhorraMas Then Frame15.Visible = True
     '************************
     ' modem
@@ -4529,9 +4529,9 @@ Dim MasterFile As Integer
     TxtPasarelaHost.TexT = PasarelaHost
     TxtPasarelaPort.TexT = PasarelaPuerto
     ChkClientes.Value = BoolToCheck(ClienteD)
-    
+
     Me.chkLin2040.Value = BoolToCheck(versionG)
-    
+
     ChkNoTiquet.Value = BoolToCheck(CheckNoTiquet)
     If Not usaSC10 Then
         OptSC10(0).Enabled = False
@@ -4642,7 +4642,7 @@ Dim MasterFile As Integer
     Else
         option4.Value = 0
     End If
-    If lMarteNew Then '2.0.9 Dir(App.Path & "\marte.new") <> "" Then
+    If lMarteNew Then    '2.0.9 Dir(App.Path & "\marte.new") <> "" Then
         CheckMarteNew.Value = vbChecked
     Else
         CheckMarteNew.Value = vbUnchecked
@@ -4704,84 +4704,84 @@ Dim MasterFile As Integer
     '******************
     PSerie = ConvierteSerie(cngvelocidad)
     Select Case PSerie.baudios
-        Case 19200
-            CmbVelocidad.TexT = CmbVelocidad.List(4)
-        Case 14400
-            CmbVelocidad.TexT = CmbVelocidad.List(3)
-        Case 9600
-            CmbVelocidad.TexT = CmbVelocidad.List(2)
-        Case 2400
-            CmbVelocidad.TexT = CmbVelocidad.List(1)
-        Case 1200
-            CmbVelocidad.TexT = CmbVelocidad.List(0)
+    Case 19200
+        CmbVelocidad.TexT = CmbVelocidad.List(4)
+    Case 14400
+        CmbVelocidad.TexT = CmbVelocidad.List(3)
+    Case 9600
+        CmbVelocidad.TexT = CmbVelocidad.List(2)
+    Case 2400
+        CmbVelocidad.TexT = CmbVelocidad.List(1)
+    Case 1200
+        CmbVelocidad.TexT = CmbVelocidad.List(0)
     End Select
     Select Case PSerie.bits
-        Case 8
-            CmbBits.TexT = CmbBits.List(0)
-        Case 7
-            CmbBits.TexT = CmbBits.List(1)
+    Case 8
+        CmbBits.TexT = CmbBits.List(0)
+    Case 7
+        CmbBits.TexT = CmbBits.List(1)
     End Select
     Select Case PSerie.paridad
-        Case "E"
-            CmbParidad.TexT = CmbParidad.List(0)
-        Case "O"
-            CmbParidad.TexT = CmbParidad.List(1)
-        Case "N"
-            CmbParidad.TexT = CmbParidad.List(2)
+    Case "E"
+        CmbParidad.TexT = CmbParidad.List(0)
+    Case "O"
+        CmbParidad.TexT = CmbParidad.List(1)
+    Case "N"
+        CmbParidad.TexT = CmbParidad.List(2)
     End Select
     Select Case PSerie.puerto
-        Case 1
-            CmbCOM.TexT = CmbCOM.List(0)
-        Case 2
-            CmbCOM.TexT = CmbCOM.List(1)
-        Case 3
-            CmbCOM.TexT = CmbCOM.List(2)
-        Case 4
-            CmbCOM.TexT = CmbCOM.List(3)
-        Case 5
-            CmbCOM.TexT = CmbCOM.List(4)
+    Case 1
+        CmbCOM.TexT = CmbCOM.List(0)
+    Case 2
+        CmbCOM.TexT = CmbCOM.List(1)
+    Case 3
+        CmbCOM.TexT = CmbCOM.List(2)
+    Case 4
+        CmbCOM.TexT = CmbCOM.List(3)
+    Case 5
+        CmbCOM.TexT = CmbCOM.List(4)
     End Select
     '****************
     ' Puerto Serie SC10
     '****************
     PSerie = ConvierteSerie(SC10ParametrosSerie)
     Select Case PSerie.baudios
-        Case 19200
-            CMBSC10Baudios.TexT = CMBSC10Baudios.List(4)
-        Case 14400
-            CMBSC10Baudios.TexT = CMBSC10Baudios.List(3)
-        Case 9600
-            CMBSC10Baudios.TexT = CMBSC10Baudios.List(2)
-        Case 2400
-            CMBSC10Baudios.TexT = CMBSC10Baudios.List(1)
-        Case 1200
-            CMBSC10Baudios.TexT = CMBSC10Baudios.List(0)
+    Case 19200
+        CMBSC10Baudios.TexT = CMBSC10Baudios.List(4)
+    Case 14400
+        CMBSC10Baudios.TexT = CMBSC10Baudios.List(3)
+    Case 9600
+        CMBSC10Baudios.TexT = CMBSC10Baudios.List(2)
+    Case 2400
+        CMBSC10Baudios.TexT = CMBSC10Baudios.List(1)
+    Case 1200
+        CMBSC10Baudios.TexT = CMBSC10Baudios.List(0)
     End Select
     Select Case PSerie.bits
-        Case 8
-            CmbSC10bits.TexT = CmbSC10bits.List(0)
-        Case 7
-            CmbSC10bits.TexT = CmbSC10bits.List(1)
+    Case 8
+        CmbSC10bits.TexT = CmbSC10bits.List(0)
+    Case 7
+        CmbSC10bits.TexT = CmbSC10bits.List(1)
     End Select
     Select Case PSerie.paridad
-        Case "E"
-            CmbSC10Paridad.TexT = CmbSC10Paridad.List(0)
-        Case "O"
-            CmbSC10Paridad.TexT = CmbSC10Paridad.List(1)
-        Case "N"
-            CmbSC10Paridad.TexT = CmbSC10Paridad.List(2)
+    Case "E"
+        CmbSC10Paridad.TexT = CmbSC10Paridad.List(0)
+    Case "O"
+        CmbSC10Paridad.TexT = CmbSC10Paridad.List(1)
+    Case "N"
+        CmbSC10Paridad.TexT = CmbSC10Paridad.List(2)
     End Select
     Select Case PSerie.puerto
-        Case 1
-            CmbSC10Port.TexT = CmbSC10Port.List(0)
-        Case 2
-            CmbSC10Port.TexT = CmbSC10Port.List(1)
-        Case 3
-            CmbSC10Port.TexT = CmbSC10Port.List(2)
-        Case 4
-            CmbSC10Port.TexT = CmbSC10Port.List(3)
-        Case 5
-            CmbSC10Port.TexT = CmbSC10Port.List(4)
+    Case 1
+        CmbSC10Port.TexT = CmbSC10Port.List(0)
+    Case 2
+        CmbSC10Port.TexT = CmbSC10Port.List(1)
+    Case 3
+        CmbSC10Port.TexT = CmbSC10Port.List(2)
+    Case 4
+        CmbSC10Port.TexT = CmbSC10Port.List(3)
+    Case 5
+        CmbSC10Port.TexT = CmbSC10Port.List(4)
     End Select
     If TipoC9 Then
         If CmbSC10bits.TexT = "7" And CmbSC10Paridad.TexT = "E" And CMBSC10Baudios.TexT = "1200" Then
@@ -4933,7 +4933,7 @@ Dim MasterFile As Integer
     '******************
     ' Moneda
     TxtSimbolo.TexT = SimboloMonetario
-    
+
     If IsNumeric(decimales) Then
         TxtDecimales.TexT = decimales
     Else
@@ -4945,8 +4945,8 @@ Dim MasterFile As Integer
     Else
         CmbMoneda.TexT = CmbMoneda.List(0)
     End If
-   QLMONEDA = False
-    
+    QLMONEDA = False
+
     ' ***********************
     ' Especiales
     If UsaBackup Then
@@ -4965,7 +4965,7 @@ Dim MasterFile As Integer
     TxtPositivo(0).TexT = Exp_Mas
     TxtPositivo(1).TexT = Exp_Menos
     ChkAbsoluto.Value = BoolToCheck(Exp_Absoluto)
-    
+
     TxtPathExport.TexT = Exp_Path
     If StoreFlow Then OptSC10(1).Enabled = False
     '
@@ -4977,7 +4977,7 @@ Dim MasterFile As Integer
     For bucle = 1 To 11
         Tabla.TabVisible(bucle) = False
     Next bucle
-    
+
     If ChkBorrarTotalGA.Value = 0 Then
         ChkGaReinit.Enabled = False
         ChkBorrarTotalSC10.Enabled = False
@@ -4991,10 +4991,10 @@ Dim MasterFile As Integer
         Option6.Enabled = False
         Option7.Enabled = False
         Option8.Enabled = False
-        
+
     End If
     enLoad = False
-    
+
 End Sub
 Private Sub CambiarIdioma()
     Me.Caption = CargaCadena(258)
@@ -5203,7 +5203,7 @@ Private Sub ChkContinua_Click()
         TxtIntervalo.TexT = TxtIntervalo.List(5)
         ChkEnvioContinuo.Enabled = True
     Else
-       
+
         LblIntervalo.Enabled = False
         TxtIntervalo.Enabled = False
         ChkEnvioContinuo.Enabled = False
@@ -5223,7 +5223,7 @@ Private Sub ChkEcoLabel_Click()
             ChkEcoNet.Value = vbUnchecked
             ChkSC10.Value = vbUnchecked
             ChkEcoPrint.Value = vbUnchecked
-            
+
         End If
         ChkGruposConservacion.Enabled = True
         option3.Enabled = True
@@ -5232,7 +5232,7 @@ Private Sub ChkEcoLabel_Click()
         CheckMarteAlfa.Enabled = True
         Check49T.Enabled = True
         Check66T.Enabled = True
-        
+
     Else
         ChkGamaAlta.Enabled = True
         ChkSC10.Enabled = True
@@ -5252,21 +5252,21 @@ Private Sub ChkEcoLabel_Click()
         CheckMarteAlfa.Value = 0
         Check49T.Value = 0
         Check66T.Value = 0
-        
+
         option3.Enabled = False
         option4.Enabled = False
         CheckMarteNew.Enabled = False
         CheckMarteAlfa.Enabled = False
         Check49T.Enabled = False
         Check66T.Enabled = False
-        
+
         option3.Refresh
         option4.Refresh
         CheckMarteNew.Refresh
         CheckMarteAlfa.Refresh
         Check49T.Refresh
         Check66T.Refresh
-        
+
     End If
 End Sub
 
@@ -5303,7 +5303,7 @@ Private Sub ChkEcoPrint_Click()
     Dim bucle As Integer
     DatosLista
     If ChkEcoPrint.Value = vbUnchecked Then
-        For bucle = 0 To 3 '4 'c2f iv4 ic 3
+        For bucle = 0 To 3    '4 'c2f iv4 ic 3
             OptIV4(bucle).Enabled = False
         Next bucle
         ChkGamaAlta.Enabled = True
@@ -5313,7 +5313,7 @@ Private Sub ChkEcoPrint_Click()
         ChkEcoPrint.Enabled = True
         Frame30.Enabled = False
     Else
-        For bucle = 0 To 3 '4 'c2f iv4 ic 3
+        For bucle = 0 To 3    '4 'c2f iv4 ic 3
             OptIV4(bucle).Enabled = True
         Next bucle
         OptIV4(0).Value = True
@@ -5352,44 +5352,44 @@ Private Sub ChkFichaVacuno_Click()
 End Sub
 
 Private Sub ChkGamaAlta_Click()
-Dim nMyFich As Integer
+    Dim nMyFich As Integer
 
-If ChkGamaAlta.Value = vbChecked Then
-    'If Dir(App.Path & "\ahorramas.cfg") <> "" Then
-    '    nMyFich = FreeFile()
-    '    Open App.Path & "\tiqahip.txt" For Output As #nMyFich
-    '    Close #nMyFich
-    'End If
-    DatosLista
-    ChkFichaVacuno.Enabled = True
-    'Frame7.Enabled = True
-    Frame14.Enabled = True
-    'ChkGruposConservacion.Enabled = True
-    'If ChkModem.Value = vbChecked Then
-    '    ChkSC10.Enabled = False
-    '    ChkSC10.Value = vbUnchecked
-    '    OPTRS232.Value = vbChecked
-    '    ChkEcoNet.Enabled = False
-    '    ChkEcoLabel.Enabled = False
-    '    ChkEcoPrint.Enabled = False
-    '    ChkEcoNet.Value = vbUnchecked
-    '    ChkEcoLabel.Value = vbUnchecked
-    '    ChkSC10.Value = vbUnchecked
-    'End If
-Else
-    'If Dir(App.Path & "\tiqahip.txt") <> "" Then
-    '    Kill App.Path & "\tiqahip.txt"
-    'End If
-    'ChkEcoNet.Enabled = True
-    'ChkEcoLabel.Enabled = True
-    'ChkEcoPrint.Enabled = True
-    'ChkSC10.Enabled = True
-    'DatosLista
-    'ChkFichaVacuno.Enabled = False
-    'Frame7.Enabled = False
-    'Frame14.Enabled = False
-    'If (OptSC10(1).Value) And (ChkEcoLabel.Value = vbUnchecked) Then ChkGruposConservacion.Enabled = False
-End If
+    If ChkGamaAlta.Value = vbChecked Then
+        'If Dir(App.Path & "\ahorramas.cfg") <> "" Then
+        '    nMyFich = FreeFile()
+        '    Open App.Path & "\tiqahip.txt" For Output As #nMyFich
+        '    Close #nMyFich
+        'End If
+        DatosLista
+        ChkFichaVacuno.Enabled = True
+        'Frame7.Enabled = True
+        Frame14.Enabled = True
+        'ChkGruposConservacion.Enabled = True
+        'If ChkModem.Value = vbChecked Then
+        '    ChkSC10.Enabled = False
+        '    ChkSC10.Value = vbUnchecked
+        '    OPTRS232.Value = vbChecked
+        '    ChkEcoNet.Enabled = False
+        '    ChkEcoLabel.Enabled = False
+        '    ChkEcoPrint.Enabled = False
+        '    ChkEcoNet.Value = vbUnchecked
+        '    ChkEcoLabel.Value = vbUnchecked
+        '    ChkSC10.Value = vbUnchecked
+        'End If
+    Else
+        'If Dir(App.Path & "\tiqahip.txt") <> "" Then
+        '    Kill App.Path & "\tiqahip.txt"
+        'End If
+        'ChkEcoNet.Enabled = True
+        'ChkEcoLabel.Enabled = True
+        'ChkEcoPrint.Enabled = True
+        'ChkSC10.Enabled = True
+        'DatosLista
+        'ChkFichaVacuno.Enabled = False
+        'Frame7.Enabled = False
+        'Frame14.Enabled = False
+        'If (OptSC10(1).Value) And (ChkEcoLabel.Value = vbUnchecked) Then ChkGruposConservacion.Enabled = False
+    End If
 End Sub
 
 Private Sub ChkIconificar_Click()
@@ -5448,13 +5448,13 @@ Private Sub chkSC10_Click()
     Dim nMyFich As Integer
     With Me
         If .ChkSC10.Value = vbChecked Then
-        
+
             'If Dir(App.Path & "\ahorramas.cfg") <> "" Then
             '    nMyFich = FreeFile()
             '    Open App.Path & "\tiqahsc.txt" For Output As #nMyFich
             '    Close #nMyFich
             'End If
-            
+
             DatosLista
             '.Frame8.Enabled = True
             .OptSC10(0).Enabled = True
@@ -5470,11 +5470,11 @@ Private Sub chkSC10_Click()
                 .ChkEcoPrint.Value = vbUnchecked
             End If
         Else
-            
+
             'If Dir(App.Path & "\ahorramas.cfg") <> "" And Dir(App.Path & "\tiqahsc.txt") <> "" Then
             '     Kill App.Path & "\tiqahsc.txt"
             'End If
-            
+
             DatosLista
             '.Frame8.Enabled = False
             .OptSC10(0).Value = True
@@ -5493,7 +5493,7 @@ End Sub
 
 
 Private Sub ChkTaquion_Click()
-Dim sruta As String
+    Dim sruta As String
     If ChkTaquion.Value = vbChecked Then
         ChkStoreFlow.Enabled = False
         ChkStoreFlow.Value = vbUnchecked
@@ -5549,8 +5549,8 @@ Private Sub CmbMoneda_Click()
         End If
         QLMONEDA = False
     End If
-    
-    
+
+
 End Sub
 
 
@@ -5558,45 +5558,45 @@ End Sub
 Private Sub CmbProtocolo_Click()
     Dim MyParam(3) As String
     Select Case CmbProtocolo.ListIndex
-        Case 0
-            MyParam(0) = "1200"
-            MyParam(1) = "E"
-            MyParam(2) = "7"
-        Case 1
-            MyParam(0) = "1200"
-            MyParam(1) = "N"
-            MyParam(2) = "8"
-        Case 2
-            MyParam(0) = "9600"
-            MyParam(1) = "N"
-            MyParam(2) = "8"
-        Case 3
-            MyParam(0) = "9600"
-            MyParam(1) = "E"
-            MyParam(2) = "8"
-        Case 4
-            MyParam(0) = "19200"
-            MyParam(1) = "N"
-            MyParam(2) = "8"
+    Case 0
+        MyParam(0) = "1200"
+        MyParam(1) = "E"
+        MyParam(2) = "7"
+    Case 1
+        MyParam(0) = "1200"
+        MyParam(1) = "N"
+        MyParam(2) = "8"
+    Case 2
+        MyParam(0) = "9600"
+        MyParam(1) = "N"
+        MyParam(2) = "8"
+    Case 3
+        MyParam(0) = "9600"
+        MyParam(1) = "E"
+        MyParam(2) = "8"
+    Case 4
+        MyParam(0) = "19200"
+        MyParam(1) = "N"
+        MyParam(2) = "8"
     End Select
     CmbSC10bits.TexT = MyParam(2)
     CMBSC10Baudios.TexT = MyParam(0)
     CmbSC10Paridad.TexT = MyParam(1)
-    
-    
+
+
 End Sub
 '\\\\\\
 '//////
 Private Sub Cmdaceptar_Click()
-Dim LaRespuesta As Variant
-Dim BufferSimbolo As String
-Dim BufferDecimales As String
-Dim Devuelve As Boolean
-Dim bucle As Integer
-Dim MasterFile As Integer
+    Dim LaRespuesta As Variant
+    Dim BufferSimbolo As String
+    Dim BufferDecimales As String
+    Dim Devuelve As Boolean
+    Dim bucle As Integer
+    Dim MasterFile As Integer
     If ChkGamaAlta.Value = vbUnchecked And ChkSC10.Value = vbUnchecked And _
-    ChkEcoNet.Value = vbUnchecked And ChkEcoLabel.Value = vbUnchecked And _
-    ChkEcoPrint.Value = vbUnchecked Then
+       ChkEcoNet.Value = vbUnchecked And ChkEcoLabel.Value = vbUnchecked And _
+       ChkEcoPrint.Value = vbUnchecked Then
         MsgBox CargaCadena(270), vbCritical
         Exit Sub
     End If
@@ -5611,7 +5611,7 @@ Dim MasterFile As Integer
             End If
         End If
     End If
-    
+
     If Trim(Txtdias.TexT) = "" Then Txtdias.TexT = "0"
     If Trim(TxtBackupErase.TexT) = "" Then TxtBackupErase.TexT = "0"
     TxtPathExport.TexT = Trim(TxtPathExport.TexT)
@@ -5741,7 +5741,7 @@ Dim MasterFile As Integer
     ' fin storeflow
     '*************************
     If (Trim(TxtFamiliaVacuno.TexT) <> "" And Trim(TxtEtiquetaVacuno.TexT) = "") _
-    Or (Trim(TxtFamiliaVacuno.TexT) = "" And Trim(TxtEtiquetaVacuno.TexT) <> "") Then
+       Or (Trim(TxtFamiliaVacuno.TexT) = "" And Trim(TxtEtiquetaVacuno.TexT) <> "") Then
         'MsgBox "Para definir la Familia Especial debe definir tanto la familia como la etiqueta"
         MsgBox CargaCadena(271)
         Tabla.Tab = 5
@@ -5780,15 +5780,15 @@ End Sub
 
 
 Private Sub CmdCarpeta_Click(Index As Integer)
-Dim Carpeta As New ClassPath
+    Dim Carpeta As New ClassPath
     Me.Enabled = False
     Carpeta.Show
     If Carpeta.Path <> "" Then
         Select Case Index
-            Case 0
-                TxtBackup.TexT = Carpeta.Path
-            Case 1
-                TxtPathExport.TexT = Carpeta.Path
+        Case 0
+            TxtBackup.TexT = Carpeta.Path
+        Case 1
+            TxtPathExport.TexT = Carpeta.Path
         End Select
     End If
     Me.Enabled = True
@@ -5798,14 +5798,14 @@ End Sub
 '    frmSC10path.Show vbModal, Me
 'End Sub
 Public Sub Antonio_Banderas()
-    '*****************************
-    ' Para cubrir las peticiones
-    ' del S.A.C. sobre idiomas
-    ' solicitadas por Antonio,
-    ' incluímos aquí la carga
-    ' de banderas para los idiomas,
-    ' de modo dinámico
-    '******************************
+'*****************************
+' Para cubrir las peticiones
+' del S.A.C. sobre idiomas
+' solicitadas por Antonio,
+' incluímos aquí la carga
+' de banderas para los idiomas,
+' de modo dinámico
+'******************************
     Dim bucle As Integer
     For bucle = 1 To 10
         If Dir(App.Path & "\langtouch\" & bucle & ".ico") <> "" Then
@@ -5820,7 +5820,7 @@ Private Sub DatosLista()
     Lista.ListItems.Clear
     Lista.ListItems.Add , "L00", "General"
     'If ChkGamaAlta.Value = vbChecked Then
-        Lista.ListItems.Add , "L01", "TouchScale"
+    Lista.ListItems.Add , "L01", "TouchScale"
     'End If
     'If ChkSC10.Value = vbChecked Then
     '    If OptSC10(0).Value = True Then
@@ -5830,7 +5830,7 @@ Private Sub DatosLista()
     '    End If
     'End If
     'If ChkSC10.Value = vbChecked Or ChkGamaAlta.Value = vbChecked Then
-        Lista.ListItems.Add , "L03", CargaCadena(602)
+    Lista.ListItems.Add , "L03", CargaCadena(602)
     'End If
     Lista.ListItems.Add , "L04", CargaCadena(601)
     'If ChkEcoPrint.Value = vbChecked Then
@@ -5880,14 +5880,14 @@ End Sub
 
 Private Sub Opciones_Multi()
     If HayMulti Then
-       
+
         ChkPantallas.Visible = False
         TxtPuertoPantallas.Visible = False
         Frame6.Visible = False
         Frame18.Visible = False
         Frame19.Visible = False
-        Frame13.Visible = True 'marcos (barnapes)
-       
+        Frame13.Visible = True    'marcos (barnapes)
+
         Label46.Caption = "Configuración General de la Tienda " & TiendaActual
     End If
 End Sub
@@ -5902,7 +5902,7 @@ Private Function ConvierteSerie(ByVal CadenaSerie As String) As TRS232
         Contador = Contador + 1
     Loop
     Devuelve.baudios = Trim(Buffer)
-    
+
     Buffer = ""
     Contador = Contador + 1
     Do Until Mid(CadenaSerie, Contador, 1) = ","
@@ -5959,7 +5959,7 @@ Private Sub Lista_ItemClick(ByVal Item As MSComctlLib.ListItem)
     MyVal = Val(Mid(Item.Key, 2))
 
     For bucle = 0 To 11
-        
+
         If bucle <> MyVal Then
             Tabla.TabVisible(bucle) = False
         Else
@@ -5997,7 +5997,7 @@ Private Sub Option3_Click()
             '    Kill App.Path & "\eco19200.txt"
             'End If
             option4.Value = 0
-          
+
             'n = FreeFile()
             'Open App.Path & "\eco9600.txt" For Output As #n
             'Close #n
@@ -6040,12 +6040,12 @@ End Sub
 
 Private Sub OptIV4_Click(Index As Integer)
     Dim n As Integer
-    
+
     Select Case Index
-        Case 2
-            ChkPedidoIV4.Visible = True
-        Case Else
-            ChkPedidoIV4.Visible = False
+    Case 2
+        ChkPedidoIV4.Visible = True
+    Case Else
+        ChkPedidoIV4.Visible = False
     End Select
     'c2f iv4 IC+
     For n = 0 To 3
@@ -6070,87 +6070,87 @@ End Sub
 Private Sub OptSC10_Click(Index As Integer)
     DatosLista
     Select Case OptSC10(0).Value
-        Case True
-            OptSC10Comu(2).Visible = True
-            LblSC10IP.Visible = True
-            LblSC10TCP.Visible = True
-            TxtIPSC10.Visible = True
-            TxtTCPSC10.Visible = True
-            OptSC10Comu(0).Visible = True
-            OptSC10Comu(1).Visible = True
-            Label6.Visible = True
-            TxtPathSC10.Visible = True
-            CmdElegirPAthSC10.Visible = True
-            lblProtocolo.Visible = False
-            CmbProtocolo.Visible = False
-            LblTipoC9.Visible = False
-            CmbTipoC9.Visible = False
-            CmbSC10bits.Enabled = True
-            CmbSC10Paridad.Enabled = True
-            CMBSC10Baudios.Enabled = True
-            ChkGruposConservacion.Enabled = True
-            ChkTotalesSC10(1).Visible = True
-            ChkTotalesSC10(2).Visible = True
-            ChkTotalesSC10(3).Visible = True
-            ChkBorrarTiquet.Visible = True
-            ChkBorrarEti.Visible = True
-            'Frame8.Caption = "SC10"
-            ChkBorrarTotalSC10.Caption = CargaCadena(38) & " " & CargaCadena(643)
-            Chk4Lineas.Visible = True
-            Me.chkC9Cod.Value = 0
-            Me.chkC9Cod.Enabled = False
-        Case False
-            Chk4Lineas.Visible = False
-            ChkTotalesSC10(1).Visible = False
-            ChkTotalesSC10(2).Visible = False
-            ChkTotalesSC10(3).Visible = False
-            ChkBorrarTiquet.Visible = False
-            ChkBorrarEti.Visible = False
-            CmbProtocolo.TexT = CmbProtocolo.List(0)
-            CmbSC10bits.TexT = "7"
-            CmbSC10Paridad.TexT = "E"
-            CMBSC10Baudios.TexT = "1200"
-            OptSC10Comu(0).Visible = False
-            OptSC10Comu(1).Visible = False
-            
-            '1.7.19 se pretende que C9/c10 tambien conecte TCP
-            'OptSC10Comu(2).Visible = False
-            'LblSC10IP.Visible = False
-            'LblSC10TCP.Visible = False
-            'TxtIPSC10.Visible = False
-            'TxtTCPSC10.Visible = False
-            ''''''''''''''''''''''''''''''''''''''''''''''''''''
-            OptSC10Comu(2).Visible = True
-            LblSC10IP.Visible = True
-            LblSC10TCP.Visible = True
-            TxtIPSC10.Visible = True
-            TxtTCPSC10.Visible = True
-            ''''''''''''''''''''''''''''''''''''''''''''''''''''
-            
-            OptSC10Comu(1).Value = True
-            Label6.Visible = False
-            TxtPathSC10.Visible = False
-            CmdElegirPAthSC10.Visible = False
-            lblProtocolo.Visible = True
-            CmbProtocolo.Visible = True
-            CmbSC10bits.Enabled = False
-            CmbSC10Paridad.Enabled = False
-            CMBSC10Baudios.Enabled = False
-            LblTipoC9.Visible = True
-            CmbTipoC9.Visible = True
-            If CmbTipoC9.TexT = "" Then CmbTipoC9.TexT = CmbTipoC9.List(0)
-            If ChkGamaAlta.Value = vbUnchecked And ChkEcoLabel.Value = vbUnchecked Then
-                ChkGruposConservacion.Enabled = False
-                ChkGruposConservacion.Value = vbUnchecked
-            End If
-            'Frame8.Caption = "C9/C10"
-            ChkBorrarTotalSC10.Caption = CargaCadena(38) & " " & CargaCadena(643)
-            Me.chkC9Cod.Enabled = True
+    Case True
+        OptSC10Comu(2).Visible = True
+        LblSC10IP.Visible = True
+        LblSC10TCP.Visible = True
+        TxtIPSC10.Visible = True
+        TxtTCPSC10.Visible = True
+        OptSC10Comu(0).Visible = True
+        OptSC10Comu(1).Visible = True
+        Label6.Visible = True
+        TxtPathSC10.Visible = True
+        CmdElegirPAthSC10.Visible = True
+        lblProtocolo.Visible = False
+        CmbProtocolo.Visible = False
+        LblTipoC9.Visible = False
+        CmbTipoC9.Visible = False
+        CmbSC10bits.Enabled = True
+        CmbSC10Paridad.Enabled = True
+        CMBSC10Baudios.Enabled = True
+        ChkGruposConservacion.Enabled = True
+        ChkTotalesSC10(1).Visible = True
+        ChkTotalesSC10(2).Visible = True
+        ChkTotalesSC10(3).Visible = True
+        ChkBorrarTiquet.Visible = True
+        ChkBorrarEti.Visible = True
+        'Frame8.Caption = "SC10"
+        ChkBorrarTotalSC10.Caption = CargaCadena(38) & " " & CargaCadena(643)
+        Chk4Lineas.Visible = True
+        Me.chkC9Cod.Value = 0
+        Me.chkC9Cod.Enabled = False
+    Case False
+        Chk4Lineas.Visible = False
+        ChkTotalesSC10(1).Visible = False
+        ChkTotalesSC10(2).Visible = False
+        ChkTotalesSC10(3).Visible = False
+        ChkBorrarTiquet.Visible = False
+        ChkBorrarEti.Visible = False
+        CmbProtocolo.TexT = CmbProtocolo.List(0)
+        CmbSC10bits.TexT = "7"
+        CmbSC10Paridad.TexT = "E"
+        CMBSC10Baudios.TexT = "1200"
+        OptSC10Comu(0).Visible = False
+        OptSC10Comu(1).Visible = False
+
+        '1.7.19 se pretende que C9/c10 tambien conecte TCP
+        'OptSC10Comu(2).Visible = False
+        'LblSC10IP.Visible = False
+        'LblSC10TCP.Visible = False
+        'TxtIPSC10.Visible = False
+        'TxtTCPSC10.Visible = False
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''
+        OptSC10Comu(2).Visible = True
+        LblSC10IP.Visible = True
+        LblSC10TCP.Visible = True
+        TxtIPSC10.Visible = True
+        TxtTCPSC10.Visible = True
+        ''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+        OptSC10Comu(1).Value = True
+        Label6.Visible = False
+        TxtPathSC10.Visible = False
+        CmdElegirPAthSC10.Visible = False
+        lblProtocolo.Visible = True
+        CmbProtocolo.Visible = True
+        CmbSC10bits.Enabled = False
+        CmbSC10Paridad.Enabled = False
+        CMBSC10Baudios.Enabled = False
+        LblTipoC9.Visible = True
+        CmbTipoC9.Visible = True
+        If CmbTipoC9.TexT = "" Then CmbTipoC9.TexT = CmbTipoC9.List(0)
+        If ChkGamaAlta.Value = vbUnchecked And ChkEcoLabel.Value = vbUnchecked Then
+            ChkGruposConservacion.Enabled = False
+            ChkGruposConservacion.Value = vbUnchecked
+        End If
+        'Frame8.Caption = "C9/C10"
+        ChkBorrarTotalSC10.Caption = CargaCadena(38) & " " & CargaCadena(643)
+        Me.chkC9Cod.Enabled = True
     End Select
 End Sub
 '//////
 Private Sub chkC9Cod_Click()
-Dim Res As Integer
+    Dim Res As Integer
     With Me
         If (.chkC9Cod.Value = 1) Then
             Res = verifica_C9Cod
@@ -6177,15 +6177,15 @@ Dim Res As Integer
     End With
 End Sub
 Private Function verifica_C9Cod() As Integer
-Dim db As dao.Database
-Dim rst As dao.Recordset
-Dim sSQL As String
-Dim Res As Integer
+    Dim db As dao.Database
+    Dim rst As dao.Recordset
+    Dim sSQL As String
+    Dim Res As Integer
     Set db = OpenDatabase(Base_General)
     sSQL = "SELECT DISTINCT secc_maqui " & _
            "FROM Seccion " & _
            "WHERE enviardatos=" & "'" & "SC10" & "'" & _
-           " AND borrado=false " & _
+         " AND borrado=false " & _
            "ORDER BY secc_maqui"
     Set rst = db.OpenRecordset(sSQL)
     Res = 0
@@ -6199,7 +6199,7 @@ Dim Res As Integer
     db.Close
     Set db = Nothing
     'Workspaces(0).close
-    
+
     verifica_C9Cod = Res
 End Function
 '\\\\\\\\\\\
@@ -6330,11 +6330,11 @@ End Sub
 
 Private Sub TxtEquipoLabel_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 
@@ -6344,11 +6344,11 @@ End Sub
 
 Private Sub TxtEquipoV8_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 
@@ -6361,7 +6361,7 @@ Private Sub TxtEtiquetaVacuno_keypress(KeyAscii As Integer)
     If KeyAscii = 8 Then Exit Sub
     If KeyAscii < 48 Or KeyAscii > 57 Then TxtEtiquetaVacuno.Locked = True
     If Len(TxtEtiquetaVacuno.TexT) >= 2 Then TxtEtiquetaVacuno.Locked = True
-    
+
 End Sub
 
 Private Sub TxtEtiquetaVacuno_LostFocus()
@@ -6399,18 +6399,18 @@ End Sub
 Private Sub TxtNombreTicket_KeyPress(KeyAscii As Integer)
     TxtNombreTicket.Locked = False
     Select Case KeyAscii
-        Case 98
-            KeyAscii = 66
-        Case 116
-            KeyAscii = 84
-        Case 115
-            KeyAscii = 83
-        Case 120
-            KeyAscii = 88
-        Case 99
-            KeyAscii = 67
-        Case 118
-            KeyAscii = 86
+    Case 98
+        KeyAscii = 66
+    Case 116
+        KeyAscii = 84
+    Case 115
+        KeyAscii = 83
+    Case 120
+        KeyAscii = 88
+    Case 99
+        KeyAscii = 67
+    Case 118
+        KeyAscii = 86
     End Select
     If KeyAscii <> 86 And KeyAscii <> 67 And KeyAscii <> 66 And KeyAscii <> 84 And KeyAscii <> 83 And KeyAscii <> 88 And KeyAscii <> 8 Then
         TxtNombreTicket.Locked = True
@@ -6421,9 +6421,9 @@ End Sub
 
 Private Sub TxtPasarelaHost_LostFocus()
     If (Not IsNumeric(left(TxtPasarelaHost.TexT, 3))) Or _
-    (Not IsNumeric(Mid(TxtPasarelaHost.TexT, 5, 3))) Or _
-    (Not IsNumeric(Mid(TxtPasarelaHost.TexT, 9, 3))) Or _
-    (Not IsNumeric(Right(TxtPasarelaHost.TexT, 3))) Then
+       (Not IsNumeric(Mid(TxtPasarelaHost.TexT, 5, 3))) Or _
+       (Not IsNumeric(Mid(TxtPasarelaHost.TexT, 9, 3))) Or _
+       (Not IsNumeric(Right(TxtPasarelaHost.TexT, 3))) Then
         MsgBox CargaCadena(957), vbExclamation  '"Dirección IP incorrecta", vbExclamation
         Tabla.Tab = 0
         TxtPasarelaHost.SetFocus
@@ -6432,9 +6432,9 @@ Private Sub TxtPasarelaHost_LostFocus()
            (Val(Mid(TxtPasarelaHost.TexT, 5, 3)) > 255) Or _
            (Val(Mid(TxtPasarelaHost.TexT, 9, 3)) > 255) Or _
            (Val(Right(TxtPasarelaHost.TexT, 3)) > 255) Then
-                MsgBox CargaCadena(957), vbExclamation  '"Dirección IP incorrecta", vbExclamation
-                Tabla.Tab = 0
-                TxtPasarelaHost.SetFocus
+            MsgBox CargaCadena(957), vbExclamation  '"Dirección IP incorrecta", vbExclamation
+            Tabla.Tab = 0
+            TxtPasarelaHost.SetFocus
         End If
     End If
 End Sub
@@ -6443,11 +6443,11 @@ End Sub
 
 Private Sub TxtPasarelaPort_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case 48 To 57
-        Case Else
-            KeyAscii = 0
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case 48 To 57
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 

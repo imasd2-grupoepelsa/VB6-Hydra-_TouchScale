@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "msmask32.ocx"
+Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "MSMASK32.OCX"
 Begin VB.Form FrmPeriodo 
    Caption         =   "Resumen Impuestos Balanza."
    ClientHeight    =   2295
@@ -177,14 +177,14 @@ Option Explicit
 
 Private Sub Command1_Click()
     If (CDate(TxtFecha(0).TexT) >= CDate(TextIni.TexT)) And (CDate(TxtFecha(1).TexT) <= CDate(TextFin.TexT)) _
-    And (CDate(TxtFecha(0).TexT) <= CDate(TextFin.TexT)) And (CDate(TxtFecha(1).TexT) >= CDate(TextIni.TexT)) Then
+       And (CDate(TxtFecha(0).TexT) <= CDate(TextFin.TexT)) And (CDate(TxtFecha(1).TexT) >= CDate(TextIni.TexT)) Then
         If (CDate(TxtFecha(0).TexT) >= CDate(TextIni.TexT)) And (CDate(TxtFecha(0).TexT) <= CDate(TextFin.TexT)) Then
             If (CDate(TxtFecha(1).TexT) >= CDate(TextIni.TexT)) And (CDate(TxtFecha(1).TexT) <= CDate(TextFin.TexT)) Then
-            
+
                 If (CDate(TxtFecha(0).TexT) <= CDate(TxtFecha(1).TexT)) Then
                     myPER1 = CDate(FrmPeriodo.TxtFecha(0).TexT)
                     myPER2 = CDate(FrmPeriodo.TxtFecha(1).TexT)
-                
+
                     salir = 69
                     Unload Me
                 End If
@@ -228,7 +228,7 @@ Private Sub Form_Load()
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
-    'SALIR = False
+'SALIR = False
     Do_Events
     Sleep (10)
     'FrmConsultaTiquets.Enabled = True

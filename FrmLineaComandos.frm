@@ -267,7 +267,7 @@ Private QL As Boolean
 '\\\\\\\\\\\\\\\\\\\\\
 '/////////////////////
 Private Sub Form_Load()
-Dim bucle As Integer
+    Dim bucle As Integer
     If HayMulti Then
         Label1.Visible = True
     Else
@@ -288,7 +288,7 @@ Dim bucle As Integer
     Refresca_Definiciones
 End Sub
 Private Sub CambiarIdioma()
-Dim bucle As Integer
+    Dim bucle As Integer
     FrmLineaComandos.Caption = CargaCadena(682)
     LblInfo.Caption = CargaCadena(524)
     Label2.Caption = CargaCadena(744)
@@ -305,7 +305,7 @@ End Sub
 Private Sub cmbaccion_Click()
     Dim bucle As Integer
     'If Val(left(cmbaccion.TexT, 3)) = 17 Or Val(left(cmbaccion.TexT, 3)) = 19 _
-    'Or Val(left(cmbaccion.TexT, 3)) = 34 Or Val(left(cmbaccion.TexT, 3)) = 38 Then
+     'Or Val(left(cmbaccion.TexT, 3)) = 34 Or Val(left(cmbaccion.TexT, 3)) = 38 Then
     If Val(left(cmbaccion.TexT, 3)) = 7 Or Val(left(cmbaccion.TexT, 3)) = 15 Then
         For bucle = 0 To 3
             lblAdicional(bucle).Visible = True
@@ -324,7 +324,7 @@ Private Sub cmbaccion_Click()
 End Sub
 
 Private Sub CmbTexto_Click()
-RefrescaDatos
+    RefrescaDatos
 End Sub
 
 Private Sub CmbTexto_LostFocus()
@@ -343,7 +343,7 @@ Private Sub graba_Fichero()
     Close #Fichero
 End Sub
 Private Sub Cmdaceptar_Click()
-    
+
     Dim bucle As Integer
     Dim B2 As Integer
     Dim Buffer As String
@@ -361,7 +361,7 @@ Private Sub Cmdaceptar_Click()
         Exit Sub
     End If
     'If Val(left(cmbaccion.TexT, 3)) = 36 Or Val(left(cmbaccion.TexT, 3)) = 17 Or _
-    'Val(left(cmbaccion.TexT, 3)) = 19 Or Val(left(cmbaccion.TexT, 3)) = 34 Or Val(left(cmbaccion.TexT, 3)) = 38 Then
+     'Val(left(cmbaccion.TexT, 3)) = 19 Or Val(left(cmbaccion.TexT, 3)) = 34 Or Val(left(cmbaccion.TexT, 3)) = 38 Then
     If Val(left(cmbaccion.TexT, 3)) = 7 Or Val(left(cmbaccion.TexT, 3)) = 15 Then
         If Trim(TxtAdicional(0).TexT) = "" And Trim(TxtAdicional(1).TexT) = "" And Trim(TxtAdicional(2).TexT) = "" And Trim(TxtAdicional(3).TexT) = "" Then
             MsgBox CargaCadena(749)  '"Escriba los nombres de los ficheros"
@@ -369,19 +369,19 @@ Private Sub Cmdaceptar_Click()
         End If
     End If
     If ChkSalir.Value = vbChecked Then
-            Buffer = "Y"
-        Else
-            Buffer = "N"
-        End If
-        'If Val(left(cmbaccion.TexT, 3)) = 17 Or Val(left(cmbaccion.TexT, 3)) = 36 _
-        'Or Val(left(cmbaccion.TexT, 3)) = 19 Or Val(left(cmbaccion.TexT, 3)) = 34 Or Val(left(cmbaccion.TexT, 3)) = 38 Then
-        If Val(left(cmbaccion.TexT, 3)) = 7 Or Val(left(cmbaccion.TexT, 3)) = 15 Then
-            For B2 = 0 To 3
-                If Trim(TxtAdicional(B2).TexT) <> "" Then
-                    If B2 > 0 Then Buffer = Buffer & "\"
-                    Buffer = Buffer & TxtAdicional(B2).TexT
-                End If
-            Next B2
+        Buffer = "Y"
+    Else
+        Buffer = "N"
+    End If
+    'If Val(left(cmbaccion.TexT, 3)) = 17 Or Val(left(cmbaccion.TexT, 3)) = 36 _
+     'Or Val(left(cmbaccion.TexT, 3)) = 19 Or Val(left(cmbaccion.TexT, 3)) = 34 Or Val(left(cmbaccion.TexT, 3)) = 38 Then
+    If Val(left(cmbaccion.TexT, 3)) = 7 Or Val(left(cmbaccion.TexT, 3)) = 15 Then
+        For B2 = 0 To 3
+            If Trim(TxtAdicional(B2).TexT) <> "" Then
+                If B2 > 0 Then Buffer = Buffer & "\"
+                Buffer = Buffer & TxtAdicional(B2).TexT
+            End If
+        Next B2
     End If
     For bucle = 1 To CuentaDefiniciones
         If CmbTexto.TexT = Definiciones(bucle).texto Then
@@ -403,7 +403,7 @@ Private Sub Cmdaceptar_Click()
         Definiciones(CuentaDefiniciones).Adicional = Buffer
     End If
     graba_Fichero
-    
+
     CmbTexto.TexT = ""
     For bucle = 0 To 3
         TxtAdicional(bucle).TexT = ""
@@ -414,7 +414,7 @@ Private Sub Cmdaceptar_Click()
         refresca_CmbAccion
         Refresca_Definiciones
     Next bucle
-    
+
 End Sub
 
 Private Sub CmdBorrar_Click()
@@ -430,7 +430,7 @@ Private Sub CmdBorrar_Click()
             Exit For
         End If
     Next bucle
-    
+
     If eNCONTRADO Then
         Contador = 1
         ReDim Def2(CuentaDefiniciones)
@@ -511,9 +511,9 @@ Private Sub RefrescaDatos()
                     ChkSalir.Value = vbUnchecked
                 End If
                 'If Val(left(Definiciones(bucle).accion, 3)) = "17" _
-                'Or Val(left(Definiciones(bucle).accion, 3)) = "19" _
-                'Or Val(left(Definiciones(bucle).accion, 3)) = "34" _
-                'Or Val(left(Definiciones(bucle).accion, 3)) = "38" Then
+                 'Or Val(left(Definiciones(bucle).accion, 3)) = "19" _
+                 'Or Val(left(Definiciones(bucle).accion, 3)) = "34" _
+                 'Or Val(left(Definiciones(bucle).accion, 3)) = "38" Then
                 If Val(left(cmbaccion.TexT, 3)) = 7 Or Val(left(cmbaccion.TexT, 3)) = 15 Then
                     Ctdor = 0
                     For B2 = 0 To 3
@@ -586,65 +586,65 @@ End Sub
 Private Sub refresca_CmbAccion()
     cmbaccion.Clear
     cmbaccion.AddItem "1   " & CargaCadena(764)
-    
+
     cmbaccion.AddItem "2   " & CargaCadena(151)
-    
+
     cmbaccion.AddItem "3   " & CargaCadena(587)
-    
+
     cmbaccion.AddItem "4   " & CargaCadena(233)
-    
+
     cmbaccion.AddItem "5   " & CargaCadena(813)
-    
+
     cmbaccion.AddItem "6   " & CargaCadena(161)
-    
+
     cmbaccion.AddItem "7   " & CargaCadena(685)
-    
+
     cmbaccion.AddItem "8   " & CargaCadena(1197) & " " & CargaCadena(580)
-    
+
     cmbaccion.AddItem "9   " & CargaCadena(1197) & " " & CargaCadena(526)
-    
+
     cmbaccion.AddItem "10  " & CargaCadena(1197) & " " & CargaCadena(13)
-    
+
     cmbaccion.AddItem "11  " & CargaCadena(1197) & " " & CargaCadena(23)
-    
+
     cmbaccion.AddItem "12  " & CargaCadena(1197) & " " & CargaCadena(24)
-    
+
     cmbaccion.AddItem "13  " & CargaCadena(1197) & " " & CargaCadena(8)
-    
+
     cmbaccion.AddItem "14  " & CargaCadena(43) & " " & CargaCadena(8)
-    
+
     cmbaccion.AddItem "15  " & CargaCadena(685) & " + " & CargaCadena(151)
-    
+
     cmbaccion.AddItem "16  " & CargaCadena(1266)
-    
+
     cmbaccion.AddItem "17  " & CargaCadena(1269)
-    
+
     cmbaccion.AddItem "18  " & CargaCadena(161) & " + " & CargaCadena(203)
-    
+
     cmbaccion.AddItem "19  " & CargaCadena(1270)
-    
+
     cmbaccion.AddItem "20  " & "ERASE TOTALS TABLES"
-    
+
     cmbaccion.AddItem "21  " & CargaCadena(236) & " + " & CargaCadena(1056) & ".dat"
-    
+
     cmbaccion.AddItem "22  " & CargaCadena(236) & " + " & "FAMPOS" & ".dat"
-    
+
     cmbaccion.AddItem "23  " & CargaCadena(236) & " + " & "VENPOS" & ".dat"
-    
+
     cmbaccion.AddItem "24  " & CargaCadena(692) & " " & "TOTALES" & ".dat" & " " & "(not exported)"
-    
+
     cmbaccion.AddItem "25  " & CargaCadena(692) & " " & "TOTALES" & ".dat" & " " & "(all)"
-    
+
     cmbaccion.AddItem "26  " & CargaCadena(692) & " " & "files into END_DAY.ini (all)"
-    
+
     cmbaccion.AddItem "27  " & "Kill Server data. (Use under your own responsability)"
-    
+
     cmbaccion.AddItem "28  " & CargaCadena(692) & " " & "files into END_DAY.ini (not exported)"
-    
+
     cmbaccion.AddItem "29  " & CargaCadena(1175)
-    
+
     cmbaccion.AddItem "30  " & CargaCadena(1175) & " " & CargaCadena(151)
-    
+
     cmbaccion.AddItem "31  " & CargaCadena(1093)
     cmbaccion.AddItem "32  " & CargaCadena(1094)
     cmbaccion.AddItem "33  " & CargaCadena(1197) & " " & CargaCadena(321)

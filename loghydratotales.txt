@@ -1870,3 +1870,7 @@
 07/11/2025 10:46:15-->No localizado --> Almacenando Cabecera de Tiquet : 214Sec : 1Bal : 5Importe : 3,85Fecha : 20/10/2025Hora : 11:55:20
 07/11/2025 10:46:15-->Marcando:update mbd.hTickets set Captured='*' where id=237
 07/11/2025 10:46:53 Program HYDRATOUCH Started *************************************
+10/02/2026 11:37:56 Program HYDRATOUCH Started *************************************
+10/02/2026 13:33:36 Program HYDRATOUCH Started *************************************
+10/02/2026 13:33:54 Program HYDRATOUCH Started *************************************
+10/02/2026 13:34:18 Program HYDRATOUCH Started *************************************

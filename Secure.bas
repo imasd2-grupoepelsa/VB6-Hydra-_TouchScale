@@ -4,149 +4,149 @@ Public Function Encripta(texto As String) As String
     Dim Cl1 As String
     Dim Cl2 As String
     Dim MiSalida As String
-    Dim Bucle As Integer
-    For Bucle = 0 To 255
-        Cl2 = Cl2 & Chr(Bucle)
-    Next Bucle
-    For Bucle = 255 To 133 Step -1
-        Cl1 = Cl1 & Chr(Bucle)
-    Next Bucle
-    For Bucle = 0 To 132
-        Cl1 = Cl1 & Chr(Bucle)
-    Next Bucle
-    For Bucle = 1 To Len(texto)
-        MiSalida = MiSalida & Mid(Cl1, InStr(Cl2, Mid(texto, Bucle, 1)), 1)
-    Next Bucle
+    Dim bucle As Integer
+    For bucle = 0 To 255
+        Cl2 = Cl2 & Chr(bucle)
+    Next bucle
+    For bucle = 255 To 133 Step -1
+        Cl1 = Cl1 & Chr(bucle)
+    Next bucle
+    For bucle = 0 To 132
+        Cl1 = Cl1 & Chr(bucle)
+    Next bucle
+    For bucle = 1 To Len(texto)
+        MiSalida = MiSalida & Mid(Cl1, InStr(Cl2, Mid(texto, bucle, 1)), 1)
+    Next bucle
     Encripta = MiSalida
 End Function
 Public Function DesEncripta(texto As String) As String
     Dim Cl1 As String
     Dim Cl2 As String
     Dim MiSalida As String
-    Dim Bucle As Integer
-    For Bucle = 0 To 255
-        Cl1 = Cl1 & Chr(Bucle)
-    Next Bucle
-    For Bucle = 255 To 133 Step -1
-        Cl2 = Cl2 & Chr(Bucle)
-    Next Bucle
-    For Bucle = 0 To 132
-        Cl2 = Cl2 & Chr(Bucle)
-    Next Bucle
-    For Bucle = 1 To Len(texto)
-        MiSalida = MiSalida & Mid(Cl1, InStr(Cl2, Mid(texto, Bucle, 1)), 1)
-    Next Bucle
+    Dim bucle As Integer
+    For bucle = 0 To 255
+        Cl1 = Cl1 & Chr(bucle)
+    Next bucle
+    For bucle = 255 To 133 Step -1
+        Cl2 = Cl2 & Chr(bucle)
+    Next bucle
+    For bucle = 0 To 132
+        Cl2 = Cl2 & Chr(bucle)
+    Next bucle
+    For bucle = 1 To Len(texto)
+        MiSalida = MiSalida & Mid(Cl1, InStr(Cl2, Mid(texto, bucle, 1)), 1)
+    Next bucle
     DesEncripta = MiSalida
 End Function
 Public Function CargaPermisos(usuarios As Tipo_User, Buffer As String) As Boolean
     Dim MiCheck As String
     Dim MiCheck2 As String
     Dim Mipermiso As Byte
-    Dim Bucle As Integer
+    Dim bucle As Integer
     MiCheck = Right(Buffer, 1)
-    calcheck Left(Buffer, Len(Buffer) - 1), MiCheck2
+    calcheck left(Buffer, Len(Buffer) - 1), MiCheck2
     If Asc(MiCheck) <> MiCheck2 Then
         CargaPermisos = False
-        
+
         Exit Function
     End If
-    usuarios.Nombre = StrConv(Left(Buffer, 8), vbLowerCase)
+    usuarios.Nombre = StrConv(left(Buffer, 8), vbLowerCase)
     usuarios.Asociado = Val(Mid(Buffer, 25, 3))
-    usuarios.Password = Mid(Buffer, 9, 8)
+    usuarios.password = Mid(Buffer, 9, 8)
     '*****************
     'obtiene Permisos
     '*****************
-    For Bucle = 1 To 8
-        Mipermiso = Asc(Mid(Buffer, 16 + Bucle, 1))
-        usuarios.Permisos(Bucle - 1) = Mipermiso
-    Next Bucle
+    For bucle = 1 To 8
+        Mipermiso = Asc(Mid(Buffer, 16 + bucle, 1))
+        usuarios.Permisos(bucle - 1) = Mipermiso
+    Next bucle
 End Function
 Public Function Secure_Login(Mi_Usuario As Tipo_User, Optional NoCheckPass As Boolean) As Boolean
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim Archivo As Integer
     Dim Buffer As String
     Dim Nulos As String * 29
     Dim BufByte(29) As Byte
-    Dim Encontrado As Boolean
+    Dim eNCONTRADO As Boolean
     Dim MiP As Byte
     Dim MiCheck
     Archivo = FreeFile()
     'Open MiruTa & "\pass.sec" For Binary As Archivo
     Open App.Path & "\pass.sec" For Binary As Archivo
-    Do Until EOF(Archivo) Or Encontrado
-        For Bucle = 0 To 28
-            Get #Archivo, , BufByte(Bucle)
-        Next Bucle
+    Do Until EOF(Archivo) Or eNCONTRADO
+        For bucle = 0 To 28
+            Get #Archivo, , BufByte(bucle)
+        Next bucle
         'Buffer = Mid(Buffer, 2, Len(Buffer) - 1)
         Buffer = ""
-        For Bucle = 0 To 28
-            Buffer = Buffer & Chr(BufByte(Bucle))
-        Next Bucle
-            
+        For bucle = 0 To 28
+            Buffer = Buffer & Chr(BufByte(bucle))
+        Next bucle
+
         If Buffer <> Nulos Then Buffer = DesEncripta(Buffer)
         If Buffer <> Nulos Then
-            If Trim(Left(Buffer, 8)) = Trim(Mi_Usuario.Nombre) Then
-                Encontrado = True
+            If Trim(left(Buffer, 8)) = Trim(Mi_Usuario.Nombre) Then
+                eNCONTRADO = True
             End If
         End If
     Loop
     Close #Archivo
-    
-    If Encontrado Then
-        
-        calcheck Left(Buffer, Len(Buffer) - 1), MiCheck
+
+    If eNCONTRADO Then
+
+        calcheck left(Buffer, Len(Buffer) - 1), MiCheck
         If Val(MiCheck) <> Asc(Right(Buffer, 1)) Then
             CadenadeLog "violación de seguridad : fichero pass.sec modificado"
-            
+
             End
         End If
         Mi_Usuario.Permisos(0) = 0
         If Not NoCheckPass Then
-            If Trim(Mi_Usuario.Password) <> Trim(Mid(Buffer, 9, 8)) Then
+            If Trim(Mi_Usuario.password) <> Trim(Mid(Buffer, 9, 8)) Then
                 Secure_Login = False
                 Exit Function
             End If
         End If
         Mi_Usuario.Asociado = Val(Mid(Buffer, 25, 8))
         MiP = Asc(Mid(Buffer, 17, 1))
-        For Bucle = 0 To 7
-            If MiP And (2 ^ Bucle) Then
-                Mi_Usuario.Permisos(0) = Mi_Usuario.Permisos(0) + (2 ^ Bucle)
+        For bucle = 0 To 7
+            If MiP And (2 ^ bucle) Then
+                Mi_Usuario.Permisos(0) = Mi_Usuario.Permisos(0) + (2 ^ bucle)
             End If
-        Next Bucle
+        Next bucle
         Mi_Usuario.Permisos(1) = 0
         MiP = Asc(Mid(Buffer, 18, 1))
-        For Bucle = 0 To 7
-            If MiP And (2 ^ Bucle) Then
-                Mi_Usuario.Permisos(1) = Mi_Usuario.Permisos(1) + (2 ^ Bucle)
+        For bucle = 0 To 7
+            If MiP And (2 ^ bucle) Then
+                Mi_Usuario.Permisos(1) = Mi_Usuario.Permisos(1) + (2 ^ bucle)
             End If
-        Next Bucle
+        Next bucle
         Mi_Usuario.Permisos(2) = 0
         MiP = Asc(Mid(Buffer, 19, 1))
-        For Bucle = 0 To 7
-            If MiP And (2 ^ Bucle) Then
-                Mi_Usuario.Permisos(2) = Mi_Usuario.Permisos(2) + (2 ^ Bucle)
+        For bucle = 0 To 7
+            If MiP And (2 ^ bucle) Then
+                Mi_Usuario.Permisos(2) = Mi_Usuario.Permisos(2) + (2 ^ bucle)
             End If
-        Next Bucle
+        Next bucle
         Mi_Usuario.Permisos(3) = 0
         MiP = Asc(Mid(Buffer, 20, 1))
-        For Bucle = 0 To 7
-            If MiP And (2 ^ Bucle) Then
-                Mi_Usuario.Permisos(3) = Mi_Usuario.Permisos(3) + (2 ^ Bucle)
+        For bucle = 0 To 7
+            If MiP And (2 ^ bucle) Then
+                Mi_Usuario.Permisos(3) = Mi_Usuario.Permisos(3) + (2 ^ bucle)
             End If
-        Next Bucle
+        Next bucle
         Mi_Usuario.Permisos(4) = 0
         MiP = Asc(Mid(Buffer, 21, 1))
-        For Bucle = 0 To 7
-            If MiP And (2 ^ Bucle) Then
-                Mi_Usuario.Permisos(4) = Mi_Usuario.Permisos(4) + (2 ^ Bucle)
+        For bucle = 0 To 7
+            If MiP And (2 ^ bucle) Then
+                Mi_Usuario.Permisos(4) = Mi_Usuario.Permisos(4) + (2 ^ bucle)
             End If
-        Next Bucle
+        Next bucle
         Secure_Login = True
     Else
         Secure_Login = False
     End If
-    
+
 End Function
 Public Function EncontrarUsuario() As Boolean
     Dim MiOK As Boolean
@@ -213,7 +213,7 @@ Public Sub CrearPassSec()
     Dim Buffer As String
     Dim BufByte As Byte
     Dim Checksum
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Fichero = FreeFile()
     '1.8.9
     'Open MiruTa & "\pass.sec" For Output As #Fichero
@@ -226,30 +226,30 @@ Public Sub CrearPassSec()
     Open App.Path & "\pass.sec" For Binary As #Fichero
     '''''''''''''''''''''''''''''''''''''''''''''''''
     Buffer = "admin   " & "drake   "
-    For Bucle = 1 To 8
+    For bucle = 1 To 8
         Buffer = Buffer & Chr(255)
-    Next Bucle
+    Next bucle
     Buffer = Buffer & "000"
     Buffer = Buffer & Chr(1)
     calcheck Buffer, Checksum
     Buffer = Buffer & Chr(Checksum)
     Buffer = Encripta(Buffer)
-    For Bucle = 1 To 29
-        BufByte = Asc(Mid(Buffer, Bucle, 1))
+    For bucle = 1 To 29
+        BufByte = Asc(Mid(Buffer, bucle, 1))
         Put #Fichero, , BufByte
-    Next Bucle
+    Next bucle
     Buffer = "cmdline " & "cmdline "
-    For Bucle = 1 To 8
+    For bucle = 1 To 8
         Buffer = Buffer & Chr(255)
-    Next Bucle
+    Next bucle
     Buffer = Buffer & "000"
     Buffer = Buffer & Chr(2)
     calcheck Buffer, Checksum
     Buffer = Buffer & Chr(Checksum)
     Buffer = Encripta(Buffer)
-    For Bucle = 1 To 29
-        BufByte = Asc(Mid(Buffer, Bucle, 1))
+    For bucle = 1 To 29
+        BufByte = Asc(Mid(Buffer, bucle, 1))
         Put #Fichero, , BufByte
-    Next Bucle
+    Next bucle
     Close #Fichero
 End Sub

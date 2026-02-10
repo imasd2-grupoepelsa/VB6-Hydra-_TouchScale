@@ -1,0 +1,22 @@
+Hidra+ HiperUsera 1.8.3
+------------------------
+- Se genera TIQAH.EXE de forma que en TIQAH.INI que se genera por defecto Tenemos:
+*******************
+"Path de SC10, ruta de red al concentrador              ","z:\balanzas"                                             --> No se Usa
+"Intervalo de recogida en minutos (mayor que cero   )   ","6"                                                     --> Si menor o igual a 5 sonn minutos si no son segundos.
+"Máximo número de tiquets por Recogida (0 no hay límite)","0"                                                --> Dejar siempre a 0
+"Intervalo de retardo en milisegundos, entre copias     ","5000"                                                --> Dejar a 5000
+"Nombre del Fichero de Tiquets Individual               ","RSSTTTT"                                                  --> Fichero que se genera indivial por Tique: (Balanza, Sección,Tique)                  
+"Ruta del directorio almacen de ficheros de exportacion ","c:\balanzas\exporta"                 --> Directorio para los Ficheros
+"Dirección IP / Port Balanza Servidora 386              ","127.000.000.001:6000"                                --> Conexión con Euro-Scale.
+"Nombre del Fichero de Tiquets General                  ","tqgen"                                                     --> Fichero general de Tique, mismo formato que los individuales... Extensión DDM 
+"Hora de Borrado de Totales                             ","22:30:00"                                                              --> Hora de Borrado de Totales.
+********************
+    TiqAh detectará la existencia de PLU.ASC lo convertirá, llamando a TRANSPLUASC.EXE en BALUSERA.DAT.
+    TiqAH, una vez detectado y convertido PLU.ASC llamará a HYDRA+ para la importación y envio de Datos.
+-    En el nombre individual del fichero "R" significa que se tome el Valor de la "Balanza Virtual" de la segunda Posición del EAN programado por equipo.
+     (2BSSTTTPPPdd c)-->según definición documento Programa.
+-    El paquete de instalación de Hydra+ dejará en <ETC> el fichero BALUSERA.DAT.FIA
+-    Debe estar adaptada la importación Correcta de pesados y no pesados.
+-    Cuando todo esté claro habrá que impedir que se vean las ventanas de importación y Envio.
+

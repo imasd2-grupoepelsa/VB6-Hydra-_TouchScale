@@ -3,10 +3,10 @@ Option Explicit
 Public EstiloInterfaz As Integer
 
 Private Declare Function GetSystemMenu Lib "user32" _
-    (ByVal hWnd As Long, ByVal bRevert As Long) As Long
+                                       (ByVal hWnd As Long, ByVal bRevert As Long) As Long
 Private Declare Function DeleteMenu Lib "user32" _
-    (ByVal hMenu As Long, ByVal nPosition As Long, _
-    ByVal wFlags As Long) As Long
+                                    (ByVal hMenu As Long, ByVal nPosition As Long, _
+                                     ByVal wFlags As Long) As Long
 Const SC_SIZE = &HF000
 Const SC_MOVE = &HF010
 Const SC_MINIMIZE = &HF020
@@ -18,12 +18,12 @@ Const MF_BYPOSITION = &H400
 Const MF_BYCOMMAND = &H0
 
 Public Function DrawGradient(TheObj As Object, ColorRed%, ColorGreen%, _
-                               ColorBlue%, ColorStop%, ColorBandSize%, _
-                               StartLine%, StopLine%, ModLine%, _
-                               Optional AutoReDrawObj As Boolean = True, _
-                               Optional MoreR% = 1, Optional MoreG% = 1, _
-                               Optional MoreB% = 1)
-  On Error Resume Next
+                             ColorBlue%, ColorStop%, ColorBandSize%, _
+                             StartLine%, StopLine%, ModLine%, _
+                             Optional AutoReDrawObj As Boolean = True, _
+                             Optional MoreR% = 1, Optional MoreG% = 1, _
+                             Optional MoreB% = 1)
+    On Error Resume Next
 
     Dim sngBlueCur As Single, sngRedCur As Single, sngGreenCur As Single
     Dim sngBlueStep As Single, sngRedStep As Single, sngGreenStep As Single
@@ -31,15 +31,15 @@ Public Function DrawGradient(TheObj As Object, ColorRed%, ColorGreen%, _
     If MoreR% <= 0 Then MoreR% = 1
     If MoreG% <= 0 Then MoreG% = 1
     If MoreB% <= 0 Then MoreB% = 1
-    
+
     If MoreR% >= 20 Then MoreR% = 20
     If MoreG% >= 20 Then MoreG% = 20
     If MoreB% >= 20 Then MoreB% = 20
-    
+
     Select Case AutoReDrawObj
-      Case True
+    Case True
         TheObj.AutoRedraw = True
-      Case False
+    Case False
         TheObj.AutoRedraw = False
     End Select
     intFormHeight = TheObj.ScaleHeight
@@ -56,14 +56,14 @@ Public Function DrawGradient(TheObj As Object, ColorRed%, ColorGreen%, _
 
     For intY = StopLine% To StartLine% Step -1 * ColorBandSize%
         TheObj.Line (-1, intY - 1)-(intFormWidth, intY + ColorBandSize% _
-                    \ ModLine%), RGB(sngRedCur \ MoreR%, sngGreenCur \ MoreG% _
-                    , sngBlueCur \ MoreB%), BF
+                                                \ ModLine%), RGB(sngRedCur \ MoreR%, sngGreenCur \ MoreG% _
+                  , sngBlueCur \ MoreB%), BF
 
         sngBlueCur = sngBlueCur + sngBlueStep
         sngRedCur = sngRedCur + sngRedStep
         sngGreenCur = sngGreenCur + sngGreenStep
     Next intY
-    
+
 End Function
 Public Sub MostrarModal(Formulario As Form)
     frmEpelsa.Enabled = False
@@ -91,7 +91,7 @@ Public Sub Aux_Refresca_MostradoresTS(MICombo As ComboBox)
     MICombo.Clear
     Set Base = AbrirBase()
     Set RegSeccion = Base.OpenRecordset _
-    ("select distinct secc_maqui,borrado from seccion where borrado=false order by secc_maqui")
+                     ("select distinct secc_maqui,borrado from seccion where borrado=false order by secc_maqui")
     With RegSeccion
         If Not .EOF Then
             .MoveFirst
@@ -99,8 +99,8 @@ Public Sub Aux_Refresca_MostradoresTS(MICombo As ComboBox)
                 Buffer = ""
                 numero = 0
                 Set Regmostrador = Base.OpenRecordset _
-                ("select codi_ident,secc_maqui,borrado from seccion where borrado=false and secc_maqui=" & _
-                !secc_Maqui)
+                                   ("select codi_ident,secc_maqui,borrado from seccion where borrado=false and secc_maqui=" & _
+                                    !secc_maqui)
                 With Regmostrador
                     If Not .EOF Then
                         Do Until .EOF
@@ -127,7 +127,7 @@ Public Sub Aux_Refresca_equipos(MICombo As ComboBox, Optional forzar As Boolean)
     'If usaSC10 And TipoC9 And (Not forzar) Then
     '    Set Registro = Base.OpenRecordset("select codi_ident,numero_eqp from equipos where borrado=false and (modelo<100 or modelo=400) order by numero_eqp")
     'Else
-        Set Registro = Base.OpenRecordset("select codi_ident,numero_eqp from equipos where borrado=false and (modelo<200 or modelo=400) order by numero_eqp")
+    Set Registro = Base.OpenRecordset("select codi_ident,numero_eqp from equipos where borrado=false and (modelo<200 or modelo=400) order by numero_eqp")
     'End If
     With Registro
         If Not .EOF Then
@@ -154,7 +154,7 @@ Public Sub MostrarInterfaz()
     hMenu = GetSystemMenu(hWnd, 0)
     If EstiloInterfaz = 1 Then
         If frmEpelsa.Visible = False Then
-        
+
             frmEpelsa.top = 0
             frmEpelsa.left = 0
             frmEpelsa.Width = Screen.Width
@@ -186,7 +186,7 @@ Public Sub Aux_Refresca_Mostradores(MICombo As ComboBox)
     MICombo.Clear
     Set Base = OpenDatabase(Base_General)
     Set RegSeccion = Base.OpenRecordset _
-    ("select distinct secc_maqui,borrado from seccion where borrado=false order by secc_maqui")
+                     ("select distinct secc_maqui,borrado from seccion where borrado=false order by secc_maqui")
     With RegSeccion
         If Not .EOF Then
             .MoveFirst
@@ -194,9 +194,9 @@ Public Sub Aux_Refresca_Mostradores(MICombo As ComboBox)
                 Buffer = ""
                 numero = 0
                 Set Regmostrador = Base.OpenRecordset _
-                ("select codi_ident,secc_maqui,borrado from seccion where borrado=false " & _
-                " and enviardatos<>" & Chr(34) & "ECOP" & Chr(34) & " and secc_maqui=" & _
-                .Fields("secc_Maqui") & strSeguridad)
+                                   ("select codi_ident,secc_maqui,borrado from seccion where borrado=false " & _
+                                  " and enviardatos<>" & Chr(34) & "ECOP" & Chr(34) & " and secc_maqui=" & _
+                                    .Fields("secc_Maqui") & strSeguridad)
                 With Regmostrador
                     If Not .EOF Then
                         Do Until .EOF
@@ -219,7 +219,7 @@ Public Sub Aux_Refresca_Mostradores_Con_Familias(MICombo As ComboBox)
     Dim Base As dao.Database
     Dim RegSeccion As dao.Recordset
     Dim strSeguridad As String
-    
+
     strSeguridad = ""
     If HaySeguridad And UsuarioActual.Asociado <> 0 Then
         strSeguridad = " and codi_ident=" & UsuarioActual.Asociado
@@ -227,12 +227,12 @@ Public Sub Aux_Refresca_Mostradores_Con_Familias(MICombo As ComboBox)
     MICombo.Clear
     Set Base = OpenDatabase(Base_General)
     Set RegSeccion = Base.OpenRecordset _
-    ("select distinct secc_maqui,borrado from familias where borrado=false" & strSeguridad & " order by secc_maqui")
+                     ("select distinct secc_maqui,borrado from familias where borrado=false" & strSeguridad & " order by secc_maqui")
     With RegSeccion
         If Not .EOF Then
             .MoveFirst
             Do Until .EOF
-                MICombo.AddItem CStr(!secc_Maqui)
+                MICombo.AddItem CStr(!secc_maqui)
                 .Movenext
             Loop
         End If
@@ -251,7 +251,7 @@ Public Sub Aux_Refresca_Familias_Mostrador(MICombo As ComboBox, ByVal sSec As St
     MICombo.Clear
     Set Base = OpenDatabase(Base_General)
     Set RegSeccion = Base.OpenRecordset _
-    ("select codi_fam from familias where borrado=false and secc_maqui=" & Trim(sSec) & strSeguridad & " order by codi_fam")
+                     ("select codi_fam from familias where borrado=false and secc_maqui=" & Trim(sSec) & strSeguridad & " order by codi_fam")
     With RegSeccion
         If Not .EOF Then
             .MoveFirst
@@ -266,11 +266,11 @@ End Sub
 
 '''''''
 Public Sub Aux_Ejecuta(Que_Ejecuta As String, Optional Parametros As String)
-Dim MyProc As Long
-Dim MyResul As Long
-Dim Arch As Integer
-Dim BufEnable As Boolean
-Dim NombrePrograma As String
+    Dim MyProc As Long
+    Dim MyResul As Long
+    Dim Arch As Integer
+    Dim BufEnable As Boolean
+    Dim NombrePrograma As String
     NombrePrograma = "auxiliarTouch.exe"
     'If LCase(Que_Ejecuta) = "cop5" Then NombrePrograma = "OLDCOP5.EXE"
     'If LCase(Que_Ejecuta) = "mng" Then NombrePrograma = "OLDCOP5.EXE"
@@ -278,30 +278,30 @@ Dim NombrePrograma As String
     BufEnable = frmEpelsa.Enabled
     frmEpelsa.Enabled = False
     'If Dir(App.Path & "\bin", vbDirectory) <> "" Then
-        If Dir(App.Path & "\" & NombrePrograma) <> "" Then
-            Arch = FreeFile()
-            Open App.Path & "\auxiliartouch.tmp" For Output As #Arch
-            Print #Arch, Base_General
-            Print #Arch, Hydra_INI
-            Print #Arch, Que_Ejecuta
-            Print #Arch, Parametros
-            If HaySeguridad Then
-                Print #Arch, "Y"
-            Else
-                Print #Arch, "N"
-            End If
-            Print #Arch, UsuarioActual.Nombre
-            Print #Arch, UsuarioActual.Asociado
-            Close #Arch
-            MyResul = STILL_ACTIVE
-            MyProc = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(Miruta & "\" & NombrePrograma, vbNormalFocus))
-            Do While MyResul = STILL_ACTIVE
-                GetExitCodeProcess MyProc, MyResul
-                Do_Events
-            Loop
+    If Dir(App.Path & "\" & NombrePrograma) <> "" Then
+        Arch = FreeFile()
+        Open App.Path & "\auxiliartouch.tmp" For Output As #Arch
+        Print #Arch, Base_General
+        Print #Arch, Hydra_INI
+        Print #Arch, Que_Ejecuta
+        Print #Arch, Parametros
+        If HaySeguridad Then
+            Print #Arch, "Y"
         Else
-            MsgBox "auxiliartouch.exe not found. Can't execute order", vbCritical
+            Print #Arch, "N"
         End If
+        Print #Arch, UsuarioActual.Nombre
+        Print #Arch, UsuarioActual.Asociado
+        Close #Arch
+        MyResul = STILL_ACTIVE
+        MyProc = OpenProcess(PROCESS_QUERY_INFORMATION, False, Shell(Miruta & "\" & NombrePrograma, vbNormalFocus))
+        Do While MyResul = STILL_ACTIVE
+            GetExitCodeProcess MyProc, MyResul
+            Do_Events
+        Loop
+    Else
+        MsgBox "auxiliartouch.exe not found. Can't execute order", vbCritical
+    End If
     'Else
     '    MsgBox "auxiliar.exe not found. Can't execute order", vbCritical
     'End If
@@ -315,11 +315,11 @@ End Sub
 '''''''
 '''''''
 Public Sub exe_copion(Que_Ejecuta As String, Optional Parametros As String)
-Dim MyProc As Long
-Dim MyResul As Long
-Dim Arch As Integer
-Dim BufEnable As Boolean
-Dim NombrePrograma As String
+    Dim MyProc As Long
+    Dim MyResul As Long
+    Dim Arch As Integer
+    Dim BufEnable As Boolean
+    Dim NombrePrograma As String
     NombrePrograma = "copiontouch.exe"
     BufEnable = frmEpelsa.Enabled
     frmEpelsa.Enabled = False
@@ -344,7 +344,7 @@ Dim NombrePrograma As String
             GetExitCodeProcess MyProc, MyResul
             Do_Events
         Loop
-    'Else
+        'Else
         'MsgBox "copiontouch.exe not found. Can't execute order", vbCritical
     End If
     If Dir(App.Path & "\fifo") <> "" Then
@@ -357,11 +357,11 @@ End Sub
 '''''''
 '''''''
 Public Sub aux_ejecuta_historico(Que_Ejecuta As String, Parametros As String, ByRef adb As String)
-Dim MyProc As Long
-Dim MyResul As Long
-Dim Arch As Integer
-Dim BufEnable As Boolean
-Dim NombrePrograma As String
+    Dim MyProc As Long
+    Dim MyResul As Long
+    Dim Arch As Integer
+    Dim BufEnable As Boolean
+    Dim NombrePrograma As String
     NombrePrograma = "auxiliartouch.exe"
     'If LCase(Que_Ejecuta) = "cop5" Then NombrePrograma = "OLDCOP5.EXE"
     'If LCase(Que_Ejecuta) = "mng" Then NombrePrograma = "OLDCOP5.EXE"

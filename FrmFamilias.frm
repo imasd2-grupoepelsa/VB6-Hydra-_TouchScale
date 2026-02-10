@@ -338,7 +338,7 @@ Private Sub Cambiar_idioma()
     Me.Caption = CargaCadena(678)
     Label1.Caption = CargaCadena(67)
     Label2.Caption = CargaCadena(539)
-    Label3.Caption = "Etq.Fam:" 'CargaCadena(623)
+    Label3.Caption = "Etq.Fam:"    'CargaCadena(623)
     Label4.Caption = "Orden:"
     Command1.Caption = CargaCadena(287)
     Command4.Caption = "Asignación Familias a Mostradores"
@@ -349,9 +349,9 @@ Private Sub Cambiar_idioma()
     If Dir(App.Path & "\test.tst") = "" Then
         Command4.Visible = False
     End If
-#If BALSAM = False Then '''ver este
-    ChkTraza.Visible = True
-#End If
+    #If BALSAM = False Then    '''ver este
+        ChkTraza.Visible = True
+    #End If
 
 End Sub
 Private Sub CmbFamilias_Click()
@@ -367,7 +367,7 @@ Private Sub Refresca_Datos()
     TxtOrden.TexT = ""
     Check1.Value = vbUnchecked
     ChkTraza.Value = vbUnchecked
-    
+
     Set picture1.Picture = Nothing
     Set picture1.Picture = LoadPicture(App.Path & "\vacio.jpg")
     'nQueImagen = 0
@@ -383,7 +383,7 @@ Private Sub Refresca_Datos()
     Else
         nMinPos = 0
     End If
-    
+
     If IsNumeric(Val(CmbFamilias.TexT)) Then
         Registro.OpenRecordset "select * from fam_code where codi_fam=" & Val(CmbFamilias.TexT)
         If Not Registro.EOF Then
@@ -417,7 +417,7 @@ Private Sub Refresca_Datos()
             Else
                 TxtLabel2.TexT = ""
             End If
-            
+
             If Registro.Fields("posicion") <> 0 Then
                 Check1.Value = vbChecked
             Else
@@ -428,7 +428,7 @@ Private Sub Refresca_Datos()
             Else
                 ChkTraza.Value = vbUnchecked
             End If
-            
+
             On Error Resume Next
             If sQueNombreImagen = "" Then
                 If Trim(Registro.Fields("imagen")) <> "" Then
@@ -458,7 +458,7 @@ Private Sub Refresca_Datos()
 End Sub
 
 Private Sub Picture1_Click()
-Dim Token As Long
+    Dim Token As Long
     nQueImagen = 0
     sQueNombreImagen = ""
     If Val(CmbFamilias.TexT) <> 0 Then
@@ -470,7 +470,7 @@ Dim Token As Long
         On Error Resume Next
         Token = InitGDIPlus
         Set picture1.Picture = LoadPictureGDIPlus(sQueNombreImagen)
-        FreeGDIPlus Token '
+        FreeGDIPlus Token    '
         If Err.Number <> 0 Then
             On Error GoTo 0
         End If
@@ -478,7 +478,7 @@ Dim Token As Long
     Else
         Token = InitGDIPlus
         Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\vacio.jpg")
-        FreeGDIPlus Token '
+        FreeGDIPlus Token    '
     End If
 End Sub
 
@@ -490,17 +490,17 @@ End Sub
 
 Private Sub CmbFamilias_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case vbKeyBack
-        Case vbKeyDelete
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case vbKeyBack
+    Case vbKeyDelete
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 Private Sub CmbFamilias_LostFocus()
     nQueImagen = 0
     'sQueNombreImagen = ""
-    
+
     Refresca_Datos
 End Sub
 
@@ -520,8 +520,8 @@ Private Sub Command1_Click()
     Dim bucle As Long
     Dim Resp As Long
     Dim lTraza As Boolean
-    Dim mbase As DAO.Database
-    
+    Dim mBase As dao.Database
+
     Me.Enabled = False
     If Not IsNumeric(CmbFamilias.TexT) Then
         MsgBox CargaCadena(1205), vbCritical
@@ -534,24 +534,24 @@ Private Sub Command1_Click()
         lTraza = False
     End If
     Resp = Alta_Familias(Val(CmbFamilias.TexT), Text1.TexT, Check1.Value, Text2.TexT, False, MyEvento, Val(TxtOrden.TexT), separaFich(Trim(sQueNombreImagen)), lTraza, Val(Text3.TexT), Trim(TxtLabel1.TexT), Trim(TxtLabel2.TexT))
-    
+
     If Len(Trim(TxtLabel1.TexT)) <> 0 Or Len(Trim(TxtLabel2.TexT)) <> 0 Then
-        Set mbase = AbrirBase
-        mbase.Execute "update articulo set tran_plu=' ' where codi_fam=" & CStr(Val(CmbFamilias.TexT))
-        mbase.Close
-        Set mbase = Nothing
+        Set mBase = AbrirBase
+        mBase.Execute "update articulo set tran_plu=' ' where codi_fam=" & CStr(Val(CmbFamilias.TexT))
+        mBase.Close
+        Set mBase = Nothing
     End If
-    
+
     Select Case Resp
-        Case 0
+    Case 0
         '    MsgBox CargaCadena(421), vbInformation
-            Refresca_Familias
-            Refresca_Datos
-        Case 1
-            MsgBox CargaCadena(751), vbInformation
-        Case 4
-        Case 61
-            MsgBox CargaCadena(1207), vbInformation
+        Refresca_Familias
+        Refresca_Datos
+    Case 1
+        MsgBox CargaCadena(751), vbInformation
+    Case 4
+    Case 61
+        MsgBox CargaCadena(1207), vbInformation
     End Select
     Me.Enabled = True
     If FrmFamMos.Visible Then
@@ -570,7 +570,7 @@ End Sub
 Private Sub Command3_Click()
     Dim Registro As New RecordNet
     Dim Resp As Long
-     
+
     If Not IsNumeric(CmbFamilias.TexT) Then Exit Sub
     Me.Enabled = False
     Registro.OpenRecordset ("select * from articulo where borrado=false and codi_fam=" & Val(CmbFamilias.TexT))
@@ -615,7 +615,7 @@ Private Sub Form_Load()
     If Dir(App.Path & "\test.tst") <> "" Then
         MostrarModal FrmFamMos
     End If
-    
+
 End Sub
 Private Sub Refresca_Familias()
     Dim Registro As New RecordNet
@@ -649,9 +649,9 @@ Private Sub MyEvento_Evento1(lData As Long)
 End Sub
 
 Private Sub Text1_KeyDown(KeyCode As Integer, Shift As Integer)
-     Select Case KeyCode
-        Case 38
-            If CmbFamilias.Enabled = True Then CmbFamilias.SetFocus
+    Select Case KeyCode
+    Case 38
+        If CmbFamilias.Enabled = True Then CmbFamilias.SetFocus
     End Select
 End Sub
 

@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{60CC5D62-2D08-11D0-BDBE-00AA00575603}#1.0#0"; "SysTray.ocx"
+Object = "{60CC5D62-2D08-11D0-BDBE-00AA00575603}#1.0#0"; "systray.ocx"
 Object = "{1FB9BF8C-0F2A-4F63-8FA9-06976E585D29}#1.0#0"; "ctrlimpatouch.ocx"
 Begin VB.Form frmControl 
    BorderStyle     =   0  'None
@@ -95,8 +95,8 @@ Public Sub Balanza_ComError(ByVal Error_Code As Long)
     Dim CierraEcoLabel As Boolean
     If Not CancelHumano Then MyCad = CargaCadena(544)
     Select Case EstadoBal
-        Case 0
-            MyCad = MyCad & " - TouchScale"
+    Case 0
+        MyCad = MyCad & " - TouchScale"
     End Select
     frmMonitor.MostrarDato MyCad
     frmMonitor.Label1.Caption = MyCad
@@ -120,9 +120,9 @@ Public Sub Balanza_ComOK()
         frmMonitor.LuzRecibe.BackColor = vbRed
     End If
     Select Case EstadoBal
-        Case 0
-            frmEpelsa.LblGA.ForeColor = vbGreen
-            frmEpelsa.LblGA.Caption = "TouchScale -> " & Format(Now, "hh:mm:ss")
+    Case 0
+        frmEpelsa.LblGA.ForeColor = vbGreen
+        frmEpelsa.LblGA.Caption = "TouchScale -> " & Format(Now, "hh:mm:ss")
     End Select
 End Sub
 
@@ -170,12 +170,12 @@ End Sub
 #If BALSAM = True Then
 Public Sub Switch_M(ByVal MiP As String)
 
-Dim MyFich As Integer
-Dim s As String
-Dim BufDetiene As Variant
-Dim valorip As String
-Dim sTi As String
-Dim nResp As Integer
+    Dim MyFich As Integer
+    Dim s As String
+    Dim BufDetiene As Variant
+    Dim valorip As String
+    Dim sTi As String
+    Dim nResp As Integer
 
     On Error Resume Next
     MyConnObj.Close
@@ -185,9 +185,9 @@ Dim nResp As Integer
     'nutricion
     'carga_data_Vitamin
     ''''''''''
-    
+
     MiP = Val(left(MiP, 3)) & "." & Val(Mid(MiP, 5, 3)) & "." & Val(Mid(MiP, 9, 3)) & "." & Val(Right(MiP, 3))
-    
+
     BufDetiene = frmMonitor.cmdmonitorstop.Enabled
     frmMonitor.cmdmonitorstop.Enabled = False
     frmMonitor.TmrEnableCancel.Interval = 5000
@@ -207,16 +207,16 @@ Dim nResp As Integer
 
     nResp = ElPing(MiP)
     If nResp = 1 Then
-    
+
         If Dir(App.Path & "\odbc53.txt") <> "" Then
             MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MiP & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
         Else
             MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & MiP & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
         End If
-        
+
         CadenadeLog "Estado Conexión:" & CStr(MyConnObj.State)
         CadenadeLog "Error:" & CStr(Err.Number)
-        
+
         If Err.Number <> 0 Then
 
             On Error GoTo 0
@@ -225,13 +225,13 @@ Dim nResp As Integer
         Else
             EstadoBal = 0
         End If
-    
+
     Else
         frmMonitor.MostrarDato "No Ping:" & MiP
         EstadoBal = 1000
         GoTo finMSWITCH
     End If
-                
+
     frmMonitor.cmdmonitorstop.Enabled = BufDetiene
     frmMonitor.Image2.Visible = False
     frmMonitor.TmrConecta.Enabled = False
@@ -251,12 +251,12 @@ End Sub
 #Else
 Public Sub Switch_M(ByVal MiP As String)
 
-Dim MyFich As Integer
-Dim s As String
-Dim BufDetiene As Variant
-Dim valorip As String
-Dim sTi As String
-Dim nResp As Integer
+    Dim MyFich As Integer
+    Dim s As String
+    Dim BufDetiene As Variant
+    Dim valorip As String
+    Dim sTi As String
+    Dim nResp As Integer
 
     On Error Resume Next
     MyConnObj.Close
@@ -266,9 +266,9 @@ Dim nResp As Integer
     'nutricion
     'carga_data_Vitamin
     ''''''''''
-    
+
     MiP = Val(left(MiP, 3)) & "." & Val(Mid(MiP, 5, 3)) & "." & Val(Mid(MiP, 9, 3)) & "." & Val(Right(MiP, 3))
-    
+
     BufDetiene = frmMonitor.cmdmonitorstop.Enabled
     frmMonitor.cmdmonitorstop.Enabled = False
     frmMonitor.TmrEnableCancel.Interval = 5000
@@ -288,16 +288,16 @@ Dim nResp As Integer
 
     nResp = ElPing(MiP)
     If nResp = 1 Then
-    
+
         If Dir(App.Path & "\odbc53.txt") <> "" Then
             MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MiP & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
         Else
             MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & MiP & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
         End If
-        
+
         CadenadeLog "Estado Conexión:" & CStr(MyConnObj.State)
         CadenadeLog "Error:" & CStr(Err.Number)
-        
+
         If Err.Number <> 0 Then
 
             On Error GoTo 0
@@ -306,13 +306,13 @@ Dim nResp As Integer
         Else
             EstadoBal = 0
         End If
-    
+
     Else
         frmMonitor.MostrarDato "No Ping:" & MiP
         EstadoBal = 1000
         GoTo finMSWITCH
     End If
-                
+
     frmMonitor.cmdmonitorstop.Enabled = BufDetiene
     frmMonitor.Image2.Visible = False
     frmMonitor.TmrConecta.Enabled = False
@@ -332,16 +332,16 @@ End Sub
 #If BALSAM = True Then
 Public Sub Switch_mode(ByVal Scaletype As Integer)
 'comprobar conexión...con la base de datos
-Dim MyFich As Integer
-Dim s As String
-Dim BufDetiene As Variant
-Dim valorip As String
-Dim sTi As String
-Dim nResp As Integer
-'Dim Cm As String
-'Dim Sm As String
+    Dim MyFich As Integer
+    Dim s As String
+    Dim BufDetiene As Variant
+    Dim valorip As String
+    Dim sTi As String
+    Dim nResp As Integer
+    'Dim Cm As String
+    'Dim Sm As String
 
-'lastIpconn
+    'lastIpconn
     ''''tqretail
     On Error GoTo sigueSw
     If MyConnObj.State <> 0 Or MyConnObj.Errors.Count <> 0 Then
@@ -353,7 +353,7 @@ Dim nResp As Integer
     'carga_data_Vitamin
     ''''''''''
     Do_Events
-    
+
     'If MyConnObj.State = 1 And MyConnObj.Errors.Count = 0 Then
     '    On Error GoTo 0
     '    Do_Events
@@ -369,18 +369,18 @@ Dim nResp As Integer
     '''
 sigueSw:
     'if Err.Number <> 0 Then
-        On Error GoTo 0
+    On Error GoTo 0
     'End If
-    
+
     On Error GoTo finSWITCH
-    
+
     ' Gama Alta Multiservidora (NetID)
     If MultiEuroscale Then
         MUE_Sistemas
         Scaletype = 700
     End If
     '''''''''
-    
+
     If Scaletype >= 700 And Scaletype < 800 Then
         If MultiEuroscale Then
             MyIP = SisEur.Sistemas(Scaletype - 700).IP
@@ -403,13 +403,13 @@ sigueSw:
     End If
 
     'If Not Taquion Then
-        BufDetiene = frmMonitor.cmdmonitorstop.Enabled
-        frmMonitor.cmdmonitorstop.Enabled = False
-        frmMonitor.TmrEnableCancel.Interval = 5000
-        frmMonitor.TmrEnableCancel.Enabled = True
-        frmMonitor.Image2.Visible = True
-        frmMonitor.TmrConecta.Interval = 100
-        frmMonitor.TmrConecta.Enabled = True
+    BufDetiene = frmMonitor.cmdmonitorstop.Enabled
+    frmMonitor.cmdmonitorstop.Enabled = False
+    frmMonitor.TmrEnableCancel.Interval = 5000
+    frmMonitor.TmrEnableCancel.Enabled = True
+    frmMonitor.Image2.Visible = True
+    frmMonitor.TmrConecta.Interval = 100
+    frmMonitor.TmrConecta.Enabled = True
     'End If
 
 
@@ -420,7 +420,7 @@ sigueSw:
         '''''''''''''''''''''''''''''
         frmMonitor.MostrarDato CargaCadena(986) & "(SAM)-->" & MyIP & "," & sPortBal
         On Error Resume Next
-        
+
         'MyConnObj.CommandTimeout = 1
         nResp = ElPing(MyIP)
         If nResp = 1 Then
@@ -461,7 +461,7 @@ sigueSw:
                 Do_Events
                 nResp = ElPing(sAddIp)
                 If nResp = 1 Then
-                
+
                     'MyConnObj.CommandTimeout = 1
                     MyConnObj.Errors.Clear
                     'MyConnObj.Open "Provider=SQLOLEDB;Uid=sa;password=masterkey;Initial Catalog=TouchScale;Data Source=" & valorip & "," & sPortBal
@@ -477,7 +477,7 @@ sigueSw:
                     Else
                         EstadoBal = 0
                     End If
-                
+
                 Else
                     EstadoBal = 1000
                     Exit Sub
@@ -492,10 +492,10 @@ sigueSw:
                 CadenadeLog CargaCadena(986) & "-->" & sAddIp & "," & sPortBal
                 Me.Refresh
                 Do_Events
-        
+
                 nResp = ElPing(sAddIp)
                 If nResp = 1 Then
-                
+
                     'MyConnObj.CommandTimeout = 1
                     If Dir(App.Path & "\office.txt") <> "" Then
                         If TiendaActual = 0 Then
@@ -505,7 +505,7 @@ sigueSw:
                             Else
                                 MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
                             End If
-                           Else
+                        Else
                             If TiendaActual < 100 Then
                                 sTi = Format(TiendaActual, "00")
                             Else
@@ -513,29 +513,29 @@ sigueSw:
                             End If
                             'MyConnObj.Open "Provider=SQLOLEDB;Uid=sa;password=masterkey;Initial Catalog=TouchScale" & sTi & ";Data Source=" & sAddIp & "," & sPortBal
                             If Dir(App.Path & "\odbc53.txt") <> "" Then
-                            MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
+                                MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
                             Else
-                            MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
+                                MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
                             End If
                         End If
                     Else
                         'MyConnObj.Open "Provider=SQLOLEDB;Uid=sa;password=masterkey;Initial Catalog=TouchScale;Data Source = " & sAddIp & ", " & sPortBal
                         If Dir(App.Path & "\odbc53.txt") <> "" Then
-                        MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
+                            MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
                         Else
-                        'MyConnObj.Open "DRIVER={MariaDB ODBC 3.0 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
-                        MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=34"
-                        'restaurar XS
-                        'MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=pcscale; PWD=epelsa; OPTION=34"
+                            'MyConnObj.Open "DRIVER={MariaDB ODBC 3.0 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=3"
+                            MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=epelMaster; PWD=epelsa; OPTION=34"
+                            'restaurar XS
+                            'MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=mbd; UID=pcscale; PWD=epelsa; OPTION=34"
                         End If
                         'CadenadeLog "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                        
+
                         'MyConnObj.Open "Provider=SQLNCLI10;Uid=sa;password=masterkey;Initial Catalog=TouchScale;DataTypeCompatibility=80;Data Source=" & sAddIp & "," & sPortBal
                     End If
-                    
+
                     CadenadeLog "Estado Conexión:" & CStr(MyConnObj.State)
                     CadenadeLog "Error:" & CStr(Err.Number)
-                    
+
                     If Err.Number <> 0 Or MyConnObj.State = 0 Then
 
                         On Error GoTo 0
@@ -550,18 +550,18 @@ sigueSw:
                     EstadoBal = 1000
                     GoTo finSWITCH
                 End If
-                
+
             End If
         End If
 
     End If
 
     frmMonitor.TmrEnableCancel.Enabled = False
-    
+
     'If Not Taquion Then
-        frmMonitor.cmdmonitorstop.Enabled = BufDetiene
-        frmMonitor.Image2.Visible = False
-        frmMonitor.TmrConecta.Enabled = False
+    frmMonitor.cmdmonitorstop.Enabled = BufDetiene
+    frmMonitor.Image2.Visible = False
+    frmMonitor.TmrConecta.Enabled = False
     'End If
 finSWITCH:
     If Err.Number <> 0 Then
@@ -582,19 +582,19 @@ End Sub
 #Else
 Public Sub Switch_mode(ByVal Scaletype As Integer)
 'comprobar conexión...con la base de datos
-Dim MyFich As Integer
-Dim s As String
-Dim BufDetiene As Variant
-Dim valorip As String
-Dim sTi As String
-Dim nResp As Integer
-'Dim Cm As String
-'Dim Sm As String
-Dim MyRecAux As New ADODB.Recordset
+    Dim MyFich As Integer
+    Dim s As String
+    Dim BufDetiene As Variant
+    Dim valorip As String
+    Dim sTi As String
+    Dim nResp As Integer
+    'Dim Cm As String
+    'Dim Sm As String
+    Dim MyRecAux As New ADODB.Recordset
 
-CadenadeLog "Comprobar conexión con Base de datos..."
+    CadenadeLog "Comprobar conexión con Base de datos..."
 
-'lastIpconn
+    'lastIpconn
     ''''tqretail
     On Error GoTo sigueSw
     If MyConnObj.State <> 0 Or MyConnObj.Errors.Count <> 0 Then
@@ -607,7 +607,7 @@ CadenadeLog "Comprobar conexión con Base de datos..."
     'carga_data_Vitamin
     ''''''''''
     Do_Events
-    
+
     'If MyConnObj.State = 1 And MyConnObj.Errors.Count = 0 Then
     '    On Error GoTo 0
     '    Do_Events
@@ -623,18 +623,18 @@ CadenadeLog "Comprobar conexión con Base de datos..."
     '''
 sigueSw:
     'if Err.Number <> 0 Then
-        On Error GoTo 0
+    On Error GoTo 0
     'End If
-    
+
     On Error GoTo finSWITCH
-    
+
     ' Gama Alta Multiservidora (NetID)
     If MultiEuroscale Then
         MUE_Sistemas
         Scaletype = 700
     End If
     '''''''''
-    
+
     If Scaletype >= 700 And Scaletype < 800 Then
         If MultiEuroscale Then
             MyIP = SisEur.Sistemas(Scaletype - 700).IP
@@ -657,13 +657,13 @@ sigueSw:
     End If
 
     'If Not Taquion Then
-        BufDetiene = frmMonitor.cmdmonitorstop.Enabled
-        frmMonitor.cmdmonitorstop.Enabled = False
-        frmMonitor.TmrEnableCancel.Interval = 5000
-        frmMonitor.TmrEnableCancel.Enabled = True
-        frmMonitor.Image2.Visible = True
-        frmMonitor.TmrConecta.Interval = 100
-        frmMonitor.TmrConecta.Enabled = True
+    BufDetiene = frmMonitor.cmdmonitorstop.Enabled
+    frmMonitor.cmdmonitorstop.Enabled = False
+    frmMonitor.TmrEnableCancel.Interval = 5000
+    frmMonitor.TmrEnableCancel.Enabled = True
+    frmMonitor.Image2.Visible = True
+    frmMonitor.TmrConecta.Interval = 100
+    frmMonitor.TmrConecta.Enabled = True
     'End If
 
 
@@ -742,7 +742,7 @@ sigueSw:
                     Else
                         EstadoBal = 0
                     End If
-                
+
                 Else
                     CadenadeLog "Sin Ping DNS..."
                     EstadoBal = 1000
@@ -767,17 +767,17 @@ sigueSw:
                         If TiendaActual = 0 Then
                             'MyConnObj.Open "Provider=SQLOLEDB;Uid=sa;password=masterkey;Initial Catalog=TouchScale01;Data Source=" & sAddIp & "," & sPortBal
                             If Dir(App.Path & "\odbc53.txt") <> "" Then
-                                
+
                                 CadenadeLog "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 5"
                                 MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                                
+
                             Else
-                                
+
                                 CadenadeLog "DRIVER={MySQL ODBC 5.1 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 6"
                                 MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                                
+
                             End If
-                           Else
+                        Else
                             If TiendaActual < 100 Then
                                 sTi = Format(TiendaActual, "00")
                             Else
@@ -785,34 +785,34 @@ sigueSw:
                             End If
                             'MyConnObj.Open "Provider=SQLOLEDB;Uid=sa;password=masterkey;Initial Catalog=TouchScale" & sTi & ";Data Source=" & sAddIp & "," & sPortBal
                             If Dir(App.Path & "\odbc53.txt") <> "" Then
-                            MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                            CadenadeLog "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 7"
+                                MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
+                                CadenadeLog "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 7"
                             Else
-                            MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                            CadenadeLog "DRIVER={MySQL ODBC 5.1 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 8"
+                                MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
+                                CadenadeLog "DRIVER={MySQL ODBC 5.1 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 8"
                             End If
                         End If
                     Else
                         'MyConnObj.Open "Provider=SQLOLEDB;Uid=sa;password=masterkey;Initial Catalog=TouchScale;Data Source = " & sAddIp & ", " & sPortBal
                         If Dir(App.Path & "\odbc53.txt") <> "" Then
-                        
-                        CadenadeLog "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 9"
-                        MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                        
+
+                            CadenadeLog "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 9"
+                            MyConnObj.Open "DRIVER={MySQL ODBC 5.3 ANSI Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
+
                         Else
-                        
-                        CadenadeLog "DRIVER={MySQL ODBC 5.1 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 10"
-                        MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                        
+
+                            CadenadeLog "DRIVER={MySQL ODBC 5.1 ANSI Driver}; SERVER=" & MyIP & "; Port=" & sPortBal & "; DATABASE=pcscale; OPTION=3 --> 10"
+                            MyConnObj.Open "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; Port=" & sPortBal & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
+
                         End If
                         'CadenadeLog "DRIVER={MySQL ODBC 5.1 Driver}; SERVER=" & sAddIp & "; DATABASE=pcscale; UID=pcscale; PWD=epelsa; OPTION=3"
-                        
+
                         'MyConnObj.Open "Provider=SQLNCLI10;Uid=sa;password=masterkey;Initial Catalog=TouchScale;DataTypeCompatibility=80;Data Source=" & sAddIp & "," & sPortBal
                     End If
-                    
+
                     CadenadeLog "Estado Conexión:" & CStr(MyConnObj.State)
                     CadenadeLog "Error:" & CStr(Err.Number)
-                    
+
                     If Err.Number <> 0 Or MyConnObj.State = 0 Then
                         CadenadeLog "Detectado error enn conexión:" & CStr(Err.Number) & " Desc.:" & Err.Description
                         On Error GoTo 0
@@ -828,18 +828,18 @@ sigueSw:
                     EstadoBal = 1000
                     GoTo finSWITCH
                 End If
-                
+
             End If
         End If
 
     End If
 
     frmMonitor.TmrEnableCancel.Enabled = False
-    
+
     'If Not Taquion Then
-        frmMonitor.cmdmonitorstop.Enabled = BufDetiene
-        frmMonitor.Image2.Visible = False
-        frmMonitor.TmrConecta.Enabled = False
+    frmMonitor.cmdmonitorstop.Enabled = BufDetiene
+    frmMonitor.Image2.Visible = False
+    frmMonitor.TmrConecta.Enabled = False
     'End If
 finSWITCH:
     If Err.Number <> 0 Then
@@ -862,7 +862,7 @@ finSWITCH:
         End If
         MyRecAux.Close
         Set MyRecAux = Nothing
-'interno123:
+        'interno123:
         'On Error GoTo 0
     End If
     On Error GoTo 0
@@ -871,39 +871,39 @@ End Sub
 
 
 Public Sub timetqt_timer()
-Dim bucle As Long
-Dim C11 As Integer
-Dim Origen As Integer
-Dim Buffer As String
-Dim SalvaTexto As String
-Dim Archivo As Integer
-Dim MiHora As Integer
-Dim MiMinuto As Integer
-Dim BufEpelsa As Boolean
-Dim BufEtiqueta As String
-Dim AAA As Variant
-Dim hHandle As Integer
-Dim nMy As Form
-Dim nFich As Integer
-Dim MyProc As Long
-Dim MyResul As Long
-Dim Ret As Long
-Dim nInt As Long
-Dim sTaqui As String
+    Dim bucle As Long
+    Dim C11 As Integer
+    Dim Origen As Integer
+    Dim Buffer As String
+    Dim SalvaTexto As String
+    Dim Archivo As Integer
+    Dim MiHora As Integer
+    Dim MiMinuto As Integer
+    Dim BufEpelsa As Boolean
+    Dim BufEtiqueta As String
+    Dim AAA As Variant
+    Dim hHandle As Integer
+    Dim nMy As Form
+    Dim nFich As Integer
+    Dim MyProc As Long
+    Dim MyResul As Long
+    Dim Ret As Long
+    Dim nInt As Long
+    Dim sTaqui As String
 
     timetqt.Enabled = False
-    
+
     lAutoRecEnv = True
-    
-'frmControl.Switch_mode 0
-'If EstadoBal <> 0 Then
-'    frmEpelsa.LblGA.Caption = "Touch. Con. Error -> " & Format(Now, "hh:mm:ss")
-'Else
+
+    'frmControl.Switch_mode 0
+    'If EstadoBal <> 0 Then
+    '    frmEpelsa.LblGA.Caption = "Touch. Con. Error -> " & Format(Now, "hh:mm:ss")
+    'Else
     frmEpelsa.LblGA.Caption = "Touch. Con.:-> " & Format(Now, "hh:mm:ss")
 
-'End If
+    'End If
     'Workspaces(0).close
-    
+
     '//////////////////////////////////////////////////
     '// Recogida automática de totales
     '//////////////////////////////////////////////////
@@ -913,7 +913,7 @@ Dim sTaqui As String
         frmEpelsa.Enabled = False
         'timetqt.Enabled = False
         frmEpelsa.LblComunicaciones.Caption = "Realizando Cierre , espere..."
-    
+
         If Dir(App.Path & "\borrartotales.txt") <> "" Then
             Set nMy = New FrmExportar
             nMy.AN_FinDeDia True
@@ -924,24 +924,24 @@ Dim sTaqui As String
             nMy.AN_RecogerTotales (False)
             Unload nMy
             Set nMy = Nothing
-            
+
             FrmResturarBackup.Realizar_Backup False
-            
+
             Call Trata_Fin_Dia_2
-            
+
             If Dir(Miruta & "\end_day.bat") <> "" Then
                 ChDir Miruta
                 Shell Miruta & "\end_day.bat"
             End If
-            
+
             On Error Resume Next
             Kill App.Path & "\exporta\*.*"
             On Error GoTo 0
-            
+
         End If
-        
+
         If lFornes Then Call export_BL(True)
-        
+
         CadenadeLog "Proceso de Fin de día realizado"
         frmEpelsa.LblGA.Caption = "Proceso de Fin de día realizado"
         For bucle = 1 To 58
@@ -959,9 +959,9 @@ Dim sTaqui As String
         frmEpelsa.Enabled = BufEpelsa
         'timetqt.Enabled = True
     End If
-    
+
     'Workspaces(0).close
-    
+
     '////////////////////////////////////////////////
     '// cierre automático del programa
     '////////////////////////////////////////////////
@@ -970,19 +970,19 @@ Dim sTaqui As String
         frmEpelsa.Enabled = False
         frmEpelsa.LblComunicaciones.Caption = "Cierre Automático , espere..."
         If Dir(App.Path & "\killhydra") = "" Then
-        For bucle = 1 To 48
-            frmEpelsa.LblSC10.Caption = "Reset. Pausa ..." & Format((49 - bucle), "00")
-            Sleep (1000)
-            Do_Events
-        Next bucle
+            For bucle = 1 To 48
+                frmEpelsa.LblSC10.Caption = "Reset. Pausa ..." & Format((49 - bucle), "00")
+                Sleep (1000)
+                Do_Events
+            Next bucle
         End If
         salir_programa
     End If
     MiHora = Hour(Now)
     MiMinuto = Minute(Now)
-    
+
     'Check_Plugin_Auto
-    
+
     '*************************
     ' no se lanza si se hace una pausa en recogida
     '*************************
@@ -992,12 +992,12 @@ Dim sTaqui As String
         'timetqt.Enabled = True
         Exit Sub
     End If
-    
+
     'Workspaces(0).close
-    
+
     If lCogeTiquet = True And cgdtiquet = False And descAuto Then
         If cuenTaTqt >= Val(left(descautotime, 3)) Then
-            
+
             'If Dir(App.Path & "\getputfileftp.dat") <> "" And nRetConnFTP = 0 Then
             '    Dim siP, susR, spsS
             '    nFich = FreeFile()
@@ -1012,9 +1012,9 @@ Dim sTaqui As String
             '    Ret = Conectar_FTP(siP, susR, spsS, 0) '0=no ha podido conectar, 1=se ha conectado
             '    nRetConnFTP = Ret
             'End If
-            
+
             Ret = conecta_FTP()
-            
+
             '***************************************
             ' desactiva los menues de comunicaciones
             '***************************************
@@ -1026,7 +1026,7 @@ Dim sTaqui As String
             ' TAQUION : ' mira si existe(n) fichero(s) de importación, y lo(s) procesa
             '**********************************
             Silencio = True
-            If Taquion Then 'c2f caspiunza
+            If Taquion Then    'c2f caspiunza
                 On Error Resume Next
                 If Dir(App.Path & "\orden.dat") <> "" Then
                     If FileLen(App.Path & "\orden.dat") < 20 Then
@@ -1056,7 +1056,7 @@ Dim sTaqui As String
                 'End If
                 ''''''''''''''
                 If Dir(App.Path & "\getputfileftp.dat") <> "" And nRetConnFTP = 1 Then
-                    
+
                     CadenadeLog "comienzo..."
                     Ret = Trae_FTP("fampos.dat")
                     If FileLen(App.Path & "\fampos.dat") = 0 Then Kill App.Path & "\fampos.dat"
@@ -1068,12 +1068,12 @@ Dim sTaqui As String
                     If FileLen(App.Path & "\clientes.dat") = 0 Then Kill App.Path & "\clientes.dat"
                     Ret = Trae_FTP("clientesx.dat")
                     If FileLen(App.Path & "\clientesx.dat") = 0 Then Kill App.Path & "\clientesx.dat"
-                    
+
                     If LCase(TaquionFichero) <> LCase("artcon.dat") And LCase(TaquionFichero) <> LCase("fampos.dat") And LCase(TaquionFichero) <> LCase("venpos.dat") And LCase(TaquionFichero) <> LCase("clientes.dat") And LCase(TaquionFichero) <> LCase("clientesx.dat") Then
                         Ret = Trae_FTP(TaquionFichero)
                         If FileLen(App.Path & "\" & TaquionFichero) = 0 Then Kill App.Path & "\" & TaquionFichero
                     End If
-                    
+
                     sTaqui = ""
                     nInt = InStr(1, TaquionFichero, ".")
                     If nInt <> 0 Then
@@ -1108,7 +1108,7 @@ Dim sTaqui As String
                     If Dir(App.Path & "\" & sTaqui) <> "" Then
                         nInt = Extrae(0, sTaqui, "")
                     End If
-                    
+
                     If Dir(App.Path & "\fampos.rar") <> "" Then
                         Kill App.Path & "\fampos.rar"
                     End If
@@ -1124,9 +1124,9 @@ Dim sTaqui As String
                     If Dir(App.Path & "\" & sTaqui) <> "" Then
                         Kill App.Path & "\" & sTaqui
                     End If
-                    
+
                     CadenadeLog "FIN."
-                    
+
                     'CadenadeLog "Leer Ficheros FTP..."
                     'If nRetConnFTP = 1 Then 'ha sido posible conectar
                     '    Ret = Recibir_Fichero_FTP("fampos.dat", App.Path & "\fampos.dat", 0)
@@ -1185,7 +1185,7 @@ Dim sTaqui As String
                     ''End If
                     ''Ret = Desconectar_FTP(0)
                     ''CadenadeLog "Leidos Ficheros FTP..."
-                    
+
                 End If
                 '1.0.4 revisar
                 'If Dir(App.Path & "\enlascii.exe") <> "" Then
@@ -1220,34 +1220,34 @@ Dim sTaqui As String
                 '
                 '
                 'Else
-                    Set nMy = New FrmExportar
-                    If Dir(App.Path & "\raro") <> "" Then
-                        Call Absorver_Estructura
-                        Call nMy.TQ_ImportaFicheros
-                        AN_BaseMaestra False
-                    Else
-                        If lFornes Then
-                            Call transforma_Fornes
-                            If Dir(App.Path & "\global.dat") <> "" Then
-                                Importa_Global_Dat
-                                Kill App.Path & "\global.dat"
-                            End If
-                        Else
-                            Call nMy.TQ_ImportaFicheros
+                Set nMy = New FrmExportar
+                If Dir(App.Path & "\raro") <> "" Then
+                    Call Absorver_Estructura
+                    Call nMy.TQ_ImportaFicheros
+                    AN_BaseMaestra False
+                Else
+                    If lFornes Then
+                        Call transforma_Fornes
+                        If Dir(App.Path & "\global.dat") <> "" Then
+                            Importa_Global_Dat
+                            Kill App.Path & "\global.dat"
                         End If
+                    Else
+                        Call nMy.TQ_ImportaFicheros
                     End If
-                    Unload nMy
-                    Set nMy = Nothing
+                End If
+                Unload nMy
+                Set nMy = Nothing
                 'End If
-                
+
                 If Dir(App.Path & "\memoria.vbe") <> "" Then
                     Shell (App.Path & "\memoria.vbe")
                 End If
                 If Dir(App.Path & "\orden.dat") <> "" Then
-                        Kill App.Path & "\orden.dat"
+                    Kill App.Path & "\orden.dat"
                 End If
                 If Dir(App.Path & "\ordtec.dat") <> "" Then
-                        Kill App.Path & "\ordtec.dat"
+                    Kill App.Path & "\ordtec.dat"
                 End If
                 On Error GoTo 0
             End If
@@ -1258,7 +1258,7 @@ Dim sTaqui As String
             '***********************************************************
             cgdtiquet = True
             CI_EstadoSistema = 10
-            
+
             'If Taquion Then Silencio = True
             'Silencio = True
             Set nMy = New FrmExportar
@@ -1266,9 +1266,9 @@ Dim sTaqui As String
             Unload nMy
             Set nMy = Nothing
             'If Taquion Then Silencio = False
-            
-            
-            
+
+
+
             '1.7.2 grventas
             If EnvioContinuo Then
                 'Set nMy = New FrmExportar
@@ -1278,7 +1278,7 @@ Dim sTaqui As String
             End If
             'Silencio = False
             'If Taquion Then Silencio = False
-            
+
             '****** hasta aquí se origina consumo memoria...
             ' /Recogida
             '************
@@ -1300,7 +1300,7 @@ Dim sTaqui As String
                 End If
                 frmEpelsa.LblGA.Caption = CargaCadena(904)
                 frmEpelsa.Enabled = True
-                
+
             End If
             If Not CI_Salir And Not RE_TOTAL Then CI_EstadoSistema = 1
             cuenTaTqt = 0
@@ -1317,7 +1317,7 @@ Dim sTaqui As String
                 End If
                 If (ModificacionesPendientes(0) And 128) = 128 Then
                     Silencio = True
-                    
+
                     AN_BaseMaestra True, , 7
                     Silencio = False
                     If canCelar = 0 Then
@@ -1328,16 +1328,16 @@ Dim sTaqui As String
             'Silencio = False
         End If
     End If
-    
+
     'Workspaces(0).close
-    
+
     '*********************************************************
     ' reactiva los menues de comunicaciones si procede
     '*********************************************************
     If Right(descautotime, 3) = "min" Then
         frmEpelsa.HabilitarMenues
     End If
-    
+
     If Dir(App.Path & "\nover1.txt") <> "" Then
         On Error Resume Next
         Unload frmMonitor
@@ -1346,13 +1346,13 @@ Dim sTaqui As String
         Set FrmExportar = Nothing
         On Error GoTo 0
     End If
-    
+
     Silencio = False
-   'Workspaces(0).close
-    
-        
+    'Workspaces(0).close
+
+
     lAutoRecEnv = False
-    
+
     timetqt.Enabled = True
     ''''''''''''''
     'CadenadeLog "pasa por recogida..."

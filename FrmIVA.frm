@@ -254,16 +254,16 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
 Private Sub CambiarIdioma()
-    Dim Bucle As Integer
+    Dim bucle As Integer
     If UsaEcoPrint And TipoEcoPrint = 3 Then
-        For Bucle = 1 To 5
-            Label2(Bucle - 1).Caption = CargaCadena(55) & " " & Bucle
-        Next Bucle
-    
+        For bucle = 1 To 5
+            Label2(bucle - 1).Caption = CargaCadena(55) & " " & bucle
+        Next bucle
+
     Else
-        For Bucle = 0 To 4
-            Label2(Bucle).Caption = CargaCadena(55) & " " & Bucle
-        Next Bucle
+        For bucle = 0 To 4
+            Label2(bucle).Caption = CargaCadena(55) & " " & bucle
+        Next bucle
     End If
     Command1(0).Caption = CargaCadena(36)
     Command1(1).Caption = CargaCadena(7)
@@ -271,32 +271,32 @@ Private Sub CambiarIdioma()
 End Sub
 
 Private Sub Command1_Click(Index As Integer)
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim TIVAS(5) As Double
     If Index = 1 Then
         Unload Me
         Exit Sub
     End If
-    For Bucle = 0 To 4
-        If Trim(Text1(Bucle).TexT) = "" Then Text1(Bucle).TexT = "0"
-        TIVAS(Bucle) = ToDouble(Text1(Bucle).TexT)
-    Next Bucle
+    For bucle = 0 To 4
+        If Trim(Text1(bucle).TexT) = "" Then Text1(bucle).TexT = "0"
+        TIVAS(bucle) = ToDouble(Text1(bucle).TexT)
+    Next bucle
     Alta_IVAS TIVAS
     MsgBox CargaCadena(439)
 End Sub
 
 Private Sub Form_Load()
-   
+
     Dim Registro As New RecordNet
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Me.Icon = Form2.Icon
     Label1.Visible = False
     CambiarIdioma
     Image1.Picture = Form2.Imagen.Picture
-    For Bucle = 0 To 4
-        Text1(Bucle).TexT = 0
-    Next Bucle
-   
+    For bucle = 0 To 4
+        Text1(bucle).TexT = 0
+    Next bucle
+
     Registro.OpenRecordset ("select * from iva")
     With Registro
         If Not .EOF Then
@@ -313,24 +313,24 @@ End Sub
 
 
 Private Sub Form_Unload(Cancel As Integer)
-LockBase = False
+    LockBase = False
     frmEpelsa.Enabled = True
 End Sub
 
 Private Sub Text1_KeyPress(Index As Integer, KeyAscii As Integer)
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim Contador As Integer
     Dim HayComa As Boolean
     If KeyAscii = 46 Then KeyAscii = 44
     Text1(Index).Locked = Checktexto(KeyAscii, 5, Text1(Index).TexT, True, True)
-    For Bucle = 1 To Len(Text1(Index).TexT)
-        If Not IsNumeric(Mid(Text1(Index).TexT, Bucle, 1)) Then
+    For bucle = 1 To Len(Text1(Index).TexT)
+        If Not IsNumeric(Mid(Text1(Index).TexT, bucle, 1)) Then
             HayComa = True
         Else
             If HayComa = True Then Contador = Contador + 1
         End If
-    Next Bucle
+    Next bucle
     If Contador >= 2 And KeyAscii <> 8 Then Text1(Index).Locked = True
-    
-    
+
+
 End Sub

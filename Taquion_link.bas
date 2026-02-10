@@ -43,18 +43,18 @@ Public Function ObtenNombre(MiNombre As Tipo_NombreTiquet) As String
                 Formato = Formato & "0"
             Next B2
             Select Case V1
-                Case "B"
-                    Buf2 = Format(MiNombre.Balanza, Formato)
-                Case "S"
-                    Buf2 = Format(MiNombre.seccion, Formato)
-                Case "T"
-                    Buf2 = Format(MiNombre.tiquet, Formato)
-                Case "X"
-                    Buf2 = Format(MiNombre.Modo, Formato)
-                Case "C"
-                    Buf2 = Format(MiNombre.cliente, Formato)
-                Case "V"
-                    Buf2 = Format(MiNombre.vendedor, Formato)
+            Case "B"
+                Buf2 = Format(MiNombre.Balanza, Formato)
+            Case "S"
+                Buf2 = Format(MiNombre.seccion, Formato)
+            Case "T"
+                Buf2 = Format(MiNombre.tiquet, Formato)
+            Case "X"
+                Buf2 = Format(MiNombre.Modo, Formato)
+            Case "C"
+                Buf2 = Format(MiNombre.cliente, Formato)
+            Case "V"
+                Buf2 = Format(MiNombre.vendedor, Formato)
             End Select
             If Len(Buf2) > Cont Then Buf2 = Right(Buf2, Cont)
             Resp = Resp & Buf2

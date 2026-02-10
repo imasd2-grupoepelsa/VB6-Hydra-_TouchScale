@@ -352,7 +352,7 @@ Private QL1 As Boolean
 
 
 
-Private Sub CmbCOM_Click() '2.0.a para controlar eco a través de IP
+Private Sub CmbCOM_Click()    '2.0.a para controlar eco a través de IP
     If (CmbEnviar.ListIndex = 3) Then
         If CmbCOM.ListIndex <> 0 Then
             tXTip.TexT = ""
@@ -374,7 +374,7 @@ End Sub
 Private Sub CmbEnviar_Click()
     Dim MyOK As Boolean
     MyOK = True
-   
+
     Label2(3).Visible = False
     CmbCOM.Visible = False
     If CmbEnviar.ListIndex = 2 Or CmbEnviar.ListIndex = 3 Then
@@ -416,20 +416,20 @@ Private Sub CmbEnviar_Click()
         Else
             LabelPeco.Visible = False
             TextPeco.Visible = False
-        
+
         End If
     Else
         Label3.Visible = False
         tXTip.Visible = False
         LabelPeco.Visible = False
         TextPeco.Visible = False
-        
+
     End If
 End Sub
 
 Private Sub CmbMostrador_click()
-    '******************
-    ' busca los datos del mostrador
+'******************
+' busca los datos del mostrador
     Refresca_Datos
 End Sub
 
@@ -445,28 +445,28 @@ End Sub
 Private Sub CmbMostrador_LostFocus()
     Refresca_Datos
 End Sub
-Private Sub CmdAceptar_Click()
+Private Sub Cmdaceptar_Click()
     Dim salir As Boolean
     Dim MiMostrador As DB_mostrador
-    Dim nF As Integer
+    Dim nf As Integer
     Dim ncont As Integer
-    
+
     '***************************************
     ' Introducción o modificación de datos
     '****************************************
     '/////INI VERIFICACIONES
     MiMostrador.DireccionIP = ""
-    
+
     If Dir(App.Path & "\plrm.txt") <> "" Then
-        nF = FreeFile()
+        nf = FreeFile()
         If nContSecPlrm = 0 Then
             nContSecPlrm = nContSecPlrm + 1
             nSecPLRM(nContSecPlrm) = Val(CmbMostrador.TexT)
             sPathSecPlrm(nContSecPlrm) = Trim(TextPathSec.TexT)
             If Right(sPathSecPlrm(nContSecPlrm), 1) <> "\" Then sPathSecPlrm(nContSecPlrm) = sPathSecPlrm(nContSecPlrm) & "\"
-            Open App.Path & "\plrm.txt" For Output As #nF
-            Print #nF, Format(Val(CmbMostrador.TexT), "00") & Trim(TextPathSec.TexT)
-            Close #nF
+            Open App.Path & "\plrm.txt" For Output As #nf
+            Print #nf, Format(Val(CmbMostrador.TexT), "00") & Trim(TextPathSec.TexT)
+            Close #nf
         Else
             For ncont = 1 To nContSecPlrm
                 If Val(nSecPLRM(ncont)) = Val(CmbMostrador.TexT) Then
@@ -479,20 +479,20 @@ Private Sub CmdAceptar_Click()
                 nSecPLRM(nContSecPlrm) = Val(CmbMostrador.TexT)
                 sPathSecPlrm(nContSecPlrm) = Trim(TextPathSec.TexT)
                 If Right(sPathSecPlrm(nContSecPlrm), 1) <> "\" Then sPathSecPlrm(nContSecPlrm) = sPathSecPlrm(nContSecPlrm) & "\"
-                nF = FreeFile()
-                Open App.Path & "\plrm.txt" For Output As #nF
+                nf = FreeFile()
+                Open App.Path & "\plrm.txt" For Output As #nf
                 For ncont = 1 To nContSecPlrm
-                    Print #nF, Format(nSecPLRM(ncont), "00") & sPathSecPlrm(ncont)
+                    Print #nf, Format(nSecPLRM(ncont), "00") & sPathSecPlrm(ncont)
                 Next ncont
-                Close #nF
+                Close #nf
             End If
         End If
-        
+
     End If
-    
-    If MultiEuroscale Or (CmbEnviar.ListIndex = 3) Then '2.0.a ip para eco...
-        If CmbEnviar.ListIndex = 0 Or CmbEnviar.ListIndex = 5 Or CmbEnviar.ListIndex = 3 Then '2.0.a Ip eco...
-            If tXTip.TexT = "" And CmbEnviar.ListIndex <> 3 Then '2.0.a ip eco
+
+    If MultiEuroscale Or (CmbEnviar.ListIndex = 3) Then    '2.0.a ip para eco...
+        If CmbEnviar.ListIndex = 0 Or CmbEnviar.ListIndex = 5 Or CmbEnviar.ListIndex = 3 Then    '2.0.a Ip eco...
+            If tXTip.TexT = "" And CmbEnviar.ListIndex <> 3 Then    '2.0.a ip eco
                 MsgBox CargaCadena(577), vbCritical  '"Falta la dirección IP"
                 tXTip.SetFocus
                 Exit Sub
@@ -515,7 +515,7 @@ Private Sub CmdAceptar_Click()
     ' máximo es 60
     '***********************************
     If (TxtMaquina.TexT > 60) And _
-    ((CmbEnviar.TexT = CmbEnviar.List(0) Or CmbEnviar.TexT = CmbEnviar.List(5))) Then
+       ((CmbEnviar.TexT = CmbEnviar.List(0) Or CmbEnviar.TexT = CmbEnviar.List(5))) Then
         MsgBox CargaCadena(561)  '"Euroscale sólo admite números de sección entre 1 y 60"
         TxtMaquina.SetFocus
         Exit Sub
@@ -524,60 +524,60 @@ Private Sub CmdAceptar_Click()
     MiMostrador.PuertoCOM = CmbCOM.ListIndex
     MiMostrador.NMostrador = CmbMostrador.TexT
     MiMostrador.NSeccion = TxtMaquina.TexT
-    MiMostrador.Name = Text1.TexT
+    MiMostrador.name = Text1.TexT
     MiMostrador.Descripcion = Text2.TexT
     Select Case CmbEnviar.ListIndex
-        Case 0
-            MiMostrador.Tipo = 0
-        Case 1
-            MiMostrador.Tipo = 1
-        Case 2
-            MiMostrador.Tipo = 3 'usaeco2
-        Case 3
-            MiMostrador.Tipo = 4
-        Case 4
-            MiMostrador.Tipo = 5
-        Case 5
-            MiMostrador.Tipo = 2
+    Case 0
+        MiMostrador.Tipo = 0
+    Case 1
+        MiMostrador.Tipo = 1
+    Case 2
+        MiMostrador.Tipo = 3    'usaeco2
+    Case 3
+        MiMostrador.Tipo = 4
+    Case 4
+        MiMostrador.Tipo = 5
+    Case 5
+        MiMostrador.Tipo = 2
     End Select
-    
+
     salir = False
     If CmbMostrador.Enabled = True Then CmbMostrador.SetFocus
     Select Case Alta_Mostrador(MiMostrador)
-       Case 7
-            MsgBox CargaCadena(562)  '"El número de mostrador no puede ser superior a 3 dígitos"
-            Exit Sub
-       Case 8
-            MsgBox CargaCadena(563)  '"El número de sección no puede ser superior a 2 dígitos"
-            TxtMaquina.SetFocus
-            Exit Sub
-       Case 9
-            MsgBox CargaCadena(564)  '"La descripción no puede tener más de 21 caracteres"
-            Exit Sub
-       Case 50
-            MsgBox CargaCadena(1116), vbCritical
-            Exit Sub
-       Case 51
-            MsgBox CargaCadena(1117), vbCritical
-            Exit Sub
-        
-       Case 0
-            If CmbMostrador.Enabled = False Then salir = True
-            
-            LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos.Envíe Modificaciones"
-            FrmSeccionyMaquina.Arbol.Nodes.Add "sistema", tvwChild, "S" & MiMostrador.NMostrador, MiMostrador.NMostrador, "seccion"
-       Case 1
-            If CmbMostrador.Enabled = False Then salir = True
-            LblInfo2.Caption = CargaCadena(528)  '"Datos Modificados.Envíe modificaciones"
-    
+    Case 7
+        MsgBox CargaCadena(562)  '"El número de mostrador no puede ser superior a 3 dígitos"
+        Exit Sub
+    Case 8
+        MsgBox CargaCadena(563)  '"El número de sección no puede ser superior a 2 dígitos"
+        TxtMaquina.SetFocus
+        Exit Sub
+    Case 9
+        MsgBox CargaCadena(564)  '"La descripción no puede tener más de 21 caracteres"
+        Exit Sub
+    Case 50
+        MsgBox CargaCadena(1116), vbCritical
+        Exit Sub
+    Case 51
+        MsgBox CargaCadena(1117), vbCritical
+        Exit Sub
+
+    Case 0
+        If CmbMostrador.Enabled = False Then salir = True
+
+        LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos.Envíe Modificaciones"
+        FrmSeccionyMaquina.Arbol.Nodes.Add "sistema", tvwChild, "S" & MiMostrador.NMostrador, MiMostrador.NMostrador, "seccion"
+    Case 1
+        If CmbMostrador.Enabled = False Then salir = True
+        LblInfo2.Caption = CargaCadena(528)  '"Datos Modificados.Envíe modificaciones"
+
     End Select
     If Dir(App.Path & "\plrm.txt") <> "" Then
-        nF = FreeFile()
-        Open App.Path & "\plrm.txt" For Output As #nF
+        nf = FreeFile()
+        Open App.Path & "\plrm.txt" For Output As #nf
         For ncont = 1 To nContSecPlrm
-            Print #nF, Format(nSecPLRM(ncont), "00") & sPathSecPlrm(ncont)
+            Print #nf, Format(nSecPLRM(ncont), "00") & sPathSecPlrm(ncont)
         Next ncont
-        Close #nF
+        Close #nf
     End If
     If salir Then Unload Me
 End Sub
@@ -591,16 +591,16 @@ Private Sub Command1_Click()
     If CmbMostrador.TexT = "" Then Exit Sub
     MiMostrador.NMostrador = CmbMostrador.TexT
     Select Case Baja_Mostrador(MiMostrador)
-        Case 0
-            LblInfo2.Caption = CargaCadena(556)  '"Datos Eliminados.Envíe Modificaciones"
-            Refresca_Mostrador
-            FrmSeccionyMaquina.Refresca_Arbol
-            CmbMostrador.TexT = ""
-            Refresca_Datos
-        Case 10
-            MsgBox CargaCadena(557)  '"No se puede borrar el Mostrador.Tiene artículos asociados"
-        Case 11
-            MsgBox CargaCadena(558)  '"No se puede borrar el mostrador.Tiene Equipos Asociados"
+    Case 0
+        LblInfo2.Caption = CargaCadena(556)  '"Datos Eliminados.Envíe Modificaciones"
+        Refresca_Mostrador
+        FrmSeccionyMaquina.Refresca_Arbol
+        CmbMostrador.TexT = ""
+        Refresca_Datos
+    Case 10
+        MsgBox CargaCadena(557)  '"No se puede borrar el Mostrador.Tiene artículos asociados"
+    Case 11
+        MsgBox CargaCadena(558)  '"No se puede borrar el mostrador.Tiene Equipos Asociados"
     End Select
 End Sub
 
@@ -609,9 +609,9 @@ Private Sub Command2_Click()
 End Sub
 
 Private Sub Form_Load()
-    
-    Dim nF As Integer
-    
+
+    Dim nf As Integer
+
     '*****************
     ' Aspecto
     '*****************
@@ -629,20 +629,20 @@ Private Sub Form_Load()
     '***************************
     If Dir(App.Path & "\plrm.txt") <> "" Then
         nContSecPlrm = 0
-        nF = FreeFile()
-        Open App.Path & "\plrm.txt" For Input As #nF
-        Do While Not EOF(nF)
+        nf = FreeFile()
+        Open App.Path & "\plrm.txt" For Input As #nf
+        Do While Not EOF(nf)
             nContSecPlrm = nContSecPlrm + 1
-            Line Input #nF, sPathSecPlrm(nContSecPlrm)
+            Line Input #nf, sPathSecPlrm(nContSecPlrm)
             sPathSecPlrm(nContSecPlrm) = Trim(sPathSecPlrm(nContSecPlrm))
             If Right(sPathSecPlrm(nContSecPlrm), 1) <> "\" Then sPathSecPlrm(nContSecPlrm) = sPathSecPlrm(nContSecPlrm) & "\"
             nSecPLRM(nContSecPlrm) = Val(Mid(sPathSecPlrm(nContSecPlrm), 1, 2))
             sPathSecPlrm(nContSecPlrm) = Mid(sPathSecPlrm(nContSecPlrm), 3)
         Loop
-        Close #nF
+        Close #nf
         TextPathSec.Visible = True
     End If
-    
+
     If usaSC10 And TipoC9 Then
         CmbEnviar.List(1) = "C9/C10"
     Else
@@ -655,14 +655,14 @@ Private Sub Form_Load()
     'End If
     If UsaEcoPrint Then
         Select Case TipoEcoPrint
-            Case 0
-                CmbEnviar.List(4) = "IV4 STD"
-            Case 1
-                CmbEnviar.List(4) = "IV4 CE"
-            Case 2
-                CmbEnviar.List(4) = "IV4 TQ"
-            Case 3
-                CmbEnviar.List(4) = "IV4 LCD"
+        Case 0
+            CmbEnviar.List(4) = "IV4 STD"
+        Case 1
+            CmbEnviar.List(4) = "IV4 CE"
+        Case 2
+            CmbEnviar.List(4) = "IV4 TQ"
+        Case 3
+            CmbEnviar.List(4) = "IV4 LCD"
         End Select
     End If
     '********************************
@@ -685,16 +685,16 @@ Private Sub Form_Load()
     'End If
     ChkAhoSS.Visible = False
     '''''''''''''''''''''''''''''
-    
+
     '''''''
     Refresca_Mostrador
     Refresca_Datos
 End Sub
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
-    Dim nF, ncont As Integer
-    
+    Dim nf, ncont As Integer
+
 
     '2.0.a
     If CmbEnviar.ListIndex = 3 Then
@@ -703,7 +703,7 @@ Private Sub Refresca_Datos()
     Else
         LabelPeco.Visible = False
         TextPeco.Visible = False
-    
+
     End If
     '*********************************
     ' prepara el formulario para
@@ -723,7 +723,7 @@ Private Sub Refresca_Datos()
         CmbEnviar.Enabled = True
     End If
     If IsNumeric(CmbMostrador.TexT) Then
-        
+
         Registro.OpenRecordset ("select * from SECCION where borrado=false and codi_ident=" & CmbMostrador.TexT)
         With Registro
             If Not .EOF Then
@@ -768,7 +768,7 @@ Private Sub Refresca_Datos()
                     tXTip.TexT = .Fields("SEC_IP")
                 End If
                 If CmbEnviar.ListIndex = 3 Then
-                    
+
                     TextPeco.TexT = CStr(.Fields("multiple"))
                 End If
                 QL1 = False
@@ -782,22 +782,22 @@ Private Sub Refresca_Datos()
                 End If
             End If
         End With
-        
+
     End If
 
     If Dir(App.Path & "\plrm.txt") <> "" Then
         nContSecPlrm = 0
-        nF = FreeFile()
-        Open App.Path & "\plrm.txt" For Input As #nF
-        Do While Not EOF(nF)
+        nf = FreeFile()
+        Open App.Path & "\plrm.txt" For Input As #nf
+        Do While Not EOF(nf)
             nContSecPlrm = nContSecPlrm + 1
-            Line Input #nF, sPathSecPlrm(nContSecPlrm)
+            Line Input #nf, sPathSecPlrm(nContSecPlrm)
             sPathSecPlrm(nContSecPlrm) = Trim(sPathSecPlrm(nContSecPlrm))
             If Right(sPathSecPlrm(nContSecPlrm), 1) <> "\" Then sPathSecPlrm(nContSecPlrm) = sPathSecPlrm(nContSecPlrm) & "\"
             nSecPLRM(nContSecPlrm) = Val(Mid(sPathSecPlrm(nContSecPlrm), 1, 2))
             sPathSecPlrm(nContSecPlrm) = Mid(sPathSecPlrm(nContSecPlrm), 3)
         Loop
-        Close #nF
+        Close #nf
         For ncont = 1 To nContSecPlrm
             If Val(CmbMostrador.TexT) = Val(nSecPLRM(ncont)) Then
                 TextPathSec.TexT = sPathSecPlrm(ncont)
@@ -806,13 +806,13 @@ Private Sub Refresca_Datos()
     End If
 End Sub
 Private Sub Refresca_Mostrador()
-    
+
     Dim Registro As New RecordNet
     '***********************************
     ' Sitúa en el combo los mostradores
     ' existentes
     '***********************************
-  
+
     Registro.OpenRecordset ("select codi_ident,borrado from seccion where borrado=false order by codi_ident")
     CmbMostrador.Clear
     With Registro
@@ -868,11 +868,11 @@ End Sub
 
 
 
-Private Sub TextPeco_KeyPress(KeyAscii As Integer) '2.0.a
+Private Sub TextPeco_KeyPress(KeyAscii As Integer)    '2.0.a
     If (KeyAscii < 48 Or KeyAscii > 57) And KeyAscii <> 8 Then
         KeyAscii = 0
     End If
-    
+
 End Sub
 Private Sub textPeco_LostFocus()
     If Val(TextPeco.TexT) > 65535 Then
@@ -898,7 +898,7 @@ Private Sub txtip_LostFocus()
             End If
         End If
     End If
-    
+
     '2.0.a error
     On Error Resume Next
     TextPeco.SetFocus

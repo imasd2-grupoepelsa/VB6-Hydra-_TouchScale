@@ -13,10 +13,10 @@ Option Explicit
 '*********************************************************************
 Private Type TipoBarras
     Tipo As String
-    Numero As Integer
+    numero As Integer
     estado As String
 End Type
-Public Type Typ_Tot_Sec ' Totales por sección
+Public Type Typ_Tot_Sec    ' Totales por sección
     nSec As Integer
     seccion() As Integer
     Importe() As Double
@@ -41,10 +41,10 @@ Public SisEur As St_MultiEuroscale  ' Variable global con los datos de los siste
 
 
 Public Function MUE_SecToSys(ByVal nSec As Long) As Long
-    '********************************
-    ' obtiene el sistema al que
-    ' pertenece un mostrador.
-    '********************************
+'********************************
+' obtiene el sistema al que
+' pertenece un mostrador.
+'********************************
     Dim Resp As Long
     Dim B1 As Long, B2 As Long
     Resp = -1
@@ -71,16 +71,16 @@ Public Function Check_Dns_File() As String
             MyPath = App.Path
         Else
             If TiendaActual < 100 Then
-            MyPath = App.Path & "\T" & Format(TiendaActual, "00")
+                MyPath = App.Path & "\T" & Format(TiendaActual, "00")
             Else
-            MyPath = App.Path & "\T" & Format(TiendaActual, "000")
+                MyPath = App.Path & "\T" & Format(TiendaActual, "000")
             End If
         End If
         If Dir(MyPath, vbDirectory) <> "" Then
             If Dir(MyPath & "\dns.txt") <> "" Then
                 Arch = FreeFile()
                 Open MyPath & "\" & "dns.txt" For Input As #Arch
-                    If Not EOF(Arch) Then Line Input #Arch, Resp
+                If Not EOF(Arch) Then Line Input #Arch, Resp
                 Close #Arch
             End If
         End If
@@ -94,18 +94,18 @@ End Function
 '   almacenándolas en la estructura SisEur
 '******************************************************
 Public Sub MUE_Sistemas()
-    Dim Base As DAO.Database
-    Dim Registro As DAO.Recordset
-    Dim Reg2 As DAO.Recordset
-    Dim Bucle As Integer
+    Dim Base As dao.Database
+    Dim Registro As dao.Recordset
+    Dim Reg2 As dao.Recordset
+    Dim bucle As Integer
     '''''''''''''
-    
+
     Set Base = OpenDatabase(Base_General)
     SisEur.NSistemas = 0
     If MultiEuroscale Then
         Set Registro = Base.OpenRecordset( _
-        "select distinct(sec_ip) from seccion where (enviardatos=" & Chr(34) & "GA" & Chr(34) & _
-        " or enviardatos=" & Chr(34) & "TODOS" & Chr(34) & ") and borrado=false")
+                       "select distinct(sec_ip) from seccion where (enviardatos=" & Chr(34) & "GA" & Chr(34) & _
+                     " or enviardatos=" & Chr(34) & "TODOS" & Chr(34) & ") and borrado=false")
         With Registro
             If Not .EOF Then
                 .MoveFirst
@@ -117,8 +117,8 @@ Public Sub MUE_Sistemas()
                             SisEur.Sistemas(SisEur.NSistemas - 1).IP = .Fields(0)
                             SisEur.Sistemas(SisEur.NSistemas - 1).NSecciones = 0
                             Set Reg2 = Base.OpenRecordset( _
-                            "select codi_ident,secc_maqui from seccion where (enviardatos=" & Chr(34) & "GA" & Chr(34) & _
-                            " or enviardatos=" & Chr(34) & "TODOS" & Chr(34) & ") and borrado=false and sec_ip=" & Chr(34) & Registro.Fields(0) & Chr(34))
+                                       "select codi_ident,secc_maqui from seccion where (enviardatos=" & Chr(34) & "GA" & Chr(34) & _
+                                     " or enviardatos=" & Chr(34) & "TODOS" & Chr(34) & ") and borrado=false and sec_ip=" & Chr(34) & Registro.Fields(0) & Chr(34))
                             Reg2.MoveFirst
                             Do Until Reg2.EOF
                                 SisEur.Sistemas(SisEur.NSistemas - 1).NSecciones = SisEur.Sistemas(SisEur.NSistemas - 1).NSecciones + 1
@@ -143,7 +143,7 @@ Public Sub MUE_Sistemas()
             SisEur.Sistemas(0).IP = sAddIp
             Set Base = OpenDatabase(Base_General)
             Set Reg2 = Base.OpenRecordset("select * from seccion where borrado=false and enviardatos=" & _
-            Chr(34) & "GA" & Chr(34) & " or enviardatos=" & Chr(34) & "TODOS" & Chr(34))
+                                          Chr(34) & "GA" & Chr(34) & " or enviardatos=" & Chr(34) & "TODOS" & Chr(34))
             Do Until Reg2.EOF
                 SisEur.Sistemas(SisEur.NSistemas - 1).NSecciones = SisEur.Sistemas(SisEur.NSistemas - 1).NSecciones + 1
                 ReDim Preserve SisEur.Sistemas(SisEur.NSistemas - 1).Secciones(SisEur.Sistemas(SisEur.NSistemas - 1).NSecciones)
@@ -162,53 +162,53 @@ Public Sub MUE_Sistemas()
 End Sub
 
 Public Function MUE_CadenaSQL(ByVal NSistema As Integer) As String
-    '********************************************
-    ' genera un fragmento de cada SQL para
-    ' filtraje de los datos que pertenecen
-    ' a una sección concreta. Poniendo como
-    ' condición el mostrador (codi_ident)
-    '********************************************
-    Dim Bucle As Integer
+'********************************************
+' genera un fragmento de cada SQL para
+' filtraje de los datos que pertenecen
+' a una sección concreta. Poniendo como
+' condición el mostrador (codi_ident)
+'********************************************
+    Dim bucle As Integer
     Dim StrSQL As String
-    
+
     StrSQL = "("
     If SisEur.Sistemas(NSistema).NSecciones = 0 Then
         StrSQL = StrSQL & "codi_ident=0"
     End If
-    For Bucle = 0 To SisEur.Sistemas(NSistema).NSecciones - 1
-        StrSQL = StrSQL & " codi_ident=" & Format(SisEur.Sistemas(NSistema).Secciones(Bucle))
-        If (Bucle <> SisEur.Sistemas(NSistema).NSecciones - 1) Then
+    For bucle = 0 To SisEur.Sistemas(NSistema).NSecciones - 1
+        StrSQL = StrSQL & " codi_ident=" & Format(SisEur.Sistemas(NSistema).Secciones(bucle))
+        If (bucle <> SisEur.Sistemas(NSistema).NSecciones - 1) Then
             StrSQL = StrSQL & " or"
         End If
         'If Bucle = 0 And SisEur.Sistemas(NSistema).NSecciones = 2 Then
         '    strSQL = strSQL & " or"
         'End If
-    Next Bucle
+    Next bucle
     StrSQL = StrSQL & ")"
     MUE_CadenaSQL = StrSQL
 End Function
 Public Function MUE_CadenaSQLMaq(ByVal NSistema As Integer) As String
-    '********************************************
-    ' genera un fragmento de cada SQL para
-    ' filtraje de los datos que pertenecen
-    ' a una sección concreta. Poniendo como
-    ' condición la sección máquina (secc_maqui)
-    '********************************************
-    Dim Bucle As Integer
+'********************************************
+' genera un fragmento de cada SQL para
+' filtraje de los datos que pertenecen
+' a una sección concreta. Poniendo como
+' condición la sección máquina (secc_maqui)
+'********************************************
+    Dim bucle As Integer
     Dim StrSQL As String
     StrSQL = "("
     If SisEur.Sistemas(NSistema).NSecciones = 0 Then
         StrSQL = StrSQL & "secc_maqui=0"
     End If
-    For Bucle = 0 To SisEur.Sistemas(NSistema).NSecciones - 1
-        StrSQL = StrSQL & " secc_maqui=" & Format(SisEur.Sistemas(NSistema).Smaq(Bucle))
-        If (Bucle <> SisEur.Sistemas(NSistema).NSecciones - 1) Then
+    For bucle = 0 To SisEur.Sistemas(NSistema).NSecciones - 1
+        StrSQL = StrSQL & " secc_maqui=" & Format(SisEur.Sistemas(NSistema).Smaq(bucle))
+        If (bucle <> SisEur.Sistemas(NSistema).NSecciones - 1) Then
             StrSQL = StrSQL & " or"
         End If
         'If Bucle = 0 And SisEur.Sistemas(NSistema).NSecciones = 2 Then
         '    strSQL = strSQL & " or"
         'End If
-    Next Bucle
+    Next bucle
     StrSQL = StrSQL & ")"
     MUE_CadenaSQLMaq = StrSQL
 End Function

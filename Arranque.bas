@@ -34,7 +34,7 @@ Private Sub UTF8toANSI(ByVal UTF8FName, ByVal ANSIFName)
         strText = .ReadText(adReadAll)
         .Position = 0
         .SetEOS
-        .Charset = "_autodetect" 'Use current ANSI codepage.
+        .Charset = "_autodetect"    'Use current ANSI codepage.
         .WriteText strText, adWriteChar
         .SaveToFile ANSIFName, adSaveCreateOverWrite
         .Close
@@ -45,25 +45,25 @@ Public Function GetShopPath(ByVal nT As Integer) As String
     Dim s As String
     Dim db2 As dao.Database
     Dim rstdb2 As dao.Recordset
-    
+
     Set db2 = OpenDatabase(App.Path & "\tiendas.mdb")
     Set rstdb2 = db2.OpenRecordset("select * from grupos where tienda=" & CStr(nT))
     If Not rstdb2.EOF Then
-       
+
         s = rstdb2.Fields(4)
     Else
         s = ""
     End If
     Set rstdb2 = Nothing
     db2.Close
-    
+
     GetShopPath = s
 End Function
 Private Sub pasosLog(ByVal n As Integer)
     CadenadeLog CStr(n)
 End Sub
 Public Sub transferSHOP(Optional ByVal nShop As Integer)
-    'transfer
+'transfer
     Dim bucle As Long
     Dim dB1 As dao.Database
     Dim db2 As dao.Database
@@ -84,7 +84,7 @@ Public Sub transferSHOP(Optional ByVal nShop As Integer)
     Dim MiProceso As Long
     Dim MiResultado As Long
     Dim sQueEjecutar As String
-    
+
     If Not IsNull(nShop) Then
         TiendaActual = nShop
         CadenadeLog "función TransferShop:" & CStr(nShop)
@@ -101,44 +101,44 @@ Public Sub transferSHOP(Optional ByVal nShop As Integer)
         rstdb2.Close
         db2.Close
     End If
-    
+
     nT = 0
 
     If Dir(App.Path & "\transfertable.cfg") = "" Then
-        Set dB1 = AbrirBase 'abrirbase 'OpenDatabase(Base_General)
+        Set dB1 = AbrirBase    'abrirbase 'OpenDatabase(Base_General)
         CadenadeLog "Se Genera Global.Dat con:" & Base_General
         Call Exporta_GlobalDat_Art(dB1)
         dB1.Close
     End If
-    
+
     Set db2 = OpenDatabase(App.Path & "\tiendas.mdb")
     If Not IsNull(nShop) Then
         TiendaActual = nShop
     End If
     Set rstdb2 = db2.OpenRecordset("select * from grupos where tienda=" & CStr(TiendaActual))
 
-'Call pasosLog(1)
-    
+    'Call pasosLog(1)
+
     If Not rstdb2.EOF Then
-       
-       nMiGrupo = rstdb2.Fields("grp")
-       rstdb2.Close
-       If TiendaActual <> 999 Then '1.7.23 c2f
-        Set rstdb2 = db2.OpenRecordset("select * from grupos where grp<>0 order by tienda")
-       Else
-        Set rstdb2 = db2.OpenRecordset("select * from grupos order by tienda")
-       End If
-       If Not rstdb2.EOF Then
-       
-'Call pasosLog(2)
 
-             rstdb2.MoveFirst
-             
-             Do While Not rstdb2.EOF
-                
-'Call pasosLog(3)
+        nMiGrupo = rstdb2.Fields("grp")
+        rstdb2.Close
+        If TiendaActual <> 999 Then    '1.7.23 c2f
+            Set rstdb2 = db2.OpenRecordset("select * from grupos where grp<>0 order by tienda")
+        Else
+            Set rstdb2 = db2.OpenRecordset("select * from grupos order by tienda")
+        End If
+        If Not rstdb2.EOF Then
 
-                If rstdb2.Fields("tienda") <> TiendaActual And (rstdb2.Fields("grp") = nMiGrupo Or (TiendaActual = 999)) Then '1.7.23 c2f si es la tienda 999 siempre se transfiere.
+            'Call pasosLog(2)
+
+            rstdb2.MoveFirst
+
+            Do While Not rstdb2.EOF
+
+                'Call pasosLog(3)
+
+                If rstdb2.Fields("tienda") <> TiendaActual And (rstdb2.Fields("grp") = nMiGrupo Or (TiendaActual = 999)) Then    '1.7.23 c2f si es la tienda 999 siempre se transfiere.
                     nT = nT + 1
                     ReDim Preserve snT(nT)
                     ReDim Preserve sntIni(nT)
@@ -153,26 +153,26 @@ Public Sub transferSHOP(Optional ByVal nShop As Integer)
                         snTienda(nT) = Format(rstdb2.Fields("tienda"), "000")
                     End If
                     'Base_General = rStdB2.Fields(4) & "dbase.mdb"
-                    
+
                     'Call Importa_Global_Dat
-                
+
                 End If
-          
+
                 rstdb2.Movenext
-             Loop
-          
-          
-       End If
-       
+            Loop
+
+
+        End If
+
     End If
-    
+
     rstdb2.Close
     db2.Close
 
-'Call pasosLog(4)
+    'Call pasosLog(4)
 
     For nC = 1 To nT
-'Call pasosLog(5)
+        'Call pasosLog(5)
         sQueEjecutar = sTipoDestino(snTCFG(nC))
         If LCase(WHOIAM) = LCase(sQueEjecutar) Then
             If Dir(App.Path & "\transfertable.cfg") = "" Then
@@ -184,7 +184,7 @@ Public Sub transferSHOP(Optional ByVal nShop As Integer)
                 Call Importa_Global_Dat
             Else
                 Call transferirTABLA(Base_General, snT(nC))
-                
+
             End If
         Else
             MiResultado = STILL_ACTIVE
@@ -197,7 +197,7 @@ Public Sub transferSHOP(Optional ByVal nShop As Integer)
     Next nC
 
     If Dir(App.Path & "\transfertable.cfg") <> "" Then
-        Set dB1 = AbrirBase 'abrirbase 'OpenDatabase(Base_General)
+        Set dB1 = AbrirBase    'abrirbase 'OpenDatabase(Base_General)
         CadenadeLog "Se Genera Global.Dat con:" & Base_General
         Call Exporta_GlobalDat_Art(dB1)
         dB1.Close
@@ -208,7 +208,7 @@ End Sub
 Public Function sTipoDestino(ByVal sCfg As String) As String
     Dim nFich As Integer
     Dim s As String
-    
+
     If LCase(WHOIAM) = "hydra.exe" And Dir(App.Path & "\hydratouch.exe") = "" Then
         sTipoDestino = WHOIAM
         Exit Function
@@ -217,7 +217,7 @@ Public Function sTipoDestino(ByVal sCfg As String) As String
         sTipoDestino = WHOIAM
         Exit Function
     End If
-    
+
     nFich = FreeFile()
     Open sCfg For Input As #nFich
     Do While Not EOF(nFich)
@@ -235,68 +235,68 @@ End Function
 
 
 Sub Main()
-Dim logntq As Integer
-Dim FServer As Integer
-Dim Buffer As String
-Dim Archivo As Integer
-Dim Elmaximo As String
-Dim Hiper As String
-Dim bucle As Long
-Dim dB1 As dao.Database
-Dim db2 As dao.Database
-Dim db3 As dao.Database
-Dim RstdB1 As dao.Recordset
-Dim rstdb2 As dao.Recordset
-Dim rStdB21 As dao.Recordset
-Dim sMiBase As String
-Dim nMiGrupo As Integer
-Dim nFieldsCount As Integer
-Dim nBucle As Integer
-Dim snonF As String
-Dim nMyFich As Integer
-Dim sNumdec As String
-Dim sNum100 As String
-Dim myRec As dao.Recordset
-Dim nf As Integer
-Dim cm As String
-'''''''''''''''''''
-'cm = verLF("|d    d  d  |  hhhsq| dddd |...||||[^]")
-'cm = cm
-'Base_General = App.Path & "\t999\dbasetouch.mdb"
-'TiendaActual = 999
-'Call transferSHOP
+    Dim logntq As Integer
+    Dim FServer As Integer
+    Dim Buffer As String
+    Dim Archivo As Integer
+    Dim Elmaximo As String
+    Dim Hiper As String
+    Dim bucle As Long
+    Dim dB1 As dao.Database
+    Dim db2 As dao.Database
+    Dim db3 As dao.Database
+    Dim RstdB1 As dao.Recordset
+    Dim rstdb2 As dao.Recordset
+    Dim rStdB21 As dao.Recordset
+    Dim sMiBase As String
+    Dim nMiGrupo As Integer
+    Dim nFieldsCount As Integer
+    Dim nBucle As Integer
+    Dim snonF As String
+    Dim nMyFich As Integer
+    Dim sNumdec As String
+    Dim sNum100 As String
+    Dim myRec As dao.Recordset
+    Dim nf As Integer
+    Dim cm As String
+    '''''''''''''''''''
+    'cm = verLF("|d    d  d  |  hhhsq| dddd |...||||[^]")
+    'cm = cm
+    'Base_General = App.Path & "\t999\dbasetouch.mdb"
+    'TiendaActual = 999
+    'Call transferSHOP
 
-'TiendaActual = 0
-'Base_General = App.Path & "\dbasetouch.mdb"
-'Call cmcSchemaADO_Click
+    'TiendaActual = 0
+    'Base_General = App.Path & "\dbasetouch.mdb"
+    'Call cmcSchemaADO_Click
 
-''Set dB1 = AbrirBase
-'lFornes = True
-''Call export_BL(True)
-'Call Bal_Epelsa_txt
+    ''Set dB1 = AbrirBase
+    'lFornes = True
+    ''Call export_BL(True)
+    'Call Bal_Epelsa_txt
 
-'cm = "CREATE TABLE nutrition (card long,portion_weight double,energy_kj_100 double," & _
-'  "energy_kj_portion double,energy_kcal_100 double,energy_kcal_portion double," & _
-'  "fat_100 double,fat_portion double,saturates_100 double,saturates_portion double," & _
-'  "mono_unsaturates_100 double,mono_unsaturates_portion double,polyunsaturates_100 double," & _
-'  "polyunsaturates_portion double,carbohydrate_100 double,carbohydrate_portion double," & _
-'  "sugars_100 double,sugars_portion double,polyols_100 double," & _
-'  "polyols_portion double,starch_100 double,starch_portion double," & _
-'  "fibre_100 double,fibre_portion double,protein_100 double,protein_portion double," & _
-'  "salt_100 double,salt_portion double)"
+    'cm = "CREATE TABLE nutrition (card long,portion_weight double,energy_kj_100 double," & _
+     '  "energy_kj_portion double,energy_kcal_100 double,energy_kcal_portion double," & _
+     '  "fat_100 double,fat_portion double,saturates_100 double,saturates_portion double," & _
+     '  "mono_unsaturates_100 double,mono_unsaturates_portion double,polyunsaturates_100 double," & _
+     '  "polyunsaturates_portion double,carbohydrate_100 double,carbohydrate_portion double," & _
+     '  "sugars_100 double,sugars_portion double,polyols_100 double," & _
+     '  "polyols_portion double,starch_100 double,starch_portion double," & _
+     '  "fibre_100 double,fibre_portion double,protein_100 double,protein_portion double," & _
+     '  "salt_100 double,salt_portion double)"
 
-'dB1.Execute cm
-'dB1.Close
+    'dB1.Execute cm
+    'dB1.Close
 
-'dB1.Execute "drop table text15"
-'dB1.Close
-'''''''''''''''''''
-'Call transferirTABLA(App.Path & "\dbasetouch.mdb", App.Path & "\t02\dbasetouch.mdb")
-'''''''''''''''''''
-   '*************************
-   ' detecta instancia previa
-   '*************************
-   Detecta_Instancia
+    'dB1.Execute "drop table text15"
+    'dB1.Close
+    '''''''''''''''''''
+    'Call transferirTABLA(App.Path & "\dbasetouch.mdb", App.Path & "\t02\dbasetouch.mdb")
+    '''''''''''''''''''
+    '*************************
+    ' detecta instancia previa
+    '*************************
+    Detecta_Instancia
     'c2f 1.1.1
     'If Dir(App.Path & "\nover1.txt") <> "" Then
     '    For Bucle = 1 To 3000
@@ -304,14 +304,14 @@ Dim cm As String
     '        DoEvents
     '    Next Bucle
     'End If
-    
+
     'If Dir(App.Path & "\mysql-connector-odbc-5.1.13-win32.msi") <> "" Then
     '    'msiexec.exe /i mysql-connector-odbc-5.1.13-win32.msi /quiet
     '    Shell App.Path & "\mysql-connector-odbc-5.1.13-win32.msi /quiet", vbNormalFocus
     '    Sleep (2000)
     '    Kill App.Path & "\mysql-connector-odbc-5.1.13-win32.msi"
     'End If
-    
+
     'UTF8toANSI App.Path & "\artcon.dat", App.Path & "\artcon.new"
     'nMyFich = FreeFile()
     'Open App.Path & "\artcon.n" For Output As #nMyFich
@@ -323,13 +323,13 @@ Dim cm As String
     '    snonF = ConvertUtf8BytesToStringnW(DecodeBase64(snonF))
     '    snonF = snonF
     '    Print #nMyFich, snonF
-        
+
     '
     '
     'Loop
     'Close #nf
     'Close #nMyFich
-    
+
     '''''
     '3.8.3-5 se borra al arrancar...
     If Dir(App.Path & "\loghydra.txt") <> "" Then
@@ -341,9 +341,9 @@ Dim cm As String
     Miruta = App.Path
     Hydra_INI = App.Path & "\hydratouch.ini"
     LockBase = False
-    
+
     Call carga_data_Vitamin
-    
+
     'If Dir(App.Path & "\upper.txt") <> "" And Dir(App.Path & "\test.tst") <> "" Then
     '    lUpperNW = True
     'End If
@@ -362,7 +362,7 @@ Dim cm As String
     If Dir(App.Path & "\hydra.exe") <> "" Then
         lhydraexe = True
     End If
-    
+
     If (Dir(App.Path & "\cocobio.cfg") <> "") Or (Dir(App.Path & "\asigfam.cfg") <> "") Then
         lCOCOBIO = True
     End If
@@ -390,14 +390,14 @@ Dim cm As String
     End If
     If Dir(App.Path & "\etc\fin_dbal.fet") <> "" Then lBelRos = True
     If Dir(App.Path & "\agora.txt") <> "" Then lAgora = True
-    
+
     '*******************************
     ' Inicia / Borra log del sistema
     '*******************************
     On Error Resume Next
     If Dir(Miruta & "\loghydratotales.txt") <> "" Then
         If FileLen(Miruta & "\loghydratotales.txt") > 48638000 Then
-            
+
             FileCopy App.Path & "\loghydratotales.txt", App.Path & "\" & Format(Date, "ddmmyyhhmmss") & "loghydratotales.txt"
             Sleep (100)
             logntq = FreeFile()
@@ -412,7 +412,7 @@ Dim cm As String
     End If
     Print #logntq, Now() & " Program HYDRATOUCH Started *************************************"
     Close logntq
-    
+
     If Dir(Miruta & "\loghydra.txt") <> "" Then
         If FileLen(Miruta & "\loghydra.txt") > 1638000 Then
             ReduceLogHydra
@@ -440,19 +440,19 @@ Dim cm As String
         Open App.Path & "\40l.txt" For Output As #logntq
         Close #logntq
     End If
-    
+
     '1.0.3 --> Leclerc
     lClR = False
     sPathMaj = ""
     '''''''''''''
-    
+
     lEsExport = False
     lesUpdate = False
-    
+
     If Dir(App.Path & "\cmdlinetouch.cfg") = "" Then
         CrearParametrosDefecto
     End If
-    
+
     If Trim(Command) = "" And Dir(App.Path & "\hydrarun.txt") <> "" Then Kill App.Path & "\hydrarun.txt"
     On Error GoTo 0
     If Dir(App.Path & "\servidoratouch.ini") <> "" Then
@@ -464,18 +464,18 @@ Dim cm As String
         End If
         On Error GoTo 0
     End If
-   
-   '*****************************
-   ' detecta programa multitienda
-   '*****************************
-    If Trim(Command) = "" Then 'restaurar
+
+    '*****************************
+    ' detecta programa multitienda
+    '*****************************
+    If Trim(Command) = "" Then    'restaurar
         If Dir(App.Path & "\hydramulti.exe") <> "" And Dir(App.Path & "\multistart.ord") = "" Then
             CadenadeLog "Se detecta en MAIN() hydramulti.exe. Se arranca."
             Shell App.Path & "\hydramulti.exe " & Command, vbNormalFocus
             End
         End If
     End If
-   
+
     On Error Resume Next
     logntq = FreeFile()
     Open App.Path & "\hydrarun.txt" For Output As #logntq
@@ -483,40 +483,40 @@ Dim cm As String
 
     'If CDKEY_USER Then Check_CDKEY
     OrdenMulti = "00"
-    
-        '***************************
-        ' Crea carpetas del programa
-        '***************************
-        CreaCarpetas
-        '***************************
-        ' comprueba si hay ficheros
-        ' de plugin en etc
-        '***************************
-        frmControl.File1.Path = App.Path & "\etc"
-        frmControl.File1.FileName = "autoplugin.*"
-        frmControl.File1.Refresh
-        For bucle = 0 To frmControl.File1.ListCount - 1
-             If Len(frmControl.File1.List(bucle)) = 17 Then
-                 If IsNumeric(Right(frmControl.File1.List(bucle), 6)) Then
-                     If Val(Right(frmControl.File1.List(bucle), 6)) < Val(Format(Now, "yymmdd")) Then
-                         Kill App.Path & "\etc\" & frmControl.File1.List(bucle)
-                     End If
-                 End If
-             End If
-        Next bucle
-        If Dir(App.Path & "\bar.jpg") <> "" Then
-             On Error Resume Next
-             Form2.Imagen.Picture = LoadPicture(App.Path & "\bar.jpg")
-             On Error GoTo 0
-        End If
 
-   '***********
-   ' De momento
-   '***********
-   Miruta = App.Path
-   Base_General = Miruta & "\dbasetouch.mdb"
-   
-   
+    '***************************
+    ' Crea carpetas del programa
+    '***************************
+    CreaCarpetas
+    '***************************
+    ' comprueba si hay ficheros
+    ' de plugin en etc
+    '***************************
+    frmControl.File1.Path = App.Path & "\etc"
+    frmControl.File1.FileName = "autoplugin.*"
+    frmControl.File1.Refresh
+    For bucle = 0 To frmControl.File1.ListCount - 1
+        If Len(frmControl.File1.List(bucle)) = 17 Then
+            If IsNumeric(Right(frmControl.File1.List(bucle), 6)) Then
+                If Val(Right(frmControl.File1.List(bucle), 6)) < Val(Format(Now, "yymmdd")) Then
+                    Kill App.Path & "\etc\" & frmControl.File1.List(bucle)
+                End If
+            End If
+        End If
+    Next bucle
+    If Dir(App.Path & "\bar.jpg") <> "" Then
+        On Error Resume Next
+        Form2.Imagen.Picture = LoadPicture(App.Path & "\bar.jpg")
+        On Error GoTo 0
+    End If
+
+    '***********
+    ' De momento
+    '***********
+    Miruta = App.Path
+    Base_General = Miruta & "\dbasetouch.mdb"
+
+
     'Set dB1 = dao.OpenDatabase(Base_General)
     'Set myRec = dB1.OpenRecordset("select * from fam_code where codi_fam=1")
     'If myRec.EOF Then
@@ -533,40 +533,40 @@ Dim cm As String
     'Set myRec = Nothing
     'dB1.Close
     'Set dB1 = Nothing
-   
-   'TouchScale ... prueba captura paises...
-   'Call capturaPaises
-   ''''''''''''''''''''''''''''''''''''''''
-   
-   
-   If Dir(App.Path & "\cocobio.cfg") Then
-    Alta_Familias_Counter_Fichero ("cocobio.cfg")
-   End If
-   If Dir(App.Path & "\asigfam.cfg") Then
-    Alta_Familias_Counter_Fichero ("asigfam.cfg")
-   End If
-   
-   Check_Multi
-   
-   'Set db3 = AbrirBase
-   'cm = "delete from text15 where codigo not in (select codigo from articulo)"
-   'db3.Execute cm
-   'cm = "delete from lintxt2040 where codigo not in (select codigo from articulo)"
-   'db3.Execute cm
-   'cm = "delete from text15 where"
-   'db3.Close
-   'Set db3 = Nothing
-   
-   '*******************************
-   ' Parametros generales de inicio
-   'CurDir
-   cuenTaTqt = 1
-   '************
-   ' nro. máximo de tiquets a recoger AH / Path de Red / ASCII
-   '**********************************************************
-   NumMaxTiquets = 0
-   On Error GoTo siguiente
-   If Dir(Miruta & "\asorden\maxtiq.ord") <> "" Then
+
+    'TouchScale ... prueba captura paises...
+    'Call capturaPaises
+    ''''''''''''''''''''''''''''''''''''''''
+
+
+    If Dir(App.Path & "\cocobio.cfg") Then
+        Alta_Familias_Counter_Fichero ("cocobio.cfg")
+    End If
+    If Dir(App.Path & "\asigfam.cfg") Then
+        Alta_Familias_Counter_Fichero ("asigfam.cfg")
+    End If
+
+    Check_Multi
+
+    'Set db3 = AbrirBase
+    'cm = "delete from text15 where codigo not in (select codigo from articulo)"
+    'db3.Execute cm
+    'cm = "delete from lintxt2040 where codigo not in (select codigo from articulo)"
+    'db3.Execute cm
+    'cm = "delete from text15 where"
+    'db3.Close
+    'Set db3 = Nothing
+
+    '*******************************
+    ' Parametros generales de inicio
+    'CurDir
+    cuenTaTqt = 1
+    '************
+    ' nro. máximo de tiquets a recoger AH / Path de Red / ASCII
+    '**********************************************************
+    NumMaxTiquets = 0
+    On Error GoTo siguiente
+    If Dir(Miruta & "\asorden\maxtiq.ord") <> "" Then
         Archivo = FreeFile()
         Open Miruta & "\asorden\maxtiq.ord" For Input As #Archivo
         If Not EOF(Archivo) Then Line Input #Archivo, Elmaximo
@@ -578,20 +578,20 @@ Dim cm As String
         End If
     End If
 siguiente:
-   On Error GoTo 0
-   ' chequea configuraciones especiales ... Si procede
-   Clientes_Especiales
-   '******************
-   ' Comprueba si existe el fichero de configuración general, y si no es así lo crea
-   If (Command <> "") Then
-    If UCase(Mid(Command, 1, 5)) = "TRANS" Then
-        LeerLineaComandos
+    On Error GoTo 0
+    ' chequea configuraciones especiales ... Si procede
+    Clientes_Especiales
+    '******************
+    ' Comprueba si existe el fichero de configuración general, y si no es así lo crea
+    If (Command <> "") Then
+        If UCase(Mid(Command, 1, 5)) = "TRANS" Then
+            LeerLineaComandos
+        Else
+            Crea_Fichero_INI
+        End If
     Else
         Crea_Fichero_INI
     End If
-   Else
-       Crea_Fichero_INI
-   End If
 
     '***************
     ' Si el programa se cerró de forma abrupta trata de reparar la base de datos
@@ -601,47 +601,47 @@ siguiente:
     '     If Dir(App.Path & "\laststart") <> "" Then Repara_Base
     'End If
     '*****
-    
-    
+
+
     ' Crea la base si no existe (o la retoma de la dejada por el master/slave)
     If (Not HayMulti) Or (HayMulti And Base_General <> "") Then
-         If Dir(Base_General) = "" Then
-              If Dir(Miruta & "\new.dbasetouch.mdb") <> "" Then
-                  On Error Resume Next
-                  Name Miruta & "\new.dbasetouch.mdb" As Miruta & "\dbasetouch.mdb"
-                  On Error GoTo 0
-              Else
-                  Form2.Show
-                  Do_Events
-                  If HayMulti And TiendaActual = 0 Then
-                  Else
-                     CadenadeLog "Creación Base General. Tienda:" & CStr(TiendaActual) & " Nombre:" & Base_General
-                     Crear_Base_Maestra
-                  End If
-                  Form2.Hide
-              End If
-         End If
+        If Dir(Base_General) = "" Then
+            If Dir(Miruta & "\new.dbasetouch.mdb") <> "" Then
+                On Error Resume Next
+                Name Miruta & "\new.dbasetouch.mdb" As Miruta & "\dbasetouch.mdb"
+                On Error GoTo 0
+            Else
+                Form2.Show
+                Do_Events
+                If HayMulti And TiendaActual = 0 Then
+                Else
+                    CadenadeLog "Creación Base General. Tienda:" & CStr(TiendaActual) & " Nombre:" & Base_General
+                    Crear_Base_Maestra
+                End If
+                Form2.Hide
+            End If
+        End If
     End If
-    
-    
+
+
     '*********************************************************
     ' comprueba si existe una base de datos antigua de formato
     ' incompatible MNG
     '*****************
     If (Not HayMulti) Or (HayMulti And Base_General <> "") Then
-         CadenadeLog "Se revisa si necesario Actualizar: " & Base_General
-         FrmCambiaFormato.CambiarFormatoBase
-         If Dir(App.Path & "\soloformato") <> "" Then
+        CadenadeLog "Se revisa si necesario Actualizar: " & Base_General
+        FrmCambiaFormato.CambiarFormatoBase
+        If Dir(App.Path & "\soloformato") <> "" Then
             Kill App.Path & "\soloformato"
             salir_programa
-         End If
+        End If
     End If
     '*****
-    
+
     If Dir(Miruta & "\new.dbasetouch.mdb") <> "" Then
-         On Error Resume Next
-         Kill Miruta & "\new.dbasetouch.mdb"
-         On Error GoTo 0
+        On Error Resume Next
+        Kill Miruta & "\new.dbasetouch.mdb"
+        On Error GoTo 0
     End If
     '************************************
     ' Si procede borra totales acumulados
@@ -651,16 +651,16 @@ siguiente:
         If DiasBorrado > 0 Then
             'c2f 1.1.1
             'If Dir(App.Path & "\nover1.txt") = "" Then
-                Load frmWAIT
-                frmWAIT.Label1.Caption = "Volcado a Histórico..."
-                frmWAIT.Label2.Caption = ""
-                frmWAIT.Visible = True
+            Load frmWAIT
+            frmWAIT.Label1.Caption = "Volcado a Histórico..."
+            frmWAIT.Label2.Caption = ""
+            frmWAIT.Visible = True
             'End If
             Do_Events
             'If Dir(App.Path & "\nover1.txt") = "" Then
-                Interfaz.exe_copion "procTotalHistorico" '''''''''''''''''''''''''''''''''''''''cas.v170
-                Unload frmWAIT
-                Set frmWAIT = Nothing
+            Interfaz.exe_copion "procTotalHistorico"    '''''''''''''''''''''''''''''''''''''''cas.v170
+            Unload frmWAIT
+            Set frmWAIT = Nothing
             'End If
             Load frmMantenimiento
             frmMantenimiento.MostrarMsg = False
@@ -676,11 +676,11 @@ siguiente:
                 frmMantenimiento.TxtFecha(4).TexT = Mid(Format((Now - DiasBorrado), "dd/mm/yy"), 4, 2)
                 frmMantenimiento.TxtFecha(5).TexT = Right(Format((Now - DiasBorrado), "dd/mm/yy"), 2)
             End If
-            
+
             lNoSi = True
             frmMantenimiento.cmdespere_Click
             lNoSi = True
-            
+
             frmMantenimiento.MostrarMsg = True
             'c2f 1.7.2
             Unload frmMantenimiento
@@ -703,38 +703,38 @@ siguiente:
         ' Si procede borra bases de datos antiguas de Backup
         '***************************************************
         If BorrarBackup > 0 Then
-           FrmResturarBackup.Borrar_Copias BorrarBackup
-           Unload FrmResturarBackup
+            FrmResturarBackup.Borrar_Copias BorrarBackup
+            Unload FrmResturarBackup
         End If
     End If
-    
-    
+
+
     '****************
     ' Lee los posibles parámetros de Linea de comandos
     '********************
     'c2f/caspiunza
     If OrdenMulti <> "00" Then
-         FrmHlink.RealizaAccion OrdenMulti
-         
-         
-         'c2f DIA se pretende traspasar lo cambios en artículos
-         'a tiendas del mismo Grupo
-         
-         If (OrdenMulti = "21" Or OrdenMulti = "31") And (Dir(App.Path & "\tiendas.mdb") <> "") And _
-             (Dir(App.Path & "\shoptras.txt") <> "") Then
-            
+        FrmHlink.RealizaAccion OrdenMulti
+
+
+        'c2f DIA se pretende traspasar lo cambios en artículos
+        'a tiendas del mismo Grupo
+
+        If (OrdenMulti = "21" Or OrdenMulti = "31") And (Dir(App.Path & "\tiendas.mdb") <> "") And _
+           (Dir(App.Path & "\shoptras.txt") <> "") Then
+
             Call transferSHOP(TiendaActual)
-            
-            
+
+
             salir_programa
-         
-            
-         End If
-         
-         salir_programa
-    
+
+
+        End If
+
+        salir_programa
+
     End If
-   
+
 
     'Call CargaPaises
     'If lUpperNW = False Then
@@ -759,7 +759,7 @@ siguiente:
         dB1.Close
         Set dB1 = Nothing
     End If
-    
+
     If Dir(App.Path & "\adaptafam") <> "" Then
         If Dir(App.Path & "\adaptado") = "" Then
             Dim nMymax
@@ -774,7 +774,7 @@ siguiente:
             Set myRec = Nothing
             If IsNull(nMymax) Then nMymax = 0
             Set myRec = dB1.OpenRecordset("select * from fam_code where index<>0 order by codi_fam")
-            
+
             If Not myRec.EOF Then
                 Do While Not myRec.EOF
                     If Not IsNull(myRec.Fields("index")) Then
@@ -794,103 +794,103 @@ siguiente:
         End If
         Kill App.Path & "\adaptafam"
     End If
-    
-   
-   
-''''''
-'Test comandos
-''''''
-'LeerLineaComandos "/01END_DAY"
-''''''
-   
-   '****************
-   ' Lee los posibles parámetros de Linea de comandos
-   '********************
-   LeerLineaComandos
-   
-   
-   
-  '******************
-  ' Activa Recogida contínua de tiquets
-  '******************
-  'If descAuto = True Then
-  '    frmControl.timetqt.Enabled = True
-  '    '1.0.4 --> activar
-  '    PausaTiquets = False
-  '    frmEpelsa.BloquearMenues
-  '    frmEpelsa.CmdComunicaciones(3).Caption = CargaCadena(704)
-  '    'c2f 1.7.2
-  '    frmEpelsa.CmdComunicaciones(3).Enabled = True
-  '    '''''''''''''''''''
-  'End If
- 
- UsuarioActual.Nombre = ""
- lCogeTiquet = False
 
- If Not HayMulti Then
-      If HaySeguridad And Not IconificarInicio Then
-          If EncontrarUsuario = False Then
-              '4.5.28
-                 UsuarioActual.Nombre = "opcen"
-                 UsuarioActual.password = ""
-                 Call Secure_Login(UsuarioActual, True)
-              '''''''
-              
-              If Dir(App.Path & "\hydrarun.txt") <> "" Then
-                  Kill App.Path & "\hydrarun.txt"
-                  End
-              End If
-          End If
-      End If
-    Dim spa As String
-    Dim Arch As Integer
-    spa = App.Path & "\"
-    nGTOrd = 1
-    If Dir(spa & "ngtord") <> "" Then
-        Arch = FreeFile()
-        Open spa & "ngtord" For Input As #Arch
-        Line Input #Arch, cm
-        If Val(cm) > 9999 Then
-            cm = "0001"
-            nGTOrd = Val(cm)
-            Close #Arch
-            Arch = FreeFile()
-            Open spa & "ngtord" For Output As #Arch
-            Print #Arch, cm
+
+
+    ''''''
+    'Test comandos
+    ''''''
+    'LeerLineaComandos "/01END_DAY"
+    ''''''
+
+    '****************
+    ' Lee los posibles parámetros de Linea de comandos
+    '********************
+    LeerLineaComandos
+
+
+
+    '******************
+    ' Activa Recogida contínua de tiquets
+    '******************
+    'If descAuto = True Then
+    '    frmControl.timetqt.Enabled = True
+    '    '1.0.4 --> activar
+    '    PausaTiquets = False
+    '    frmEpelsa.BloquearMenues
+    '    frmEpelsa.CmdComunicaciones(3).Caption = CargaCadena(704)
+    '    'c2f 1.7.2
+    '    frmEpelsa.CmdComunicaciones(3).Enabled = True
+    '    '''''''''''''''''''
+    'End If
+
+    UsuarioActual.Nombre = ""
+    lCogeTiquet = False
+
+    If Not HayMulti Then
+        If HaySeguridad And Not IconificarInicio Then
+            If EncontrarUsuario = False Then
+                '4.5.28
+                UsuarioActual.Nombre = "opcen"
+                UsuarioActual.password = ""
+                Call Secure_Login(UsuarioActual, True)
+                '''''''
+
+                If Dir(App.Path & "\hydrarun.txt") <> "" Then
+                    Kill App.Path & "\hydrarun.txt"
+                    End
+                End If
+            End If
         End If
-        Close #Arch
+        Dim spa As String
+        Dim Arch As Integer
+        spa = App.Path & "\"
+        nGTOrd = 1
+        If Dir(spa & "ngtord") <> "" Then
+            Arch = FreeFile()
+            Open spa & "ngtord" For Input As #Arch
+            Line Input #Arch, cm
+            If Val(cm) > 9999 Then
+                cm = "0001"
+                nGTOrd = Val(cm)
+                Close #Arch
+                Arch = FreeFile()
+                Open spa & "ngtord" For Output As #Arch
+                Print #Arch, cm
+            End If
+            Close #Arch
+        End If
+
     End If
-      
- End If
- '//////////////////////////////////////////////////////////////////cas.v130
-  If (Dir(Miruta & "\marcaTqt.txt") <> "") Then
-      marca_tqt_exportacion
-      Kill Miruta & "\marcaTqt.txt"
-  End If
- '//////////////////////////////////////////////////////////////////////////
- 'If Dir(App.Path & "\ata34") = "" Then
- '   Set dB1 = dao.OpenDatabase(Base_General)
- '   For nF = 21 To 40
- '       cm = "alter table lintxt2040 alter column txt_" & CStr(nF) & " TEXT(40)"
- '       dB1.Execute cm
- '   Next nF
- '   dB1.Close
- '   Set dB1 = Nothing
- '   nF = FreeFile()
- '   Open App.Path & "\ata34" For Output As #nF
- '   Close #nF
- 'End If
-  Load frmEpelsa
-  'If Not IconificarInicio Then
-      MostrarInterfaz
-  'End If
- '**************************************
- ' Iconificación
- If IconificarInicio Then
-    frmControl.cSysTray1.InTray = True
-    frmEpelsa.Visible = False
- End If
-    
+    '//////////////////////////////////////////////////////////////////cas.v130
+    If (Dir(Miruta & "\marcaTqt.txt") <> "") Then
+        marca_tqt_exportacion
+        Kill Miruta & "\marcaTqt.txt"
+    End If
+    '//////////////////////////////////////////////////////////////////////////
+    'If Dir(App.Path & "\ata34") = "" Then
+    '   Set dB1 = dao.OpenDatabase(Base_General)
+    '   For nF = 21 To 40
+    '       cm = "alter table lintxt2040 alter column txt_" & CStr(nF) & " TEXT(40)"
+    '       dB1.Execute cm
+    '   Next nF
+    '   dB1.Close
+    '   Set dB1 = Nothing
+    '   nF = FreeFile()
+    '   Open App.Path & "\ata34" For Output As #nF
+    '   Close #nF
+    'End If
+    Load frmEpelsa
+    'If Not IconificarInicio Then
+    MostrarInterfaz
+    'End If
+    '**************************************
+    ' Iconificación
+    If IconificarInicio Then
+        frmControl.cSysTray1.InTray = True
+        frmEpelsa.Visible = False
+    End If
+
     '******************
     ' Activa Recogida contínua de tiquets
     '******************
@@ -906,17 +906,17 @@ siguiente:
         lCogeTiquet = True
         cgdtiquet = False
     End If
-    
+
 End Sub
 
 
 Private Function marca_tqt_exportacion() As Integer
-Dim rst As dao.Recordset
-Dim db As dao.Database
-Dim sSQL As String
-Dim cntT As Long
-Dim cntR As Long
-Dim sTabla As String
+    Dim rst As dao.Recordset
+    Dim db As dao.Database
+    Dim sSQL As String
+    Dim cntT As Long
+    Dim cntR As Long
+    Dim sTabla As String
     Set db = AbrirBase
     For cntT = 0 To 1
         If cntT = 0 Then sTabla = "cabecera"
@@ -984,7 +984,7 @@ Public Sub CreaCarpetas()
         On Error GoTo 0
     End If
     On Error GoTo fin
-    
+
     If Dir(Miruta & "\images", vbDirectory) = "" Then
         On Error Resume Next
         MkDir (Miruta & "\images")
@@ -1005,16 +1005,16 @@ Public Sub CreaCarpetas()
     '    MkDir (Miruta & "\images\items")
     '    On Error GoTo 0
     'End If
-    
+
     If Dir(Miruta & "\dirtmptouch\tmp.mdb", vbArchive) <> "" Then
         Kill Miruta & "\dirtmptouch\tmp.mdb"
     End If
     On Error GoTo 0
     Conseguido = False
     Reintentos = 0
-    
+
     'MsgBox Miruta & "\dirtmptouch\tmp.mdb"
-    
+
     Do Until Conseguido Or Reintentos > 200
         On Error Resume Next
         Set Base = CreateDatabase(Miruta & "\dirtmptouch\tmp.mdb", dbLangGeneral, dbVersion40)
@@ -1025,10 +1025,10 @@ Public Sub CreaCarpetas()
             Conseguido = True
         End If
     Loop
-    
+
     'MsgBox CStr(Conseguido)
-    
-    
+
+
     If Conseguido Then
         Set Tabla = Base.CreateTableDef("consart")
         With Tabla
@@ -1160,16 +1160,16 @@ Private Sub Check_Multi()
     Dim Buffer As String
     Dim bucle As Integer
     CadenadeLog "Check_Multi()"
-    
-    
+
+
     If Trim(Command) = "" Then
         CadenadeLog "Check_Multi() --> Sin parámetro de arranque..."
         If Dir(App.Path & "\multistart.ord") <> "" Then
-            
+
             CadenadeLog "Check_multi() --> Detectado multistart.ord"
-            
+
             FileCopy App.Path & "\multistart.ord", App.Path & "\multistart.cop"
-            
+
             HayMulti = True
             Arch = FreeFile()
             Open App.Path & "\multistart.ord" For Input As #Arch
@@ -1177,18 +1177,18 @@ Private Sub Check_Multi()
             id = Buffer
             Line Input #Arch, Buffer
             Hydra_INI = Buffer
-            
+
             CadenadeLog "Leido de multistart.ord, Hydra_INI=" & Hydra_INI
-            
+
             Line Input #Arch, Buffer
             Base_General = Buffer
-            
+
             CadenadeLog "Leido de multistart.ord, Base_General=" & Base_General
-            
+
             Line Input #Arch, Buffer
-           
+
             NombreTienda = Buffer
-            
+
             Line Input #Arch, Buffer
             OrdenMulti = Buffer
             Line Input #Arch, Buffer
@@ -1209,7 +1209,7 @@ Private Sub Check_Multi()
     Else
         '"TRANS"
         If UCase(Mid(Command, 1, 5)) <> "TRANS" Then
-            
+
             If Dir(App.Path & "\hydramulti.exe") <> "" Then Check_TiendaCommand
         End If
     End If
@@ -1219,7 +1219,7 @@ Public Sub hazGS()
     Dim rst As dao.Recordset
     Dim basTi As dao.Database
     Dim nArch As Integer
-    
+
     Set basTi = OpenDatabase(App.Path & "\tiendas.mdb")
     Set rst = basTi.OpenRecordset("select * from grupos where tienda=" & CStr(TiendaActual))
     If Not rst.EOF Then
@@ -1270,8 +1270,8 @@ Public Sub Check_TiendaCommand()
     Dim Base As dao.Database
 
     If (Dir(App.Path & "\cmdlinetouch.cfg") = "") And (Not HaySeguridad) Then
-       MsgBox CargaCadena(1383), vbCritical
-       End
+        MsgBox CargaCadena(1383), vbCritical
+        End
     End If
     Buffer = Trim(Command)
     If UCase(Mid(Buffer, 5)) = "KILLTRA" Or UCase(Mid(Buffer, 2)) = "KILLTRA" Then
@@ -1290,14 +1290,14 @@ Public Sub Check_TiendaCommand()
         End If
         If Dir(Base_General) <> "" Then
             Set Base = AbrirBase
-                Base.Execute "delete * from cabecera where typtic='12'"
-                Base.Execute "delete * from tickets where typtic='12'"
-                Base.Execute "delete * from gtsecs where modo=12"
-                Base.Execute "delete * from gtarti where modo=12"
-                Base.Execute "delete * from gtinfven where modo=12"
-                Base.Execute "delete * from gtvend where modo=12"
-                Base.Execute "delete * from gthora"
-                CadenadeLog "Execute: delete * from gthora"
+            Base.Execute "delete * from cabecera where typtic='12'"
+            Base.Execute "delete * from tickets where typtic='12'"
+            Base.Execute "delete * from gtsecs where modo=12"
+            Base.Execute "delete * from gtarti where modo=12"
+            Base.Execute "delete * from gtinfven where modo=12"
+            Base.Execute "delete * from gtvend where modo=12"
+            Base.Execute "delete * from gthora"
+            CadenadeLog "Execute: delete * from gthora"
             'End If
             Base.Close
             Set Base = Nothing
@@ -1305,21 +1305,21 @@ Public Sub Check_TiendaCommand()
         'salir_programa
         End
     End If
-    
+
     '2.0.40
-       '2.0.37 adaptación parámetro a 3 dígitos tienda...
-       If left(Buffer, 1) = "/" And IsNumeric(Mid(Buffer, 2, 1)) Then
-           If IsNumeric(Mid(Buffer, 3, 1)) Then
-               CadenadeLog "Adaptación parámetro:" & Buffer
-               If Not IsNumeric(Mid(Buffer, 4, 1)) Then
-                   Buffer = "/0" & Mid(Buffer, 2)
-               End If
-               CadenadeLog "               Queda:" & Buffer
-           End If
-           
-       End If
-       ''''''''''''''''''''''''''''''''''''''''''''''''''
-    
+    '2.0.37 adaptación parámetro a 3 dígitos tienda...
+    If left(Buffer, 1) = "/" And IsNumeric(Mid(Buffer, 2, 1)) Then
+        If IsNumeric(Mid(Buffer, 3, 1)) Then
+            CadenadeLog "Adaptación parámetro:" & Buffer
+            If Not IsNumeric(Mid(Buffer, 4, 1)) Then
+                Buffer = "/0" & Mid(Buffer, 2)
+            End If
+            CadenadeLog "               Queda:" & Buffer
+        End If
+
+    End If
+    ''''''''''''''''''''''''''''''''''''''''''''''''''
+
     '''''''
     CuentaDefiniciones = 1
     CadenadeLog "MIRUTA: " & Miruta
@@ -1328,138 +1328,138 @@ Public Sub Check_TiendaCommand()
     CadenadeLog "Mid(Buffer, 1, 5)=" & Mid(Buffer, 1, 5)
     CadenadeLog ""
     If (Buffer = "" Or UCase(Mid(Buffer, 1, 5)) = "TRANS") Then Exit Sub
-       
-       CadenadeLog "LECTURA DE DEFINICIONES EXISTENTES EN CMDLINETOUCH.CFG... check_tiendacommand"
-       
-       Fichero = FreeFile()
-       Open App.Path & "\cmdlinetouch.cfg" For Input As Fichero
-       If Not EOF(Fichero) Then
-            Do Until EOF(Fichero)
-                ReDim Preserve Definiciones(CuentaDefiniciones + 1)
-                Line Input #Fichero, Definiciones(CuentaDefiniciones).texto
-                CadenadeLog "Definición:" & CStr(CuentaDefiniciones) & " --> " & Definiciones(CuentaDefiniciones).texto
-                Line Input #Fichero, Definiciones(CuentaDefiniciones).accion
-                Line Input #Fichero, Definiciones(CuentaDefiniciones).Adicional
-                CuentaDefiniciones = CuentaDefiniciones + 1
-            Loop
-        End If
-        Close #Fichero
-        If Mid(Buffer, 1, 1) = "/" Then
-            Buffer2 = "/"
-            For bucle = 2 To Len(Buffer)
-                If Mid(Buffer, bucle, 1) = " " Or Mid(Buffer, bucle, 1) = "/" Then
-                    Exit For
-                Else
-                    Buffer2 = Buffer2 & Mid(Buffer, bucle, 1)
-                End If
-            Next bucle
-        End If
-        Buffer2 = StrConv(Buffer2, vbUpperCase)
-        
-        CadenadeLog "Conversión a mayúsculas parámetro:" & Buffer2
-        
-'CadenadeLog Buffer2
 
-        eNCONTRADO = False
-        For bucle = 1 To CuentaDefiniciones
-            If InStr(1, Definiciones(bucle).texto, "?") > 0 Then
-                BufDef = ""
-                For b = 1 To Len(Definiciones(bucle).texto)
-                    If b <= Len(Buffer2) Then
-                        If Mid(Definiciones(bucle).texto, b, 1) = "?" Then
-                            BufDef = BufDef & Mid(Buffer2, b, 1)
-                        Else
-                            BufDef = BufDef & Mid(Definiciones(bucle).texto, b, 1)
-                        End If
-                    End If
-                Next b
-            Else
-                BufDef = Definiciones(bucle).texto
-            End If
-            If InStr(1, BufDef, "#") > 0 Then
-                BufDef2 = ""
-                MiTienda = ""
-                For b = 1 To Len(BufDef)
-                    If b <= Len(Buffer2) Then
-                        If Mid(BufDef, b, 1) = "#" Then
-                            BufDef2 = BufDef2 & Mid(Buffer2, b, 1)
-                            MiTienda = MiTienda & Mid(Buffer2, b, 1)
-                        Else
-                            BufDef2 = BufDef2 & Mid(BufDef, b, 1)
-                        End If
-                    End If
-                Next b
-            Else
-                BufDef2 = BufDef
-            End If
-            
-            CadenadeLog "Comparación Buffer y definición: " & Buffer2 & " --- " & BufDef2
-            If Buffer2 = BufDef2 Then
-                'accion = Val(Left(Definiciones(Bucle).accion, 3))
-                eNCONTRADO = True
-                If Val(MiTienda) < 100 Then
-                    If Dir(App.Path & "\t" & Format(Val(MiTienda), "00"), vbDirectory) = "" Then
-                        
-                        If Val(left(Definiciones(bucle).accion, 3)) <> 40 Then
-                            MsgBox CargaCadena(1384), vbCritical
-                            End
-                        End If
-                        
-                    End If
-                Else
-                    If Dir(App.Path & "\t" & Format(Val(MiTienda), "000"), vbDirectory) = "" Then
-                        
-                        If Val(left(Definiciones(bucle).accion, 3)) <> 40 Then
-                            MsgBox "Selected Store Does Not Exists. You have to Create It", vbCritical
-                            End
-                        End If
-                        
-                    End If
-                
-                End If
-                TiendaActual = Val(MiTienda)
-                
-                CadenadeLog "Tienda a arrancar:" & CStr(TiendaActual)
-                
-                If TiendaActual <> 0 Then
-                    '1.7.19 gigante
-                    sCaptura = GetShopPath(TiendaActual)
-                    
-                    CadenadeLog "Captura de path en Tiendas.mdb" & ": " & sCaptura
-                    
-                    If sCaptura = "" Then
-                        If Val(MiTienda) < 100 Then
-                            Base_General = App.Path & "\t" & Format(Val(MiTienda), "00") & "\dbasetouch.mdb"
-                            Hydra_INI = App.Path & "\t" & Format(Val(MiTienda), "00") & "\hydratouch.ini"
-                        Else
-                            Base_General = App.Path & "\t" & Format(Val(MiTienda), "000") & "\dbasetouch.mdb"
-                            Hydra_INI = App.Path & "\t" & Format(Val(MiTienda), "000") & "\hydratouch.ini"
-                        
-                        End If
-                    Else
-                        
-                        Base_General = sCaptura & "dbasetouch.mdb"
-                        Hydra_INI = sCaptura & "hydratouch.ini"
-                        
-                        CadenadeLog "Base_General:" & Base_General
-                        CadenadeLog "Hydra_ini:" & Hydra_INI
-                    End If
-                    
-                Else
-                    Base_General = ""
-                    Hydra_INI = ""
-                End If
-                HayMulti = True
-                Call hazGS
+    CadenadeLog "LECTURA DE DEFINICIONES EXISTENTES EN CMDLINETOUCH.CFG... check_tiendacommand"
+
+    Fichero = FreeFile()
+    Open App.Path & "\cmdlinetouch.cfg" For Input As Fichero
+    If Not EOF(Fichero) Then
+        Do Until EOF(Fichero)
+            ReDim Preserve Definiciones(CuentaDefiniciones + 1)
+            Line Input #Fichero, Definiciones(CuentaDefiniciones).texto
+            CadenadeLog "Definición:" & CStr(CuentaDefiniciones) & " --> " & Definiciones(CuentaDefiniciones).texto
+            Line Input #Fichero, Definiciones(CuentaDefiniciones).accion
+            Line Input #Fichero, Definiciones(CuentaDefiniciones).Adicional
+            CuentaDefiniciones = CuentaDefiniciones + 1
+        Loop
+    End If
+    Close #Fichero
+    If Mid(Buffer, 1, 1) = "/" Then
+        Buffer2 = "/"
+        For bucle = 2 To Len(Buffer)
+            If Mid(Buffer, bucle, 1) = " " Or Mid(Buffer, bucle, 1) = "/" Then
                 Exit For
+            Else
+                Buffer2 = Buffer2 & Mid(Buffer, bucle, 1)
             End If
-            
-            
         Next bucle
-        If Not eNCONTRADO Then
-            MsgBox "Command Line : Unknown Parameter", vbCritical
-            End
+    End If
+    Buffer2 = StrConv(Buffer2, vbUpperCase)
+
+    CadenadeLog "Conversión a mayúsculas parámetro:" & Buffer2
+
+    'CadenadeLog Buffer2
+
+    eNCONTRADO = False
+    For bucle = 1 To CuentaDefiniciones
+        If InStr(1, Definiciones(bucle).texto, "?") > 0 Then
+            BufDef = ""
+            For b = 1 To Len(Definiciones(bucle).texto)
+                If b <= Len(Buffer2) Then
+                    If Mid(Definiciones(bucle).texto, b, 1) = "?" Then
+                        BufDef = BufDef & Mid(Buffer2, b, 1)
+                    Else
+                        BufDef = BufDef & Mid(Definiciones(bucle).texto, b, 1)
+                    End If
+                End If
+            Next b
+        Else
+            BufDef = Definiciones(bucle).texto
         End If
+        If InStr(1, BufDef, "#") > 0 Then
+            BufDef2 = ""
+            MiTienda = ""
+            For b = 1 To Len(BufDef)
+                If b <= Len(Buffer2) Then
+                    If Mid(BufDef, b, 1) = "#" Then
+                        BufDef2 = BufDef2 & Mid(Buffer2, b, 1)
+                        MiTienda = MiTienda & Mid(Buffer2, b, 1)
+                    Else
+                        BufDef2 = BufDef2 & Mid(BufDef, b, 1)
+                    End If
+                End If
+            Next b
+        Else
+            BufDef2 = BufDef
+        End If
+
+        CadenadeLog "Comparación Buffer y definición: " & Buffer2 & " --- " & BufDef2
+        If Buffer2 = BufDef2 Then
+            'accion = Val(Left(Definiciones(Bucle).accion, 3))
+            eNCONTRADO = True
+            If Val(MiTienda) < 100 Then
+                If Dir(App.Path & "\t" & Format(Val(MiTienda), "00"), vbDirectory) = "" Then
+
+                    If Val(left(Definiciones(bucle).accion, 3)) <> 40 Then
+                        MsgBox CargaCadena(1384), vbCritical
+                        End
+                    End If
+
+                End If
+            Else
+                If Dir(App.Path & "\t" & Format(Val(MiTienda), "000"), vbDirectory) = "" Then
+
+                    If Val(left(Definiciones(bucle).accion, 3)) <> 40 Then
+                        MsgBox "Selected Store Does Not Exists. You have to Create It", vbCritical
+                        End
+                    End If
+
+                End If
+
+            End If
+            TiendaActual = Val(MiTienda)
+
+            CadenadeLog "Tienda a arrancar:" & CStr(TiendaActual)
+
+            If TiendaActual <> 0 Then
+                '1.7.19 gigante
+                sCaptura = GetShopPath(TiendaActual)
+
+                CadenadeLog "Captura de path en Tiendas.mdb" & ": " & sCaptura
+
+                If sCaptura = "" Then
+                    If Val(MiTienda) < 100 Then
+                        Base_General = App.Path & "\t" & Format(Val(MiTienda), "00") & "\dbasetouch.mdb"
+                        Hydra_INI = App.Path & "\t" & Format(Val(MiTienda), "00") & "\hydratouch.ini"
+                    Else
+                        Base_General = App.Path & "\t" & Format(Val(MiTienda), "000") & "\dbasetouch.mdb"
+                        Hydra_INI = App.Path & "\t" & Format(Val(MiTienda), "000") & "\hydratouch.ini"
+
+                    End If
+                Else
+
+                    Base_General = sCaptura & "dbasetouch.mdb"
+                    Hydra_INI = sCaptura & "hydratouch.ini"
+
+                    CadenadeLog "Base_General:" & Base_General
+                    CadenadeLog "Hydra_ini:" & Hydra_INI
+                End If
+
+            Else
+                Base_General = ""
+                Hydra_INI = ""
+            End If
+            HayMulti = True
+            Call hazGS
+            Exit For
+        End If
+
+
+    Next bucle
+    If Not eNCONTRADO Then
+        MsgBox "Command Line : Unknown Parameter", vbCritical
+        End
+    End If
 End Sub
 Private Sub Clientes_Especiales()
     Dim Arch As Integer
@@ -1478,8 +1478,8 @@ Private Sub Clientes_Especiales()
         Close #Arch
         sPathMaj = Trim(sPathMaj)
         On Error GoTo 0
-        
-        
+
+
     End If
 
 End Sub
@@ -1503,15 +1503,15 @@ Private Sub Crea_Fichero_INI()
             '    CadenadeLog CargaCadena(852)
             '    End
             'Else
-                If Dir(App.Path & "\hydraserver.exe") <> "" Then StoreFlow = True
-                LeerParametrosInicio
-                Load FrmConfiguracion2
-                FrmConfiguracion2.CmdCancelar.Enabled = False
-                FrmConfiguracion2.Show
-                Do While FrmConfiguracion2.Visible
-                    Do_Events
-                Loop
-                Unload FrmConfiguracion2
+            If Dir(App.Path & "\hydraserver.exe") <> "" Then StoreFlow = True
+            LeerParametrosInicio
+            Load FrmConfiguracion2
+            FrmConfiguracion2.CmdCancelar.Enabled = False
+            FrmConfiguracion2.Show
+            Do While FrmConfiguracion2.Visible
+                Do_Events
+            Loop
+            Unload FrmConfiguracion2
             'End If
         Else
             'If Dir(MiruTa & "\pass.sec") = "" Then
@@ -1521,7 +1521,7 @@ Private Sub Crea_Fichero_INI()
             '    CadenadeLog CargaCadena(853)
             '    End
             'Else
-                If Hydra_INI <> "" Then LeerParametrosInicio
+            If Hydra_INI <> "" Then LeerParametrosInicio
             'End If
         End If
     End If

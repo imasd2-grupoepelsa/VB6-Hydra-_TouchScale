@@ -144,7 +144,7 @@ Private Sub Command1_Click(Index As Integer)
 End Sub
 
 Public Sub Form_Load()
-   On Error Resume Next
+    On Error Resume Next
     LblNombre.Caption = CargaCadena(552)
     LblPassword.Caption = CargaCadena(521)
     CmaAceptar(0).Caption = CargaCadena(287)

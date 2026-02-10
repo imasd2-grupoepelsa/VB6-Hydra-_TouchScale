@@ -938,9 +938,9 @@ Private Function displayar()
         .lblMO(1).Caption = "  " & lintxt.Plu
         .lblMO(2).Caption = "  " & lintxt.Mostrador
         If (lintxt.tran_txt2 = "*") Then
-            .lblMO(3).Caption = "  " & CargaCadena(93) '"ENVIADO"
+            .lblMO(3).Caption = "  " & CargaCadena(93)    '"ENVIADO"
         Else
-            .lblMO(3).Caption = "  " & CargaCadena(439) '"NO ENVIADO"
+            .lblMO(3).Caption = "  " & CargaCadena(439)    '"NO ENVIADO"
         End If
         For cnt = 0 To 19
             .txt(cnt).TexT = lintxt.txt(cnt)
@@ -959,7 +959,7 @@ End Function
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''
 Private Sub Form_Activate()
-Dim n As Integer
+    Dim n As Integer
     For n = 0 To 19
         txt(n).MaxLength = 40
     Next n
@@ -1026,15 +1026,15 @@ Public Function alta()
     Set dbtxt = OpenDatabase(Base_General)
     '1.0.1
     'sSQL = "SELECT *" & _
-    '       " FROM linTxt2040" & _
-    '       " WHERE codigo=" & CStr(lintxt.codigo) & _
-    '       " AND plu=" & CStr(lintxt.plu) & _
-    '       " AND mostrador=" & CStr(lintxt.Mostrador) & _
-    '       " ORDER BY codigo"
+     '       " FROM linTxt2040" & _
+     '       " WHERE codigo=" & CStr(lintxt.codigo) & _
+     '       " AND plu=" & CStr(lintxt.plu) & _
+     '       " AND mostrador=" & CStr(lintxt.Mostrador) & _
+     '       " ORDER BY codigo"
     sSQL = "SELECT *" & _
-           " FROM linTxt2040" & _
-           " WHERE codigo=" & CStr(lintxt.codigo) & " ORDER BY codigo"
-    
+         " FROM linTxt2040" & _
+         " WHERE codigo=" & CStr(lintxt.codigo) & " ORDER BY codigo"
+
     Set rsttxt = dbtxt.OpenRecordset(sSQL)
     With rsttxt
         If (.EOF) Then
@@ -1054,9 +1054,9 @@ Public Function alta()
     End With
     Set rstArt = Nothing
     sSQL = "SELECT *" & _
-           " FROM articulo" & _
-           " WHERE codigo=" & CStr(lintxt.codigo) & _
-           " ORDER BY codigo"
+         " FROM articulo" & _
+         " WHERE codigo=" & CStr(lintxt.codigo) & _
+         " ORDER BY codigo"
     Set rstArt = dbtxt.OpenRecordset(sSQL)
     If (Not rstArt.EOF) Then
         rstArt.Edit
@@ -1076,11 +1076,11 @@ Public Function baja()
     Dim cnt As Long
     Set dbtxt = OpenDatabase(Base_General)
     sSQL = "SELECT *" & _
-           " FROM linTxt2040" & _
-           " WHERE codigo=" & CStr(lintxt.codigo) & _
-           " AND plu=" & CStr(lintxt.Plu) & _
-           " AND mostrador=" & CStr(lintxt.Mostrador) & _
-           " ORDER BY codigo"
+         " FROM linTxt2040" & _
+         " WHERE codigo=" & CStr(lintxt.codigo) & _
+         " AND plu=" & CStr(lintxt.Plu) & _
+         " AND mostrador=" & CStr(lintxt.Mostrador) & _
+         " ORDER BY codigo"
     Set rsttxt = dbtxt.OpenRecordset(sSQL)
     With rsttxt
         If (Not .EOF) Then
@@ -1103,18 +1103,18 @@ Public Function cargar()
     Dim cnt As Long
     Set dbtxt = OpenDatabase(Base_General)
     If AhorraMas Then
-    sSQL = "SELECT *" & _
-           " FROM linTxt2040" & _
-           " WHERE codigo=" & CStr(lintxt.codigo) & _
-           " AND mostrador=" & CStr(lintxt.Mostrador) & _
-           " ORDER BY codigo"
+        sSQL = "SELECT *" & _
+             " FROM linTxt2040" & _
+             " WHERE codigo=" & CStr(lintxt.codigo) & _
+             " AND mostrador=" & CStr(lintxt.Mostrador) & _
+             " ORDER BY codigo"
     Else
-    sSQL = "SELECT *" & _
-           " FROM linTxt2040" & _
-           " WHERE codigo=" & CStr(lintxt.codigo) & _
-           " AND plu=" & CStr(lintxt.Plu) & _
-           " AND mostrador=" & CStr(lintxt.Mostrador) & _
-           " ORDER BY codigo"
+        sSQL = "SELECT *" & _
+             " FROM linTxt2040" & _
+             " WHERE codigo=" & CStr(lintxt.codigo) & _
+             " AND plu=" & CStr(lintxt.Plu) & _
+             " AND mostrador=" & CStr(lintxt.Mostrador) & _
+             " ORDER BY codigo"
     End If
     Set rsttxt = dbtxt.OpenRecordset(sSQL)
     If (Not rsttxt.EOF) Then
@@ -1122,16 +1122,16 @@ Public Function cargar()
         lintxt.Plu = rsttxt.Fields(1)
         lintxt.Mostrador = rsttxt.Fields(2)
         For cnt = 0 To 19
-            If IsNull(rsttxt.Fields(cnt + 3)) Then '2.0.35
+            If IsNull(rsttxt.Fields(cnt + 3)) Then    '2.0.35
                 lintxt.txt(cnt) = Space(25)
             Else
                 lintxt.txt(cnt) = rsttxt.Fields(cnt + 3)
             End If
         Next cnt
         If IsNull(rsttxt.Fields(23)) Then
-         lintxt.tran_txt2 = ""
+            lintxt.tran_txt2 = ""
         Else
-         lintxt.tran_txt2 = rsttxt.Fields(23)
+            lintxt.tran_txt2 = rsttxt.Fields(23)
         End If
     End If
     rsttxt.Close

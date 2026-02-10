@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Object = "{6227E780-EE80-4A81-B37C-ED4D8D3587EE}#1.0#0"; "HyperLbl.ocx"
 Begin VB.Form FrmPrintLabel 
    Caption         =   "Impresión Etiquetas"
@@ -265,134 +265,134 @@ Dim l2 As Boolean
 Private Const WM_PAINT = &HF
 Private Const WM_PRINT = &H317
 Private Const PRF_CLIENT = &H4&    ' Draw the window's client area
-Private Const PRF_CHILDREN = &H10& ' Draw all visible child
+Private Const PRF_CHILDREN = &H10&    ' Draw all visible child
 Private Const PRF_OWNED = &H20&    ' Draw all owned windows
 
 Private Sub GenerateForm()
-Dim nO As Integer
-Dim OldX As Long, OldY As Long, nDC As Long
-Dim ctl As Control
-Dim L As Long
-Dim nPos As Integer
-Dim nPos1 As Integer
-Dim nf As Integer
-Dim lU As Boolean
-Dim s As String
-Dim nArrI(500) As Integer
-Dim nArrF(500) As Integer
-Dim nArrT(500) As Integer
-Dim nC As Integer
+    Dim nO As Integer
+    Dim OldX As Long, OldY As Long, nDC As Long
+    Dim ctl As Control
+    Dim L As Long
+    Dim nPos As Integer
+    Dim nPos1 As Integer
+    Dim nf As Integer
+    Dim lU As Boolean
+    Dim s As String
+    Dim nArrI(500) As Integer
+    Dim nArrF(500) As Integer
+    Dim nArrT(500) As Integer
+    Dim nC As Integer
 
     Me.RTB.Caption = Replace(Me.RTB.Caption, "^", "")
     Me.RTB.Caption = Replace(Me.RTB.Caption, "[u] [/u]", "")
     Me.RTB.Caption = Replace(Me.RTB.Caption, "[b]", "[u]")
     Me.RTB.Caption = Replace(Me.RTB.Caption, "[/b]", "[/u]")
-    
+
     Form3.ScaleMode = 6
     Form3.BackColor = vbWhite
     Form3.BorderStyle = 0
     Form3.AutoRedraw = True
-    
+
     Form3.Width = 297
     Form3.Height = 210
     Form3.top = 0
     Form3.left = 0
-    
-    Form3.RTB(0).top = 0 '0
-    Form3.RTB(0).left = 0 '0
-    Form3.RTB(0).Width = 68 '68 '70
+
+    Form3.RTB(0).top = 0    '0
+    Form3.RTB(0).left = 0    '0
+    Form3.RTB(0).Width = 68    '68 '70
     Form3.RTB(0).Height = 99
-    
-    Form3.RTB(1).top = 0 '0
-    Form3.RTB(1).left = 73 '69 'Form3.RTB(0).Width + 6
+
+    Form3.RTB(1).top = 0    '0
+    Form3.RTB(1).left = 73    '69 'Form3.RTB(0).Width + 6
     Form3.RTB(1).Width = 68
     Form3.RTB(1).Height = 99
-    
-    Form3.RTB(2).top = 0 '0
-    Form3.RTB(2).left = 148 '143 'Form3.RTB(0).Width + Form3.RTB(1).Width + 7
+
+    Form3.RTB(2).top = 0    '0
+    Form3.RTB(2).left = 148    '143 'Form3.RTB(0).Width + Form3.RTB(1).Width + 7
     Form3.RTB(2).Width = 68
     Form3.RTB(2).Height = 99
-    
-    Form3.RTB(3).top = 0 '0
-    Form3.RTB(3).left = 221 '217 'Form3.RTB(0).Width + Form3.RTB(1).Width + Form3.RTB(2).Width + 8
+
+    Form3.RTB(3).top = 0    '0
+    Form3.RTB(3).left = 221    '217 'Form3.RTB(0).Width + Form3.RTB(1).Width + Form3.RTB(2).Width + 8
     Form3.RTB(3).Width = 68
     Form3.RTB(3).Height = 99
-    
+
     '---------------------------
     Form3.RTB(4).top = Form3.RTB(0).Height + 5
-    Form3.RTB(4).left = 0 '0
-    Form3.RTB(4).Width = 68 '68 '70
+    Form3.RTB(4).left = 0    '0
+    Form3.RTB(4).Width = 68    '68 '70
     Form3.RTB(4).Height = 99
-    
+
     Form3.RTB(5).top = Form3.RTB(0).Height + 5
-    Form3.RTB(5).left = 73 '69 'Form3.RTB(0).Width + 6
+    Form3.RTB(5).left = 73    '69 'Form3.RTB(0).Width + 6
     Form3.RTB(5).Width = 68
     Form3.RTB(5).Height = 99
-    
+
     Form3.RTB(6).top = Form3.RTB(0).Height + 5
-    Form3.RTB(6).left = 148 '143 'Form3.RTB(0).Width + Form3.RTB(1).Width + 7
+    Form3.RTB(6).left = 148    '143 'Form3.RTB(0).Width + Form3.RTB(1).Width + 7
     Form3.RTB(6).Width = 68
     Form3.RTB(6).Height = 99
-    
+
     Form3.RTB(7).top = Form3.RTB(0).Height + 5
-    Form3.RTB(7).left = 221 '217 'Form3.RTB(0).Width + Form3.RTB(1).Width + Form3.RTB(2).Width + 8
+    Form3.RTB(7).left = 221    '217 'Form3.RTB(0).Width + Form3.RTB(1).Width + Form3.RTB(2).Width + 8
     Form3.RTB(7).Width = 68
     Form3.RTB(7).Height = 99
-    
+
     For nO = 0 To 7
-       Form3.RTB(nO).TextRTF = ""
-       Form3.RTB(nO).TexT = ""
-       Form3.RTB(nO).Font.name = Trim(Combo3.TexT)
-       Form3.RTB(nO).Font.size = Combo2.TexT
-       Form3.RTB(nO).BackColor = vbWhite
+        Form3.RTB(nO).TextRTF = ""
+        Form3.RTB(nO).TexT = ""
+        Form3.RTB(nO).Font.name = Trim(Combo3.TexT)
+        Form3.RTB(nO).Font.size = Combo2.TexT
+        Form3.RTB(nO).BackColor = vbWhite
     Next nO
-        
+
     nC = 0
     For nO = 0 To Val(TxtNum.TexT) - 1
-       nC = 0
-       Form3.RTB(nO).TexT = Me.RTB.Caption
-       nPos1 = 0
-       Do
-        nPos = InStr(nPos1 + 2, Form3.RTB(nO).TexT, "[u]")
-        If nPos Then
-            
-            Form3.RTB(nO).TexT = left(Form3.RTB(nO).TexT, nPos - 1) & Mid(Form3.RTB(nO).TexT, nPos + 3)
-    
-            nPos1 = InStr(nPos + 2, Form3.RTB(nO).TexT, "[/u]")
-            If nPos1 Then
-                Form3.RTB(nO).TexT = left(Form3.RTB(nO).TexT, nPos1 - 1) & Mid(Form3.RTB(nO).TexT, nPos1 + 4)
-                
-                nC = nC + 1
-                If nC > 100 Then
-                    nC = nC
+        nC = 0
+        Form3.RTB(nO).TexT = Me.RTB.Caption
+        nPos1 = 0
+        Do
+            nPos = InStr(nPos1 + 2, Form3.RTB(nO).TexT, "[u]")
+            If nPos Then
+
+                Form3.RTB(nO).TexT = left(Form3.RTB(nO).TexT, nPos - 1) & Mid(Form3.RTB(nO).TexT, nPos + 3)
+
+                nPos1 = InStr(nPos + 2, Form3.RTB(nO).TexT, "[/u]")
+                If nPos1 Then
+                    Form3.RTB(nO).TexT = left(Form3.RTB(nO).TexT, nPos1 - 1) & Mid(Form3.RTB(nO).TexT, nPos1 + 4)
+
+                    nC = nC + 1
+                    If nC > 100 Then
+                        nC = nC
+                    End If
+                    nArrI(nC) = nPos - 1
+                    nArrF(nC) = nPos1 - nPos
+
+                    nArrT(nC) = 2
+
+                Else
+
+                    nC = nC + 1
+                    nArrI(nC) = nPos - 1
+                    nArrF(nC) = Len(Form3.RTB(nO).TexT) - nPos
+
+                    nArrT(nC) = 2
+
+                    Exit Do
                 End If
-                nArrI(nC) = nPos - 1
-                nArrF(nC) = nPos1 - nPos
-    
-                nArrT(nC) = 2
-                
-            Else
-                
-                nC = nC + 1
-                nArrI(nC) = nPos - 1
-                nArrF(nC) = Len(Form3.RTB(nO).TexT) - nPos
-                
-                nArrT(nC) = 2
-                
-                Exit Do
+
             End If
-    
-        End If
-       Loop While nPos
-       
-       For nPos = 1 To nC
+        Loop While nPos
+
+        For nPos = 1 To nC
             Form3.RTB(nO).SelStart = nArrI(nPos)
             Form3.RTB(nO).SelLength = nArrF(nPos)
             Form3.RTB(nO).SelUnderline = True
-       Next nPos
-       
+        Next nPos
+
     Next nO
-        
+
     'lU = False
     'For nO = 0 To Val(TxtNum.TexT) - 1
     '    nPos = Len(Me.RTB.Caption)
@@ -414,7 +414,7 @@ Dim nC As Integer
     '
     '    Next nPos1
     'Next nO
-    
+
     ''Recuperar
     Form3.Dialogo.CancelError = True
     On Error Resume Next
@@ -424,12 +424,12 @@ Dim nC As Integer
         Exit Sub
     End If
     On Error GoTo 0
-    
+
     On Error GoTo nosvamos
-    
+
     ''recuperar
     Printer.Orientation = 2
-    
+
     ''recuperar
     Form3.Width = Screen.Width * 1.25           ' Establecer el ancho del formulario.
     Form3.Height = Screen.Height * 1.25         ' Establecer el alto del formulario.
@@ -438,18 +438,18 @@ Dim nC As Integer
 
     Form3.Refresh
     Do_Events
-    
+
     ''recuperar
     Form3.PrintForm
     Do_Events
-    
+
     Unload Form3
 
 nosvamos:
     'ChangeRes OldX, OldY, GetDeviceCaps(nDC, BITSPIXEL)
     'delete our device context
     'DeleteDC nDC
-    
+
 End Sub
 
 Private Sub Me_Init()
@@ -468,7 +468,7 @@ Private Sub Me_Init()
         If LCase(Me.Controls(bucle).name) <> "lista" And LCase(Me.Controls(bucle).name) <> "rtb" Then
             ct_top(bucle) = Me.Controls(bucle).top
             CT_Left(bucle) = Me.Controls(bucle).left
-            
+
             CT_Width(bucle) = Me.Controls(bucle).Width
             CT_Height(bucle) = Me.Controls(bucle).Height
         Else
@@ -477,14 +477,14 @@ Private Sub Me_Init()
                 K = bucle
                 ct_top(bucle) = Me.Controls(bucle).top
                 CT_Left(bucle) = Me.Controls(bucle).left
-                
+
                 CT_Width(bucle) = Me.Width / (2.75)
                 CT_Height(bucle) = Me.Controls(bucle).Height
             Else
                 L = bucle
             End If
         End If
-        
+
         On Error GoTo 0
     Next bucle
     ct_top(L) = ct_top(K)
@@ -506,14 +506,14 @@ Private Sub Me_Resize()
         CT_Width(bucle) = Me.Controls(bucle).Width
         Me.Controls(bucle).left = RelW * CT_Left(bucle)
         CT_Left(bucle) = Me.Controls(bucle).left
-        
+
         '
         RelW = Me.Height / Me_Height
         If TypeName(Me.Controls(bucle)) <> "TextBox" _
-        And TypeName(Me.Controls(bucle)) <> "CommandButton" _
-        And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
-        And TypeName(Me.Controls(bucle)) <> "HyperLabel" _
-        Then
+           And TypeName(Me.Controls(bucle)) <> "CommandButton" _
+           And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
+           And TypeName(Me.Controls(bucle)) <> "HyperLabel" _
+           Then
             Me.Controls(bucle).Height = RelW * CT_Height(bucle)
             CT_Height(bucle) = Me.Controls(bucle).Height
         Else
@@ -529,9 +529,9 @@ Private Sub Me_Resize()
     Next bucle
     Me_Width = Me.Width
     Me_Height = Me.Height
-    
 
-    
+
+
 End Sub
 Private Sub CambiarIdioma()
     Label1.Caption = CargaCadena(302)
@@ -546,17 +546,17 @@ Private Sub CambiarIdioma()
     Lista.ColumnHeaders(3).TexT = CargaCadena(70)
 End Sub
 Private Sub Refresca_porCodigo()
-    
+
     Dim Registro As New RecordNet
     Dim MiNumero As Long
     If Not (IsNumeric(tXTcODIGO.TexT)) Then Exit Sub
     MiNumero = tXTcODIGO.TexT
-   
+
     If Option1(0).Value Then
         Registro.OpenRecordset ("select codi_ident from articulo where borrado=false and codigo=" & Val(tXTcODIGO.TexT))
     Else
         Registro.OpenRecordset ("select codi_ident from articulo where borrado=false and plu=" & Val(tXTcODIGO.TexT) & " and codi_ident=" & Combo1.TexT)
-        
+
     End If
     With Registro
         If .EOF Then
@@ -585,7 +585,7 @@ Private Sub Refresca_porCodigo()
         End If
     End With
 
-        
+
 End Sub
 
 Private Sub Combo1_Click()
@@ -608,94 +608,94 @@ End Sub
 'End Sub
 
 Private Sub Combo3_Click()
-       RTB.Font.name = Trim(Combo3.TexT)
-       RTB.Font.size = Combo2.TexT
-       'tXTcODIGO_KeyPress 13
-       'Refresca_Item
-       RTB.Caption = sTEXTO
+    RTB.Font.name = Trim(Combo3.TexT)
+    RTB.Font.size = Combo2.TexT
+    'tXTcODIGO_KeyPress 13
+    'Refresca_Item
+    RTB.Caption = sTEXTO
 End Sub
 Private Sub Combo2_Click()
-       RTB.Font.name = Trim(Combo3.TexT)
-       RTB.Font.size = Combo2.TexT
-       'tXTcODIGO_KeyPress 13
-       'Refresca_Item
-       RTB.Caption = sTEXTO
+    RTB.Font.name = Trim(Combo3.TexT)
+    RTB.Font.size = Combo2.TexT
+    'tXTcODIGO_KeyPress 13
+    'Refresca_Item
+    RTB.Caption = sTEXTO
 End Sub
 
 Private Sub Command1_Click(Index As Integer)
     Dim Miarticulo As DB_Articulo
     Dim i As Integer
-    
+
     Command1(0).Enabled = False
     Command1(1).Enabled = False
-    
-    sTEXTO = RTB.Caption
-    
-    If Trim(TxtNum.TexT) = "" Then TxtNum.TexT = "1"
-    
-    
-    
-'    ' Variable para el recordset
-'    Dim El_Recordset As New ADODB.Recordset
-'
-'    ' Nuevo objeto Recordset desconectado
-'    'Set El_Recordset = New ADODB.Recordset
-    Select Case Index
-        Case 0
 
-            Call GenerateForm
-            
-'
-'            ' Crea cuatro campos, tres de tipo String y uno de tipo Date
-'            With El_Recordset.Fields
-'                .Append "texto", adVarChar, 3000
-'            End With
-'
-'            ' Abre el recorset para poder agregar datos
-'            El_Recordset.Open
-'
-'            ' Agrega valores al recordset, es decir a los campos
-'            '********************************************************************
-'            With El_Recordset
-'                .AddNew Array("texto"), Array(sTEXTO)
-'            End With
-'            '********************************************************************
-'
-'            ' Asigna el recordset como fuente de datos del DataReport
-'            Set DataReport1.DataSource = El_Recordset
-'
-'            DataReport1.Orientation = vbPRORPortrait
-'            DataReport1.LeftMargin = 0
-'            DataReport1.RightMargin = 0
-'            DataReport1.TopMargin = 0
-'            DataReport1.BottomMargin = 0
-'            With Printer
-'                .PaperSize = vbPRPSA4 'Using A4 size
-'                '.Orientation = 2 'Landscape
-'            End With
-'            Load DataReport1
-'            For i = 1 To Val(TxtNum.TexT)
-'                DataReport1.Sections("Etiquetas").Controls.Item("Texto" & CStr(i)).Caption = sTEXTO  '"Texto" & CStr(i)
-'            Next i
-'            MuestraInformeEtiquetas
-'
-'            El_Recordset.Close
-'            Set El_Recordset = Nothing
-        Case 1
-            Unload Me
+    sTEXTO = RTB.Caption
+
+    If Trim(TxtNum.TexT) = "" Then TxtNum.TexT = "1"
+
+
+
+    '    ' Variable para el recordset
+    '    Dim El_Recordset As New ADODB.Recordset
+    '
+    '    ' Nuevo objeto Recordset desconectado
+    '    'Set El_Recordset = New ADODB.Recordset
+    Select Case Index
+    Case 0
+
+        Call GenerateForm
+
+        '
+        '            ' Crea cuatro campos, tres de tipo String y uno de tipo Date
+        '            With El_Recordset.Fields
+        '                .Append "texto", adVarChar, 3000
+        '            End With
+        '
+        '            ' Abre el recorset para poder agregar datos
+        '            El_Recordset.Open
+        '
+        '            ' Agrega valores al recordset, es decir a los campos
+        '            '********************************************************************
+        '            With El_Recordset
+        '                .AddNew Array("texto"), Array(sTEXTO)
+        '            End With
+        '            '********************************************************************
+        '
+        '            ' Asigna el recordset como fuente de datos del DataReport
+        '            Set DataReport1.DataSource = El_Recordset
+        '
+        '            DataReport1.Orientation = vbPRORPortrait
+        '            DataReport1.LeftMargin = 0
+        '            DataReport1.RightMargin = 0
+        '            DataReport1.TopMargin = 0
+        '            DataReport1.BottomMargin = 0
+        '            With Printer
+        '                .PaperSize = vbPRPSA4 'Using A4 size
+        '                '.Orientation = 2 'Landscape
+        '            End With
+        '            Load DataReport1
+        '            For i = 1 To Val(TxtNum.TexT)
+        '                DataReport1.Sections("Etiquetas").Controls.Item("Texto" & CStr(i)).Caption = sTEXTO  '"Texto" & CStr(i)
+        '            Next i
+        '            MuestraInformeEtiquetas
+        '
+        '            El_Recordset.Close
+        '            Set El_Recordset = Nothing
+    Case 1
+        Unload Me
     End Select
-    
+
     Command1(0).Enabled = True
     Command1(1).Enabled = True
 
 End Sub
 
 Private Sub Form_Activate()
-RTB.Width = 3975
-RTB.Height = 5669
-Combo2.ListIndex = 0
-Combo3.ListIndex = 0
-lInicio = False
+    RTB.Width = 3975
+    RTB.Height = 5669
+    Combo2.ListIndex = 0
+    Combo3.ListIndex = 0
+    lInicio = False
 End Sub
 
 Private Sub Form_Load()
@@ -723,7 +723,7 @@ Private Sub Form_Load()
     RTB.RenderToContainer = False
 End Sub
 Private Function Refresca_Combo() As Boolean
-    
+
     Dim Registro As New RecordNet
     Dim Retorno As Boolean
     Retorno = True
@@ -749,12 +749,12 @@ Private Function Refresca_Combo() As Boolean
             Retorno = False
         End If
     End With
- 
+
     Refresca_Combo = Retorno
 
 End Function
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     Dim Miorden As String
     If sMyOrder = "" Then
@@ -768,7 +768,7 @@ Private Sub Refresca_Datos()
     End If
 
     Lista.ListItems.Clear
-  
+
     Registro.OpenRecordset ("select codigo,plu,des_plu1 from articulo where borrado=false and codi_ident=" & Val(Combo1.TexT) & " order by " & Miorden)
     If sMyOrder <> "" Then
         sLastOrder = sMyOrder
@@ -795,22 +795,22 @@ Private Sub Refresca_Datos()
             Command1(0).Enabled = False
         End If
     End With
-    
+
     Set Registro = Nothing
-    
+
 End Sub
 
 Private Function anegrita(ByVal sS As String) As String
-Dim nL As Integer
-'Dim SD As String
-Dim pos As Integer
+    Dim nL As Integer
+    'Dim SD As String
+    Dim pos As Integer
     pos = 1
     'SD = ""
-    nL = InStr(1, sS, "|") '|
+    nL = InStr(1, sS, "|")    '|
     If nL <> 0 Then
         'Ini = 0
         Do While nL <> 0
-            
+
             If Ini = 0 Then
                 sS = Mid(sS, pos, nL - 1) & "[u]" & Mid(sS, nL + 1)
                 Ini = 1
@@ -823,7 +823,7 @@ Dim pos As Integer
             'pos = nL
         Loop
     End If
-    
+
     ''''''''''
     pos = 1
     'SD = ""
@@ -831,8 +831,8 @@ Dim pos As Integer
     If nL <> 0 Then
         Do While nL <> 0
             'If Ini = 0 Then
-                sS = Mid(sS, pos, nL) & " " & Mid(sS, nL + 1)
-                'Ini = 1
+            sS = Mid(sS, pos, nL) & " " & Mid(sS, nL + 1)
+            'Ini = 1
             'Else
             '    sS = Mid(sS, pos, nL - 1) & "[/u]" & Mid(sS, nL + 1)
             '    Ini = 0
@@ -849,8 +849,8 @@ Dim pos As Integer
     If nL <> 0 Then
         Do While nL <> 0
             'If Ini = 0 Then
-                sS = Mid(sS, pos, nL) & " " & Mid(sS, nL + 1)
-                'Ini = 1
+            sS = Mid(sS, pos, nL) & " " & Mid(sS, nL + 1)
+            'Ini = 1
             'Else
             '    sS = Mid(sS, pos, nL - 1) & "[/u]" & Mid(sS, nL + 1)
             '    Ini = 0
@@ -867,8 +867,8 @@ Dim pos As Integer
     If nL <> 0 Then
         Do While nL <> 0
             'If Ini = 0 Then
-                sS = Mid(sS, pos, nL) & " " & Mid(sS, nL + 1)
-                'Ini = 1
+            sS = Mid(sS, pos, nL) & " " & Mid(sS, nL + 1)
+            'Ini = 1
             'Else
             '    sS = Mid(sS, pos, nL - 1) & "[/u]" & Mid(sS, nL + 1)
             '    Ini = 0
@@ -879,11 +879,11 @@ Dim pos As Integer
         Loop
     End If
     ''''''''''
-    
+
     anegrita = sS
 End Function
 Private Sub Refresca_Datos_Texto()
-    
+
     Dim Registro As New RecordNet
     Dim Miorden As String
     Dim i As Integer
@@ -897,41 +897,41 @@ Private Sub Refresca_Datos_Texto()
     End If
 
     Ini = 0
-    
+
     Registro.OpenRecordset ("select * from articulo where borrado=false and codi_ident=" & CStr(Val(Combo1.TexT)) & " and " & Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
 
     With Registro
         If Not .EOF Then
 
             'sTEXTO = "         " & Trim(.Fields("des_plu1")) & " " & vbCr & vbLf
-            
+
             RTB.Caption = "           " & "[b]" & Trim(.Fields("des_plu1")) & "[/b]" & vbCr & vbLf
-            
+
             For i = 11 To 21
                 If i > 9 Then
                     If i = 10 Then
                         'sTEXTO = sTEXTO & Trim(.Fields("des_plu0"))
-                        RTB.Caption = RTB.Caption & Trim(.Fields("des_plu0")) 'anegrita(Trim(.Fields("des_plu0")))
+                        RTB.Caption = RTB.Caption & Trim(.Fields("des_plu0"))    'anegrita(Trim(.Fields("des_plu0")))
                     Else
                         If i = 11 Then
                             'sTEXTO = sTEXTO & Trim(.Fields("des_pluX"))
-                            RTB.Caption = RTB.Caption & Trim(.Fields("des_pluX")) 'anegrita(Trim(.Fields("des_pluX")))
+                            RTB.Caption = RTB.Caption & Trim(.Fields("des_pluX"))    'anegrita(Trim(.Fields("des_pluX")))
                         Else
                             'sTEXTO = sTEXTO & Trim(.Fields("des_plu" & CStr(i - 1)))
-                            RTB.Caption = RTB.Caption & Trim(.Fields("des_plu" & CStr(i - 1))) 'anegrita(Trim(.Fields("des_plu" & CStr(i - 1))))
+                            RTB.Caption = RTB.Caption & Trim(.Fields("des_plu" & CStr(i - 1)))    'anegrita(Trim(.Fields("des_plu" & CStr(i - 1))))
                         End If
                     End If
                 Else
                     'sTEXTO = sTEXTO & Trim(.Fields("des_plu" & CStr(i)))
-                    RTB.Caption = RTB.Caption & Trim(.Fields("des_plu" & CStr(i))) 'anegrita(Trim(.Fields("des_plu" & CStr(i))))
+                    RTB.Caption = RTB.Caption & Trim(.Fields("des_plu" & CStr(i)))    'anegrita(Trim(.Fields("des_plu" & CStr(i))))
                 End If
             Next i
         End If
     End With
 
-    
+
     Set Registro = Nothing
-    
+
     Registro.OpenRecordset ("select * from lintxt2040 where mostrador=" & CStr(Val(Combo1.TexT)) & " and " & Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
 
     With Registro
@@ -939,15 +939,15 @@ Private Sub Refresca_Datos_Texto()
             For i = 21 To 80
                 'sTEXTO = sTEXTO & Trim(.Fields("txt_" & CStr(i)))
                 If Not IsNull(.Fields("txt_" & CStr(i))) Then
-                    RTB.Caption = RTB.Caption & Trim(.Fields("txt_" & CStr(i))) 'anegrita(Trim(.Fields("txt_" & CStr(i))))
+                    RTB.Caption = RTB.Caption & Trim(.Fields("txt_" & CStr(i)))    'anegrita(Trim(.Fields("txt_" & CStr(i))))
                 End If
             Next i
         End If
     End With
-    
+
     RTB.Caption = anegrita(Replace(RTB.Caption, "~", "|"))
     sTEXTO = RTB.Caption
-    
+
 End Sub
 
 Private Sub Form_Resize()
@@ -963,38 +963,38 @@ Private Sub Lista_Click()
 End Sub
 
 Private Sub Lista_ColumnClick(ByVal ColumnHeader As MSComctlLib.ColumnHeader)
-    
+
     Lista.ColumnHeaders(1).TexT = CargaCadena(69)
     Lista.ColumnHeaders(2).TexT = CargaCadena(68)
     Lista.ColumnHeaders(3).TexT = CargaCadena(70)
-    
+
     Select Case ColumnHeader.Index
-        Case 1
-            Option1(0).Value = True
-            Lista.ColumnHeaders(1).TexT = "==> " & CargaCadena(69) & " <=="
-        Case 2
-            Option1(1).Value = True
-            Lista.ColumnHeaders(2).TexT = "==> " & CargaCadena(68) & " <=="
-        Case Else
-            If ColumnHeader.Index = 3 Then
-                sMyOrder = "des_plu1"
-                Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
-            Else
-                If ColumnHeader.Index = 4 Then
-                    If UsaEuro Then
-                        sMyOrder = "euros"
-                    Else
-                        sMyOrder = "precio"
-                    End If
-                    Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
+    Case 1
+        Option1(0).Value = True
+        Lista.ColumnHeaders(1).TexT = "==> " & CargaCadena(69) & " <=="
+    Case 2
+        Option1(1).Value = True
+        Lista.ColumnHeaders(2).TexT = "==> " & CargaCadena(68) & " <=="
+    Case Else
+        If ColumnHeader.Index = 3 Then
+            sMyOrder = "des_plu1"
+            Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
+        Else
+            If ColumnHeader.Index = 4 Then
+                If UsaEuro Then
+                    sMyOrder = "euros"
                 Else
-                    If sLastOrder <> "" Then
-                        sMyOrder = sLastOrder
-                        If sMyOrder = "des_plu1" Then Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
-                        If sMyOrder = "euros" Or sMyOrder = "precio" Then Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
-                    End If
+                    sMyOrder = "precio"
+                End If
+                Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
+            Else
+                If sLastOrder <> "" Then
+                    sMyOrder = sLastOrder
+                    If sMyOrder = "des_plu1" Then Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
+                    If sMyOrder = "euros" Or sMyOrder = "precio" Then Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
                 End If
             End If
+        End If
     End Select
     If Combo1.TexT <> "" Then Refresca_Datos
 End Sub
@@ -1024,7 +1024,7 @@ End Sub
 'End Sub
 
 Private Sub Refresca_Item()
-    
+
     If Option1(0).Value = True Then
         tXTcODIGO.TexT = Lista.SelectedItem.TexT
     Else
@@ -1032,13 +1032,13 @@ Private Sub Refresca_Item()
     End If
     LblInfo.Caption = Lista.SelectedItem.SubItems(2)
     Call Refresca_Datos_Texto
-    
+
 End Sub
 
 
 Private Sub tXTcODIGO_KeyDown(KeyCode As Integer, Shift As Integer)
     If Lista.ListItems.Count > 0 Then
-    Select Case KeyCode
+        Select Case KeyCode
         Case 40
             If Lista.SelectedItem.Index < Lista.ListItems.Count Then
                 Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
@@ -1063,8 +1063,8 @@ Private Sub tXTcODIGO_KeyDown(KeyCode As Integer, Shift As Integer)
                 Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
                 Refresca_Item
             End If
-        
-    End Select
+
+        End Select
     End If
 End Sub
 
@@ -1079,7 +1079,7 @@ Private Sub tXTcODIGO_KeyPress(KeyAscii As Integer)
     Else
         tXTcODIGO.Locked = Checktexto(KeyAscii, 4, tXTcODIGO.TexT, True, False)
     End If
-    
+
 End Sub
 
 'Private Sub tXTcODIGO_LostFocus()

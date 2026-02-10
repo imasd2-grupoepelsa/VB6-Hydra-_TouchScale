@@ -3,10 +3,10 @@ Begin VB.Form FrmExportKuups
    ClientHeight    =   900
    ClientLeft      =   1650
    ClientTop       =   1545
-   ClientWidth     =   1560
+   ClientWidth     =   1800
    LinkTopic       =   "Form1"
    ScaleHeight     =   900
-   ScaleWidth      =   1560
+   ScaleWidth      =   1800
 End
 Attribute VB_Name = "FrmExportKuups"
 Attribute VB_GlobalNameSpace = False
@@ -28,7 +28,7 @@ Public Sub ExportarFichero_BOKA(ElBoton As Integer, Optional MiArchivo As String
     Dim Fichero As Integer
     Dim Buffer As String
     Dim FaEx As String
-    
+
     NoExportados = True
     If MiArchivo <> "" Then
         FaEx = MiArchivo
@@ -42,7 +42,7 @@ Public Sub ExportarFichero_BOKA(ElBoton As Integer, Optional MiArchivo As String
     If InStr(1, Buffer, "+") Then
         Buffer = Mid(Buffer, InStr(1, Buffer, "+") - 1)
     End If
-    
+
     ExportaLinea FaEx, MiFecha, Continua, NoExportados
 End Sub
 
@@ -60,23 +60,23 @@ Private Sub ExportaLinea(Elfichero As String, Optional MiFecha As Date, Optional
     Dim Condicion As String
     Dim ContReg As Long
     Dim BGrande As Long
-    Dim NSistema As Integer 'c2f/caspiunza
-    Dim nSisLoop As Integer 'c2f/caspiunza
+    Dim NSistema As Integer    'c2f/caspiunza
+    Dim nSisLoop As Integer    'c2f/caspiunza
     Dim sSs As String
     Dim sPar As String
     Dim nFichHys As Integer
     Dim sBas As String
-    
+
     If MiFecha = "0" Then
         Condicion = " where (reserv3 <>'SI')" & " order by val(nume),val(numlin)"
     Else
         'Condicion = " where cdate(d_fecha)=cdate(" & Chr(34) & MiFecha & Chr(34) & ") order by val(nume),val(numlin)"
         Condicion = " where d_fecha=#" & Format(MiFecha, "dd/mm/yyyy") & "# order by val(nume),val(numlin)"
     End If
-    Set Base = AbrirBase 'abrirbase 'OpenDatabase(Base_General)
-   
+    Set Base = AbrirBase    'abrirbase 'OpenDatabase(Base_General)
+
     LeeFragmentos (Elfichero)
-    
+
     Set Registro = Base.OpenRecordset("select * from tickets" & Condicion)
     With Registro
         If Not .EOF Then
@@ -106,19 +106,19 @@ Private Sub ExportaLinea(Elfichero As String, Optional MiFecha As Date, Optional
                 Buffer = ""
                 Contbuffer = 1
                 'Barra.Value = Barra.Value + 1
-                
-                ExportaunaLinea Buffer, Contbuffer, Registro, BucleGrande, "", lCont '2.0.24
-                
+
+                ExportaunaLinea Buffer, Contbuffer, Registro, BucleGrande, "", lCont    '2.0.24
+
                 Print #Archivo, Buffer
-                
+
                 .Movenext
             Next bucle
         End If
     End With
-    
+
     Close #Archivo
     Base.Close
-    
+
     Unload Me
 End Sub
 
@@ -129,20 +129,20 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
     Dim sM As String
     Dim Exp_Mas, Exp_Menos As String
     Dim MiValor As Long
-    
+
     Exp_Mas = "0"
     Exp_Menos = "-"
-    
+
     If IsNull(lEspecial) Then lEspecial = False
-        
+
     With Registro
-    For bucle = 1 To fragmentos
-        Do While Contbuffer < Fragmento(bucle).inicio
-            Contbuffer = Contbuffer + 1
-            'Buffer = Buffer & " "
-        Loop
-        laLongitud = Fragmento(bucle).fin - Fragmento(bucle).inicio + 1
-        Select Case Val(Fragmento(bucle).id)
+        For bucle = 1 To fragmentos
+            Do While Contbuffer < Fragmento(bucle).inicio
+                Contbuffer = Contbuffer + 1
+                'Buffer = Buffer & " "
+            Loop
+            laLongitud = Fragmento(bucle).fin - Fragmento(bucle).inicio + 1
+            Select Case Val(Fragmento(bucle).id)
             Case 0
                 Buffer = Buffer & Formatea(Fragmento(bucle).Adicional, laLongitud, False)
                 Contbuffer = Contbuffer + laLongitud
@@ -157,8 +157,8 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 Contbuffer = Contbuffer + laLongitud
             Case 4
                 'If TipoExport <> 3 Then
-                    Buffer = Buffer & Formatea(Val(!nume), laLongitud, True)
-                    Contbuffer = Contbuffer + laLongitud
+                Buffer = Buffer & Formatea(Val(!nume), laLongitud, True)
+                Contbuffer = Contbuffer + laLongitud
                 'Else
                 '    If BucleGrande = 1 Then
                 '        Buffer = Buffer & GA
@@ -174,26 +174,26 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 '    Contbuffer = Contbuffer + laLongitud
                 '    SabLineas = SabLineas + 1
                 'Else
-                    Buffer = Buffer & Formatea(Val(!numlin), laLongitud, True)
-                    Contbuffer = Contbuffer + laLongitud
+                Buffer = Buffer & Formatea(Val(!numlin), laLongitud, True)
+                Contbuffer = Contbuffer + laLongitud
                 'End If
             Case 6
                 Buffer = Buffer & Formatea(Val(!secc), laLongitud, True)
                 Contbuffer = Contbuffer + laLongitud
             Case 7
                 If Dir(App.Path & "\decepal.txt") <> "" Then
-                    Buffer = Buffer & FormateaR(!Code, laLongitud, False) '  Formatea(Val(!Code), laLongitud, True)
+                    Buffer = Buffer & FormateaR(!Code, laLongitud, False)    '  Formatea(Val(!Code), laLongitud, True)
                 Else
                     Buffer = Buffer & Formatea(Val(!Code), laLongitud, True)
                 End If
                 Contbuffer = Contbuffer + laLongitud
             Case 8
                 If Not lEspecial Then
-                If UsaEuro Then
-                    Buffer = Buffer & Formatea(!Price * 100, laLongitud, True)
-                Else
-                    Buffer = Buffer & Formatea(!Price * (10 ^ decimales), laLongitud, True)
-                End If
+                    If UsaEuro Then
+                        Buffer = Buffer & Formatea(!Price * 100, laLongitud, True)
+                    Else
+                        Buffer = Buffer & Formatea(!Price * (10 ^ decimales), laLongitud, True)
+                    End If
                 Else
                     sM = CStr(!Price)
                     If IsNull(sM) Or sM = "0" Then sM = "0,00"
@@ -203,11 +203,11 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 Contbuffer = Contbuffer + laLongitud
             Case 9
                 If Not lEspecial Then
-                If UsaEuro Then
-                    Buffer = Buffer & Formatea(!amount * 100, laLongitud, True)
-                Else
-                    Buffer = Buffer & Formatea(!amount * (10 ^ decimales), laLongitud, True)
-                End If
+                    If UsaEuro Then
+                        Buffer = Buffer & Formatea(!amount * 100, laLongitud, True)
+                    Else
+                        Buffer = Buffer & Formatea(!amount * (10 ^ decimales), laLongitud, True)
+                    End If
                 Else
                     sM = CStr(!amount)
                     If IsNull(sM) Or sM = "0" Then sM = "0,00"
@@ -217,13 +217,13 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 Contbuffer = Contbuffer + laLongitud
             Case 10
                 If Not lEspecial Then
-                Buffer = Buffer & Formatea(!Weight * 1000, laLongitud, True)
+                    Buffer = Buffer & Formatea(!Weight * 1000, laLongitud, True)
                 Else
                     sM = CStr(!Weight)
                     If IsNull(sM) Or sM = "0" Then sM = "0,000"
                     sM = formatic_B(sM, 3, laLongitud)
                     Buffer = Buffer & sM
-                                     
+
                 End If
                 Contbuffer = Contbuffer + laLongitud
             Case 11
@@ -238,11 +238,11 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                         If IsNull(sM) Or sM = "0" Then sM = "0,000"
                         sM = formatic_B(sM, 3, laLongitud)
                         Buffer = Buffer & sM
-                    
+
                     End If
                 Else
                     'If Not Sabeco Then
-                        Buffer = Buffer & Formatea(!units, laLongitud, True)
+                    Buffer = Buffer & Formatea(!units, laLongitud, True)
                     'Else
                     '    Buffer = Buffer & Formatea(!units * 1000, laLongitud, True)
                     'End If
@@ -278,12 +278,12 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 Contbuffer = Contbuffer + laLongitud
             Case 18
                 If !units <> 0 Then
-                    Buffer = Buffer & Formatea("1", laLongitud, False) '　 era 2 C2F
+                    Buffer = Buffer & Formatea("1", laLongitud, False)    '　 era 2 C2F
                 Else
                     If !Weight <> 0 Then
-                        Buffer = Buffer & Formatea("0", laLongitud, False) '　 era 1 C2F
+                        Buffer = Buffer & Formatea("0", laLongitud, False)    '　 era 1 C2F
                     Else
-                        Buffer = Buffer & Formatea("1", laLongitud, False) '　 era 0 C2F
+                        Buffer = Buffer & Formatea("1", laLongitud, False)    '　 era 0 C2F
                     End If
                 End If
                 Contbuffer = Contbuffer + laLongitud
@@ -309,34 +309,34 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 'Buffer = Buffer & Formatea(TiendaActual, laLongitud, True)
                 Buffer = Buffer & Formatea(1, laLongitud, True)
                 Contbuffer = Contbuffer + laLongitud
-            Case 23 'c2f invicta --> Departamento (familia)
+            Case 23    'c2f invicta --> Departamento (familia)
                 If Not IsNull(!DPT) Then
                     Buffer = Buffer & Formatea(Val(!DPT), laLongitud, True)
                 Else
                     Buffer = Buffer & Formatea(0, laLongitud, True)
                 End If
                 Contbuffer = Contbuffer + laLongitud
-            Case 24 'c2f invicta importe bruto
+            Case 24    'c2f invicta importe bruto
                 If UsaEuro Then
                     Buffer = Buffer & Formatea(!importe_bruto * 100, laLongitud, True)
                 Else
                     Buffer = Buffer & Formatea(!importe_bruto * (10 ^ decimales), laLongitud, True)
                 End If
                 Contbuffer = Contbuffer + laLongitud
-            Case 25 'c2f lote
+            Case 25    'c2f lote
                 Buffer = Buffer & Formatea(!numlote, laLongitud, False)
                 Contbuffer = Contbuffer + laLongitud
-            Case 26 'c2f cliente
+            Case 26    'c2f cliente
                 Buffer = Buffer & Formatea(!cliente, laLongitud, True)
                 Contbuffer = Contbuffer + laLongitud
-            'Case 27 'c2f factura
-            '    Buffer = Buffer & Formatea(!factura, laLongitud, False)
-            '    Contbuffer = Contbuffer + laLongitud
-            Case 27 '% 0
+                'Case 27 'c2f factura
+                '    Buffer = Buffer & Formatea(!factura, laLongitud, False)
+                '    Contbuffer = Contbuffer + laLongitud
+            Case 27    '% 0
                 MiValor = !porcentaje * 100
                 Buffer = Buffer & Formatea(MiValor, laLongitud, True)
                 Contbuffer = Contbuffer + laLongitud
-            Case 28 'c2f factura Simpli.
+            Case 28    'c2f factura Simpli.
                 'Buffer = Buffer & Formatea(!factura, laLongitud, False)
                 'Contbuffer = Contbuffer + laLongitud
                 On Error Resume Next
@@ -351,16 +351,16 @@ Private Sub ExportaunaLinea(Buffer As String, ByRef Contbuffer As Long, Registro
                 MiValor = !porcentaje * 100
                 Buffer = Buffer & Formatea(MiValor, laLongitud, True)
                 Contbuffer = Contbuffer + laLongitud
-            
-        End Select
-    Next bucle
-    If Continua Then
-        Registro.Edit
-        !reserv3 = "SI"
-        .Update
-    End If
+
+            End Select
+        Next bucle
+        If Continua Then
+            Registro.Edit
+            !reserv3 = "SI"
+            .Update
+        End If
     End With
-    
+
 End Sub
 
 Private Sub LeeFragmentos(Elfichero As String)
@@ -419,16 +419,16 @@ Private Sub LeeFragmentos(Elfichero As String)
             End If
         Next Bucle2
     Next bucle
-  
+
 End Sub
 Private Function Formatea(cadena, Longitud As Integer, EsNumerico As Boolean) As String
     Dim Buffer As String
     Dim BufferFormato As String
     Dim bucle As Long
     Dim Exp_Absoluto As Boolean
-    
+
     Exp_Absoluto = True
-    
+
     If EsNumerico Then
         For bucle = 1 To Longitud
             BufferFormato = BufferFormato & "0"
@@ -464,9 +464,9 @@ Private Function FormateaP(cadena, Longitud As Integer, EsNumerico As Boolean) A
     Dim BufferFormato As String
     Dim bucle As Long
     Dim Exp_Absoluto As Boolean
-    
+
     Exp_Absoluto = True
-    
+
     If EsNumerico Then
         For bucle = 1 To Longitud
             BufferFormato = BufferFormato & "0"
@@ -544,7 +544,7 @@ Private Function FormFecha(MiFecha As String) As String
     '    Case 1
     '        Retorno = Mes & "/" & Dia & "/" & Anyo
     '    Case 2
-            Retorno = Dia & "/" & Mes & "/" & "20" & Anyo
+    Retorno = Dia & "/" & Mes & "/" & "20" & Anyo
     '    Case 3
     '        Retorno = Mes & "/" & Dia & "/" & "20" & Anyo
     '    Case 4
@@ -561,7 +561,7 @@ Private Function FormFecha(MiFecha As String) As String
     FormFecha = Retorno
 End Function
 Private Function FormHora(MiHora As String) As String
-    
+
     Dim Mhora As String
     Dim MMinuto As String
     Dim Retorno As String
@@ -572,7 +572,7 @@ Private Function FormHora(MiHora As String) As String
     MMinuto = Mid(MiHora, 4, 2)
     'Select Case Exp_hora
     '    Case 0
-            Retorno = Mhora & ":" & MMinuto
+    Retorno = Mhora & ":" & MMinuto
     '    Case 1
     '        Retorno = Mhora & MMinuto
     '    Case 2
@@ -584,32 +584,32 @@ Private Function FormHora(MiHora As String) As String
 End Function
 
 Private Function formatic_B(sM As String, nDec As Integer, laLo As Integer) As String
-   Dim nL As Integer
-   Dim nB As Integer
-   Dim nD
-   nL = Len(sM)
-   nD = 0
-   For nB = 1 To nL
-          'MsgBox Format(Asc(Mid(sM, nB, 1)), "000")
+    Dim nL As Integer
+    Dim nB As Integer
+    Dim nD
+    nL = Len(sM)
+    nD = 0
+    For nB = 1 To nL
+        'MsgBox Format(Asc(Mid(sM, nB, 1)), "000")
 
-       If Mid(sM, nB, 1) = "," Then
-       
-          nD = nB
-          nB = nL + 1
-       End If
-   
-   Next nB
-   If nD <> 0 Then
-       If (nL - nD) < nDec Then
-          
-          sM = sM & Mid("0000000000", 1, nDec - (nL - nD))
-           
-       End If
-   
-   Else
-       sM = sM & "," & Mid("0000000000", 1, nDec)
-   End If
-   sM = Mid("00000000000000000000", 1, laLo - Len(sM)) & sM
-   formatic_B = sM
+        If Mid(sM, nB, 1) = "," Then
+
+            nD = nB
+            nB = nL + 1
+        End If
+
+    Next nB
+    If nD <> 0 Then
+        If (nL - nD) < nDec Then
+
+            sM = sM & Mid("0000000000", 1, nDec - (nL - nD))
+
+        End If
+
+    Else
+        sM = sM & "," & Mid("0000000000", 1, nDec)
+    End If
+    sM = Mid("00000000000000000000", 1, laLo - Len(sM)) & sM
+    formatic_B = sM
 End Function
 

@@ -31,8 +31,8 @@ Public Function StrToByte(strInput As String) As Byte()
     Dim bTmp() As Byte
     Dim bArray() As Byte
     If Len(strInput) = 0 Then Exit Function
-    ReDim bTmp(LenB(strInput) - 1) 'Memory length
-    ReDim bArray(Len(strInput) - 1) 'String length
+    ReDim bTmp(LenB(strInput) - 1)    'Memory length
+    ReDim bArray(Len(strInput) - 1)    'String length
     CopyMemory bTmp(0), ByVal StrPtr(strInput), LenB(strInput)
     'Examine every second byte
     For lPntr = 0 To UBound(bArray)
@@ -85,7 +85,7 @@ End Function
 Public Function AnsiToUni(sAnsi As String) As Byte()
     Dim Buffer() As Byte, ANSI_STR As ANSI_STRING, UNI_STR As UNICODE_STRING '
 
-    ANSI_STR.Buffer = sAnsi '"How Quickly Daft Jumping Zebras Vex"
+    ANSI_STR.Buffer = sAnsi    '"How Quickly Daft Jumping Zebras Vex"
     ANSI_STR.Len = LenB(ANSI_STR.Buffer)
     ANSI_STR.MaxLen = ANSI_STR.Len + 1       '+ LenB(vbNullChar)
 
@@ -95,10 +95,10 @@ Public Function AnsiToUni(sAnsi As String) As Byte()
     UNI_STR.MaxLen = UNI_STR.Len + 2     '+ Len(vbNullChar)
 
     'If RtlUnicodeStringToAnsiString(ANSI_STR, VarPtr(UNI_STR)) = STATUS_SUCCESS Then
-        UNI_STR.Buffer = Space$(ANSI_STR.Len) '
-        Call AnsiToUnicode(VarPtr(UNI_STR), ANSI_STR)
-        ReDim Preserve AnsiToUni(UBound(Buffer) - 1)
-        sAnsi = ByteToStr(AnsiToUni)
+    UNI_STR.Buffer = Space$(ANSI_STR.Len)    '
+    Call AnsiToUnicode(VarPtr(UNI_STR), ANSI_STR)
+    ReDim Preserve AnsiToUni(UBound(Buffer) - 1)
+    sAnsi = ByteToStr(AnsiToUni)
     'End If
 End Function
 

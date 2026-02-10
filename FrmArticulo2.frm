@@ -1,7 +1,7 @@
 VERSION 5.00
-Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TabCtl32.Ocx"
+Object = "{BDC217C8-ED16-11CD-956C-0000C04E4C0A}#1.1#0"; "TABCTL32.OCX"
 Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
-Object = "{3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0"; "richtx32.ocx"
+Object = "{3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0"; "RICHTX32.OCX"
 Begin VB.Form FrmArticulo2 
    AutoRedraw      =   -1  'True
    BorderStyle     =   0  'None
@@ -57,81 +57,81 @@ Begin VB.Form FrmArticulo2
       TabCaption(0)   =   "General"
       TabPicture(0)   =   "FrmArticulo2.frx":000C
       Tab(0).ControlEnabled=   0   'False
-      Tab(0).Control(0)=   "Label2(9)"
+      Tab(0).Control(0)=   "cmbOnKey"
       Tab(0).Control(0).Enabled=   0   'False
-      Tab(0).Control(1)=   "Label2(7)"
+      Tab(0).Control(1)=   "SSTab2"
       Tab(0).Control(1).Enabled=   0   'False
-      Tab(0).Control(2)=   "Label2(6)"
+      Tab(0).Control(2)=   "TextUM"
       Tab(0).Control(2).Enabled=   0   'False
-      Tab(0).Control(3)=   "Label2(5)"
+      Tab(0).Control(3)=   "CmbSub"
       Tab(0).Control(3).Enabled=   0   'False
-      Tab(0).Control(4)=   "Label2(4)"
+      Tab(0).Control(4)=   "CmbFam"
       Tab(0).Control(4).Enabled=   0   'False
-      Tab(0).Control(5)=   "Label2(3)"
+      Tab(0).Control(5)=   "Chk100g"
       Tab(0).Control(5).Enabled=   0   'False
-      Tab(0).Control(6)=   "Label2(2)"
+      Tab(0).Control(6)=   "TxtPreferente"
       Tab(0).Control(6).Enabled=   0   'False
-      Tab(0).Control(7)=   "Label2(1)"
+      Tab(0).Control(7)=   "CmbTara"
       Tab(0).Control(7).Enabled=   0   'False
-      Tab(0).Control(8)=   "Label2(0)"
+      Tab(0).Control(8)=   "TxtIVA"
       Tab(0).Control(8).Enabled=   0   'False
-      Tab(0).Control(9)=   "Label8"
+      Tab(0).Control(9)=   "TxtEuros"
       Tab(0).Control(9).Enabled=   0   'False
-      Tab(0).Control(10)=   "LblConservacion"
+      Tab(0).Control(10)=   "TxtConservacion"
       Tab(0).Control(10).Enabled=   0   'False
-      Tab(0).Control(11)=   "LblEuros"
+      Tab(0).Control(11)=   "CmbBalenv"
       Tab(0).Control(11).Enabled=   0   'False
-      Tab(0).Control(12)=   "Label11"
+      Tab(0).Control(12)=   "CmbPesado"
       Tab(0).Control(12).Enabled=   0   'False
-      Tab(0).Control(13)=   "Label14"
+      Tab(0).Control(13)=   "CmbCodigo"
       Tab(0).Control(13).Enabled=   0   'False
-      Tab(0).Control(14)=   "Lbl3"
+      Tab(0).Control(14)=   "CmbSeccion"
       Tab(0).Control(14).Enabled=   0   'False
-      Tab(0).Control(15)=   "LabelUM"
+      Tab(0).Control(15)=   "CmbPlu"
       Tab(0).Control(15).Enabled=   0   'False
-      Tab(0).Control(16)=   "LblVisFam"
+      Tab(0).Control(16)=   "TxtSubSeccion"
       Tab(0).Control(16).Enabled=   0   'False
-      Tab(0).Control(17)=   "TxtTara"
+      Tab(0).Control(17)=   "TxtFamilia"
       Tab(0).Control(17).Enabled=   0   'False
-      Tab(0).Control(18)=   "TxtCaducidad"
+      Tab(0).Control(18)=   "TxtPrecio"
       Tab(0).Control(18).Enabled=   0   'False
-      Tab(0).Control(19)=   "TxtPrecio"
+      Tab(0).Control(19)=   "TxtCaducidad"
       Tab(0).Control(19).Enabled=   0   'False
-      Tab(0).Control(20)=   "TxtFamilia"
+      Tab(0).Control(20)=   "TxtTara"
       Tab(0).Control(20).Enabled=   0   'False
-      Tab(0).Control(21)=   "TxtSubSeccion"
+      Tab(0).Control(21)=   "LblVisFam"
       Tab(0).Control(21).Enabled=   0   'False
-      Tab(0).Control(22)=   "CmbPlu"
+      Tab(0).Control(22)=   "LabelUM"
       Tab(0).Control(22).Enabled=   0   'False
-      Tab(0).Control(23)=   "CmbSeccion"
+      Tab(0).Control(23)=   "Lbl3"
       Tab(0).Control(23).Enabled=   0   'False
-      Tab(0).Control(24)=   "CmbCodigo"
+      Tab(0).Control(24)=   "Label14"
       Tab(0).Control(24).Enabled=   0   'False
-      Tab(0).Control(25)=   "CmbPesado"
+      Tab(0).Control(25)=   "Label11"
       Tab(0).Control(25).Enabled=   0   'False
-      Tab(0).Control(26)=   "CmbBalenv"
+      Tab(0).Control(26)=   "LblEuros"
       Tab(0).Control(26).Enabled=   0   'False
-      Tab(0).Control(27)=   "TxtConservacion"
+      Tab(0).Control(27)=   "LblConservacion"
       Tab(0).Control(27).Enabled=   0   'False
-      Tab(0).Control(28)=   "TxtEuros"
+      Tab(0).Control(28)=   "Label8"
       Tab(0).Control(28).Enabled=   0   'False
-      Tab(0).Control(29)=   "TxtIVA"
+      Tab(0).Control(29)=   "Label2(0)"
       Tab(0).Control(29).Enabled=   0   'False
-      Tab(0).Control(30)=   "CmbTara"
+      Tab(0).Control(30)=   "Label2(1)"
       Tab(0).Control(30).Enabled=   0   'False
-      Tab(0).Control(31)=   "TxtPreferente"
+      Tab(0).Control(31)=   "Label2(2)"
       Tab(0).Control(31).Enabled=   0   'False
-      Tab(0).Control(32)=   "Chk100g"
+      Tab(0).Control(32)=   "Label2(3)"
       Tab(0).Control(32).Enabled=   0   'False
-      Tab(0).Control(33)=   "CmbFam"
+      Tab(0).Control(33)=   "Label2(4)"
       Tab(0).Control(33).Enabled=   0   'False
-      Tab(0).Control(34)=   "CmbSub"
+      Tab(0).Control(34)=   "Label2(5)"
       Tab(0).Control(34).Enabled=   0   'False
-      Tab(0).Control(35)=   "TextUM"
+      Tab(0).Control(35)=   "Label2(6)"
       Tab(0).Control(35).Enabled=   0   'False
-      Tab(0).Control(36)=   "SSTab2"
+      Tab(0).Control(36)=   "Label2(7)"
       Tab(0).Control(36).Enabled=   0   'False
-      Tab(0).Control(37)=   "cmbOnKey"
+      Tab(0).Control(37)=   "Label2(9)"
       Tab(0).Control(37).Enabled=   0   'False
       Tab(0).ControlCount=   38
       TabCaption(1)   =   "Adicionales."
@@ -333,31 +333,31 @@ Begin VB.Form FrmArticulo2
          TabCaption(1)   =   "Prcs."
          TabPicture(1)   =   "FrmArticulo2.frx":0076
          Tab(1).ControlEnabled=   0   'False
-         Tab(1).Control(0)=   "Label22(4)"
-         Tab(1).Control(1)=   "Label22(3)"
-         Tab(1).Control(2)=   "Label22(2)"
-         Tab(1).Control(3)=   "Label22(1)"
-         Tab(1).Control(4)=   "Label22(0)"
-         Tab(1).Control(5)=   "Label21"
-         Tab(1).Control(6)=   "Label20"
-         Tab(1).Control(7)=   "Label19"
-         Tab(1).Control(8)=   "Label18"
+         Tab(1).Control(0)=   "Text3(9)"
+         Tab(1).Control(1)=   "Text3(0)"
+         Tab(1).Control(2)=   "Text3(1)"
+         Tab(1).Control(3)=   "Text3(2)"
+         Tab(1).Control(4)=   "Text3(3)"
+         Tab(1).Control(5)=   "Text3(4)"
+         Tab(1).Control(6)=   "Text3(5)"
+         Tab(1).Control(7)=   "Text3(6)"
+         Tab(1).Control(8)=   "Text3(7)"
          Tab(1).Control(9)=   "Text3(8)"
-         Tab(1).Control(10)=   "Text3(7)"
-         Tab(1).Control(11)=   "Text3(6)"
-         Tab(1).Control(12)=   "Text3(5)"
-         Tab(1).Control(13)=   "Text3(4)"
-         Tab(1).Control(14)=   "Text3(3)"
-         Tab(1).Control(15)=   "Text3(2)"
-         Tab(1).Control(16)=   "Text3(1)"
-         Tab(1).Control(17)=   "Text3(0)"
-         Tab(1).Control(18)=   "Text3(9)"
+         Tab(1).Control(10)=   "Label18"
+         Tab(1).Control(11)=   "Label19"
+         Tab(1).Control(12)=   "Label20"
+         Tab(1).Control(13)=   "Label21"
+         Tab(1).Control(14)=   "Label22(0)"
+         Tab(1).Control(15)=   "Label22(1)"
+         Tab(1).Control(16)=   "Label22(2)"
+         Tab(1).Control(17)=   "Label22(3)"
+         Tab(1).Control(18)=   "Label22(4)"
          Tab(1).ControlCount=   19
          TabCaption(2)   =   "V. Text (Lin1-Lin20)"
          TabPicture(2)   =   "FrmArticulo2.frx":0092
          Tab(2).ControlEnabled=   0   'False
-         Tab(2).Control(0)=   "RTB1(4)"
-         Tab(2).Control(1)=   "Label22(5)"
+         Tab(2).Control(0)=   "Label22(5)"
+         Tab(2).Control(1)=   "RTB1(4)"
          Tab(2).ControlCount=   2
          TabCaption(3)   =   "V. text1"
          TabPicture(3)   =   "FrmArticulo2.frx":00AE
@@ -1015,7 +1015,6 @@ Begin VB.Form FrmArticulo2
             _ExtentY        =   6165
             _Version        =   393217
             BorderStyle     =   0
-            Enabled         =   -1  'True
             ScrollBars      =   3
             Appearance      =   0
             AutoVerbMenu    =   -1  'True
@@ -1032,11 +1031,10 @@ Begin VB.Form FrmArticulo2
             _ExtentY        =   6165
             _Version        =   393217
             BorderStyle     =   0
-            Enabled         =   -1  'True
             ScrollBars      =   3
             Appearance      =   0
             AutoVerbMenu    =   -1  'True
-            TextRTF         =   $"FrmArticulo2.frx":018C
+            TextRTF         =   $"FrmArticulo2.frx":01E7
          End
          Begin RichTextLib.RichTextBox RTB1 
             Height          =   3495
@@ -1049,11 +1047,10 @@ Begin VB.Form FrmArticulo2
             _ExtentY        =   6165
             _Version        =   393217
             BorderStyle     =   0
-            Enabled         =   -1  'True
             ScrollBars      =   3
             Appearance      =   0
             AutoVerbMenu    =   -1  'True
-            TextRTF         =   $"FrmArticulo2.frx":01FA
+            TextRTF         =   $"FrmArticulo2.frx":02B0
          End
          Begin RichTextLib.RichTextBox RTB1 
             Height          =   3495
@@ -1066,11 +1063,10 @@ Begin VB.Form FrmArticulo2
             _ExtentY        =   6165
             _Version        =   393217
             BorderStyle     =   0
-            Enabled         =   -1  'True
             ScrollBars      =   3
             Appearance      =   0
             AutoVerbMenu    =   -1  'True
-            TextRTF         =   $"FrmArticulo2.frx":0268
+            TextRTF         =   $"FrmArticulo2.frx":0379
          End
          Begin RichTextLib.RichTextBox RTB1 
             Height          =   3495
@@ -1083,11 +1079,10 @@ Begin VB.Form FrmArticulo2
             _ExtentY        =   6165
             _Version        =   393217
             BorderStyle     =   0
-            Enabled         =   -1  'True
             ScrollBars      =   3
             Appearance      =   0
             AutoVerbMenu    =   -1  'True
-            TextRTF         =   $"FrmArticulo2.frx":02D6
+            TextRTF         =   $"FrmArticulo2.frx":0442
          End
          Begin VB.Label Label18 
             Caption         =   "Prc.1:"
@@ -1795,9 +1790,9 @@ Begin VB.Form FrmArticulo2
          Appearance      =   0  'Flat
          Enabled         =   0   'False
          Height          =   315
-         ItemData        =   "FrmArticulo2.frx":0344
+         ItemData        =   "FrmArticulo2.frx":050B
          Left            =   -67080
-         List            =   "FrmArticulo2.frx":034E
+         List            =   "FrmArticulo2.frx":0515
          Style           =   2  'Dropdown List
          TabIndex        =   12
          Top             =   3600
@@ -1807,9 +1802,9 @@ Begin VB.Form FrmArticulo2
       Begin VB.ComboBox CmbPesado 
          Appearance      =   0  'Flat
          Height          =   315
-         ItemData        =   "FrmArticulo2.frx":035A
+         ItemData        =   "FrmArticulo2.frx":0521
          Left            =   -73200
-         List            =   "FrmArticulo2.frx":0364
+         List            =   "FrmArticulo2.frx":052B
          Style           =   2  'Dropdown List
          TabIndex        =   11
          Top             =   3360
@@ -2096,15 +2091,15 @@ Begin VB.Form FrmArticulo2
       BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
          NumListImages   =   3
          BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "FrmArticulo2.frx":037B
+            Picture         =   "FrmArticulo2.frx":0542
             Key             =   "disabled"
          EndProperty
          BeginProperty ListImage2 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "FrmArticulo2.frx":04D5
+            Picture         =   "FrmArticulo2.frx":069C
             Key             =   "enabled"
          EndProperty
          BeginProperty ListImage3 {2C247F27-8591-11D1-B16A-00C0F0283628} 
-            Picture         =   "FrmArticulo2.frx":062F
+            Picture         =   "FrmArticulo2.frx":07F6
             Key             =   "no"
          EndProperty
       EndProperty
@@ -2315,7 +2310,7 @@ Private lCharging As Boolean
 
 
 Private Sub CambiarIdioma()
-Dim bucle As Integer
+    Dim bucle As Integer
     'Label8.Caption = "Euroscale + V-12" 'CargaCadena(566)
     'If id <> 0 Then CmbBalenv.List(1) = "Yes"
     mnuTodos.Caption = CargaCadena(311)
@@ -2350,7 +2345,7 @@ Dim bucle As Integer
     Else
         SSTab2.TabCaption(0) = CargaCadena(536) & " 1-20"
     End If
-    SSTab2.TabCaption(1) = "Prcs." 'CargaCadena(536) & " 11-20"
+    SSTab2.TabCaption(1) = "Prcs."    'CargaCadena(536) & " 11-20"
     Label4.Caption = CargaCadena(538)
     Label11.Caption = CargaCadena(553)
     LblConservacion.Caption = CargaCadena(638)
@@ -2370,17 +2365,17 @@ Dim bucle As Integer
     Label13.Caption = CargaCadena(1047)
 End Sub
 Private Sub Refresca_Codigos()
-    
+
     Dim Registro As New RecordNet
     CmbCodigo.Clear
 
     If HaySeguridad And UsuarioActual.Asociado <> 0 Then
         Registro.OpenRecordset _
-        ("select codigo,borrado from articulo where borrado=false and codi_ident=" & _
-        UsuarioActual.Asociado & " order by codigo")
+                ("select codigo,borrado from articulo where borrado=false and codi_ident=" & _
+                 UsuarioActual.Asociado & " order by codigo")
     Else
         Registro.OpenRecordset _
-        ("select codigo,borrado from articulo where borrado=false order by codigo")
+                ("select codigo,borrado from articulo where borrado=false order by codigo")
     End If
     With Registro
         If Not .EOF Then
@@ -2393,45 +2388,45 @@ Private Sub Refresca_Codigos()
     End With
 End Sub
 Private Sub Refresca_Plus()
-Dim Registro As New RecordNet
-Dim sSQL As String
+    Dim Registro As New RecordNet
+    Dim sSQL As String
     If EnPlu Then Exit Sub
     CmbPlu.Clear
-    
+
     If Val(CmbSeccion.TexT) > 0 Then
-    sSQL = "SELECT plu " & _
-                   "FROM articulo " & _
-                   "WHERE borrado=false" & _
-                   " AND codi_ident=" & CmbSeccion.TexT & " " & _
-                   "ORDER BY plu"
-    Registro.OpenRecordset (sSQL)
-    With Registro
-        If Not .EOF Then
-            .MoveFirst
-            Do Until .EOF
-                CmbPlu.AddItem .Fields("plu")
-                .Movenext
-            Loop
-        End If
-    End With
+        sSQL = "SELECT plu " & _
+               "FROM articulo " & _
+               "WHERE borrado=false" & _
+             " AND codi_ident=" & CmbSeccion.TexT & " " & _
+               "ORDER BY plu"
+        Registro.OpenRecordset (sSQL)
+        With Registro
+            If Not .EOF Then
+                .MoveFirst
+                Do Until .EOF
+                    CmbPlu.AddItem .Fields("plu")
+                    .Movenext
+                Loop
+            End If
+        End With
     Else
         CmbPlu.AddItem 0
     End If
 End Sub
-Private Sub Refresca_Datos() 'aquí Aho
-Dim bucle As Integer
-Dim Art As DB_Articulo
-Dim MiNombre As String
-Dim ok As Boolean
-Dim sSQL As String
-Dim rst As dao.Recordset
-Dim db As dao.Database
-Dim bPlu As Long
-Dim Ret As Boolean
-Dim sD As String
-Dim Token As Long
-Dim sTextLong As String
-lCharging = True
+Private Sub Refresca_Datos()    'aquí Aho
+    Dim bucle As Integer
+    Dim Art As DB_Articulo
+    Dim MiNombre As String
+    Dim ok As Boolean
+    Dim sSQL As String
+    Dim rst As dao.Recordset
+    Dim db As dao.Database
+    Dim bPlu As Long
+    Dim Ret As Boolean
+    Dim sD As String
+    Dim Token As Long
+    Dim sTextLong As String
+    lCharging = True
     nQueImagen = 1
     sQuePathImagen = App.Path & "\images\"
 
@@ -2444,9 +2439,9 @@ lCharging = True
         End If
     End If
     ok = DB_Consulta_Art(Art)
-    
+
     sQueNombreImagen = Art.Imagen
-    
+
     If ok Then
         '2.0.23
         'If Art.WGH Or (CmbPesado.TexT = CmbPesado.List(1)) Then
@@ -2489,15 +2484,15 @@ lCharging = True
             CmbPlu.Enabled = True
             CmbCodigo.Enabled = False
         End If
-#If BALSAM Then
-        For bucle = 0 To 8
-            Text3(bucle).TexT = Art.tarifa(bucle)
-        Next bucle
-#Else
-        For bucle = 0 To 9
-            Text3(bucle).TexT = Art.tarifa(bucle)
-        Next bucle
-#End If
+        #If BALSAM Then
+            For bucle = 0 To 8
+                Text3(bucle).TexT = Art.tarifa(bucle)
+            Next bucle
+        #Else
+            For bucle = 0 To 9
+                Text3(bucle).TexT = Art.tarifa(bucle)
+            Next bucle
+        #End If
         If FamiliasFijas Then
             If CmbFam.ListCount > 0 Then
                 For bucle = 0 To CmbFam.ListCount - 1
@@ -2520,7 +2515,7 @@ lCharging = True
         '        Next Bucle
         '    End If
         'Else
-            TxtSubSeccion.TexT = CStr(Art.subsec)
+        TxtSubSeccion.TexT = CStr(Art.subsec)
         'End If
         If UsaEuro Then
             TxtEuros.TexT = CStr(Art.precio)
@@ -2530,26 +2525,26 @@ lCharging = True
         TxtCaducidad.TexT = CStr(Art.caducidad)
         TxtConservacion.TexT = CStr(Art.GrpConserv)
         TxtPresel.TexT = CStr(Art.Presel)
-#If BALSAM Then
-        TxtMerma.TexT = CStr(Art.Merma)
-#End If
+        #If BALSAM Then
+            TxtMerma.TexT = CStr(Art.Merma)
+        #End If
         TxtTara.TexT = CStr(Art.tara)
         'If Dir(App.Path & "\mixmode.txt") <> "" Then
-            If Art.lMix Then
-                CheckMix.Value = vbChecked
-            Else
-                CheckMix.Value = vbUnchecked
-            End If
-            TextPoid.TexT = CStr(Art.nPoid)
+        If Art.lMix Then
+            CheckMix.Value = vbChecked
+        Else
+            CheckMix.Value = vbUnchecked
+        End If
+        TextPoid.TexT = CStr(Art.nPoid)
         'End If
-        
+
         '2.0.22
         'If lVL000 And Dir(App.Path & "\mixmode.txt") = "" Then
         '    Art.lMix = False
         '    TextPoid.TexT = CStr(Art.nPoid)
         'End If
         '''''''
-        
+
         ' Combo de tipos de tara EcoLabel
         If CmbTara.Visible = True Then
             If Art.tara <> 0 Then
@@ -2564,11 +2559,11 @@ lCharging = True
             End If
         End If
         TxtEAN13.TexT = Trim(Art.ean13)
-        
+
         'If (UsaEcoPrint And TipoEcoPrint = 3) Or lMarteAlfa Then 'IC+
         '    TextICEAN.TexT = Trim(Art.EAN13)
         'End If
-        
+
         'TextICEAN.TexT = CStr(Art.Posicion)
         '''''''''''''''''''''''''''''''''''
         CmbPesado.TexT = CmbPesado.List(0)
@@ -2576,13 +2571,13 @@ lCharging = True
         'CmbBalenv.TexT = CmbBalenv.List(0)
         'If Art.Balenv Then CmbBalenv.TexT = CmbBalenv.List(1)
         '*******
-    
+
         Text1.TexT = Art.Label2
-    
-#If BALSAM = True Then
-    TxtEtiqueta.TexT = Art.Label1
-    Text2.TexT = Art.ean14
-#End If
+
+        #If BALSAM = True Then
+            TxtEtiqueta.TexT = Art.Label1
+            Text2.TexT = Art.ean14
+        #End If
         'RTB1(4).TextRTF = ""
         sTextLong = ""
         For bucle = 0 To 20
@@ -2590,12 +2585,12 @@ lCharging = True
             If bucle < 10 Then
                 CmbTipoLetra(bucle).TexT = Art.TipoLetra(bucle)
             End If
-            If bucle > 0 Then sTextLong = sTextLong & Text8(bucle).TexT 'Art.Descriptivos(bucle)
+            If bucle > 0 Then sTextLong = sTextLong & Text8(bucle).TexT    'Art.Descriptivos(bucle)
         Next bucle
         RTB1(4).TexT = sTextLong
         RTB1(4).SelStart = 0
         RTB1(4).SelStart = 1
-        
+
         SSTab2.Tab = 0
         '*************
         'Tramos
@@ -2609,7 +2604,7 @@ lCharging = True
         TxtTramo(0).Enabled = False
         TxtPrc(1).Enabled = False
         TxtTramo(1).Enabled = False
-        
+
         'If Dir(App.Path & "\digitonuba.txt") <> "" Then
         '    ChkTramo.Value = vbChecked
         '    TxtPrc(0).Enabled = True
@@ -2627,22 +2622,22 @@ lCharging = True
         '    'End If
         '
         'Else
-            If Art.TRM1 >= 0 Or Art.TRM2 >= 0 Then
-                ChkTramo.Value = vbChecked
-                TxtPrc(0).Enabled = True
-                TxtTramo(0).Enabled = True
-                TxtPrc(1).Enabled = True
-                TxtTramo(1).Enabled = True
-                TxtPrc(0).TexT = ToString(Art.PRC1)
-                TxtTramo(0).TexT = ToString(Art.TRM1)
-                If Art.PRC2 >= 0 And Art.TRM2 >= 0 Then
-                    TxtPrc(1).TexT = ToString(Art.PRC2)
-                    TxtTramo(1).TexT = ToString(Art.TRM2)
-                Else
-                    TxtPrc(1).TexT = ""
-                    TxtTramo(1).TexT = ""
-                End If
+        If Art.TRM1 >= 0 Or Art.TRM2 >= 0 Then
+            ChkTramo.Value = vbChecked
+            TxtPrc(0).Enabled = True
+            TxtTramo(0).Enabled = True
+            TxtPrc(1).Enabled = True
+            TxtTramo(1).Enabled = True
+            TxtPrc(0).TexT = ToString(Art.PRC1)
+            TxtTramo(0).TexT = ToString(Art.TRM1)
+            If Art.PRC2 >= 0 And Art.TRM2 >= 0 Then
+                TxtPrc(1).TexT = ToString(Art.PRC2)
+                TxtTramo(1).TexT = ToString(Art.TRM2)
+            Else
+                TxtPrc(1).TexT = ""
+                TxtTramo(1).TexT = ""
             End If
+        End If
         'End If
         Set db = AbrirBase
         Set rst = db.OpenRecordset("select * from text15 where codigo=" & CStr(Val(CmbCodigo.TexT)))
@@ -2672,44 +2667,44 @@ lCharging = True
         db.Close
         Set db = Nothing
         'If AhorraMas Or Dir(App.Path & "\upper.txt") <> "" Then
-            sD = Format(Art.PRC3, "0000000000")
-            sD = Mid(sD, 5, 2) & "/" & Mid(sD, 3, 2) & "/" & Mid(sD, 1, 2) & "-" & Mid(sD, 7, 2) & ":" & Mid(sD, 9)
-            TextUM.TexT = sD
-            
+        sD = Format(Art.PRC3, "0000000000")
+        sD = Mid(sD, 5, 2) & "/" & Mid(sD, 3, 2) & "/" & Mid(sD, 1, 2) & "-" & Mid(sD, 7, 2) & ":" & Mid(sD, 9)
+        TextUM.TexT = sD
+
         'End If
-        
+
         'If Mid(Trim(sQueNombreImagen), 1, 1) <> "#" Then
-            picture1.Height = 3135
-            picture1.Width = 3615
-            'picture1.top = 0
-            'picture1.left = CmdColor(1).left
-            
-            On Error Resume Next
-            Token = InitGDIPlus
-            If Dir(Art.Imagen) = "" Then
-                If Dir(App.Path & "\images\" & Art.Imagen) <> "" Then
-                    Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\images\" & Art.Imagen)
-                Else
-                    Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\vacio.jpg")
-                End If
+        picture1.Height = 3135
+        picture1.Width = 3615
+        'picture1.top = 0
+        'picture1.left = CmdColor(1).left
+
+        On Error Resume Next
+        Token = InitGDIPlus
+        If Dir(Art.Imagen) = "" Then
+            If Dir(App.Path & "\images\" & Art.Imagen) <> "" Then
+                Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\images\" & Art.Imagen)
             Else
-                Set picture1.Picture = LoadPictureGDIPlus(Art.Imagen)
+                Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\vacio.jpg")
             End If
-            FreeGDIPlus Token
-            On Error GoTo 0
+        Else
+            Set picture1.Picture = LoadPictureGDIPlus(Art.Imagen)
+        End If
+        FreeGDIPlus Token
+        On Error GoTo 0
         'Else
         '    Call ColorToImage(Trim(sQueNombreImagen))
         'End If
-        
+
     Else
-        
-            RTB1(0).TextRTF = ""
-            RTB1(1).TextRTF = ""
-            RTB1(2).TextRTF = ""
-            RTB1(3).TextRTF = ""
-            RTB1(4).TextRTF = ""
-            cmbOnKey.ListIndex = 0
-            
+
+        RTB1(0).TextRTF = ""
+        RTB1(1).TextRTF = ""
+        RTB1(2).TextRTF = ""
+        RTB1(3).TextRTF = ""
+        RTB1(4).TextRTF = ""
+        cmbOnKey.ListIndex = 0
+
         LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
         LblInfo.BackColor = vbWhite
         CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
@@ -2739,15 +2734,15 @@ lCharging = True
             Text8(bucle).TexT = ""
             If bucle < 10 Then CmbTipoLetra(bucle).TexT = "0"
         Next bucle
-#If BALSAM Then
-        For bucle = 0 To 8
-            Text3(bucle).TexT = ""
-        Next bucle
-#Else
-        For bucle = 0 To 9
-            Text3(bucle).TexT = ""
-        Next bucle
-#End If
+        #If BALSAM Then
+            For bucle = 0 To 8
+                Text3(bucle).TexT = ""
+            Next bucle
+        #Else
+            For bucle = 0 To 9
+                Text3(bucle).TexT = ""
+            Next bucle
+        #End If
         ChkTramo.Value = vbUnchecked
         TxtPrc(0) = ""
         TxtTramo(0) = ""
@@ -2762,9 +2757,9 @@ lCharging = True
         '    If (CStr(Me.CmbSeccion.TexT) <> "") And (CStr(Me.CmbCodigo.TexT) <> "") Then
         '            Set db = OpenDatabase(Base_General)
         '            sSQL = "SELECT plu " & _
-        '                           "FROM articulo " & _
-        '                           "WHERE borrado=false" & _
-        '                           " AND secc_maqui=" & CStr(Me.CmbSeccion.TexT)
+                     '                           "FROM articulo " & _
+                     '                           "WHERE borrado=false" & _
+                     '                           " AND secc_maqui=" & CStr(Me.CmbSeccion.TexT)
         '            Set rst = db.OpenRecordset(sSQL)
         '            With rst
         '                bPlu = 1
@@ -2793,7 +2788,7 @@ lCharging = True
         '    End If
         'End If
     End If
-    
+
     'MsgBox "des1:" & Text8(1)
     lCharging = False
 End Sub
@@ -2802,7 +2797,7 @@ End Sub
 
 
 Private Sub Check1_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If Check1.Value Then
         nf = FreeFile()
         Open App.Path & "\5l.txt" For Output As #nf
@@ -2816,8 +2811,8 @@ Dim nf As Integer
     End If
 
 End Sub
-Private Sub Check2_Click() ''
-Dim nf As Integer
+Private Sub Check2_Click()    ''
+    Dim nf As Integer
     If Check2.Value Then
         nf = FreeFile()
         Open App.Path & "\40l.txt" For Output As #nf
@@ -2828,15 +2823,15 @@ Dim nf As Integer
         If Check3.Value = vbUnchecked Then
             Check2.Value = vbChecked
         Else
-        If Dir(App.Path & "\40l.txt") <> "" Then
-            Kill App.Path & "\40l.txt"
-        End If
+            If Dir(App.Path & "\40l.txt") <> "" Then
+                Kill App.Path & "\40l.txt"
+            End If
         End If
     End If
 End Sub
 
 Private Sub Check3_Click()
-Dim nf As Integer
+    Dim nf As Integer
     If Check3.Value Then
         nf = FreeFile()
         Open App.Path & "\39l.txt" For Output As #nf
@@ -2852,17 +2847,17 @@ Dim nf As Integer
 End Sub
 
 Private Sub Chk100g_Click()
-#If BALSAM = False Then
-#Else
-    If Chk100g.Value = vbChecked Then
-        If Chk100g.Visible = True Then
-            CmbPesado.Enabled = False
-            CmbPesado.ListIndex = 0
+    #If BALSAM = False Then
+    #Else
+        If Chk100g.Value = vbChecked Then
+            If Chk100g.Visible = True Then
+                CmbPesado.Enabled = False
+                CmbPesado.ListIndex = 0
+            End If
+        Else
+            CmbPesado.Enabled = True
         End If
-    Else
-        CmbPesado.Enabled = True
-    End If
-#End If
+    #End If
 End Sub
 
 Private Sub ChkTramo_Click()
@@ -2885,37 +2880,37 @@ Private Sub ChkTramo_Click()
         '    End If
         '
         'Else
-            TxtTramo(0).Enabled = True
-            TxtTramo(1).Enabled = True
-            TxtPrc(0).Enabled = True
-            TxtPrc(1).Enabled = True
-            TxtTramo(0).Locked = False
-            TxtTramo(1).Locked = False
-            TxtPrc(0).Locked = False
-            TxtPrc(1).Locked = False
-            If UsaEuro Then
-                'lblPrecioBase.Caption = "Precio Base " & TxtEuros.Text
-                lblPrecioBase.Caption = CargaCadena(649) & " " & TxtEuros.TexT
-            Else
-                'lblPrecioBase.Caption = "Precio Base " & TxtPrecio.Text
-                lblPrecioBase.Caption = CargaCadena(649) & " " & TxtPrecio.TexT
-            End If
+        TxtTramo(0).Enabled = True
+        TxtTramo(1).Enabled = True
+        TxtPrc(0).Enabled = True
+        TxtPrc(1).Enabled = True
+        TxtTramo(0).Locked = False
+        TxtTramo(1).Locked = False
+        TxtPrc(0).Locked = False
+        TxtPrc(1).Locked = False
+        If UsaEuro Then
+            'lblPrecioBase.Caption = "Precio Base " & TxtEuros.Text
+            lblPrecioBase.Caption = CargaCadena(649) & " " & TxtEuros.TexT
+        Else
+            'lblPrecioBase.Caption = "Precio Base " & TxtPrecio.Text
+            lblPrecioBase.Caption = CargaCadena(649) & " " & TxtPrecio.TexT
+        End If
         'End If
     Else
         'If Dir(App.Path & "\digitonuba.txt") <> "" Then
-        
+
         'Else
-              
-            TxtTramo(0).Enabled = False
-            TxtTramo(1).Enabled = False
-            TxtPrc(0).Enabled = False
-            TxtPrc(1).Enabled = False
-            TxtTramo(0).TexT = ""
-            TxtTramo(1).TexT = ""
-            TxtPrc(0).TexT = ""
-            TxtPrc(1).TexT = ""
-            lblPrecioBase.Caption = CargaCadena(649)
-        
+
+        TxtTramo(0).Enabled = False
+        TxtTramo(1).Enabled = False
+        TxtPrc(0).Enabled = False
+        TxtPrc(1).Enabled = False
+        TxtTramo(0).TexT = ""
+        TxtTramo(1).TexT = ""
+        TxtPrc(0).TexT = ""
+        TxtPrc(1).TexT = ""
+        lblPrecioBase.Caption = CargaCadena(649)
+
         'End If
     End If
 End Sub
@@ -2935,8 +2930,8 @@ End Sub
 '    If KeyAscii = 13 Then
 '        If TxtConservacion.Visible = True Then
 '            TxtConservacion.SetFocus
- '       Else
- '           SSTab2.Tab = 0
+'       Else
+'           SSTab2.Tab = 0
 '            Text8(0).SetFocus
 '        End If
 '    End If
@@ -2947,10 +2942,10 @@ End Sub
 'End Sub
 
 Private Sub CmbCodigo_Click()
-Dim Token As Long
+    Dim Token As Long
     Token = InitGDIPlus
     Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\vacio.jpg")
-    FreeGDIPlus Token '
+    FreeGDIPlus Token    '
     PorCodigo = True
     LblInfo2.Caption = ""
     Refresca_Datos
@@ -3027,36 +3022,36 @@ Private Sub CmbPesado_Click()
         LblTramo1.Caption = CargaCadena(651) & " 1 (Ud.)"
         LblTramo2.Caption = CargaCadena(651) & " 2 (Ud.)"
     End If
-    
-    
+
+
 End Sub
 
 Private Sub CmbPesado_KeyPress(KeyAscii As Integer)
-    'If KeyAscii = 13 And CmbBalenv.Visible = True Then
-    '    CmbBalenv.SetFocus
-    'Else
-        SSTab2.Tab = 0
-        Text8(0).SetFocus
+'If KeyAscii = 13 And CmbBalenv.Visible = True Then
+'    CmbBalenv.SetFocus
+'Else
+    SSTab2.Tab = 0
+    Text8(0).SetFocus
     'End If
 End Sub
 
 Private Sub CmbPesado_LostFocus()
-    '2.0.23
-    'If (CmbPesado.TexT = CmbPesado.List(1)) Then
-    '    TextPoid.Enabled = True
-    'Else
-    '    TextPoid.Enabled = False
-    '    TextPoid.TexT = "0"
-    'End If
-    ''''''''
+'2.0.23
+'If (CmbPesado.TexT = CmbPesado.List(1)) Then
+'    TextPoid.Enabled = True
+'Else
+'    TextPoid.Enabled = False
+'    TextPoid.TexT = "0"
+'End If
+''''''''
 
 End Sub
 
 Private Sub CmbPlu_Click()
-Dim Token As Long
+    Dim Token As Long
     Token = InitGDIPlus
     Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\vacio.jpg")
-    FreeGDIPlus Token '
+    FreeGDIPlus Token    '
     PorCodigo = False
     EnPlu = True
     LblInfo2.Caption = ""
@@ -3067,20 +3062,20 @@ End Sub
 
 Private Sub CmbPlu_KeyPress(KeyAscii As Integer)
     If Val(CmbSeccion.TexT) > 0 Then
-    If KeyAscii = 13 Then
-        Refresca_Datos
-        If TxtSubSeccion.Visible = True Then
-            TxtSubSeccion.SetFocus
-        'Else
-        '    CmbSub.SetFocus
+        If KeyAscii = 13 Then
+            Refresca_Datos
+            If TxtSubSeccion.Visible = True Then
+                TxtSubSeccion.SetFocus
+                'Else
+                '    CmbSub.SetFocus
+            End If
         End If
-    End If
-    If PluGB = 0 Or PluGB = 2000 Then 'Or id = 6000 Then
-        CmbPlu.Locked = Checktexto(KeyAscii, 4, CmbPlu.TexT, True, False)
-    Else
-        
-        CmbPlu.Locked = Checktexto(KeyAscii, 3, CmbPlu.TexT, True, False)
-    End If
+        If PluGB = 0 Or PluGB = 2000 Then    'Or id = 6000 Then
+            CmbPlu.Locked = Checktexto(KeyAscii, 4, CmbPlu.TexT, True, False)
+        Else
+
+            CmbPlu.Locked = Checktexto(KeyAscii, 3, CmbPlu.TexT, True, False)
+        End If
     Else
         CmbPlu.TexT = ""
         CmbPlu.TexT = "0"
@@ -3089,14 +3084,14 @@ End Sub
 
 'c2f iv4 ic+ es tipoecoprint=3
 Private Sub CmbPlu_LostFocus()
-Dim MyOK As Boolean
+    Dim MyOK As Boolean
     If Val(CmbSeccion.TexT) > 0 Then
         If Not (usaSC10 And TipoC9) Then
             MyOK = True
         Else
             MyOK = Check_C9Plu()
             If Not MyOK Then
-                MsgBox CargaCadena(963), vbExclamation '"Este número de PLU no es válido para C9, y no será enviado a dicho sistema", vbExclamation
+                MsgBox CargaCadena(963), vbExclamation    '"Este número de PLU no es válido para C9, y no será enviado a dicho sistema", vbExclamation
             End If
         End If
         If PluGB <> 0 Then
@@ -3120,10 +3115,10 @@ Dim MyOK As Boolean
     End If
 End Sub
 Private Function Check_C9Plu() As Boolean
-Dim SecEnv As Integer
-Dim MyMaq As Integer
-Dim MyOK As Boolean
-Dim Registro As New RecordNet
+    Dim SecEnv As Integer
+    Dim MyMaq As Integer
+    Dim MyOK As Boolean
+    Dim Registro As New RecordNet
     MyOK = True
     If (Me.CmbPlu.TexT <> "") And (var.C9Cod = 1) Then   '////////cas.v118
         If Val(Me.CmbPlu.TexT) > var.IDMAXPLU_C9COD Then
@@ -3135,10 +3130,10 @@ Dim Registro As New RecordNet
         End If
     Else
         Select Case ModoC9
-            Case 0 To 1
-                SecEnv = 6
-            Case 2
-                SecEnv = 8
+        Case 0 To 1
+            SecEnv = 6
+        Case 2
+            SecEnv = 8
         End Select
         If IsNumeric(CmbSeccion.TexT) And IsNumeric(CmbPlu.TexT) Then
             Registro.OpenRecordset ("select secc_maqui from seccion where borrado=false and codi_ident=" & Val(CmbSeccion.TexT))
@@ -3148,38 +3143,38 @@ Dim Registro As New RecordNet
                 End If
             End With
             Select Case ModoC9
-                Case 0
-                    If MyMaq = 1 Or MyMaq = 2 Or MyMaq = 3 Then
-                        If CmbPlu.TexT >= 999 Then MyOK = False
-                    Else
-                        If MyMaq = SecEnv Then
-                            If CmbPlu.TexT > 499 Then MyOK = False
-                        End If
+            Case 0
+                If MyMaq = 1 Or MyMaq = 2 Or MyMaq = 3 Then
+                    If CmbPlu.TexT >= 999 Then MyOK = False
+                Else
+                    If MyMaq = SecEnv Then
+                        If CmbPlu.TexT > 499 Then MyOK = False
                     End If
-                Case 1
-                    If MyMaq = 1 Or MyMaq = 2 Or MyMaq = 3 Or MyMaq = 4 Or MyMaq = 5 Then
-                        If CmbPlu.TexT >= 599 Then MyOK = False
-                    Else
-                        If MyMaq = SecEnv Then
-                            If CmbPlu.TexT > 499 Then MyOK = False
-                        End If
+                End If
+            Case 1
+                If MyMaq = 1 Or MyMaq = 2 Or MyMaq = 3 Or MyMaq = 4 Or MyMaq = 5 Then
+                    If CmbPlu.TexT >= 599 Then MyOK = False
+                Else
+                    If MyMaq = SecEnv Then
+                        If CmbPlu.TexT > 499 Then MyOK = False
                     End If
-                Case 2
-                    If MyMaq = 1 Or MyMaq = 2 Or MyMaq = 3 Or MyMaq = 4 Or MyMaq = 5 Or MyMaq = 6 Or MyMaq = 7 Then
-                        If CmbPlu.TexT >= 399 Then MyOK = False
-                    Else
-                        If MyMaq = SecEnv Then
-                            If CmbPlu.TexT > 499 Then MyOK = False
-                        End If
+                End If
+            Case 2
+                If MyMaq = 1 Or MyMaq = 2 Or MyMaq = 3 Or MyMaq = 4 Or MyMaq = 5 Or MyMaq = 6 Or MyMaq = 7 Then
+                    If CmbPlu.TexT >= 399 Then MyOK = False
+                Else
+                    If MyMaq = SecEnv Then
+                        If CmbPlu.TexT > 499 Then MyOK = False
                     End If
+                End If
             End Select
         End If
-        
+
     End If
     Check_C9Plu = MyOK
 End Function
 Private Sub Refresca_Taras()
-    
+
     Dim Registro As New RecordNet
     CmbTara.Clear
     CmbTara.AddItem 0
@@ -3198,32 +3193,32 @@ Private Sub Refresca_Taras()
     CmbTara.ListIndex = CmbTara.List(0)
 End Sub
 Private Sub CmbSeccion_Click()
-Dim bucle As Integer
-Dim SecEnv As Integer
-Dim TxtFam As String
-Dim Registro As New RecordNet
-Dim RegCont As New RecordNet
-Dim NoOcultar As Boolean
-     PluGB = 0
+    Dim bucle As Integer
+    Dim SecEnv As Integer
+    Dim TxtFam As String
+    Dim Registro As New RecordNet
+    Dim RegCont As New RecordNet
+    Dim NoOcultar As Boolean
+    PluGB = 0
     '*********
     ' familias
     '*********
     'If FamiliasFijas Then
-        CmbFam.Clear
-        Registro.OpenRecordset ("select codi_fam,txt_fam from fam_code order by codi_fam")
-        If Registro.EOF Then
-            CmbFam.Enabled = False
-        Else
-            Registro.MoveFirst
-            Do Until Registro.EOF
-                TxtFam = Registro.Fields("codi_fam")
-                If Len(TxtFam) < 4 Then TxtFam = TxtFam & Space(4 - Len(TxtFam))
-                TxtFam = TxtFam & "-" & Registro.Fields("txt_fam")
-                CmbFam.AddItem TxtFam
-                Registro.Movenext
-            Loop
-            CmbFam.ListIndex = 0
-        End If
+    CmbFam.Clear
+    Registro.OpenRecordset ("select codi_fam,txt_fam from fam_code order by codi_fam")
+    If Registro.EOF Then
+        CmbFam.Enabled = False
+    Else
+        Registro.MoveFirst
+        Do Until Registro.EOF
+            TxtFam = Registro.Fields("codi_fam")
+            If Len(TxtFam) < 4 Then TxtFam = TxtFam & Space(4 - Len(TxtFam))
+            TxtFam = TxtFam & "-" & Registro.Fields("txt_fam")
+            CmbFam.AddItem TxtFam
+            Registro.Movenext
+        Loop
+        CmbFam.ListIndex = 0
+    End If
     'End If
     'If SubSeccionesFijas Then
     '    CmbSub.Clear
@@ -3244,28 +3239,28 @@ Dim NoOcultar As Boolean
     'End If
     If AnulaSeccion Then Exit Sub
     Label14.Caption = ""
-#If BALSAM = True Then
-    Chk100g.Visible = True
-#Else
-    Chk100g.Visible = False
-#End If
+    #If BALSAM = True Then
+        Chk100g.Visible = True
+    #Else
+        Chk100g.Visible = False
+    #End If
     For bucle = 1 To 20
         Label5(bucle - 1).Enabled = True
         Text8(bucle).Enabled = True
     Next bucle
-    
+
     Refresca_NumPlus
     Refresca_Plus
-    
+
 End Sub
 Public Sub Refresca_NumPlus()
-    
+
     Dim Registro As New RecordNet
     Dim RegCont As New RecordNet
-   
+
     SeccionAnterior = CmbSeccion.TexT
     If IsNumeric(CmbSeccion.TexT) Then
-    
+
         Registro.OpenRecordset ("select secc_maqui from seccion where codi_ident=" & Val(CmbSeccion.TexT))
         If Not Registro.EOF Then
             RegCont.OpenRecordset ("select count(codigo) from articulo where borrado=false and secc_maqui=" & Registro.Fields("secc_maqui"))
@@ -3275,10 +3270,10 @@ Public Sub Refresca_NumPlus()
                 End If
             End With
         End If
-        
+
     End If
-   
-    
+
+
 End Sub
 
 
@@ -3312,7 +3307,7 @@ Private Sub Cmdaceptar_Click()
     Dim Buclelite As Integer
     Dim Resultado As Integer
     Dim BufBase As String
-    
+
     Me.CmbCodigo.Enabled = True
     Me.CmbSeccion.Enabled = True
     Me.CmbPlu.Enabled = True
@@ -3330,10 +3325,10 @@ Private Sub Cmdaceptar_Click()
         End If
     End If
     'If FamiliasFijas Then
-        If Not IsNumeric(Trim(left(CmbFam.TexT, 4))) Then
-            MsgBox CargaCadena(1205), vbCritical
-            Exit Sub
-        End If
+    If Not IsNumeric(Trim(left(CmbFam.TexT, 4))) Then
+        MsgBox CargaCadena(1205), vbCritical
+        Exit Sub
+    End If
     'End If
     'If SubSeccionesFijas Then
     '    If Not IsNumeric(Trim(left(CmbSub.TexT, 4))) Then
@@ -3354,7 +3349,7 @@ Private Sub Cmdaceptar_Click()
         'If UsaECO2 And Val(TxtIVA.TexT) = 0 Then
         '    TxtIVA.TexT = "1"
         'Else
-            TxtIVA.TexT = "0"
+        TxtIVA.TexT = "0"
         'End If
     Else
         'If UsaECO2 And Val(TxtIVA.TexT) = 0 Then
@@ -3362,9 +3357,9 @@ Private Sub Cmdaceptar_Click()
         'End If
     End If
     If Trim(TxtPresel.TexT) = "" Then TxtPresel.TexT = "0"
-#If BALSAM Then
-    If Trim(TxtMerma.TexT) = "" Then TxtMerma.TexT = "0"
-#End If
+    #If BALSAM Then
+        If Trim(TxtMerma.TexT) = "" Then TxtMerma.TexT = "0"
+    #End If
     'c2f 26/07/05...
     'If Trim(TxtEAN13.Text) <> "" Then
     '    If Len(TxtEAN13.Text) <> 12 Then
@@ -3384,52 +3379,52 @@ Private Sub Cmdaceptar_Click()
         CmbSeccion.SetFocus
         Exit Sub
     End If
-    
-    
+
+
     If ChkTramo.Value = vbChecked Then
         'If Dir(App.Path & "\digitonuba.txt") = "" Then
-    
-            '2.0.21
-            If TxtTramo(0).TexT = "" Then TxtTramo(0).TexT = "0"
-            'If TxtTramo(1).TexT = "" Then TxtTramo(1).TexT = "0"
-            If TxtPrc(0).TexT = "" Then TxtPrc(0).TexT = "0"
-            'If TxtPrc(1).TexT = "" Then TxtPrc(1).TexT = "0"
-            '''''''''''''' Verificación tramos...
-            If Val(TxtTramo(0).TexT) <> 0 And Val(TxtTramo(1).TexT) <> 0 Then
-                If (TxtTramo(1).TexT <> "" Or TxtPrc(1).TexT <> "") Then
-                    If (ToDouble(TxtTramo(1).TexT) <= ToDouble(TxtTramo(0).TexT)) Or (ToDouble(TxtPrc(1).TexT) >= ToDouble(TxtPrc(0).TexT)) Then
-                        MsgBox CargaCadena(653)  '"Complete los datos del segundo tramo"
-                        SSTab1.TabVisible(1) = True
-                        Exit Sub
-    
-                    End If
+
+        '2.0.21
+        If TxtTramo(0).TexT = "" Then TxtTramo(0).TexT = "0"
+        'If TxtTramo(1).TexT = "" Then TxtTramo(1).TexT = "0"
+        If TxtPrc(0).TexT = "" Then TxtPrc(0).TexT = "0"
+        'If TxtPrc(1).TexT = "" Then TxtPrc(1).TexT = "0"
+        '''''''''''''' Verificación tramos...
+        If Val(TxtTramo(0).TexT) <> 0 And Val(TxtTramo(1).TexT) <> 0 Then
+            If (TxtTramo(1).TexT <> "" Or TxtPrc(1).TexT <> "") Then
+                If (ToDouble(TxtTramo(1).TexT) <= ToDouble(TxtTramo(0).TexT)) Or (ToDouble(TxtPrc(1).TexT) >= ToDouble(TxtPrc(0).TexT)) Then
+                    MsgBox CargaCadena(653)  '"Complete los datos del segundo tramo"
+                    SSTab1.TabVisible(1) = True
+                    Exit Sub
+
                 End If
             End If
-            '''''''''''''''''''''''''''''''''''''
-    
-            If TxtTramo(0).TexT = "" And TxtPrc(0).TexT = "" Then
-                MsgBox CargaCadena(652)  '"Introduzca al menos un tramo"
-                SSTab1.TabVisible(1) = True
-                TxtTramo(0).SetFocus
-                Exit Sub
-            End If
-            '2.0.21
-            'If (TxtTramo(1).TexT <> "" And TxtPrc(1).TexT = "") Or _
-            '(TxtPrc(1).TexT <> "" And TxtTramo(1).TexT = "") Then
-            '    MsgBox CargaCadena(653)  '"Complete los datos del segundo tramo"
-            '    SSTab1.TabVisible(1) = True
-            '    Exit Sub
-            'End If
-            ''''''''
-            If (TxtTramo(0).TexT <> "" And TxtPrc(0).TexT = "") Or _
-            (TxtPrc(0).TexT <> "" And TxtTramo(0).TexT = "") Then
-                MsgBox CargaCadena(654)  '"Complete los datos del primer tramo"
-                SSTab1.TabVisible(1) = True
-                Exit Sub
-            End If
-    
+        End If
+        '''''''''''''''''''''''''''''''''''''
+
+        If TxtTramo(0).TexT = "" And TxtPrc(0).TexT = "" Then
+            MsgBox CargaCadena(652)  '"Introduzca al menos un tramo"
+            SSTab1.TabVisible(1) = True
+            TxtTramo(0).SetFocus
+            Exit Sub
+        End If
+        '2.0.21
+        'If (TxtTramo(1).TexT <> "" And TxtPrc(1).TexT = "") Or _
+         '(TxtPrc(1).TexT <> "" And TxtTramo(1).TexT = "") Then
+        '    MsgBox CargaCadena(653)  '"Complete los datos del segundo tramo"
+        '    SSTab1.TabVisible(1) = True
+        '    Exit Sub
         'End If
-    
+        ''''''''
+        If (TxtTramo(0).TexT <> "" And TxtPrc(0).TexT = "") Or _
+           (TxtPrc(0).TexT <> "" And TxtTramo(0).TexT = "") Then
+            MsgBox CargaCadena(654)  '"Complete los datos del primer tramo"
+            SSTab1.TabVisible(1) = True
+            Exit Sub
+        End If
+
+        'End If
+
     End If
     'MsgBox "A"
     If CmbPlu.TexT = "" Then CmbPlu.TexT = "0"
@@ -3455,9 +3450,9 @@ Private Sub Cmdaceptar_Click()
     If Val(Trim(left(CmbFam.TexT, 4))) = Val(FamiliaEspecial) Then
         TxtEtiqueta.TexT = EtiquetaEspecial
     End If
-    
+
     'msgbox "Bloque..."
-    
+
     'If TextICEAN.TexT = "" Then TextICEAN.TexT = "0"
     'If Val(TxtPrecio.TexT) = 0 Then
     '   ' MsgBox "El precio del Artículo es CERO", vbExclamation + vbOKOnly
@@ -3474,30 +3469,30 @@ Private Sub Cmdaceptar_Click()
     Miarticulo.caducidad = TxtCaducidad.TexT
     Miarticulo.ean13 = TxtEAN13.TexT
     Miarticulo.Label2 = Trim(Text1.TexT)
-#If BALSAM = True Then
-    Miarticulo.Label1 = Trim(TxtEtiqueta.TexT)
-    
-    Miarticulo.ean14 = Trim(Text2.TexT)
-#Else
-    Miarticulo.Etiqueta = TxtEtiqueta.TexT
-#End If
+    #If BALSAM = True Then
+        Miarticulo.Label1 = Trim(TxtEtiqueta.TexT)
+
+        Miarticulo.ean14 = Trim(Text2.TexT)
+    #Else
+        Miarticulo.Etiqueta = TxtEtiqueta.TexT
+    #End If
     'If FamiliasFijas Then
-        Miarticulo.familia = Val(Trim(left(CmbFam.TexT, 4)))
+    Miarticulo.familia = Val(Trim(left(CmbFam.TexT, 4)))
     'Else
     '    Miarticulo.familia = TxtFamilia.TexT
     'End If
     'If SubSeccionesFijas Then
     '    Miarticulo.subsec = Val(Trim(left(CmbSub.TexT, 4)))
     'Else
-        Miarticulo.subsec = 0 'TxtSubSeccion.TexT
+    Miarticulo.subsec = 0    'TxtSubSeccion.TexT
     'End If
     Miarticulo.GrpConserv = TxtConservacion.TexT
     Miarticulo.Preferente = TxtPreferente.TexT
     Miarticulo.tara = TxtTara.TexT
     Miarticulo.IVA = TxtIVA.TexT
-#If BALSAM Then
-    Miarticulo.Merma = TxtMerma.TexT
-#End If
+    #If BALSAM Then
+        Miarticulo.Merma = TxtMerma.TexT
+    #End If
     Miarticulo.Presel = TxtPresel.TexT
     If CmbPesado.TexT = CmbPesado.List(0) Then
         Miarticulo.WGH = False
@@ -3520,26 +3515,26 @@ Private Sub Cmdaceptar_Click()
         Miarticulo.onkey = 0
     End If
     'msgbox "Tramos..."
-    
+
     If ChkTramo.Value = vbChecked Then
         'If Dir(App.Path & "\digitonuba.txt") = "" Then
-            Miarticulo.TRM1 = ToDouble(TxtTramo(0).TexT)
-            Miarticulo.PRC1 = ToDouble(TxtPrc(0).TexT)
-            If TxtTramo(1).TexT <> "" Then
-                Miarticulo.TRM2 = ToDouble(TxtTramo(1).TexT)
-                Miarticulo.PRC2 = ToDouble(TxtPrc(1).TexT)
-            Else
-                Miarticulo.TRM2 = -1
-                Miarticulo.PRC2 = -1
-            End If
-            '2.0.21
-            If Miarticulo.WGH = False And (Miarticulo.TRM1 > 30 Or Miarticulo.TRM2 > 30) Then
-                MsgBox "Error en Tramos."
-                SSTab1.TabVisible(1) = True
-                Exit Sub
-            End If
-            '''''''
-    
+        Miarticulo.TRM1 = ToDouble(TxtTramo(0).TexT)
+        Miarticulo.PRC1 = ToDouble(TxtPrc(0).TexT)
+        If TxtTramo(1).TexT <> "" Then
+            Miarticulo.TRM2 = ToDouble(TxtTramo(1).TexT)
+            Miarticulo.PRC2 = ToDouble(TxtPrc(1).TexT)
+        Else
+            Miarticulo.TRM2 = -1
+            Miarticulo.PRC2 = -1
+        End If
+        '2.0.21
+        If Miarticulo.WGH = False And (Miarticulo.TRM1 > 30 Or Miarticulo.TRM2 > 30) Then
+            MsgBox "Error en Tramos."
+            SSTab1.TabVisible(1) = True
+            Exit Sub
+        End If
+        '''''''
+
         'Else
         '    Miarticulo.TRM1 = 0
         '    Miarticulo.PRC1 = ToDouble(TxtPrc(0).TexT)
@@ -3547,38 +3542,38 @@ Private Sub Cmdaceptar_Click()
         '    Miarticulo.PRC2 = ToDouble(TxtPrc(1).TexT)
         'End If
     Else
-        Miarticulo.TRM1 = 0 '-1
-        Miarticulo.PRC1 = 0 '-1
-        Miarticulo.TRM2 = 0 '-1
-        Miarticulo.PRC2 = 0 '-1
+        Miarticulo.TRM1 = 0    '-1
+        Miarticulo.PRC1 = 0    '-1
+        Miarticulo.TRM2 = 0    '-1
+        Miarticulo.PRC2 = 0    '-1
     End If
-    
+
     'msgbox "descriptivos..."
-#If BALSAM Then
-    For bucle = 0 To 8
-        If (IsNull(Text3(bucle).TexT) Or Text3(bucle).TexT = "") Then Text3(bucle).TexT = "0"
-        Miarticulo.tarifa(bucle) = ToDouble(Text3(bucle).TexT)
-    Next bucle
-#Else
-    For bucle = 0 To 9
-        If (IsNull(Text3(bucle).TexT) Or Text3(bucle).TexT = "") Then Text3(bucle).TexT = "0"
-        Miarticulo.tarifa(bucle) = ToDouble(Text3(bucle).TexT)
-    Next bucle
-#End If
+    #If BALSAM Then
+        For bucle = 0 To 8
+            If (IsNull(Text3(bucle).TexT) Or Text3(bucle).TexT = "") Then Text3(bucle).TexT = "0"
+            Miarticulo.tarifa(bucle) = ToDouble(Text3(bucle).TexT)
+        Next bucle
+    #Else
+        For bucle = 0 To 9
+            If (IsNull(Text3(bucle).TexT) Or Text3(bucle).TexT = "") Then Text3(bucle).TexT = "0"
+            Miarticulo.tarifa(bucle) = ToDouble(Text3(bucle).TexT)
+        Next bucle
+    #End If
     For bucle = 0 To 20
         Miarticulo.Descriptivos(bucle) = Text8(bucle).TexT
     Next bucle
     For bucle = 0 To 10
         Miarticulo.TipoLetra(bucle) = CmbTipoLetra(bucle).TexT
     Next bucle
-    
+
     'If Dir(App.Path & "\mixmode.txt") <> "" Then
-        If CheckMix.Value = 1 Then
-            Miarticulo.lMix = True
-        Else
-            Miarticulo.lMix = False
-        End If
-        Miarticulo.nPoid = Val(TextPoid.TexT)
+    If CheckMix.Value = 1 Then
+        Miarticulo.lMix = True
+    Else
+        Miarticulo.lMix = False
+    End If
+    Miarticulo.nPoid = Val(TextPoid.TexT)
     'End If
     'If lVL000 And Dir(App.Path & "\mixmode.txt") = "" Then '2.0.22
     '    Miarticulo.lMix = False
@@ -3598,24 +3593,24 @@ Private Sub Cmdaceptar_Click()
     Else
         Miarticulo.posicion = 0
     End If
-    
+
     'MsgBox "sQueNombreImagen"
-    
+
     sQueNombreImagen = Trim(sQueNombreImagen)
     'If Mid(sQueNombreImagen, 1, 1) <> "#" Then
-        'If InStr(1, sQueNombreImagen, "\") <> 0 Then
-            Miarticulo.Imagen = sQueNombreImagen
-        'Else
-        '    Miarticulo.Imagen = sQuePathImagen & sQueNombreImagen
-        'End If
+    'If InStr(1, sQueNombreImagen, "\") <> 0 Then
+    Miarticulo.Imagen = sQueNombreImagen
+    'Else
+    '    Miarticulo.Imagen = sQuePathImagen & sQueNombreImagen
+    'End If
     'Else
     '    Miarticulo.Imagen = sQueNombreImagen
     'End If
-    
+
     Resultado = Alta_Articulo(Miarticulo, , , True)
-    
+
     'MsgBox "RESULTADO:" & CStr(Resultado)
-    
+
     If (Resultado = 0) Then
         FrmLinTxt2040.alta
     ElseIf (Resultado = 1) Then
@@ -3624,80 +3619,80 @@ Private Sub Cmdaceptar_Click()
         FrmLinTxt2040.alta
     End If
     Select Case Resultado
-        Case 0
-            LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos.Envíe Modificaciones"
-            LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
-            LblInfo.BackColor = vbWhite
-            CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
-            CmbCodigo.Enabled = True
-            If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
-                CmbSeccion.Enabled = True
-            End If
-            CmbPlu.Enabled = True
-            CmbCodigo.TexT = ""
-            CmbPlu.TexT = ""
-            SSTab1.Tab = 0
-            SSTab2.Tab = 0
-            Refresca_Codigos
-            Refresca_Plus
-            Refresca_Datos
-            CmbPlu.TexT = ""
-        Case 1
-            LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados.Envíe Modificaciones"
-            LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
-            LblInfo.BackColor = vbWhite
-            CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
-            CmbCodigo.Enabled = True
-            If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
-                CmbSeccion.Enabled = True
-            End If
-            CmbPlu.Enabled = True
-            CmbCodigo.TexT = ""
-            CmbPlu.TexT = ""
-            SSTab1.Tab = 0
-            SSTab2.Tab = 0
-            Refresca_Codigos
-            Refresca_Plus
-            Refresca_Datos
-            
-        Case 4
-            LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
-            LblInfo.BackColor = vbWhite
-            CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
-            CmbCodigo.Enabled = True
-            If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
-                CmbSeccion.Enabled = True
-            End If
-            CmbPlu.Enabled = True
-            CmbCodigo.TexT = ""
-            CmbPlu.TexT = ""
-            Me.TxtIVA.TexT = ""
-            ChkTramo.Value = vbUnchecked
-            TxtTramo(0).Enabled = False
-            TxtTramo(1).Enabled = False
-            TxtPrc(0).Enabled = False
-            TxtPrc(1).Enabled = False
-            TxtTramo(0).TexT = ""
-            TxtTramo(1).TexT = ""
-            TxtPrc(0).TexT = ""
-            TxtPrc(1).TexT = ""
-            SSTab1.Tab = 0
-            SSTab2.Tab = 0
-            Refresca_Codigos
-            Refresca_Plus
-            Refresca_Datos
-            Me.CmbPlu.TexT = ""
-            
-        Case 17
-           ' MsgBox "No es posible incluir más artículos con precios por tramos. El máximo es de 200", vbInformation
-            MsgBox CargaCadena(655), vbInformation
-        Case 60
-            MsgBox CargaCadena(1202), vbCritical
-            Refresca_Codigos
-            Refresca_Plus
-            Refresca_Datos
-            Refresca_NumPlus
-            
+    Case 0
+        LblInfo2.Caption = CargaCadena(527)  '"Datos Añadidos.Envíe Modificaciones"
+        LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
+        LblInfo.BackColor = vbWhite
+        CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
+        CmbCodigo.Enabled = True
+        If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
+            CmbSeccion.Enabled = True
+        End If
+        CmbPlu.Enabled = True
+        CmbCodigo.TexT = ""
+        CmbPlu.TexT = ""
+        SSTab1.Tab = 0
+        SSTab2.Tab = 0
+        Refresca_Codigos
+        Refresca_Plus
+        Refresca_Datos
+        CmbPlu.TexT = ""
+    Case 1
+        LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados.Envíe Modificaciones"
+        LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
+        LblInfo.BackColor = vbWhite
+        CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
+        CmbCodigo.Enabled = True
+        If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
+            CmbSeccion.Enabled = True
+        End If
+        CmbPlu.Enabled = True
+        CmbCodigo.TexT = ""
+        CmbPlu.TexT = ""
+        SSTab1.Tab = 0
+        SSTab2.Tab = 0
+        Refresca_Codigos
+        Refresca_Plus
+        Refresca_Datos
+
+    Case 4
+        LblInfo.Caption = CargaCadena(524)  '"Nuevo Dato"
+        LblInfo.BackColor = vbWhite
+        CmdAceptar.Caption = CargaCadena(550)  '"&Añadir"
+        CmbCodigo.Enabled = True
+        If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
+            CmbSeccion.Enabled = True
+        End If
+        CmbPlu.Enabled = True
+        CmbCodigo.TexT = ""
+        CmbPlu.TexT = ""
+        Me.TxtIVA.TexT = ""
+        ChkTramo.Value = vbUnchecked
+        TxtTramo(0).Enabled = False
+        TxtTramo(1).Enabled = False
+        TxtPrc(0).Enabled = False
+        TxtPrc(1).Enabled = False
+        TxtTramo(0).TexT = ""
+        TxtTramo(1).TexT = ""
+        TxtPrc(0).TexT = ""
+        TxtPrc(1).TexT = ""
+        SSTab1.Tab = 0
+        SSTab2.Tab = 0
+        Refresca_Codigos
+        Refresca_Plus
+        Refresca_Datos
+        Me.CmbPlu.TexT = ""
+
+    Case 17
+        ' MsgBox "No es posible incluir más artículos con precios por tramos. El máximo es de 200", vbInformation
+        MsgBox CargaCadena(655), vbInformation
+    Case 60
+        MsgBox CargaCadena(1202), vbCritical
+        Refresca_Codigos
+        Refresca_Plus
+        Refresca_Datos
+        Refresca_NumPlus
+
     End Select
 
     If CmbCodigo.Enabled = True Then
@@ -3707,13 +3702,13 @@ Private Sub Cmdaceptar_Click()
             CmbPlu.SetFocus
         End If
     End If
-    
+
     If Resultado = 0 Or Resultado = 1 Then
         Refresca_NumPlus
         ModificacionesPendientes(0) = ModificacionesPendientes(0) Or 128
     End If
     'If AhorraMas Or Dir(App.Path & "\upper.txt") <> "" Then
-        TextUM.TexT = ""
+    TextUM.TexT = ""
     'End If
     If Nocarga = False Then
         Set picture1.Picture = LoadPicture(App.Path & "\vacio.jpg")
@@ -3729,7 +3724,7 @@ Private Sub CmdBorrar_Click()
     Dim Reg3 As New RecordNet
     Dim Miarticulo As DB_Articulo
     Dim Token As Long
-    
+
     If CmbCodigo.TexT = "" Then Exit Sub
     Me.CmbCodigo.Enabled = True
     Me.CmbSeccion.Enabled = True
@@ -3750,15 +3745,15 @@ Private Sub CmdBorrar_Click()
         CmbPlu.TexT = ""
     End If
     Refresca_NumPlus
-    If Dir(App.Path & "\hiper") <> "" Then '***cas.v160
+    If Dir(App.Path & "\hiper") <> "" Then    '***cas.v160
         CmbPlu.Enabled = False
     End If
     'If AhorraMas Or Dir(App.Path & "\upper.txt") <> "" Then
-        TextUM.TexT = ""
+    TextUM.TexT = ""
     'End If
     Token = InitGDIPlus
     Set picture1.Picture = LoadPictureGDIPlus(App.Path & "\vacio.jpg")
-    FreeGDIPlus Token '
+    FreeGDIPlus Token    '
 
 End Sub
 
@@ -3918,7 +3913,7 @@ Private Sub CmdLimpiar_Click()
     CmbPlu.TexT = ""
     Refresca_Datos
     CmbSeccion_Click
-    If Dir(App.Path & "\hiper") <> "" Then '***cas.v160
+    If Dir(App.Path & "\hiper") <> "" Then    '***cas.v160
         CmbPlu.Enabled = False
     End If
     FrmLinTxt2040.resetear
@@ -3962,7 +3957,7 @@ Ret:
 End Sub
 
 Private Sub CmdOnKey_Click()
-Dim db As Database
+    Dim db As Database
     On Error Resume Next
     Set db = OpenDatabase(Base_General)
     db.Execute "update articulo set onkey=true"
@@ -3972,7 +3967,7 @@ Dim db As Database
         Call generaGIAN
     End If
     If Dir(App.Path & "\40l.txt") = "" And Dir(App.Path & "\39l.txt") = "" And Dir(App.Path & "\5l.txt") = "" Then
-         Check2.Value = vbChecked
+        Check2.Value = vbChecked
     End If
     Unload Me
 End Sub
@@ -3992,7 +3987,7 @@ Private Sub CmdSalir_Click()
         Call generaGIAN
     End If
     If Dir(App.Path & "\40l.txt") = "" And Dir(App.Path & "\39l.txt") = "" And Dir(App.Path & "\5l.txt") = "" Then
-         Check2.Value = vbChecked
+        Check2.Value = vbChecked
     End If
     Unload Me
 End Sub
@@ -4001,30 +3996,30 @@ Private Sub CmdPL_Click()
 
         FrmArticulo2.Hide
         Do_Events
-        
+
         MostrarFrmLabel FrmPrintLabel
-        
+
         Do While FrmPrintLabel.Visible = True
             Do_Events
         Loop
-        
+
         MostrarModal FrmArticulo2
         FrmArticulo2.Enabled = True
     Else
         'MostrarFrmLabel FrmPrintLabelGeneric
         FrmArticulo2.Hide
         Do_Events
-        
+
         'Original
         MostrarFrmLabel FrmPrintLabelGeneric
         Do While FrmPrintLabelGeneric.Visible = True
             Do_Events
         Loop
-        
+
         MostrarModal FrmArticulo2
         FrmArticulo2.Enabled = True
     End If
-    
+
 End Sub
 
 'Private Sub Form_Activate()
@@ -4032,15 +4027,15 @@ End Sub
 'End Sub
 
 Private Sub Form_Load()
-Dim Registro As New RecordNet
-Dim RegTramo As New RecordNet
-Dim bucle As Integer
-Dim Bucle2 As Integer
-    
+    Dim Registro As New RecordNet
+    Dim RegTramo As New RecordNet
+    Dim bucle As Integer
+    Dim Bucle2 As Integer
+
     For bucle = 0 To 20
         Text8(bucle).MaxLength = 40
     Next bucle
-    
+
     sQueNombreImagen = ""
     If Dir(App.Path & "\veronkeyall.ver") <> "" Then
         CmdOnKey.Visible = True
@@ -4050,8 +4045,8 @@ Dim Bucle2 As Integer
     'LabelUM.Visible = False
     'TextUM.Visible = False
     'If Dir(App.Path & "\ahorramas.cfg") <> "" Or Dir(App.Path & "\upper.txt") <> "" Then
-        LabelUM.Visible = True
-        TextUM.Visible = True
+    LabelUM.Visible = True
+    TextUM.Visible = True
     'End If
     FrmArticulo2.SSTab1.TabCaption(0) = CargaCadena(753)
     FrmArticulo2.SSTab1.TabCaption(1) = CargaCadena(1371)
@@ -4068,21 +4063,21 @@ Dim Bucle2 As Integer
     'End If
 
     Label1.Caption = ""
-    
+
     'If Dir(App.Path & "\mixmode.txt") <> "" Then
     '
-        LabelMix.Visible = True
-        CheckMix.Visible = True
-        LabelPoid.Visible = True
-        TextPoid.Visible = True
-        LabelMix.Enabled = True
-        CheckMix.Enabled = True
-        LabelPoid.Enabled = True
-        TextPoid.Enabled = True
-        'LabelPoid.Caption = "Poid :"
+    LabelMix.Visible = True
+    CheckMix.Visible = True
+    LabelPoid.Visible = True
+    TextPoid.Visible = True
+    LabelMix.Enabled = True
+    CheckMix.Enabled = True
+    LabelPoid.Enabled = True
+    TextPoid.Enabled = True
+    'LabelPoid.Caption = "Poid :"
     '
     'Else
-        
+
     '    If lVL000 Then '2.0.22 Peso aproximado
     '        LabelPoid.Visible = True
     '        TextPoid.Visible = True
@@ -4095,7 +4090,7 @@ Dim Bucle2 As Integer
     '        LabelPoid.Caption = "Peso Apr.(Apr. Weight):"
     '        Label1.Caption = "Múltiplo de 10(Multiple of 10)."
     '    Else
-        
+
     '        LabelMix.Visible = False
     '        CheckMix.Visible = False
     '        LabelPoid.Visible = False
@@ -4104,14 +4099,14 @@ Dim Bucle2 As Integer
     '        CheckMix.Enabled = False
     '        LabelPoid.Enabled = False
     '        TextPoid.Enabled = False
-        
+
     '    End If
-    
+
     'End If
-    
+
     'If FamiliasFijas Then
-        CmbFam.Visible = True
-        TxtFamilia.Visible = False
+    CmbFam.Visible = True
+    TxtFamilia.Visible = False
     'Else
     '    TxtFamilia.Visible = True
     '    CmbFam.Visible = False
@@ -4120,28 +4115,28 @@ Dim Bucle2 As Integer
     '    CmbSub.Visible = True
     '    TxtSubSeccion.Visible = False
     'Else
-        TxtSubSeccion.Visible = False
-        CmbSub.Visible = False
+    TxtSubSeccion.Visible = False
+    CmbSub.Visible = False
     'End If
     'If Dir(App.Path & "\linux.txt") <> "" Then
     Me.Height = 7200 * (1)
     'DrawGradient Me, 0, 16, 118, 0, 50, 0, Me.ScaleHeight, 1, True, 1, 1, 1
     CambiarIdioma
-    
+
     Text3(9).Visible = False
     Label22(5).Visible = False
-    
-#If BALSAM = True Then
+
+    #If BALSAM = True Then
         'Label18.Visible = False
         'Text3(0).Visible = False
         TxtMerma.Visible = True
         Label12.Visible = True
         Label1.Visible = True
-#Else
+    #Else
         TxtMerma.Visible = False
         Label12.Visible = False
         Label1.Visible = False
-#End If
+    #End If
     If UsaEuro Then
         TxtPrecio.Visible = False
         Label2(5).Visible = False
@@ -4178,7 +4173,7 @@ Dim Bucle2 As Integer
     '    TxtGrupo(3).Visible = True
     '    TxtGrupo(4).Visible = True
     'End If
-    
+
     'If UsaEcoPrint Or UsaECO2 Or UsaECO1 Then
     '    If (Not UsaGamaAlta) And (Not usaSC10) Then
     '        CmbBalenv.Visible = False
@@ -4210,10 +4205,10 @@ Dim Bucle2 As Integer
     CmbSeccion.Clear
     If Not (HaySeguridad And UsuarioActual.Asociado <> 0) Then
         Registro.OpenRecordset _
-        ("select codi_ident,secc_maqui from seccion where borrado=false")
+                ("select codi_ident,secc_maqui from seccion where borrado=false")
     Else
         Registro.OpenRecordset _
-        ("select codi_ident,secc_maqui from seccion where borrado=false and ((codi_ident=" & UsuarioActual.Asociado & "and codi_ident<>0) or (secc_maqui=" & UsuarioActual.Asociado & "and secc_maqui<>0))")
+                ("select codi_ident,secc_maqui from seccion where borrado=false and ((codi_ident=" & UsuarioActual.Asociado & "and codi_ident<>0) or (secc_maqui=" & UsuarioActual.Asociado & "and secc_maqui<>0))")
     End If
     With Registro
         If Not .EOF Then
@@ -4259,8 +4254,8 @@ Dim Bucle2 As Integer
     '    Text8(9).Visible = False
     '    Text8(10).Visible = False
     'Else
-        TxtConservacion.Visible = False
-        LblConservacion.Visible = False
+    TxtConservacion.Visible = False
+    LblConservacion.Visible = False
     'End If
     CmbPesado.TexT = CmbPesado.List(0)
     'CmbBalenv.TexT = CmbBalenv.List(0)
@@ -4273,47 +4268,47 @@ Dim Bucle2 As Integer
         End If
     End If
     LabelUM.Caption = CargaCadena(1370)
-    Label9.Caption = "EAN13" 'CargaCadena(1372)
+    Label9.Caption = "EAN13"    'CargaCadena(1372)
     'cmdLin2040.Caption = CargaCadena(1373)
     Me.cmdLin2040.Visible = True
     cmdLin2040.Caption = CargaCadena(1373)
     'touchScale Barna --> sin precio por tramos
     'Frame2.Visible = False
     '''''''''''''''''''''''''''''''''''''''''''
-    
+
     Set picture1.Picture = LoadPicture(App.Path & "\vacio.jpg")
-    
+
     Label15.Visible = True
     Text1.Visible = True
 
-#If BALSAM = True Then
-    Check1.Enabled = False
-    Check1.Visible = False
-    Check2.Visible = False
-    Check2.Enabled = False
-    Check3.Visible = False
-    Check3.Enabled = False
-    'Label15.Visible = True
-    Label16.Visible = True
-    'Text1.Visible = True
-    
-    Text2.Visible = True
-#Else
-    If Dir(App.Path & "\5l.txt") <> "" Then
-        Check1.Value = vbChecked
-    End If
-    If Dir(App.Path & "\40l.txt") <> "" Then
-        Check2.Value = vbChecked
-    End If
-    If Dir(App.Path & "\39l.txt") <> "" Then
-        Check3.Value = vbChecked
-    End If
-    
-    'Label15.Visible = False
-    Label16.Visible = False
-    'Text1.Visible = False
-    Text2.Visible = False
-#End If
+    #If BALSAM = True Then
+        Check1.Enabled = False
+        Check1.Visible = False
+        Check2.Visible = False
+        Check2.Enabled = False
+        Check3.Visible = False
+        Check3.Enabled = False
+        'Label15.Visible = True
+        Label16.Visible = True
+        'Text1.Visible = True
+
+        Text2.Visible = True
+    #Else
+        If Dir(App.Path & "\5l.txt") <> "" Then
+            Check1.Value = vbChecked
+        End If
+        If Dir(App.Path & "\40l.txt") <> "" Then
+            Check2.Value = vbChecked
+        End If
+        If Dir(App.Path & "\39l.txt") <> "" Then
+            Check3.Value = vbChecked
+        End If
+
+        'Label15.Visible = False
+        Label16.Visible = False
+        'Text1.Visible = False
+        Text2.Visible = False
+    #End If
     If Dir(App.Path & "\teclasp.exe") <> "" Then
         CmdPL.Visible = True
     Else
@@ -4340,7 +4335,7 @@ Private Sub Form_Unload(Cancel As Integer)
     'If Dir(App.Path & "\asign.tst") <> "" Then
     '    Call AsignTec
     'End If
-    
+
     Unload FrmLinTxt2040
     Unload FrmArticulo2
     FrmArticulo2.Hide
@@ -4367,7 +4362,7 @@ End Sub
 
 
 Private Sub Picture1_Click()
-Dim Token As Long
+    Dim Token As Long
     If Val(CmbCodigo.TexT) <> 0 Then
         'sQueNombreImagen = Trim(CmbCodigo.TexT)
         Load FrmImagen
@@ -4379,7 +4374,7 @@ Dim Token As Long
         Token = InitGDIPlus
         'Set picture1.Picture = LoadPictureGDIPlus(sQuePathImagen & sQueNombreImagen)
         Set picture1.Picture = LoadPictureGDIPlus(sQueNombreImagen)
-        FreeGDIPlus Token '
+        FreeGDIPlus Token    '
         If Err.Number <> 0 Then
             On Error GoTo 0
         Else
@@ -4395,11 +4390,11 @@ End Sub
 
 
 Private Sub RTB1_Change(Index As Integer)
-Dim db As dao.Database
-Dim rst As dao.Recordset
-Dim bucle As Integer
-Dim sLongText As String
-If Not lCharging Then
+    Dim db As dao.Database
+    Dim rst As dao.Recordset
+    Dim bucle As Integer
+    Dim sLongText As String
+    If Not lCharging Then
         lCharging = True
         Set db = AbrirBase
         Set rst = db.OpenRecordset("select * from text15 where codigo=" & CStr(Val(CmbCodigo.TexT)))
@@ -4418,43 +4413,43 @@ If Not lCharging Then
         db.Close
         Set db = Nothing
         'RTB1(4).TextRTF = ""
-        
+
         For bucle = 0 To 20
-           sLongText = sLongText & Text8(bucle).TexT
+            sLongText = sLongText & Text8(bucle).TexT
         Next bucle
         RTB1(4).TextRTF = sLongText
         RTB1(4).SelStart = 0
         RTB1(4).SelStart = 1
-        
+
         Me.Refresh
         lCharging = False
-End If
+    End If
 End Sub
 
 Private Sub RTB1_Click(Index As Integer)
     If Trim(CmbCodigo.TexT) <> "" Then
-    Select Case Index
-    Case 0
-        FrmArtText.ChkT(1).Value = vbChecked
-    Case 1
-        FrmArtText.ChkT(2).Value = vbChecked
-    
-    Case 2
-        FrmArtText.ChkT(3).Value = vbChecked
-    
-    Case 3
-        FrmArtText.ChkT(4).Value = vbChecked
-    Case 4
-        FrmArtText.ChkT(0).Value = vbChecked
-    End Select
-    FrmArticulo2.Enabled = False
-    FrmArtText.tXTcODIGO = CmbCodigo.TexT
-    'Load FrmArtText
-    FrmArtText.Show
-    'Do While FrmArtText.Visible = True
-    '    Do_Events
-    'Loop
-    FrmArticulo2.Enabled = True
+        Select Case Index
+        Case 0
+            FrmArtText.ChkT(1).Value = vbChecked
+        Case 1
+            FrmArtText.ChkT(2).Value = vbChecked
+
+        Case 2
+            FrmArtText.ChkT(3).Value = vbChecked
+
+        Case 3
+            FrmArtText.ChkT(4).Value = vbChecked
+        Case 4
+            FrmArtText.ChkT(0).Value = vbChecked
+        End Select
+        FrmArticulo2.Enabled = False
+        FrmArtText.tXTcODIGO = CmbCodigo.TexT
+        'Load FrmArtText
+        FrmArtText.Show
+        'Do While FrmArtText.Visible = True
+        '    Do_Events
+        'Loop
+        FrmArticulo2.Enabled = True
     Else
         CmbCodigo.SetFocus
     End If
@@ -4465,7 +4460,7 @@ Private Sub RTB1_KeyPress(Index As Integer, KeyAscii As Integer)
 End Sub
 
 Private Sub Text3_Change(Index As Integer)
-    'If TxtEuros.Text = "," Or TxtEuros.Text = "." Then TxtEuros.Text = ""
+'If TxtEuros.Text = "," Or TxtEuros.Text = "." Then TxtEuros.Text = ""
     If Text3(Index).Enabled = True Then
         If Text3(Index).TexT = "" Then
             Text3(Index).TexT = ""
@@ -4478,14 +4473,14 @@ Private Sub Text3_Change(Index As Integer)
                 If left(LTrim(Text3(Index).TexT), 1) = "." Then Text3(Index).TexT = "0" & Text3(Index).TexT
             End If
             'If UsaEuro Then Text3(Index).TexT = 1
-            
+
             'On Error GoTo 0
         End If
     End If
 
 End Sub
 
-Private Sub Text3_KeyPress(Index As Integer, KeyAscii As Integer)
+Private Sub text3_KeyPress(Index As Integer, KeyAscii As Integer)
     Dim bucle As Integer
     Dim Comas As Boolean
     'If KeyAscii = vbKeyBack Or KeyAscii = vbKeyDelete Then Exit Sub
@@ -4497,7 +4492,7 @@ Private Sub Text3_KeyPress(Index As Integer, KeyAscii As Integer)
     End If
     '***********************************
     Text3(Index).Locked = Checktexto(KeyAscii, 7, Text3(Index).TexT, True, True)
-    
+
     If KeyAscii = 8 Then Exit Sub
     Comas = False
     For bucle = 1 To Len(Text3(Index).TexT)
@@ -4509,26 +4504,26 @@ Private Sub Text3_KeyPress(Index As Integer, KeyAscii As Integer)
     If Comas Then
         Text3(Index).Locked = Checktexto(KeyAscii, 8, Text3(Index).TexT, True, True)
         If Len(Text3(Index).TexT) - bucle >= 2 Then
-            
+
             Text3(Index).Locked = True
         End If
     End If
 End Sub
 
 Private Sub Text8_GotFocus(Index As Integer)
-If lMarteNew Then '2.0.9 If Dir(App.Path & "\marte.new") <> "" Then
-    If CmbPlu.TexT <> "" Then
-        If Val(CmbPlu.TexT) > 800 Then
-            If CmbCodigo.Enabled Then
-                If Index > 0 Then CmbCodigo.SetFocus
-            Else
-                If CmbPlu.Enabled Then
-                    If Index > 0 Then CmbPlu.SetFocus
+    If lMarteNew Then    '2.0.9 If Dir(App.Path & "\marte.new") <> "" Then
+        If CmbPlu.TexT <> "" Then
+            If Val(CmbPlu.TexT) > 800 Then
+                If CmbCodigo.Enabled Then
+                    If Index > 0 Then CmbCodigo.SetFocus
+                Else
+                    If CmbPlu.Enabled Then
+                        If Index > 0 Then CmbPlu.SetFocus
+                    End If
                 End If
             End If
         End If
     End If
-End If
 End Sub
 
 Private Sub Text8_KeyPress(Index As Integer, KeyAscii As Integer)
@@ -4544,9 +4539,9 @@ Private Sub Text8_KeyPress(Index As Integer, KeyAscii As Integer)
             If Asc(UCase(Chr(KeyAscii))) <> KeyAscii Then
                 KeyAscii = Asc(UCase(Chr(KeyAscii)))
             End If
-        
+
         End If
-        
+
     End If
     If KeyAscii = 13 Then
         KeyAscii = 0
@@ -4616,9 +4611,9 @@ Private Sub TextPoid_KeyPress(KeyAscii As Integer)
         KeyAscii = 0
     End If
     'If lVL000 And Dir(App.Path & "\mixmode.txt") = "" Then
-        If Val(TextPoid.TexT) > 15000 Then
-            KeyAscii = 0
-        End If
+    If Val(TextPoid.TexT) > 15000 Then
+        KeyAscii = 0
+    End If
     'Else
     '    If Val(TextPoid.TexT) > 9999 Then
     '        KeyAscii = 0
@@ -4638,21 +4633,21 @@ End Sub
 '    If lVL000 And Dir(App.Path & "\mixmode.txt") = "" Then
 '        If Mid(TextPoid.TexT, Len(TextPoid.TexT), 1) <> "0" Then
 '            TextPoid.TexT = Mid(TextPoid.TexT, 1, Len(TextPoid.TexT) - 1) & "0"
- '       End If
+'       End If
 '    End If
 'End Sub
 
 Private Sub TxtCaducidad_KeyPress(KeyAscii As Integer)
-If KeyAscii = 13 Then
-    KeyAscii = 0
-    If TxtTara.Visible = True Then
-         TxtTara.SetFocus
-    Else
-        CmbTara.SetFocus
+    If KeyAscii = 13 Then
+        KeyAscii = 0
+        If TxtTara.Visible = True Then
+            TxtTara.SetFocus
+        Else
+            CmbTara.SetFocus
+        End If
+        Exit Sub
     End If
-    Exit Sub
-End If
-TxtCaducidad.Locked = Checktexto(KeyAscii, 3, TxtCaducidad.TexT, True, False)
+    TxtCaducidad.Locked = Checktexto(KeyAscii, 3, TxtCaducidad.TexT, True, False)
 End Sub
 
 
@@ -4664,7 +4659,7 @@ Private Sub TxtEAN13_KeyPress(KeyAscii As Integer)
     Matriz = "SWZITPCVALFMXDNYQJUKswzitpcvalfmxdnyqjuk"
     TxtEAN13.Locked = False
     If KeyAscii = 8 Then Exit Sub
-    
+
     If Len(TxtEAN13.TexT) >= 13 Then
         TxtEAN13.Locked = True
         Exit Sub
@@ -4674,7 +4669,7 @@ Private Sub TxtEAN13_KeyPress(KeyAscii As Integer)
         Conforme = True
     Else
         'If KeyAscii >= 97 And KeyAscii <= 122 Then KeyAscii = KeyAscii - 32
-    
+
         For bucle = 1 To Len(Matriz)
             If Mid(Matriz, bucle, 1) = Chr(KeyAscii) Then
                 Conforme = True
@@ -4684,7 +4679,7 @@ Private Sub TxtEAN13_KeyPress(KeyAscii As Integer)
     If Not Conforme Then
         TxtEAN13.Locked = True
     End If
-    
+
 End Sub
 'Private Sub texticean_KeyPress(KeyAscii As Integer)
 '    Dim Matriz As String
@@ -4721,24 +4716,24 @@ End Sub
 
 #Else
 Private Sub TxtEtiqueta_KeyPress(KeyAscii As Integer)
-TxtEtiqueta.Locked = Checktexto(KeyAscii, 2, TxtEtiqueta.TexT, True, False)
+    TxtEtiqueta.Locked = Checktexto(KeyAscii, 2, TxtEtiqueta.TexT, True, False)
 End Sub
 
 Private Sub TxtEtiqueta_LostFocus()
-If Trim(TxtEtiqueta.TexT) <> "" Then
-    If Val(TxtEtiqueta.TexT) > 16 Then
-        MsgBox CargaCadena(485)  '"El valor de la etiqueta debe estar entre 0 y 16"
-        SSTab1.Tab = 1
-        TxtEtiqueta.SetFocus
+    If Trim(TxtEtiqueta.TexT) <> "" Then
+        If Val(TxtEtiqueta.TexT) > 16 Then
+            MsgBox CargaCadena(485)  '"El valor de la etiqueta debe estar entre 0 y 16"
+            SSTab1.Tab = 1
+            TxtEtiqueta.SetFocus
+        End If
     End If
-End If
 End Sub
 #End If
 
 
 
 Private Sub TxtEuros_Change()
-    'If TxtEuros.Text = "," Or TxtEuros.Text = "." Then TxtEuros.Text = ""
+'If TxtEuros.Text = "," Or TxtEuros.Text = "." Then TxtEuros.Text = ""
     If TxtEuros.Enabled = True Then
         If TxtEuros.TexT = "" Then
             TxtPrecio.TexT = ""
@@ -4751,7 +4746,7 @@ Private Sub TxtEuros_Change()
                 If left(LTrim(TxtEuros.TexT), 1) = "." Then TxtEuros.TexT = "0" & TxtEuros.TexT
             End If
             If UsaEuro Then TxtPrecio.TexT = 1
-            
+
             'On Error GoTo 0
         End If
     End If
@@ -4774,7 +4769,7 @@ Private Sub TxtEuros_KeyPress(KeyAscii As Integer)
         Exit Sub
     End If
     TxtEuros.Locked = Checktexto(KeyAscii, 7, TxtEuros.TexT, True, True)
-    
+
     If KeyAscii = 8 Then Exit Sub
     Comas = False
     For bucle = 1 To Len(TxtEuros.TexT)
@@ -4786,7 +4781,7 @@ Private Sub TxtEuros_KeyPress(KeyAscii As Integer)
     If Comas Then
         TxtEuros.Locked = Checktexto(KeyAscii, 8, TxtEuros.TexT, True, True)
         If Len(TxtEuros.TexT) - bucle >= 2 Then
-            
+
             TxtEuros.Locked = True
         End If
     End If
@@ -4802,35 +4797,35 @@ Private Sub TxtFamilia_Change()
 End Sub
 
 Private Sub TxtFamilia_KeyPress(KeyAscii As Integer)
-If KeyAscii = 13 Then
-    KeyAscii = 0
-    If UsaEuro Then TxtEuros.SetFocus
-    If Not UsaEuro Then TxtPrecio.SetFocus
-    Exit Sub
-End If
-If KeyAscii = 8 Then
-    TxtFamilia.Locked = False
-    Exit Sub
-End If
-If Not Supeco Then
-If Len(TxtFamilia.TexT) = 2 Then
-    If Val(left(TxtFamilia.TexT, 1)) > 2 Then
-        TxtFamilia.Locked = True
+    If KeyAscii = 13 Then
+        KeyAscii = 0
+        If UsaEuro Then TxtEuros.SetFocus
+        If Not UsaEuro Then TxtPrecio.SetFocus
         Exit Sub
-    Else
-        If Val(left(TxtFamilia.TexT, 1)) = 2 And Val(Right(TxtFamilia, 1)) > 5 Then
-            TxtFamilia.Locked = True
-            Exit Sub
-        Else
-            If Val(left(TxtFamilia.TexT, 1)) = 2 And Val(Right(TxtFamilia, 1)) = 5 And KeyAscii > 53 Then
+    End If
+    If KeyAscii = 8 Then
+        TxtFamilia.Locked = False
+        Exit Sub
+    End If
+    If Not Supeco Then
+        If Len(TxtFamilia.TexT) = 2 Then
+            If Val(left(TxtFamilia.TexT, 1)) > 2 Then
                 TxtFamilia.Locked = True
                 Exit Sub
+            Else
+                If Val(left(TxtFamilia.TexT, 1)) = 2 And Val(Right(TxtFamilia, 1)) > 5 Then
+                    TxtFamilia.Locked = True
+                    Exit Sub
+                Else
+                    If Val(left(TxtFamilia.TexT, 1)) = 2 And Val(Right(TxtFamilia, 1)) = 5 And KeyAscii > 53 Then
+                        TxtFamilia.Locked = True
+                        Exit Sub
+                    End If
+                End If
             End If
         End If
     End If
-End If
-End If
-TxtFamilia.Locked = Checktexto(KeyAscii, 3, TxtFamilia.TexT, True, False)
+    TxtFamilia.Locked = Checktexto(KeyAscii, 3, TxtFamilia.TexT, True, False)
 End Sub
 
 
@@ -4853,9 +4848,9 @@ Private Sub TxtFamilia_LostFocus()
             TxtFamilia.SetFocus
         End If
         If (UsaEcoPrint Or UsaECO2) And Val(TxtFamilia.TexT) > 15 Then
-            MsgBox Mid(Trim(CargaCadena(426)), 1, Len(Trim(CargaCadena(426))) - 4) & " : 15" '"El valor máximo de Familia admitido es 255"
+            MsgBox Mid(Trim(CargaCadena(426)), 1, Len(Trim(CargaCadena(426))) - 4) & " : 15"    '"El valor máximo de Familia admitido es 255"
             TxtFamilia.SetFocus
-        
+
         End If
     End If
 End Sub
@@ -4872,7 +4867,7 @@ Private Sub TxtIVA_KeyPress(KeyAscii As Integer)
     End If
     TxtIVA.Locked = Checktexto(KeyAscii, 1, TxtIVA.TexT, True, False)
     If KeyAscii <> 8 Then
-        If UsaEcoPrint And TipoEcoPrint = 3 Then 'IC+
+        If UsaEcoPrint And TipoEcoPrint = 3 Then    'IC+
             If KeyAscii < 48 Or KeyAscii > 53 Then TxtIVA.Locked = True
         Else
             If Not (UsaECO2) Then
@@ -4886,11 +4881,11 @@ End Sub
 
 Private Sub TxtMerma_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case 48 To 57
-        Case Else
-            KeyAscii = 0
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case 48 To 57
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 
@@ -4912,10 +4907,10 @@ Private Sub TxtPrc_KeyPress(Index As Integer, KeyAscii As Integer)
         If Index = 1 Then CmdAceptar.SetFocus
         Exit Sub
     End If
-   If UsaEuro Then
-        
+    If UsaEuro Then
+
         TxtPrc(Index).Locked = Checktexto(KeyAscii, 7, TxtPrc(Index).TexT, True, True)
-        
+
         If KeyAscii = 8 Then Exit Sub
         Comas = False
         For bucle = 1 To Len(TxtPrc(Index).TexT)
@@ -4927,12 +4922,12 @@ Private Sub TxtPrc_KeyPress(Index As Integer, KeyAscii As Integer)
         If Comas Then
             TxtPrc(Index).Locked = Checktexto(KeyAscii, 8, TxtPrc(Index).TexT, True, True)
             If Len(TxtPrc(Index).TexT) - bucle >= 2 Then
-                
+
                 TxtPrc(Index).Locked = True
             End If
         End If
     Else
-        
+
         If decimales > 0 Then
             TxtPrc(Index).Locked = Checktexto(KeyAscii, 7, TxtPrc(Index).TexT, True, True)
         Else
@@ -4967,8 +4962,8 @@ Private Sub TxtPrecio_Change()
                 If left(LTrim(TxtPrecio.TexT), 1) = "," Then TxtPrecio.TexT = "0" & TxtPrecio.TexT
                 If left(LTrim(TxtPrecio.TexT), 1) = "." Then TxtPrecio.TexT = "0" & TxtPrecio.TexT
             End If
-            If Not UsaEuro Then TxtEuros.TexT = 1 'EUROtoPTA(TxtPrecio.Text)
-            
+            If Not UsaEuro Then TxtEuros.TexT = 1    'EUROtoPTA(TxtPrecio.Text)
+
             'On Error GoTo 0
         End If
     End If
@@ -5017,11 +5012,11 @@ End Sub
 
 Private Sub TxtPresel_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case 48 To 57
-        Case Else
-            KeyAscii = 0
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case 48 To 57
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 
@@ -5059,7 +5054,7 @@ Private Sub TxtTramo_KeyPress(Index As Integer, KeyAscii As Integer)
     Else
         If KeyAscii = 44 Then KeyAscii = 46
     End If
-    If CmbPesado.TexT = CmbPesado.List(0) Then 'pesado
+    If CmbPesado.TexT = CmbPesado.List(0) Then    'pesado
         Max = 6
         lDec = True
     Else
@@ -5067,20 +5062,20 @@ Private Sub TxtTramo_KeyPress(Index As Integer, KeyAscii As Integer)
         lDec = False
     End If
     TxtTramo(Index).Locked = Checktexto(KeyAscii, Max, TxtTramo(Index).TexT, True, lDec)
-    
+
     If (Val(TxtTramo(Index).TexT & Chr(KeyAscii)) > 30) And CmbPesado.TexT = CmbPesado.List(0) Then
         TxtTramo(Index).TexT = ""
         TxtPrc(Index).TexT = ""
         KeyAscii = 0
     End If
-    
+
     If KeyAscii = 13 Then
         KeyAscii = 0
         TxtPrc(Index).SetFocus
     End If
 End Sub
 Private Sub Ver_Multi()
-    
+
     Dim bucle As Long
     Dim Tiendas() As TTienda_Data
     Dim NTiendas As Long
@@ -5100,16 +5095,16 @@ Private Sub Ver_Multi()
         For bucle = 0 To NTiendas - 1
             nResp = ArticuloCompatible(Tiendas(bucle).numero, Val(CmbCodigo.TexT), Val(CmbPlu.TexT), Val(CmbSeccion.TexT))
             Select Case nResp
-                Case 0
-                    Lista.ListItems.Add , "T" & Format(Tiendas(bucle).numero, "000"), Tiendas(bucle).numero, , "no"
-                Case 1
-                    Lista.ListItems.Add , "T" & Format(Tiendas(bucle).numero, "000"), Tiendas(bucle).numero, , "enabled"
-                Case Else
-                    Lista.ListItems.Add , "T" & Format(Tiendas(bucle).numero, "000"), Tiendas(bucle).numero, , "disabled"
+            Case 0
+                Lista.ListItems.Add , "T" & Format(Tiendas(bucle).numero, "000"), Tiendas(bucle).numero, , "no"
+            Case 1
+                Lista.ListItems.Add , "T" & Format(Tiendas(bucle).numero, "000"), Tiendas(bucle).numero, , "enabled"
+            Case Else
+                Lista.ListItems.Add , "T" & Format(Tiendas(bucle).numero, "000"), Tiendas(bucle).numero, , "disabled"
             End Select
         Next bucle
     End If
-   
+
 End Sub
 Private Sub Lista_ItemClick(ByVal Item As MSComctlLib.ListItem)
     If Item.SmallIcon <> "disabled" Then

@@ -1,0 +1,60 @@
+0001001010101010000000000000000404040400001.5300018.00000.08500001.53+PN3V010620161238
+1     4               Número de tique
+2     3               Número de líneas en el tique
+3     2               Sección
+4     2               Balanza
+5     4               Vendedor
+6    13               Código de barras
+7     6               Código de Artículo
+8     4               Número PLU
+9     8               Importe total del Tique, contiene punto decimal signo positivo o negativo. Dos decimales
+10    8               Precio venta línea, contiene punto decimal (Valor absoluto, sin signo). dos decimales
+11    7               Peso o unidades vendidas en la línea, contiene punto decimal (Valor absoluto, sin signo). tres decimales
+12    8               Importe de la línea, contiene punto decimal (Valor absoluto, sin signo). dos decimales
+13    1               "-" o "+" signo de la transacción.
+14    1               "P" --> Pesado, "U" --> Venta Unidades
+15    1               "N" --> Línea no anulada, "S" --> Línea anulada.
+16    1               Tipo de IVA
+17    1               Tipo de línea: "V" -> venta red, "L" -> venta local, "A" -> venta anulado red, "B" -> venta anulado local
+18    8               Fecha "ddmmyyyy"
+19    4               Hora  "hhmm"
+
+Campo Longitud        Tipo
+1                 1              Tipo de trama "H" (cabecera)
+2                 2              Sección Máquina 
+3                 2              Balanza
+4                 4              Vendedor
+5               13             Código de Barras
+6                 3             Número de líneas del Tiquet
+7                 8             Importe (con símbolo decimal: punto ".")
+8                 1             Tipo "V"=venta.red, "L" =venta local,"A"=red cancelado, "B" , Local Cancelado" 
+9                 8              Fecha (formato ddmmyyyy)
+10              4              Hora(formato hhmm)
+11               8              Importe Base (Sin IVA), con punto decimal "."
+12               8             Base IVA al tipo 0
+13               8             Base IVA al tipo 1
+14               8             Base IVA al tipo 2
+15               8             Base IVA al tipo 3
+16               8             Base IVA al tipo 4
+17               8             Importe (Base + IVA) al tipo 0
+18               8             Importe (Base + IVA) al tipo 1
+19               8             Importe (Base + IVA) al tipo 2
+20               8             Importe (Base + IVA) al tipo 3
+21               8             Importe (Base + IVA) al tipo 4
+
+Formato de líneas
+
+Campo Longitud       Tipo
+1                  1            Tipo de Trama "L" (línea)
+2                  2            Sección Máquina
+3                13            Código de Barras
+4                  3            Número de línea
+5                 4             Código de PLU
+6                  8            Precio unitario del PLU (con decimales)
+7                  7            Peso o Unidades de la línea(con decimales)
+8                  8             Precio total de la línea (con decimales)
+9                  1            Signo de la venta ("+"=venta, "-" devolución)
+10                1            Tipo de artículo "P" pesado, "U" unidades
+11                1            Línea anulada ( "S"=anulado, "N" no anulado)
+12                6            Código de artículo
+13                1            Tipo de IVA (entre 0 y 4)

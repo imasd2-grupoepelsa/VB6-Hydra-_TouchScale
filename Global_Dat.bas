@@ -78,19 +78,19 @@ Public Sub ImportTeclas(ByVal sS As String)
     Dim myTec As Integer
     Dim Registro As dao.Recordset
     Dim sDes As String
-        
+
     If Dir(sS) <> "" Then
         If FileLen(sS) > 0 Then
             FrmBalGloDat.Caption = "Leyendo Teclas..."
             Load FrmBalGloDat
             FrmBalGloDat.Show
             FrmBalGloDat.dato "Leyendo Archivo ..."
-        
+
             Set Base = dao.OpenDatabase(App.Path & "\dbasetouch.mdb")
             Arch1 = FreeFile()
             Open sS For Input As #Arch1
             Do While Not EOF(Arch1)
-            Line Input #Arch1, Buffer
+                Line Input #Arch1, Buffer
                 If Len(Buffer) = 13 Then
                     MySec = Mid(Buffer, 1, 2)
                     MyTabla = Mid(Buffer, 3, 2)
@@ -112,9 +112,9 @@ Public Sub ImportTeclas(ByVal sS As String)
                         Else
                             Registro.Edit
                         End If
-                        
+
                         FrmBalGloDat.dato "Sec.:" & CStr(MySec) & " Tabla:" & CStr(MyTabla) & " Tecla:" & CStr(myTec) & " Cod.:" & CStr(MyCod)
-                        
+
                         Registro.Fields("codi_ident") = MySec
                         Registro.Fields("secc_maqui") = MySec
                         Registro.Fields("tran_tecsc10") = MySec
@@ -128,7 +128,7 @@ Public Sub ImportTeclas(ByVal sS As String)
                         Registro.Fields("prog_tec") = "TOUCH"
                         Registro.Fields("tran_tec") = ""
                         Registro.Fields("borrado") = False
-                        
+
                         Registro.Update
                         Registro.Close
                         Set Registro = Nothing
@@ -142,7 +142,7 @@ Public Sub ImportTeclas(ByVal sS As String)
                         End If
                         Registro.Close
                         Set Registro = Nothing
-                        
+
                         FrmBalGloDat.dato "Sec.:" & CStr(MySec) & " Tabla:" & CStr(MyTabla) & " Tecla:" & CStr(myTec) & " Baja."
                     End If
                 End If
@@ -158,19 +158,20 @@ Public Sub ImportTeclas(ByVal sS As String)
     End If
 
 End Sub
+
 Public Function Importa_Global_Dat()
     Dim Arch1 As Integer
     Dim Arch2 As Integer
     Dim Buffer As String
     Dim MyBuf As String
-    Dim Tipo As String ' tipo : artivulos, vendedores...
-    Dim Modo As String ' alta, baja ....
+    Dim Tipo As String    ' tipo : artivulos, vendedores...
+    Dim Modo As String    ' alta, baja ....
     Dim MyOK As Boolean
     Dim nCli As Integer
     Dim nFCli As Integer
 
-    
-On Error GoTo fin
+
+    On Error GoTo fin
     nCli = 0
 
     If lUpper = False Then
@@ -178,7 +179,7 @@ On Error GoTo fin
         FrmBalGloDat.Show
         FrmBalGloDat.dato "Leyendo Archivo ..."
     End If
-        
+
     Dim BufDatos As Tipo_Buf
     Dim sS As Variant
     Dim ffff As Variant
@@ -187,7 +188,7 @@ On Error GoTo fin
     Dim simgfam As String
     Dim ssSecs(1) As Long
     Dim nResp As Variant
-    
+
     If Dir(App.Path & "\global.dat") <> "" Or (lUpper And Dir(App.Path & "\globaltouch.dat") <> "") Then
         Arch1 = FreeFile()
         If (lUpper And Dir(App.Path & "\globaltouch.dat") <> "") Then
@@ -206,102 +207,102 @@ On Error GoTo fin
                 MyOK = False
                 If (Modo = "0" Or Modo = "1" Or Modo = "2") Or (Tipo = "Z" Or Tipo = "=" Or Tipo = "M" Or Tipo = "O") Or Tipo = "Y" Or Tipo = "C" Or Tipo = "U" Or Tipo = "T" Then
                     Select Case Tipo
-                        Case "0" ' secciones
-                            If lUpper Then
-                            Else
-                                If Len(Buffer) = 9 Or Len(Buffer) = 34 Then
-                                    MyOK = True
-                                    BufDatos.NSecciones = BufDatos.NSecciones + 1
-                                    ReDim Preserve BufDatos.BufSecciones(BufDatos.NSecciones)
-                                    BufDatos.BufSecciones(BufDatos.NSecciones - 1) = Buffer
-                                End If
-                            End If
-                        Case "1" ' subsecciones (ignorado)
-                        Case "2" ' familias (ignorado)
-                            'If lUpperNW Then
-                            'If lUpper Then 'AtencionFamilias
-
-'"2" SS FF Decripción Imágen
-'donde:
-'
-' sS = Sección
-' FF = familia
-' Descripción=30 caracteres
-' Imágen=Nombre del fichero
-'20101FRUTAS                        fruta.png
-
-                                If Len(Buffer) >= 40 Then
-                                    MyOK = True
-                                    If Len(Buffer) > 36 Then
-                                        simgfam = Trim(Mid(Buffer, 35))
-                                    Else
-                                        simgfam = ""
-                                    End If
-                                    ssSecs(0) = Mid(Buffer, 1, 2)
-                                    sS = Mid(Buffer, 1, 2)
-                                    ffff = Mid(Buffer, 3, 2)
-                                    sdesfam = Trim(Mid(Buffer, 5, 30))
-                                    pppp = ffff
-                                    nResp = Alta_Familias(ffff, sdesfam, 0, "", False, , pppp, simgfam)
-                                    nResp = Alta_Familias_Counter(ffff, sdesfam, 0, ssSecs(), False, , simgfam, sS)
-                                End If
-                            'End If
-                        Case "3" ' vendedores (por sección, de momento)
-                            'If Len(Buffer) = 16 Then
-                            '    MyOK = True
-                            '    BufDatos.NVendedores = BufDatos.NVendedores + 1
-                            '    ReDim Preserve BufDatos.BufVendedores(BufDatos.NVendedores)
-                            '    BufDatos.BufVendedores(BufDatos.NVendedores - 1) = Buffer
-                            'End If
-                        Case "4" ' Equipos
-                            If lUpper Then
-                            Else
-                            
-                                If Len(Buffer) = 5 Or Len(Buffer) = 22 Then
-                                    MyOK = True
-                                    BufDatos.NEquipos = BufDatos.NEquipos + 1
-                                    ReDim Preserve BufDatos.BufEquipos(BufDatos.NEquipos)
-                                    BufDatos.BufEquipos(BufDatos.NEquipos - 1) = Buffer
-                                End If
-                            End If
-                        Case "5" ' Articulos'
-                            If Len(Buffer) = 60 Or Len(Buffer) = 62 Or Len(Buffer) = 86 Or Len(Buffer) = 91 Or Len(Buffer) = 92 Then
+                    Case "0"    ' secciones
+                        If lUpper Then
+                        Else
+                            If Len(Buffer) = 9 Or Len(Buffer) = 34 Then
                                 MyOK = True
-                                BufDatos.NArticulos = BufDatos.NArticulos + 1
-                                ReDim Preserve BufDatos.BufArticulos(BufDatos.NArticulos)
-                                BufDatos.BufArticulos(BufDatos.NArticulos - 1) = Buffer
-Else
-MyOK = MyOK
+                                BufDatos.NSecciones = BufDatos.NSecciones + 1
+                                ReDim Preserve BufDatos.BufSecciones(BufDatos.NSecciones)
+                                BufDatos.BufSecciones(BufDatos.NSecciones - 1) = Buffer
                             End If
-                         'Case "6" ' teclas
+                        End If
+                    Case "1"    ' subsecciones (ignorado)
+                    Case "2"    ' familias (ignorado)
+                        'If lUpperNW Then
+                        'If lUpper Then 'AtencionFamilias
+
+                        '"2" SS FF Decripción Imágen
+                        'donde:
+                        '
+                        ' sS = Sección
+                        ' FF = familia
+                        ' Descripción=30 caracteres
+                        ' Imágen=Nombre del fichero
+                        '20101FRUTAS                        fruta.png
+
+                        If Len(Buffer) >= 40 Then
+                            MyOK = True
+                            If Len(Buffer) > 36 Then
+                                simgfam = Trim(Mid(Buffer, 35))
+                            Else
+                                simgfam = ""
+                            End If
+                            ssSecs(0) = Mid(Buffer, 1, 2)
+                            sS = Mid(Buffer, 1, 2)
+                            ffff = Mid(Buffer, 3, 2)
+                            sdesfam = Trim(Mid(Buffer, 5, 30))
+                            pppp = ffff
+                            nResp = Alta_Familias(ffff, sdesfam, 0, "", False, , pppp, simgfam)
+                            nResp = Alta_Familias_Counter(ffff, sdesfam, 0, ssSecs(), False, , simgfam, sS)
+                        End If
+                        'End If
+                    Case "3"    ' vendedores (por sección, de momento)
+                        'If Len(Buffer) = 16 Then
+                        '    MyOK = True
+                        '    BufDatos.NVendedores = BufDatos.NVendedores + 1
+                        '    ReDim Preserve BufDatos.BufVendedores(BufDatos.NVendedores)
+                        '    BufDatos.BufVendedores(BufDatos.NVendedores - 1) = Buffer
+                        'End If
+                    Case "4"    ' Equipos
+                        If lUpper Then
+                        Else
+
+                            If Len(Buffer) = 5 Or Len(Buffer) = 22 Then
+                                MyOK = True
+                                BufDatos.NEquipos = BufDatos.NEquipos + 1
+                                ReDim Preserve BufDatos.BufEquipos(BufDatos.NEquipos)
+                                BufDatos.BufEquipos(BufDatos.NEquipos - 1) = Buffer
+                            End If
+                        End If
+                    Case "5"    ' Articulos'
+                        If Len(Buffer) = 60 Or Len(Buffer) = 62 Or Len(Buffer) = 86 Or Len(Buffer) = 91 Or Len(Buffer) = 92 Then
+                            MyOK = True
+                            BufDatos.NArticulos = BufDatos.NArticulos + 1
+                            ReDim Preserve BufDatos.BufArticulos(BufDatos.NArticulos)
+                            BufDatos.BufArticulos(BufDatos.NArticulos - 1) = Buffer
+                        Else
+                            MyOK = MyOK
+                        End If
+                        'Case "6" ' teclas
                         '    If Len(Buffer) = 10 Then
                         '        MyOK = True
                         '        BufDatos.NTeclas = BufDatos.NTeclas + 1
                         '        ReDim Preserve BufDatos.BufTeclas(BufDatos.NTeclas)
                         '        BufDatos.BufTeclas(BufDatos.NTeclas - 1) = Buffer
                         '    End If
-                        Case "7" 'cod. barras
-                            If Len(Buffer) = 64 Or Len(Buffer) = 124 Then
-                                'If lAgora Then
-                                '    MyOK = True
-                                'Else
-                                '    MyOK = True
-                                '    BufDatos.NCodBar = BufDatos.NCodBar + 1
-                                '    ReDim Preserve BufDatos.BufCodBar(BufDatos.NCodBar)
-                                '    BufDatos.BufCodBar(BufDatos.NCodBar - 1) = Buffer
-                                'End If
-                                MyOK = True
-                                If lAgora = False Then
-                                    BufDatos.NCodBar = BufDatos.NCodBar + 1
-                                    ReDim Preserve BufDatos.BufCodBar(BufDatos.NCodBar)
-                                    BufDatos.BufCodBar(BufDatos.NCodBar - 1) = Buffer
-                                Else
-                                    On Error Resume Next
-                                    'Close #Arch1
-                                    'End
-                                End If
-                                
+                    Case "7"    'cod. barras
+                        If Len(Buffer) = 64 Or Len(Buffer) = 124 Then
+                            'If lAgora Then
+                            '    MyOK = True
+                            'Else
+                            '    MyOK = True
+                            '    BufDatos.NCodBar = BufDatos.NCodBar + 1
+                            '    ReDim Preserve BufDatos.BufCodBar(BufDatos.NCodBar)
+                            '    BufDatos.BufCodBar(BufDatos.NCodBar - 1) = Buffer
+                            'End If
+                            MyOK = True
+                            If lAgora = False Then
+                                BufDatos.NCodBar = BufDatos.NCodBar + 1
+                                ReDim Preserve BufDatos.BufCodBar(BufDatos.NCodBar)
+                                BufDatos.BufCodBar(BufDatos.NCodBar - 1) = Buffer
+                            Else
+                                On Error Resume Next
+                                'Close #Arch1
+                                'End
                             End If
+
+                        End If
                         'Case "8" 'publi. continua
                         '    If Len(Buffer) = 104 Then
                         '        MyOK = True
@@ -323,253 +324,253 @@ MyOK = MyOK
                         '        ReDim Preserve BufDatos.BufTipoPubli(BufDatos.NTipoPubli)
                         '        BufDatos.BufTipoPubli(BufDatos.NTipoPubli - 1) = Buffer
                         '    End If
-                        Case ";" 'cabeceras
-                            If Len(Buffer) = 135 Or Len(Buffer) = 134 Then
-                                MyOK = True
-                                BufDatos.NCabeceras = BufDatos.NCabeceras + 1
-                                ReDim Preserve BufDatos.BufCabeceras(BufDatos.NCabeceras)
-                                BufDatos.BufCabeceras(BufDatos.NCabeceras - 1) = Buffer
+                    Case ";"    'cabeceras
+                        If Len(Buffer) = 135 Or Len(Buffer) = 134 Then
+                            MyOK = True
+                            BufDatos.NCabeceras = BufDatos.NCabeceras + 1
+                            ReDim Preserve BufDatos.BufCabeceras(BufDatos.NCabeceras)
+                            BufDatos.BufCabeceras(BufDatos.NCabeceras - 1) = Buffer
+                        End If
+                    Case "<"    'leyendas
+                        If Len(Buffer) = 135 Or Len(Buffer) = 134 Then
+                            MyOK = True
+                            BufDatos.NLeyendas = BufDatos.NLeyendas + 1
+                            ReDim Preserve BufDatos.BufLeyendas(BufDatos.NLeyendas)
+                            BufDatos.BufLeyendas(BufDatos.NLeyendas - 1) = Buffer
+                        End If
+                    Case "@"    ' alta teclas
+                        If Len(Buffer) = 16 Or Len(Buffer) = 15 Then
+                            MyOK = True
+                            BufDatos.NTeclas = BufDatos.NTeclas + 1
+                            ReDim Preserve BufDatos.BufTeclas(BufDatos.NTeclas)
+                            BufDatos.BufTeclas(BufDatos.NTeclas - 1) = Buffer
+                        End If
+
+                    Case "C"    ' Clientes
+                        If nCli = 0 Or Dir(App.Path & "\clientes.dat") = "" Then
+                            If Dir(App.Path & "\clientes.dat") <> "" And nCli = 0 Then
+                                Kill App.Path & "\clientes.dat"
+                                Sleep (200)
                             End If
-                        Case "<" 'leyendas
-                            If Len(Buffer) = 135 Or Len(Buffer) = 134 Then
-                                MyOK = True
-                                BufDatos.NLeyendas = BufDatos.NLeyendas + 1
-                                ReDim Preserve BufDatos.BufLeyendas(BufDatos.NLeyendas)
-                                BufDatos.BufLeyendas(BufDatos.NLeyendas - 1) = Buffer
+                            If Dir(App.Path & "\clientes.dat") = "" Then
+                                nFCli = FreeFile()
+                                Open App.Path & "\clientes.dat" For Output As #nFCli
+                                Close #nFCli
+                                Sleep (200)
                             End If
-                        Case "@" ' alta teclas
-                            If Len(Buffer) = 16 Or Len(Buffer) = 15 Then
-                                MyOK = True
-                                BufDatos.NTeclas = BufDatos.NTeclas + 1
-                                ReDim Preserve BufDatos.BufTeclas(BufDatos.NTeclas)
-                                BufDatos.BufTeclas(BufDatos.NTeclas - 1) = Buffer
-                            End If
-                        
-                         Case "C" ' Clientes
-                            If nCli = 0 Or Dir(App.Path & "\clientes.dat") = "" Then
-                                If Dir(App.Path & "\clientes.dat") <> "" And nCli = 0 Then
-                                    Kill App.Path & "\clientes.dat"
-                                    Sleep (200)
-                                End If
-                                If Dir(App.Path & "\clientes.dat") = "" Then
-                                    nFCli = FreeFile()
-                                    Open App.Path & "\clientes.dat" For Output As #nFCli
-                                    Close #nFCli
-                                    Sleep (200)
-                                End If
-                                nCli = 255
-                            End If
-                            nFCli = FreeFile()
-                            Open App.Path & "\clientes.dat" For Append As #nFCli
-                            Print #nFCli, Mid(Buffer, 2)
-                            Close #nFCli
-                            MyOK = True
-                       
-                        Case "E" 'Alta etiquetas
-                            MyOK = True
-                            BufDatos.nEtiqueta = BufDatos.nEtiqueta + 1
-                            ReDim Preserve BufDatos.BufEtiqueta(BufDatos.nEtiqueta)
-                            BufDatos.BufEtiqueta(BufDatos.nEtiqueta - 1) = Buffer
-                       
-                        Case "F" '1.9.7
-                            'If lUpperNW Then
-                            'If lUpper Then 'AtencionFamilias
-                                'If Len(Buffer) >= 39 Then
-                                    MyOK = True
-                                    If Len(Buffer) >= 40 Then
-                                        simgfam = Trim(Mid(Buffer, 40))
-                                    Else
-                                        simgfam = ""
-                                    End If
-                                    ssSecs(0) = Mid(Buffer, 2, 2)
-                                    sS = Mid(Buffer, 2, 2)
-                                    ffff = Mid(Buffer, 4, 3)
-                                    pppp = Mid(Buffer, 7, 3)
-                                    sdesfam = Trim(Mid(Buffer, 10, 30))
-                                    If Mid(Buffer, 1, 1) = "0" Then
-                                        nResp = Alta_Familias(ffff, sdesfam, 0, "", False, , pppp, simgfam)
-                                        nResp = Alta_Familias_Counter(ffff, sdesfam, 0, ssSecs(), False, , simgfam, sS, pppp)
-                                        'If nResp <> 0 And nResp <> 1 And nResp <> 4 Then
-                                            Print #Arch2, "F" & Buffer
-                                            FrmBalGloDat.dato "FAM.            " & Buffer
-                                        'Else
-                                        '    FrmBalGloDat.dato "OK -->   - Fam. " & Buffer
-                                        'End If
-                                    Else
-                                        nResp = Baja_Familias(ffff)
-                                        'If nResp <> 0 And nResp <> 1 And nResp <> 4 Then
-                                            Print #Arch2, "F" & Buffer
-                                            FrmBalGloDat.dato "FAM.            " & Buffer
-                                        'Else
-                                        '    FrmBalGloDat.dato "OK -->   - Fam. " & Buffer
-                                        'End If
-                                    
-                                    End If
-                                'End If
-                        
-                        Case "G" 'Vendedores
-                            MyOK = True
-                            BufDatos.NVendedores = BufDatos.NVendedores + 1
-                            ReDim Preserve BufDatos.BufVendedores(BufDatos.NVendedores)
-                            BufDatos.BufVendedores(BufDatos.NVendedores - 1) = Buffer
-''''''''''''''''''''''''''''''''
-'sCard compuesta por 6 dig. número de ficha y a continuación valores con 6 dig. (sin signo decimal, dos dígitos menos significativos serán los decimales) para cada uno de los campos:
-'carbohydrate_100//carbohydrate_portion//energy_kcal_100//energy_kcal_portion//
-'energy_kj_100//energy_kj_portion//fat_100//fat_portion//fibre_100//fibre_portion//mono_unsaturates_100//mono_unsaturates_portion//polyols_100//
-'polyols_portion//polyunsaturates_100//polyunsaturates_portion//portion_weight//protein_100//
-'protein_portion//salt_100//salt_portion//'saturates_100//saturates_portion//
-'starch_100//starch_portion//sugars_100//sugars_portion
-                        Case "I"
-                            MyOK = True
-                            BufDatos.nFichNutri = BufDatos.nFichNutri + 1
-                            ReDim Preserve BufDatos.BufFichaNutri(BufDatos.nFichNutri)
-                            BufDatos.BufFichaNutri(BufDatos.nFichNutri - 1) = Buffer
-'sVita_Mine compuesto por 6 dig. número de ficha,
-'2 dig. identificador de vitamina o mineral, 6 dig. cantidad por 100g (sin signo decimal,
-'dos dígitos menos significativos serán los decimales) y 6 dig. cantidad por porción (sin signo decimal,
-'dos dígitos menos significativos serán los decimales)
-'ejemplo:     “00002008002500001300”
-'            Ficha: 20
-'            Identificador: 8
-'            cantidad 100g: 25
-'            cantidad porción: 13
-                        Case "J"
-                            MyOK = True
-                            BufDatos.nVitaminas = BufDatos.nVitaminas + 1
-                            ReDim Preserve BufDatos.BufVitaminas(BufDatos.nVitaminas)
-                            BufDatos.BufVitaminas(BufDatos.nVitaminas - 1) = Buffer
-'    sItemCard compuesta por 6 dig. Código de artículo y 6 dig. número de Ficha
-'    ejemplo: “000001000020” --> Código artículo 1, Ficha 20
-                        Case "K"
-                            MyOK = True
-                            BufDatos.nFichaArt = BufDatos.nFichaArt + 1
-                            ReDim Preserve BufDatos.BufNutriArt(BufDatos.nFichaArt)
-                            BufDatos.BufNutriArt(BufDatos.nFichaArt - 1) = Buffer
-''''''''''''''''''''''''''''''''
+                            nCli = 255
+                        End If
+                        nFCli = FreeFile()
+                        Open App.Path & "\clientes.dat" For Append As #nFCli
+                        Print #nFCli, Mid(Buffer, 2)
+                        Close #nFCli
+                        MyOK = True
+
+                    Case "E"    'Alta etiquetas
+                        MyOK = True
+                        BufDatos.nEtiqueta = BufDatos.nEtiqueta + 1
+                        ReDim Preserve BufDatos.BufEtiqueta(BufDatos.nEtiqueta)
+                        BufDatos.BufEtiqueta(BufDatos.nEtiqueta - 1) = Buffer
+
+                    Case "F"    '1.9.7
+                        'If lUpperNW Then
+                        'If lUpper Then 'AtencionFamilias
+                        'If Len(Buffer) >= 39 Then
+                        MyOK = True
+                        If Len(Buffer) >= 40 Then
+                            simgfam = Trim(Mid(Buffer, 40))
+                        Else
+                            simgfam = ""
+                        End If
+                        ssSecs(0) = Mid(Buffer, 2, 2)
+                        sS = Mid(Buffer, 2, 2)
+                        ffff = Mid(Buffer, 4, 3)
+                        pppp = Mid(Buffer, 7, 3)
+                        sdesfam = Trim(Mid(Buffer, 10, 30))
+                        If Mid(Buffer, 1, 1) = "0" Then ' creación o modificación
+                            nResp = Alta_Familias(ffff, sdesfam, 0, "", False, , pppp, simgfam)
+                            nResp = Alta_Familias_Counter(ffff, sdesfam, 0, ssSecs(), False, , simgfam, sS, pppp)
+                            'If nResp <> 0 And nResp <> 1 And nResp <> 4 Then
+                            Print #Arch2, "F" & Buffer
+                            FrmBalGloDat.dato "FAM.            " & Buffer
+                            'Else
+                            '    FrmBalGloDat.dato "OK -->   - Fam. " & Buffer
+                            'End If
+                        Else ' eliminar
+                            nResp = Baja_Familias(ffff)
+                            'If nResp <> 0 And nResp <> 1 And nResp <> 4 Then
+                            Print #Arch2, "F" & Buffer
+                            FrmBalGloDat.dato "FAM.            " & Buffer
+                            'Else
+                            '    FrmBalGloDat.dato "OK -->   - Fam. " & Buffer
+                            'End If
+
+                        End If
+                        'End If
+
+                    Case "G"    'Vendedores
+                        MyOK = True
+                        BufDatos.NVendedores = BufDatos.NVendedores + 1
+                        ReDim Preserve BufDatos.BufVendedores(BufDatos.NVendedores)
+                        BufDatos.BufVendedores(BufDatos.NVendedores - 1) = Buffer
+                        ''''''''''''''''''''''''''''''''
+                        'sCard compuesta por 6 dig. número de ficha y a continuación valores con 6 dig. (sin signo decimal, dos dígitos menos significativos serán los decimales) para cada uno de los campos:
+                        'carbohydrate_100//carbohydrate_portion//energy_kcal_100//energy_kcal_portion//
+                        'energy_kj_100//energy_kj_portion//fat_100//fat_portion//fibre_100//fibre_portion//mono_unsaturates_100//mono_unsaturates_portion//polyols_100//
+                        'polyols_portion//polyunsaturates_100//polyunsaturates_portion//portion_weight//protein_100//
+                        'protein_portion//salt_100//salt_portion//'saturates_100//saturates_portion//
+                        'starch_100//starch_portion//sugars_100//sugars_portion
+                    Case "I"
+                        MyOK = True
+                        BufDatos.nFichNutri = BufDatos.nFichNutri + 1
+                        ReDim Preserve BufDatos.BufFichaNutri(BufDatos.nFichNutri)
+                        BufDatos.BufFichaNutri(BufDatos.nFichNutri - 1) = Buffer
+                        'sVita_Mine compuesto por 6 dig. número de ficha,
+                        '2 dig. identificador de vitamina o mineral, 6 dig. cantidad por 100g (sin signo decimal,
+                        'dos dígitos menos significativos serán los decimales) y 6 dig. cantidad por porción (sin signo decimal,
+                        'dos dígitos menos significativos serán los decimales)
+                        'ejemplo:     “00002008002500001300”
+                        '            Ficha: 20
+                        '            Identificador: 8
+                        '            cantidad 100g: 25
+                        '            cantidad porción: 13
+                    Case "J"
+                        MyOK = True
+                        BufDatos.nVitaminas = BufDatos.nVitaminas + 1
+                        ReDim Preserve BufDatos.BufVitaminas(BufDatos.nVitaminas)
+                        BufDatos.BufVitaminas(BufDatos.nVitaminas - 1) = Buffer
+                        '    sItemCard compuesta por 6 dig. Código de artículo y 6 dig. número de Ficha
+                        '    ejemplo: “000001000020” --> Código artículo 1, Ficha 20
+                    Case "K"
+                        MyOK = True
+                        BufDatos.nFichaArt = BufDatos.nFichaArt + 1
+                        ReDim Preserve BufDatos.BufNutriArt(BufDatos.nFichaArt)
+                        BufDatos.BufNutriArt(BufDatos.nFichaArt - 1) = Buffer
+                        ''''''''''''''''''''''''''''''''
                         'Case "=" 'adicionales artículo antiguo (ignorado)
                         '2.0.34
-                        Case "M"
-                            'bloque 2
-                            'If Len(Buffer) = 266 Or Len(Buffer) = 256 Or lUpper Then
-                                MyOK = True
-                                BufDatos.NTextos = BufDatos.NTextos + 1
-                                ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                                BufDatos.BufTextos(BufDatos.NTextos - 1) = "M" & Buffer
-                            'End If
-                        Case "O"
-                            'bloque3
-                            'If Len(Buffer) = 266 Or Len(Buffer) = 256 Or lUpper Then
-                                MyOK = True
-                                BufDatos.NTextos = BufDatos.NTextos + 1
-                                ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                                BufDatos.BufTextos(BufDatos.NTextos - 1) = "O" & Buffer
-                            'End If
+                    Case "M"
+                        'bloque 2
+                        'If Len(Buffer) = 266 Or Len(Buffer) = 256 Or lUpper Then
+                        MyOK = True
+                        BufDatos.NTextos = BufDatos.NTextos + 1
+                        ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                        BufDatos.BufTextos(BufDatos.NTextos - 1) = "M" & Buffer
+                        'End If
+                    Case "O"
+                        'bloque3
+                        'If Len(Buffer) = 266 Or Len(Buffer) = 256 Or lUpper Then
+                        MyOK = True
+                        BufDatos.NTextos = BufDatos.NTextos + 1
+                        ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                        BufDatos.BufTextos(BufDatos.NTextos - 1) = "O" & Buffer
+                        'End If
                         ''''''''''
-                        Case "P" ' paises (nueva)
-                            If Len(Buffer) = 24 Then
+                    Case "P"    ' paises (nueva)
+                        If Len(Buffer) = 24 Then
+                            MyOK = True
+                            BufDatos.NPaises = BufDatos.NPaises + 1
+                            ReDim Preserve BufDatos.BufPaises(BufDatos.NPaises)
+                            BufDatos.BufPaises(BufDatos.NPaises - 1) = Buffer
+                        End If
+
+                    Case "T"    'Alta text15
+                        MyOK = True
+                        BufDatos.nText15 = BufDatos.nText15 + 1
+                        ReDim Preserve BufDatos.BufText15(BufDatos.nText15)
+                        BufDatos.BufText15(BufDatos.nText15 - 1) = Buffer
+
+                    Case "U"    'Alta imágenes
+                        MyOK = True
+                        BufDatos.nImage = BufDatos.nImage + 1
+                        ReDim Preserve BufDatos.BufImagen(BufDatos.nImage)
+                        BufDatos.BufImagen(BufDatos.nImage - 1) = Buffer
+
+                    Case "V"    ' fichas vacuno (nueva)
+                        If Len(Buffer) = 159 Then
+                            MyOK = True
+                            BufDatos.NFichas = BufDatos.NFichas + 1
+                            ReDim Preserve BufDatos.BufFichas(BufDatos.NFichas)
+                            BufDatos.BufFichas(BufDatos.NFichas - 1) = Buffer
+                        End If
+
+                    Case "W"    ' EAN Artículo (nueva)
+                        'If Len(Buffer) = 19 Then
+                        MyOK = True
+                        BufDatos.nEAN = BufDatos.nEAN + 1
+                        ReDim Preserve BufDatos.BufEAN(BufDatos.nEAN)
+                        BufDatos.BufEAN(BufDatos.nEAN - 1) = Buffer
+                        'End If
+
+                    Case "X"    'tarifas
+                        MyOK = True
+                        BufDatos.nTarifas = BufDatos.nTarifas + 1
+                        ReDim Preserve BufDatos.BufTarifas(BufDatos.nTarifas)
+                        BufDatos.BufTarifas(BufDatos.nTarifas - 1) = Buffer
+
+                    Case "Y"    'adicionales artículo (11-20) (Nueva)
+                        ''bloque 1
+                        ''If Len(Buffer) = 256 Or lUpper Then
+                        '    MyOK = True
+                        '    BufDatos.NTextos = BufDatos.NTextos + 1
+                        '    ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                        '    BufDatos.BufTextos(BufDatos.NTextos - 1) = "Y" & Buffer
+                        ''End If
+                        MyOK = True
+                        If lAgora = False Then
+
+                            If Len(Buffer) = 256 Or Len(Buffer) > 266 Then
                                 MyOK = True
-                                BufDatos.NPaises = BufDatos.NPaises + 1
-                                ReDim Preserve BufDatos.BufPaises(BufDatos.NPaises)
-                                BufDatos.BufPaises(BufDatos.NPaises - 1) = Buffer
+                                'If Len(Buffer) > 266 Then l34 = True
+                                BufDatos.NTextos = BufDatos.NTextos + 1
+                                ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                                BufDatos.BufTextos(BufDatos.NTextos - 1) = "Y" & Buffer
                             End If
-                        
-                        Case "T" 'Alta text15
-                            MyOK = True
-                            BufDatos.nText15 = BufDatos.nText15 + 1
-                            ReDim Preserve BufDatos.BufText15(BufDatos.nText15)
-                            BufDatos.BufText15(BufDatos.nText15 - 1) = Buffer
-                        
-                        Case "U" 'Alta imágenes
-                            MyOK = True
-                            BufDatos.nImage = BufDatos.nImage + 1
-                            ReDim Preserve BufDatos.BufImagen(BufDatos.nImage)
-                            BufDatos.BufImagen(BufDatos.nImage - 1) = Buffer
-                        
-                        Case "V" ' fichas vacuno (nueva)
-                            If Len(Buffer) = 159 Then
-                                MyOK = True
-                                BufDatos.NFichas = BufDatos.NFichas + 1
-                                ReDim Preserve BufDatos.BufFichas(BufDatos.NFichas)
-                                BufDatos.BufFichas(BufDatos.NFichas - 1) = Buffer
-                            End If
-                        
-                        Case "W" ' EAN Artículo (nueva)
-                            'If Len(Buffer) = 19 Then
-                                MyOK = True
-                                BufDatos.nEAN = BufDatos.nEAN + 1
-                                ReDim Preserve BufDatos.BufEAN(BufDatos.nEAN)
-                                BufDatos.BufEAN(BufDatos.nEAN - 1) = Buffer
-                            'End If
-                        
-                        Case "X" 'tarifas
-                            MyOK = True
-                            BufDatos.nTarifas = BufDatos.nTarifas + 1
-                            ReDim Preserve BufDatos.BufTarifas(BufDatos.nTarifas)
-                            BufDatos.BufTarifas(BufDatos.nTarifas - 1) = Buffer
-                        
-                        Case "Y" 'adicionales artículo (11-20) (Nueva)
-                            ''bloque 1
-                            ''If Len(Buffer) = 256 Or lUpper Then
-                            '    MyOK = True
-                            '    BufDatos.NTextos = BufDatos.NTextos + 1
-                            '    ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                            '    BufDatos.BufTextos(BufDatos.NTextos - 1) = "Y" & Buffer
-                            ''End If
+
+                        End If
+
+                    Case "Z", "="    'adicionales artículo
+                        ''bloque 0
+                        ''If Len(Buffer) = 266 Or Len(Buffer) = 256 Or lUpper Then
+                        '    MyOK = True
+                        '    BufDatos.NTextos = BufDatos.NTextos + 1
+                        '    ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                        '    BufDatos.BufTextos(BufDatos.NTextos - 1) = "Z" & Buffer
+                        ''Else
+                        ''    'If Len(Buffer) = 215 Then c2f 1.8.2
+                        ''    If Len(Buffer) = 214 Then
+                        ''        MyOK = True
+                        ''       BufDatos.NTextos = BufDatos.NTextos + 1
+                        ''        ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                        ''        BufDatos.BufTextos(BufDatos.NTextos - 1) = "=" & Buffer & "0" & Space(25) & "0" & Space(25)
+                        ''    End If
+                        ''End If
+                        If Len(Buffer) = 266 Or Len(Buffer) = 256 Or Len(Buffer) > 266 Then
                             MyOK = True
                             If lAgora = False Then
-                        
-                                If Len(Buffer) = 256 Or Len(Buffer) > 266 Then
-                                    MyOK = True
-                                    'If Len(Buffer) > 266 Then l34 = True
-                                    BufDatos.NTextos = BufDatos.NTextos + 1
-                                    ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                                    BufDatos.BufTextos(BufDatos.NTextos - 1) = "Y" & Buffer
-                                End If
-                            
+                                'If Len(Buffer) > 266 Then l34 = True
+                                BufDatos.NTextos = BufDatos.NTextos + 1
+                                ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
+                                BufDatos.BufTextos(BufDatos.NTextos - 1) = "Z" & Buffer
                             End If
-                            
-                        Case "Z", "=" 'adicionales artículo
-                            ''bloque 0
-                            ''If Len(Buffer) = 266 Or Len(Buffer) = 256 Or lUpper Then
-                            '    MyOK = True
-                            '    BufDatos.NTextos = BufDatos.NTextos + 1
-                            '    ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                            '    BufDatos.BufTextos(BufDatos.NTextos - 1) = "Z" & Buffer
-                            ''Else
-                            ''    'If Len(Buffer) = 215 Then c2f 1.8.2
-                            ''    If Len(Buffer) = 214 Then
-                            ''        MyOK = True
-                            ''       BufDatos.NTextos = BufDatos.NTextos + 1
-                            ''        ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                            ''        BufDatos.BufTextos(BufDatos.NTextos - 1) = "=" & Buffer & "0" & Space(25) & "0" & Space(25)
-                            ''    End If
-                            ''End If
-                            If Len(Buffer) = 266 Or Len(Buffer) = 256 Or Len(Buffer) > 266 Then
+                        Else
+                            'If Len(Buffer) = 215 Then c2f 1.8.2
+                            If Len(Buffer) = 214 Then
                                 MyOK = True
                                 If lAgora = False Then
-                                    'If Len(Buffer) > 266 Then l34 = True
+
                                     BufDatos.NTextos = BufDatos.NTextos + 1
                                     ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                                    BufDatos.BufTextos(BufDatos.NTextos - 1) = "Z" & Buffer
-                                End If
-                            Else
-                                'If Len(Buffer) = 215 Then c2f 1.8.2
-                                If Len(Buffer) = 214 Then
-                                    MyOK = True
-                                    If lAgora = False Then
-                                    
-                                        BufDatos.NTextos = BufDatos.NTextos + 1
-                                        ReDim Preserve BufDatos.BufTextos(BufDatos.NTextos)
-                                        BufDatos.BufTextos(BufDatos.NTextos - 1) = "=" & Buffer & "0" & Space(25) & "0" & Space(25)
-                                    
-                                    End If
+                                    BufDatos.BufTextos(BufDatos.NTextos - 1) = "=" & Buffer & "0" & Space(25) & "0" & Space(25)
+
                                 End If
                             End If
-                        
-                        Case "*" 'comentario
-                            MyOK = True
-                            
-                            
+                        End If
+
+                    Case "*"    'comentario
+                        MyOK = True
+
+
                     End Select
                     If MyOK = False Then Print #Arch2, Buffer
                 Else
@@ -588,27 +589,27 @@ MyOK = MyOK
         Close #Arch1
         Close #Arch2
         Procesa_Datos BufDatos
-        If nCli <> 0 Then ' procesar clientes...
-                frmControl.ini_import
-                frmControl.ControlImport1.FamFijas = FamiliasFijas
-                frmControl.ControlImport1.SubFijas = SubSeccionesFijas
-                frmControl.ControlImport1.RechazarPrecioCero = RechazarPlu0
-                frmControl.ControlImport1.PathBase = Base_General
-                frmControl.ControlImport1.PathFile = Miruta
-                frmControl.ControlImport1.PathNTQ = Miruta
-                frmControl.ControlImport1.ActivarLog = DebugActivo
-                frmControl.ControlImport1.MostrarFormulario = True
-                frmControl.ControlImport1.Fichero = "clientes.dat"
-                frmControl.ControlImport1.FamVacuno = FamiliaEspecial
-                frmControl.ControlImport1.EtiquetaEspecial = EtiquetaEspecial
-                frmControl.ControlImport1.MuestraMensajes = False
-                frmControl.ControlImport1.FactorEuro = ValorEuro
-                frmControl.ControlImport1.Importar_Background "clientes.dat"
-                Do Until frmControl.ControlImport1.Exito <> 4
-                    Do_Events
-                Loop
-                Unload frmControl
-                Corregir_Nulos
+        If nCli <> 0 Then    ' procesar clientes...
+            frmControl.ini_import
+            frmControl.ControlImport1.FamFijas = FamiliasFijas
+            frmControl.ControlImport1.SubFijas = SubSeccionesFijas
+            frmControl.ControlImport1.RechazarPrecioCero = RechazarPlu0
+            frmControl.ControlImport1.PathBase = Base_General
+            frmControl.ControlImport1.PathFile = Miruta
+            frmControl.ControlImport1.PathNTQ = Miruta
+            frmControl.ControlImport1.ActivarLog = DebugActivo
+            frmControl.ControlImport1.MostrarFormulario = True
+            frmControl.ControlImport1.Fichero = "clientes.dat"
+            frmControl.ControlImport1.FamVacuno = FamiliaEspecial
+            frmControl.ControlImport1.EtiquetaEspecial = EtiquetaEspecial
+            frmControl.ControlImport1.MuestraMensajes = False
+            frmControl.ControlImport1.FactorEuro = ValorEuro
+            frmControl.ControlImport1.Importar_Background "clientes.dat"
+            Do Until frmControl.ControlImport1.Exito <> 4
+                Do_Events
+            Loop
+            Unload frmControl
+            Corregir_Nulos
         End If
     Else
         If lUpper = False Then
@@ -616,34 +617,34 @@ MyOK = MyOK
         End If
         Do_Events
     End If
-    
+
 fin:
 
 
-If Err.Number <> 0 Then
-    Buffer = "Error:" & CStr(Err.Number) & " --> " & Err.Description
-    Buffer = Buffer
-    CadenadeLog Buffer
-    'If Err.Number = 55 Then
+    If Err.Number <> 0 Then
+        Buffer = "Error:" & CStr(Err.Number) & " --> " & Err.Description
+        Buffer = Buffer
+        CadenadeLog Buffer
+        'If Err.Number = 55 Then
         For Arch1 = 1 To 255
             Close #Arch1
         Next Arch1
-    'End If
-End If
-On Error GoTo 0
+        'End If
+    End If
+    On Error GoTo 0
 
     Call Corregir_Nulos
     If Dir(App.Path & "\asign.tst") <> "" Then
         Call AsignTec
     End If
-    
+
     Sleep (2000)
     If lUpper = False Then
         Unload FrmBalGloDat
     End If
 End Function
 Private Sub Procesa_Datos(BufDatos As Tipo_Buf)
-    '1 º secciones
+'1 º secciones
     If BufDatos.NSecciones > 0 Then
         Procesa_Secciones BufDatos
     End If
@@ -704,7 +705,7 @@ Private Sub Procesa_Datos(BufDatos As Tipo_Buf)
     If BufDatos.nText15 > 0 Then
         Procesa_TEXT15 BufDatos
     End If
-    
+
     '9 º paises
     If BufDatos.NPaises > 0 Then
         Procesa_Paises BufDatos
@@ -716,7 +717,7 @@ Private Sub Procesa_Datos(BufDatos As Tipo_Buf)
     If BufDatos.nTarifas > 0 Then
         Procesa_Tarifas BufDatos
     End If
-''''''''''''''''''''''''
+    ''''''''''''''''''''''''
     If BufDatos.nFichNutri > 0 Then
         Procesa_FichaNutri BufDatos
     End If
@@ -728,7 +729,7 @@ Private Sub Procesa_Datos(BufDatos As Tipo_Buf)
     End If
 
 
-'''''''''''''''''''''''
+    '''''''''''''''''''''''
 End Sub
 Private Sub Procesa_FichaNutri(BufDatos As Tipo_Buf)
     Dim Arch2 As Integer
@@ -738,7 +739,7 @@ Private Sub Procesa_FichaNutri(BufDatos As Tipo_Buf)
     Dim MyOK As Boolean
     Dim MyCod As Long
     Dim Registro As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     'Set Registro = Base.OpenRecordset("select * from nutrition where card<>0")
     Arch2 = FreeFile()
@@ -751,20 +752,20 @@ Private Sub Procesa_FichaNutri(BufDatos As Tipo_Buf)
             FrmBalGloDat.dato "NOK -->  + Ficha Nutricional: " & BufDatos.BufFichaNutri(bucle)
         End If
         Set Registro = Base.OpenRecordset("select * from nutrition where card=" & MyCod)
-        
+
         If Mid(BufDatos.BufFichaNutri(bucle), 1, 1) = "0" Then
             If Registro.EOF Then
                 Registro.AddNew
             Else
                 Registro.Edit
             End If
-                
+
             With Registro
                 .Fields("card") = MyCod
                 .Fields("cadena") = Mid(BufDatos.BufFichaNutri(bucle), 2)
                 .Fields("borrado") = " "
                 .Fields("tran_nutri") = " "
-                
+
                 .Update
                 FrmBalGloDat.dato "OK -->  + Ficha Nutricional: " & BufDatos.BufFichaNutri(bucle)
             End With
@@ -790,7 +791,7 @@ Private Sub Procesa_Vitaminas(BufDatos As Tipo_Buf)
     Dim MyOK As Boolean
     Dim MyCod As Long
     Dim Registro As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     'Set Registro = Base.OpenRecordset("select * from nutrition where card<>0")
     Arch2 = FreeFile()
@@ -803,20 +804,20 @@ Private Sub Procesa_Vitaminas(BufDatos As Tipo_Buf)
             FrmBalGloDat.dato "NOK -->  + Vitaminas: " & BufDatos.BufVitaminas(bucle)
         End If
         Set Registro = Base.OpenRecordset("select * from vitamins where card=" & MyCod)
-        
+
         If Mid(BufDatos.BufVitaminas(bucle), 1, 1) = "0" Then
             If Registro.EOF Then
                 Registro.AddNew
             Else
                 Registro.Edit
             End If
-                
+
             With Registro
                 .Fields("card") = MyCod
                 .Fields("cadena") = Mid(BufDatos.BufVitaminas(bucle), 2)
                 .Fields("borrado") = " "
                 .Fields("tran_vita") = " "
-                
+
                 .Update
                 FrmBalGloDat.dato "OK -->  + Vitaminas: " & BufDatos.BufVitaminas(bucle)
             End With
@@ -841,7 +842,7 @@ Private Sub Procesa_FichaArt(BufDatos As Tipo_Buf)
     Dim MyOK As Boolean
     Dim MyCod As Long
     Dim Registro As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     Set Registro = Base.OpenRecordset("select * from articulo where codigo<>0")
     Arch2 = FreeFile()
@@ -849,7 +850,7 @@ Private Sub Procesa_FichaArt(BufDatos As Tipo_Buf)
     For bucle = 0 To BufDatos.nFichaArt - 1
 
         MyCod = Val(Mid(BufDatos.BufNutriArt(bucle), 2, 6))
-        
+
         Registro.FindFirst "codigo=" & MyCod & " and borrado=false"
 
         If Registro.EOF Then
@@ -878,14 +879,14 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
     Dim Base As dao.Database
     Dim Reg1 As dao.Recordset
     Dim Reg2 As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     Arch2 = FreeFile()
     Open App.Path & "\globaltouchno.dat" For Append As #Arch2
     For BGrande = 0 To 1
-        
+
         For bucle = 0 To BufDatos.NTeclas
-            
+
             If left(BufDatos.BufTeclas(bucle), 1) = "0" And BGrande = 1 Then
                 ' Alta
                 '0109055072510
@@ -899,13 +900,13 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
                     'If lUpper Then
                     '    MyTEC.Section = 1
                     'Else
-                        myTec.Section = Val(Mid(BufDatos.BufTeclas(bucle), 3, 2))
+                    myTec.Section = Val(Mid(BufDatos.BufTeclas(bucle), 3, 2))
                     'End If
                     ''''''
                     If Val(Mid(BufDatos.BufTeclas(bucle), 2, 1)) = 1 Then
                         Set Reg1 = Base.OpenRecordset("select * from equipos where numero_eqp=" & CStr(Val(Mid(BufDatos.BufTeclas(bucle), 3, 2))))
                         If Reg1.EOF Then
-                            myTec.Destino_NMostrador = 0 'Atencion upper
+                            myTec.Destino_NMostrador = 0    'Atencion upper
                         Else
                             myTec.Destino_NMostrador = Reg1.Fields("secc_maqui")
                         End If
@@ -919,7 +920,7 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
                 Else
                     myTec.PluArticulo = 0
                     myTec.Destino_NMostrador = 0
-                    
+
                     If Val(Val(Mid(BufDatos.BufTeclas(bucle), 2, 1))) = 0 Then
                         myTec.Section = Val(Mid(BufDatos.BufTeclas(bucle), 3, 2))
                     Else
@@ -933,7 +934,7 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
                     If Val(Mid(BufDatos.BufTeclas(bucle), 2, 1)) = 1 Then
                         Set Reg1 = Base.OpenRecordset("select * from equipos where numero_eqp=" & CStr(Val(Mid(BufDatos.BufTeclas(bucle), 3, 2))))
                         If Reg1.EOF Then
-                            myTec.Destino_NMostrador = 0 'Atencion upper
+                            myTec.Destino_NMostrador = 0    'Atencion upper
                         Else
                             myTec.Destino_NMostrador = Reg1.Fields("secc_maqui")
                         End If
@@ -948,7 +949,7 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
                     'If lUpper Then
                     '    MyTEC.Destino_Tabla = Val(Mid(BufDatos.BufTeclas(bucle), 14, 2))
                     'Else
-                        myTec.Destino_Tabla = Val(Mid(BufDatos.BufTeclas(bucle), 14))
+                    myTec.Destino_Tabla = Val(Mid(BufDatos.BufTeclas(bucle), 14))
                     'End If
                     'If MyTEC.Destino_Tabla <> 0 Then
                     '    MyTEC.Destino_Tabla = MyTEC.Destino_Tabla
@@ -1002,7 +1003,7 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
                     End If
                     If lUpper Then myTec.Destino_Tabla = myTec.Destino_Tabla + 1
                 End If
-                
+
                 Resp = Baja_Teclas(myTec)
                 If Resp <> 0 And Resp <> 1 And Resp <> 4 Then
                     If Len(BufDatos.BufTeclas(bucle)) = 10 Then
@@ -1015,11 +1016,11 @@ Private Sub Procesa_Teclas(BufDatos As Tipo_Buf)
                     FrmBalGloDat.dato "OK -->  + Tec. " & BufDatos.BufTeclas(bucle)
                 End If
             End If
-        
+
         Next bucle
 
     Next BGrande
-    
+
     Close #Arch2
     On Error Resume Next
     Base.Close
@@ -1048,7 +1049,7 @@ Private Sub Procesa_Secciones(BufDatos As Tipo_Buf)
                         MySec.NMostrador = Val(Mid(BufDatos.BufSecciones(bucle), 31, 3))
                     End If
                     'If Val(Mid(BufDatos.BufSecciones(bucle), 34, 1)) = 1 Then
-                        MySec.Tipo = Val(Mid(BufDatos.BufSecciones(bucle), 34, 1))
+                    MySec.Tipo = Val(Mid(BufDatos.BufSecciones(bucle), 34, 1))
                     'End If
                     'If Val(Mid(BufDatos.BufSecciones(bucle), 34, 1)) = 2 Then
                     '    Mysec.Tipo = 2
@@ -1095,23 +1096,23 @@ Private Sub Procesa_Equipos(BufDatos As Tipo_Buf)
                 MyEqp.NMostrador = Val(Mid(BufDatos.BufEquipos(bucle), 2, 2))
                 MyEqp.NBalanza = Val(Mid(BufDatos.BufEquipos(bucle), 4, 2))
                 'If UsaGamaAlta Then
-                    MyEqp.Tipo = 0 ' Euroscale
+                MyEqp.Tipo = 0    ' Euroscale
                 'Else
                 '    MyEqp.Tipo = 2 ' SC10
                 'End If
                 If Len(BufDatos.BufEquipos(bucle)) > 6 Then
                     Select Case Val(Mid(BufDatos.BufEquipos(bucle), 6, 2))
-                        Case 0
-                            MyEqp.Tipo = 0
-                        Case 1
-                            MyEqp.Tipo = 1
+                    Case 0
+                        MyEqp.Tipo = 0
+                    Case 1
+                        MyEqp.Tipo = 1
                         'Case 2
                         '    MyEqp.Tipo = 2
                     End Select
                     'If MyEqp.Tipo = 0 Or MyEqp.Tipo = 1 Then
-                        If Trim(Mid(BufDatos.BufEquipos(bucle), 8, 15)) <> "" Then
-                            MyEqp.DireccionIP = Mid(BufDatos.BufEquipos(bucle), 8, 15)
-                        End If
+                    If Trim(Mid(BufDatos.BufEquipos(bucle), 8, 15)) <> "" Then
+                        MyEqp.DireccionIP = Mid(BufDatos.BufEquipos(bucle), 8, 15)
+                    End If
                     'End If
                 End If
                 Resp = Alta_Balanza(MyEqp)
@@ -1226,20 +1227,20 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
     Dim nLastShop As Integer
     'Dim lAlba As Boolean
     Dim nT As Integer
-    
+
     If Dir(App.Path & "\alba.txt") <> "" Then
         lAlba = True
     Else
         lAlba = False
     End If
     'If = False Then
-        Set Base = OpenDatabase(Base_General)
-        Set Registro = Base.OpenRecordset("select * from articulo")
+    Set Base = OpenDatabase(Base_General)
+    Set Registro = Base.OpenRecordset("select * from articulo")
     'End If
-    
+
     'Set Base = OpenDatabase(Base_General)
     'Set Registro = Base.OpenRecordset("select * from articulo")
-    
+
     Arch2 = FreeFile()
     Open App.Path & "\globaltouchno.dat" For Append As #Arch2
     For BGrande = 0 To 1
@@ -1269,10 +1270,10 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                 '    'c2f 1.7.8 MyArt.familia = Mid(BufDatos.BufArticulos(Bucle), 17, 4)
                 '    MyArt.familia = Mid(BufDatos.BufArticulos(bucle), 18, 4)
                 'Else
-                    MyArt.subsec = Mid(BufDatos.BufArticulos(bucle), 14, 3)
-                    'c2f 1.7.8 MyArt.familia = Mid(BufDatos.BufArticulos(Bucle), 17, 4)
-                    MyArt.familia = Mid(BufDatos.BufArticulos(bucle), 17, 4)
-                
+                MyArt.subsec = Mid(BufDatos.BufArticulos(bucle), 14, 3)
+                'c2f 1.7.8 MyArt.familia = Mid(BufDatos.BufArticulos(Bucle), 17, 4)
+                MyArt.familia = Mid(BufDatos.BufArticulos(bucle), 17, 4)
+
                 'End If
                 If UsaEuro Then
                     MyArt.precio = Val(Mid(BufDatos.BufArticulos(bucle), 21, 5)) / 100
@@ -1284,13 +1285,13 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                 Else
                     MyArt.WGH = True
                 End If
-                
+
                 MyArt.caducidad = Mid(BufDatos.BufArticulos(bucle), 27, 3)
-                
+
                 MyArt.TipoLetra(0) = Mid(BufDatos.BufArticulos(bucle), 30, 1)
                 MyArt.Descriptivos(0) = Mid(BufDatos.BufArticulos(bucle), 31, 25)
-                
-                
+
+
                 If Len(BufDatos.BufArticulos(bucle)) > 60 And lFornes = False Then
                     If Len(BufDatos.BufArticulos(bucle)) = 62 Then
                         If lAlba Then
@@ -1300,9 +1301,9 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                             'TiendaActual = nT
                             If nT <> TiendaActual Then GoTo EsOtraTienda
                         End If
-                    
+
                     Else
-                        
+
                         If Len(BufDatos.BufArticulos(bucle)) = 92 Or Len(BufDatos.BufArticulos(bucle)) = 91 Then
                             MyArt.tara = Mid(BufDatos.BufArticulos(bucle), 61, 5)
                             MyArt.IVA = Mid(BufDatos.BufArticulos(bucle), 66, 1)
@@ -1325,7 +1326,7 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                             End If
                             '''''''''''''''''''
                             MyArt.Presel = Mid(BufDatos.BufArticulos(bucle), 90, 2)
-                        
+
                         Else
                             MyArt.tara = Mid(BufDatos.BufArticulos(bucle), 56, 5)
                             MyArt.IVA = Mid(BufDatos.BufArticulos(bucle), 61, 1)
@@ -1363,7 +1364,7 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                 MyArt.TRM2 = 0
                 MyArt.PRC1 = 0
                 MyArt.PRC2 = 0
-                
+
                 'If lAlba Then
                 '    'ALBA INFORMATICA
                 '    If nLastShop <> nT Then
@@ -1376,7 +1377,7 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                 '    End If
                 '    nLastShop = nT
                 'End If
-                
+
                 '''''''''''''''
                 'If lUpperNW Then
                 If lUpper Then
@@ -1388,18 +1389,18 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                 End If
                 If lFornes Then
                     'If lJpg = False Then
-                        MyArt.Imagen = CStr(MyArt.codigo) & ".png"
+                    MyArt.Imagen = CStr(MyArt.codigo) & ".png"
                     'Else
                     '    MyArt.Imagen = Format(MyArt.codigo, "000000") & ".jpg"
                     'End If
                 End If
-                
+
                 Resp = Alta_Articulo_Mod(MyArt, Base, Registro)
                 If Resp = 45 Then
                     Resp = Baja_Articulo(MyArt)
                     Resp = Alta_Articulo_Mod(MyArt, Base, Registro)
                 End If
-                
+
                 If Resp <> 0 And Resp <> 1 And Resp <> 4 Then
                     Print #Arch2, "5" & BufDatos.BufArticulos(bucle)
                     FrmBalGloDat.dato "NOK -->  + PLU. " & BufDatos.BufArticulos(bucle)
@@ -1458,7 +1459,7 @@ Private Sub Procesa_Articulos(BufDatos As Tipo_Buf)
                     'TiendaActual = nT
                     If nT <> TiendaActual Then GoTo EsOtraTienda
                 End If
-                
+
                 MyArt.codigo = Mid(BufDatos.BufArticulos(bucle), 2, 6)
                 Resp = Baja_Articulo(MyArt)
                 If Resp <> 0 And Resp <> 1 And Resp <> 4 Then
@@ -1476,10 +1477,10 @@ EsOtraTienda:
     'Base.Close
 End Sub
 Private Sub Procesa_EanArticulos(BufDatos As Tipo_Buf)
-    '///////////////////////////////////////////////
-    ' esta función de alta/baja directamente
-    ' accediendo a la base de datos
-    '///////////////////////////////////////////////
+'///////////////////////////////////////////////
+' esta función de alta/baja directamente
+' accediendo a la base de datos
+'///////////////////////////////////////////////
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim Resp As Integer
@@ -1487,7 +1488,7 @@ Private Sub Procesa_EanArticulos(BufDatos As Tipo_Buf)
     Dim MyOK As Boolean
     Dim MyCod As Long
     Dim Registro As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     Set Registro = Base.OpenRecordset("select * from articulo")
     Arch2 = FreeFile()
@@ -1495,7 +1496,7 @@ Private Sub Procesa_EanArticulos(BufDatos As Tipo_Buf)
     For bucle = 0 To BufDatos.nEAN - 1
 
         MyCod = Val(Mid(BufDatos.BufEAN(bucle), 2, 6))
-        
+
         Registro.FindFirst "codigo=" & MyCod & " and borrado=false"
 
         If Registro.EOF Then
@@ -1522,10 +1523,10 @@ End Sub
 
 
 Private Sub Procesa_Tarifas(BufDatos As Tipo_Buf)
-    '///////////////////////////////////////////////
-    ' esta función de alta/baja directamente
-    ' accediendo a la base de datos
-    '///////////////////////////////////////////////
+'///////////////////////////////////////////////
+' esta función de alta/baja directamente
+' accediendo a la base de datos
+'///////////////////////////////////////////////
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim Resp As Integer
@@ -1535,7 +1536,7 @@ Private Sub Procesa_Tarifas(BufDatos As Tipo_Buf)
     Dim Registro As dao.Recordset
     Dim nTarifa As Integer
     Dim valTarifa As Double
-    
+
     Set Base = OpenDatabase(Base_General)
     Set Registro = Base.OpenRecordset("select * from articulo")
     Arch2 = FreeFile()
@@ -1543,7 +1544,7 @@ Private Sub Procesa_Tarifas(BufDatos As Tipo_Buf)
     For bucle = 0 To BufDatos.nTarifas - 1
 
         MyCod = Val(Mid(BufDatos.BufTarifas(bucle), 1, 6))
-        
+
         Registro.FindFirst "codigo=" & MyCod & " and borrado=false"
 
         If Registro.EOF Then
@@ -1558,7 +1559,7 @@ Private Sub Procesa_Tarifas(BufDatos As Tipo_Buf)
             Else
                 valTarifa = valTarifa / (10 ^ decimales)
             End If
-            
+
             With Registro
                 Edit_Record Registro
                 .Fields("tar" & CStr(nTarifa)) = valTarifa
@@ -1573,10 +1574,10 @@ Private Sub Procesa_Tarifas(BufDatos As Tipo_Buf)
 End Sub
 
 Private Sub Procesa_Imagen(BufDatos As Tipo_Buf)
-    '///////////////////////////////////////////////
-    ' esta función de alta/baja directamente
-    ' accediendo a la base de datos
-    '///////////////////////////////////////////////
+'///////////////////////////////////////////////
+' esta función de alta/baja directamente
+' accediendo a la base de datos
+'///////////////////////////////////////////////
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim Resp As Integer
@@ -1584,7 +1585,7 @@ Private Sub Procesa_Imagen(BufDatos As Tipo_Buf)
     Dim MyOK As Boolean
     Dim MyCod As Long
     Dim Registro As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     'Set Registro = Base.OpenRecordset("select * from articulo")
     Arch2 = FreeFile()
@@ -1592,7 +1593,7 @@ Private Sub Procesa_Imagen(BufDatos As Tipo_Buf)
     For bucle = 0 To BufDatos.nImage - 1
 
         MyCod = Val(Mid(BufDatos.BufImagen(bucle), 1, 6))
-        
+
         Set Registro = Base.OpenRecordset("select * from articulo where codigo=" & MyCod & " and borrado=false")
 
         If Registro.EOF Then
@@ -1600,31 +1601,31 @@ Private Sub Procesa_Imagen(BufDatos As Tipo_Buf)
             FrmBalGloDat.dato "NOK -->  + Imagen: " & BufDatos.BufImagen(bucle)
         Else
             'With Registro
-                Registro.Edit
-                Registro.Fields("imagen") = Trim(Mid(BufDatos.BufImagen(bucle), 7))
-                '.Fields("tran_texto") = ""
-                Registro.Fields("tran_plu") = ""
-                '.Fields("tran_plusc10") = ""
-                '.Fields("tran_textosc10") = ""
-                '.Fields("tran_tx1") = ""
-                '.Fields("tran_tx1sc10") = ""
-                Registro.Update
-                FrmBalGloDat.dato "OK -->  + Imagen: " & BufDatos.BufImagen(bucle)
+            Registro.Edit
+            Registro.Fields("imagen") = Trim(Mid(BufDatos.BufImagen(bucle), 7))
+            '.Fields("tran_texto") = ""
+            Registro.Fields("tran_plu") = ""
+            '.Fields("tran_plusc10") = ""
+            '.Fields("tran_textosc10") = ""
+            '.Fields("tran_tx1") = ""
+            '.Fields("tran_tx1sc10") = ""
+            Registro.Update
+            FrmBalGloDat.dato "OK -->  + Imagen: " & BufDatos.BufImagen(bucle)
             'End With
         End If
         Registro.Close
         Set Registro = Nothing
-        
+
     Next bucle
     Close #Arch2
     Base.Close
 End Sub
 
 Private Sub Procesa_Etiqueta(BufDatos As Tipo_Buf)
-    '///////////////////////////////////////////////
-    ' esta función de alta/baja directamente
-    ' accediendo a la base de datos
-    '///////////////////////////////////////////////
+'///////////////////////////////////////////////
+' esta función de alta/baja directamente
+' accediendo a la base de datos
+'///////////////////////////////////////////////
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim Resp As Integer
@@ -1632,7 +1633,7 @@ Private Sub Procesa_Etiqueta(BufDatos As Tipo_Buf)
     Dim MyOK As Boolean
     Dim MyCod As Long
     Dim Registro As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     Set Registro = Base.OpenRecordset("select * from articulo")
     Arch2 = FreeFile()
@@ -1640,7 +1641,7 @@ Private Sub Procesa_Etiqueta(BufDatos As Tipo_Buf)
     For bucle = 0 To BufDatos.nEtiqueta - 1
 
         MyCod = Val(Mid(BufDatos.BufEtiqueta(bucle), 2, 6))
-        
+
         Registro.FindFirst "codigo=" & MyCod & " and borrado=false"
 
         If Registro.EOF Then
@@ -1666,10 +1667,10 @@ Private Sub Procesa_Etiqueta(BufDatos As Tipo_Buf)
 End Sub
 
 Private Sub Procesa_TEXT15(BufDatos As Tipo_Buf)
-    '///////////////////////////////////////////////
-    ' esta función de alta/baja directamente
-    ' accediendo a la base de datos
-    '///////////////////////////////////////////////
+'///////////////////////////////////////////////
+' esta función de alta/baja directamente
+' accediendo a la base de datos
+'///////////////////////////////////////////////
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim Resp As Integer
@@ -1682,7 +1683,7 @@ Private Sub Procesa_TEXT15(BufDatos As Tipo_Buf)
     Dim nPlu As Long
     Dim nSec As Integer
     Dim lAlta As Boolean
-    
+
     Set Base = OpenDatabase(Base_General)
     'Set Registro = Base.OpenRecordset("select * from articulo")
     Arch2 = FreeFile()
@@ -1691,15 +1692,15 @@ Private Sub Procesa_TEXT15(BufDatos As Tipo_Buf)
 
         MyCod = Val(Mid(BufDatos.BufText15(bucle), 1, 6))
         nT = Val(Mid(BufDatos.BufText15(bucle), 7, 1))
-        
+
         'Registro.FindFirst "codigo=" & MyCod & " and borrado=false"
         Set Registro = Base.OpenRecordset("select * from articulo where codigo=" & MyCod)
-        
+
         If Registro.EOF Then
             Print #Arch2, BufDatos.BufText15(bucle)
             FrmBalGloDat.dato "NOK -->  + Texto15: " & BufDatos.BufText15(bucle)
         Else
-            
+
             nPlu = Registro.Fields("plu")
             nSec = Registro.Fields("secc_maqui")
             Set registro2 = Base.OpenRecordset("select * from text15 where codigo=" & CStr(MyCod))
@@ -1711,7 +1712,7 @@ Private Sub Procesa_TEXT15(BufDatos As Tipo_Buf)
                 lAlta = False
             End If
 
-            
+
             If lAlta Then
                 Registro.Edit
                 Registro.Fields("tran_plu") = ""
@@ -1740,23 +1741,23 @@ Private Sub Procesa_TEXT15(BufDatos As Tipo_Buf)
                     Else
                         registro2.Fields("text" & CStr(nT)) = Trim(Mid(BufDatos.BufText15(bucle), 8))
                     End If
-                    
+
                     lAlta = True
                 End If
             End If
-            
+
             'registro2.Fields("text" & CStr(nT)) = Trim(Mid(BufDatos.BufText15(bucle), 9))
-            
-            
+
+
             If lAlta Then registro2.Update
-            
+
             FrmBalGloDat.dato "OK -->  + Texto: " & Trim(Mid(BufDatos.BufText15(bucle), 8))
 
         End If
-        
+
         Registro.Close
         Set Registro = Nothing
-        
+
     Next bucle
     'Registro.Close
     'Set Registro = Nothing
@@ -1765,10 +1766,10 @@ Private Sub Procesa_TEXT15(BufDatos As Tipo_Buf)
 End Sub
 
 Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
-    '///////////////////////////////////////////////
-    ' esta función de alta/baja directamente
-    ' accediendo a la base de datos
-    '///////////////////////////////////////////////
+'///////////////////////////////////////////////
+' esta función de alta/baja directamente
+' accediendo a la base de datos
+'///////////////////////////////////////////////
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim Resp As Integer
@@ -1780,7 +1781,7 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
     Dim Regtmp As dao.Recordset
     Dim sI As String
     Dim nReg As dao.Recordset
-    
+
     Set Base = OpenDatabase(Base_General)
     'Set Registro = Base.OpenRecordset("select * from articulo")
     Arch2 = FreeFile()
@@ -1791,10 +1792,10 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
             MyBloque = 0
         Else
             If left(BufDatos.BufTextos(bucle), 1) = "M" Then
-                MyBloque = 2 '2.0.34
+                MyBloque = 2    '2.0.34
             Else
                 If left(BufDatos.BufTextos(bucle), 1) = "O" Then
-                    MyBloque = 3 '2.0.34
+                    MyBloque = 3    '2.0.34
                 Else
                     MyBloque = 1
                 End If
@@ -1815,9 +1816,9 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
             '2.0.34 sI = "Z"
             sI = left(BufDatos.BufTextos(bucle), 1)
             ''''''''''''''''
-            MyCod = Val(Mid(BufDatos.BufTextos(bucle), 2, 6)) 'c2f 1.8.2 era 1,6 (mal)
+            MyCod = Val(Mid(BufDatos.BufTextos(bucle), 2, 6))    'c2f 1.8.2 era 1,6 (mal)
         End If
-        
+
         BufDatos.BufTextos(bucle) = Mid(BufDatos.BufTextos(bucle), 2)
         Set Registro = Base.OpenRecordset("select * from articulo where codigo=" & MyCod & " and borrado=false")
         'Registro.FindFirst "codigo=" & MyCod & " and borrado=false"
@@ -1897,37 +1898,37 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
                         nReg.Update
                         nReg.Close
                         Set nReg = Nothing
-                        
+
                     Else
                         If MyBloque = 0 Then
                             If sI = "=" Then
-                            
+
                                 '.Fields("des_plu1") = Trim(Mid(BufDatos.BufTextos(Bucle), 8, 25))
                                 ''.Fields("tip_let1") = Val(Mid(BufDatos.BufTextos(Bucle), 7, 1))
-                                
+
                                 '.Fields("des_plu2") = Trim(Mid(BufDatos.BufTextos(Bucle), 34, 25))
                                 '.Fields("tip_let2") = Val(Mid(BufDatos.BufTextos(Bucle), 33, 1))
-                                
+
                                 '.Fields("des_plu3") = Trim(Mid(BufDatos.BufTextos(Bucle), 60, 25))
                                 '.Fields("tip_let3") = Val(Mid(BufDatos.BufTextos(Bucle), 59, 1))
-                                
+
                                 '.Fields("des_plu4") = Trim(Mid(BufDatos.BufTextos(Bucle), 86, 25))
                                 '.Fields("tip_let4") = Val(Mid(BufDatos.BufTextos(Bucle), 85, 1))
-                                
+
                                 '.Fields("des_plu5") = Trim(Mid(BufDatos.BufTextos(Bucle), 112, 25))
                                 '.Fields("tip_let5") = Val(Mid(BufDatos.BufTextos(Bucle), 111, 1))
-                                
+
                                 '.Fields("des_plu6") = Trim(Mid(BufDatos.BufTextos(Bucle), 138, 25))
                                 '.Fields("tip_let6") = Val(Mid(BufDatos.BufTextos(Bucle), 137, 1))
-                                
+
                                 '.Fields("des_plu7") = Trim(Mid(BufDatos.BufTextos(Bucle), 164, 25))
                                 '.Fields("tip_let7") = Val(Mid(BufDatos.BufTextos(Bucle), 163, 1))
-                                
+
                                 '.Fields("des_plu8") = Trim(Mid(BufDatos.BufTextos(Bucle), 190, 25))
                                 '.Fields("tip_let8") = Val(Mid(BufDatos.BufTextos(Bucle), 189, 1))
                                 ''.Fields("des_plu9") = Trim(Mid(BufDatos.BufTextos(Bucle), 216, 25))
                                 ''.Fields("des_plux") = Trim(Mid(BufDatos.BufTextos(Bucle), 233, 25))
-                                
+
                                 .Fields("des_plu1") = RTrim(Mid(BufDatos.BufTextos(bucle), 8, 25))
                                 .Fields("des_plu2") = RTrim(Mid(BufDatos.BufTextos(bucle), 34, 25))
                                 .Fields("tip_let2") = Val(Mid(BufDatos.BufTextos(bucle), 33, 1))
@@ -1943,7 +1944,7 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
                                 .Fields("tip_let7") = Val(Mid(BufDatos.BufTextos(bucle), 163, 1))
                                 .Fields("des_plu8") = RTrim(Mid(BufDatos.BufTextos(bucle), 190, 25))
                                 .Fields("tip_let8") = Val(Mid(BufDatos.BufTextos(bucle), 189, 1))
-                            
+
                             Else
                                 'c2f 2.0.19 ... se cambio de 1 a 0 por 2 a x
                                 '.Fields("des_plu2") = Trim(Mid(BufDatos.BufTextos(Bucle), 7, 25))
@@ -1966,9 +1967,9 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
                                 .Fields("des_plu9") = RTrim(Mid(BufDatos.BufTextos(bucle), 182, 25))
                                 .Fields("des_plu0") = RTrim(Mid(BufDatos.BufTextos(bucle), 207, 25))
                                 .Fields("des_plux") = RTrim(Mid(BufDatos.BufTextos(bucle), 232, 25))
-                            
+
                             End If
-                            
+
                         Else
                             '.Fields("des_plu11") = Trim(Mid(BufDatos.BufTextos(Bucle), 7, 25))
                             '.Fields("des_plu12") = Trim(Mid(BufDatos.BufTextos(Bucle), 32, 25))
@@ -1980,7 +1981,7 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
                             '.Fields("des_plu18") = Trim(Mid(BufDatos.BufTextos(Bucle), 182, 25))
                             '.Fields("des_plu19") = Trim(Mid(BufDatos.BufTextos(Bucle), 207, 25))
                             '.Fields("des_plu20") = Trim(Mid(BufDatos.BufTextos(Bucle), 232, 25))
-                            
+
                             .Fields("des_plu11") = RTrim(Mid(BufDatos.BufTextos(bucle), 7, 25))
                             .Fields("des_plu12") = RTrim(Mid(BufDatos.BufTextos(bucle), 32, 25))
                             .Fields("des_plu13") = RTrim(Mid(BufDatos.BufTextos(bucle), 57, 25))
@@ -1991,7 +1992,7 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
                             .Fields("des_plu18") = RTrim(Mid(BufDatos.BufTextos(bucle), 182, 25))
                             .Fields("des_plu19") = RTrim(Mid(BufDatos.BufTextos(bucle), 207, 25))
                             .Fields("des_plu20") = RTrim(Mid(BufDatos.BufTextos(bucle), 232, 25))
-                            
+
                             If lAgora = False Then .Fields("tran_tx1") = ""
                         End If
                         If lAgora = False Then .Fields("tran_texto") = ""
@@ -2004,7 +2005,7 @@ Private Sub Procesa_Textos(BufDatos As Tipo_Buf)
                             .Update
                         End If
                     End If
-                    
+
                     If MyBloque = 0 Then
                         FrmBalGloDat.dato "OK -->  + TXT1. " & BufDatos.BufTextos(bucle)
                     Else
@@ -2030,9 +2031,9 @@ Private Sub Procesa_Vendedores(BufDatos As Tipo_Buf)
     Open App.Path & "\globaltouchno.dat" For Append As #Arch2
     lEsG = True
     For BGrande = 0 To 1
-                
+
         For bucle = 0 To BufDatos.NVendedores
-        
+
             If left(BufDatos.BufVendedores(bucle), 1) = "0" And BGrande = 1 Then
                 ' Alta
                 '"G" 1 (Literal) Record Type "G"
@@ -2050,7 +2051,7 @@ Private Sub Procesa_Vendedores(BufDatos As Tipo_Buf)
                             MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 10, 4)
                             MyVnd.estado = True
                             MyVnd.Descripcion = Mid(BufDatos.BufVendedores(bucle), 14, 30)
-                        
+
                         Else
                             MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 2, 2)
                             MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 4, 4)
@@ -2070,7 +2071,7 @@ Private Sub Procesa_Vendedores(BufDatos As Tipo_Buf)
                     End If
                     Resp = Alta_Vendedor(MyVnd)
                 Else
-                    Resp = 1000 ' no se gestionan vendedores a toda la tienda
+                    Resp = 1000    ' no se gestionan vendedores a toda la tienda
                 End If
                 If Resp <> 0 And Resp <> 1 And Resp <> 4 Then
                     Print #Arch2, "3" & BufDatos.BufVendedores(bucle)
@@ -2082,27 +2083,27 @@ Private Sub Procesa_Vendedores(BufDatos As Tipo_Buf)
             If left(BufDatos.BufVendedores(bucle), 1) = "1" And BGrande = 0 Then
                 ' Baja
                 'If Mid(BufDatos.BufVendedores(bucle), 2, 1) = "0" Then
-                    
-                        If Len(BufDatos.BufVendedores(bucle)) = 43 Then
-                            MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 2, 2)
-                            MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 4, 6)
-                            MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 10, 4)
-                        Else
-                            MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 2, 2)
-                            MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 4, 4)
-                            MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 8, 4)
-                        End If
-                    'MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 5, 4)
-                    'MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 3, 2)
-                    'MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 15, 2)
-                    'If MyVnd.NVendedor < 100 Then
-                    '    MyVnd.NVendedor = MyVnd.seccion * 100 + MyVnd.NVendedor
-                    'End If
-                    
-                    
-                    MyVnd.estado = True
-                    MyVnd.Descripcion = ""
-                    Resp = Baja_vendedor(MyVnd)
+
+                If Len(BufDatos.BufVendedores(bucle)) = 43 Then
+                    MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 2, 2)
+                    MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 4, 6)
+                    MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 10, 4)
+                Else
+                    MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 2, 2)
+                    MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 4, 4)
+                    MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 8, 4)
+                End If
+                'MyVnd.NVendedor = Mid(BufDatos.BufVendedores(bucle), 5, 4)
+                'MyVnd.seccion = Mid(BufDatos.BufVendedores(bucle), 3, 2)
+                'MyVnd.tecla = Mid(BufDatos.BufVendedores(bucle), 15, 2)
+                'If MyVnd.NVendedor < 100 Then
+                '    MyVnd.NVendedor = MyVnd.seccion * 100 + MyVnd.NVendedor
+                'End If
+
+
+                MyVnd.estado = True
+                MyVnd.Descripcion = ""
+                Resp = Baja_vendedor(MyVnd)
                 'Else
                 '    Resp = 1000 ' no se gestionan vendedores a toda la tienda
                 'End If
@@ -2118,8 +2119,8 @@ Private Sub Procesa_Vendedores(BufDatos As Tipo_Buf)
     Close #Arch2
 End Sub
 Private Sub Procesa_Paises(BufDatos As Tipo_Buf)
-    ' No hay función de altas/bajas en HydraTouch para
-    ' países, se hace directamente en la base
+' No hay función de altas/bajas en HydraTouch para
+' países, se hace directamente en la base
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim BGrande As Integer
@@ -2192,8 +2193,8 @@ Private Sub Procesa_Paises(BufDatos As Tipo_Buf)
     Base.Close
 End Sub
 Private Sub Procesa_Fichas(BufDatos As Tipo_Buf)
-    ' No hay función de altas/bajas en HydraTouch para
-    ' fichas, se hace directamente en la base
+' No hay función de altas/bajas en HydraTouch para
+' fichas, se hace directamente en la base
     Dim Arch2 As Integer
     Dim bucle As Integer
     Dim BGrande As Integer
@@ -2235,56 +2236,56 @@ Private Sub Procesa_Fichas(BufDatos As Tipo_Buf)
             'RSI sacrificio   116,20
             '"gap"            136,5
             'texto            141,20
-            
-            
+
+
             If left(BufDatos.BufFichas(bucle), 1) = "0" And BGrande = 1 Then
                 MyOK = True
                 'If IsNumeric(Mid(BufDatos.BufFichas(bucle), 2, 3)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 25, 1)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 26, 2)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 28, 1)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 50, 6)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 56, 3)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 59, 3)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 62, 3)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 65, 3)) And _
-                'IsNumeric(Mid(BufDatos.BufFichas(bucle), 68, 3)) Then
-'V0001IDENTIFICADOR FICHA1     lote ficha1               084084084   084        01/01/1902/02/19RSI DESPIECE        RSI SACRIFICIO      -----....................
-                    MyFicha.codigo = Val(Mid(BufDatos.BufFichas(bucle), 2, 3))
-                    MyFicha.Identificador = Mid(BufDatos.BufFichas(bucle), 5, 20)
-                    MyFicha.Categoria = Val(Mid(BufDatos.BufFichas(bucle), 25, 1))
-                    MyFicha.Edad = Val(Mid(BufDatos.BufFichas(bucle), 26, 2))
-                    MyFicha.Raza = Val(Mid(BufDatos.BufFichas(bucle), 28, 1))
-                    MyFicha.Sexo = Mid(BufDatos.BufFichas(bucle), 29, 1)
-                    MyFicha.lote = Mid(BufDatos.BufFichas(bucle), 30, 20)
-                    MyFicha.Peso = 0 'Mid(BufDatos.BufFichas(bucle), 50, 6)
-                    MyFicha.Cod_Crianza = Val(Mid(BufDatos.BufFichas(bucle), 56, 3))
-                    MyFicha.Cod_Despiece = Val(Mid(BufDatos.BufFichas(bucle), 59, 3))
-                    MyFicha.Cod_nacimiento = Val(Mid(BufDatos.BufFichas(bucle), 62, 3))
-                    MyFicha.Cod_Produccion = Val(Mid(BufDatos.BufFichas(bucle), 65, 3))
-                    MyFicha.Cod_Sacrificio = Val(Mid(BufDatos.BufFichas(bucle), 68, 3))
-                    MyFicha.Fecha_Despiece = Mid(BufDatos.BufFichas(bucle), 71, 8)
-                    MyFicha.Fecha_Nacimiento = Mid(BufDatos.BufFichas(bucle), 79, 8)
-                    MyFicha.Fecha_Sacrificio = Mid(BufDatos.BufFichas(bucle), 87, 8)
-                    MyFicha.RSI_Despiece = Mid(BufDatos.BufFichas(bucle), 95, 20)
-                    MyFicha.RSI_Sacrificio = Mid(BufDatos.BufFichas(bucle), 115, 20)
-                    MyFicha.texto = Mid(BufDatos.BufFichas(bucle), 140)
-                    On Error Resume Next
-                        DateSerial left(MyFicha.Fecha_Nacimiento, 2), Mid(MyFicha.Fecha_Nacimiento, 4, 2), Right(MyFicha.Fecha_Nacimiento, 2)
-                    If Err.Number <> 0 Then
-                        MyOK = False
-                    Else
-                        'DateSerial left(MyFicha.Fecha_Nacimiento, 2), Mid(MyFicha.Fecha_Nacimiento, 4, 2), Right(MyFicha.Fecha_Nacimiento, 2)
-                        'If Err.Number <> 0 Then
-                        '    MyOK = False
-                        'Else
-                            DateSerial left(MyFicha.Fecha_Sacrificio, 2), Mid(MyFicha.Fecha_Sacrificio, 4, 2), Right(MyFicha.Fecha_Sacrificio, 2)
-                            If Err.Number <> 0 Then MyOK = False
-                        'End If
-                    End If
-                    On Error GoTo 0
-                    'If (MyFicha.Cod_Crianza <> 0 Or MyFicha.Cod_nacimiento <> 0) And MyFicha.Cod_Produccion <> 0 Then MyOK = False
-                    'If MyFicha.Cod_Crianza = 0 And MyFicha.Cod_nacimiento = 0 And MyFicha.Cod_Produccion = 0 Then MyOK = False
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 25, 1)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 26, 2)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 28, 1)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 50, 6)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 56, 3)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 59, 3)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 62, 3)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 65, 3)) And _
+                 'IsNumeric(Mid(BufDatos.BufFichas(bucle), 68, 3)) Then
+                'V0001IDENTIFICADOR FICHA1     lote ficha1               084084084   084        01/01/1902/02/19RSI DESPIECE        RSI SACRIFICIO      -----....................
+                MyFicha.codigo = Val(Mid(BufDatos.BufFichas(bucle), 2, 3))
+                MyFicha.Identificador = Mid(BufDatos.BufFichas(bucle), 5, 20)
+                MyFicha.Categoria = Val(Mid(BufDatos.BufFichas(bucle), 25, 1))
+                MyFicha.Edad = Val(Mid(BufDatos.BufFichas(bucle), 26, 2))
+                MyFicha.Raza = Val(Mid(BufDatos.BufFichas(bucle), 28, 1))
+                MyFicha.Sexo = Mid(BufDatos.BufFichas(bucle), 29, 1)
+                MyFicha.lote = Mid(BufDatos.BufFichas(bucle), 30, 20)
+                MyFicha.Peso = 0    'Mid(BufDatos.BufFichas(bucle), 50, 6)
+                MyFicha.Cod_Crianza = Val(Mid(BufDatos.BufFichas(bucle), 56, 3))
+                MyFicha.Cod_Despiece = Val(Mid(BufDatos.BufFichas(bucle), 59, 3))
+                MyFicha.Cod_nacimiento = Val(Mid(BufDatos.BufFichas(bucle), 62, 3))
+                MyFicha.Cod_Produccion = Val(Mid(BufDatos.BufFichas(bucle), 65, 3))
+                MyFicha.Cod_Sacrificio = Val(Mid(BufDatos.BufFichas(bucle), 68, 3))
+                MyFicha.Fecha_Despiece = Mid(BufDatos.BufFichas(bucle), 71, 8)
+                MyFicha.Fecha_Nacimiento = Mid(BufDatos.BufFichas(bucle), 79, 8)
+                MyFicha.Fecha_Sacrificio = Mid(BufDatos.BufFichas(bucle), 87, 8)
+                MyFicha.RSI_Despiece = Mid(BufDatos.BufFichas(bucle), 95, 20)
+                MyFicha.RSI_Sacrificio = Mid(BufDatos.BufFichas(bucle), 115, 20)
+                MyFicha.texto = Mid(BufDatos.BufFichas(bucle), 140)
+                On Error Resume Next
+                DateSerial left(MyFicha.Fecha_Nacimiento, 2), Mid(MyFicha.Fecha_Nacimiento, 4, 2), Right(MyFicha.Fecha_Nacimiento, 2)
+                If Err.Number <> 0 Then
+                    MyOK = False
+                Else
+                    'DateSerial left(MyFicha.Fecha_Nacimiento, 2), Mid(MyFicha.Fecha_Nacimiento, 4, 2), Right(MyFicha.Fecha_Nacimiento, 2)
+                    'If Err.Number <> 0 Then
+                    '    MyOK = False
+                    'Else
+                    DateSerial left(MyFicha.Fecha_Sacrificio, 2), Mid(MyFicha.Fecha_Sacrificio, 4, 2), Right(MyFicha.Fecha_Sacrificio, 2)
+                    If Err.Number <> 0 Then MyOK = False
+                    'End If
+                End If
+                On Error GoTo 0
+                'If (MyFicha.Cod_Crianza <> 0 Or MyFicha.Cod_nacimiento <> 0) And MyFicha.Cod_Produccion <> 0 Then MyOK = False
+                'If MyFicha.Cod_Crianza = 0 And MyFicha.Cod_nacimiento = 0 And MyFicha.Cod_Produccion = 0 Then MyOK = False
                 'Else
                 '    MyOK = False
                 'End If
@@ -2313,7 +2314,7 @@ Private Sub Procesa_Fichas(BufDatos As Tipo_Buf)
                         !Raza = MyFicha.Raza
                         !fecha_sac = DateSerial(left(MyFicha.Fecha_Sacrificio, 2), Mid(MyFicha.Fecha_Sacrificio, 4, 2), Right(MyFicha.Fecha_Sacrificio, 2))
                         !Edad = MyFicha.Edad
-                        !Sexo = 0 'MyFicha.Sexo
+                        !Sexo = 0    'MyFicha.Sexo
                         !Peso = MyFicha.Peso / 10
                         !texto = MyFicha.texto
                         !fecha_nac = DateSerial(left(MyFicha.Fecha_Nacimiento, 2), Mid(MyFicha.Fecha_Nacimiento, 4, 2), Right(MyFicha.Fecha_Nacimiento, 2))
@@ -2361,8 +2362,8 @@ Private Sub Procesa_Fichas(BufDatos As Tipo_Buf)
 End Sub
 
 Public Sub Exporta_GlobalDat()
-    ' genera un global.dat con la información de la base
-    ' (incompleto)
+' genera un global.dat con la información de la base
+' (incompleto)
     Dim Base As dao.Database
     Dim Registro As dao.Recordset
     Dim RegAux As dao.Recordset
@@ -2374,161 +2375,161 @@ Public Sub Exporta_GlobalDat()
     Arch = FreeFile()
     Open App.Path & "\global.dat" For Output As #Arch
     Set Base = OpenDatabase(Base_General)
-        Set Registro = Base.OpenRecordset("select * from seccion where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    If Len(!descripcio) < 21 Then
-                        Buf = "00" & Format(!secc_maqui, "00") & "000000" & !descripcio & Space(21 - Len(!descripcio)) & Format(!codi_ident, "000")
+    Set Registro = Base.OpenRecordset("select * from seccion where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                If Len(!descripcio) < 21 Then
+                    Buf = "00" & Format(!secc_maqui, "00") & "000000" & !descripcio & Space(21 - Len(!descripcio)) & Format(!codi_ident, "000")
+                Else
+                    sParte = Mid(!descripcio, 1, 21)
+                    Buf = "00" & Format(!secc_maqui, "00") & "000000" & sParte & Format(!codi_ident, "000")
+                End If
+                Select Case !enviardatos
+                Case "GA"
+                    Buf = Buf & "1"
+                Case "SC10"
+                    Buf = Buf & "2"
+                Case Else
+                    Buf = Buf & "0"
+                End Select
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                .Movenext
+            Loop
+        End If
+    End With
+    Set Registro = Base.OpenRecordset("select * from equipos where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                Buf = "40" & Format(!codi_ident, "00") & Format(!numero_eqp, "00")
+                Select Case !modelo
+                Case 0
+                    Buf = Buf & "00" & !prog_eqp
+                Case 1
+                    Buf = Buf & "01" & !prog_eqp
+                Case 100
+                    Buf = Buf & "02" & Space(15)
+                End Select
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                .Movenext
+            Loop
+        End If
+    End With
+    Set Registro = Base.OpenRecordset("select * from articulo where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                Buf = "50" & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!Plu, "0000")
+                Buf = Buf & Format(!codi_sub, "0000") & Format(!codi_fam, "000")
+                If UsaEuro Then
+                    Buf = Buf & Format(!Euros * 100, "00000")
+                Else
+                    Buf = Buf & Format(!precio * (10 ^ decimales), "00000")
+                End If
+                Buf = Buf & !codi_pes & Format(!caducidad, "000") & "0" & Mid(Trim(!des_plu1), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu1), 1, 25)))
+                Buf = Buf & "00000" & Format(!tara, "00000") & !tipo_iva & Format(!grupo_conserv, "000")
+                Buf = Buf & Format(!Pref, "000") & Format(!Etq, "000") & Format(!fcb, "00")
+                If Not IsNull(!art_cb) Then
+                    'Buf = Buf & !art_cb & Space(12 - Len(!art_cb))
+                    If Len(Trim(!art_cb)) < 12 Then
+                        Buf = Buf & Trim(!art_cb) & Space(12 - Len(Trim(!art_cb)))
                     Else
-                        sParte = Mid(!descripcio, 1, 21)
-                        Buf = "00" & Format(!secc_maqui, "00") & "000000" & sParte & Format(!codi_ident, "000")
+                        Buf = Buf & Mid(!art_cb, 1, 12)
                     End If
-                    Select Case !enviardatos
-                        Case "GA"
-                            Buf = Buf & "1"
-                        Case "SC10"
-                            Buf = Buf & "2"
-                        Case Else
-                            Buf = Buf & "0"
-                    End Select
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    .Movenext
-                Loop
-            End If
-        End With
-        Set Registro = Base.OpenRecordset("select * from equipos where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    Buf = "40" & Format(!codi_ident, "00") & Format(!numero_eqp, "00")
-                    Select Case !modelo
-                        Case 0
-                            Buf = Buf & "00" & !prog_eqp
-                        Case 1
-                            Buf = Buf & "01" & !prog_eqp
-                        Case 100
-                            Buf = Buf & "02" & Space(15)
-                    End Select
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    .Movenext
-                Loop
-            End If
-        End With
-        Set Registro = Base.OpenRecordset("select * from articulo where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    Buf = "50" & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!Plu, "0000")
-                    Buf = Buf & Format(!codi_sub, "0000") & Format(!codi_fam, "000")
-                    If UsaEuro Then
-                        Buf = Buf & Format(!Euros * 100, "00000")
+                Else
+                    Buf = Buf & Space(12)
+                End If
+                Buf = Buf & Format(!ning, "00")
+                FrmBalGloDat.dato Buf
+                If Len(Buf) <> 92 Then
+
+                End If
+                Print #Arch, Buf
+
+                Buf = "Z" & Format(!codigo, "000000") & Mid(Trim(!des_plu2), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu2), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu3), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu3), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu4), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu4), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu5), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu5), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu6), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu6), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu7), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu7), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu8), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu8), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu9), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu9), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu0), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu0), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plux), 1, 25) & Space(25 - Len(Mid(Trim(!des_plux), 1, 25)))
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                Buf = "Y" & Format(!codigo, "000000") & Mid(Trim(!des_plu11), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu11), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu12), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu12), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu13), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu13), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu14), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu14), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu15), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu15), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu16), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu16), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu17), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu17), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu18), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu18), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu19), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu19), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu20), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu20), 1, 25)))
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                .Movenext
+            Loop
+        End If
+    End With
+    Set Registro = Base.OpenRecordset("select * from teclas where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                If IsNull(!numero_eqp) Then
+                    Set RegAux = Base.OpenRecordset("select codigo,codi_ident from articulo where borrado=false and codigo=" & !codigo)
+                    If Not RegAux.EOF Then
+                        Buf = "@00" & Format(RegAux!codi_ident, "00")
                     Else
-                        Buf = Buf & Format(!precio * (10 ^ decimales), "00000")
+                        Buf = "Z"
                     End If
-                    Buf = Buf & !codi_pes & Format(!caducidad, "000") & "0" & Mid(Trim(!des_plu1), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu1), 1, 25)))
-                    Buf = Buf & "00000" & Format(!tara, "00000") & !tipo_iva & Format(!grupo_conserv, "000")
-                    Buf = Buf & Format(!Pref, "000") & Format(!Etq, "000") & Format(!fcb, "00")
-                    If Not IsNull(!art_cb) Then
-                        'Buf = Buf & !art_cb & Space(12 - Len(!art_cb))
-                        If Len(Trim(!art_cb)) < 12 Then
-                            Buf = Buf & Trim(!art_cb) & Space(12 - Len(Trim(!art_cb)))
-                        Else
-                            Buf = Buf & Mid(!art_cb, 1, 12)
-                        End If
-                    Else
-                        Buf = Buf & Space(12)
-                    End If
-                    Buf = Buf & Format(!ning, "00")
-                    FrmBalGloDat.dato Buf
-                    If Len(Buf) <> 92 Then
-                        
-                    End If
-                    Print #Arch, Buf
-                    
-                    Buf = "Z" & Format(!codigo, "000000") & Mid(Trim(!des_plu2), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu2), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu3), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu3), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu4), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu4), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu5), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu5), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu6), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu6), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu7), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu7), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu8), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu8), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu9), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu9), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu0), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu0), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plux), 1, 25) & Space(25 - Len(Mid(Trim(!des_plux), 1, 25)))
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    Buf = "Y" & Format(!codigo, "000000") & Mid(Trim(!des_plu11), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu11), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu12), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu12), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu13), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu13), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu14), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu14), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu15), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu15), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu16), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu16), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu17), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu17), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu18), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu18), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu19), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu19), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu20), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu20), 1, 25)))
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    .Movenext
-                Loop
-            End If
-        End With
-        Set Registro = Base.OpenRecordset("select * from teclas where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    If IsNull(!numero_eqp) Then
-                        Set RegAux = Base.OpenRecordset("select codigo,codi_ident from articulo where borrado=false and codigo=" & !codigo)
-                        If Not RegAux.EOF Then
-                            Buf = "@00" & Format(RegAux!codi_ident, "00")
-                        Else
-                            Buf = "Z"
-                        End If
-                    Else
-                        Buf = "@01" & Format(!numero_eqp, "00")
-                    End If
-                    Buf = Buf & Format(!codi_tec, "000") & Format(!codigo, "000000") & Format(!Tabla, "00")
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    .Movenext
-                Loop
-            End If
-        End With
-        Set Registro = Base.OpenRecordset("select * from seccion where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    .Movenext
-                Loop
-            End If
-        End With
-        Set Registro = Base.OpenRecordset("select * from seccion where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    .Movenext
-                Loop
-            End If
-        End With
-        Registro.Close
+                Else
+                    Buf = "@01" & Format(!numero_eqp, "00")
+                End If
+                Buf = Buf & Format(!codi_tec, "000") & Format(!codigo, "000000") & Format(!Tabla, "00")
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                .Movenext
+            Loop
+        End If
+    End With
+    Set Registro = Base.OpenRecordset("select * from seccion where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                .Movenext
+            Loop
+        End If
+    End With
+    Set Registro = Base.OpenRecordset("select * from seccion where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                .Movenext
+            Loop
+        End If
+    End With
+    Registro.Close
     Base.Close
     Close #Arch
     Unload FrmBalGloDat
 End Sub
-    
+
 Public Sub Exporta_GlobalDat_Art(Base As dao.Database)
-    ' genera un global.dat con la información de la base
-    ' (incompleto)
-    'Dim base as dao.database
+' genera un global.dat con la información de la base
+' (incompleto)
+'Dim base as dao.database
     Dim Registro As dao.Recordset
     Dim RegAux As dao.Recordset
     Dim Arch As Integer
@@ -2540,87 +2541,87 @@ Public Sub Exporta_GlobalDat_Art(Base As dao.Database)
     Arch = FreeFile()
     Open App.Path & "\global.dat" For Output As #Arch
     CadenadeLog "Creado  archivo Global.dat para escritura..."
-        'Set Registro = Base.OpenRecordset("select * from articulo where ((borrado=false) and (tran_plu<>'*'))") 1.7.24
-        Set Registro = Base.OpenRecordset("select * from articulo where (isnull(tran_plu) or tran_plu<>" & Chr(34) & "*" & Chr(34) & " or isnull(tran_texto) or tran_texto<>" & Chr(34) & "*" & Chr(34) & " or isnull(tran_tx1) or tran_tx1<>" & Chr(34) & "*" & Chr(34) & ")")
-        
-        With Registro
-            CadenadeLog "Número de artículos modificados:" & CStr(Registro.Recordcount)
-            
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    'Buf = "50" & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!plu, "0000") 1.7.24
-                    'se consideran las bajas...
-                    If !borrado Then
-                        Buf = "51"
+    'Set Registro = Base.OpenRecordset("select * from articulo where ((borrado=false) and (tran_plu<>'*'))") 1.7.24
+    Set Registro = Base.OpenRecordset("select * from articulo where (isnull(tran_plu) or tran_plu<>" & Chr(34) & "*" & Chr(34) & " or isnull(tran_texto) or tran_texto<>" & Chr(34) & "*" & Chr(34) & " or isnull(tran_tx1) or tran_tx1<>" & Chr(34) & "*" & Chr(34) & ")")
+
+    With Registro
+        CadenadeLog "Número de artículos modificados:" & CStr(Registro.Recordcount)
+
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                'Buf = "50" & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!plu, "0000") 1.7.24
+                'se consideran las bajas...
+                If !borrado Then
+                    Buf = "51"
+                Else
+                    Buf = "50"
+                End If
+                Buf = Buf & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!Plu, "0000")
+                ''''''''''''''''''''''''''''
+
+                Buf = Buf & Format(!codi_sub, "0000") & Format(!codi_fam, "000")
+                If UsaEuro Then
+                    Buf = Buf & Format(!Euros * 100, "00000")
+                Else
+                    Buf = Buf & Format(!precio * (10 ^ decimales), "00000")
+                End If
+                Buf = Buf & !codi_pes & Format(!caducidad, "000") & "0" & Mid(Trim(!des_plu1), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu1), 1, 25)))
+                Buf = Buf & "00000" & Format(!tara, "00000") & !tipo_iva & Format(!grupo_conserv, "000")
+                Buf = Buf & Format(!Pref, "000") & Format(!Etq, "000") & Format(!fcb, "00")
+                If Not IsNull(!art_cb) Then
+                    'Buf = Buf & !art_cb & Space(12 - Len(!art_cb))
+                    If Len(Trim(!art_cb)) < 12 Then
+                        Buf = Buf & Trim(!art_cb) & Space(12 - Len(Trim(!art_cb)))
                     Else
-                        Buf = "50"
+                        Buf = Buf & Mid(!art_cb, 1, 12)
                     End If
-                    Buf = Buf & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!Plu, "0000")
-                    ''''''''''''''''''''''''''''
-                    
-                    Buf = Buf & Format(!codi_sub, "0000") & Format(!codi_fam, "000")
-                    If UsaEuro Then
-                        Buf = Buf & Format(!Euros * 100, "00000")
-                    Else
-                        Buf = Buf & Format(!precio * (10 ^ decimales), "00000")
-                    End If
-                    Buf = Buf & !codi_pes & Format(!caducidad, "000") & "0" & Mid(Trim(!des_plu1), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu1), 1, 25)))
-                    Buf = Buf & "00000" & Format(!tara, "00000") & !tipo_iva & Format(!grupo_conserv, "000")
-                    Buf = Buf & Format(!Pref, "000") & Format(!Etq, "000") & Format(!fcb, "00")
-                    If Not IsNull(!art_cb) Then
-                        'Buf = Buf & !art_cb & Space(12 - Len(!art_cb))
-                        If Len(Trim(!art_cb)) < 12 Then
-                            Buf = Buf & Trim(!art_cb) & Space(12 - Len(Trim(!art_cb)))
-                        Else
-                            Buf = Buf & Mid(!art_cb, 1, 12)
-                        End If
-                    Else
-                        Buf = Buf & Space(12)
-                    End If
-                    Buf = Buf & Format(!ning, "00")
-                    FrmBalGloDat.dato Buf
-                    If Len(Buf) <> 92 Then
-                        
-                    End If
-                    Print #Arch, Buf
-                    Buf = "Z" & Format(!codigo, "000000") & Mid(Trim(!des_plu2), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu2), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu3), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu3), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu4), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu4), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu5), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu5), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu6), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu6), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu7), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu7), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu8), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu8), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu9), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu9), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu0), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu0), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plux), 1, 25) & Space(25 - Len(Mid(Trim(!des_plux), 1, 25)))
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    Buf = "Y" & Format(!codigo, "000000") & Mid(Trim(!des_plu11), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu11), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu12), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu12), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu13), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu13), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu14), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu14), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu15), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu15), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu16), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu16), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu17), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu17), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu18), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu18), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu19), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu19), 1, 25)))
-                    Buf = Buf & Mid(Trim(!des_plu20), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu20), 1, 25)))
-                    FrmBalGloDat.dato Buf
-                    Print #Arch, Buf
-                    If TiendaActual = 999 Then
-                        .Edit
-                        !tran_plu = "*"
-                        !tran_texto = "*"
-                        !tran_tx1 = "*"
-                        .Update
-                    End If
-                    
-                    .Movenext
-                Loop
-            End If
-        End With
-        Registro.Close
+                Else
+                    Buf = Buf & Space(12)
+                End If
+                Buf = Buf & Format(!ning, "00")
+                FrmBalGloDat.dato Buf
+                If Len(Buf) <> 92 Then
+
+                End If
+                Print #Arch, Buf
+                Buf = "Z" & Format(!codigo, "000000") & Mid(Trim(!des_plu2), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu2), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu3), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu3), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu4), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu4), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu5), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu5), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu6), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu6), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu7), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu7), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu8), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu8), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu9), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu9), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu0), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu0), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plux), 1, 25) & Space(25 - Len(Mid(Trim(!des_plux), 1, 25)))
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                Buf = "Y" & Format(!codigo, "000000") & Mid(Trim(!des_plu11), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu11), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu12), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu12), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu13), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu13), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu14), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu14), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu15), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu15), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu16), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu16), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu17), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu17), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu18), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu18), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu19), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu19), 1, 25)))
+                Buf = Buf & Mid(Trim(!des_plu20), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu20), 1, 25)))
+                FrmBalGloDat.dato Buf
+                Print #Arch, Buf
+                If TiendaActual = 999 Then
+                    .Edit
+                    !tran_plu = "*"
+                    !tran_texto = "*"
+                    !tran_tx1 = "*"
+                    .Update
+                End If
+
+                .Movenext
+            Loop
+        End If
+    End With
+    Registro.Close
     'base.Close
 errglbart:
     If Err.Number <> 0 Then
@@ -2630,11 +2631,11 @@ errglbart:
     Close #Arch
     Unload FrmBalGloDat
 End Sub
-    
+
 Public Sub Exporta_GlobalDat_Art_todos(Base As dao.Database)
-    ' genera un global.dat con la información de la base
-    ' (incompleto)
-    'Dim base as dao.database
+' genera un global.dat con la información de la base
+' (incompleto)
+'Dim base as dao.database
     Dim Registro As dao.Recordset
     Dim RegAux As dao.Recordset
     Dim Arch As Integer
@@ -2643,114 +2644,114 @@ Public Sub Exporta_GlobalDat_Art_todos(Base As dao.Database)
     FrmBalGloDat.Show
     Arch = FreeFile()
     Open App.Path & "\global.dat" For Output As #Arch
-        Set Registro = Base.OpenRecordset("select * from articulo where borrado=false")
-        With Registro
-            If Not .EOF Then
-                .MoveFirst
-                Do Until .EOF
-                    Buf = "50" & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!Plu, "0000")
-                    Buf = Buf & Format(!codi_sub, "0000") & Format(!codi_fam, "000")
-                    If UsaEuro Then
-                        Buf = Buf & Format(!Euros * 100, "00000")
+    Set Registro = Base.OpenRecordset("select * from articulo where borrado=false")
+    With Registro
+        If Not .EOF Then
+            .MoveFirst
+            Do Until .EOF
+                Buf = "50" & Format(!codigo, "000000") & Format(!codi_ident, "00") & Format(!Plu, "0000")
+                Buf = Buf & Format(!codi_sub, "0000") & Format(!codi_fam, "000")
+                If UsaEuro Then
+                    Buf = Buf & Format(!Euros * 100, "00000")
+                Else
+                    Buf = Buf & Format(!precio * (10 ^ decimales), "00000")
+                End If
+                Buf = Buf & !codi_pes & Format(!caducidad, "000") & "0" & Mid(Trim(!des_plu1), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu1), 1, 25)))
+                Buf = Buf & "00000" & Format(!tara, "00000") & !tipo_iva & Format(!grupo_conserv, "000")
+                Buf = Buf & Format(!Pref, "000") & Format(!Etq, "000") & Format(!fcb, "00")
+
+                If Not IsNull(!art_cb) Then
+                    'Buf = Buf & !art_cb & Space(12 - Len(!art_cb))
+                    If Len(Trim(!art_cb)) < 12 Then
+                        Buf = Buf & Trim(!art_cb) & Space(12 - Len(Trim(!art_cb)))
                     Else
-                        Buf = Buf & Format(!precio * (10 ^ decimales), "00000")
+                        Buf = Buf & Mid(!art_cb, 1, 12)
                     End If
-                    Buf = Buf & !codi_pes & Format(!caducidad, "000") & "0" & Mid(Trim(!des_plu1), 1, 25) & Space(25 - Len(Mid(Trim(!des_plu1), 1, 25)))
-                    Buf = Buf & "00000" & Format(!tara, "00000") & !tipo_iva & Format(!grupo_conserv, "000")
-                    Buf = Buf & Format(!Pref, "000") & Format(!Etq, "000") & Format(!fcb, "00")
-                    
-                    If Not IsNull(!art_cb) Then
-                        'Buf = Buf & !art_cb & Space(12 - Len(!art_cb))
-                        If Len(Trim(!art_cb)) < 12 Then
-                            Buf = Buf & Trim(!art_cb) & Space(12 - Len(Trim(!art_cb)))
-                        Else
-                            Buf = Buf & Mid(!art_cb, 1, 12)
-                        End If
-                    Else
-                        Buf = Buf & Space(12)
-                    End If
-                    Buf = Buf & Format(!ning, "00")
-                    FrmBalGloDat.dato Buf
-                    If Len(Buf) <> 92 Then
-                        
-                    End If
-                    Print #Arch, Buf
-                    
-                    .Movenext
-                Loop
-            End If
-        End With
-        Registro.Close
+                Else
+                    Buf = Buf & Space(12)
+                End If
+                Buf = Buf & Format(!ning, "00")
+                FrmBalGloDat.dato Buf
+                If Len(Buf) <> 92 Then
+
+                End If
+                Print #Arch, Buf
+
+                .Movenext
+            Loop
+        End If
+    End With
+    Registro.Close
     'base.Close
     Close #Arch
     Unload FrmBalGloDat
 End Sub
-    
+
 
 Public Sub Alba_EnviaTiquetsPendientes(Euroscale_o_SC10 As Boolean, Optional MiFecha As Date)
-Dim db As Database
-Dim rst As Recordset
-Dim rstAux As Recordset
-' Cabecera
-Dim B1 As String
-Dim B2 As String
-Dim Codigo_mos As String
-Dim Codigo_bal As String
-Dim Codigo_ven As String
-Dim Cod_Bar As String
-Dim Lineas As String
-Dim precio As String
-Dim Tipo As String
-Dim Fecha As String
-Dim hora As String
-Dim LineaAnulada As String
-'********
-' Linea
-Dim Num_lin As String
-Dim Cod_Plu As String
-Dim Cod_Cod As String
-Dim Precio_Uni As String
-Dim Pes_Uni As String
-Dim Total As String
-Dim Signo As String
-Dim Tipo_Linea As String
-Dim Anulado As String
-'************
-Dim MiEnvio As String
-Dim nintentos As Integer
-Dim bucle As Integer
-Dim RegIVA As Recordset
-Dim MiTabla1 As String
-Dim MiTabla2 As String
-Dim Fichero1 As Integer
-Dim NombreTiquet As String
-Dim BufferLineas() As String
-Dim BufferLineasAD1() As String
-Dim MiCuentaLineas As Integer
-Dim BucleLineas As Integer
-Dim HayCabecera As Boolean
-Dim PrecioSinIVA As Double
-Dim PrecioConIVA As Double
-Dim BufferIVA As String
-Dim BufferIVA2 As String
-Dim MiIva(5) As Tipo_Grupo_IVA
-Dim BucleIVA As Integer
-Dim NombreF As Tipo_NombreTiquet
-Dim Fichero2 As Integer
-Dim nContAs As Integer
-Dim sVm As String
-Dim sVmS As String
-Dim sCadAd As String
-Dim scadAD1 As String
-Dim sCadfP As String
-Dim sTiqGen As String
-Dim sPes_Uni As String
-Dim sFactura As String
-Dim sParte As String
+    Dim db As Database
+    Dim rst As Recordset
+    Dim rstAux As Recordset
+    ' Cabecera
+    Dim B1 As String
+    Dim B2 As String
+    Dim Codigo_mos As String
+    Dim Codigo_bal As String
+    Dim Codigo_ven As String
+    Dim Cod_Bar As String
+    Dim Lineas As String
+    Dim precio As String
+    Dim Tipo As String
+    Dim Fecha As String
+    Dim hora As String
+    Dim LineaAnulada As String
+    '********
+    ' Linea
+    Dim Num_lin As String
+    Dim Cod_Plu As String
+    Dim Cod_Cod As String
+    Dim Precio_Uni As String
+    Dim Pes_Uni As String
+    Dim Total As String
+    Dim Signo As String
+    Dim Tipo_Linea As String
+    Dim Anulado As String
+    '************
+    Dim MiEnvio As String
+    Dim nintentos As Integer
+    Dim bucle As Integer
+    Dim RegIVA As Recordset
+    Dim MiTabla1 As String
+    Dim MiTabla2 As String
+    Dim Fichero1 As Integer
+    Dim NombreTiquet As String
+    Dim BufferLineas() As String
+    Dim BufferLineasAD1() As String
+    Dim MiCuentaLineas As Integer
+    Dim BucleLineas As Integer
+    Dim HayCabecera As Boolean
+    Dim PrecioSinIVA As Double
+    Dim PrecioConIVA As Double
+    Dim BufferIVA As String
+    Dim BufferIVA2 As String
+    Dim MiIva(5) As Tipo_Grupo_IVA
+    Dim BucleIVA As Integer
+    Dim NombreF As Tipo_NombreTiquet
+    Dim Fichero2 As Integer
+    Dim nContAs As Integer
+    Dim sVm As String
+    Dim sVmS As String
+    Dim sCadAd As String
+    Dim scadAD1 As String
+    Dim sCadfP As String
+    Dim sTiqGen As String
+    Dim sPes_Uni As String
+    Dim sFactura As String
+    Dim sParte As String
 
-'\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-Dim sSQL As String
-CadenadeLog "Traspaso Tiques Pendientes>"
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    Dim sSQL As String
+    CadenadeLog "Traspaso Tiques Pendientes>"
     If IsDate(MiFecha) And CStr(MiFecha) <> "0:00:00" Then
         sTiqGen = "tqgen" & Format(Day(MiFecha), "00")
         If Month(MiFecha) < 10 Then
@@ -2759,16 +2760,16 @@ CadenadeLog "Traspaso Tiques Pendientes>"
             sTiqGen = sTiqGen & Chr(Asc("A") + Month(MiFecha) - 10)
         End If
     Else
-    
+
         sTiqGen = "tqgen" & Format(Day(Now), "00")
         If Month(Now) < 10 Then
             sTiqGen = sTiqGen & CStr(Month(Now))
         Else
             sTiqGen = sTiqGen & Chr(Asc("A") + Month(Now) - 10)
         End If
-    
+
     End If
-    
+
     'Fichero1 = FreeFile()
     If Euroscale_o_SC10 Then
         MiTabla1 = "Cabecera"
@@ -2798,101 +2799,101 @@ CadenadeLog "Traspaso Tiques Pendientes>"
     ' /carga tipos de IVA
     '*******************
     If sParte = "" Then
-    sSQL = "SELECT * " & _
-           "FROM " & MiTabla1 & " " & _
-           "WHERE reserv3=" & Chr(34) & "NO" & Chr(34) & " or reserv3=" & Chr(34) & "--" & Chr(34) & " " & _
-           "ORDER BY val(nume)"
+        sSQL = "SELECT * " & _
+               "FROM " & MiTabla1 & " " & _
+               "WHERE reserv3=" & Chr(34) & "NO" & Chr(34) & " or reserv3=" & Chr(34) & "--" & Chr(34) & " " & _
+               "ORDER BY val(nume)"
     Else
-    db.Execute "update " & MiTabla1 & " set reserv3='NO' where d_fecha=" & sParte
-    sSQL = "SELECT * " & _
-           "FROM " & MiTabla1 & " " & _
-           "WHERE d_fecha=" & sParte & _
-           "ORDER BY val(nume)"
-    
+        db.Execute "update " & MiTabla1 & " set reserv3='NO' where d_fecha=" & sParte
+        sSQL = "SELECT * " & _
+               "FROM " & MiTabla1 & " " & _
+               "WHERE d_fecha=" & sParte & _
+               "ORDER BY val(nume)"
+
     End If
-    
+
     Set rst = db.OpenRecordset(sSQL)
     If Not rst.EOF Then
         rst.MoveFirst
         ' si no está enviada la cabecera, se envía
         Do Until rst.EOF
-        With rst
-            If !reserv3 = "NO" Or !reserv3 = "--" Then
-                HayCabecera = True
-                Codigo_mos = Format(Val(!seccion), "00")
-                Codigo_bal = Format(Val(!Balanza), "00")
-                Codigo_ven = Format(Val(!vended), "0000")
-                If Not IsNull(!factura) Then
-                    sFactura = !factura
-                Else
-                    sFactura = Space(25)
-                End If
-                If Len(sFactura) < 25 Then
-                    sFactura = sFactura & Space(25 - Len(sFactura))
-                End If
-                
-                If !codbar <> "" Then
-                    Cod_Bar = !codbar
-                Else
-                    Cod_Bar = Space(13)
-                End If
-                Lineas = Format(Val(!numlin), "000")
-                If !Importe >= 0 Then
-                    precio = !Importe
-                    precio = Quitar_Coma(precio, 8)
-                Else
-                    precio = (-1) * !Importe
-                    precio = "-" & Quitar_Coma(precio, 7)
-                End If
-                ' Tipo V -> venta red
-                ' Tipo L -> venta local
-                ' Tipo A -> venta anulado red
-                ' Tipo B -> venta anulado local
-                '************
-                ' de que tipo
-                ' 0 --> Venta
-                ' 1 --> Super
-                ' 2 --> Envasado
-                ' 3 --> Autoservicio
-                ' 4 --> Venta Local
-                ' 5 --> Super Local
-                ' 6 --> Envasado Local
-                ' 7 --> Autoservicio Local
-                ' 9 --> anulados....
-                '*************************
-                If (!STPETIC And 64) = 0 Then
-                    
-                    If (!STPETIC And 1) = 0 Then
-                        Tipo = "V"
+            With rst
+                If !reserv3 = "NO" Or !reserv3 = "--" Then
+                    HayCabecera = True
+                    Codigo_mos = Format(Val(!seccion), "00")
+                    Codigo_bal = Format(Val(!Balanza), "00")
+                    Codigo_ven = Format(Val(!vended), "0000")
+                    If Not IsNull(!factura) Then
+                        sFactura = !factura
                     Else
-                        Tipo = "L"
+                        sFactura = Space(25)
                     End If
-                    
-                    
-                Else
-                    
-                    If (!STPETIC And 1) = 0 Then
-                        Tipo = "A"
+                    If Len(sFactura) < 25 Then
+                        sFactura = sFactura & Space(25 - Len(sFactura))
+                    End If
+
+                    If !codbar <> "" Then
+                        Cod_Bar = !codbar
                     Else
-                        Tipo = "B"
+                        Cod_Bar = Space(13)
                     End If
-                    
-                End If
-                NombreF.Balanza = Val(!Balanza)
-                Select Case !TYPTIC
+                    Lineas = Format(Val(!numlin), "000")
+                    If !Importe >= 0 Then
+                        precio = !Importe
+                        precio = Quitar_Coma(precio, 8)
+                    Else
+                        precio = (-1) * !Importe
+                        precio = "-" & Quitar_Coma(precio, 7)
+                    End If
+                    ' Tipo V -> venta red
+                    ' Tipo L -> venta local
+                    ' Tipo A -> venta anulado red
+                    ' Tipo B -> venta anulado local
+                    '************
+                    ' de que tipo
+                    ' 0 --> Venta
+                    ' 1 --> Super
+                    ' 2 --> Envasado
+                    ' 3 --> Autoservicio
+                    ' 4 --> Venta Local
+                    ' 5 --> Super Local
+                    ' 6 --> Envasado Local
+                    ' 7 --> Autoservicio Local
+                    ' 9 --> anulados....
+                    '*************************
+                    If (!STPETIC And 64) = 0 Then
+
+                        If (!STPETIC And 1) = 0 Then
+                            Tipo = "V"
+                        Else
+                            Tipo = "L"
+                        End If
+
+
+                    Else
+
+                        If (!STPETIC And 1) = 0 Then
+                            Tipo = "A"
+                        Else
+                            Tipo = "B"
+                        End If
+
+                    End If
+                    NombreF.Balanza = Val(!Balanza)
+                    Select Case !TYPTIC
                     Case 1
                         NombreF.Modo = 1
                     Case 2
                         NombreF.Modo = 2
                     Case 3
                         NombreF.Modo = 3
-                        
+
                         If Tipo = "A" Or Tipo = "B" Then
                             Tipo = "F"
                         Else
                             Tipo = "E"
                         End If
-                        
+
                     Case 4
                         NombreF.Modo = 4
                     Case 5
@@ -2903,235 +2904,235 @@ CadenadeLog "Traspaso Tiques Pendientes>"
                         NombreF.Modo = 3
                     Case 8
                         NombreF.Modo = 4
-                End Select
-                NombreF.cliente = Val(!codcli)
-                NombreF.vendedor = Val(!vended)
-                NombreF.seccion = Val(!seccion)
-                NombreF.tiquet = Val(!nume)
-                Fecha = Format(!Fecha, "ddmmyyyy")
-                hora = Format(!hora, "hhmm")
-                ' Enviar la cabecera
-                MiEnvio = "H" & _
-                Codigo_mos & Codigo_bal & Codigo_ven & Cod_Bar & _
-                Lineas & precio & Tipo & Fecha & hora
-                ' Envia la cadena
-                sCadAd = ""
-                'If Dir(App.Path & "\nscli.txt") <> "" Then
-                '    If IsNull(!numlote) Then
-                '        sCadAd = Space(20)
-                '    Else
-                '        sCadAd = Trim(!numlote) & Space(20 - Len(Trim(!numlote)))
-                '    End If
-                '    sCadAd = sCadAd & Format(Val(!codcli), "000000")
-                'Else
+                    End Select
+                    NombreF.cliente = Val(!codcli)
+                    NombreF.vendedor = Val(!vended)
+                    NombreF.seccion = Val(!seccion)
+                    NombreF.tiquet = Val(!nume)
+                    Fecha = Format(!Fecha, "ddmmyyyy")
+                    hora = Format(!hora, "hhmm")
+                    ' Enviar la cabecera
+                    MiEnvio = "H" & _
+                              Codigo_mos & Codigo_bal & Codigo_ven & Cod_Bar & _
+                              Lineas & precio & Tipo & Fecha & hora
+                    ' Envia la cadena
                     sCadAd = ""
-                'End If
-                sCadfP = ""
-                'If Dir(App.Path & "\nsfpa.txt") <> "" Then
-                '    If IsNull(!tipoPago) Then
-                '        sCadfP = "0"
-                '    Else
-                '        sCadfP = CStr(!tipoPago)
-                '    End If
-                'Else
-                '    sCadfP = ""
-                'End If
-                'If Dir(App.Path & "\nsfpa.txt") <> "" Then 'begines...
+                    'If Dir(App.Path & "\nscli.txt") <> "" Then
+                    '    If IsNull(!numlote) Then
+                    '        sCadAd = Space(20)
+                    '    Else
+                    '        sCadAd = Trim(!numlote) & Space(20 - Len(Trim(!numlote)))
+                    '    End If
+                    '    sCadAd = sCadAd & Format(Val(!codcli), "000000")
+                    'Else
+                    sCadAd = ""
+                    'End If
+                    sCadfP = ""
+                    'If Dir(App.Path & "\nsfpa.txt") <> "" Then
+                    '    If IsNull(!tipoPago) Then
+                    '        sCadfP = "0"
+                    '    Else
+                    '        sCadfP = CStr(!tipoPago)
+                    '    End If
+                    'Else
+                    '    sCadfP = ""
+                    'End If
+                    'If Dir(App.Path & "\nsfpa.txt") <> "" Then 'begines...
                     If IsNull(!tipoPago) Then
                         sCadfP = "00"
                     Else
                         sCadfP = Format(!tipoPago, "00")
                     End If
-                'Else
-                '    sCadfP = ""
-                'End If
-                
-                ReDim BufferLineas(1)
-                BufferLineas(0) = MiEnvio & sCadAd & "0" '& Format(TiendaActual, "00")
-                MiCuentaLineas = 1
-                NombreTiquet = ObtenNombre(NombreF)
-                nContAs = 0
-                sVm = "0"
-                If InStr(1, NombreTiquet, "*") <> 0 Then
-                    For MiCuentaLineas = 1 To Len(NombreTiquet)
-                        If Mid(NombreTiquet, MiCuentaLineas, 1) = "*" Then
-                            nContAs = nContAs + 1
-                            
-                        End If
-                    Next MiCuentaLineas
-                Else
-                    sVm = Codigo_bal
-                    sVmS = Codigo_mos
-                End If
-                If nContAs <> 0 Then
-                    NombreTiquet = Mid(NombreTiquet, nContAs + 1)
-                    'If Dir(App.Path & "\transpluasc.exe") <> "" Then
-                    '    sVm = Mid(Cod_Bar, nContAs + 1, 2)
                     'Else
+                    '    sCadfP = ""
+                    'End If
+
+                    ReDim BufferLineas(1)
+                    BufferLineas(0) = MiEnvio & sCadAd & "0"    '& Format(TiendaActual, "00")
+                    MiCuentaLineas = 1
+                    NombreTiquet = ObtenNombre(NombreF)
+                    nContAs = 0
+                    sVm = "0"
+                    If InStr(1, NombreTiquet, "*") <> 0 Then
+                        For MiCuentaLineas = 1 To Len(NombreTiquet)
+                            If Mid(NombreTiquet, MiCuentaLineas, 1) = "*" Then
+                                nContAs = nContAs + 1
+
+                            End If
+                        Next MiCuentaLineas
+                    Else
+                        sVm = Codigo_bal
+                        sVmS = Codigo_mos
+                    End If
+                    If nContAs <> 0 Then
+                        NombreTiquet = Mid(NombreTiquet, nContAs + 1)
+                        'If Dir(App.Path & "\transpluasc.exe") <> "" Then
+                        '    sVm = Mid(Cod_Bar, nContAs + 1, 2)
+                        'Else
                         sVm = Mid(Cod_Bar, nContAs + 1, nContAs)
-                    'End If
-                    sVmS = Mid(Cod_Bar, 3, 2)
-                    NombreTiquet = sVm & NombreTiquet
-                    'ATENCIÓN HIPERUSERA:
-                    ' SE PONE COMO SECCIÓN LOS 2 DÍGITOS SIGUIENTES EN EL CÓDIGO DE BARRAS A LA
-                    ' bALANZA rELATIVA
-                    'If Dir(App.Path & "\transpluasc.exe") <> "" Or Dir(App.Path & "\_transpluasc.exe") <> "" Then
-                    '    NombreTiquet = Mid(NombreTiquet, 1, 1) & Mid(Cod_Bar, 3, 2) & Mid(NombreTiquet, 4)
-                    'End If
-                    '''''''''''''''''''''
-                End If
-                '//Inco ver si se activa cabecera If Dir(App.Path & "\sncli.txt") = "" Then
-                    MiCuentaLineas = 0
-                '//End If
-                'NombreTiquet = Codigo_bal & Format(!nume, "0000") & "." & _
-                'Left(fecha, 2) & Hex$(Val(Mid(fecha, 3, 2)))
-                NombreTiquet = NombreTiquet & "." & left(Fecha, 2) & Hex$(Val(Mid(Fecha, 3, 2)))
-                rst.Edit
-                .Fields("reserv3") = "--"
-                .Update
-            Else
-                HayCabecera = False
-            End If
-        End With
-        If sParte = "" Then
-        Set rstAux = db.OpenRecordset("select * from " & MiTabla2 & " where reserv3=" & _
-        Chr(34) & "NO" & Chr(34) & " and nume=" & Chr(34) & rst!nume & Chr(34) & _
-                 " and numbal=" & rst!Balanza & " and date=" & Chr(34) & rst!Fecha & Chr(34) _
-                 & " and hour=" & Chr(34) & rst!hora & Chr(34) _
-                 & " and typtic=" & Chr(34) & rst!TYPTIC & Chr(34) & " order by val(numlin), lincan") 'c2f 1.6.12 - 1
-        Else
-        Set rstAux = db.OpenRecordset("select * from " & MiTabla2 & _
-                 " where nume=" & Chr(34) & rst!nume & Chr(34) & _
-                 " and numbal=" & rst!Balanza & " and date=" & Chr(34) & rst!Fecha & Chr(34) _
-                 & " and hour=" & Chr(34) & rst!hora & Chr(34) _
-                 & " and typtic=" & Chr(34) & rst!TYPTIC & Chr(34) & " order by val(numlin), lincan") 'c2f 1.6.12 - 1
-        
-        End If
-                 
-        With rstAux
-            If Not .EOF Then
-                .MoveFirst
-                 'For BucleIVA = 0 To 4
-                 '   MiIva(BucleIVA).Base = 0
-                 '   MiIva(BucleIVA).Importe = 0
-                 'Next BucleIVA
-                 Do Until .EOF
-                    With rstAux
-                        Num_lin = Format(!numlin, "000")
-                        Cod_Plu = Format(CodigoToPlu(!Code), "0000")
-                        Cod_Cod = Format(!Code, "000000")
-                        'If !price >= 0 Then
-                        '    Precio_Uni = !price
-                        '    Precio_Uni = Quitar_Coma(Precio_Uni, 8)
-                        'Else
-                        '    Precio_Uni = (-1) * !price
-                        '    Precio_Uni = (-1) * Quitar_Coma(Precio_Uni, 7)
                         'End If
-                        'If !IVA >= 0 And !IVA < 5 Then
-                        '    MiIva(!IVA).Importe = MiIva(!IVA).Importe + !amount
-                        '    MiIva(!IVA).Base = MiIva(!IVA).Base + PRsinIVA(!amount, MiIva(!IVA).porcentaje)
-                        'End If
-                        If !units = 0 Then
-                            sPes_Uni = Format(Abs(!Weight), "000.000")
-                            'If !Weight >= 0 Then
-                            '    Pes_Uni = !Weight
-                            '    Pes_Uni = Quitar_Coma(Pes_Uni, 7)
-                            'Else
-                            '    Pes_Uni = (-1) * !Weight
-                            '    Pes_Uni = "-" & Quitar_Coma(Pes_Uni, 6)
-                            'End If
-                            Tipo_Linea = "P"
-                        Else
-                            sPes_Uni = Format(Abs(!units), "000.000")
-                            'If !units > 0 Then
-                            '    Pes_Uni = !units
-                            '    Pes_Uni = Quitar_Coma(Pes_Uni, 7)
-                            'Else
-                            '    Pes_Uni = (-1) * !units
-                            '   Pes_Uni = "-" & Quitar_Coma(Pes_Uni, 6)
-                            'End If
-                            Tipo_Linea = "U"
-                        End If
-                        If !amount < 0 Then
-                            'Total = (-1) * !amount
-                            'Total = "-" & Quitar_Coma(Total, 7)
-                            Signo = "-"
-                        Else
-                            'Total = !amount
-                            'Total = Quitar_Coma(Total, 8)
-                            Signo = "+"
-                        End If
-                        If !lincan = 0 Then
-                            LineaAnulada = "N"
-                        Else
-                            LineaAnulada = "S"
-                        End If
-                        '*MiEnvio = "L" & Codigo_mos & _
-                        '*Cod_Bar & Num_lin & Cod_Plu & Precio_Uni & Pes_Uni & Total & Signo & _
-                        '*Tipo_Linea & LineaAnulada & Cod_Cod & Format(Val(!IVA), "0")
-                        ' Envia la cadena
-                        'Format(rst!nume, "0000") & Num_lin & Codigo_mos & Format(Val(sVm), "00") & Format(Val(!Vendor), "0000")
-                        scadAD1 = ""
+                        sVmS = Mid(Cod_Bar, 3, 2)
+                        NombreTiquet = sVm & NombreTiquet
+                        'ATENCIÓN HIPERUSERA:
+                        ' SE PONE COMO SECCIÓN LOS 2 DÍGITOS SIGUIENTES EN EL CÓDIGO DE BARRAS A LA
+                        ' bALANZA rELATIVA
                         'If Dir(App.Path & "\transpluasc.exe") <> "" Or Dir(App.Path & "\_transpluasc.exe") <> "" Then
-                        'MiEnvio = Format(rst!nume, "0000") & Num_lin & sVmS & "0" & sVm & Format(Val(!Vendor), "0000") & _
-                        '        Cod_Bar & Cod_Cod & Cod_Plu & Format(Abs(rst!Importe), "00000.00") & Format(Abs(!Price), "00000.00") & _
-                        '        sPes_Uni & Format(Abs(!amount), "00000.00") & Signo & Tipo_Linea & LineaAnulada & Mid(CStr(!IVA), 1, 1) & _
-                        '        Tipo & Format(!D_FECHA, "ddmmyyyy") & Format(!D_HORA, "hhmm")
-                       '
-                        'Else
+                        '    NombreTiquet = Mid(NombreTiquet, 1, 1) & Mid(Cod_Bar, 3, 2) & Mid(NombreTiquet, 4)
+                        'End If
+                        '''''''''''''''''''''
+                    End If
+                    '//Inco ver si se activa cabecera If Dir(App.Path & "\sncli.txt") = "" Then
+                    MiCuentaLineas = 0
+                    '//End If
+                    'NombreTiquet = Codigo_bal & Format(!nume, "0000") & "." & _
+                     'Left(fecha, 2) & Hex$(Val(Mid(fecha, 3, 2)))
+                    NombreTiquet = NombreTiquet & "." & left(Fecha, 2) & Hex$(Val(Mid(Fecha, 3, 2)))
+                    rst.Edit
+                    .Fields("reserv3") = "--"
+                    .Update
+                Else
+                    HayCabecera = False
+                End If
+            End With
+            If sParte = "" Then
+                Set rstAux = db.OpenRecordset("select * from " & MiTabla2 & " where reserv3=" & _
+                                              Chr(34) & "NO" & Chr(34) & " and nume=" & Chr(34) & rst!nume & Chr(34) & _
+                                            " and numbal=" & rst!Balanza & " and date=" & Chr(34) & rst!Fecha & Chr(34) _
+                                            & " and hour=" & Chr(34) & rst!hora & Chr(34) _
+                                            & " and typtic=" & Chr(34) & rst!TYPTIC & Chr(34) & " order by val(numlin), lincan")    'c2f 1.6.12 - 1
+            Else
+                Set rstAux = db.OpenRecordset("select * from " & MiTabla2 & _
+                                            " where nume=" & Chr(34) & rst!nume & Chr(34) & _
+                                            " and numbal=" & rst!Balanza & " and date=" & Chr(34) & rst!Fecha & Chr(34) _
+                                            & " and hour=" & Chr(34) & rst!hora & Chr(34) _
+                                            & " and typtic=" & Chr(34) & rst!TYPTIC & Chr(34) & " order by val(numlin), lincan")    'c2f 1.6.12 - 1
+
+            End If
+
+            With rstAux
+                If Not .EOF Then
+                    .MoveFirst
+                    'For BucleIVA = 0 To 4
+                    '   MiIva(BucleIVA).Base = 0
+                    '   MiIva(BucleIVA).Importe = 0
+                    'Next BucleIVA
+                    Do Until .EOF
+                        With rstAux
+                            Num_lin = Format(!numlin, "000")
+                            Cod_Plu = Format(CodigoToPlu(!Code), "0000")
+                            Cod_Cod = Format(!Code, "000000")
+                            'If !price >= 0 Then
+                            '    Precio_Uni = !price
+                            '    Precio_Uni = Quitar_Coma(Precio_Uni, 8)
+                            'Else
+                            '    Precio_Uni = (-1) * !price
+                            '    Precio_Uni = (-1) * Quitar_Coma(Precio_Uni, 7)
+                            'End If
+                            'If !IVA >= 0 And !IVA < 5 Then
+                            '    MiIva(!IVA).Importe = MiIva(!IVA).Importe + !amount
+                            '    MiIva(!IVA).Base = MiIva(!IVA).Base + PRsinIVA(!amount, MiIva(!IVA).porcentaje)
+                            'End If
+                            If !units = 0 Then
+                                sPes_Uni = Format(Abs(!Weight), "000.000")
+                                'If !Weight >= 0 Then
+                                '    Pes_Uni = !Weight
+                                '    Pes_Uni = Quitar_Coma(Pes_Uni, 7)
+                                'Else
+                                '    Pes_Uni = (-1) * !Weight
+                                '    Pes_Uni = "-" & Quitar_Coma(Pes_Uni, 6)
+                                'End If
+                                Tipo_Linea = "P"
+                            Else
+                                sPes_Uni = Format(Abs(!units), "000.000")
+                                'If !units > 0 Then
+                                '    Pes_Uni = !units
+                                '    Pes_Uni = Quitar_Coma(Pes_Uni, 7)
+                                'Else
+                                '    Pes_Uni = (-1) * !units
+                                '   Pes_Uni = "-" & Quitar_Coma(Pes_Uni, 6)
+                                'End If
+                                Tipo_Linea = "U"
+                            End If
+                            If !amount < 0 Then
+                                'Total = (-1) * !amount
+                                'Total = "-" & Quitar_Coma(Total, 7)
+                                Signo = "-"
+                            Else
+                                'Total = !amount
+                                'Total = Quitar_Coma(Total, 8)
+                                Signo = "+"
+                            End If
+                            If !lincan = 0 Then
+                                LineaAnulada = "N"
+                            Else
+                                LineaAnulada = "S"
+                            End If
+                            '*MiEnvio = "L" & Codigo_mos & _
+                             '*Cod_Bar & Num_lin & Cod_Plu & Precio_Uni & Pes_Uni & Total & Signo & _
+                             '*Tipo_Linea & LineaAnulada & Cod_Cod & Format(Val(!IVA), "0")
+                            ' Envia la cadena
+                            'Format(rst!nume, "0000") & Num_lin & Codigo_mos & Format(Val(sVm), "00") & Format(Val(!Vendor), "0000")
+                            scadAD1 = ""
+                            'If Dir(App.Path & "\transpluasc.exe") <> "" Or Dir(App.Path & "\_transpluasc.exe") <> "" Then
+                            'MiEnvio = Format(rst!nume, "0000") & Num_lin & sVmS & "0" & sVm & Format(Val(!Vendor), "0000") & _
+                             '        Cod_Bar & Cod_Cod & Cod_Plu & Format(Abs(rst!Importe), "00000.00") & Format(Abs(!Price), "00000.00") & _
+                             '        sPes_Uni & Format(Abs(!amount), "00000.00") & Signo & Tipo_Linea & LineaAnulada & Mid(CStr(!IVA), 1, 1) & _
+                             '        Tipo & Format(!D_FECHA, "ddmmyyyy") & Format(!D_HORA, "hhmm")
+                            '
+                            'Else
                             'ver MaIllan
                             MiEnvio = Format(rst!nume, "00000") & Num_lin & sVmS & sVm & Format(Val(!Vendor), "0000") & _
-                                    Cod_Bar & Cod_Cod & Cod_Plu & Format(Abs(rst!Importe), "00000.00") & Format(Abs(!Price), "00000.00") & _
-                                    sPes_Uni & Format(Abs(!amount), "00000.00") & Signo & Tipo_Linea & LineaAnulada & Mid(CStr(!IVA), 1, 1) & _
-                                    Tipo & Format(!D_FECHA, "ddmmyyyy") & Format(!D_HORA, "hhmm") & Format(TiendaActual, "00")
+                                      Cod_Bar & Cod_Cod & Cod_Plu & Format(Abs(rst!Importe), "00000.00") & Format(Abs(!Price), "00000.00") & _
+                                      sPes_Uni & Format(Abs(!amount), "00000.00") & Signo & Tipo_Linea & LineaAnulada & Mid(CStr(!IVA), 1, 1) & _
+                                      Tipo & Format(!D_FECHA, "ddmmyyyy") & Format(!D_HORA, "hhmm") & Format(TiendaActual, "00")
                             If Dir(App.Path & "\fichalote.txt") <> "" Then
                                 scadAD1 = Format(Val(!reserv1), "0000")
                             End If
-                        'End If
-                        MiEnvio = sin_Coma(MiEnvio)
-                        ReDim Preserve BufferLineas(MiCuentaLineas + 1)
-                        ReDim Preserve BufferLineasAD1(MiCuentaLineas + 1)
-                        BufferLineas(MiCuentaLineas) = MiEnvio
-                        BufferLineasAD1(MiCuentaLineas) = scadAD1
-                        MiCuentaLineas = MiCuentaLineas + 1
-                        rstAux.Edit
-                        .Fields("reserv3") = "SI"
-                        .Update
-                        .Movenext
-                    End With
-                 Loop
-                 
-                 If HayCabecera Then
-                     'Fichero1 = FreeFile()
-                     On Error GoTo 0
-                     'Open App.Path & "\tiquet.buffer" For Output As #Fichero1
-                     'If lFichGen = True Then
+                            'End If
+                            MiEnvio = sin_Coma(MiEnvio)
+                            ReDim Preserve BufferLineas(MiCuentaLineas + 1)
+                            ReDim Preserve BufferLineasAD1(MiCuentaLineas + 1)
+                            BufferLineas(MiCuentaLineas) = MiEnvio
+                            BufferLineasAD1(MiCuentaLineas) = scadAD1
+                            MiCuentaLineas = MiCuentaLineas + 1
+                            rstAux.Edit
+                            .Fields("reserv3") = "SI"
+                            .Update
+                            .Movenext
+                        End With
+                    Loop
+
+                    If HayCabecera Then
+                        'Fichero1 = FreeFile()
+                        On Error GoTo 0
+                        'Open App.Path & "\tiquet.buffer" For Output As #Fichero1
+                        'If lFichGen = True Then
                         Fichero2 = FreeFile()
                         Open App.Path & "\" & sTiqGen For Append As #Fichero2
-                     'End If
-                     For BucleLineas = 0 To MiCuentaLineas - 1
-                        'Print #Fichero1, BufferLineas(BucleLineas) & sCadAd & sCadfP & BufferLineasAD1(BucleLineas)
-                        'If lFichGen = True Then
-                            Print #Fichero2, BufferLineas(BucleLineas) & sCadAd & "0" & BufferLineasAD1(BucleLineas) & sCadfP & sFactura
                         'End If
-                     Next BucleLineas
-                     'Close #Fichero1
-                     'If lFichGen = True Then
+                        For BucleLineas = 0 To MiCuentaLineas - 1
+                            'Print #Fichero1, BufferLineas(BucleLineas) & sCadAd & sCadfP & BufferLineasAD1(BucleLineas)
+                            'If lFichGen = True Then
+                            Print #Fichero2, BufferLineas(BucleLineas) & sCadAd & "0" & BufferLineasAD1(BucleLineas) & sCadfP & sFactura
+                            'End If
+                        Next BucleLineas
+                        'Close #Fichero1
+                        'If lFichGen = True Then
                         Close #Fichero2
-                     'End If
-                     'frmEpelsa.LblGA.Caption = Format(Now, "hh:mm:ss") & " " & CargaCadena(905) & " " & Cod_Bar
-                     'FileCopy App.Path & "\tiquet.buffer", App.Path & "\" & NombreTiquet
-                     'FileCopy App.Path & "\tiquet.buffer", var.PathExpor & "\" & NombreTiquet
-                 
-                 End If
-                 
-            Else
-                rst.Edit
-                rst.Fields("reserv3") = "SI"
-                rst.Update
-            End If
-        End With
-        rst.Movenext
+                        'End If
+                        'frmEpelsa.LblGA.Caption = Format(Now, "hh:mm:ss") & " " & CargaCadena(905) & " " & Cod_Bar
+                        'FileCopy App.Path & "\tiquet.buffer", App.Path & "\" & NombreTiquet
+                        'FileCopy App.Path & "\tiquet.buffer", var.PathExpor & "\" & NombreTiquet
+
+                    End If
+
+                Else
+                    rst.Edit
+                    rst.Fields("reserv3") = "SI"
+                    rst.Update
+                End If
+            End With
+            rst.Movenext
         Loop
     End If
     db.Close
@@ -3139,13 +3140,13 @@ CadenadeLog "Traspaso Tiques Pendientes>"
 ErrorPath:
     MsgBox "Error al acceder a " & App.Path
 End Sub
-    
+
 Public Function sin_Coma(ByVal MiCadena As String) As String
 
-    ' *****************
-    ' Esta función sustituye
-    ' el caracter "," (coma) por
-    ' el caracter "." (punto)
+' *****************
+' Esta función sustituye
+' el caracter "," (coma) por
+' el caracter "." (punto)
     Dim bucle As Integer
     Dim Buffer As String
     Buffer = ""

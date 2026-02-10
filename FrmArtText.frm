@@ -1,6 +1,6 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.ocx"
-Object = "{3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0"; "RICHtx32.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
+Object = "{3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0"; "RICHTX32.OCX"
 Begin VB.Form FrmArtText 
    Caption         =   "Textos de Artículos"
    ClientHeight    =   6450
@@ -362,7 +362,6 @@ Begin VB.Form FrmArtText
       _ExtentY        =   6165
       _Version        =   393217
       BorderStyle     =   0
-      Enabled         =   -1  'True
       Appearance      =   0
       AutoVerbMenu    =   -1  'True
       TextRTF         =   $"FrmArtText.frx":0000
@@ -377,24 +376,25 @@ Begin VB.Form FrmArtText
       _ExtentY        =   6165
       _Version        =   393217
       BorderStyle     =   0
+      Enabled         =   -1  'True
       Appearance      =   0
       AutoVerbMenu    =   -1  'True
-      TextRTF         =   $"FrmArtText.frx":00AE
+      TextRTF         =   $"FrmArtText.frx":00C9
    End
    Begin VB.ComboBox Combo3 
       Height          =   315
-      ItemData        =   "FrmArtText.frx":015C
+      ItemData        =   "FrmArtText.frx":0192
       Left            =   6480
-      List            =   "FrmArtText.frx":016F
+      List            =   "FrmArtText.frx":01A5
       TabIndex        =   10
       Top             =   360
       Width           =   1695
    End
    Begin VB.ComboBox Combo2 
       Height          =   315
-      ItemData        =   "FrmArtText.frx":01B5
+      ItemData        =   "FrmArtText.frx":01EB
       Left            =   8520
-      List            =   "FrmArtText.frx":01CB
+      List            =   "FrmArtText.frx":0201
       TabIndex        =   9
       Top             =   360
       Width           =   1695
@@ -551,12 +551,12 @@ Private Sub Me_Init()
     ReDim CT_Left(Me.Controls.Count)
     ReDim CT_Width(Me.Controls.Count)
     ReDim CT_Height(Me.Controls.Count)
-    Dim K, l As Integer
+    Dim K, L As Integer
     For bucle = 0 To Me.Controls.Count - 1
         On Error Resume Next
         ct_top(bucle) = Me.Controls(bucle).top
         CT_Left(bucle) = Me.Controls(bucle).left
-        
+
         CT_Width(bucle) = Me.Controls(bucle).Width
         CT_Height(bucle) = Me.Controls(bucle).Height
         On Error GoTo 0
@@ -568,27 +568,27 @@ Private Sub Me_Init()
     ChkT(4).Value = vbUnchecked
     nIndexT = 0
 
-#If BALSAM = True Then
-    ChkT(0).Visible = False
-    ChkT(0).Enabled = False
-    ChkT(1).Visible = False
-    ChkT(1).Enabled = False
-    ChkT(2).Visible = False
-    ChkT(2).Enabled = False
-    ChkT(3).Visible = False
-    ChkT(3).Enabled = False
-    ChkT(4).Visible = False
-    ChkT(4).Enabled = False
-    nIndexT = 1
-#Else
-    If Dir(App.Path & "\5l.txt") <> "" Then
-        For bucle = 0 To 4
-            ChkT(bucle).Visible = False
-            ChkT(bucle).Enabled = False
-            
-        Next bucle
-    End If
-#End If
+    #If BALSAM = True Then
+        ChkT(0).Visible = False
+        ChkT(0).Enabled = False
+        ChkT(1).Visible = False
+        ChkT(1).Enabled = False
+        ChkT(2).Visible = False
+        ChkT(2).Enabled = False
+        ChkT(3).Visible = False
+        ChkT(3).Enabled = False
+        ChkT(4).Visible = False
+        ChkT(4).Enabled = False
+        nIndexT = 1
+    #Else
+        If Dir(App.Path & "\5l.txt") <> "" Then
+            For bucle = 0 To 4
+                ChkT(bucle).Visible = False
+                ChkT(bucle).Enabled = False
+
+            Next bucle
+        End If
+    #End If
 
 End Sub
 Private Sub Me_Resize()
@@ -607,10 +607,10 @@ Private Sub Me_Resize()
         '
         RelW = Me.Height / Me_Height
         If TypeName(Me.Controls(bucle)) <> "TextBox" _
-        And TypeName(Me.Controls(bucle)) <> "CommandButton" _
-        And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
-        And TypeName(Me.Controls(bucle)) <> "RichTextBox" _
-        Then
+           And TypeName(Me.Controls(bucle)) <> "CommandButton" _
+           And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
+           And TypeName(Me.Controls(bucle)) <> "RichTextBox" _
+           Then
             Me.Controls(bucle).Height = RelW * CT_Height(bucle)
             CT_Height(bucle) = Me.Controls(bucle).Height
         Else
@@ -636,7 +636,7 @@ Private Sub CambiarIdioma()
     Command1(1).Caption = CargaCadena(7)
     CmdBorrar.Caption = CargaCadena(38)
     CmdGuardar.Caption = CargaCadena(287)
-    CmdConvert.Caption = "Convert." 'CargaCadena(539)
+    CmdConvert.Caption = "Convert."    'CargaCadena(539)
     FrmArtText.Caption = "Textos Artículos."
     Lista.ColumnHeaders(1).TexT = CargaCadena(69)
     Lista.ColumnHeaders(2).TexT = CargaCadena(68)
@@ -644,31 +644,31 @@ Private Sub CambiarIdioma()
 
 End Sub
 Private Sub Refresca_porCodigo()
-    
+
     Dim Registro As New RecordNet
     Dim MiNumero As Long
     Dim nC As Integer
-    
+
     If Not (IsNumeric(tXTcODIGO.TexT)) Then Exit Sub
     MiNumero = tXTcODIGO.TexT
-   
+
     If Option1(0).Value Then
         Registro.OpenRecordset ("select codi_ident from articulo where borrado=false and codigo=" & Val(tXTcODIGO.TexT))
     Else
         Registro.OpenRecordset ("select codi_ident from articulo where borrado=false and plu=" & Val(tXTcODIGO.TexT) & " and codi_ident=" & Combo1.TexT)
-        
+
     End If
     With Registro
         If .EOF Then
             ''dar de alta artículo...
-            
+
             If Option1(0).Value = True Then
                 LblInfo.Caption = CargaCadena(218)
             Else
                 LblInfo.Caption = CargaCadena(221)
             End If
             'tXTcODIGO.SetFocus
-            
+
         Else
             For nC = 0 To Combo1.ListCount - 1
                 Combo1.ListIndex = nC
@@ -696,48 +696,48 @@ NoHay:
         End If
     End With
 
-        
+
 End Sub
 
 Private Sub Chk1_Click()
-Dim nf As Integer
-If Chk1.Value Then
-    nf = FreeFile()
-    Open App.Path & "\crlf.on" For Output As #nf
-    Close #nf
-Else
-    If Dir(App.Path & "\crlf.on") <> "" Then
-        Kill App.Path & "\crlf.on"
+    Dim nf As Integer
+    If Chk1.Value Then
+        nf = FreeFile()
+        Open App.Path & "\crlf.on" For Output As #nf
+        Close #nf
+    Else
+        If Dir(App.Path & "\crlf.on") <> "" Then
+            Kill App.Path & "\crlf.on"
+        End If
     End If
-End If
 End Sub
 
 Private Sub ChkT_Click(Index As Integer)
-Dim n As Integer
+    Dim n As Integer
 
-If Dir(App.Path & "\5l.txt") <> "" Then Exit Sub
+    If Dir(App.Path & "\5l.txt") <> "" Then Exit Sub
 
-If lEnC = False Then
-    lEnC = True
-    For n = 0 To 5
-        ChkT(n).Value = vbUnchecked
-    Next n
-    'For n = 0 To 5
-    '    If n = Index Then
-    '        'ChkT(n).Value = vbChecked
-    '    Else
-    '        ChkT(n).Value = vbUnchecked
-    '    End If
-    'Next n
-    ChkT(Index).Value = vbChecked
-    nIndexT = Index
-    Refresca_Datos_Texto
-    lEnC = False
-End If
+    If lEnC = False Then
+        lEnC = True
+        For n = 0 To 5
+            ChkT(n).Value = vbUnchecked
+        Next n
+        'For n = 0 To 5
+        '    If n = Index Then
+        '        'ChkT(n).Value = vbChecked
+        '    Else
+        '        ChkT(n).Value = vbUnchecked
+        '    End If
+        'Next n
+        ChkT(Index).Value = vbChecked
+        nIndexT = Index
+        Refresca_Datos_Texto
+        lEnC = False
+    End If
 End Sub
 
 Private Sub CmdB_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 3
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & "<b>" & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -768,29 +768,29 @@ End Sub
 
 ''''''''''''''''''''''''''''''''
 Private Sub Cmdconvert_Click()
-Dim old_start As Integer
-Dim old_length As Integer
-Dim nC, nX As Integer
-Dim sT As String
-Dim lSelU As Boolean
-Dim lSelB As Boolean
-Dim lSelI As Boolean
-Dim i As Integer
-Dim fifo As Integer
-Dim lifo As Integer
-  
-'Options:
-'+H              add an HTML header and footer
-'+G              add a generator Metatag
-'+T="MyTitle"    add a title (only works if +H is used)
-'+CR             add a carraige return after all <br>s
-'+I              keep html codes intact
-'+F=X            default font size (blanks out any changes to this size - saves on space)
-'-FF             ignore font faces
+    Dim old_start As Integer
+    Dim old_length As Integer
+    Dim nC, nX As Integer
+    Dim st As String
+    Dim lSelU As Boolean
+    Dim lSelB As Boolean
+    Dim lSelI As Boolean
+    Dim i As Integer
+    Dim fifo As Integer
+    Dim lifo As Integer
+
+    'Options:
+    '+H              add an HTML header and footer
+    '+G              add a generator Metatag
+    '+T="MyTitle"    add a title (only works if +H is used)
+    '+CR             add a carraige return after all <br>s
+    '+I              keep html codes intact
+    '+F=X            default font size (blanks out any changes to this size - saves on space)
+    '-FF             ignore font faces
 
     ''''
     RTB.TexT = ""
-    
+
     '''''''''''''''''''''''''''''''''''''''''''
     ''RTB1.TexT = Replace(RTB1.TexT, " ", " ~")
     'sT = rtf2html3(RTB1.TextRTF, "-FF")
@@ -806,9 +806,9 @@ Dim lifo As Integer
     'RTB.TexT = sT
     'Exit Sub
     '''''''''''''''''''''''''''''''''''''''''''''
-    
+
     If Len(RTB1.TexT) = 0 Then Exit Sub
-    sT = ""
+    st = ""
     lSelU = False
     lSelB = False
     lSelI = False
@@ -818,146 +818,146 @@ Dim lifo As Integer
     For nC = 1 To Len(RTB1.TexT)
         RTB1.SelStart = nC
         RTB1.SelLength = 1
-        If Mid(RTB1.TexT, nC, 1) <> Chr(13) Then 'And Mid(RTB1.TexT, nC, 1) <> " " Then 'Mid(RTB1.TexT, nC, 1) <> Chr(13) And Mid(RTB1.TexT, nC, 1) <> Chr(10) Then
-            
+        If Mid(RTB1.TexT, nC, 1) <> Chr(13) Then    'And Mid(RTB1.TexT, nC, 1) <> " " Then 'Mid(RTB1.TexT, nC, 1) <> Chr(13) And Mid(RTB1.TexT, nC, 1) <> Chr(10) Then
+
             If ((RTB1.SelUnderline) And lSelU = False) Or ((RTB1.SelBold) And lSelB = False) Or ((RTB1.SelItalic) And lSelI = False) Then
                 If (RTB1.SelUnderline) And lSelU = False Then
-                    sT = sT & "<u>"
+                    st = st & "<u>"
                     lSelU = True
                     fifo = fifo + 4
                 End If
                 If (RTB1.SelBold) And lSelB = False Then
-                    sT = sT & "<b>"
+                    st = st & "<b>"
                     lSelB = True
                     fifo = fifo + 2
                 End If
                 If (RTB1.SelItalic) And lSelI = False Then
-                    sT = sT & "<i>"
+                    st = st & "<i>"
                     lSelI = True
                     fifo = fifo + 1
                 End If
-                sT = sT & Mid(RTB1.TexT, nC, 1)
+                st = st & Mid(RTB1.TexT, nC, 1)
             Else
-'fifo
-'<u>  <b>  <i>
-' 0    0    0                0
-' 0    0    1   </i>         1
-' 0    1    0   </b>         2
-' 0    1    1   </i></b>     3
-' 1    0    0   </u>         4
-' 1    0    1   </i></u>     5
-' 1    1    0   </b></u>     6
-' 1    1    1   </i></b></u> 7
-            
-                sT = sT & Mid(RTB1.TexT, nC, 1)
+                'fifo
+                '<u>  <b>  <i>
+                ' 0    0    0                0
+                ' 0    0    1   </i>         1
+                ' 0    1    0   </b>         2
+                ' 0    1    1   </i></b>     3
+                ' 1    0    0   </u>         4
+                ' 1    0    1   </i></u>     5
+                ' 1    1    0   </b></u>     6
+                ' 1    1    1   </i></b></u> 7
+
+                st = st & Mid(RTB1.TexT, nC, 1)
                 If fifo = 7 Then
                     'Do While lSelU = True Or lSelB = True Or lSelI = True
-                        If (lSelI And RTB1.SelItalic = False) Or (lSelI And nC = nX) Then
-                            sT = sT & "</i>"
-                            lSelI = False
-                            fifo = fifo - 1
-                        End If
-                        If (lSelB And RTB1.SelBold = False) Or (lSelB And nC = nX) Then
-                            sT = sT & "</b>"
-                            lSelB = False
-                            fifo = fifo - 2
-                        End If
-                        If (lSelU And RTB1.SelUnderline = False) Or (lSelU And nC = nX) Then
-                            sT = sT & "</u>"
-                            lSelU = False
-                            fifo = fifo - 4
-                        End If
+                    If (lSelI And RTB1.SelItalic = False) Or (lSelI And nC = nX) Then
+                        st = st & "</i>"
+                        lSelI = False
+                        fifo = fifo - 1
+                    End If
+                    If (lSelB And RTB1.SelBold = False) Or (lSelB And nC = nX) Then
+                        st = st & "</b>"
+                        lSelB = False
+                        fifo = fifo - 2
+                    End If
+                    If (lSelU And RTB1.SelUnderline = False) Or (lSelU And nC = nX) Then
+                        st = st & "</u>"
+                        lSelU = False
+                        fifo = fifo - 4
+                    End If
                     'Loop
                     'fifo = 0
                 Else
-                        If (lSelI And RTB1.SelItalic = False) Or (lSelI And nC = nX) Then
-                            'sT = sT & "</i>"
-                            lSelI = False
-                        End If
-                        If (lSelB And RTB1.SelBold = False) Or (lSelB And nC = nX) Then
-                            'sT = sT & "</b>"
-                            lSelB = False
-                        End If
-                        If (lSelU And RTB1.SelUnderline = False) Or (lSelU And nC = nX) Then
-                            'sT = sT & "</u>"
-                            lSelU = False
-                        End If
+                    If (lSelI And RTB1.SelItalic = False) Or (lSelI And nC = nX) Then
+                        'sT = sT & "</i>"
+                        lSelI = False
+                    End If
+                    If (lSelB And RTB1.SelBold = False) Or (lSelB And nC = nX) Then
+                        'sT = sT & "</b>"
+                        lSelB = False
+                    End If
+                    If (lSelU And RTB1.SelUnderline = False) Or (lSelU And nC = nX) Then
+                        'sT = sT & "</u>"
+                        lSelU = False
+                    End If
                 End If
                 Select Case fifo
                 Case 1
                     If lSelI = False Then
                         fifo = fifo - 1
-                        sT = sT & "</i>"
+                        st = st & "</i>"
                         GoTo finSelect
                     End If
                 Case 2
                     If lSelB = False Then
                         fifo = fifo - 2
-                        sT = sT & "</b>"
+                        st = st & "</b>"
                         GoTo finSelect
                     End If
-                       '<u>  <b>  <i>
-                Case 3 ' 0    1    1   </i></b>     3
+                    '<u>  <b>  <i>
+                Case 3    ' 0    1    1   </i></b>     3
                     If lSelI = False And lSelB = False Then
                         fifo = fifo - 3
-                        sT = sT & "</i></b>"
+                        st = st & "</i></b>"
                         GoTo finSelect
                     Else
                         If lSelI = False Then
                             fifo = fifo - 1
-                            sT = sT & "</i>"
+                            st = st & "</i>"
                             GoTo finSelect
                         End If
                         If lSelB = False Then
                             fifo = fifo - 2
-                            sT = sT & "</b>"
+                            st = st & "</b>"
                             GoTo finSelect
                         End If
                     End If
                 Case 4
                     If lSelU = False Then
                         fifo = fifo - 4
-                        sT = sT & "</u>"
+                        st = st & "</u>"
                         GoTo finSelect
                     End If
-                       '<u>  <b>  <i>
-                Case 5 ' 1    0    1   </i></u>     5
+                    '<u>  <b>  <i>
+                Case 5    ' 1    0    1   </i></u>     5
                     If lSelI = False And lSelU = False Then
                         fifo = fifo - 5
-                        sT = sT & "</i></u>"
+                        st = st & "</i></u>"
                         GoTo finSelect
                     Else
                         If lSelI = False Then
                             fifo = fifo - 1
-                            sT = sT & "</i>"
+                            st = st & "</i>"
                             GoTo finSelect
                         End If
                         If lSelU = False Then
                             fifo = fifo - 4
-                            sT = sT & "</u>"
+                            st = st & "</u>"
                             GoTo finSelect
                         End If
                     End If
-                
-                Case 6 ' 1    1    0   </b></u>     6
+
+                Case 6    ' 1    1    0   </b></u>     6
                     If lSelB = False And lSelU = False Then
                         fifo = fifo - 6
-                        sT = sT & "</b></u>"
+                        st = st & "</b></u>"
                         GoTo finSelect
                     Else
                         If lSelB = False Then
                             fifo = fifo - 4
-                            sT = sT & "</b>"
+                            st = st & "</b>"
                             GoTo finSelect
                         End If
                         If lSelU = False Then
                             fifo = fifo - 2
-                            sT = sT & "</u>"
+                            st = st & "</u>"
                             GoTo finSelect
                         End If
                     End If
-                
-                Case 7 ' 1    1    1   </i></b></u> 7
+
+                Case 7    ' 1    1    1   </i></b></u> 7
                     'If lSelI = False And lSelB = False And lSelU = False Then
                     '    fifo = fifo - 7
                     '    sT = sT & "</i></b></u>"
@@ -995,80 +995,80 @@ Dim lifo As Integer
                     '    End If
                     '
                     'End If
-                
+
                 End Select
 finSelect:
-                
+
             End If
         Else
             'If Mid(RTB1.TexT, nC, 1) = Chr(13) Then
-                sT = sT & "<br>"
+            st = st & "<br>"
             'Else
             '    sT = sT & " "
             'End If
         End If
     Next nC
-    
-    sT = Replace(sT, "<u><u>", "")
-    sT = Replace(sT, "<b><b>", "")
-    sT = Replace(sT, "<i><i>", "")
-    sT = Replace(sT, "</u></u>", "</u>")
-    sT = Replace(sT, "</b></b>", "</b>")
-    sT = Replace(sT, "</i></i>", "</i>")
-    sT = Replace(sT, "<br><br>", "<br>")
-    
-    sT = Replace(sT, "<br>" & Chr(10) & "<u>", "<br><u>")
-    sT = Replace(sT, "<br>" & Chr(10) & "<b>", "<br><b>")
-    sT = Replace(sT, "<br>" & Chr(10) & "<i>", "<br><i>")
-    
-    sT = Replace(sT, "<br><u>" & Chr(10), "<br><u>")
-    sT = Replace(sT, "<br><b>" & Chr(10), "<br><b>")
-    sT = Replace(sT, "<br><i>" & Chr(10), "<br><i>")
-    
-    If Right(sT, 4) = "<br>" Then
-        sT = Mid(sT, 1, Len(sT) - 4)
+
+    st = Replace(st, "<u><u>", "")
+    st = Replace(st, "<b><b>", "")
+    st = Replace(st, "<i><i>", "")
+    st = Replace(st, "</u></u>", "</u>")
+    st = Replace(st, "</b></b>", "</b>")
+    st = Replace(st, "</i></i>", "</i>")
+    st = Replace(st, "<br><br>", "<br>")
+
+    st = Replace(st, "<br>" & Chr(10) & "<u>", "<br><u>")
+    st = Replace(st, "<br>" & Chr(10) & "<b>", "<br><b>")
+    st = Replace(st, "<br>" & Chr(10) & "<i>", "<br><i>")
+
+    st = Replace(st, "<br><u>" & Chr(10), "<br><u>")
+    st = Replace(st, "<br><b>" & Chr(10), "<br><b>")
+    st = Replace(st, "<br><i>" & Chr(10), "<br><i>")
+
+    If Right(st, 4) = "<br>" Then
+        st = Mid(st, 1, Len(st) - 4)
     End If
-    
-    If Len(sT) > 1 Then
+
+    If Len(st) > 1 Then
         On Error GoTo sigueAA
-        If Mid(sT, Len(sT) - 4, 5) = "<br>" & Chr(10) Then
-            sT = Mid(sT, 1, Len(sT) - 5)
+        If Mid(st, Len(st) - 4, 5) = "<br>" & Chr(10) Then
+            st = Mid(st, 1, Len(st) - 5)
             'sT = Mid(sT, 1, Len(sT) - 5) & Chr(10)
         End If
-        
-        
-        If Mid(sT, Len(sT) - 6, 7) = "<br><u>" Then
-            sT = Mid(sT, 1, Len(sT) - 6) & "<u>"
+
+
+        If Mid(st, Len(st) - 6, 7) = "<br><u>" Then
+            st = Mid(st, 1, Len(st) - 6) & "<u>"
         End If
-        If Mid(sT, Len(sT) - 6, 7) = "<br><b>" Then
-            sT = Mid(sT, 1, Len(sT) - 6) & "<b>"
+        If Mid(st, Len(st) - 6, 7) = "<br><b>" Then
+            st = Mid(st, 1, Len(st) - 6) & "<b>"
         End If
-        If Mid(sT, Len(sT) - 6, 7) = "<br><i>" Then
-            sT = Mid(sT, 1, Len(sT) - 6) & "<i>"
+        If Mid(st, Len(st) - 6, 7) = "<br><i>" Then
+            st = Mid(st, 1, Len(st) - 6) & "<i>"
         End If
 sigueAA:
-    
+
     End If
-    
+
     'sT = Replace(sT, Chr(10), "")
     'sT = Replace(sT, "<br>", vbLf)
-    sT = Replace(sT, "<br>", "")
+    st = Replace(st, "<br>", "")
     If Chk1.Value = vbUnchecked Then
-        sT = Replace(sT, Chr(10), "")
+        st = Replace(st, Chr(10), "")
     End If
-    sT = Replace(sT, Chr(13) & Chr(10), Chr(10))
-    
-    
+    st = Replace(st, Chr(13) & Chr(10), Chr(10))
+
+
     'RTB.TexT = Trim(LblInfo.Caption) & vbCrLf & sT
-    RTB.TexT = sT
+    RTB.TexT = st
 End Sub
 
 Private Sub CmdGuardar_Click()
-Call Guarda_Texto
+    Call Guarda_Texto
 End Sub
 
 Private Sub CmdK_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 3
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & "<i>" & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -1081,7 +1081,7 @@ End Sub
 
 
 Private Sub CmdNB_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 4
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & "</b>" & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -1095,7 +1095,7 @@ End Sub
 
 
 Private Sub cmdNK_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 4
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & "</i>" & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -1112,11 +1112,11 @@ Private Sub CmdNS_Click()
     RTB1.SelUnderline = False
     RTB1.SelBold = False
     RTB1.SelItalic = False
-    
+
 End Sub
 
 Private Sub CmdU_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 3
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & "<u>" & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -1128,7 +1128,7 @@ Dim ntmp As Integer
 End Sub
 
 Private Sub CmdNU_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 4
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & "</u>" & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -1140,7 +1140,7 @@ Dim ntmp As Integer
 End Sub
 
 Private Sub CmdCR_Click()
-Dim ntmp As Integer
+    Dim ntmp As Integer
     ntmp = RTB.SelStart + 1
     If RTB.SelStart > 0 Then
         RTB.TexT = Mid(RTB.TexT, 1, RTB.SelStart) & Chr(10) & Mid(RTB.TexT, RTB.SelStart + 1)
@@ -1165,12 +1165,12 @@ Private Sub Combo1_Click()
 End Sub
 
 Private Sub Combo3_Click()
-       RTB.Font.name = Trim(Combo3.TexT)
-       RTB.Font.size = Combo2.TexT
+    RTB.Font.name = Trim(Combo3.TexT)
+    RTB.Font.size = Combo2.TexT
 End Sub
 Private Sub Combo2_Click()
-       RTB.Font.name = Trim(Combo3.TexT)
-       RTB.Font.size = Combo2.TexT
+    RTB.Font.name = Trim(Combo3.TexT)
+    RTB.Font.size = Combo2.TexT
 End Sub
 
 Private Sub Command1_Click(Index As Integer)
@@ -1215,7 +1215,7 @@ Private Sub Form_Load()
     End If
 End Sub
 Private Function Refresca_Combo() As Boolean
-    
+
     Dim Registro As New RecordNet
     Dim Retorno As Boolean
     Retorno = True
@@ -1241,16 +1241,16 @@ Private Function Refresca_Combo() As Boolean
             Retorno = False
         End If
     End With
- 
+
     Refresca_Combo = Retorno
 
 End Function
 Private Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     Dim Miorden As String
-    
-    
+
+
     If sMyOrder = "" Then
         If Option1(0).Value = True Then
             Miorden = "codigo"
@@ -1262,7 +1262,7 @@ Private Sub Refresca_Datos()
     End If
 
     Lista.ListItems.Clear
-  
+
     Registro.OpenRecordset ("select codigo,plu,des_plu1,codi_ident from articulo where borrado=false and codi_ident=" & Val(Combo1.TexT) & " order by " & Miorden)
     If sMyOrder <> "" Then
         sLastOrder = sMyOrder
@@ -1273,7 +1273,7 @@ Private Sub Refresca_Datos()
         If Not .EOF Then
             .MoveFirst
             Do Until .EOF
-                Lista.ListItems.Add Elementos, , .Fields("codigo") '''
+                Lista.ListItems.Add Elementos, , .Fields("codigo")    '''
                 Lista.ListItems(Elementos).SubItems(1) = .Fields("plu")
                 Lista.ListItems(Elementos).SubItems(2) = .Fields("des_plu1")
                 If Elementos = 1 Then
@@ -1286,9 +1286,9 @@ Private Sub Refresca_Datos()
             Refresca_Item
         End If
     End With
-    
+
     Set Registro = Nothing
-    
+
 End Sub
 
 Private Sub Refresca_Datos_Texto()
@@ -1296,10 +1296,10 @@ Private Sub Refresca_Datos_Texto()
     Dim mBase As dao.Database
     Dim Miorden As String
     Dim i As Integer
-    
+
     If lInicio Then Exit Sub
     If Not (IsNumeric(tXTcODIGO.TexT)) Then Exit Sub
-    
+
     sTEXTO = ""
     RTB.TexT = ""
     If Option1(0).Value = True Then
@@ -1309,9 +1309,9 @@ Private Sub Refresca_Datos_Texto()
     End If
 
     Ini = 0
-    
+
     Set mBase = AbrirBase
-    
+
     If nIndexT = 0 Then
         'Set Registro = mBase.OpenRecordset("select * from articulo where borrado=false and " & Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
         Set Registro = mBase.OpenRecordset("select * from articulo where borrado=false and codigo=" & sCodigoG)  'Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
@@ -1345,14 +1345,14 @@ Private Sub Refresca_Datos_Texto()
 sigue:
                     On Error GoTo 0
                 Next i
-                
+
             End If
         End With
-        
+
         Set Registro = Nothing
-        
+
         Set Registro = mBase.OpenRecordset("select * from lintxt2040 where mostrador=" & CStr(Val(Combo1.TexT)) & " and " & Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
-    
+
         With Registro
             If Not .EOF Then
                 For i = 21 To 40
@@ -1365,43 +1365,43 @@ sigue1:
                 Next i
             End If
         End With
-    
+
         Registro.Close
         Set Registro = Nothing
-        
+
     Else
-    
+
         'Registro.OpenRecordset ("select * from articulo where borrado=false and " & Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
-    
+
         'With Registro
         '    If Not .EOF Then
         '        RTB.TexT = Trim(.Fields("des_plu1")) & vbCrLf
         '    End If
         'End With
-        
+
         'Set Registro = Nothing
-        
+
         Set Registro = mBase.OpenRecordset("select * from text15 where mostrador=" & CStr(Val(Combo1.TexT)) & " and " & Miorden & "=" & CStr(Val(tXTcODIGO.TexT)))
-    
+
         With Registro
             If Not .EOF Then
                 If Not IsNull(Trim(.Fields("text" & CStr(nIndexT)))) Then
                     'If Asc(Trim(.Fields("text" & CStr(nIndexT)))) <> 0 Then
-                        RTB.TexT = RTB.TexT & Trim(.Fields("text" & CStr(nIndexT)))
+                    RTB.TexT = RTB.TexT & Trim(.Fields("text" & CStr(nIndexT)))
                     'End If
                 End If
             End If
         End With
         Registro.Close
         Set Registro = Nothing
-        
+
     End If
-    
+
     mBase.Close
     Set mBase = Nothing
-    
+
     sTEXTO = RTB.TexT
-    
+
 End Sub
 
 Private Sub Guarda_Texto()
@@ -1412,20 +1412,20 @@ Private Sub Guarda_Texto()
     Dim sRTB As String
     Dim Base As dao.Database
     Dim L2040 As Boolean
-    
+
     On Error GoTo finGuarda
-    
+
     sSecG = Trim(Combo1.TexT)
-    
-    
+
+
     sRTB = RTB.TexT
-    
-    
+
+
     Set Base = AbrirBase
-    
+
     If nIndexT = 0 Then
-    
-            
+
+
         'If lNewArt Then
         '    For i = 0 To 19
         '        sOrg(i) = Mid(sRTB, (i * 25) + 1, 25)
@@ -1434,10 +1434,10 @@ Private Sub Guarda_Texto()
         '        sOrg(i) = Mid(sRTB, (i * 34) + 1, 34)
         '    Next i
         'Else
-            For i = 0 To 39
-                sOrg(i) = Mid(sRTB, (i * 25) + 1, 25)
-            Next i
-        
+        For i = 0 To 39
+            sOrg(i) = Mid(sRTB, (i * 25) + 1, 25)
+        Next i
+
         'End If
         L2040 = False
         For i = 20 To 39
@@ -1445,7 +1445,7 @@ Private Sub Guarda_Texto()
                 L2040 = True
             End If
         Next i
-        
+
         Set Registro = Base.OpenRecordset("select * from articulo where borrado=false and codigo=" & sCodigoG)
         With Registro
             If Not .EOF Then
@@ -1472,7 +1472,7 @@ sigue:
                 .Update
             End If
         End With
-        
+
         If L2040 Then
             Set Registro = Nothing
             Set Registro = Base.OpenRecordset("select * from lintxt2040 where codigo=" & sCodigoG)
@@ -1485,7 +1485,7 @@ sigue:
                     .Fields("plu") = sPluG
                     .Fields("mostrador") = sSecG
                 End If
-                
+
                 For i = 21 To 40
                     On Error GoTo sigue1
                     .Fields("txt_" & CStr(i)) = sOrg(i - 1)
@@ -1502,53 +1502,53 @@ sigue1:
                 Registro.Delete
             End If
         End If
-    
+
     Else
-    
-            Set Registro = Base.OpenRecordset("select * from articulo where borrado=false and codigo=" & sCodigoG)
+
+        Set Registro = Base.OpenRecordset("select * from articulo where borrado=false and codigo=" & sCodigoG)
+        With Registro
+            If Not .EOF Then
+                .Edit
+                .Fields("tran_plu") = ""
+                .Update
+                L2040 = True
+            Else
+                L2040 = False
+            End If
+        End With
+        Registro.Close
+        Set Registro = Nothing
+        If L2040 Then
+            Set Registro = Base.OpenRecordset("select * from text15 where codigo=" & sCodigoG)
             With Registro
                 If Not .EOF Then
                     .Edit
-                    .Fields("tran_plu") = ""
-                    .Update
-                    L2040 = True
                 Else
-                    L2040 = False
+                    .AddNew
+                    .Fields("codigo") = sCodigoG
+                    .Fields("plu") = sPluG
+                    .Fields("mostrador") = sSecG
                 End If
-            End With
-            Registro.Close
-            Set Registro = Nothing
-            If L2040 Then
-                Set Registro = Base.OpenRecordset("select * from text15 where codigo=" & sCodigoG)
-                With Registro
-                    If Not .EOF Then
-                        .Edit
-                    Else
-                        .AddNew
-                        .Fields("codigo") = sCodigoG
-                        .Fields("plu") = sPluG
-                        .Fields("mostrador") = sSecG
-                    End If
-                    If Trim(sRTB) <> "" Then
-#If BALSAM = True Then
+                If Trim(sRTB) <> "" Then
+                    #If BALSAM = True Then
                         .Fields("text" & CStr(nIndexT)) = Mid(sRTB, 1, 1000)
-#Else
+                    #Else
                         .Fields("text" & CStr(nIndexT)) = Mid(sRTB, 1, 1500)
-#End If
-                    Else
-                        .Fields("text" & CStr(nIndexT)) = " "
-                    End If
-                    .Fields("tran_txt15") = ""
-                    .Update
-                End With
-            End If
+                    #End If
+                Else
+                    .Fields("text" & CStr(nIndexT)) = " "
+                End If
+                .Fields("tran_txt15") = ""
+                .Update
+            End With
+        End If
     End If
-    
+
     Base.Close
     Set Base = Nothing
-    
+
     MsgBox CargaCadena(439), vbInformation
-    
+
 finGuarda:
     If Err.Number <> 0 Then
         On Error GoTo 0
@@ -1562,8 +1562,8 @@ Private Sub Form_Resize()
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
-Dim Mybase As dao.Database
-Dim cm, cm1, cm2 As String
+    Dim Mybase As dao.Database
+    Dim cm, cm1, cm2 As String
     Set Mybase = AbrirBase
     Mybase.Execute "delete from text15 where (trim(text1)='' or isnull(text1))and (trim(text2)='' or isnull(text2)) and (trim(text3)='' or isnull(text3)) and (trim(text4)='' or isnull(text4)) and (trim(text5)='' or isnull(text5))"
     cm1 = "delete from lintxt2040 where "
@@ -1598,38 +1598,38 @@ Private Sub Lista_Click()
 End Sub
 
 Private Sub Lista_ColumnClick(ByVal ColumnHeader As MSComctlLib.ColumnHeader)
-    
+
     Lista.ColumnHeaders(1).TexT = CargaCadena(69)
     Lista.ColumnHeaders(2).TexT = CargaCadena(68)
     Lista.ColumnHeaders(3).TexT = CargaCadena(70)
-    
+
     Select Case ColumnHeader.Index
-        Case 1
-            Option1(0).Value = True
-            Lista.ColumnHeaders(1).TexT = "==> " & CargaCadena(69) & " <=="
-        Case 2
-            Option1(1).Value = True
-            Lista.ColumnHeaders(2).TexT = "==> " & CargaCadena(68) & " <=="
-        Case Else
-            If ColumnHeader.Index = 3 Then
-                sMyOrder = "des_plu1"
-                Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
-            Else
-                If ColumnHeader.Index = 4 Then
-                    If UsaEuro Then
-                        sMyOrder = "euros"
-                    Else
-                        sMyOrder = "precio"
-                    End If
-                    Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
+    Case 1
+        Option1(0).Value = True
+        Lista.ColumnHeaders(1).TexT = "==> " & CargaCadena(69) & " <=="
+    Case 2
+        Option1(1).Value = True
+        Lista.ColumnHeaders(2).TexT = "==> " & CargaCadena(68) & " <=="
+    Case Else
+        If ColumnHeader.Index = 3 Then
+            sMyOrder = "des_plu1"
+            Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
+        Else
+            If ColumnHeader.Index = 4 Then
+                If UsaEuro Then
+                    sMyOrder = "euros"
                 Else
-                    If sLastOrder <> "" Then
-                        sMyOrder = sLastOrder
-                        If sMyOrder = "des_plu1" Then Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
-                        If sMyOrder = "euros" Or sMyOrder = "precio" Then Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
-                    End If
+                    sMyOrder = "precio"
+                End If
+                Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
+            Else
+                If sLastOrder <> "" Then
+                    sMyOrder = sLastOrder
+                    If sMyOrder = "des_plu1" Then Lista.ColumnHeaders(3).TexT = "==> " & CargaCadena(70) & " <=="
+                    If sMyOrder = "euros" Or sMyOrder = "precio" Then Lista.ColumnHeaders(4).TexT = "==> " & CargaCadena(658) & " <=="
                 End If
             End If
+        End If
     End Select
     If Combo1.TexT <> "" Then Refresca_Datos
 End Sub
@@ -1648,8 +1648,8 @@ Private Sub Option1_Click(Index As Integer)
 End Sub
 
 Private Sub Refresca_Item()
-    
-On Error GoTo noHayItem
+
+    On Error GoTo noHayItem
     sCodigoG = Lista.SelectedItem.TexT
     sPluG = Lista.SelectedItem.SubItems(1)
     If Option1(0).Value = True Then
@@ -1671,7 +1671,7 @@ End Sub
 
 Private Sub tXTcODIGO_KeyDown(KeyCode As Integer, Shift As Integer)
     If Lista.ListItems.Count > 0 Then
-    Select Case KeyCode
+        Select Case KeyCode
         Case 40
             If Lista.SelectedItem.Index < Lista.ListItems.Count Then
                 Lista.ListItems.Item(Lista.SelectedItem.Index + 1).Selected = True
@@ -1696,8 +1696,8 @@ Private Sub tXTcODIGO_KeyDown(KeyCode As Integer, Shift As Integer)
                 Lista.ListItems(Lista.SelectedItem.Index).EnsureVisible
                 Refresca_Item
             End If
-        
-    End Select
+
+        End Select
     End If
 End Sub
 
@@ -1712,6 +1712,6 @@ Private Sub tXTcODIGO_KeyPress(KeyAscii As Integer)
     Else
         tXTcODIGO.Locked = Checktexto(KeyAscii, 4, tXTcODIGO.TexT, True, False)
     End If
-    
+
 End Sub
 

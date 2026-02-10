@@ -60,16 +60,16 @@ Public Sub SetSimpleBlock(sKey As String)
 End Sub
 Public Sub SetDataBlock(sKey As String, nAttrib As Long, AttribName() As String, AttribValue() As String)
     Dim sBuf As String
-    Dim Bucle As Long
+    Dim bucle As Long
     Indentation = Indentation + 1
     NCur = NCur + 1
     ReDim Preserve CurZone(NCur)
     CurZone(NCur - 1) = sKey
     sBuf = "<" & sKey
     If nAttrib > 0 Then
-        For Bucle = 0 To nAttrib - 1
-            sBuf = sBuf & " " & AttribName(Bucle) & "=" & Chr(34) & AttribValue(Bucle) & Chr(34)
-        Next Bucle
+        For bucle = 0 To nAttrib - 1
+            sBuf = sBuf & " " & AttribName(bucle) & "=" & Chr(34) & AttribValue(bucle) & Chr(34)
+        Next bucle
     End If
     sBuf = sBuf & ">"
     PrintData sBuf

@@ -1,5 +1,5 @@
 VERSION 5.00
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "MSCOMCTL.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form FrmSQL 
    Caption         =   "Consultas SQL a la base"
    ClientHeight    =   5445
@@ -185,13 +185,13 @@ Private Sub Me_Resize()
         CT_Width(bucle) = Me.Controls(bucle).Width
         Me.Controls(bucle).left = RelW * CT_Left(bucle)
         CT_Left(bucle) = Me.Controls(bucle).left
-        
+
         '
         RelW = Me.Height / Me_Height
         If TypeName(Me.Controls(bucle)) <> "TextBox" _
-        And TypeName(Me.Controls(bucle)) <> "CommandButton" _
-        And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
-        Then
+           And TypeName(Me.Controls(bucle)) <> "CommandButton" _
+           And TypeName(Me.Controls(bucle)) <> "MaskEdBox" _
+           Then
             Me.Controls(bucle).Height = RelW * CT_Height(bucle)
             CT_Height(bucle) = Me.Controls(bucle).Height
         End If
@@ -251,20 +251,20 @@ Private Sub Command1_Click(Index As Integer)
     Set Registro = Base.OpenRecordset(Text1.TexT, , dbReadOnly + dbOpenForwardOnly)
     On Error GoTo 0
     With Registro
-        
+
         If .Fields.Count > 0 Then
-                
-            
+
+
             For bucle = 0 To .Fields.Count - 1
                 Select Case .Fields(bucle).type
-                    Case dbText
-                        Adicional = "(" & CargaCadena(539) & ")"
-                    Case dbBoolean
-                        Adicional = "(" & CargaCadena(1072) & ")"
-                    Case dbDate
-                        Adicional = "(" & CargaCadena(1074) & ")"
-                    Case Else
-                        Adicional = "(" & CargaCadena(1073) & ")"
+                Case dbText
+                    Adicional = "(" & CargaCadena(539) & ")"
+                Case dbBoolean
+                    Adicional = "(" & CargaCadena(1072) & ")"
+                Case dbDate
+                    Adicional = "(" & CargaCadena(1074) & ")"
+                Case Else
+                    Adicional = "(" & CargaCadena(1073) & ")"
                 End Select
                 Lista.ColumnHeaders.Add , , .Fields(bucle).name & " " & Adicional
                 MyCont = 1
@@ -313,11 +313,11 @@ final:
 End Sub
 
 Private Sub Form_Load()
-    'Me.Width = (Screen.Width * 3 / 4) - 200
-    'Lista.Width = Me.Width - 100
-    'Text1.Width = Me.Width - 100
-    'Command1.Left = (Me.Width / 2) - (Command1.Width / 2)
-    'Me.Left = 100
+'Me.Width = (Screen.Width * 3 / 4) - 200
+'Lista.Width = Me.Width - 100
+'Text1.Width = Me.Width - 100
+'Command1.Left = (Me.Width / 2) - (Command1.Width / 2)
+'Me.Left = 100
     Me_Init
     CambiarIdioma
     Image1.Picture = Form2.Imagen.Picture
@@ -341,15 +341,15 @@ Private Sub Form_Unload(Cancel As Integer)
 End Sub
 
 Private Sub LblRegistro_Click()
-Dim Mybase As Database
-Dim Myresp As Variant
-FrmNewLogin.ElUsuario = "FABRICA"
-FrmNewLogin.Form_Load
-FrmNewLogin.Show vbModal
-If LoginSucceeded Then
-    Myresp = MsgBox("¿Realizar el borrado deseado?", vbYesNo)
-    If Myresp = vbYes Then
-        Set Mybase = AbrirBase
+    Dim Mybase As Database
+    Dim Myresp As Variant
+    FrmNewLogin.ElUsuario = "FABRICA"
+    FrmNewLogin.Form_Load
+    FrmNewLogin.Show vbModal
+    If LoginSucceeded Then
+        Myresp = MsgBox("¿Realizar el borrado deseado?", vbYesNo)
+        If Myresp = vbYes Then
+            Set Mybase = AbrirBase
             Mybase.Execute "delete * from cabecera where typtic='12'"
             Mybase.Execute "delete * from tickets where typtic='12'"
             Mybase.Execute "delete * from gtsecs where modo=12"
@@ -357,17 +357,17 @@ If LoginSucceeded Then
             Mybase.Execute "delete * from gtinfven where modo=12"
             Mybase.Execute "delete * from gtvend where modo=12"
             Mybase.Execute "delete * from gthora"
-        'End If
-        Mybase.Close
-        Set Mybase = Nothing
-        MsgBox "Borrado realizado."
-        salir_programa
+            'End If
+            Mybase.Close
+            Set Mybase = Nothing
+            MsgBox "Borrado realizado."
+            salir_programa
+        Else
+            salir_programa
+        End If
     Else
         salir_programa
     End If
-Else
-    salir_programa
-End If
 
 End Sub
 
@@ -388,7 +388,7 @@ Private Sub Toma_Tablas()
     Dim Base As dao.Database
     Dim bucle As Integer
     List1.Clear
-    List1.AddItem CargaCadena(1070) '"TABLAS DISPONIBLES"
+    List1.AddItem CargaCadena(1070)    '"TABLAS DISPONIBLES"
     List1.AddItem ""
     Set Base = OpenDatabase(Base_General)
     For bucle = 0 To Base.TableDefs.Count - 1

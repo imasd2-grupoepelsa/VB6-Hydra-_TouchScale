@@ -1,6 +1,6 @@
 VERSION 5.00
 Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "MSMASK32.OCX"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.1#0"; "mscomctl.ocx"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.2#0"; "MSCOMCTL.OCX"
 Begin VB.Form fechaHistorico 
    BorderStyle     =   1  'Fixed Single
    Caption         =   "FECHA HISTORICO"
@@ -197,8 +197,8 @@ Private Sub cmdth_Click()
 End Sub
 
 Private Sub CmdMarcar_Click()
-Dim Resp As Integer
-Dim cm As String
+    Dim Resp As Integer
+    Dim cm As String
 
     If HaySeguridad And UsuarioActual.Nombre <> "admin" Then
         MsgBox "No tiene permiso para realizar esta operación...", vbCritical
@@ -254,19 +254,19 @@ Private Sub cmdrestore_Click()
     Dim nDesR As dao.Recordset
     Dim nCONTX As Double
     Dim nPp As Integer
-    
+
     If ((Me.flbBck.ListCount > 0) And (Me.tvwBck.SelectedItem.Index <> 1)) Then
         TxtName.Visible = True
         TxtNum.Visible = True
         Me.Enabled = False
         sruta = Me.flbBck.Path & "\" & Right(Me.tvwBck.SelectedItem.Key, 6) & ".mdb"
         sruta = UCase(sruta)
-        
+
         'aux_ejecuta_historico "gtsecs", "0", sruta
         'Unload Me
         'nFich = FreeFile()
         'nFich = InStr(1, "\S\", sruta)
-        
+
         nFich = InStr(1, sruta, "\S\")
         If nFich <> 0 Then
             sRutaBase = Mid(sruta, 1, nFich - 1) & "\dbasetouch.mdb"
@@ -291,56 +291,56 @@ Private Sub cmdrestore_Click()
                         CadenadeLog "TABLA:" & "N.:" & CStr(n) & " -->" & sTablas(n)
                         Set nOriR = sBaseOri.OpenRecordset("select * from " & sTablas(n))
                         Set nDesR = sBaseDes.OpenRecordset("select * from " & sTablas(n))
-                        
+
                         If Not nOriR.EOF Then
-                        nPp = 2
-                        nOriR.MoveFirst
-                        
-                        TxtName.TexT = sTablas(n)
-                        nCONTX = 0
-                        
-                        Do While Not nOriR.EOF
-                            nPp = 3
-                            nDesR.AddNew
-                            nCONTX = nCONTX + 1
-                            For m = 0 To nCampos(n) - 1
-                                'If LCase(nOriR.Fields(m).name) = "factura" Then
-                                '    m = m
-                                'End If
-                                nDesR.Fields(nOriR.Fields(m).name) = nOriR.Fields(nOriR.Fields(m).name)
-                                'nDesR.Fields(m).name = nOriR.Fields(m).name
-                            Next m
-                            nDesR.Update
-                            nOriR.Delete
-                            TxtNum.TexT = CStr(nCONTX)
-                            
-                            'Do_Events
-                            'Sleep (1)
-                            TxtName.Refresh
-                            TxtNum.Refresh
-                            ''''''''''
-                            If Not nOriR.EOF Then
-                                nOriR.MoveFirst
-                            Else
-                                Exit Do
-                            End If
-                        Loop
-                        
-                        nDesR.Close
-                        
-                        Set nDesR = Nothing
-                        
+                            nPp = 2
+                            nOriR.MoveFirst
+
+                            TxtName.TexT = sTablas(n)
+                            nCONTX = 0
+
+                            Do While Not nOriR.EOF
+                                nPp = 3
+                                nDesR.AddNew
+                                nCONTX = nCONTX + 1
+                                For m = 0 To nCampos(n) - 1
+                                    'If LCase(nOriR.Fields(m).name) = "factura" Then
+                                    '    m = m
+                                    'End If
+                                    nDesR.Fields(nOriR.Fields(m).name) = nOriR.Fields(nOriR.Fields(m).name)
+                                    'nDesR.Fields(m).name = nOriR.Fields(m).name
+                                Next m
+                                nDesR.Update
+                                nOriR.Delete
+                                TxtNum.TexT = CStr(nCONTX)
+
+                                'Do_Events
+                                'Sleep (1)
+                                TxtName.Refresh
+                                TxtNum.Refresh
+                                ''''''''''
+                                If Not nOriR.EOF Then
+                                    nOriR.MoveFirst
+                                Else
+                                    Exit Do
+                                End If
+                            Loop
+
+                            nDesR.Close
+
+                            Set nDesR = Nothing
+
                         End If
-                        
+
                         nOriR.Close
                         Set nOriR = Nothing
 
                     Next n
                     nPp = 4
                     'If Err.Number = 0 Then
-                        MsgBox "Restore OK!", vbInformation
+                    MsgBox "Restore OK!", vbInformation
                     'End If
-                     
+
                 End If
                 nPp = 5
                 sBaseDes.Close
@@ -360,9 +360,9 @@ Private Sub cmdrestore_Click()
         Me.Enabled = True
         TxtName.Visible = False
         TxtNum.Visible = False
-        
+
     End If
-    
+
     'Corregir_Nulos
 
 End Sub
@@ -375,7 +375,7 @@ Private Sub CambiarIdioma()
     cmdBck.Caption = CargaCadena(1352)
     cmdth.Caption = CargaCadena(1353)
     CmdRestore.Caption = CargaCadena(1354)
-    
+
 End Sub
 Private Sub Form_Load()
     Dim cnt As Long
@@ -400,16 +400,16 @@ Private Sub Form_Load()
         End If
         .tvwBck.Nodes.Clear
         Key = "BCK"
-        TexT = CargaCadena(1356) '"BASE DATOS HISTORICO"
+        TexT = CargaCadena(1356)    '"BASE DATOS HISTORICO"
         .tvwBck.Nodes.Add , , Key, TexT
         RelativE = Key
         RelationShiP = tvwChild
         For cnt = 0 To .flbBck.ListCount - 1
-        If Len(.flbBck.List(cnt)) > 4 Then
-            mm = CStr(Mid(.flbBck.List(cnt), 5, 2))
-            syyyy = CStr(left(.flbBck.List(cnt), 4))
-            Key = RelativE & syyyy & mm
-            Select Case Val(mm)
+            If Len(.flbBck.List(cnt)) > 4 Then
+                mm = CStr(Mid(.flbBck.List(cnt), 5, 2))
+                syyyy = CStr(left(.flbBck.List(cnt), 4))
+                Key = RelativE & syyyy & mm
+                Select Case Val(mm)
                 Case 1
                     'TexT = "ENERO" & " - " & syyyy
                     TexT = CargaCadena(1357) & " - " & syyyy
@@ -435,11 +435,11 @@ Private Sub Form_Load()
                     TexT = CargaCadena(1367) & " - " & syyyy
                 Case 12
                     TexT = CargaCadena(1368) & " - " & syyyy
-            End Select
-            On Error Resume Next
-            .tvwBck.Nodes.Add RelativE, RelationShiP, Key, TexT
-            On Error GoTo 0
-        End If
+                End Select
+                On Error Resume Next
+                .tvwBck.Nodes.Add RelativE, RelationShiP, Key, TexT
+                On Error GoTo 0
+            End If
         Next cnt
         .tvwBck.Nodes(1).Expanded = True
     End With
@@ -472,5 +472,5 @@ Private Sub MFI_LostFocus()
 End Sub
 
 Private Sub tvwBck_Click()
-tvwBck.SetFocus
+    tvwBck.SetFocus
 End Sub

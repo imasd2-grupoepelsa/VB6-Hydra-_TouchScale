@@ -105,7 +105,7 @@ Option Explicit
 Private Fracaso As Boolean
 Private Sub Command1_Click()
     Dim Buf As String
-    Dim Bucle As Integer
+    Dim bucle As Integer
     Dim MyVal As Integer
     Dim Arch As Integer
     Fracaso = False
@@ -122,14 +122,14 @@ Private Sub Command1_Click()
         Exit Sub
     End If
     tXTip.TexT = tXTip.TexT & "."
-    For Bucle = 1 To Len(tXTip.TexT)
-        If Asc(Mid(tXTip.TexT, Bucle, 1)) >= 48 And Asc(Mid(tXTip.TexT, Bucle, 1)) <= 59 Then
-            MyVal = MyVal * 10 + Mid(tXTip.TexT, Bucle, 1)
+    For bucle = 1 To Len(tXTip.TexT)
+        If Asc(Mid(tXTip.TexT, bucle, 1)) >= 48 And Asc(Mid(tXTip.TexT, bucle, 1)) <= 59 Then
+            MyVal = MyVal * 10 + Mid(tXTip.TexT, bucle, 1)
         Else
             Buf = Buf & Format(MyVal, "000") & "."
             MyVal = 0
         End If
-    Next Bucle
+    Next bucle
     Buf = Buf & Format(MyVal, "000")
     'bUF = Left(bUF, Len(bUF) - 1)
     tXTip.TexT = Buf
@@ -142,9 +142,9 @@ Private Sub Command1_Click()
             '
             ' Configurar "balanza"
             '
-            
+
             lIp = True
-            
+
             Arch = FreeFile()
             Open App.Path & "\servidoratouch.ini" For Output As #Arch
             Print #Arch, Val(left(tXTip.TexT, 3)) & "." & Val(Mid(tXTip.TexT, 5, 3)) & "." & Val(Mid(tXTip.TexT, 9, 3)) & "." & Val(Right(tXTip.TexT, 3))
@@ -165,11 +165,11 @@ End Sub
 
 Private Sub Text1_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub
 
@@ -179,11 +179,11 @@ End Sub
 
 Private Sub tXTip_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case Asc(".")
-        Case vbKeyDelete
-        Case vbKeyBack
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case Asc(".")
+    Case vbKeyDelete
+    Case vbKeyBack
+    Case Else
+        KeyAscii = 0
     End Select
 End Sub

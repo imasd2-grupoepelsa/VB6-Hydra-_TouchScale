@@ -2,41 +2,41 @@ Attribute VB_Name = "modGDIPlusResize"
 Option Explicit
 
 Private Type GUID
-   Data1    As Long
-   Data2    As Integer
-   Data3    As Integer
-   Data4(7) As Byte
+    data1 As Long
+    Data2 As Integer
+    Data3 As Integer
+    Data4(7) As Byte
 End Type
 
 Private Type PICTDESC
-   size     As Long
-   Type     As Long
-   hBmp     As Long
-   hPal     As Long
-   Reserved As Long
+    size As Long
+    type As Long
+    hBmp As Long
+    hPal As Long
+    Reserved As Long
 End Type
 
 Private Type GdiplusStartupInput
-    GdiplusVersion           As Long
-    DebugEventCallback       As Long
+    GdiplusVersion As Long
+    DebugEventCallback As Long
     SuppressBackgroundThread As Long
-    SuppressExternalCodecs   As Long
+    SuppressExternalCodecs As Long
 End Type
 
 Private Type PWMFRect16
-    left   As Integer
-    top    As Integer
-    Right  As Integer
+    left As Integer
+    top As Integer
+    Right As Integer
     Bottom As Integer
 End Type
 
 Private Type wmfPlaceableFileHeader
-    Key         As Long
-    hMf         As Integer
+    Key As Long
+    hMf As Integer
     BoundingBox As PWMFRect16
-    Inch        As Integer
-    Reserved    As Long
-    CheckSum    As Integer
+    Inch As Integer
+    Reserved As Long
+    Checksum As Integer
 End Type
 
 ' GDI Functions
@@ -79,9 +79,9 @@ Private Const UnitPixel = 2
 
 ' Initialises GDI Plus
 Public Function InitGDIPlus() As Long
-    Dim Token    As Long
+    Dim Token As Long
     Dim gdipInit As GdiplusStartupInput
-    
+
     gdipInit.GdiplusVersion = 1
     GdiplusStartup Token, gdipInit, ByVal 0&
     InitGDIPlus = Token
@@ -94,29 +94,29 @@ End Sub
 
 ' Loads the picture (optionally resized)
 Public Function LoadPictureGDIPlus(PicFile As String, Optional Width As Long = -1, Optional Height As Long = -1, Optional ByVal BackColor As Long = vbWhite, Optional RetainRatio As Boolean = False) As IPicture
-    Dim hDC     As Long
+    Dim hDC As Long
     Dim hBitmap As Long
-    Dim Img     As Long
-        
+    Dim Img As Long
+
     ' Load the image
     If GdipLoadImageFromFile(StrPtr(PicFile), Img) <> 0 Then
         Err.Raise 999, "GDI+ Module", "Error loading picture " & PicFile
         Exit Function
     End If
-    
+
     ' Calculate picture's width and height if not specified
     If Width = -1 Or Height = -1 Then
         GdipGetImageWidth Img, Width
         GdipGetImageHeight Img, Height
     End If
-    
+
     ' Initialise the hDC
     InitDC hDC, hBitmap, BackColor, Width, Height
 
     ' Resize the picture
     gdipResize Img, hDC, Width, Height, RetainRatio
     GdipDisposeImage Img
-    
+
     ' Get the bitmap back
     GetBitmap hDC, hBitmap
 
@@ -127,7 +127,7 @@ End Function
 ' Initialises the hDC to draw
 Private Sub InitDC(hDC As Long, hBitmap As Long, BackColor As Long, Width As Long, Height As Long)
     Dim hBrush As Long
-        
+
     ' Create a memory DC and select a bitmap into it, fill it in with the backcolor
     hDC = CreateCompatibleDC(ByVal 0&)
     hBitmap = CreateBitmap(Width, Height, GetDeviceCaps(hDC, PLANES), GetDeviceCaps(hDC, BITSPIXEL), ByVal 0&)
@@ -140,31 +140,31 @@ End Sub
 
 ' Resize the picture using GDI plus
 Private Sub gdipResize(Img As Long, hDC As Long, Width As Long, Height As Long, Optional RetainRatio As Boolean = False)
-    Dim Graphics   As Long      ' Graphics Object Pointer
-    Dim OrWidth    As Long      ' Original Image Width
-    Dim OrHeight   As Long      ' Original Image Height
-    Dim OrRatio    As Double    ' Original Image Ratio
-    Dim DesRatio   As Double    ' Destination rect Ratio
-    Dim DestX      As Long      ' Destination image X
-    Dim DestY      As Long      ' Destination image Y
-    Dim DestWidth  As Long      ' Destination image Width
+    Dim Graphics As Long    ' Graphics Object Pointer
+    Dim OrWidth As Long   ' Original Image Width
+    Dim OrHeight As Long    ' Original Image Height
+    Dim OrRatio As Double    ' Original Image Ratio
+    Dim DesRatio As Double  ' Destination rect Ratio
+    Dim DestX As Long    ' Destination image X
+    Dim DestY As Long    ' Destination image Y
+    Dim DestWidth As Long     ' Destination image Width
     Dim DestHeight As Long      ' Destination image Height
-    
+
     GdipCreateFromHDC hDC, Graphics
     GdipSetInterpolationMode Graphics, InterpolationModeHighQualityBicubic
-    
+
     If RetainRatio Then
         GdipGetImageWidth Img, OrWidth
         GdipGetImageHeight Img, OrHeight
-        
+
         OrRatio = OrWidth / OrHeight
         DesRatio = Width / Height
-        
+
         ' Calculate destination coordinates
         DestWidth = IIf(DesRatio < OrRatio, Width, Height * OrRatio)
         DestHeight = IIf(DesRatio < OrRatio, Width / OrRatio, Height)
-'        DestX = (Width - DestWidth) / 2
-'        DestY = (Height - DestHeight) / 2
+        '        DestX = (Width - DestWidth) / 2
+        '        DestY = (Height - DestHeight) / 2
 
         DestX = 0
         DestY = 0
@@ -185,17 +185,17 @@ End Sub
 ' Creates a Picture Object from a handle to a bitmap
 Private Function CreatePicture(hBitmap As Long) As IPicture
     Dim IID_IDispatch As GUID
-    Dim Pic           As PICTDESC
-    Dim IPic          As IPicture
-    
+    Dim Pic As PICTDESC
+    Dim IPic As IPicture
+
     ' Fill in OLE IDispatch Interface ID
-    IID_IDispatch.Data1 = &H20400
+    IID_IDispatch.data1 = &H20400
     IID_IDispatch.Data4(0) = &HC0
     IID_IDispatch.Data4(7) = &H46
-        
+
     ' Fill Pic with necessary parts
     Pic.size = Len(Pic)        ' Length of structure
-    Pic.Type = PICTYPE_BITMAP  ' Type of Picture (bitmap)
+    Pic.type = PICTYPE_BITMAP  ' Type of Picture (bitmap)
     Pic.hBmp = hBitmap         ' Handle to bitmap
 
     ' Create the picture
@@ -205,25 +205,25 @@ End Function
 
 ' Returns a resized version of the picture
 Public Function Resize(Handle As Long, PicType As PictureTypeConstants, Width As Long, Height As Long, Optional BackColor As Long = vbWhite, Optional RetainRatio As Boolean = False) As IPicture
-    Dim Img       As Long
-    Dim hDC       As Long
-    Dim hBitmap   As Long
+    Dim Img As Long
+    Dim hDC As Long
+    Dim hBitmap As Long
     Dim WmfHeader As wmfPlaceableFileHeader
-    
+
     ' Determine pictyre type
     Select Case PicType
     Case vbPicTypeBitmap
-         GdipCreateBitmapFromHBITMAP Handle, ByVal 0&, Img
+        GdipCreateBitmapFromHBITMAP Handle, ByVal 0&, Img
     Case vbPicTypeMetafile
-         FillInWmfHeader WmfHeader, Width, Height
-         GdipCreateMetafileFromWmf Handle, False, WmfHeader, Img
+        FillInWmfHeader WmfHeader, Width, Height
+        GdipCreateMetafileFromWmf Handle, False, WmfHeader, Img
     Case vbPicTypeEMetafile
-         GdipCreateMetafileFromEmf Handle, False, Img
+        GdipCreateMetafileFromEmf Handle, False, Img
     Case vbPicTypeIcon
-         ' Does not return a valid Image object
-         GdipCreateBitmapFromHICON Handle, Img
+        ' Does not return a valid Image object
+        GdipCreateBitmapFromHICON Handle, Img
     End Select
-    
+
     ' Continue with resizing only if we have a valid image object
     If Img Then
         InitDC hDC, hBitmap, BackColor, Width, Height

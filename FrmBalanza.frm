@@ -288,7 +288,7 @@ Private HayServidora As Boolean
 Private QL As Boolean
 Private NoMostrarIP As Boolean
 Public Property Let SeccionAsignada(ByVal Mostrador As Long)
-    
+
     Dim Registro As New RecordNet
     Dim MiSec As Integer
     Dim MIERROR As Boolean
@@ -302,22 +302,22 @@ Public Property Let SeccionAsignada(ByVal Mostrador As Long)
     CmdAceptar.Enabled = True
     If usaSC10 And TipoC9 And CmbTipo.ListIndex = 1 Then
         MiSec = 0
-        
+
         Registro.OpenRecordset ("SELECT secc_maqui FROM SECCION where codi_ident=" & Mostrador & " and borrado=false")
         With Registro
             If Not .EOF Then
                 MiSec = .Fields("secc_Maqui")
             End If
         End With
-       
+
         MIERROR = False
         Select Case ModoC9
-            Case 0
-                If (MiSec < 1 Or MiSec > 3) And MiSec <> 6 Then MIERROR = True
-            Case 1
-                If (MiSec < 1 Or MiSec > 5) And MiSec <> 6 Then MIERROR = True
-            Case 2
-                If (MiSec < 1 Or MiSec > 7) And MiSec <> 8 Then MIERROR = True
+        Case 0
+            If (MiSec < 1 Or MiSec > 3) And MiSec <> 6 Then MIERROR = True
+        Case 1
+            If (MiSec < 1 Or MiSec > 5) And MiSec <> 6 Then MIERROR = True
+        Case 2
+            If (MiSec < 1 Or MiSec > 7) And MiSec <> 8 Then MIERROR = True
         End Select
         If MIERROR Then
             If UsaGamaAlta Then
@@ -330,7 +330,7 @@ Public Property Let SeccionAsignada(ByVal Mostrador As Long)
 End Property
 
 Public Sub refresca_equipos()
-    
+
     Dim Registro As New RecordNet
     '********************************
     ' sitúa en el combo los
@@ -340,7 +340,7 @@ Public Sub refresca_equipos()
     CmbEquipo.Clear
 
     Registro.OpenRecordset _
-    ("select numero_eqp,borrado,codi_ident from equipos where borrado=false and codi_ident=" & LaSeccion & " order by numero_eqp")
+            ("select numero_eqp,borrado,codi_ident from equipos where borrado=false and codi_ident=" & LaSeccion & " order by numero_eqp")
     With Registro
         If Not .EOF Then
             .MoveFirst
@@ -350,10 +350,10 @@ Public Sub refresca_equipos()
             Loop
         End If
     End With
-  
+
 End Sub
 Public Sub Refresca_Datos()
-    
+
     Dim Registro As New RecordNet
     '*************************************
     ' Sitúa los datos que correspondan con
@@ -375,11 +375,11 @@ Public Sub Refresca_Datos()
         ''''''
         ChkServidora.Enabled = False
     Else
-        
+
         '1.9.0
         'Checkss165.Enabled = True
         ''''''
-        
+
         If Not Comprobar_Servidora Then
             ChkServidora.Enabled = True
         Else
@@ -391,9 +391,9 @@ Public Sub Refresca_Datos()
     ' sitúa sus datos
     '**********************
     If IsNumeric(CmbEquipo.TexT) Then
-       
+
         Registro.OpenRecordset _
-        ("select * from equipos where borrado=false and numero_eqp=" & Val(CmbEquipo.TexT))
+                ("select * from equipos where borrado=false and numero_eqp=" & Val(CmbEquipo.TexT))
         With Registro
             If Not .EOF Then
                 If LaSeccion = .Fields("codi_ident") Then
@@ -401,7 +401,7 @@ Public Sub Refresca_Datos()
                     If .Fields("modelo") = 400 Then CmbTipo.TexT = CmbTipo.List(3)
                     If .Fields("modelo") = 100 Then CmbTipo.TexT = CmbTipo.List(1)
                     If .Fields("modelo") < 100 Then CmbTipo.TexT = CmbTipo.List(0)
-                    
+
                     If .Fields("modelo") >= 100 Then
                         tXTip.TexT = "___.___.___.___"
                         ChkServidora.Value = vbUnchecked
@@ -418,7 +418,7 @@ Public Sub Refresca_Datos()
                         'Else
                         '    Checkss165.Value = vbUnchecked
                         'End If
-                        
+
                         If Not NoMostrarIP Then ChkServidora.Enabled = True
                         If tcpip And (Not NoMostrarIP) Then
                             LblIP.Enabled = True
@@ -435,12 +435,12 @@ Public Sub Refresca_Datos()
                     CmbEquipo.TexT = ""
                 End If
             End If
-            
+
         End With
-    
+
         If CmbEquipo.Enabled = False _
-        And Comprobar_Servidora And _
-        ChkServidora.Value = vbUnchecked Then
+           And Comprobar_Servidora And _
+           ChkServidora.Value = vbUnchecked Then
             ChkServidora.Enabled = False
         Else
             If CmbTipo.TexT = CmbTipo.List(0) And Not Comprobar_Servidora Then ChkServidora.Enabled = True
@@ -448,7 +448,7 @@ Public Sub Refresca_Datos()
     End If
 End Sub
 Private Function Comprobar_Servidora() As Boolean
-    
+
     Dim Registro As New RecordNet
     Dim Conforme As Boolean
     '************************************
@@ -457,7 +457,7 @@ Private Function Comprobar_Servidora() As Boolean
     ' introducir otra
     '************************************
     Conforme = False
-   
+
     Registro.OpenRecordset ("select numero_eqp from equipos where borrado=false and modelo=1")
     With Registro
         If Not .EOF Then
@@ -501,14 +501,14 @@ Private Sub CmbTipo_Click()
     '*******************************
     If QL Then Exit Sub
     Select Case CmbTipo.ListIndex
-        Case 0
-            If Not UsaGamaAlta Then TipoIncorrecto = True
-        Case 1
-            If Not usaSC10 Then TipoIncorrecto = True
-        Case 2
-            If (Not UsaECO1) And (Not UsaECO2) Then TipoIncorrecto = True
-        Case 3
-            If Not UsaEcoPrint Then TipoIncorrecto = True
+    Case 0
+        If Not UsaGamaAlta Then TipoIncorrecto = True
+    Case 1
+        If Not usaSC10 Then TipoIncorrecto = True
+    Case 2
+        If (Not UsaECO1) And (Not UsaECO2) Then TipoIncorrecto = True
+    Case 3
+        If Not UsaEcoPrint Then TipoIncorrecto = True
     End Select
     If TipoIncorrecto Then
         QL = True
@@ -541,7 +541,7 @@ Private Sub CmbTipo_Click()
     SeccionAsignada = LaSeccion
 End Sub
 
-Private Sub CmdAceptar_Click()
+Private Sub Cmdaceptar_Click()
     Dim Miequipo As DB_Balanzas
     Dim MiResultado As Integer
     '******************************
@@ -561,7 +561,7 @@ Private Sub CmdAceptar_Click()
         'If Checkss165.Value = vbChecked Then
         '    Miequipo.lss165 = True
         'Else
-            Miequipo.lss165 = False
+        Miequipo.lss165 = False
         'End If
         If (ChkServidora.Value = vbChecked) And (Not MultiEuroscale) Then
             Miequipo.Tipo = Miequipo.Tipo + 1
@@ -595,7 +595,7 @@ Private Sub CmdAceptar_Click()
         Exit Sub
     End If
     If MiResultado = 1 Then
-        
+
         LblInfo2.Caption = CargaCadena(439)  '"Dato Modificado.Envíe Modificaciones"
         On Error Resume Next
         FrmSeccionyMaquina.Arbol.Nodes.Remove ("M" & CmbEquipo.TexT)
@@ -603,9 +603,9 @@ Private Sub CmdAceptar_Click()
         If CmbEquipo.Enabled = True Then CmbEquipo.SetFocus
     End If
     If MiResultado = 0 Then
-        
+
         LblInfo2.Caption = CargaCadena(527)  '"Dato Añadido.Envíe Modificaciones"
-        
+
         If CmbEquipo.Enabled = True Then CmbEquipo.SetFocus
     End If
     If MiResultado < 2 Then
@@ -620,35 +620,35 @@ Private Sub CmdAceptar_Click()
             If CmbTipo.TexT = CmbTipo.List(2) Then FrmSeccionyMaquina.Arbol.Nodes.Add "S" & LaSeccion, tvwChild, "M" & CmbEquipo.TexT, CmbEquipo.TexT, "redmarte"
             If CmbTipo.TexT = CmbTipo.List(3) Then FrmSeccionyMaquina.Arbol.Nodes.Add "S" & LaSeccion, tvwChild, "M" & CmbEquipo.TexT, CmbEquipo.TexT, "iv4lcd"
         End If
-    If CmbEquipo.Enabled = False Then FrmSeccionyMaquina.Informar (FrmSeccionyMaquina.Arbol.SelectedItem.Key)
-    CmbEquipo.TexT = ""
-    refresca_equipos
-    Refresca_Datos
-    If CmbEquipo.Enabled = False Then
-        FrmSeccionyMaquina.LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados.Envíe Modificaciones"
-        Unload Me
+        If CmbEquipo.Enabled = False Then FrmSeccionyMaquina.Informar (FrmSeccionyMaquina.Arbol.SelectedItem.Key)
+        CmbEquipo.TexT = ""
+        refresca_equipos
+        Refresca_Datos
+        If CmbEquipo.Enabled = False Then
+            FrmSeccionyMaquina.LblInfo2.Caption = CargaCadena(439)  '"Datos Modificados.Envíe Modificaciones"
+            Unload Me
+        End If
     End If
-    End If
-    
+
 End Sub
 
 
 '1.0.4
 'Public Sub CmdBorrar_Click()
-    'Dim Miequipo As DB_Balanzas
-    ''******************************
-    '' Orden de borrado
-    ''******************************
-    'If IsNumeric(CmbEquipo.TexT) Then
-    '    Miequipo.NBalanza = CmbEquipo.TexT
-    '    If Baja_Balanza(Miequipo) = 0 Then
-    '        LblInfo2.Caption = CargaCadena(528)  '"Dato Eliminado.Envíe Modificaciones"
-    '        CmbEquipo.TexT = ""
-    '        refresca_equipos
-    '        Refresca_Datos
-    '        FrmSeccionyMaquina.Refresca_Arbol
-    '    End If
-    'End If
+'Dim Miequipo As DB_Balanzas
+''******************************
+'' Orden de borrado
+''******************************
+'If IsNumeric(CmbEquipo.TexT) Then
+'    Miequipo.NBalanza = CmbEquipo.TexT
+'    If Baja_Balanza(Miequipo) = 0 Then
+'        LblInfo2.Caption = CargaCadena(528)  '"Dato Eliminado.Envíe Modificaciones"
+'        CmbEquipo.TexT = ""
+'        refresca_equipos
+'        Refresca_Datos
+'        FrmSeccionyMaquina.Refresca_Arbol
+'    End If
+'End If
 'End Sub
 Private Sub CmdSalir_Click()
     Unload Me
@@ -661,7 +661,7 @@ Private Sub Form_Load()
     If valorip <> "" Then
         NoMostrarIP = True
     End If
-    
+
     CambiarIdioma
     Me.Icon = Form2.Icon
     Image1.Picture = Form2.Imagen.Picture
@@ -701,14 +701,14 @@ End Sub
 
 Private Sub tXTip_KeyPress(KeyAscii As Integer)
     Select Case KeyAscii
-        Case 48 To 59
-        Case Asc(".")
-        Case vbKeyBack
-        Case vbKeyDelete
-        Case Else
-            KeyAscii = 0
+    Case 48 To 59
+    Case Asc(".")
+    Case vbKeyBack
+    Case vbKeyDelete
+    Case Else
+        KeyAscii = 0
     End Select
-        
+
 End Sub
 
 Private Sub txtip_LostFocus()
