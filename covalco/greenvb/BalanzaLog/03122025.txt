@@ -1,0 +1,3984 @@
+03/12/2025 13:53:53 - -----------------------------------------------------------
+03/12/2025 13:53:53 - Conectando Oracle
+03/12/2025 13:53:53 - Comprobando C:\greenvb
+03/12/2025 13:53:53 - Conectando a XE
+03/12/2025 13:53:54 - Encontrados 218 ficheros.
+03/12/2025 13:53:54 - Tratando 106105.03C
+03/12/2025 13:53:55 - Tratando 106110.03C
+03/12/2025 13:53:56 - Tratando 106111.03C
+03/12/2025 13:53:57 - Tratando 106122.03C
+03/12/2025 13:53:58 - Tratando 106128.03C
+03/12/2025 13:53:59 - Tratando 106142.03C
+03/12/2025 13:54:00 - Tratando 106148.03C
+03/12/2025 13:54:01 - Tratando 106151.03C
+03/12/2025 13:54:02 - Tratando 106157.03C
+03/12/2025 13:54:03 - Tratando 106167.03C
+03/12/2025 13:54:04 - Tratando 106186.03C
+03/12/2025 13:54:05 - Tratando 205437.03C
+03/12/2025 13:54:06 - Tratando 205438.03C
+03/12/2025 13:54:07 - Tratando 205439.03C
+03/12/2025 13:54:08 - Tratando 205440.03C
+03/12/2025 13:54:09 - Tratando 205442.03C
+03/12/2025 13:54:10 - Tratando 205443.03C
+03/12/2025 13:54:11 - Tratando 205444.03C
+03/12/2025 13:54:12 - Tratando 205445.03C
+03/12/2025 13:54:13 - Tratando 205446.03C
+03/12/2025 13:54:14 - Tratando 205447.03C
+03/12/2025 13:54:15 - Tratando 205448.03C
+03/12/2025 13:54:16 - Tratando 205449.03C
+03/12/2025 13:54:17 - Tratando 205450.03C
+03/12/2025 13:54:18 - Tratando 205452.03C
+03/12/2025 13:54:20 - Tratando 205453.03C
+03/12/2025 13:54:21 - Tratando 205454.03C
+03/12/2025 13:54:22 - Tratando 205455.03C
+03/12/2025 13:54:23 - Tratando 205456.03C
+03/12/2025 13:54:24 - Tratando 205457.03C
+03/12/2025 13:54:25 - Tratando 205458.03C
+03/12/2025 13:54:26 - Tratando 205459.03C
+03/12/2025 13:54:27 - Tratando 205460.03C
+03/12/2025 13:54:28 - Tratando 205461.03C
+03/12/2025 13:54:29 - Tratando 205462.03C
+03/12/2025 13:54:30 - Tratando 205463.03C
+03/12/2025 13:54:31 - Tratando 205464.03C
+03/12/2025 13:54:32 - Tratando 205465.03C
+03/12/2025 13:54:33 - Tratando 205466.03C
+03/12/2025 13:54:34 - Tratando 205467.03C
+03/12/2025 13:54:35 - Tratando 205468.03C
+03/12/2025 13:54:36 - Tratando 205469.03C
+03/12/2025 13:54:37 - Tratando 205470.03C
+03/12/2025 13:54:38 - Tratando 205472.03C
+03/12/2025 13:54:39 - Tratando 205473.03C
+03/12/2025 13:54:40 - Tratando 205475.03C
+03/12/2025 13:54:41 - Tratando 205477.03C
+03/12/2025 13:54:42 - Tratando 205478.03C
+03/12/2025 13:54:43 - Tratando 205479.03C
+03/12/2025 13:54:44 - Tratando 205480.03C
+03/12/2025 13:54:45 - Tratando 205482.03C
+03/12/2025 13:54:46 - Tratando 205483.03C
+03/12/2025 13:54:47 - Tratando 205484.03C
+03/12/2025 13:54:49 - Tratando 205485.03C
+03/12/2025 13:54:50 - Tratando 205488.03C
+03/12/2025 13:54:51 - Tratando 205489.03C
+03/12/2025 13:54:52 - Tratando 205490.03C
+03/12/2025 13:54:53 - Tratando 205491.03C
+03/12/2025 13:54:54 - Tratando 205492.03C
+03/12/2025 13:54:55 - Tratando 205493.03C
+03/12/2025 13:54:56 - Tratando 205494.03C
+03/12/2025 13:54:57 - Tratando 205495.03C
+03/12/2025 13:54:58 - Tratando 205496.03C
+03/12/2025 13:54:59 - Tratando 205497.03C
+03/12/2025 13:55:00 - Tratando 205498.03C
+03/12/2025 13:55:01 - Tratando 205500.03C
+03/12/2025 13:55:02 - Tratando 205501.03C
+03/12/2025 13:55:03 - Tratando 205502.03C
+03/12/2025 13:55:04 - Tratando 205503.03C
+03/12/2025 13:55:05 - Tratando 205504.03C
+03/12/2025 13:55:06 - Tratando 205505.03C
+03/12/2025 13:55:07 - Tratando 205506.03C
+03/12/2025 13:55:08 - Tratando 205507.03C
+03/12/2025 13:55:09 - Tratando 205508.03C
+03/12/2025 13:55:10 - Tratando 205509.03C
+03/12/2025 13:55:11 - Tratando 205510.03C
+03/12/2025 13:55:12 - Tratando 205511.03C
+03/12/2025 13:55:13 - Tratando 205512.03C
+03/12/2025 13:55:14 - Tratando 205513.03C
+03/12/2025 13:55:15 - Tratando 205514.03C
+03/12/2025 13:55:16 - Tratando 205515.03C
+03/12/2025 13:55:17 - Tratando 205516.03C
+03/12/2025 13:55:19 - Tratando 205519.03C
+03/12/2025 13:55:20 - Tratando 205520.03C
+03/12/2025 13:55:21 - Tratando 205523.03C
+03/12/2025 13:55:22 - Tratando 205524.03C
+03/12/2025 13:55:23 - Tratando 205525.03C
+03/12/2025 13:55:24 - Tratando 205528.03C
+03/12/2025 13:55:25 - Tratando 205529.03C
+03/12/2025 13:55:26 - Tratando 205531.03C
+03/12/2025 13:55:27 - Tratando 205532.03C
+03/12/2025 13:55:28 - Tratando 205533.03C
+03/12/2025 13:55:29 - Tratando 205534.03C
+03/12/2025 13:55:30 - Tratando 205537.03C
+03/12/2025 13:55:31 - Tratando 205538.03C
+03/12/2025 13:55:32 - Tratando 205540.03C
+03/12/2025 13:55:33 - Tratando 205541.03C
+03/12/2025 13:55:34 - Tratando 205542.03C
+03/12/2025 13:55:35 - Tratando 205543.03C
+03/12/2025 13:55:36 - Tratando 205544.03C
+03/12/2025 13:55:37 - Tratando 205545.03C
+03/12/2025 13:55:38 - Tratando 205546.03C
+03/12/2025 13:55:39 - Tratando 205547.03C
+03/12/2025 13:55:40 - Tratando 205548.03C
+03/12/2025 13:55:41 - Tratando 205549.03C
+03/12/2025 13:55:42 - Tratando 205550.03C
+03/12/2025 13:55:43 - Tratando 205551.03C
+03/12/2025 13:55:44 - Tratando 205552.03C
+03/12/2025 13:55:45 - Tratando 205553.03C
+03/12/2025 13:55:46 - Tratando 206106.03C
+03/12/2025 13:55:48 - Tratando 206107.03C
+03/12/2025 13:55:49 - Tratando 206109.03C
+03/12/2025 13:55:50 - Tratando 206112.03C
+03/12/2025 13:55:51 - Tratando 206113.03C
+03/12/2025 13:55:52 - Tratando 206114.03C
+03/12/2025 13:55:53 - Tratando 206116.03C
+03/12/2025 13:55:54 - Tratando 206117.03C
+03/12/2025 13:55:55 - Tratando 206118.03C
+03/12/2025 13:55:56 - Tratando 206121.03C
+03/12/2025 13:55:57 - Tratando 206124.03C
+03/12/2025 13:55:58 - Tratando 206125.03C
+03/12/2025 13:55:59 - Tratando 206127.03C
+03/12/2025 13:56:00 - Tratando 206129.03C
+03/12/2025 13:56:01 - Tratando 206131.03C
+03/12/2025 13:56:02 - Tratando 206132.03C
+03/12/2025 13:56:03 - Tratando 206135.03C
+03/12/2025 13:56:04 - Tratando 206136.03C
+03/12/2025 13:56:05 - Tratando 206137.03C
+03/12/2025 13:56:06 - Tratando 206138.03C
+03/12/2025 13:56:07 - Tratando 206139.03C
+03/12/2025 13:56:08 - Tratando 206140.03C
+03/12/2025 13:56:09 - Tratando 206141.03C
+03/12/2025 13:56:10 - Tratando 206143.03C
+03/12/2025 13:56:11 - Tratando 206144.03C
+03/12/2025 13:56:12 - Tratando 206145.03C
+03/12/2025 13:56:13 - Tratando 206146.03C
+03/12/2025 13:56:15 - Tratando 206149.03C
+03/12/2025 13:56:16 - Tratando 206150.03C
+03/12/2025 13:56:17 - Tratando 206152.03C
+03/12/2025 13:56:18 - Tratando 206154.03C
+03/12/2025 13:56:19 - Tratando 206155.03C
+03/12/2025 13:56:20 - Tratando 206158.03C
+03/12/2025 13:56:21 - Tratando 206159.03C
+03/12/2025 13:56:22 - Tratando 206161.03C
+03/12/2025 13:56:23 - Tratando 206162.03C
+03/12/2025 13:56:24 - Tratando 206166.03C
+03/12/2025 13:56:25 - Tratando 206168.03C
+03/12/2025 13:56:26 - Tratando 206169.03C
+03/12/2025 13:56:27 - Tratando 206170.03C
+03/12/2025 13:56:28 - Tratando 206171.03C
+03/12/2025 13:56:29 - Tratando 206173.03C
+03/12/2025 13:56:30 - Tratando 206175.03C
+03/12/2025 13:56:31 - Tratando 206176.03C
+03/12/2025 13:56:32 - Tratando 206177.03C
+03/12/2025 13:56:33 - Tratando 206180.03C
+03/12/2025 13:56:34 - Tratando 206181.03C
+03/12/2025 13:56:35 - Tratando 206182.03C
+03/12/2025 13:56:36 - Tratando 206183.03C
+03/12/2025 13:56:37 - Tratando 206184.03C
+03/12/2025 13:56:38 - Tratando 206187.03C
+03/12/2025 13:56:39 - Tratando 206190.03C
+03/12/2025 13:56:40 - Tratando 206191.03C
+03/12/2025 13:56:41 - Tratando 206192.03C
+03/12/2025 13:56:42 - Tratando 206194.03C
+03/12/2025 13:56:44 - Tratando 206198.03C
+03/12/2025 13:56:45 - Tratando 206898.03C
+03/12/2025 13:56:46 - Tratando 206899.03C
+03/12/2025 13:56:47 - Tratando 206900.03C
+03/12/2025 13:56:48 - Tratando 206901.03C
+03/12/2025 13:56:49 - Tratando 206902.03C
+03/12/2025 13:56:50 - Tratando 206905.03C
+03/12/2025 13:56:51 - Tratando 206907.03C
+03/12/2025 13:56:52 - Tratando 206908.03C
+03/12/2025 13:56:53 - Tratando 206909.03C
+03/12/2025 13:56:54 - Tratando 206910.03C
+03/12/2025 13:56:55 - Tratando 206913.03C
+03/12/2025 13:56:56 - Tratando 206916.03C
+03/12/2025 13:56:57 - Tratando 206917.03C
+03/12/2025 13:56:58 - Tratando 206918.03C
+03/12/2025 13:56:59 - Tratando 206919.03C
+03/12/2025 13:57:00 - Tratando 206921.03C
+03/12/2025 13:57:01 - Tratando 206922.03C
+03/12/2025 13:57:02 - Tratando 206924.03C
+03/12/2025 13:57:03 - Tratando 206925.03C
+03/12/2025 13:57:04 - Tratando 206926.03C
+03/12/2025 13:57:05 - Tratando 206927.03C
+03/12/2025 13:57:06 - Tratando tqgen01B
+03/12/2025 13:57:06 - moviendo tqgen01B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen01C
+03/12/2025 13:57:06 - moviendo tqgen01C a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen02C
+03/12/2025 13:57:06 - moviendo tqgen02C a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen03B
+03/12/2025 13:57:06 - moviendo tqgen03B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen03C
+03/12/2025 13:57:06 - Tratando tqgen04B
+03/12/2025 13:57:06 - moviendo tqgen04B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen05B
+03/12/2025 13:57:06 - moviendo tqgen05B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen06B
+03/12/2025 13:57:06 - moviendo tqgen06B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen07B
+03/12/2025 13:57:06 - moviendo tqgen07B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:06 - Tratando tqgen08B
+03/12/2025 13:57:06 - moviendo tqgen08B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen10B
+03/12/2025 13:57:07 - moviendo tqgen10B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen11B
+03/12/2025 13:57:07 - moviendo tqgen11B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen12B
+03/12/2025 13:57:07 - moviendo tqgen12B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen13B
+03/12/2025 13:57:07 - moviendo tqgen13B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen14B
+03/12/2025 13:57:07 - moviendo tqgen14B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen15B
+03/12/2025 13:57:07 - moviendo tqgen15B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen17B
+03/12/2025 13:57:07 - moviendo tqgen17B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen18B
+03/12/2025 13:57:07 - moviendo tqgen18B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen19B
+03/12/2025 13:57:07 - moviendo tqgen19B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen20B
+03/12/2025 13:57:07 - moviendo tqgen20B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen21B
+03/12/2025 13:57:07 - moviendo tqgen21B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen22B
+03/12/2025 13:57:07 - moviendo tqgen22B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen24B
+03/12/2025 13:57:07 - moviendo tqgen24B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen25B
+03/12/2025 13:57:07 - moviendo tqgen25B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen26B
+03/12/2025 13:57:07 - moviendo tqgen26B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen27B
+03/12/2025 13:57:07 - moviendo tqgen27B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen28A
+03/12/2025 13:57:07 - moviendo tqgen28A a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen28B
+03/12/2025 13:57:07 - moviendo tqgen28B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen29A
+03/12/2025 13:57:07 - moviendo tqgen29A a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen29B
+03/12/2025 13:57:07 - moviendo tqgen29B a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen30A
+03/12/2025 13:57:07 - moviendo tqgen30A a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:07 - Tratando tqgen31A
+03/12/2025 13:57:07 - moviendo tqgen31A a C:\greenvb\BalanzaTickets\tqgen
+03/12/2025 13:57:14 - -----------------------------------------------------------
+03/12/2025 13:57:14 - Conectando Oracle
+03/12/2025 13:57:14 - Comprobando C:\greenvb
+03/12/2025 13:57:14 - Conectando a XE
+03/12/2025 13:57:15 - Encontrados 4 ficheros.
+03/12/2025 13:57:15 - Tratando 205554.03C
+03/12/2025 13:57:16 - Tratando 206199.03C
+03/12/2025 13:57:17 - Tratando 206200.03C
+03/12/2025 13:57:18 - Tratando tqgen03C
+03/12/2025 13:58:14 - -----------------------------------------------------------
+03/12/2025 13:58:14 - Conectando Oracle
+03/12/2025 13:58:14 - Comprobando C:\greenvb
+03/12/2025 13:58:14 - Conectando a XE
+03/12/2025 13:58:15 - Encontrados 1 ficheros.
+03/12/2025 13:58:15 - Tratando tqgen03C
+03/12/2025 13:59:14 - -----------------------------------------------------------
+03/12/2025 13:59:14 - Conectando Oracle
+03/12/2025 13:59:14 - Comprobando C:\greenvb
+03/12/2025 13:59:14 - Conectando a XE
+03/12/2025 13:59:15 - Encontrados 1 ficheros.
+03/12/2025 13:59:15 - Tratando tqgen03C
+03/12/2025 14:00:14 - -----------------------------------------------------------
+03/12/2025 14:00:14 - Conectando Oracle
+03/12/2025 14:00:14 - Comprobando C:\greenvb
+03/12/2025 14:00:14 - Conectando a XE
+03/12/2025 14:00:15 - Encontrados 3 ficheros.
+03/12/2025 14:00:15 - Tratando 205555.03C
+03/12/2025 14:00:16 - Tratando 206928.03C
+03/12/2025 14:00:17 - Tratando tqgen03C
+03/12/2025 14:01:14 - -----------------------------------------------------------
+03/12/2025 14:01:14 - Conectando Oracle
+03/12/2025 14:01:14 - Comprobando C:\greenvb
+03/12/2025 14:01:14 - Conectando a XE
+03/12/2025 14:01:15 - Encontrados 1 ficheros.
+03/12/2025 14:01:15 - Tratando tqgen03C
+03/12/2025 14:02:14 - -----------------------------------------------------------
+03/12/2025 14:02:14 - Conectando Oracle
+03/12/2025 14:02:14 - Comprobando C:\greenvb
+03/12/2025 14:02:14 - Conectando a XE
+03/12/2025 14:02:15 - Encontrados 1 ficheros.
+03/12/2025 14:02:15 - Tratando tqgen03C
+03/12/2025 14:03:14 - -----------------------------------------------------------
+03/12/2025 14:03:14 - Conectando Oracle
+03/12/2025 14:03:14 - Comprobando C:\greenvb
+03/12/2025 14:03:14 - Conectando a XE
+03/12/2025 14:03:15 - Encontrados 2 ficheros.
+03/12/2025 14:03:15 - Tratando 205556.03C
+03/12/2025 14:03:16 - Tratando tqgen03C
+03/12/2025 14:04:14 - -----------------------------------------------------------
+03/12/2025 14:04:14 - Conectando Oracle
+03/12/2025 14:04:14 - Comprobando C:\greenvb
+03/12/2025 14:04:14 - Conectando a XE
+03/12/2025 14:04:15 - Encontrados 3 ficheros.
+03/12/2025 14:04:15 - Tratando 106201.03C
+03/12/2025 14:04:16 - Tratando 206202.03C
+03/12/2025 14:04:17 - Tratando tqgen03C
+03/12/2025 14:05:14 - -----------------------------------------------------------
+03/12/2025 14:05:14 - Conectando Oracle
+03/12/2025 14:05:14 - Comprobando C:\greenvb
+03/12/2025 14:05:14 - Conectando a XE
+03/12/2025 14:05:15 - Encontrados 1 ficheros.
+03/12/2025 14:05:15 - Tratando tqgen03C
+03/12/2025 14:06:14 - -----------------------------------------------------------
+03/12/2025 14:06:14 - Conectando Oracle
+03/12/2025 14:06:14 - Comprobando C:\greenvb
+03/12/2025 14:06:14 - Conectando a XE
+03/12/2025 14:06:15 - Encontrados 2 ficheros.
+03/12/2025 14:06:15 - Tratando 206203.03C
+03/12/2025 14:06:16 - Tratando tqgen03C
+03/12/2025 14:07:14 - -----------------------------------------------------------
+03/12/2025 14:07:14 - Conectando Oracle
+03/12/2025 14:07:14 - Comprobando C:\greenvb
+03/12/2025 14:07:14 - Conectando a XE
+03/12/2025 14:07:15 - Encontrados 3 ficheros.
+03/12/2025 14:07:15 - Tratando 205557.03C
+03/12/2025 14:07:16 - Tratando 205558.03C
+03/12/2025 14:07:17 - Tratando tqgen03C
+03/12/2025 14:08:14 - -----------------------------------------------------------
+03/12/2025 14:08:14 - Conectando Oracle
+03/12/2025 14:08:14 - Comprobando C:\greenvb
+03/12/2025 14:08:14 - Conectando a XE
+03/12/2025 14:08:15 - Encontrados 1 ficheros.
+03/12/2025 14:08:15 - Tratando tqgen03C
+03/12/2025 14:09:14 - -----------------------------------------------------------
+03/12/2025 14:09:14 - Conectando Oracle
+03/12/2025 14:09:14 - Comprobando C:\greenvb
+03/12/2025 14:09:14 - Conectando a XE
+03/12/2025 14:09:15 - Encontrados 1 ficheros.
+03/12/2025 14:09:15 - Tratando tqgen03C
+03/12/2025 14:10:14 - -----------------------------------------------------------
+03/12/2025 14:10:14 - Conectando Oracle
+03/12/2025 14:10:14 - Comprobando C:\greenvb
+03/12/2025 14:10:14 - Conectando a XE
+03/12/2025 14:10:15 - Encontrados 2 ficheros.
+03/12/2025 14:10:15 - Tratando 205559.03C
+03/12/2025 14:10:16 - Tratando tqgen03C
+03/12/2025 14:11:14 - -----------------------------------------------------------
+03/12/2025 14:11:14 - Conectando Oracle
+03/12/2025 14:11:14 - Comprobando C:\greenvb
+03/12/2025 14:11:14 - Conectando a XE
+03/12/2025 14:11:15 - Encontrados 2 ficheros.
+03/12/2025 14:11:15 - Tratando 206204.03C
+03/12/2025 14:11:16 - Tratando tqgen03C
+03/12/2025 14:12:14 - -----------------------------------------------------------
+03/12/2025 14:12:14 - Conectando Oracle
+03/12/2025 14:12:14 - Comprobando C:\greenvb
+03/12/2025 14:12:14 - Conectando a XE
+03/12/2025 14:12:15 - Encontrados 1 ficheros.
+03/12/2025 14:12:15 - Tratando tqgen03C
+03/12/2025 14:13:14 - -----------------------------------------------------------
+03/12/2025 14:13:14 - Conectando Oracle
+03/12/2025 14:13:14 - Comprobando C:\greenvb
+03/12/2025 14:13:14 - Conectando a XE
+03/12/2025 14:13:15 - Encontrados 2 ficheros.
+03/12/2025 14:13:15 - Tratando 206205.03C
+03/12/2025 14:13:16 - Tratando tqgen03C
+03/12/2025 14:14:14 - -----------------------------------------------------------
+03/12/2025 14:14:14 - Conectando Oracle
+03/12/2025 14:14:14 - Comprobando C:\greenvb
+03/12/2025 14:14:14 - Conectando a XE
+03/12/2025 14:14:15 - Encontrados 3 ficheros.
+03/12/2025 14:14:15 - Tratando 206206.03C
+03/12/2025 14:14:16 - Tratando 206207.03C
+03/12/2025 14:14:17 - Tratando tqgen03C
+03/12/2025 14:15:14 - -----------------------------------------------------------
+03/12/2025 14:15:14 - Conectando Oracle
+03/12/2025 14:15:14 - Comprobando C:\greenvb
+03/12/2025 14:15:14 - Conectando a XE
+03/12/2025 14:15:15 - Encontrados 1 ficheros.
+03/12/2025 14:15:15 - Tratando tqgen03C
+03/12/2025 14:16:14 - -----------------------------------------------------------
+03/12/2025 14:16:14 - Conectando Oracle
+03/12/2025 14:16:14 - Comprobando C:\greenvb
+03/12/2025 14:16:14 - Conectando a XE
+03/12/2025 14:16:15 - Encontrados 4 ficheros.
+03/12/2025 14:16:15 - Tratando 205561.03C
+03/12/2025 14:16:16 - Tratando 206930.03C
+03/12/2025 14:16:17 - Tratando 206931.03C
+03/12/2025 14:16:18 - Tratando tqgen03C
+03/12/2025 14:17:14 - -----------------------------------------------------------
+03/12/2025 14:17:14 - Conectando Oracle
+03/12/2025 14:17:14 - Comprobando C:\greenvb
+03/12/2025 14:17:14 - Conectando a XE
+03/12/2025 14:17:15 - Encontrados 2 ficheros.
+03/12/2025 14:17:15 - Tratando 205562.03C
+03/12/2025 14:17:16 - Tratando tqgen03C
+03/12/2025 14:18:14 - -----------------------------------------------------------
+03/12/2025 14:18:14 - Conectando Oracle
+03/12/2025 14:18:14 - Comprobando C:\greenvb
+03/12/2025 14:18:14 - Conectando a XE
+03/12/2025 14:18:15 - Encontrados 1 ficheros.
+03/12/2025 14:18:15 - Tratando tqgen03C
+03/12/2025 14:19:14 - -----------------------------------------------------------
+03/12/2025 14:19:14 - Conectando Oracle
+03/12/2025 14:19:14 - Comprobando C:\greenvb
+03/12/2025 14:19:14 - Conectando a XE
+03/12/2025 14:19:15 - Encontrados 1 ficheros.
+03/12/2025 14:19:15 - Tratando tqgen03C
+03/12/2025 14:20:14 - -----------------------------------------------------------
+03/12/2025 14:20:14 - Conectando Oracle
+03/12/2025 14:20:14 - Comprobando C:\greenvb
+03/12/2025 14:20:14 - Conectando a XE
+03/12/2025 14:20:15 - Encontrados 3 ficheros.
+03/12/2025 14:20:15 - Tratando 205563.03C
+03/12/2025 14:20:16 - Tratando 205564.03C
+03/12/2025 14:20:17 - Tratando tqgen03C
+03/12/2025 14:21:14 - -----------------------------------------------------------
+03/12/2025 14:21:14 - Conectando Oracle
+03/12/2025 14:21:14 - Comprobando C:\greenvb
+03/12/2025 14:21:14 - Conectando a XE
+03/12/2025 14:21:15 - Encontrados 1 ficheros.
+03/12/2025 14:21:15 - Tratando tqgen03C
+03/12/2025 14:22:14 - -----------------------------------------------------------
+03/12/2025 14:22:14 - Conectando Oracle
+03/12/2025 14:22:14 - Comprobando C:\greenvb
+03/12/2025 14:22:14 - Conectando a XE
+03/12/2025 14:22:15 - Encontrados 3 ficheros.
+03/12/2025 14:22:15 - Tratando 106210.03C
+03/12/2025 14:22:16 - Tratando 206209.03C
+03/12/2025 14:22:17 - Tratando tqgen03C
+03/12/2025 14:23:14 - -----------------------------------------------------------
+03/12/2025 14:23:14 - Conectando Oracle
+03/12/2025 14:23:14 - Comprobando C:\greenvb
+03/12/2025 14:23:14 - Conectando a XE
+03/12/2025 14:23:15 - Encontrados 1 ficheros.
+03/12/2025 14:23:15 - Tratando tqgen03C
+03/12/2025 14:24:14 - -----------------------------------------------------------
+03/12/2025 14:24:14 - Conectando Oracle
+03/12/2025 14:24:14 - Comprobando C:\greenvb
+03/12/2025 14:24:14 - Conectando a XE
+03/12/2025 14:24:15 - Encontrados 1 ficheros.
+03/12/2025 14:24:15 - Tratando tqgen03C
+03/12/2025 14:25:14 - -----------------------------------------------------------
+03/12/2025 14:25:14 - Conectando Oracle
+03/12/2025 14:25:14 - Comprobando C:\greenvb
+03/12/2025 14:25:14 - Conectando a XE
+03/12/2025 14:25:15 - Encontrados 1 ficheros.
+03/12/2025 14:25:15 - Tratando tqgen03C
+03/12/2025 14:26:14 - -----------------------------------------------------------
+03/12/2025 14:26:14 - Conectando Oracle
+03/12/2025 14:26:14 - Comprobando C:\greenvb
+03/12/2025 14:26:14 - Conectando a XE
+03/12/2025 14:26:15 - Encontrados 2 ficheros.
+03/12/2025 14:26:15 - Tratando 206932.03C
+03/12/2025 14:26:16 - Tratando tqgen03C
+03/12/2025 14:27:14 - -----------------------------------------------------------
+03/12/2025 14:27:14 - Conectando Oracle
+03/12/2025 14:27:14 - Comprobando C:\greenvb
+03/12/2025 14:27:14 - Conectando a XE
+03/12/2025 14:27:15 - Encontrados 3 ficheros.
+03/12/2025 14:27:15 - Tratando 005566.03C
+03/12/2025 14:27:16 - Tratando 205567.03C
+03/12/2025 14:27:17 - Tratando tqgen03C
+03/12/2025 14:28:14 - -----------------------------------------------------------
+03/12/2025 14:28:14 - Conectando Oracle
+03/12/2025 14:28:14 - Comprobando C:\greenvb
+03/12/2025 14:28:14 - Conectando a XE
+03/12/2025 14:28:15 - Encontrados 2 ficheros.
+03/12/2025 14:28:15 - Tratando 206212.03C
+03/12/2025 14:28:16 - Tratando tqgen03C
+03/12/2025 14:29:14 - -----------------------------------------------------------
+03/12/2025 14:29:14 - Conectando Oracle
+03/12/2025 14:29:14 - Comprobando C:\greenvb
+03/12/2025 14:29:14 - Conectando a XE
+03/12/2025 14:29:15 - Encontrados 1 ficheros.
+03/12/2025 14:29:15 - Tratando tqgen03C
+03/12/2025 14:30:14 - -----------------------------------------------------------
+03/12/2025 14:30:14 - Conectando Oracle
+03/12/2025 14:30:14 - Comprobando C:\greenvb
+03/12/2025 14:30:14 - Conectando a XE
+03/12/2025 14:30:15 - Encontrados 1 ficheros.
+03/12/2025 14:30:15 - Tratando tqgen03C
+03/12/2025 14:31:14 - -----------------------------------------------------------
+03/12/2025 14:31:14 - Conectando Oracle
+03/12/2025 14:31:14 - Comprobando C:\greenvb
+03/12/2025 14:31:14 - Conectando a XE
+03/12/2025 14:31:15 - Encontrados 1 ficheros.
+03/12/2025 14:31:15 - Tratando tqgen03C
+03/12/2025 14:32:14 - -----------------------------------------------------------
+03/12/2025 14:32:14 - Conectando Oracle
+03/12/2025 14:32:14 - Comprobando C:\greenvb
+03/12/2025 14:32:14 - Conectando a XE
+03/12/2025 14:32:15 - Encontrados 1 ficheros.
+03/12/2025 14:32:15 - Tratando tqgen03C
+03/12/2025 14:33:14 - -----------------------------------------------------------
+03/12/2025 14:33:14 - Conectando Oracle
+03/12/2025 14:33:14 - Comprobando C:\greenvb
+03/12/2025 14:33:14 - Conectando a XE
+03/12/2025 14:33:15 - Encontrados 2 ficheros.
+03/12/2025 14:33:15 - Tratando 205568.03C
+03/12/2025 14:33:16 - Tratando tqgen03C
+03/12/2025 14:34:14 - -----------------------------------------------------------
+03/12/2025 14:34:14 - Conectando Oracle
+03/12/2025 14:34:14 - Comprobando C:\greenvb
+03/12/2025 14:34:14 - Conectando a XE
+03/12/2025 14:34:15 - Encontrados 1 ficheros.
+03/12/2025 14:34:15 - Tratando tqgen03C
+03/12/2025 14:35:14 - -----------------------------------------------------------
+03/12/2025 14:35:14 - Conectando Oracle
+03/12/2025 14:35:14 - Comprobando C:\greenvb
+03/12/2025 14:35:14 - Conectando a XE
+03/12/2025 14:35:15 - Encontrados 2 ficheros.
+03/12/2025 14:35:15 - Tratando 206214.03C
+03/12/2025 14:35:16 - Tratando tqgen03C
+03/12/2025 14:36:14 - -----------------------------------------------------------
+03/12/2025 14:36:14 - Conectando Oracle
+03/12/2025 14:36:14 - Comprobando C:\greenvb
+03/12/2025 14:36:14 - Conectando a XE
+03/12/2025 14:36:15 - Encontrados 3 ficheros.
+03/12/2025 14:36:15 - Tratando 106215.03C
+03/12/2025 14:36:16 - Tratando 206933.03C
+03/12/2025 14:36:17 - Tratando tqgen03C
+03/12/2025 14:37:14 - -----------------------------------------------------------
+03/12/2025 14:37:14 - Conectando Oracle
+03/12/2025 14:37:14 - Comprobando C:\greenvb
+03/12/2025 14:37:14 - Conectando a XE
+03/12/2025 14:37:15 - Encontrados 1 ficheros.
+03/12/2025 14:37:15 - Tratando tqgen03C
+03/12/2025 14:38:14 - -----------------------------------------------------------
+03/12/2025 14:38:14 - Conectando Oracle
+03/12/2025 14:38:14 - Comprobando C:\greenvb
+03/12/2025 14:38:14 - Conectando a XE
+03/12/2025 14:38:15 - Encontrados 1 ficheros.
+03/12/2025 14:38:15 - Tratando tqgen03C
+03/12/2025 14:39:14 - -----------------------------------------------------------
+03/12/2025 14:39:14 - Conectando Oracle
+03/12/2025 14:39:14 - Comprobando C:\greenvb
+03/12/2025 14:39:14 - Conectando a XE
+03/12/2025 14:39:15 - Encontrados 4 ficheros.
+03/12/2025 14:39:15 - Tratando 205569.03C
+03/12/2025 14:39:16 - Tratando 206216.03C
+03/12/2025 14:39:17 - Tratando 206217.03C
+03/12/2025 14:39:18 - Tratando tqgen03C
+03/12/2025 14:40:14 - -----------------------------------------------------------
+03/12/2025 14:40:14 - Conectando Oracle
+03/12/2025 14:40:14 - Comprobando C:\greenvb
+03/12/2025 14:40:14 - Conectando a XE
+03/12/2025 14:40:15 - Encontrados 1 ficheros.
+03/12/2025 14:40:15 - Tratando tqgen03C
+03/12/2025 14:41:14 - -----------------------------------------------------------
+03/12/2025 14:41:14 - Conectando Oracle
+03/12/2025 14:41:14 - Comprobando C:\greenvb
+03/12/2025 14:41:14 - Conectando a XE
+03/12/2025 14:41:15 - Encontrados 2 ficheros.
+03/12/2025 14:41:15 - Tratando 205570.03C
+03/12/2025 14:41:16 - Tratando tqgen03C
+03/12/2025 14:42:14 - -----------------------------------------------------------
+03/12/2025 14:42:14 - Conectando Oracle
+03/12/2025 14:42:14 - Comprobando C:\greenvb
+03/12/2025 14:42:14 - Conectando a XE
+03/12/2025 14:42:15 - Encontrados 1 ficheros.
+03/12/2025 14:42:15 - Tratando tqgen03C
+03/12/2025 14:43:14 - -----------------------------------------------------------
+03/12/2025 14:43:14 - Conectando Oracle
+03/12/2025 14:43:14 - Comprobando C:\greenvb
+03/12/2025 14:43:14 - Conectando a XE
+03/12/2025 14:43:15 - Encontrados 2 ficheros.
+03/12/2025 14:43:15 - Tratando 205571.03C
+03/12/2025 14:43:16 - Tratando tqgen03C
+03/12/2025 14:44:14 - -----------------------------------------------------------
+03/12/2025 14:44:14 - Conectando Oracle
+03/12/2025 14:44:14 - Comprobando C:\greenvb
+03/12/2025 14:44:14 - Conectando a XE
+03/12/2025 14:44:15 - Encontrados 1 ficheros.
+03/12/2025 14:44:15 - Tratando tqgen03C
+03/12/2025 14:45:14 - -----------------------------------------------------------
+03/12/2025 14:45:14 - Conectando Oracle
+03/12/2025 14:45:14 - Comprobando C:\greenvb
+03/12/2025 14:45:14 - Conectando a XE
+03/12/2025 14:45:15 - Encontrados 3 ficheros.
+03/12/2025 14:45:15 - Tratando 206218.03C
+03/12/2025 14:45:16 - Tratando 206934.03C
+03/12/2025 14:45:17 - Tratando tqgen03C
+03/12/2025 14:46:14 - -----------------------------------------------------------
+03/12/2025 14:46:14 - Conectando Oracle
+03/12/2025 14:46:14 - Comprobando C:\greenvb
+03/12/2025 14:46:14 - Conectando a XE
+03/12/2025 14:46:15 - Encontrados 1 ficheros.
+03/12/2025 14:46:15 - Tratando tqgen03C
+03/12/2025 14:47:14 - -----------------------------------------------------------
+03/12/2025 14:47:14 - Conectando Oracle
+03/12/2025 14:47:14 - Comprobando C:\greenvb
+03/12/2025 14:47:14 - Conectando a XE
+03/12/2025 14:47:15 - Encontrados 1 ficheros.
+03/12/2025 14:47:15 - Tratando tqgen03C
+03/12/2025 14:48:14 - -----------------------------------------------------------
+03/12/2025 14:48:14 - Conectando Oracle
+03/12/2025 14:48:14 - Comprobando C:\greenvb
+03/12/2025 14:48:14 - Conectando a XE
+03/12/2025 14:48:15 - Encontrados 2 ficheros.
+03/12/2025 14:48:15 - Tratando 205572.03C
+03/12/2025 14:48:16 - Tratando tqgen03C
+03/12/2025 14:49:14 - -----------------------------------------------------------
+03/12/2025 14:49:14 - Conectando Oracle
+03/12/2025 14:49:14 - Comprobando C:\greenvb
+03/12/2025 14:49:14 - Conectando a XE
+03/12/2025 14:49:15 - Encontrados 1 ficheros.
+03/12/2025 14:49:15 - Tratando tqgen03C
+03/12/2025 14:50:14 - -----------------------------------------------------------
+03/12/2025 14:50:14 - Conectando Oracle
+03/12/2025 14:50:14 - Comprobando C:\greenvb
+03/12/2025 14:50:14 - Conectando a XE
+03/12/2025 14:50:15 - Encontrados 1 ficheros.
+03/12/2025 14:50:15 - Tratando tqgen03C
+03/12/2025 14:51:14 - -----------------------------------------------------------
+03/12/2025 14:51:14 - Conectando Oracle
+03/12/2025 14:51:14 - Comprobando C:\greenvb
+03/12/2025 14:51:14 - Conectando a XE
+03/12/2025 14:51:15 - Encontrados 1 ficheros.
+03/12/2025 14:51:15 - Tratando tqgen03C
+03/12/2025 14:52:14 - -----------------------------------------------------------
+03/12/2025 14:52:14 - Conectando Oracle
+03/12/2025 14:52:14 - Comprobando C:\greenvb
+03/12/2025 14:52:14 - Conectando a XE
+03/12/2025 14:52:15 - Encontrados 1 ficheros.
+03/12/2025 14:52:15 - Tratando tqgen03C
+03/12/2025 14:53:14 - -----------------------------------------------------------
+03/12/2025 14:53:14 - Conectando Oracle
+03/12/2025 14:53:14 - Comprobando C:\greenvb
+03/12/2025 14:53:14 - Conectando a XE
+03/12/2025 14:53:15 - Encontrados 1 ficheros.
+03/12/2025 14:53:15 - Tratando tqgen03C
+03/12/2025 14:54:14 - -----------------------------------------------------------
+03/12/2025 14:54:14 - Conectando Oracle
+03/12/2025 14:54:14 - Comprobando C:\greenvb
+03/12/2025 14:54:14 - Conectando a XE
+03/12/2025 14:54:15 - Encontrados 1 ficheros.
+03/12/2025 14:54:15 - Tratando tqgen03C
+03/12/2025 14:55:14 - -----------------------------------------------------------
+03/12/2025 14:55:14 - Conectando Oracle
+03/12/2025 14:55:14 - Comprobando C:\greenvb
+03/12/2025 14:55:14 - Conectando a XE
+03/12/2025 14:55:15 - Encontrados 1 ficheros.
+03/12/2025 14:55:15 - Tratando tqgen03C
+03/12/2025 14:56:14 - -----------------------------------------------------------
+03/12/2025 14:56:14 - Conectando Oracle
+03/12/2025 14:56:14 - Comprobando C:\greenvb
+03/12/2025 14:56:14 - Conectando a XE
+03/12/2025 14:56:15 - Encontrados 1 ficheros.
+03/12/2025 14:56:15 - Tratando tqgen03C
+03/12/2025 14:57:14 - -----------------------------------------------------------
+03/12/2025 14:57:14 - Conectando Oracle
+03/12/2025 14:57:14 - Comprobando C:\greenvb
+03/12/2025 14:57:14 - Conectando a XE
+03/12/2025 14:57:15 - Encontrados 1 ficheros.
+03/12/2025 14:57:15 - Tratando tqgen03C
+03/12/2025 14:58:14 - -----------------------------------------------------------
+03/12/2025 14:58:14 - Conectando Oracle
+03/12/2025 14:58:14 - Comprobando C:\greenvb
+03/12/2025 14:58:14 - Conectando a XE
+03/12/2025 14:58:15 - Encontrados 1 ficheros.
+03/12/2025 14:58:15 - Tratando tqgen03C
+03/12/2025 14:59:14 - -----------------------------------------------------------
+03/12/2025 14:59:14 - Conectando Oracle
+03/12/2025 14:59:14 - Comprobando C:\greenvb
+03/12/2025 14:59:14 - Conectando a XE
+03/12/2025 14:59:15 - Encontrados 1 ficheros.
+03/12/2025 14:59:15 - Tratando tqgen03C
+03/12/2025 15:00:14 - -----------------------------------------------------------
+03/12/2025 15:00:14 - Conectando Oracle
+03/12/2025 15:00:14 - Comprobando C:\greenvb
+03/12/2025 15:00:14 - Conectando a XE
+03/12/2025 15:00:15 - Encontrados 1 ficheros.
+03/12/2025 15:00:15 - Tratando tqgen03C
+03/12/2025 15:01:14 - -----------------------------------------------------------
+03/12/2025 15:01:14 - Conectando Oracle
+03/12/2025 15:01:14 - Comprobando C:\greenvb
+03/12/2025 15:01:14 - Conectando a XE
+03/12/2025 15:01:15 - Encontrados 1 ficheros.
+03/12/2025 15:01:15 - Tratando tqgen03C
+03/12/2025 15:02:14 - -----------------------------------------------------------
+03/12/2025 15:02:14 - Conectando Oracle
+03/12/2025 15:02:14 - Comprobando C:\greenvb
+03/12/2025 15:02:14 - Conectando a XE
+03/12/2025 15:02:15 - Encontrados 1 ficheros.
+03/12/2025 15:02:15 - Tratando tqgen03C
+03/12/2025 15:03:14 - -----------------------------------------------------------
+03/12/2025 15:03:14 - Conectando Oracle
+03/12/2025 15:03:14 - Comprobando C:\greenvb
+03/12/2025 15:03:14 - Conectando a XE
+03/12/2025 15:03:15 - Encontrados 1 ficheros.
+03/12/2025 15:03:15 - Tratando tqgen03C
+03/12/2025 15:04:14 - -----------------------------------------------------------
+03/12/2025 15:04:14 - Conectando Oracle
+03/12/2025 15:04:14 - Comprobando C:\greenvb
+03/12/2025 15:04:14 - Conectando a XE
+03/12/2025 15:04:15 - Encontrados 1 ficheros.
+03/12/2025 15:04:15 - Tratando tqgen03C
+03/12/2025 15:05:14 - -----------------------------------------------------------
+03/12/2025 15:05:14 - Conectando Oracle
+03/12/2025 15:05:14 - Comprobando C:\greenvb
+03/12/2025 15:05:14 - Conectando a XE
+03/12/2025 15:05:15 - Encontrados 1 ficheros.
+03/12/2025 15:05:15 - Tratando tqgen03C
+03/12/2025 15:06:14 - -----------------------------------------------------------
+03/12/2025 15:06:14 - Conectando Oracle
+03/12/2025 15:06:14 - Comprobando C:\greenvb
+03/12/2025 15:06:14 - Conectando a XE
+03/12/2025 15:06:15 - Encontrados 1 ficheros.
+03/12/2025 15:06:15 - Tratando tqgen03C
+03/12/2025 15:07:14 - -----------------------------------------------------------
+03/12/2025 15:07:14 - Conectando Oracle
+03/12/2025 15:07:14 - Comprobando C:\greenvb
+03/12/2025 15:07:14 - Conectando a XE
+03/12/2025 15:07:15 - Encontrados 1 ficheros.
+03/12/2025 15:07:15 - Tratando tqgen03C
+03/12/2025 15:08:14 - -----------------------------------------------------------
+03/12/2025 15:08:14 - Conectando Oracle
+03/12/2025 15:08:14 - Comprobando C:\greenvb
+03/12/2025 15:08:14 - Conectando a XE
+03/12/2025 15:08:15 - Encontrados 1 ficheros.
+03/12/2025 15:08:15 - Tratando tqgen03C
+03/12/2025 15:09:14 - -----------------------------------------------------------
+03/12/2025 15:09:14 - Conectando Oracle
+03/12/2025 15:09:14 - Comprobando C:\greenvb
+03/12/2025 15:09:14 - Conectando a XE
+03/12/2025 15:09:15 - Encontrados 1 ficheros.
+03/12/2025 15:09:15 - Tratando tqgen03C
+03/12/2025 15:10:14 - -----------------------------------------------------------
+03/12/2025 15:10:14 - Conectando Oracle
+03/12/2025 15:10:14 - Comprobando C:\greenvb
+03/12/2025 15:10:14 - Conectando a XE
+03/12/2025 15:10:15 - Encontrados 1 ficheros.
+03/12/2025 15:10:15 - Tratando tqgen03C
+03/12/2025 15:11:14 - -----------------------------------------------------------
+03/12/2025 15:11:14 - Conectando Oracle
+03/12/2025 15:11:14 - Comprobando C:\greenvb
+03/12/2025 15:11:14 - Conectando a XE
+03/12/2025 15:11:15 - Encontrados 1 ficheros.
+03/12/2025 15:11:15 - Tratando tqgen03C
+03/12/2025 15:12:14 - -----------------------------------------------------------
+03/12/2025 15:12:14 - Conectando Oracle
+03/12/2025 15:12:14 - Comprobando C:\greenvb
+03/12/2025 15:12:14 - Conectando a XE
+03/12/2025 15:12:15 - Encontrados 1 ficheros.
+03/12/2025 15:12:15 - Tratando tqgen03C
+03/12/2025 15:13:14 - -----------------------------------------------------------
+03/12/2025 15:13:14 - Conectando Oracle
+03/12/2025 15:13:14 - Comprobando C:\greenvb
+03/12/2025 15:13:14 - Conectando a XE
+03/12/2025 15:13:15 - Encontrados 1 ficheros.
+03/12/2025 15:13:15 - Tratando tqgen03C
+03/12/2025 15:14:14 - -----------------------------------------------------------
+03/12/2025 15:14:14 - Conectando Oracle
+03/12/2025 15:14:14 - Comprobando C:\greenvb
+03/12/2025 15:14:14 - Conectando a XE
+03/12/2025 15:14:15 - Encontrados 1 ficheros.
+03/12/2025 15:14:15 - Tratando tqgen03C
+03/12/2025 15:15:14 - -----------------------------------------------------------
+03/12/2025 15:15:14 - Conectando Oracle
+03/12/2025 15:15:14 - Comprobando C:\greenvb
+03/12/2025 15:15:14 - Conectando a XE
+03/12/2025 15:15:15 - Encontrados 1 ficheros.
+03/12/2025 15:15:15 - Tratando tqgen03C
+03/12/2025 15:16:14 - -----------------------------------------------------------
+03/12/2025 15:16:14 - Conectando Oracle
+03/12/2025 15:16:14 - Comprobando C:\greenvb
+03/12/2025 15:16:14 - Conectando a XE
+03/12/2025 15:16:15 - Encontrados 1 ficheros.
+03/12/2025 15:16:15 - Tratando tqgen03C
+03/12/2025 15:17:14 - -----------------------------------------------------------
+03/12/2025 15:17:14 - Conectando Oracle
+03/12/2025 15:17:14 - Comprobando C:\greenvb
+03/12/2025 15:17:14 - Conectando a XE
+03/12/2025 15:17:15 - Encontrados 1 ficheros.
+03/12/2025 15:17:15 - Tratando tqgen03C
+03/12/2025 15:18:14 - -----------------------------------------------------------
+03/12/2025 15:18:14 - Conectando Oracle
+03/12/2025 15:18:14 - Comprobando C:\greenvb
+03/12/2025 15:18:14 - Conectando a XE
+03/12/2025 15:18:15 - Encontrados 1 ficheros.
+03/12/2025 15:18:15 - Tratando tqgen03C
+03/12/2025 15:19:14 - -----------------------------------------------------------
+03/12/2025 15:19:14 - Conectando Oracle
+03/12/2025 15:19:14 - Comprobando C:\greenvb
+03/12/2025 15:19:14 - Conectando a XE
+03/12/2025 15:19:15 - Encontrados 3 ficheros.
+03/12/2025 15:19:15 - Tratando 106219.03C
+03/12/2025 15:19:16 - Tratando 206220.03C
+03/12/2025 15:19:17 - Tratando tqgen03C
+03/12/2025 15:20:14 - -----------------------------------------------------------
+03/12/2025 15:20:14 - Conectando Oracle
+03/12/2025 15:20:14 - Comprobando C:\greenvb
+03/12/2025 15:20:14 - Conectando a XE
+03/12/2025 15:20:15 - Encontrados 1 ficheros.
+03/12/2025 15:20:15 - Tratando tqgen03C
+03/12/2025 15:21:14 - -----------------------------------------------------------
+03/12/2025 15:21:14 - Conectando Oracle
+03/12/2025 15:21:14 - Comprobando C:\greenvb
+03/12/2025 15:21:14 - Conectando a XE
+03/12/2025 15:21:15 - Encontrados 1 ficheros.
+03/12/2025 15:21:15 - Tratando tqgen03C
+03/12/2025 15:22:14 - -----------------------------------------------------------
+03/12/2025 15:22:14 - Conectando Oracle
+03/12/2025 15:22:14 - Comprobando C:\greenvb
+03/12/2025 15:22:14 - Conectando a XE
+03/12/2025 15:22:15 - Encontrados 1 ficheros.
+03/12/2025 15:22:15 - Tratando tqgen03C
+03/12/2025 15:23:14 - -----------------------------------------------------------
+03/12/2025 15:23:14 - Conectando Oracle
+03/12/2025 15:23:14 - Comprobando C:\greenvb
+03/12/2025 15:23:14 - Conectando a XE
+03/12/2025 15:23:15 - Encontrados 1 ficheros.
+03/12/2025 15:23:15 - Tratando tqgen03C
+03/12/2025 15:24:14 - -----------------------------------------------------------
+03/12/2025 15:24:14 - Conectando Oracle
+03/12/2025 15:24:14 - Comprobando C:\greenvb
+03/12/2025 15:24:14 - Conectando a XE
+03/12/2025 15:24:15 - Encontrados 3 ficheros.
+03/12/2025 15:24:15 - Tratando 206221.03C
+03/12/2025 15:24:16 - Tratando 206935.03C
+03/12/2025 15:24:17 - Tratando tqgen03C
+03/12/2025 15:25:14 - -----------------------------------------------------------
+03/12/2025 15:25:14 - Conectando Oracle
+03/12/2025 15:25:14 - Comprobando C:\greenvb
+03/12/2025 15:25:14 - Conectando a XE
+03/12/2025 15:25:15 - Encontrados 1 ficheros.
+03/12/2025 15:25:15 - Tratando tqgen03C
+03/12/2025 15:26:14 - -----------------------------------------------------------
+03/12/2025 15:26:14 - Conectando Oracle
+03/12/2025 15:26:14 - Comprobando C:\greenvb
+03/12/2025 15:26:14 - Conectando a XE
+03/12/2025 15:26:15 - Encontrados 1 ficheros.
+03/12/2025 15:26:15 - Tratando tqgen03C
+03/12/2025 15:27:14 - -----------------------------------------------------------
+03/12/2025 15:27:14 - Conectando Oracle
+03/12/2025 15:27:14 - Comprobando C:\greenvb
+03/12/2025 15:27:14 - Conectando a XE
+03/12/2025 15:27:15 - Encontrados 3 ficheros.
+03/12/2025 15:27:15 - Tratando 106222.03C
+03/12/2025 15:27:16 - Tratando 206223.03C
+03/12/2025 15:27:17 - Tratando tqgen03C
+03/12/2025 15:28:14 - -----------------------------------------------------------
+03/12/2025 15:28:14 - Conectando Oracle
+03/12/2025 15:28:14 - Comprobando C:\greenvb
+03/12/2025 15:28:14 - Conectando a XE
+03/12/2025 15:28:15 - Encontrados 1 ficheros.
+03/12/2025 15:28:15 - Tratando tqgen03C
+03/12/2025 15:29:14 - -----------------------------------------------------------
+03/12/2025 15:29:14 - Conectando Oracle
+03/12/2025 15:29:14 - Comprobando C:\greenvb
+03/12/2025 15:29:14 - Conectando a XE
+03/12/2025 15:29:15 - Encontrados 2 ficheros.
+03/12/2025 15:29:15 - Tratando 206224.03C
+03/12/2025 15:29:16 - Tratando tqgen03C
+03/12/2025 15:30:14 - -----------------------------------------------------------
+03/12/2025 15:30:14 - Conectando Oracle
+03/12/2025 15:30:14 - Comprobando C:\greenvb
+03/12/2025 15:30:14 - Conectando a XE
+03/12/2025 15:30:15 - Encontrados 1 ficheros.
+03/12/2025 15:30:15 - Tratando tqgen03C
+03/12/2025 15:31:14 - -----------------------------------------------------------
+03/12/2025 15:31:14 - Conectando Oracle
+03/12/2025 15:31:14 - Comprobando C:\greenvb
+03/12/2025 15:31:14 - Conectando a XE
+03/12/2025 15:31:15 - Encontrados 1 ficheros.
+03/12/2025 15:31:15 - Tratando tqgen03C
+03/12/2025 15:32:14 - -----------------------------------------------------------
+03/12/2025 15:32:14 - Conectando Oracle
+03/12/2025 15:32:14 - Comprobando C:\greenvb
+03/12/2025 15:32:14 - Conectando a XE
+03/12/2025 15:32:15 - Encontrados 2 ficheros.
+03/12/2025 15:32:15 - Tratando 205573.03C
+03/12/2025 15:32:16 - Tratando tqgen03C
+03/12/2025 15:33:14 - -----------------------------------------------------------
+03/12/2025 15:33:14 - Conectando Oracle
+03/12/2025 15:33:14 - Comprobando C:\greenvb
+03/12/2025 15:33:14 - Conectando a XE
+03/12/2025 15:33:15 - Encontrados 1 ficheros.
+03/12/2025 15:33:15 - Tratando tqgen03C
+03/12/2025 15:34:14 - -----------------------------------------------------------
+03/12/2025 15:34:14 - Conectando Oracle
+03/12/2025 15:34:14 - Comprobando C:\greenvb
+03/12/2025 15:34:14 - Conectando a XE
+03/12/2025 15:34:15 - Encontrados 1 ficheros.
+03/12/2025 15:34:15 - Tratando tqgen03C
+03/12/2025 15:35:14 - -----------------------------------------------------------
+03/12/2025 15:35:14 - Conectando Oracle
+03/12/2025 15:35:14 - Comprobando C:\greenvb
+03/12/2025 15:35:14 - Conectando a XE
+03/12/2025 15:35:15 - Encontrados 5 ficheros.
+03/12/2025 15:35:15 - Tratando 106226.03C
+03/12/2025 15:35:16 - Tratando 205574.03C
+03/12/2025 15:35:17 - Tratando 206225.03C
+03/12/2025 15:35:18 - Tratando 206936.03C
+03/12/2025 15:35:19 - Tratando tqgen03C
+03/12/2025 15:36:14 - -----------------------------------------------------------
+03/12/2025 15:36:14 - Conectando Oracle
+03/12/2025 15:36:14 - Comprobando C:\greenvb
+03/12/2025 15:36:14 - Conectando a XE
+03/12/2025 15:36:15 - Encontrados 1 ficheros.
+03/12/2025 15:36:15 - Tratando tqgen03C
+03/12/2025 15:37:14 - -----------------------------------------------------------
+03/12/2025 15:37:14 - Conectando Oracle
+03/12/2025 15:37:14 - Comprobando C:\greenvb
+03/12/2025 15:37:14 - Conectando a XE
+03/12/2025 15:37:15 - Encontrados 2 ficheros.
+03/12/2025 15:37:15 - Tratando 205575.03C
+03/12/2025 15:37:16 - Tratando tqgen03C
+03/12/2025 15:38:14 - -----------------------------------------------------------
+03/12/2025 15:38:14 - Conectando Oracle
+03/12/2025 15:38:14 - Comprobando C:\greenvb
+03/12/2025 15:38:14 - Conectando a XE
+03/12/2025 15:38:15 - Encontrados 1 ficheros.
+03/12/2025 15:38:15 - Tratando tqgen03C
+03/12/2025 15:39:14 - -----------------------------------------------------------
+03/12/2025 15:39:14 - Conectando Oracle
+03/12/2025 15:39:14 - Comprobando C:\greenvb
+03/12/2025 15:39:14 - Conectando a XE
+03/12/2025 15:39:15 - Encontrados 1 ficheros.
+03/12/2025 15:39:15 - Tratando tqgen03C
+03/12/2025 15:40:14 - -----------------------------------------------------------
+03/12/2025 15:40:14 - Conectando Oracle
+03/12/2025 15:40:14 - Comprobando C:\greenvb
+03/12/2025 15:40:14 - Conectando a XE
+03/12/2025 15:40:15 - Encontrados 1 ficheros.
+03/12/2025 15:40:15 - Tratando tqgen03C
+03/12/2025 15:41:14 - -----------------------------------------------------------
+03/12/2025 15:41:14 - Conectando Oracle
+03/12/2025 15:41:14 - Comprobando C:\greenvb
+03/12/2025 15:41:14 - Conectando a XE
+03/12/2025 15:41:15 - Encontrados 1 ficheros.
+03/12/2025 15:41:15 - Tratando tqgen03C
+03/12/2025 15:42:14 - -----------------------------------------------------------
+03/12/2025 15:42:14 - Conectando Oracle
+03/12/2025 15:42:14 - Comprobando C:\greenvb
+03/12/2025 15:42:14 - Conectando a XE
+03/12/2025 15:42:15 - Encontrados 1 ficheros.
+03/12/2025 15:42:15 - Tratando tqgen03C
+03/12/2025 15:43:14 - -----------------------------------------------------------
+03/12/2025 15:43:14 - Conectando Oracle
+03/12/2025 15:43:14 - Comprobando C:\greenvb
+03/12/2025 15:43:14 - Conectando a XE
+03/12/2025 15:43:15 - Encontrados 1 ficheros.
+03/12/2025 15:43:15 - Tratando tqgen03C
+03/12/2025 15:44:14 - -----------------------------------------------------------
+03/12/2025 15:44:14 - Conectando Oracle
+03/12/2025 15:44:14 - Comprobando C:\greenvb
+03/12/2025 15:44:14 - Conectando a XE
+03/12/2025 15:44:15 - Encontrados 2 ficheros.
+03/12/2025 15:44:15 - Tratando 205576.03C
+03/12/2025 15:44:16 - Tratando tqgen03C
+03/12/2025 15:45:14 - -----------------------------------------------------------
+03/12/2025 15:45:14 - Conectando Oracle
+03/12/2025 15:45:14 - Comprobando C:\greenvb
+03/12/2025 15:45:14 - Conectando a XE
+03/12/2025 15:45:15 - Encontrados 1 ficheros.
+03/12/2025 15:45:15 - Tratando tqgen03C
+03/12/2025 15:46:14 - -----------------------------------------------------------
+03/12/2025 15:46:14 - Conectando Oracle
+03/12/2025 15:46:14 - Comprobando C:\greenvb
+03/12/2025 15:46:14 - Conectando a XE
+03/12/2025 15:46:15 - Encontrados 1 ficheros.
+03/12/2025 15:46:15 - Tratando tqgen03C
+03/12/2025 15:47:14 - -----------------------------------------------------------
+03/12/2025 15:47:14 - Conectando Oracle
+03/12/2025 15:47:14 - Comprobando C:\greenvb
+03/12/2025 15:47:14 - Conectando a XE
+03/12/2025 15:47:15 - Encontrados 1 ficheros.
+03/12/2025 15:47:15 - Tratando tqgen03C
+03/12/2025 15:48:14 - -----------------------------------------------------------
+03/12/2025 15:48:14 - Conectando Oracle
+03/12/2025 15:48:14 - Comprobando C:\greenvb
+03/12/2025 15:48:14 - Conectando a XE
+03/12/2025 15:48:15 - Encontrados 1 ficheros.
+03/12/2025 15:48:15 - Tratando tqgen03C
+03/12/2025 15:49:14 - -----------------------------------------------------------
+03/12/2025 15:49:14 - Conectando Oracle
+03/12/2025 15:49:14 - Comprobando C:\greenvb
+03/12/2025 15:49:14 - Conectando a XE
+03/12/2025 15:49:15 - Encontrados 1 ficheros.
+03/12/2025 15:49:15 - Tratando tqgen03C
+03/12/2025 15:50:14 - -----------------------------------------------------------
+03/12/2025 15:50:14 - Conectando Oracle
+03/12/2025 15:50:14 - Comprobando C:\greenvb
+03/12/2025 15:50:14 - Conectando a XE
+03/12/2025 15:50:15 - Encontrados 1 ficheros.
+03/12/2025 15:50:15 - Tratando tqgen03C
+03/12/2025 15:51:14 - -----------------------------------------------------------
+03/12/2025 15:51:14 - Conectando Oracle
+03/12/2025 15:51:14 - Comprobando C:\greenvb
+03/12/2025 15:51:14 - Conectando a XE
+03/12/2025 15:51:15 - Encontrados 2 ficheros.
+03/12/2025 15:51:15 - Tratando 205577.03C
+03/12/2025 15:51:16 - Tratando tqgen03C
+03/12/2025 15:52:14 - -----------------------------------------------------------
+03/12/2025 15:52:14 - Conectando Oracle
+03/12/2025 15:52:14 - Comprobando C:\greenvb
+03/12/2025 15:52:14 - Conectando a XE
+03/12/2025 15:52:15 - Encontrados 1 ficheros.
+03/12/2025 15:52:15 - Tratando tqgen03C
+03/12/2025 15:53:14 - -----------------------------------------------------------
+03/12/2025 15:53:14 - Conectando Oracle
+03/12/2025 15:53:14 - Comprobando C:\greenvb
+03/12/2025 15:53:14 - Conectando a XE
+03/12/2025 15:53:15 - Encontrados 1 ficheros.
+03/12/2025 15:53:15 - Tratando tqgen03C
+03/12/2025 15:54:14 - -----------------------------------------------------------
+03/12/2025 15:54:14 - Conectando Oracle
+03/12/2025 15:54:14 - Comprobando C:\greenvb
+03/12/2025 15:54:14 - Conectando a XE
+03/12/2025 15:54:15 - Encontrados 1 ficheros.
+03/12/2025 15:54:15 - Tratando tqgen03C
+03/12/2025 15:55:14 - -----------------------------------------------------------
+03/12/2025 15:55:14 - Conectando Oracle
+03/12/2025 15:55:14 - Comprobando C:\greenvb
+03/12/2025 15:55:14 - Conectando a XE
+03/12/2025 15:55:15 - Encontrados 1 ficheros.
+03/12/2025 15:55:15 - Tratando tqgen03C
+03/12/2025 15:56:14 - -----------------------------------------------------------
+03/12/2025 15:56:14 - Conectando Oracle
+03/12/2025 15:56:14 - Comprobando C:\greenvb
+03/12/2025 15:56:14 - Conectando a XE
+03/12/2025 15:56:15 - Encontrados 3 ficheros.
+03/12/2025 15:56:15 - Tratando 106227.03C
+03/12/2025 15:56:16 - Tratando 206228.03C
+03/12/2025 15:56:17 - Tratando tqgen03C
+03/12/2025 15:57:14 - -----------------------------------------------------------
+03/12/2025 15:57:14 - Conectando Oracle
+03/12/2025 15:57:14 - Comprobando C:\greenvb
+03/12/2025 15:57:14 - Conectando a XE
+03/12/2025 15:57:15 - Encontrados 1 ficheros.
+03/12/2025 15:57:15 - Tratando tqgen03C
+03/12/2025 15:58:14 - -----------------------------------------------------------
+03/12/2025 15:58:14 - Conectando Oracle
+03/12/2025 15:58:14 - Comprobando C:\greenvb
+03/12/2025 15:58:14 - Conectando a XE
+03/12/2025 15:58:15 - Encontrados 1 ficheros.
+03/12/2025 15:58:15 - Tratando tqgen03C
+03/12/2025 15:59:14 - -----------------------------------------------------------
+03/12/2025 15:59:14 - Conectando Oracle
+03/12/2025 15:59:14 - Comprobando C:\greenvb
+03/12/2025 15:59:14 - Conectando a XE
+03/12/2025 15:59:15 - Encontrados 1 ficheros.
+03/12/2025 15:59:15 - Tratando tqgen03C
+03/12/2025 16:00:14 - -----------------------------------------------------------
+03/12/2025 16:00:14 - Conectando Oracle
+03/12/2025 16:00:14 - Comprobando C:\greenvb
+03/12/2025 16:00:14 - Conectando a XE
+03/12/2025 16:00:15 - Encontrados 1 ficheros.
+03/12/2025 16:00:15 - Tratando tqgen03C
+03/12/2025 16:01:14 - -----------------------------------------------------------
+03/12/2025 16:01:14 - Conectando Oracle
+03/12/2025 16:01:14 - Comprobando C:\greenvb
+03/12/2025 16:01:14 - Conectando a XE
+03/12/2025 16:01:15 - Encontrados 1 ficheros.
+03/12/2025 16:01:15 - Tratando tqgen03C
+03/12/2025 16:02:14 - -----------------------------------------------------------
+03/12/2025 16:02:14 - Conectando Oracle
+03/12/2025 16:02:14 - Comprobando C:\greenvb
+03/12/2025 16:02:14 - Conectando a XE
+03/12/2025 16:02:15 - Encontrados 1 ficheros.
+03/12/2025 16:02:15 - Tratando tqgen03C
+03/12/2025 16:03:14 - -----------------------------------------------------------
+03/12/2025 16:03:14 - Conectando Oracle
+03/12/2025 16:03:14 - Comprobando C:\greenvb
+03/12/2025 16:03:14 - Conectando a XE
+03/12/2025 16:03:15 - Encontrados 1 ficheros.
+03/12/2025 16:03:15 - Tratando tqgen03C
+03/12/2025 16:04:14 - -----------------------------------------------------------
+03/12/2025 16:04:14 - Conectando Oracle
+03/12/2025 16:04:14 - Comprobando C:\greenvb
+03/12/2025 16:04:14 - Conectando a XE
+03/12/2025 16:04:15 - Encontrados 1 ficheros.
+03/12/2025 16:04:15 - Tratando tqgen03C
+03/12/2025 16:05:14 - -----------------------------------------------------------
+03/12/2025 16:05:14 - Conectando Oracle
+03/12/2025 16:05:14 - Comprobando C:\greenvb
+03/12/2025 16:05:14 - Conectando a XE
+03/12/2025 16:05:15 - Encontrados 1 ficheros.
+03/12/2025 16:05:15 - Tratando tqgen03C
+03/12/2025 16:06:14 - -----------------------------------------------------------
+03/12/2025 16:06:14 - Conectando Oracle
+03/12/2025 16:06:14 - Comprobando C:\greenvb
+03/12/2025 16:06:14 - Conectando a XE
+03/12/2025 16:06:15 - Encontrados 1 ficheros.
+03/12/2025 16:06:15 - Tratando tqgen03C
+03/12/2025 16:07:14 - -----------------------------------------------------------
+03/12/2025 16:07:14 - Conectando Oracle
+03/12/2025 16:07:14 - Comprobando C:\greenvb
+03/12/2025 16:07:14 - Conectando a XE
+03/12/2025 16:07:15 - Encontrados 1 ficheros.
+03/12/2025 16:07:15 - Tratando tqgen03C
+03/12/2025 16:08:14 - -----------------------------------------------------------
+03/12/2025 16:08:14 - Conectando Oracle
+03/12/2025 16:08:14 - Comprobando C:\greenvb
+03/12/2025 16:08:14 - Conectando a XE
+03/12/2025 16:08:15 - Encontrados 1 ficheros.
+03/12/2025 16:08:15 - Tratando tqgen03C
+03/12/2025 16:09:14 - -----------------------------------------------------------
+03/12/2025 16:09:14 - Conectando Oracle
+03/12/2025 16:09:14 - Comprobando C:\greenvb
+03/12/2025 16:09:14 - Conectando a XE
+03/12/2025 16:09:15 - Encontrados 1 ficheros.
+03/12/2025 16:09:15 - Tratando tqgen03C
+03/12/2025 16:10:14 - -----------------------------------------------------------
+03/12/2025 16:10:14 - Conectando Oracle
+03/12/2025 16:10:14 - Comprobando C:\greenvb
+03/12/2025 16:10:14 - Conectando a XE
+03/12/2025 16:10:15 - Encontrados 1 ficheros.
+03/12/2025 16:10:15 - Tratando tqgen03C
+03/12/2025 16:11:14 - -----------------------------------------------------------
+03/12/2025 16:11:14 - Conectando Oracle
+03/12/2025 16:11:14 - Comprobando C:\greenvb
+03/12/2025 16:11:14 - Conectando a XE
+03/12/2025 16:11:15 - Encontrados 2 ficheros.
+03/12/2025 16:11:15 - Tratando 206229.03C
+03/12/2025 16:11:16 - Tratando tqgen03C
+03/12/2025 16:12:14 - -----------------------------------------------------------
+03/12/2025 16:12:14 - Conectando Oracle
+03/12/2025 16:12:14 - Comprobando C:\greenvb
+03/12/2025 16:12:14 - Conectando a XE
+03/12/2025 16:12:15 - Encontrados 1 ficheros.
+03/12/2025 16:12:15 - Tratando tqgen03C
+03/12/2025 16:13:14 - -----------------------------------------------------------
+03/12/2025 16:13:14 - Conectando Oracle
+03/12/2025 16:13:14 - Comprobando C:\greenvb
+03/12/2025 16:13:14 - Conectando a XE
+03/12/2025 16:13:15 - Encontrados 1 ficheros.
+03/12/2025 16:13:15 - Tratando tqgen03C
+03/12/2025 16:14:14 - -----------------------------------------------------------
+03/12/2025 16:14:14 - Conectando Oracle
+03/12/2025 16:14:14 - Comprobando C:\greenvb
+03/12/2025 16:14:14 - Conectando a XE
+03/12/2025 16:14:15 - Encontrados 1 ficheros.
+03/12/2025 16:14:15 - Tratando tqgen03C
+03/12/2025 16:15:14 - -----------------------------------------------------------
+03/12/2025 16:15:14 - Conectando Oracle
+03/12/2025 16:15:14 - Comprobando C:\greenvb
+03/12/2025 16:15:14 - Conectando a XE
+03/12/2025 16:15:15 - Encontrados 1 ficheros.
+03/12/2025 16:15:15 - Tratando tqgen03C
+03/12/2025 16:16:14 - -----------------------------------------------------------
+03/12/2025 16:16:14 - Conectando Oracle
+03/12/2025 16:16:14 - Comprobando C:\greenvb
+03/12/2025 16:16:14 - Conectando a XE
+03/12/2025 16:16:15 - Encontrados 1 ficheros.
+03/12/2025 16:16:15 - Tratando tqgen03C
+03/12/2025 16:17:14 - -----------------------------------------------------------
+03/12/2025 16:17:14 - Conectando Oracle
+03/12/2025 16:17:14 - Comprobando C:\greenvb
+03/12/2025 16:17:14 - Conectando a XE
+03/12/2025 16:17:15 - Encontrados 1 ficheros.
+03/12/2025 16:17:15 - Tratando tqgen03C
+03/12/2025 16:18:14 - -----------------------------------------------------------
+03/12/2025 16:18:14 - Conectando Oracle
+03/12/2025 16:18:14 - Comprobando C:\greenvb
+03/12/2025 16:18:14 - Conectando a XE
+03/12/2025 16:18:15 - Encontrados 3 ficheros.
+03/12/2025 16:18:15 - Tratando 106231.03C
+03/12/2025 16:18:16 - Tratando 206230.03C
+03/12/2025 16:18:17 - Tratando tqgen03C
+03/12/2025 16:19:14 - -----------------------------------------------------------
+03/12/2025 16:19:14 - Conectando Oracle
+03/12/2025 16:19:14 - Comprobando C:\greenvb
+03/12/2025 16:19:14 - Conectando a XE
+03/12/2025 16:19:15 - Encontrados 1 ficheros.
+03/12/2025 16:19:15 - Tratando tqgen03C
+03/12/2025 16:20:14 - -----------------------------------------------------------
+03/12/2025 16:20:14 - Conectando Oracle
+03/12/2025 16:20:14 - Comprobando C:\greenvb
+03/12/2025 16:20:14 - Conectando a XE
+03/12/2025 16:20:15 - Encontrados 1 ficheros.
+03/12/2025 16:20:15 - Tratando tqgen03C
+03/12/2025 16:21:14 - -----------------------------------------------------------
+03/12/2025 16:21:14 - Conectando Oracle
+03/12/2025 16:21:14 - Comprobando C:\greenvb
+03/12/2025 16:21:14 - Conectando a XE
+03/12/2025 16:21:15 - Encontrados 1 ficheros.
+03/12/2025 16:21:15 - Tratando tqgen03C
+03/12/2025 16:22:14 - -----------------------------------------------------------
+03/12/2025 16:22:14 - Conectando Oracle
+03/12/2025 16:22:14 - Comprobando C:\greenvb
+03/12/2025 16:22:14 - Conectando a XE
+03/12/2025 16:22:15 - Encontrados 1 ficheros.
+03/12/2025 16:22:15 - Tratando tqgen03C
+03/12/2025 16:23:14 - -----------------------------------------------------------
+03/12/2025 16:23:14 - Conectando Oracle
+03/12/2025 16:23:14 - Comprobando C:\greenvb
+03/12/2025 16:23:14 - Conectando a XE
+03/12/2025 16:23:15 - Encontrados 1 ficheros.
+03/12/2025 16:23:15 - Tratando tqgen03C
+03/12/2025 16:24:14 - -----------------------------------------------------------
+03/12/2025 16:24:14 - Conectando Oracle
+03/12/2025 16:24:14 - Comprobando C:\greenvb
+03/12/2025 16:24:14 - Conectando a XE
+03/12/2025 16:24:15 - Encontrados 1 ficheros.
+03/12/2025 16:24:15 - Tratando tqgen03C
+03/12/2025 16:25:14 - -----------------------------------------------------------
+03/12/2025 16:25:14 - Conectando Oracle
+03/12/2025 16:25:14 - Comprobando C:\greenvb
+03/12/2025 16:25:14 - Conectando a XE
+03/12/2025 16:25:15 - Encontrados 2 ficheros.
+03/12/2025 16:25:15 - Tratando 205578.03C
+03/12/2025 16:25:16 - Tratando tqgen03C
+03/12/2025 16:26:14 - -----------------------------------------------------------
+03/12/2025 16:26:14 - Conectando Oracle
+03/12/2025 16:26:14 - Comprobando C:\greenvb
+03/12/2025 16:26:14 - Conectando a XE
+03/12/2025 16:26:15 - Encontrados 2 ficheros.
+03/12/2025 16:26:15 - Tratando 205579.03C
+03/12/2025 16:26:16 - Tratando tqgen03C
+03/12/2025 16:27:14 - -----------------------------------------------------------
+03/12/2025 16:27:14 - Conectando Oracle
+03/12/2025 16:27:14 - Comprobando C:\greenvb
+03/12/2025 16:27:14 - Conectando a XE
+03/12/2025 16:27:15 - Encontrados 1 ficheros.
+03/12/2025 16:27:15 - Tratando tqgen03C
+03/12/2025 16:28:14 - -----------------------------------------------------------
+03/12/2025 16:28:14 - Conectando Oracle
+03/12/2025 16:28:14 - Comprobando C:\greenvb
+03/12/2025 16:28:14 - Conectando a XE
+03/12/2025 16:28:15 - Encontrados 1 ficheros.
+03/12/2025 16:28:15 - Tratando tqgen03C
+03/12/2025 16:29:14 - -----------------------------------------------------------
+03/12/2025 16:29:14 - Conectando Oracle
+03/12/2025 16:29:14 - Comprobando C:\greenvb
+03/12/2025 16:29:14 - Conectando a XE
+03/12/2025 16:29:15 - Encontrados 1 ficheros.
+03/12/2025 16:29:15 - Tratando tqgen03C
+03/12/2025 16:30:14 - -----------------------------------------------------------
+03/12/2025 16:30:14 - Conectando Oracle
+03/12/2025 16:30:14 - Comprobando C:\greenvb
+03/12/2025 16:30:14 - Conectando a XE
+03/12/2025 16:30:15 - Encontrados 1 ficheros.
+03/12/2025 16:30:15 - Tratando tqgen03C
+03/12/2025 16:31:14 - -----------------------------------------------------------
+03/12/2025 16:31:14 - Conectando Oracle
+03/12/2025 16:31:14 - Comprobando C:\greenvb
+03/12/2025 16:31:14 - Conectando a XE
+03/12/2025 16:31:15 - Encontrados 1 ficheros.
+03/12/2025 16:31:15 - Tratando tqgen03C
+03/12/2025 16:32:14 - -----------------------------------------------------------
+03/12/2025 16:32:14 - Conectando Oracle
+03/12/2025 16:32:14 - Comprobando C:\greenvb
+03/12/2025 16:32:14 - Conectando a XE
+03/12/2025 16:32:15 - Encontrados 1 ficheros.
+03/12/2025 16:32:15 - Tratando tqgen03C
+03/12/2025 16:33:14 - -----------------------------------------------------------
+03/12/2025 16:33:14 - Conectando Oracle
+03/12/2025 16:33:14 - Comprobando C:\greenvb
+03/12/2025 16:33:14 - Conectando a XE
+03/12/2025 16:33:15 - Encontrados 1 ficheros.
+03/12/2025 16:33:15 - Tratando tqgen03C
+03/12/2025 16:34:14 - -----------------------------------------------------------
+03/12/2025 16:34:14 - Conectando Oracle
+03/12/2025 16:34:14 - Comprobando C:\greenvb
+03/12/2025 16:34:14 - Conectando a XE
+03/12/2025 16:34:15 - Encontrados 1 ficheros.
+03/12/2025 16:34:15 - Tratando tqgen03C
+03/12/2025 16:35:14 - -----------------------------------------------------------
+03/12/2025 16:35:14 - Conectando Oracle
+03/12/2025 16:35:14 - Comprobando C:\greenvb
+03/12/2025 16:35:14 - Conectando a XE
+03/12/2025 16:35:15 - Encontrados 1 ficheros.
+03/12/2025 16:35:15 - Tratando tqgen03C
+03/12/2025 16:36:14 - -----------------------------------------------------------
+03/12/2025 16:36:14 - Conectando Oracle
+03/12/2025 16:36:14 - Comprobando C:\greenvb
+03/12/2025 16:36:14 - Conectando a XE
+03/12/2025 16:36:15 - Encontrados 2 ficheros.
+03/12/2025 16:36:15 - Tratando 206938.03C
+03/12/2025 16:36:16 - Tratando tqgen03C
+03/12/2025 16:37:14 - -----------------------------------------------------------
+03/12/2025 16:37:14 - Conectando Oracle
+03/12/2025 16:37:14 - Comprobando C:\greenvb
+03/12/2025 16:37:14 - Conectando a XE
+03/12/2025 16:37:15 - Encontrados 1 ficheros.
+03/12/2025 16:37:15 - Tratando tqgen03C
+03/12/2025 16:38:14 - -----------------------------------------------------------
+03/12/2025 16:38:14 - Conectando Oracle
+03/12/2025 16:38:14 - Comprobando C:\greenvb
+03/12/2025 16:38:14 - Conectando a XE
+03/12/2025 16:38:15 - Encontrados 2 ficheros.
+03/12/2025 16:38:15 - Tratando 206232.03C
+03/12/2025 16:38:16 - Tratando tqgen03C
+03/12/2025 16:39:14 - -----------------------------------------------------------
+03/12/2025 16:39:14 - Conectando Oracle
+03/12/2025 16:39:14 - Comprobando C:\greenvb
+03/12/2025 16:39:14 - Conectando a XE
+03/12/2025 16:39:15 - Encontrados 1 ficheros.
+03/12/2025 16:39:15 - Tratando tqgen03C
+03/12/2025 16:40:14 - -----------------------------------------------------------
+03/12/2025 16:40:14 - Conectando Oracle
+03/12/2025 16:40:14 - Comprobando C:\greenvb
+03/12/2025 16:40:14 - Conectando a XE
+03/12/2025 16:40:15 - Encontrados 1 ficheros.
+03/12/2025 16:40:15 - Tratando tqgen03C
+03/12/2025 16:41:14 - -----------------------------------------------------------
+03/12/2025 16:41:14 - Conectando Oracle
+03/12/2025 16:41:14 - Comprobando C:\greenvb
+03/12/2025 16:41:14 - Conectando a XE
+03/12/2025 16:41:15 - Encontrados 2 ficheros.
+03/12/2025 16:41:15 - Tratando 205580.03C
+03/12/2025 16:41:16 - Tratando tqgen03C
+03/12/2025 16:42:14 - -----------------------------------------------------------
+03/12/2025 16:42:14 - Conectando Oracle
+03/12/2025 16:42:14 - Comprobando C:\greenvb
+03/12/2025 16:42:14 - Conectando a XE
+03/12/2025 16:42:15 - Encontrados 1 ficheros.
+03/12/2025 16:42:15 - Tratando tqgen03C
+03/12/2025 16:43:14 - -----------------------------------------------------------
+03/12/2025 16:43:14 - Conectando Oracle
+03/12/2025 16:43:14 - Comprobando C:\greenvb
+03/12/2025 16:43:14 - Conectando a XE
+03/12/2025 16:43:15 - Encontrados 1 ficheros.
+03/12/2025 16:43:15 - Tratando tqgen03C
+03/12/2025 16:44:14 - -----------------------------------------------------------
+03/12/2025 16:44:14 - Conectando Oracle
+03/12/2025 16:44:14 - Comprobando C:\greenvb
+03/12/2025 16:44:14 - Conectando a XE
+03/12/2025 16:44:15 - Encontrados 1 ficheros.
+03/12/2025 16:44:15 - Tratando tqgen03C
+03/12/2025 16:45:14 - -----------------------------------------------------------
+03/12/2025 16:45:14 - Conectando Oracle
+03/12/2025 16:45:14 - Comprobando C:\greenvb
+03/12/2025 16:45:14 - Conectando a XE
+03/12/2025 16:45:15 - Encontrados 3 ficheros.
+03/12/2025 16:45:15 - Tratando 205583.03C
+03/12/2025 16:45:16 - Tratando 206233.03C
+03/12/2025 16:45:17 - Tratando tqgen03C
+03/12/2025 16:46:14 - -----------------------------------------------------------
+03/12/2025 16:46:14 - Conectando Oracle
+03/12/2025 16:46:14 - Comprobando C:\greenvb
+03/12/2025 16:46:14 - Conectando a XE
+03/12/2025 16:46:15 - Encontrados 1 ficheros.
+03/12/2025 16:46:15 - Tratando tqgen03C
+03/12/2025 16:47:14 - -----------------------------------------------------------
+03/12/2025 16:47:14 - Conectando Oracle
+03/12/2025 16:47:14 - Comprobando C:\greenvb
+03/12/2025 16:47:14 - Conectando a XE
+03/12/2025 16:47:15 - Encontrados 2 ficheros.
+03/12/2025 16:47:15 - Tratando 206234.03C
+03/12/2025 16:47:16 - Tratando tqgen03C
+03/12/2025 16:48:14 - -----------------------------------------------------------
+03/12/2025 16:48:14 - Conectando Oracle
+03/12/2025 16:48:14 - Comprobando C:\greenvb
+03/12/2025 16:48:14 - Conectando a XE
+03/12/2025 16:48:15 - Encontrados 2 ficheros.
+03/12/2025 16:48:15 - Tratando 205584.03C
+03/12/2025 16:48:16 - Tratando tqgen03C
+03/12/2025 16:49:14 - -----------------------------------------------------------
+03/12/2025 16:49:14 - Conectando Oracle
+03/12/2025 16:49:14 - Comprobando C:\greenvb
+03/12/2025 16:49:14 - Conectando a XE
+03/12/2025 16:49:15 - Encontrados 3 ficheros.
+03/12/2025 16:49:15 - Tratando 205585.03C
+03/12/2025 16:49:16 - Tratando 206235.03C
+03/12/2025 16:49:17 - Tratando tqgen03C
+03/12/2025 16:50:14 - -----------------------------------------------------------
+03/12/2025 16:50:14 - Conectando Oracle
+03/12/2025 16:50:14 - Comprobando C:\greenvb
+03/12/2025 16:50:14 - Conectando a XE
+03/12/2025 16:50:15 - Encontrados 1 ficheros.
+03/12/2025 16:50:15 - Tratando tqgen03C
+03/12/2025 16:51:14 - -----------------------------------------------------------
+03/12/2025 16:51:14 - Conectando Oracle
+03/12/2025 16:51:14 - Comprobando C:\greenvb
+03/12/2025 16:51:14 - Conectando a XE
+03/12/2025 16:51:15 - Encontrados 1 ficheros.
+03/12/2025 16:51:15 - Tratando tqgen03C
+03/12/2025 16:52:14 - -----------------------------------------------------------
+03/12/2025 16:52:14 - Conectando Oracle
+03/12/2025 16:52:14 - Comprobando C:\greenvb
+03/12/2025 16:52:14 - Conectando a XE
+03/12/2025 16:52:15 - Encontrados 1 ficheros.
+03/12/2025 16:52:15 - Tratando tqgen03C
+03/12/2025 16:53:14 - -----------------------------------------------------------
+03/12/2025 16:53:14 - Conectando Oracle
+03/12/2025 16:53:14 - Comprobando C:\greenvb
+03/12/2025 16:53:14 - Conectando a XE
+03/12/2025 16:53:15 - Encontrados 1 ficheros.
+03/12/2025 16:53:15 - Tratando tqgen03C
+03/12/2025 16:54:14 - -----------------------------------------------------------
+03/12/2025 16:54:14 - Conectando Oracle
+03/12/2025 16:54:14 - Comprobando C:\greenvb
+03/12/2025 16:54:14 - Conectando a XE
+03/12/2025 16:54:15 - Encontrados 1 ficheros.
+03/12/2025 16:54:15 - Tratando tqgen03C
+03/12/2025 16:55:14 - -----------------------------------------------------------
+03/12/2025 16:55:14 - Conectando Oracle
+03/12/2025 16:55:14 - Comprobando C:\greenvb
+03/12/2025 16:55:14 - Conectando a XE
+03/12/2025 16:55:15 - Encontrados 1 ficheros.
+03/12/2025 16:55:15 - Tratando tqgen03C
+03/12/2025 16:56:14 - -----------------------------------------------------------
+03/12/2025 16:56:14 - Conectando Oracle
+03/12/2025 16:56:14 - Comprobando C:\greenvb
+03/12/2025 16:56:14 - Conectando a XE
+03/12/2025 16:56:15 - Encontrados 1 ficheros.
+03/12/2025 16:56:15 - Tratando tqgen03C
+03/12/2025 16:57:14 - -----------------------------------------------------------
+03/12/2025 16:57:14 - Conectando Oracle
+03/12/2025 16:57:14 - Comprobando C:\greenvb
+03/12/2025 16:57:14 - Conectando a XE
+03/12/2025 16:57:15 - Encontrados 1 ficheros.
+03/12/2025 16:57:15 - Tratando tqgen03C
+03/12/2025 16:58:14 - -----------------------------------------------------------
+03/12/2025 16:58:14 - Conectando Oracle
+03/12/2025 16:58:14 - Comprobando C:\greenvb
+03/12/2025 16:58:14 - Conectando a XE
+03/12/2025 16:58:15 - Encontrados 1 ficheros.
+03/12/2025 16:58:15 - Tratando tqgen03C
+03/12/2025 16:59:14 - -----------------------------------------------------------
+03/12/2025 16:59:14 - Conectando Oracle
+03/12/2025 16:59:14 - Comprobando C:\greenvb
+03/12/2025 16:59:14 - Conectando a XE
+03/12/2025 16:59:15 - Encontrados 1 ficheros.
+03/12/2025 16:59:15 - Tratando tqgen03C
+03/12/2025 17:00:14 - -----------------------------------------------------------
+03/12/2025 17:00:14 - Conectando Oracle
+03/12/2025 17:00:14 - Comprobando C:\greenvb
+03/12/2025 17:00:14 - Conectando a XE
+03/12/2025 17:00:15 - Encontrados 2 ficheros.
+03/12/2025 17:00:15 - Tratando 205586.03C
+03/12/2025 17:00:16 - Tratando tqgen03C
+03/12/2025 17:01:14 - -----------------------------------------------------------
+03/12/2025 17:01:14 - Conectando Oracle
+03/12/2025 17:01:14 - Comprobando C:\greenvb
+03/12/2025 17:01:14 - Conectando a XE
+03/12/2025 17:01:15 - Encontrados 1 ficheros.
+03/12/2025 17:01:15 - Tratando tqgen03C
+03/12/2025 17:02:14 - -----------------------------------------------------------
+03/12/2025 17:02:14 - Conectando Oracle
+03/12/2025 17:02:14 - Comprobando C:\greenvb
+03/12/2025 17:02:14 - Conectando a XE
+03/12/2025 17:02:15 - Encontrados 2 ficheros.
+03/12/2025 17:02:15 - Tratando 205587.03C
+03/12/2025 17:02:16 - Tratando tqgen03C
+03/12/2025 17:03:14 - -----------------------------------------------------------
+03/12/2025 17:03:14 - Conectando Oracle
+03/12/2025 17:03:14 - Comprobando C:\greenvb
+03/12/2025 17:03:14 - Conectando a XE
+03/12/2025 17:03:15 - Encontrados 1 ficheros.
+03/12/2025 17:03:15 - Tratando tqgen03C
+03/12/2025 17:04:14 - -----------------------------------------------------------
+03/12/2025 17:04:14 - Conectando Oracle
+03/12/2025 17:04:14 - Comprobando C:\greenvb
+03/12/2025 17:04:14 - Conectando a XE
+03/12/2025 17:04:15 - Encontrados 1 ficheros.
+03/12/2025 17:04:15 - Tratando tqgen03C
+03/12/2025 17:05:14 - -----------------------------------------------------------
+03/12/2025 17:05:14 - Conectando Oracle
+03/12/2025 17:05:14 - Comprobando C:\greenvb
+03/12/2025 17:05:14 - Conectando a XE
+03/12/2025 17:05:15 - Encontrados 1 ficheros.
+03/12/2025 17:05:15 - Tratando tqgen03C
+03/12/2025 17:06:14 - -----------------------------------------------------------
+03/12/2025 17:06:14 - Conectando Oracle
+03/12/2025 17:06:14 - Comprobando C:\greenvb
+03/12/2025 17:06:14 - Conectando a XE
+03/12/2025 17:06:15 - Encontrados 1 ficheros.
+03/12/2025 17:06:15 - Tratando tqgen03C
+03/12/2025 17:07:14 - -----------------------------------------------------------
+03/12/2025 17:07:14 - Conectando Oracle
+03/12/2025 17:07:14 - Comprobando C:\greenvb
+03/12/2025 17:07:14 - Conectando a XE
+03/12/2025 17:07:15 - Encontrados 1 ficheros.
+03/12/2025 17:07:15 - Tratando tqgen03C
+03/12/2025 17:08:14 - -----------------------------------------------------------
+03/12/2025 17:08:14 - Conectando Oracle
+03/12/2025 17:08:14 - Comprobando C:\greenvb
+03/12/2025 17:08:14 - Conectando a XE
+03/12/2025 17:08:15 - Encontrados 1 ficheros.
+03/12/2025 17:08:15 - Tratando tqgen03C
+03/12/2025 17:09:14 - -----------------------------------------------------------
+03/12/2025 17:09:14 - Conectando Oracle
+03/12/2025 17:09:14 - Comprobando C:\greenvb
+03/12/2025 17:09:14 - Conectando a XE
+03/12/2025 17:09:15 - Encontrados 3 ficheros.
+03/12/2025 17:09:15 - Tratando 106236.03C
+03/12/2025 17:09:16 - Tratando 206237.03C
+03/12/2025 17:09:17 - Tratando tqgen03C
+03/12/2025 17:10:14 - -----------------------------------------------------------
+03/12/2025 17:10:14 - Conectando Oracle
+03/12/2025 17:10:14 - Comprobando C:\greenvb
+03/12/2025 17:10:14 - Conectando a XE
+03/12/2025 17:10:15 - Encontrados 1 ficheros.
+03/12/2025 17:10:15 - Tratando tqgen03C
+03/12/2025 17:11:14 - -----------------------------------------------------------
+03/12/2025 17:11:14 - Conectando Oracle
+03/12/2025 17:11:14 - Comprobando C:\greenvb
+03/12/2025 17:11:14 - Conectando a XE
+03/12/2025 17:11:15 - Encontrados 3 ficheros.
+03/12/2025 17:11:15 - Tratando 205591.03C
+03/12/2025 17:11:16 - Tratando 205592.03C
+03/12/2025 17:11:17 - Tratando tqgen03C
+03/12/2025 17:12:14 - -----------------------------------------------------------
+03/12/2025 17:12:14 - Conectando Oracle
+03/12/2025 17:12:14 - Comprobando C:\greenvb
+03/12/2025 17:12:14 - Conectando a XE
+03/12/2025 17:12:15 - Encontrados 1 ficheros.
+03/12/2025 17:12:15 - Tratando tqgen03C
+03/12/2025 17:13:14 - -----------------------------------------------------------
+03/12/2025 17:13:14 - Conectando Oracle
+03/12/2025 17:13:14 - Comprobando C:\greenvb
+03/12/2025 17:13:14 - Conectando a XE
+03/12/2025 17:13:15 - Encontrados 1 ficheros.
+03/12/2025 17:13:15 - Tratando tqgen03C
+03/12/2025 17:14:14 - -----------------------------------------------------------
+03/12/2025 17:14:14 - Conectando Oracle
+03/12/2025 17:14:14 - Comprobando C:\greenvb
+03/12/2025 17:14:14 - Conectando a XE
+03/12/2025 17:14:15 - Encontrados 1 ficheros.
+03/12/2025 17:14:15 - Tratando tqgen03C
+03/12/2025 17:15:14 - -----------------------------------------------------------
+03/12/2025 17:15:14 - Conectando Oracle
+03/12/2025 17:15:14 - Comprobando C:\greenvb
+03/12/2025 17:15:14 - Conectando a XE
+03/12/2025 17:15:15 - Encontrados 3 ficheros.
+03/12/2025 17:15:15 - Tratando 205593.03C
+03/12/2025 17:15:16 - Tratando 206238.03C
+03/12/2025 17:15:17 - Tratando tqgen03C
+03/12/2025 17:16:14 - -----------------------------------------------------------
+03/12/2025 17:16:14 - Conectando Oracle
+03/12/2025 17:16:14 - Comprobando C:\greenvb
+03/12/2025 17:16:14 - Conectando a XE
+03/12/2025 17:16:15 - Encontrados 1 ficheros.
+03/12/2025 17:16:15 - Tratando tqgen03C
+03/12/2025 17:17:14 - -----------------------------------------------------------
+03/12/2025 17:17:14 - Conectando Oracle
+03/12/2025 17:17:14 - Comprobando C:\greenvb
+03/12/2025 17:17:14 - Conectando a XE
+03/12/2025 17:17:15 - Encontrados 1 ficheros.
+03/12/2025 17:17:15 - Tratando tqgen03C
+03/12/2025 17:18:14 - -----------------------------------------------------------
+03/12/2025 17:18:14 - Conectando Oracle
+03/12/2025 17:18:14 - Comprobando C:\greenvb
+03/12/2025 17:18:14 - Conectando a XE
+03/12/2025 17:18:15 - Encontrados 1 ficheros.
+03/12/2025 17:18:15 - Tratando tqgen03C
+03/12/2025 17:19:14 - -----------------------------------------------------------
+03/12/2025 17:19:14 - Conectando Oracle
+03/12/2025 17:19:14 - Comprobando C:\greenvb
+03/12/2025 17:19:14 - Conectando a XE
+03/12/2025 17:19:15 - Encontrados 1 ficheros.
+03/12/2025 17:19:15 - Tratando tqgen03C
+03/12/2025 17:20:14 - -----------------------------------------------------------
+03/12/2025 17:20:14 - Conectando Oracle
+03/12/2025 17:20:14 - Comprobando C:\greenvb
+03/12/2025 17:20:14 - Conectando a XE
+03/12/2025 17:20:15 - Encontrados 2 ficheros.
+03/12/2025 17:20:15 - Tratando 206239.03C
+03/12/2025 17:20:16 - Tratando tqgen03C
+03/12/2025 17:21:14 - -----------------------------------------------------------
+03/12/2025 17:21:14 - Conectando Oracle
+03/12/2025 17:21:14 - Comprobando C:\greenvb
+03/12/2025 17:21:14 - Conectando a XE
+03/12/2025 17:21:15 - Encontrados 1 ficheros.
+03/12/2025 17:21:15 - Tratando tqgen03C
+03/12/2025 17:22:14 - -----------------------------------------------------------
+03/12/2025 17:22:14 - Conectando Oracle
+03/12/2025 17:22:14 - Comprobando C:\greenvb
+03/12/2025 17:22:14 - Conectando a XE
+03/12/2025 17:22:15 - Encontrados 2 ficheros.
+03/12/2025 17:22:15 - Tratando 205594.03C
+03/12/2025 17:22:16 - Tratando tqgen03C
+03/12/2025 17:23:14 - -----------------------------------------------------------
+03/12/2025 17:23:14 - Conectando Oracle
+03/12/2025 17:23:14 - Comprobando C:\greenvb
+03/12/2025 17:23:14 - Conectando a XE
+03/12/2025 17:23:15 - Encontrados 1 ficheros.
+03/12/2025 17:23:15 - Tratando tqgen03C
+03/12/2025 17:24:14 - -----------------------------------------------------------
+03/12/2025 17:24:14 - Conectando Oracle
+03/12/2025 17:24:14 - Comprobando C:\greenvb
+03/12/2025 17:24:14 - Conectando a XE
+03/12/2025 17:24:15 - Encontrados 1 ficheros.
+03/12/2025 17:24:15 - Tratando tqgen03C
+03/12/2025 17:25:14 - -----------------------------------------------------------
+03/12/2025 17:25:14 - Conectando Oracle
+03/12/2025 17:25:14 - Comprobando C:\greenvb
+03/12/2025 17:25:14 - Conectando a XE
+03/12/2025 17:25:15 - Encontrados 1 ficheros.
+03/12/2025 17:25:15 - Tratando tqgen03C
+03/12/2025 17:26:14 - -----------------------------------------------------------
+03/12/2025 17:26:14 - Conectando Oracle
+03/12/2025 17:26:14 - Comprobando C:\greenvb
+03/12/2025 17:26:14 - Conectando a XE
+03/12/2025 17:26:15 - Encontrados 1 ficheros.
+03/12/2025 17:26:15 - Tratando tqgen03C
+03/12/2025 17:27:14 - -----------------------------------------------------------
+03/12/2025 17:27:14 - Conectando Oracle
+03/12/2025 17:27:14 - Comprobando C:\greenvb
+03/12/2025 17:27:14 - Conectando a XE
+03/12/2025 17:27:15 - Encontrados 1 ficheros.
+03/12/2025 17:27:15 - Tratando tqgen03C
+03/12/2025 17:28:14 - -----------------------------------------------------------
+03/12/2025 17:28:14 - Conectando Oracle
+03/12/2025 17:28:14 - Comprobando C:\greenvb
+03/12/2025 17:28:14 - Conectando a XE
+03/12/2025 17:28:15 - Encontrados 1 ficheros.
+03/12/2025 17:28:15 - Tratando tqgen03C
+03/12/2025 17:29:14 - -----------------------------------------------------------
+03/12/2025 17:29:14 - Conectando Oracle
+03/12/2025 17:29:14 - Comprobando C:\greenvb
+03/12/2025 17:29:14 - Conectando a XE
+03/12/2025 17:29:15 - Encontrados 3 ficheros.
+03/12/2025 17:29:15 - Tratando 205595.03C
+03/12/2025 17:29:16 - Tratando 205596.03C
+03/12/2025 17:29:17 - Tratando tqgen03C
+03/12/2025 17:30:14 - -----------------------------------------------------------
+03/12/2025 17:30:14 - Conectando Oracle
+03/12/2025 17:30:14 - Comprobando C:\greenvb
+03/12/2025 17:30:14 - Conectando a XE
+03/12/2025 17:30:15 - Encontrados 1 ficheros.
+03/12/2025 17:30:15 - Tratando tqgen03C
+03/12/2025 17:31:14 - -----------------------------------------------------------
+03/12/2025 17:31:14 - Conectando Oracle
+03/12/2025 17:31:14 - Comprobando C:\greenvb
+03/12/2025 17:31:14 - Conectando a XE
+03/12/2025 17:31:15 - Encontrados 1 ficheros.
+03/12/2025 17:31:15 - Tratando tqgen03C
+03/12/2025 17:32:14 - -----------------------------------------------------------
+03/12/2025 17:32:14 - Conectando Oracle
+03/12/2025 17:32:14 - Comprobando C:\greenvb
+03/12/2025 17:32:14 - Conectando a XE
+03/12/2025 17:32:15 - Encontrados 2 ficheros.
+03/12/2025 17:32:15 - Tratando 205597.03C
+03/12/2025 17:32:16 - Tratando tqgen03C
+03/12/2025 17:33:14 - -----------------------------------------------------------
+03/12/2025 17:33:14 - Conectando Oracle
+03/12/2025 17:33:14 - Comprobando C:\greenvb
+03/12/2025 17:33:14 - Conectando a XE
+03/12/2025 17:33:15 - Encontrados 1 ficheros.
+03/12/2025 17:33:15 - Tratando tqgen03C
+03/12/2025 17:34:14 - -----------------------------------------------------------
+03/12/2025 17:34:14 - Conectando Oracle
+03/12/2025 17:34:14 - Comprobando C:\greenvb
+03/12/2025 17:34:14 - Conectando a XE
+03/12/2025 17:34:15 - Encontrados 1 ficheros.
+03/12/2025 17:34:15 - Tratando tqgen03C
+03/12/2025 17:35:14 - -----------------------------------------------------------
+03/12/2025 17:35:14 - Conectando Oracle
+03/12/2025 17:35:14 - Comprobando C:\greenvb
+03/12/2025 17:35:14 - Conectando a XE
+03/12/2025 17:35:15 - Encontrados 4 ficheros.
+03/12/2025 17:35:15 - Tratando 106240.03C
+03/12/2025 17:35:16 - Tratando 205599.03C
+03/12/2025 17:35:17 - Tratando 206241.03C
+03/12/2025 17:35:18 - Tratando tqgen03C
+03/12/2025 17:36:14 - -----------------------------------------------------------
+03/12/2025 17:36:14 - Conectando Oracle
+03/12/2025 17:36:14 - Comprobando C:\greenvb
+03/12/2025 17:36:14 - Conectando a XE
+03/12/2025 17:36:15 - Encontrados 1 ficheros.
+03/12/2025 17:36:15 - Tratando tqgen03C
+03/12/2025 17:37:14 - -----------------------------------------------------------
+03/12/2025 17:37:14 - Conectando Oracle
+03/12/2025 17:37:14 - Comprobando C:\greenvb
+03/12/2025 17:37:14 - Conectando a XE
+03/12/2025 17:37:15 - Encontrados 1 ficheros.
+03/12/2025 17:37:15 - Tratando tqgen03C
+03/12/2025 17:38:14 - -----------------------------------------------------------
+03/12/2025 17:38:14 - Conectando Oracle
+03/12/2025 17:38:14 - Comprobando C:\greenvb
+03/12/2025 17:38:14 - Conectando a XE
+03/12/2025 17:38:15 - Encontrados 1 ficheros.
+03/12/2025 17:38:15 - Tratando tqgen03C
+03/12/2025 17:39:14 - -----------------------------------------------------------
+03/12/2025 17:39:14 - Conectando Oracle
+03/12/2025 17:39:14 - Comprobando C:\greenvb
+03/12/2025 17:39:14 - Conectando a XE
+03/12/2025 17:39:15 - Encontrados 2 ficheros.
+03/12/2025 17:39:15 - Tratando 206940.03C
+03/12/2025 17:39:16 - Tratando tqgen03C
+03/12/2025 17:40:14 - -----------------------------------------------------------
+03/12/2025 17:40:14 - Conectando Oracle
+03/12/2025 17:40:14 - Comprobando C:\greenvb
+03/12/2025 17:40:14 - Conectando a XE
+03/12/2025 17:40:15 - Encontrados 1 ficheros.
+03/12/2025 17:40:15 - Tratando tqgen03C
+03/12/2025 17:41:14 - -----------------------------------------------------------
+03/12/2025 17:41:14 - Conectando Oracle
+03/12/2025 17:41:14 - Comprobando C:\greenvb
+03/12/2025 17:41:14 - Conectando a XE
+03/12/2025 17:41:15 - Encontrados 1 ficheros.
+03/12/2025 17:41:15 - Tratando tqgen03C
+03/12/2025 17:42:14 - -----------------------------------------------------------
+03/12/2025 17:42:14 - Conectando Oracle
+03/12/2025 17:42:14 - Comprobando C:\greenvb
+03/12/2025 17:42:14 - Conectando a XE
+03/12/2025 17:42:15 - Encontrados 1 ficheros.
+03/12/2025 17:42:15 - Tratando tqgen03C
+03/12/2025 17:43:14 - -----------------------------------------------------------
+03/12/2025 17:43:14 - Conectando Oracle
+03/12/2025 17:43:14 - Comprobando C:\greenvb
+03/12/2025 17:43:14 - Conectando a XE
+03/12/2025 17:43:15 - Encontrados 1 ficheros.
+03/12/2025 17:43:15 - Tratando tqgen03C
+03/12/2025 17:44:14 - -----------------------------------------------------------
+03/12/2025 17:44:14 - Conectando Oracle
+03/12/2025 17:44:14 - Comprobando C:\greenvb
+03/12/2025 17:44:14 - Conectando a XE
+03/12/2025 17:44:15 - Encontrados 1 ficheros.
+03/12/2025 17:44:15 - Tratando tqgen03C
+03/12/2025 17:45:14 - -----------------------------------------------------------
+03/12/2025 17:45:14 - Conectando Oracle
+03/12/2025 17:45:14 - Comprobando C:\greenvb
+03/12/2025 17:45:14 - Conectando a XE
+03/12/2025 17:45:15 - Encontrados 1 ficheros.
+03/12/2025 17:45:15 - Tratando tqgen03C
+03/12/2025 17:46:14 - -----------------------------------------------------------
+03/12/2025 17:46:14 - Conectando Oracle
+03/12/2025 17:46:14 - Comprobando C:\greenvb
+03/12/2025 17:46:14 - Conectando a XE
+03/12/2025 17:46:15 - Encontrados 2 ficheros.
+03/12/2025 17:46:15 - Tratando 206941.03C
+03/12/2025 17:46:16 - Tratando tqgen03C
+03/12/2025 17:47:14 - -----------------------------------------------------------
+03/12/2025 17:47:14 - Conectando Oracle
+03/12/2025 17:47:14 - Comprobando C:\greenvb
+03/12/2025 17:47:14 - Conectando a XE
+03/12/2025 17:47:15 - Encontrados 3 ficheros.
+03/12/2025 17:47:15 - Tratando 205600.03C
+03/12/2025 17:47:16 - Tratando 206243.03C
+03/12/2025 17:47:17 - Tratando tqgen03C
+03/12/2025 17:48:14 - -----------------------------------------------------------
+03/12/2025 17:48:14 - Conectando Oracle
+03/12/2025 17:48:14 - Comprobando C:\greenvb
+03/12/2025 17:48:14 - Conectando a XE
+03/12/2025 17:48:15 - Encontrados 1 ficheros.
+03/12/2025 17:48:15 - Tratando tqgen03C
+03/12/2025 17:49:14 - -----------------------------------------------------------
+03/12/2025 17:49:14 - Conectando Oracle
+03/12/2025 17:49:14 - Comprobando C:\greenvb
+03/12/2025 17:49:14 - Conectando a XE
+03/12/2025 17:49:15 - Encontrados 2 ficheros.
+03/12/2025 17:49:15 - Tratando 206942.03C
+03/12/2025 17:49:16 - Tratando tqgen03C
+03/12/2025 17:50:14 - -----------------------------------------------------------
+03/12/2025 17:50:14 - Conectando Oracle
+03/12/2025 17:50:14 - Comprobando C:\greenvb
+03/12/2025 17:50:14 - Conectando a XE
+03/12/2025 17:50:15 - Encontrados 1 ficheros.
+03/12/2025 17:50:15 - Tratando tqgen03C
+03/12/2025 17:51:14 - -----------------------------------------------------------
+03/12/2025 17:51:14 - Conectando Oracle
+03/12/2025 17:51:14 - Comprobando C:\greenvb
+03/12/2025 17:51:14 - Conectando a XE
+03/12/2025 17:51:15 - Encontrados 1 ficheros.
+03/12/2025 17:51:15 - Tratando tqgen03C
+03/12/2025 17:52:14 - -----------------------------------------------------------
+03/12/2025 17:52:14 - Conectando Oracle
+03/12/2025 17:52:14 - Comprobando C:\greenvb
+03/12/2025 17:52:14 - Conectando a XE
+03/12/2025 17:52:15 - Encontrados 1 ficheros.
+03/12/2025 17:52:15 - Tratando tqgen03C
+03/12/2025 17:53:14 - -----------------------------------------------------------
+03/12/2025 17:53:14 - Conectando Oracle
+03/12/2025 17:53:14 - Comprobando C:\greenvb
+03/12/2025 17:53:14 - Conectando a XE
+03/12/2025 17:53:15 - Encontrados 1 ficheros.
+03/12/2025 17:53:15 - Tratando tqgen03C
+03/12/2025 17:54:14 - -----------------------------------------------------------
+03/12/2025 17:54:14 - Conectando Oracle
+03/12/2025 17:54:14 - Comprobando C:\greenvb
+03/12/2025 17:54:14 - Conectando a XE
+03/12/2025 17:54:15 - Encontrados 1 ficheros.
+03/12/2025 17:54:15 - Tratando tqgen03C
+03/12/2025 17:55:14 - -----------------------------------------------------------
+03/12/2025 17:55:14 - Conectando Oracle
+03/12/2025 17:55:14 - Comprobando C:\greenvb
+03/12/2025 17:55:14 - Conectando a XE
+03/12/2025 17:55:15 - Encontrados 2 ficheros.
+03/12/2025 17:55:15 - Tratando 205601.03C
+03/12/2025 17:55:16 - Tratando tqgen03C
+03/12/2025 17:56:14 - -----------------------------------------------------------
+03/12/2025 17:56:14 - Conectando Oracle
+03/12/2025 17:56:14 - Comprobando C:\greenvb
+03/12/2025 17:56:14 - Conectando a XE
+03/12/2025 17:56:15 - Encontrados 1 ficheros.
+03/12/2025 17:56:15 - Tratando tqgen03C
+03/12/2025 17:57:14 - -----------------------------------------------------------
+03/12/2025 17:57:14 - Conectando Oracle
+03/12/2025 17:57:14 - Comprobando C:\greenvb
+03/12/2025 17:57:14 - Conectando a XE
+03/12/2025 17:57:15 - Encontrados 1 ficheros.
+03/12/2025 17:57:15 - Tratando tqgen03C
+03/12/2025 17:58:14 - -----------------------------------------------------------
+03/12/2025 17:58:14 - Conectando Oracle
+03/12/2025 17:58:14 - Comprobando C:\greenvb
+03/12/2025 17:58:14 - Conectando a XE
+03/12/2025 17:58:15 - Encontrados 1 ficheros.
+03/12/2025 17:58:15 - Tratando tqgen03C
+03/12/2025 17:59:14 - -----------------------------------------------------------
+03/12/2025 17:59:14 - Conectando Oracle
+03/12/2025 17:59:14 - Comprobando C:\greenvb
+03/12/2025 17:59:14 - Conectando a XE
+03/12/2025 17:59:15 - Encontrados 1 ficheros.
+03/12/2025 17:59:15 - Tratando tqgen03C
+03/12/2025 18:00:14 - -----------------------------------------------------------
+03/12/2025 18:00:14 - Conectando Oracle
+03/12/2025 18:00:14 - Comprobando C:\greenvb
+03/12/2025 18:00:14 - Conectando a XE
+03/12/2025 18:00:15 - Encontrados 2 ficheros.
+03/12/2025 18:00:15 - Tratando 206244.03C
+03/12/2025 18:00:16 - Tratando tqgen03C
+03/12/2025 18:01:14 - -----------------------------------------------------------
+03/12/2025 18:01:14 - Conectando Oracle
+03/12/2025 18:01:14 - Comprobando C:\greenvb
+03/12/2025 18:01:14 - Conectando a XE
+03/12/2025 18:01:15 - Encontrados 2 ficheros.
+03/12/2025 18:01:15 - Tratando 206245.03C
+03/12/2025 18:01:16 - Tratando tqgen03C
+03/12/2025 18:02:14 - -----------------------------------------------------------
+03/12/2025 18:02:14 - Conectando Oracle
+03/12/2025 18:02:14 - Comprobando C:\greenvb
+03/12/2025 18:02:14 - Conectando a XE
+03/12/2025 18:02:15 - Encontrados 2 ficheros.
+03/12/2025 18:02:15 - Tratando 205602.03C
+03/12/2025 18:02:16 - Tratando tqgen03C
+03/12/2025 18:03:14 - -----------------------------------------------------------
+03/12/2025 18:03:14 - Conectando Oracle
+03/12/2025 18:03:14 - Comprobando C:\greenvb
+03/12/2025 18:03:14 - Conectando a XE
+03/12/2025 18:03:15 - Encontrados 1 ficheros.
+03/12/2025 18:03:15 - Tratando tqgen03C
+03/12/2025 18:04:14 - -----------------------------------------------------------
+03/12/2025 18:04:14 - Conectando Oracle
+03/12/2025 18:04:14 - Comprobando C:\greenvb
+03/12/2025 18:04:14 - Conectando a XE
+03/12/2025 18:04:15 - Encontrados 1 ficheros.
+03/12/2025 18:04:15 - Tratando tqgen03C
+03/12/2025 18:05:14 - -----------------------------------------------------------
+03/12/2025 18:05:14 - Conectando Oracle
+03/12/2025 18:05:14 - Comprobando C:\greenvb
+03/12/2025 18:05:14 - Conectando a XE
+03/12/2025 18:05:15 - Encontrados 1 ficheros.
+03/12/2025 18:05:15 - Tratando tqgen03C
+03/12/2025 18:06:14 - -----------------------------------------------------------
+03/12/2025 18:06:14 - Conectando Oracle
+03/12/2025 18:06:14 - Comprobando C:\greenvb
+03/12/2025 18:06:14 - Conectando a XE
+03/12/2025 18:06:15 - Encontrados 4 ficheros.
+03/12/2025 18:06:15 - Tratando 106247.03C
+03/12/2025 18:06:16 - Tratando 206246.03C
+03/12/2025 18:06:17 - Tratando 206248.03C
+03/12/2025 18:06:18 - Tratando tqgen03C
+03/12/2025 18:07:14 - -----------------------------------------------------------
+03/12/2025 18:07:14 - Conectando Oracle
+03/12/2025 18:07:14 - Comprobando C:\greenvb
+03/12/2025 18:07:14 - Conectando a XE
+03/12/2025 18:07:15 - Encontrados 1 ficheros.
+03/12/2025 18:07:15 - Tratando tqgen03C
+03/12/2025 18:08:14 - -----------------------------------------------------------
+03/12/2025 18:08:14 - Conectando Oracle
+03/12/2025 18:08:14 - Comprobando C:\greenvb
+03/12/2025 18:08:14 - Conectando a XE
+03/12/2025 18:08:15 - Encontrados 1 ficheros.
+03/12/2025 18:08:15 - Tratando tqgen03C
+03/12/2025 18:09:14 - -----------------------------------------------------------
+03/12/2025 18:09:14 - Conectando Oracle
+03/12/2025 18:09:14 - Comprobando C:\greenvb
+03/12/2025 18:09:14 - Conectando a XE
+03/12/2025 18:09:15 - Encontrados 1 ficheros.
+03/12/2025 18:09:15 - Tratando tqgen03C
+03/12/2025 18:10:14 - -----------------------------------------------------------
+03/12/2025 18:10:14 - Conectando Oracle
+03/12/2025 18:10:14 - Comprobando C:\greenvb
+03/12/2025 18:10:14 - Conectando a XE
+03/12/2025 18:10:15 - Encontrados 1 ficheros.
+03/12/2025 18:10:15 - Tratando tqgen03C
+03/12/2025 18:11:14 - -----------------------------------------------------------
+03/12/2025 18:11:14 - Conectando Oracle
+03/12/2025 18:11:14 - Comprobando C:\greenvb
+03/12/2025 18:11:14 - Conectando a XE
+03/12/2025 18:11:15 - Encontrados 2 ficheros.
+03/12/2025 18:11:15 - Tratando 206943.03C
+03/12/2025 18:11:16 - Tratando tqgen03C
+03/12/2025 18:12:14 - -----------------------------------------------------------
+03/12/2025 18:12:14 - Conectando Oracle
+03/12/2025 18:12:14 - Comprobando C:\greenvb
+03/12/2025 18:12:14 - Conectando a XE
+03/12/2025 18:12:15 - Encontrados 2 ficheros.
+03/12/2025 18:12:15 - Tratando 205603.03C
+03/12/2025 18:12:16 - Tratando tqgen03C
+03/12/2025 18:13:14 - -----------------------------------------------------------
+03/12/2025 18:13:14 - Conectando Oracle
+03/12/2025 18:13:14 - Comprobando C:\greenvb
+03/12/2025 18:13:14 - Conectando a XE
+03/12/2025 18:13:15 - Encontrados 1 ficheros.
+03/12/2025 18:13:15 - Tratando tqgen03C
+03/12/2025 18:14:14 - -----------------------------------------------------------
+03/12/2025 18:14:14 - Conectando Oracle
+03/12/2025 18:14:14 - Comprobando C:\greenvb
+03/12/2025 18:14:14 - Conectando a XE
+03/12/2025 18:14:15 - Encontrados 2 ficheros.
+03/12/2025 18:14:15 - Tratando 205604.03C
+03/12/2025 18:14:16 - Tratando tqgen03C
+03/12/2025 18:15:14 - -----------------------------------------------------------
+03/12/2025 18:15:14 - Conectando Oracle
+03/12/2025 18:15:14 - Comprobando C:\greenvb
+03/12/2025 18:15:14 - Conectando a XE
+03/12/2025 18:15:15 - Encontrados 1 ficheros.
+03/12/2025 18:15:15 - Tratando tqgen03C
+03/12/2025 18:16:14 - -----------------------------------------------------------
+03/12/2025 18:16:14 - Conectando Oracle
+03/12/2025 18:16:14 - Comprobando C:\greenvb
+03/12/2025 18:16:14 - Conectando a XE
+03/12/2025 18:16:15 - Encontrados 1 ficheros.
+03/12/2025 18:16:15 - Tratando tqgen03C
+03/12/2025 18:17:14 - -----------------------------------------------------------
+03/12/2025 18:17:14 - Conectando Oracle
+03/12/2025 18:17:14 - Comprobando C:\greenvb
+03/12/2025 18:17:14 - Conectando a XE
+03/12/2025 18:17:15 - Encontrados 2 ficheros.
+03/12/2025 18:17:15 - Tratando 205605.03C
+03/12/2025 18:17:16 - Tratando tqgen03C
+03/12/2025 18:18:14 - -----------------------------------------------------------
+03/12/2025 18:18:14 - Conectando Oracle
+03/12/2025 18:18:14 - Comprobando C:\greenvb
+03/12/2025 18:18:14 - Conectando a XE
+03/12/2025 18:18:15 - Encontrados 2 ficheros.
+03/12/2025 18:18:15 - Tratando 205606.03C
+03/12/2025 18:18:16 - Tratando tqgen03C
+03/12/2025 18:19:14 - -----------------------------------------------------------
+03/12/2025 18:19:14 - Conectando Oracle
+03/12/2025 18:19:14 - Comprobando C:\greenvb
+03/12/2025 18:19:14 - Conectando a XE
+03/12/2025 18:19:15 - Encontrados 2 ficheros.
+03/12/2025 18:19:15 - Tratando 206944.03C
+03/12/2025 18:19:16 - Tratando tqgen03C
+03/12/2025 18:20:14 - -----------------------------------------------------------
+03/12/2025 18:20:14 - Conectando Oracle
+03/12/2025 18:20:14 - Comprobando C:\greenvb
+03/12/2025 18:20:14 - Conectando a XE
+03/12/2025 18:20:15 - Encontrados 2 ficheros.
+03/12/2025 18:20:15 - Tratando 206249.03C
+03/12/2025 18:20:16 - Tratando tqgen03C
+03/12/2025 18:21:14 - -----------------------------------------------------------
+03/12/2025 18:21:14 - Conectando Oracle
+03/12/2025 18:21:14 - Comprobando C:\greenvb
+03/12/2025 18:21:14 - Conectando a XE
+03/12/2025 18:21:15 - Encontrados 2 ficheros.
+03/12/2025 18:21:15 - Tratando 205607.03C
+03/12/2025 18:21:16 - Tratando tqgen03C
+03/12/2025 18:22:14 - -----------------------------------------------------------
+03/12/2025 18:22:14 - Conectando Oracle
+03/12/2025 18:22:14 - Comprobando C:\greenvb
+03/12/2025 18:22:14 - Conectando a XE
+03/12/2025 18:22:15 - Encontrados 1 ficheros.
+03/12/2025 18:22:15 - Tratando tqgen03C
+03/12/2025 18:23:14 - -----------------------------------------------------------
+03/12/2025 18:23:14 - Conectando Oracle
+03/12/2025 18:23:14 - Comprobando C:\greenvb
+03/12/2025 18:23:14 - Conectando a XE
+03/12/2025 18:23:15 - Encontrados 1 ficheros.
+03/12/2025 18:23:15 - Tratando tqgen03C
+03/12/2025 18:24:14 - -----------------------------------------------------------
+03/12/2025 18:24:14 - Conectando Oracle
+03/12/2025 18:24:14 - Comprobando C:\greenvb
+03/12/2025 18:24:14 - Conectando a XE
+03/12/2025 18:24:15 - Encontrados 2 ficheros.
+03/12/2025 18:24:15 - Tratando 205608.03C
+03/12/2025 18:24:16 - Tratando tqgen03C
+03/12/2025 18:25:14 - -----------------------------------------------------------
+03/12/2025 18:25:14 - Conectando Oracle
+03/12/2025 18:25:14 - Comprobando C:\greenvb
+03/12/2025 18:25:14 - Conectando a XE
+03/12/2025 18:25:15 - Encontrados 2 ficheros.
+03/12/2025 18:25:15 - Tratando 206250.03C
+03/12/2025 18:25:16 - Tratando tqgen03C
+03/12/2025 18:26:14 - -----------------------------------------------------------
+03/12/2025 18:26:14 - Conectando Oracle
+03/12/2025 18:26:14 - Comprobando C:\greenvb
+03/12/2025 18:26:14 - Conectando a XE
+03/12/2025 18:26:15 - Encontrados 1 ficheros.
+03/12/2025 18:26:15 - Tratando tqgen03C
+03/12/2025 18:27:14 - -----------------------------------------------------------
+03/12/2025 18:27:14 - Conectando Oracle
+03/12/2025 18:27:14 - Comprobando C:\greenvb
+03/12/2025 18:27:14 - Conectando a XE
+03/12/2025 18:27:15 - Encontrados 1 ficheros.
+03/12/2025 18:27:15 - Tratando tqgen03C
+03/12/2025 18:28:14 - -----------------------------------------------------------
+03/12/2025 18:28:14 - Conectando Oracle
+03/12/2025 18:28:14 - Comprobando C:\greenvb
+03/12/2025 18:28:14 - Conectando a XE
+03/12/2025 18:28:15 - Encontrados 3 ficheros.
+03/12/2025 18:28:15 - Tratando 205609.03C
+03/12/2025 18:28:16 - Tratando 205610.03C
+03/12/2025 18:28:17 - Tratando tqgen03C
+03/12/2025 18:29:14 - -----------------------------------------------------------
+03/12/2025 18:29:14 - Conectando Oracle
+03/12/2025 18:29:14 - Comprobando C:\greenvb
+03/12/2025 18:29:14 - Conectando a XE
+03/12/2025 18:29:15 - Encontrados 2 ficheros.
+03/12/2025 18:29:15 - Tratando 206251.03C
+03/12/2025 18:29:16 - Tratando tqgen03C
+03/12/2025 18:30:14 - -----------------------------------------------------------
+03/12/2025 18:30:14 - Conectando Oracle
+03/12/2025 18:30:14 - Comprobando C:\greenvb
+03/12/2025 18:30:14 - Conectando a XE
+03/12/2025 18:30:15 - Encontrados 1 ficheros.
+03/12/2025 18:30:15 - Tratando tqgen03C
+03/12/2025 18:31:14 - -----------------------------------------------------------
+03/12/2025 18:31:14 - Conectando Oracle
+03/12/2025 18:31:14 - Comprobando C:\greenvb
+03/12/2025 18:31:14 - Conectando a XE
+03/12/2025 18:31:15 - Encontrados 2 ficheros.
+03/12/2025 18:31:15 - Tratando 205611.03C
+03/12/2025 18:31:16 - Tratando tqgen03C
+03/12/2025 18:32:14 - -----------------------------------------------------------
+03/12/2025 18:32:14 - Conectando Oracle
+03/12/2025 18:32:14 - Comprobando C:\greenvb
+03/12/2025 18:32:14 - Conectando a XE
+03/12/2025 18:32:15 - Encontrados 2 ficheros.
+03/12/2025 18:32:15 - Tratando 205612.03C
+03/12/2025 18:32:16 - Tratando tqgen03C
+03/12/2025 18:33:14 - -----------------------------------------------------------
+03/12/2025 18:33:14 - Conectando Oracle
+03/12/2025 18:33:14 - Comprobando C:\greenvb
+03/12/2025 18:33:14 - Conectando a XE
+03/12/2025 18:33:15 - Encontrados 1 ficheros.
+03/12/2025 18:33:15 - Tratando tqgen03C
+03/12/2025 18:34:14 - -----------------------------------------------------------
+03/12/2025 18:34:14 - Conectando Oracle
+03/12/2025 18:34:14 - Comprobando C:\greenvb
+03/12/2025 18:34:14 - Conectando a XE
+03/12/2025 18:34:15 - Encontrados 2 ficheros.
+03/12/2025 18:34:15 - Tratando 206252.03C
+03/12/2025 18:34:16 - Tratando tqgen03C
+03/12/2025 18:35:14 - -----------------------------------------------------------
+03/12/2025 18:35:14 - Conectando Oracle
+03/12/2025 18:35:14 - Comprobando C:\greenvb
+03/12/2025 18:35:14 - Conectando a XE
+03/12/2025 18:35:15 - Encontrados 1 ficheros.
+03/12/2025 18:35:15 - Tratando tqgen03C
+03/12/2025 18:36:14 - -----------------------------------------------------------
+03/12/2025 18:36:14 - Conectando Oracle
+03/12/2025 18:36:14 - Comprobando C:\greenvb
+03/12/2025 18:36:14 - Conectando a XE
+03/12/2025 18:36:15 - Encontrados 1 ficheros.
+03/12/2025 18:36:15 - Tratando tqgen03C
+03/12/2025 18:37:14 - -----------------------------------------------------------
+03/12/2025 18:37:14 - Conectando Oracle
+03/12/2025 18:37:14 - Comprobando C:\greenvb
+03/12/2025 18:37:14 - Conectando a XE
+03/12/2025 18:37:15 - Encontrados 1 ficheros.
+03/12/2025 18:37:15 - Tratando tqgen03C
+03/12/2025 18:38:14 - -----------------------------------------------------------
+03/12/2025 18:38:14 - Conectando Oracle
+03/12/2025 18:38:14 - Comprobando C:\greenvb
+03/12/2025 18:38:14 - Conectando a XE
+03/12/2025 18:38:15 - Encontrados 1 ficheros.
+03/12/2025 18:38:15 - Tratando tqgen03C
+03/12/2025 18:39:14 - -----------------------------------------------------------
+03/12/2025 18:39:14 - Conectando Oracle
+03/12/2025 18:39:14 - Comprobando C:\greenvb
+03/12/2025 18:39:14 - Conectando a XE
+03/12/2025 18:39:15 - Encontrados 1 ficheros.
+03/12/2025 18:39:15 - Tratando tqgen03C
+03/12/2025 18:40:14 - -----------------------------------------------------------
+03/12/2025 18:40:14 - Conectando Oracle
+03/12/2025 18:40:14 - Comprobando C:\greenvb
+03/12/2025 18:40:14 - Conectando a XE
+03/12/2025 18:40:15 - Encontrados 1 ficheros.
+03/12/2025 18:40:15 - Tratando tqgen03C
+03/12/2025 18:41:14 - -----------------------------------------------------------
+03/12/2025 18:41:14 - Conectando Oracle
+03/12/2025 18:41:14 - Comprobando C:\greenvb
+03/12/2025 18:41:14 - Conectando a XE
+03/12/2025 18:41:15 - Encontrados 1 ficheros.
+03/12/2025 18:41:15 - Tratando tqgen03C
+03/12/2025 18:42:14 - -----------------------------------------------------------
+03/12/2025 18:42:14 - Conectando Oracle
+03/12/2025 18:42:14 - Comprobando C:\greenvb
+03/12/2025 18:42:14 - Conectando a XE
+03/12/2025 18:42:15 - Encontrados 1 ficheros.
+03/12/2025 18:42:15 - Tratando tqgen03C
+03/12/2025 18:43:14 - -----------------------------------------------------------
+03/12/2025 18:43:14 - Conectando Oracle
+03/12/2025 18:43:14 - Comprobando C:\greenvb
+03/12/2025 18:43:14 - Conectando a XE
+03/12/2025 18:43:15 - Encontrados 2 ficheros.
+03/12/2025 18:43:15 - Tratando 206253.03C
+03/12/2025 18:43:16 - Tratando tqgen03C
+03/12/2025 18:44:14 - -----------------------------------------------------------
+03/12/2025 18:44:14 - Conectando Oracle
+03/12/2025 18:44:14 - Comprobando C:\greenvb
+03/12/2025 18:44:14 - Conectando a XE
+03/12/2025 18:44:15 - Encontrados 1 ficheros.
+03/12/2025 18:44:15 - Tratando tqgen03C
+03/12/2025 18:45:14 - -----------------------------------------------------------
+03/12/2025 18:45:14 - Conectando Oracle
+03/12/2025 18:45:14 - Comprobando C:\greenvb
+03/12/2025 18:45:14 - Conectando a XE
+03/12/2025 18:45:15 - Encontrados 3 ficheros.
+03/12/2025 18:45:15 - Tratando 205613.03C
+03/12/2025 18:45:16 - Tratando 206945.03C
+03/12/2025 18:45:17 - Tratando tqgen03C
+03/12/2025 18:46:14 - -----------------------------------------------------------
+03/12/2025 18:46:14 - Conectando Oracle
+03/12/2025 18:46:14 - Comprobando C:\greenvb
+03/12/2025 18:46:14 - Conectando a XE
+03/12/2025 18:46:15 - Encontrados 2 ficheros.
+03/12/2025 18:46:15 - Tratando 205614.03C
+03/12/2025 18:46:16 - Tratando tqgen03C
+03/12/2025 18:47:14 - -----------------------------------------------------------
+03/12/2025 18:47:14 - Conectando Oracle
+03/12/2025 18:47:14 - Comprobando C:\greenvb
+03/12/2025 18:47:14 - Conectando a XE
+03/12/2025 18:47:15 - Encontrados 1 ficheros.
+03/12/2025 18:47:15 - Tratando tqgen03C
+03/12/2025 18:48:14 - -----------------------------------------------------------
+03/12/2025 18:48:14 - Conectando Oracle
+03/12/2025 18:48:14 - Comprobando C:\greenvb
+03/12/2025 18:48:14 - Conectando a XE
+03/12/2025 18:48:15 - Encontrados 2 ficheros.
+03/12/2025 18:48:15 - Tratando 206254.03C
+03/12/2025 18:48:16 - Tratando tqgen03C
+03/12/2025 18:49:14 - -----------------------------------------------------------
+03/12/2025 18:49:14 - Conectando Oracle
+03/12/2025 18:49:14 - Comprobando C:\greenvb
+03/12/2025 18:49:14 - Conectando a XE
+03/12/2025 18:49:15 - Encontrados 2 ficheros.
+03/12/2025 18:49:15 - Tratando 205615.03C
+03/12/2025 18:49:16 - Tratando tqgen03C
+03/12/2025 18:50:14 - -----------------------------------------------------------
+03/12/2025 18:50:14 - Conectando Oracle
+03/12/2025 18:50:14 - Comprobando C:\greenvb
+03/12/2025 18:50:14 - Conectando a XE
+03/12/2025 18:50:15 - Encontrados 1 ficheros.
+03/12/2025 18:50:15 - Tratando tqgen03C
+03/12/2025 18:51:14 - -----------------------------------------------------------
+03/12/2025 18:51:14 - Conectando Oracle
+03/12/2025 18:51:14 - Comprobando C:\greenvb
+03/12/2025 18:51:14 - Conectando a XE
+03/12/2025 18:51:15 - Encontrados 2 ficheros.
+03/12/2025 18:51:15 - Tratando 205616.03C
+03/12/2025 18:51:16 - Tratando tqgen03C
+03/12/2025 18:52:14 - -----------------------------------------------------------
+03/12/2025 18:52:14 - Conectando Oracle
+03/12/2025 18:52:14 - Comprobando C:\greenvb
+03/12/2025 18:52:14 - Conectando a XE
+03/12/2025 18:52:15 - Encontrados 2 ficheros.
+03/12/2025 18:52:15 - Tratando 206257.03C
+03/12/2025 18:52:16 - Tratando tqgen03C
+03/12/2025 18:53:14 - -----------------------------------------------------------
+03/12/2025 18:53:14 - Conectando Oracle
+03/12/2025 18:53:14 - Comprobando C:\greenvb
+03/12/2025 18:53:14 - Conectando a XE
+03/12/2025 18:53:15 - Encontrados 1 ficheros.
+03/12/2025 18:53:15 - Tratando tqgen03C
+03/12/2025 18:54:14 - -----------------------------------------------------------
+03/12/2025 18:54:14 - Conectando Oracle
+03/12/2025 18:54:14 - Comprobando C:\greenvb
+03/12/2025 18:54:14 - Conectando a XE
+03/12/2025 18:54:15 - Encontrados 2 ficheros.
+03/12/2025 18:54:15 - Tratando 106258.03C
+03/12/2025 18:54:16 - Tratando tqgen03C
+03/12/2025 18:55:14 - -----------------------------------------------------------
+03/12/2025 18:55:14 - Conectando Oracle
+03/12/2025 18:55:14 - Comprobando C:\greenvb
+03/12/2025 18:55:14 - Conectando a XE
+03/12/2025 18:55:15 - Encontrados 1 ficheros.
+03/12/2025 18:55:15 - Tratando tqgen03C
+03/12/2025 18:56:14 - -----------------------------------------------------------
+03/12/2025 18:56:14 - Conectando Oracle
+03/12/2025 18:56:14 - Comprobando C:\greenvb
+03/12/2025 18:56:14 - Conectando a XE
+03/12/2025 18:56:15 - Encontrados 1 ficheros.
+03/12/2025 18:56:15 - Tratando tqgen03C
+03/12/2025 18:57:14 - -----------------------------------------------------------
+03/12/2025 18:57:14 - Conectando Oracle
+03/12/2025 18:57:14 - Comprobando C:\greenvb
+03/12/2025 18:57:14 - Conectando a XE
+03/12/2025 18:57:15 - Encontrados 1 ficheros.
+03/12/2025 18:57:15 - Tratando tqgen03C
+03/12/2025 18:58:14 - -----------------------------------------------------------
+03/12/2025 18:58:14 - Conectando Oracle
+03/12/2025 18:58:14 - Comprobando C:\greenvb
+03/12/2025 18:58:14 - Conectando a XE
+03/12/2025 18:58:15 - Encontrados 1 ficheros.
+03/12/2025 18:58:15 - Tratando tqgen03C
+03/12/2025 18:59:14 - -----------------------------------------------------------
+03/12/2025 18:59:14 - Conectando Oracle
+03/12/2025 18:59:14 - Comprobando C:\greenvb
+03/12/2025 18:59:14 - Conectando a XE
+03/12/2025 18:59:15 - Encontrados 3 ficheros.
+03/12/2025 18:59:15 - Tratando 106259.03C
+03/12/2025 18:59:16 - Tratando 206260.03C
+03/12/2025 18:59:17 - Tratando tqgen03C
+03/12/2025 19:00:14 - -----------------------------------------------------------
+03/12/2025 19:00:14 - Conectando Oracle
+03/12/2025 19:00:14 - Comprobando C:\greenvb
+03/12/2025 19:00:14 - Conectando a XE
+03/12/2025 19:00:15 - Encontrados 1 ficheros.
+03/12/2025 19:00:15 - Tratando tqgen03C
+03/12/2025 19:01:14 - -----------------------------------------------------------
+03/12/2025 19:01:14 - Conectando Oracle
+03/12/2025 19:01:14 - Comprobando C:\greenvb
+03/12/2025 19:01:14 - Conectando a XE
+03/12/2025 19:01:15 - Encontrados 1 ficheros.
+03/12/2025 19:01:15 - Tratando tqgen03C
+03/12/2025 19:02:14 - -----------------------------------------------------------
+03/12/2025 19:02:14 - Conectando Oracle
+03/12/2025 19:02:14 - Comprobando C:\greenvb
+03/12/2025 19:02:14 - Conectando a XE
+03/12/2025 19:02:15 - Encontrados 1 ficheros.
+03/12/2025 19:02:15 - Tratando tqgen03C
+03/12/2025 19:03:14 - -----------------------------------------------------------
+03/12/2025 19:03:14 - Conectando Oracle
+03/12/2025 19:03:14 - Comprobando C:\greenvb
+03/12/2025 19:03:14 - Conectando a XE
+03/12/2025 19:03:15 - Encontrados 1 ficheros.
+03/12/2025 19:03:15 - Tratando tqgen03C
+03/12/2025 19:04:14 - -----------------------------------------------------------
+03/12/2025 19:04:14 - Conectando Oracle
+03/12/2025 19:04:14 - Comprobando C:\greenvb
+03/12/2025 19:04:14 - Conectando a XE
+03/12/2025 19:04:15 - Encontrados 3 ficheros.
+03/12/2025 19:04:15 - Tratando 205617.03C
+03/12/2025 19:04:16 - Tratando 205618.03C
+03/12/2025 19:04:17 - Tratando tqgen03C
+03/12/2025 19:05:14 - -----------------------------------------------------------
+03/12/2025 19:05:14 - Conectando Oracle
+03/12/2025 19:05:14 - Comprobando C:\greenvb
+03/12/2025 19:05:14 - Conectando a XE
+03/12/2025 19:05:15 - Encontrados 1 ficheros.
+03/12/2025 19:05:15 - Tratando tqgen03C
+03/12/2025 19:06:14 - -----------------------------------------------------------
+03/12/2025 19:06:14 - Conectando Oracle
+03/12/2025 19:06:14 - Comprobando C:\greenvb
+03/12/2025 19:06:14 - Conectando a XE
+03/12/2025 19:06:15 - Encontrados 1 ficheros.
+03/12/2025 19:06:15 - Tratando tqgen03C
+03/12/2025 19:07:14 - -----------------------------------------------------------
+03/12/2025 19:07:14 - Conectando Oracle
+03/12/2025 19:07:14 - Comprobando C:\greenvb
+03/12/2025 19:07:14 - Conectando a XE
+03/12/2025 19:07:15 - Encontrados 3 ficheros.
+03/12/2025 19:07:15 - Tratando 106261.03C
+03/12/2025 19:07:16 - Tratando 206262.03C
+03/12/2025 19:07:17 - Tratando tqgen03C
+03/12/2025 19:08:14 - -----------------------------------------------------------
+03/12/2025 19:08:14 - Conectando Oracle
+03/12/2025 19:08:14 - Comprobando C:\greenvb
+03/12/2025 19:08:14 - Conectando a XE
+03/12/2025 19:08:15 - Encontrados 3 ficheros.
+03/12/2025 19:08:15 - Tratando 205619.03C
+03/12/2025 19:08:16 - Tratando 205620.03C
+03/12/2025 19:08:17 - Tratando tqgen03C
+03/12/2025 19:09:14 - -----------------------------------------------------------
+03/12/2025 19:09:14 - Conectando Oracle
+03/12/2025 19:09:14 - Comprobando C:\greenvb
+03/12/2025 19:09:14 - Conectando a XE
+03/12/2025 19:09:15 - Encontrados 1 ficheros.
+03/12/2025 19:09:15 - Tratando tqgen03C
+03/12/2025 19:10:14 - -----------------------------------------------------------
+03/12/2025 19:10:14 - Conectando Oracle
+03/12/2025 19:10:14 - Comprobando C:\greenvb
+03/12/2025 19:10:14 - Conectando a XE
+03/12/2025 19:10:15 - Encontrados 1 ficheros.
+03/12/2025 19:10:15 - Tratando tqgen03C
+03/12/2025 19:11:14 - -----------------------------------------------------------
+03/12/2025 19:11:14 - Conectando Oracle
+03/12/2025 19:11:14 - Comprobando C:\greenvb
+03/12/2025 19:11:14 - Conectando a XE
+03/12/2025 19:11:15 - Encontrados 1 ficheros.
+03/12/2025 19:11:15 - Tratando tqgen03C
+03/12/2025 19:12:14 - -----------------------------------------------------------
+03/12/2025 19:12:14 - Conectando Oracle
+03/12/2025 19:12:14 - Comprobando C:\greenvb
+03/12/2025 19:12:14 - Conectando a XE
+03/12/2025 19:12:15 - Encontrados 1 ficheros.
+03/12/2025 19:12:15 - Tratando tqgen03C
+03/12/2025 19:13:14 - -----------------------------------------------------------
+03/12/2025 19:13:14 - Conectando Oracle
+03/12/2025 19:13:14 - Comprobando C:\greenvb
+03/12/2025 19:13:14 - Conectando a XE
+03/12/2025 19:13:15 - Encontrados 1 ficheros.
+03/12/2025 19:13:15 - Tratando tqgen03C
+03/12/2025 19:14:14 - -----------------------------------------------------------
+03/12/2025 19:14:14 - Conectando Oracle
+03/12/2025 19:14:14 - Comprobando C:\greenvb
+03/12/2025 19:14:14 - Conectando a XE
+03/12/2025 19:14:15 - Encontrados 2 ficheros.
+03/12/2025 19:14:15 - Tratando 205621.03C
+03/12/2025 19:14:16 - Tratando tqgen03C
+03/12/2025 19:15:14 - -----------------------------------------------------------
+03/12/2025 19:15:14 - Conectando Oracle
+03/12/2025 19:15:14 - Comprobando C:\greenvb
+03/12/2025 19:15:14 - Conectando a XE
+03/12/2025 19:15:15 - Encontrados 2 ficheros.
+03/12/2025 19:15:15 - Tratando 206946.03C
+03/12/2025 19:15:16 - Tratando tqgen03C
+03/12/2025 19:16:14 - -----------------------------------------------------------
+03/12/2025 19:16:14 - Conectando Oracle
+03/12/2025 19:16:14 - Comprobando C:\greenvb
+03/12/2025 19:16:14 - Conectando a XE
+03/12/2025 19:16:15 - Encontrados 2 ficheros.
+03/12/2025 19:16:15 - Tratando 205622.03C
+03/12/2025 19:16:16 - Tratando tqgen03C
+03/12/2025 19:17:14 - -----------------------------------------------------------
+03/12/2025 19:17:14 - Conectando Oracle
+03/12/2025 19:17:14 - Comprobando C:\greenvb
+03/12/2025 19:17:14 - Conectando a XE
+03/12/2025 19:17:15 - Encontrados 1 ficheros.
+03/12/2025 19:17:15 - Tratando tqgen03C
+03/12/2025 19:18:14 - -----------------------------------------------------------
+03/12/2025 19:18:14 - Conectando Oracle
+03/12/2025 19:18:14 - Comprobando C:\greenvb
+03/12/2025 19:18:14 - Conectando a XE
+03/12/2025 19:18:15 - Encontrados 1 ficheros.
+03/12/2025 19:18:15 - Tratando tqgen03C
+03/12/2025 19:19:14 - -----------------------------------------------------------
+03/12/2025 19:19:14 - Conectando Oracle
+03/12/2025 19:19:14 - Comprobando C:\greenvb
+03/12/2025 19:19:14 - Conectando a XE
+03/12/2025 19:19:15 - Encontrados 1 ficheros.
+03/12/2025 19:19:15 - Tratando tqgen03C
+03/12/2025 19:20:14 - -----------------------------------------------------------
+03/12/2025 19:20:14 - Conectando Oracle
+03/12/2025 19:20:14 - Comprobando C:\greenvb
+03/12/2025 19:20:14 - Conectando a XE
+03/12/2025 19:20:15 - Encontrados 1 ficheros.
+03/12/2025 19:20:15 - Tratando tqgen03C
+03/12/2025 19:21:14 - -----------------------------------------------------------
+03/12/2025 19:21:14 - Conectando Oracle
+03/12/2025 19:21:14 - Comprobando C:\greenvb
+03/12/2025 19:21:14 - Conectando a XE
+03/12/2025 19:21:15 - Encontrados 1 ficheros.
+03/12/2025 19:21:15 - Tratando tqgen03C
+03/12/2025 19:22:14 - -----------------------------------------------------------
+03/12/2025 19:22:14 - Conectando Oracle
+03/12/2025 19:22:14 - Comprobando C:\greenvb
+03/12/2025 19:22:14 - Conectando a XE
+03/12/2025 19:22:15 - Encontrados 2 ficheros.
+03/12/2025 19:22:15 - Tratando 205623.03C
+03/12/2025 19:22:16 - Tratando tqgen03C
+03/12/2025 19:23:14 - -----------------------------------------------------------
+03/12/2025 19:23:14 - Conectando Oracle
+03/12/2025 19:23:14 - Comprobando C:\greenvb
+03/12/2025 19:23:14 - Conectando a XE
+03/12/2025 19:23:15 - Encontrados 1 ficheros.
+03/12/2025 19:23:15 - Tratando tqgen03C
+03/12/2025 19:24:14 - -----------------------------------------------------------
+03/12/2025 19:24:14 - Conectando Oracle
+03/12/2025 19:24:14 - Comprobando C:\greenvb
+03/12/2025 19:24:14 - Conectando a XE
+03/12/2025 19:24:15 - Encontrados 1 ficheros.
+03/12/2025 19:24:15 - Tratando tqgen03C
+03/12/2025 19:25:14 - -----------------------------------------------------------
+03/12/2025 19:25:14 - Conectando Oracle
+03/12/2025 19:25:14 - Comprobando C:\greenvb
+03/12/2025 19:25:14 - Conectando a XE
+03/12/2025 19:25:15 - Encontrados 3 ficheros.
+03/12/2025 19:25:15 - Tratando 205624.03C
+03/12/2025 19:25:16 - Tratando 206263.03C
+03/12/2025 19:25:17 - Tratando tqgen03C
+03/12/2025 19:26:14 - -----------------------------------------------------------
+03/12/2025 19:26:14 - Conectando Oracle
+03/12/2025 19:26:14 - Comprobando C:\greenvb
+03/12/2025 19:26:14 - Conectando a XE
+03/12/2025 19:26:15 - Encontrados 1 ficheros.
+03/12/2025 19:26:15 - Tratando tqgen03C
+03/12/2025 19:27:14 - -----------------------------------------------------------
+03/12/2025 19:27:14 - Conectando Oracle
+03/12/2025 19:27:14 - Comprobando C:\greenvb
+03/12/2025 19:27:14 - Conectando a XE
+03/12/2025 19:27:15 - Encontrados 2 ficheros.
+03/12/2025 19:27:15 - Tratando 206947.03C
+03/12/2025 19:27:16 - Tratando tqgen03C
+03/12/2025 19:28:14 - -----------------------------------------------------------
+03/12/2025 19:28:14 - Conectando Oracle
+03/12/2025 19:28:14 - Comprobando C:\greenvb
+03/12/2025 19:28:14 - Conectando a XE
+03/12/2025 19:28:15 - Encontrados 2 ficheros.
+03/12/2025 19:28:15 - Tratando 205625.03C
+03/12/2025 19:28:16 - Tratando tqgen03C
+03/12/2025 19:29:14 - -----------------------------------------------------------
+03/12/2025 19:29:14 - Conectando Oracle
+03/12/2025 19:29:14 - Comprobando C:\greenvb
+03/12/2025 19:29:14 - Conectando a XE
+03/12/2025 19:29:15 - Encontrados 1 ficheros.
+03/12/2025 19:29:15 - Tratando tqgen03C
+03/12/2025 19:30:14 - -----------------------------------------------------------
+03/12/2025 19:30:14 - Conectando Oracle
+03/12/2025 19:30:14 - Comprobando C:\greenvb
+03/12/2025 19:30:14 - Conectando a XE
+03/12/2025 19:30:15 - Encontrados 2 ficheros.
+03/12/2025 19:30:15 - Tratando 205626.03C
+03/12/2025 19:30:16 - Tratando tqgen03C
+03/12/2025 19:31:14 - -----------------------------------------------------------
+03/12/2025 19:31:14 - Conectando Oracle
+03/12/2025 19:31:14 - Comprobando C:\greenvb
+03/12/2025 19:31:14 - Conectando a XE
+03/12/2025 19:31:15 - Encontrados 1 ficheros.
+03/12/2025 19:31:15 - Tratando tqgen03C
+03/12/2025 19:32:14 - -----------------------------------------------------------
+03/12/2025 19:32:14 - Conectando Oracle
+03/12/2025 19:32:14 - Comprobando C:\greenvb
+03/12/2025 19:32:14 - Conectando a XE
+03/12/2025 19:32:15 - Encontrados 2 ficheros.
+03/12/2025 19:32:15 - Tratando 205627.03C
+03/12/2025 19:32:16 - Tratando tqgen03C
+03/12/2025 19:33:14 - -----------------------------------------------------------
+03/12/2025 19:33:14 - Conectando Oracle
+03/12/2025 19:33:14 - Comprobando C:\greenvb
+03/12/2025 19:33:14 - Conectando a XE
+03/12/2025 19:33:15 - Encontrados 2 ficheros.
+03/12/2025 19:33:15 - Tratando 206264.03C
+03/12/2025 19:33:16 - Tratando tqgen03C
+03/12/2025 19:34:14 - -----------------------------------------------------------
+03/12/2025 19:34:14 - Conectando Oracle
+03/12/2025 19:34:14 - Comprobando C:\greenvb
+03/12/2025 19:34:14 - Conectando a XE
+03/12/2025 19:34:15 - Encontrados 3 ficheros.
+03/12/2025 19:34:15 - Tratando 205628.03C
+03/12/2025 19:34:16 - Tratando 206265.03C
+03/12/2025 19:34:17 - Tratando tqgen03C
+03/12/2025 19:35:14 - -----------------------------------------------------------
+03/12/2025 19:35:14 - Conectando Oracle
+03/12/2025 19:35:14 - Comprobando C:\greenvb
+03/12/2025 19:35:14 - Conectando a XE
+03/12/2025 19:35:15 - Encontrados 1 ficheros.
+03/12/2025 19:35:15 - Tratando tqgen03C
+03/12/2025 19:36:14 - -----------------------------------------------------------
+03/12/2025 19:36:14 - Conectando Oracle
+03/12/2025 19:36:14 - Comprobando C:\greenvb
+03/12/2025 19:36:14 - Conectando a XE
+03/12/2025 19:36:15 - Encontrados 3 ficheros.
+03/12/2025 19:36:15 - Tratando 205629.03C
+03/12/2025 19:36:16 - Tratando 206948.03C
+03/12/2025 19:36:17 - Tratando tqgen03C
+03/12/2025 19:37:14 - -----------------------------------------------------------
+03/12/2025 19:37:14 - Conectando Oracle
+03/12/2025 19:37:14 - Comprobando C:\greenvb
+03/12/2025 19:37:14 - Conectando a XE
+03/12/2025 19:37:15 - Encontrados 1 ficheros.
+03/12/2025 19:37:15 - Tratando tqgen03C
+03/12/2025 19:38:14 - -----------------------------------------------------------
+03/12/2025 19:38:14 - Conectando Oracle
+03/12/2025 19:38:14 - Comprobando C:\greenvb
+03/12/2025 19:38:14 - Conectando a XE
+03/12/2025 19:38:15 - Encontrados 3 ficheros.
+03/12/2025 19:38:15 - Tratando 205630.03C
+03/12/2025 19:38:16 - Tratando 205631.03C
+03/12/2025 19:38:17 - Tratando tqgen03C
+03/12/2025 19:39:14 - -----------------------------------------------------------
+03/12/2025 19:39:14 - Conectando Oracle
+03/12/2025 19:39:14 - Comprobando C:\greenvb
+03/12/2025 19:39:14 - Conectando a XE
+03/12/2025 19:39:15 - Encontrados 1 ficheros.
+03/12/2025 19:39:15 - Tratando tqgen03C
+03/12/2025 19:40:14 - -----------------------------------------------------------
+03/12/2025 19:40:14 - Conectando Oracle
+03/12/2025 19:40:14 - Comprobando C:\greenvb
+03/12/2025 19:40:14 - Conectando a XE
+03/12/2025 19:40:15 - Encontrados 1 ficheros.
+03/12/2025 19:40:15 - Tratando tqgen03C
+03/12/2025 19:41:14 - -----------------------------------------------------------
+03/12/2025 19:41:14 - Conectando Oracle
+03/12/2025 19:41:14 - Comprobando C:\greenvb
+03/12/2025 19:41:14 - Conectando a XE
+03/12/2025 19:41:15 - Encontrados 1 ficheros.
+03/12/2025 19:41:15 - Tratando tqgen03C
+03/12/2025 19:42:14 - -----------------------------------------------------------
+03/12/2025 19:42:14 - Conectando Oracle
+03/12/2025 19:42:14 - Comprobando C:\greenvb
+03/12/2025 19:42:14 - Conectando a XE
+03/12/2025 19:42:15 - Encontrados 1 ficheros.
+03/12/2025 19:42:15 - Tratando tqgen03C
+03/12/2025 19:43:14 - -----------------------------------------------------------
+03/12/2025 19:43:14 - Conectando Oracle
+03/12/2025 19:43:14 - Comprobando C:\greenvb
+03/12/2025 19:43:14 - Conectando a XE
+03/12/2025 19:43:15 - Encontrados 4 ficheros.
+03/12/2025 19:43:15 - Tratando 106267.03C
+03/12/2025 19:43:16 - Tratando 206268.03C
+03/12/2025 19:43:17 - Tratando 206949.03C
+03/12/2025 19:43:18 - Tratando tqgen03C
+03/12/2025 19:44:14 - -----------------------------------------------------------
+03/12/2025 19:44:14 - Conectando Oracle
+03/12/2025 19:44:14 - Comprobando C:\greenvb
+03/12/2025 19:44:14 - Conectando a XE
+03/12/2025 19:44:15 - Encontrados 1 ficheros.
+03/12/2025 19:44:15 - Tratando tqgen03C
+03/12/2025 19:45:14 - -----------------------------------------------------------
+03/12/2025 19:45:14 - Conectando Oracle
+03/12/2025 19:45:14 - Comprobando C:\greenvb
+03/12/2025 19:45:14 - Conectando a XE
+03/12/2025 19:45:15 - Encontrados 2 ficheros.
+03/12/2025 19:45:15 - Tratando 205632.03C
+03/12/2025 19:45:16 - Tratando tqgen03C
+03/12/2025 19:46:14 - -----------------------------------------------------------
+03/12/2025 19:46:14 - Conectando Oracle
+03/12/2025 19:46:14 - Comprobando C:\greenvb
+03/12/2025 19:46:14 - Conectando a XE
+03/12/2025 19:46:15 - Encontrados 1 ficheros.
+03/12/2025 19:46:15 - Tratando tqgen03C
+03/12/2025 19:47:14 - -----------------------------------------------------------
+03/12/2025 19:47:14 - Conectando Oracle
+03/12/2025 19:47:14 - Comprobando C:\greenvb
+03/12/2025 19:47:14 - Conectando a XE
+03/12/2025 19:47:15 - Encontrados 2 ficheros.
+03/12/2025 19:47:15 - Tratando 206269.03C
+03/12/2025 19:47:16 - Tratando tqgen03C
+03/12/2025 19:48:14 - -----------------------------------------------------------
+03/12/2025 19:48:14 - Conectando Oracle
+03/12/2025 19:48:14 - Comprobando C:\greenvb
+03/12/2025 19:48:14 - Conectando a XE
+03/12/2025 19:48:15 - Encontrados 1 ficheros.
+03/12/2025 19:48:15 - Tratando tqgen03C
+03/12/2025 19:49:14 - -----------------------------------------------------------
+03/12/2025 19:49:14 - Conectando Oracle
+03/12/2025 19:49:14 - Comprobando C:\greenvb
+03/12/2025 19:49:14 - Conectando a XE
+03/12/2025 19:49:15 - Encontrados 1 ficheros.
+03/12/2025 19:49:15 - Tratando tqgen03C
+03/12/2025 19:50:14 - -----------------------------------------------------------
+03/12/2025 19:50:14 - Conectando Oracle
+03/12/2025 19:50:14 - Comprobando C:\greenvb
+03/12/2025 19:50:14 - Conectando a XE
+03/12/2025 19:50:15 - Encontrados 2 ficheros.
+03/12/2025 19:50:15 - Tratando 106270.03C
+03/12/2025 19:50:16 - Tratando tqgen03C
+03/12/2025 19:51:14 - -----------------------------------------------------------
+03/12/2025 19:51:14 - Conectando Oracle
+03/12/2025 19:51:14 - Comprobando C:\greenvb
+03/12/2025 19:51:14 - Conectando a XE
+03/12/2025 19:51:15 - Encontrados 1 ficheros.
+03/12/2025 19:51:15 - Tratando tqgen03C
+03/12/2025 19:52:14 - -----------------------------------------------------------
+03/12/2025 19:52:14 - Conectando Oracle
+03/12/2025 19:52:14 - Comprobando C:\greenvb
+03/12/2025 19:52:14 - Conectando a XE
+03/12/2025 19:52:15 - Encontrados 1 ficheros.
+03/12/2025 19:52:15 - Tratando tqgen03C
+03/12/2025 19:53:14 - -----------------------------------------------------------
+03/12/2025 19:53:14 - Conectando Oracle
+03/12/2025 19:53:14 - Comprobando C:\greenvb
+03/12/2025 19:53:14 - Conectando a XE
+03/12/2025 19:53:15 - Encontrados 2 ficheros.
+03/12/2025 19:53:15 - Tratando 206271.03C
+03/12/2025 19:53:16 - Tratando tqgen03C
+03/12/2025 19:54:14 - -----------------------------------------------------------
+03/12/2025 19:54:14 - Conectando Oracle
+03/12/2025 19:54:14 - Comprobando C:\greenvb
+03/12/2025 19:54:14 - Conectando a XE
+03/12/2025 19:54:15 - Encontrados 1 ficheros.
+03/12/2025 19:54:15 - Tratando tqgen03C
+03/12/2025 19:55:14 - -----------------------------------------------------------
+03/12/2025 19:55:14 - Conectando Oracle
+03/12/2025 19:55:14 - Comprobando C:\greenvb
+03/12/2025 19:55:14 - Conectando a XE
+03/12/2025 19:55:15 - Encontrados 1 ficheros.
+03/12/2025 19:55:15 - Tratando tqgen03C
+03/12/2025 19:56:14 - -----------------------------------------------------------
+03/12/2025 19:56:14 - Conectando Oracle
+03/12/2025 19:56:14 - Comprobando C:\greenvb
+03/12/2025 19:56:14 - Conectando a XE
+03/12/2025 19:56:15 - Encontrados 2 ficheros.
+03/12/2025 19:56:15 - Tratando 206950.03C
+03/12/2025 19:56:16 - Tratando tqgen03C
+03/12/2025 19:57:14 - -----------------------------------------------------------
+03/12/2025 19:57:14 - Conectando Oracle
+03/12/2025 19:57:14 - Comprobando C:\greenvb
+03/12/2025 19:57:14 - Conectando a XE
+03/12/2025 19:57:15 - Encontrados 1 ficheros.
+03/12/2025 19:57:15 - Tratando tqgen03C
+03/12/2025 19:58:14 - -----------------------------------------------------------
+03/12/2025 19:58:14 - Conectando Oracle
+03/12/2025 19:58:14 - Comprobando C:\greenvb
+03/12/2025 19:58:14 - Conectando a XE
+03/12/2025 19:58:15 - Encontrados 3 ficheros.
+03/12/2025 19:58:15 - Tratando 106272.03C
+03/12/2025 19:58:16 - Tratando 206273.03C
+03/12/2025 19:58:17 - Tratando tqgen03C
+03/12/2025 19:59:14 - -----------------------------------------------------------
+03/12/2025 19:59:14 - Conectando Oracle
+03/12/2025 19:59:14 - Comprobando C:\greenvb
+03/12/2025 19:59:14 - Conectando a XE
+03/12/2025 19:59:15 - Encontrados 1 ficheros.
+03/12/2025 19:59:15 - Tratando tqgen03C
+03/12/2025 20:00:14 - -----------------------------------------------------------
+03/12/2025 20:00:14 - Conectando Oracle
+03/12/2025 20:00:14 - Comprobando C:\greenvb
+03/12/2025 20:00:14 - Conectando a XE
+03/12/2025 20:00:15 - Encontrados 3 ficheros.
+03/12/2025 20:00:15 - Tratando 206274.03C
+03/12/2025 20:00:16 - Tratando 206951.03C
+03/12/2025 20:00:17 - Tratando tqgen03C
+03/12/2025 20:01:14 - -----------------------------------------------------------
+03/12/2025 20:01:14 - Conectando Oracle
+03/12/2025 20:01:14 - Comprobando C:\greenvb
+03/12/2025 20:01:14 - Conectando a XE
+03/12/2025 20:01:15 - Encontrados 1 ficheros.
+03/12/2025 20:01:15 - Tratando tqgen03C
+03/12/2025 20:02:14 - -----------------------------------------------------------
+03/12/2025 20:02:14 - Conectando Oracle
+03/12/2025 20:02:14 - Comprobando C:\greenvb
+03/12/2025 20:02:14 - Conectando a XE
+03/12/2025 20:02:15 - Encontrados 1 ficheros.
+03/12/2025 20:02:15 - Tratando tqgen03C
+03/12/2025 20:03:14 - -----------------------------------------------------------
+03/12/2025 20:03:14 - Conectando Oracle
+03/12/2025 20:03:14 - Comprobando C:\greenvb
+03/12/2025 20:03:14 - Conectando a XE
+03/12/2025 20:03:15 - Encontrados 1 ficheros.
+03/12/2025 20:03:15 - Tratando tqgen03C
+03/12/2025 20:04:14 - -----------------------------------------------------------
+03/12/2025 20:04:14 - Conectando Oracle
+03/12/2025 20:04:14 - Comprobando C:\greenvb
+03/12/2025 20:04:14 - Conectando a XE
+03/12/2025 20:04:15 - Encontrados 1 ficheros.
+03/12/2025 20:04:15 - Tratando tqgen03C
+03/12/2025 20:05:14 - -----------------------------------------------------------
+03/12/2025 20:05:14 - Conectando Oracle
+03/12/2025 20:05:14 - Comprobando C:\greenvb
+03/12/2025 20:05:14 - Conectando a XE
+03/12/2025 20:05:15 - Encontrados 2 ficheros.
+03/12/2025 20:05:15 - Tratando 206275.03C
+03/12/2025 20:05:16 - Tratando tqgen03C
+03/12/2025 20:06:14 - -----------------------------------------------------------
+03/12/2025 20:06:14 - Conectando Oracle
+03/12/2025 20:06:14 - Comprobando C:\greenvb
+03/12/2025 20:06:14 - Conectando a XE
+03/12/2025 20:06:15 - Encontrados 2 ficheros.
+03/12/2025 20:06:15 - Tratando 206952.03C
+03/12/2025 20:06:16 - Tratando tqgen03C
+03/12/2025 20:07:14 - -----------------------------------------------------------
+03/12/2025 20:07:14 - Conectando Oracle
+03/12/2025 20:07:14 - Comprobando C:\greenvb
+03/12/2025 20:07:14 - Conectando a XE
+03/12/2025 20:07:15 - Encontrados 1 ficheros.
+03/12/2025 20:07:15 - Tratando tqgen03C
+03/12/2025 20:08:14 - -----------------------------------------------------------
+03/12/2025 20:08:14 - Conectando Oracle
+03/12/2025 20:08:14 - Comprobando C:\greenvb
+03/12/2025 20:08:14 - Conectando a XE
+03/12/2025 20:08:15 - Encontrados 1 ficheros.
+03/12/2025 20:08:15 - Tratando tqgen03C
+03/12/2025 20:09:14 - -----------------------------------------------------------
+03/12/2025 20:09:14 - Conectando Oracle
+03/12/2025 20:09:14 - Comprobando C:\greenvb
+03/12/2025 20:09:14 - Conectando a XE
+03/12/2025 20:09:15 - Encontrados 1 ficheros.
+03/12/2025 20:09:15 - Tratando tqgen03C
+03/12/2025 20:10:14 - -----------------------------------------------------------
+03/12/2025 20:10:14 - Conectando Oracle
+03/12/2025 20:10:14 - Comprobando C:\greenvb
+03/12/2025 20:10:14 - Conectando a XE
+03/12/2025 20:10:15 - Encontrados 1 ficheros.
+03/12/2025 20:10:15 - Tratando tqgen03C
+03/12/2025 20:11:14 - -----------------------------------------------------------
+03/12/2025 20:11:14 - Conectando Oracle
+03/12/2025 20:11:14 - Comprobando C:\greenvb
+03/12/2025 20:11:14 - Conectando a XE
+03/12/2025 20:11:15 - Encontrados 2 ficheros.
+03/12/2025 20:11:15 - Tratando 205634.03C
+03/12/2025 20:11:16 - Tratando tqgen03C
+03/12/2025 20:12:14 - -----------------------------------------------------------
+03/12/2025 20:12:14 - Conectando Oracle
+03/12/2025 20:12:14 - Comprobando C:\greenvb
+03/12/2025 20:12:14 - Conectando a XE
+03/12/2025 20:12:15 - Encontrados 1 ficheros.
+03/12/2025 20:12:15 - Tratando tqgen03C
+03/12/2025 20:13:14 - -----------------------------------------------------------
+03/12/2025 20:13:14 - Conectando Oracle
+03/12/2025 20:13:14 - Comprobando C:\greenvb
+03/12/2025 20:13:14 - Conectando a XE
+03/12/2025 20:13:15 - Encontrados 3 ficheros.
+03/12/2025 20:13:15 - Tratando 205635.03C
+03/12/2025 20:13:16 - Tratando 206276.03C
+03/12/2025 20:13:17 - Tratando tqgen03C
+03/12/2025 20:14:14 - -----------------------------------------------------------
+03/12/2025 20:14:14 - Conectando Oracle
+03/12/2025 20:14:14 - Comprobando C:\greenvb
+03/12/2025 20:14:14 - Conectando a XE
+03/12/2025 20:14:15 - Encontrados 1 ficheros.
+03/12/2025 20:14:15 - Tratando tqgen03C
+03/12/2025 20:15:14 - -----------------------------------------------------------
+03/12/2025 20:15:14 - Conectando Oracle
+03/12/2025 20:15:14 - Comprobando C:\greenvb
+03/12/2025 20:15:14 - Conectando a XE
+03/12/2025 20:15:15 - Encontrados 2 ficheros.
+03/12/2025 20:15:15 - Tratando 205636.03C
+03/12/2025 20:15:16 - Tratando tqgen03C
+03/12/2025 20:16:14 - -----------------------------------------------------------
+03/12/2025 20:16:14 - Conectando Oracle
+03/12/2025 20:16:14 - Comprobando C:\greenvb
+03/12/2025 20:16:14 - Conectando a XE
+03/12/2025 20:16:15 - Encontrados 1 ficheros.
+03/12/2025 20:16:15 - Tratando tqgen03C
+03/12/2025 20:17:14 - -----------------------------------------------------------
+03/12/2025 20:17:14 - Conectando Oracle
+03/12/2025 20:17:14 - Comprobando C:\greenvb
+03/12/2025 20:17:14 - Conectando a XE
+03/12/2025 20:17:15 - Encontrados 2 ficheros.
+03/12/2025 20:17:15 - Tratando 206277.03C
+03/12/2025 20:17:16 - Tratando tqgen03C
+03/12/2025 20:18:14 - -----------------------------------------------------------
+03/12/2025 20:18:14 - Conectando Oracle
+03/12/2025 20:18:14 - Comprobando C:\greenvb
+03/12/2025 20:18:14 - Conectando a XE
+03/12/2025 20:18:15 - Encontrados 1 ficheros.
+03/12/2025 20:18:15 - Tratando tqgen03C
+03/12/2025 20:19:14 - -----------------------------------------------------------
+03/12/2025 20:19:14 - Conectando Oracle
+03/12/2025 20:19:14 - Comprobando C:\greenvb
+03/12/2025 20:19:14 - Conectando a XE
+03/12/2025 20:19:15 - Encontrados 1 ficheros.
+03/12/2025 20:19:15 - Tratando tqgen03C
+03/12/2025 20:20:14 - -----------------------------------------------------------
+03/12/2025 20:20:14 - Conectando Oracle
+03/12/2025 20:20:14 - Comprobando C:\greenvb
+03/12/2025 20:20:14 - Conectando a XE
+03/12/2025 20:20:15 - Encontrados 1 ficheros.
+03/12/2025 20:20:15 - Tratando tqgen03C
+03/12/2025 20:21:14 - -----------------------------------------------------------
+03/12/2025 20:21:14 - Conectando Oracle
+03/12/2025 20:21:14 - Comprobando C:\greenvb
+03/12/2025 20:21:14 - Conectando a XE
+03/12/2025 20:21:15 - Encontrados 1 ficheros.
+03/12/2025 20:21:15 - Tratando tqgen03C
+03/12/2025 20:22:14 - -----------------------------------------------------------
+03/12/2025 20:22:14 - Conectando Oracle
+03/12/2025 20:22:14 - Comprobando C:\greenvb
+03/12/2025 20:22:14 - Conectando a XE
+03/12/2025 20:22:15 - Encontrados 1 ficheros.
+03/12/2025 20:22:15 - Tratando tqgen03C
+03/12/2025 20:23:14 - -----------------------------------------------------------
+03/12/2025 20:23:14 - Conectando Oracle
+03/12/2025 20:23:14 - Comprobando C:\greenvb
+03/12/2025 20:23:14 - Conectando a XE
+03/12/2025 20:23:15 - Encontrados 2 ficheros.
+03/12/2025 20:23:15 - Tratando 206278.03C
+03/12/2025 20:23:16 - Tratando tqgen03C
+03/12/2025 20:24:14 - -----------------------------------------------------------
+03/12/2025 20:24:14 - Conectando Oracle
+03/12/2025 20:24:14 - Comprobando C:\greenvb
+03/12/2025 20:24:14 - Conectando a XE
+03/12/2025 20:24:15 - Encontrados 1 ficheros.
+03/12/2025 20:24:15 - Tratando tqgen03C
+03/12/2025 20:25:14 - -----------------------------------------------------------
+03/12/2025 20:25:14 - Conectando Oracle
+03/12/2025 20:25:14 - Comprobando C:\greenvb
+03/12/2025 20:25:14 - Conectando a XE
+03/12/2025 20:25:15 - Encontrados 1 ficheros.
+03/12/2025 20:25:15 - Tratando tqgen03C
+03/12/2025 20:26:14 - -----------------------------------------------------------
+03/12/2025 20:26:14 - Conectando Oracle
+03/12/2025 20:26:14 - Comprobando C:\greenvb
+03/12/2025 20:26:14 - Conectando a XE
+03/12/2025 20:26:15 - Encontrados 1 ficheros.
+03/12/2025 20:26:15 - Tratando tqgen03C
+03/12/2025 20:27:14 - -----------------------------------------------------------
+03/12/2025 20:27:14 - Conectando Oracle
+03/12/2025 20:27:14 - Comprobando C:\greenvb
+03/12/2025 20:27:14 - Conectando a XE
+03/12/2025 20:27:15 - Encontrados 1 ficheros.
+03/12/2025 20:27:15 - Tratando tqgen03C
+03/12/2025 20:28:14 - -----------------------------------------------------------
+03/12/2025 20:28:14 - Conectando Oracle
+03/12/2025 20:28:14 - Comprobando C:\greenvb
+03/12/2025 20:28:14 - Conectando a XE
+03/12/2025 20:28:15 - Encontrados 1 ficheros.
+03/12/2025 20:28:15 - Tratando tqgen03C
+03/12/2025 20:29:14 - -----------------------------------------------------------
+03/12/2025 20:29:14 - Conectando Oracle
+03/12/2025 20:29:14 - Comprobando C:\greenvb
+03/12/2025 20:29:14 - Conectando a XE
+03/12/2025 20:29:15 - Encontrados 1 ficheros.
+03/12/2025 20:29:15 - Tratando tqgen03C
+03/12/2025 20:30:14 - -----------------------------------------------------------
+03/12/2025 20:30:14 - Conectando Oracle
+03/12/2025 20:30:14 - Comprobando C:\greenvb
+03/12/2025 20:30:14 - Conectando a XE
+03/12/2025 20:30:15 - Encontrados 1 ficheros.
+03/12/2025 20:30:15 - Tratando tqgen03C
+03/12/2025 20:31:14 - -----------------------------------------------------------
+03/12/2025 20:31:14 - Conectando Oracle
+03/12/2025 20:31:14 - Comprobando C:\greenvb
+03/12/2025 20:31:14 - Conectando a XE
+03/12/2025 20:31:15 - Encontrados 1 ficheros.
+03/12/2025 20:31:15 - Tratando tqgen03C
+03/12/2025 20:32:14 - -----------------------------------------------------------
+03/12/2025 20:32:14 - Conectando Oracle
+03/12/2025 20:32:14 - Comprobando C:\greenvb
+03/12/2025 20:32:14 - Conectando a XE
+03/12/2025 20:32:15 - Encontrados 2 ficheros.
+03/12/2025 20:32:15 - Tratando 206280.03C
+03/12/2025 20:32:16 - Tratando tqgen03C
+03/12/2025 20:33:14 - -----------------------------------------------------------
+03/12/2025 20:33:14 - Conectando Oracle
+03/12/2025 20:33:14 - Comprobando C:\greenvb
+03/12/2025 20:33:14 - Conectando a XE
+03/12/2025 20:33:15 - Encontrados 1 ficheros.
+03/12/2025 20:33:15 - Tratando tqgen03C
+03/12/2025 20:34:14 - -----------------------------------------------------------
+03/12/2025 20:34:14 - Conectando Oracle
+03/12/2025 20:34:14 - Comprobando C:\greenvb
+03/12/2025 20:34:14 - Conectando a XE
+03/12/2025 20:34:15 - Encontrados 3 ficheros.
+03/12/2025 20:34:15 - Tratando 205637.03C
+03/12/2025 20:34:16 - Tratando 206953.03C
+03/12/2025 20:34:17 - Tratando tqgen03C
+03/12/2025 20:35:14 - -----------------------------------------------------------
+03/12/2025 20:35:14 - Conectando Oracle
+03/12/2025 20:35:14 - Comprobando C:\greenvb
+03/12/2025 20:35:14 - Conectando a XE
+03/12/2025 20:35:15 - Encontrados 1 ficheros.
+03/12/2025 20:35:15 - Tratando tqgen03C
+03/12/2025 20:36:14 - -----------------------------------------------------------
+03/12/2025 20:36:14 - Conectando Oracle
+03/12/2025 20:36:14 - Comprobando C:\greenvb
+03/12/2025 20:36:14 - Conectando a XE
+03/12/2025 20:36:15 - Encontrados 1 ficheros.
+03/12/2025 20:36:15 - Tratando tqgen03C
+03/12/2025 20:37:14 - -----------------------------------------------------------
+03/12/2025 20:37:14 - Conectando Oracle
+03/12/2025 20:37:14 - Comprobando C:\greenvb
+03/12/2025 20:37:14 - Conectando a XE
+03/12/2025 20:37:15 - Encontrados 1 ficheros.
+03/12/2025 20:37:15 - Tratando tqgen03C
+03/12/2025 20:38:14 - -----------------------------------------------------------
+03/12/2025 20:38:14 - Conectando Oracle
+03/12/2025 20:38:14 - Comprobando C:\greenvb
+03/12/2025 20:38:14 - Conectando a XE
+03/12/2025 20:38:15 - Encontrados 1 ficheros.
+03/12/2025 20:38:15 - Tratando tqgen03C
+03/12/2025 20:39:14 - -----------------------------------------------------------
+03/12/2025 20:39:14 - Conectando Oracle
+03/12/2025 20:39:14 - Comprobando C:\greenvb
+03/12/2025 20:39:14 - Conectando a XE
+03/12/2025 20:39:15 - Encontrados 1 ficheros.
+03/12/2025 20:39:15 - Tratando tqgen03C
+03/12/2025 20:40:14 - -----------------------------------------------------------
+03/12/2025 20:40:14 - Conectando Oracle
+03/12/2025 20:40:14 - Comprobando C:\greenvb
+03/12/2025 20:40:14 - Conectando a XE
+03/12/2025 20:40:15 - Encontrados 1 ficheros.
+03/12/2025 20:40:15 - Tratando tqgen03C
+03/12/2025 20:41:14 - -----------------------------------------------------------
+03/12/2025 20:41:14 - Conectando Oracle
+03/12/2025 20:41:14 - Comprobando C:\greenvb
+03/12/2025 20:41:14 - Conectando a XE
+03/12/2025 20:41:15 - Encontrados 1 ficheros.
+03/12/2025 20:41:15 - Tratando tqgen03C
+03/12/2025 20:42:14 - -----------------------------------------------------------
+03/12/2025 20:42:14 - Conectando Oracle
+03/12/2025 20:42:14 - Comprobando C:\greenvb
+03/12/2025 20:42:14 - Conectando a XE
+03/12/2025 20:42:15 - Encontrados 1 ficheros.
+03/12/2025 20:42:15 - Tratando tqgen03C
+03/12/2025 20:43:14 - -----------------------------------------------------------
+03/12/2025 20:43:14 - Conectando Oracle
+03/12/2025 20:43:14 - Comprobando C:\greenvb
+03/12/2025 20:43:14 - Conectando a XE
+03/12/2025 20:43:15 - Encontrados 1 ficheros.
+03/12/2025 20:43:15 - Tratando tqgen03C
+03/12/2025 20:44:14 - -----------------------------------------------------------
+03/12/2025 20:44:14 - Conectando Oracle
+03/12/2025 20:44:14 - Comprobando C:\greenvb
+03/12/2025 20:44:14 - Conectando a XE
+03/12/2025 20:44:15 - Encontrados 1 ficheros.
+03/12/2025 20:44:15 - Tratando tqgen03C
+03/12/2025 20:45:14 - -----------------------------------------------------------
+03/12/2025 20:45:14 - Conectando Oracle
+03/12/2025 20:45:14 - Comprobando C:\greenvb
+03/12/2025 20:45:14 - Conectando a XE
+03/12/2025 20:45:15 - Encontrados 1 ficheros.
+03/12/2025 20:45:15 - Tratando tqgen03C
+03/12/2025 20:46:14 - -----------------------------------------------------------
+03/12/2025 20:46:14 - Conectando Oracle
+03/12/2025 20:46:14 - Comprobando C:\greenvb
+03/12/2025 20:46:14 - Conectando a XE
+03/12/2025 20:46:15 - Encontrados 1 ficheros.
+03/12/2025 20:46:15 - Tratando tqgen03C
+03/12/2025 20:47:14 - -----------------------------------------------------------
+03/12/2025 20:47:14 - Conectando Oracle
+03/12/2025 20:47:14 - Comprobando C:\greenvb
+03/12/2025 20:47:14 - Conectando a XE
+03/12/2025 20:47:15 - Encontrados 2 ficheros.
+03/12/2025 20:47:15 - Tratando 205638.03C
+03/12/2025 20:47:16 - Tratando tqgen03C
+03/12/2025 20:48:14 - -----------------------------------------------------------
+03/12/2025 20:48:14 - Conectando Oracle
+03/12/2025 20:48:14 - Comprobando C:\greenvb
+03/12/2025 20:48:14 - Conectando a XE
+03/12/2025 20:48:15 - Encontrados 1 ficheros.
+03/12/2025 20:48:15 - Tratando tqgen03C
+03/12/2025 20:49:14 - -----------------------------------------------------------
+03/12/2025 20:49:14 - Conectando Oracle
+03/12/2025 20:49:14 - Comprobando C:\greenvb
+03/12/2025 20:49:14 - Conectando a XE
+03/12/2025 20:49:15 - Encontrados 1 ficheros.
+03/12/2025 20:49:15 - Tratando tqgen03C
+03/12/2025 20:50:14 - -----------------------------------------------------------
+03/12/2025 20:50:14 - Conectando Oracle
+03/12/2025 20:50:14 - Comprobando C:\greenvb
+03/12/2025 20:50:14 - Conectando a XE
+03/12/2025 20:50:15 - Encontrados 1 ficheros.
+03/12/2025 20:50:15 - Tratando tqgen03C
+03/12/2025 20:51:14 - -----------------------------------------------------------
+03/12/2025 20:51:14 - Conectando Oracle
+03/12/2025 20:51:14 - Comprobando C:\greenvb
+03/12/2025 20:51:14 - Conectando a XE
+03/12/2025 20:51:15 - Encontrados 1 ficheros.
+03/12/2025 20:51:15 - Tratando tqgen03C
+03/12/2025 20:52:14 - -----------------------------------------------------------
+03/12/2025 20:52:14 - Conectando Oracle
+03/12/2025 20:52:14 - Comprobando C:\greenvb
+03/12/2025 20:52:14 - Conectando a XE
+03/12/2025 20:52:15 - Encontrados 1 ficheros.
+03/12/2025 20:52:15 - Tratando tqgen03C
+03/12/2025 20:53:14 - -----------------------------------------------------------
+03/12/2025 20:53:14 - Conectando Oracle
+03/12/2025 20:53:14 - Comprobando C:\greenvb
+03/12/2025 20:53:14 - Conectando a XE
+03/12/2025 20:53:15 - Encontrados 1 ficheros.
+03/12/2025 20:53:15 - Tratando tqgen03C
+03/12/2025 20:54:14 - -----------------------------------------------------------
+03/12/2025 20:54:14 - Conectando Oracle
+03/12/2025 20:54:14 - Comprobando C:\greenvb
+03/12/2025 20:54:14 - Conectando a XE
+03/12/2025 20:54:15 - Encontrados 2 ficheros.
+03/12/2025 20:54:15 - Tratando 206281.03C
+03/12/2025 20:54:16 - Tratando tqgen03C
+03/12/2025 20:55:14 - -----------------------------------------------------------
+03/12/2025 20:55:14 - Conectando Oracle
+03/12/2025 20:55:14 - Comprobando C:\greenvb
+03/12/2025 20:55:14 - Conectando a XE
+03/12/2025 20:55:15 - Encontrados 1 ficheros.
+03/12/2025 20:55:15 - Tratando tqgen03C
+03/12/2025 20:56:14 - -----------------------------------------------------------
+03/12/2025 20:56:14 - Conectando Oracle
+03/12/2025 20:56:14 - Comprobando C:\greenvb
+03/12/2025 20:56:14 - Conectando a XE
+03/12/2025 20:56:15 - Encontrados 1 ficheros.
+03/12/2025 20:56:15 - Tratando tqgen03C
+03/12/2025 20:57:14 - -----------------------------------------------------------
+03/12/2025 20:57:14 - Conectando Oracle
+03/12/2025 20:57:14 - Comprobando C:\greenvb
+03/12/2025 20:57:14 - Conectando a XE
+03/12/2025 20:57:15 - Encontrados 1 ficheros.
+03/12/2025 20:57:15 - Tratando tqgen03C
+03/12/2025 20:58:14 - -----------------------------------------------------------
+03/12/2025 20:58:14 - Conectando Oracle
+03/12/2025 20:58:14 - Comprobando C:\greenvb
+03/12/2025 20:58:14 - Conectando a XE
+03/12/2025 20:58:15 - Encontrados 1 ficheros.
+03/12/2025 20:58:15 - Tratando tqgen03C
+03/12/2025 20:59:14 - -----------------------------------------------------------
+03/12/2025 20:59:14 - Conectando Oracle
+03/12/2025 20:59:14 - Comprobando C:\greenvb
+03/12/2025 20:59:14 - Conectando a XE
+03/12/2025 20:59:15 - Encontrados 1 ficheros.
+03/12/2025 20:59:15 - Tratando tqgen03C
+03/12/2025 21:00:14 - -----------------------------------------------------------
+03/12/2025 21:00:14 - Conectando Oracle
+03/12/2025 21:00:14 - Comprobando C:\greenvb
+03/12/2025 21:00:14 - Conectando a XE
+03/12/2025 21:00:15 - Encontrados 3 ficheros.
+03/12/2025 21:00:15 - Tratando 106282.03C
+03/12/2025 21:00:16 - Tratando 206283.03C
+03/12/2025 21:00:17 - Tratando tqgen03C
+03/12/2025 21:01:14 - -----------------------------------------------------------
+03/12/2025 21:01:14 - Conectando Oracle
+03/12/2025 21:01:14 - Comprobando C:\greenvb
+03/12/2025 21:01:14 - Conectando a XE
+03/12/2025 21:01:15 - Encontrados 1 ficheros.
+03/12/2025 21:01:15 - Tratando tqgen03C
+03/12/2025 21:02:14 - -----------------------------------------------------------
+03/12/2025 21:02:14 - Conectando Oracle
+03/12/2025 21:02:14 - Comprobando C:\greenvb
+03/12/2025 21:02:14 - Conectando a XE
+03/12/2025 21:02:15 - Encontrados 1 ficheros.
+03/12/2025 21:02:15 - Tratando tqgen03C
+03/12/2025 21:03:14 - -----------------------------------------------------------
+03/12/2025 21:03:14 - Conectando Oracle
+03/12/2025 21:03:14 - Comprobando C:\greenvb
+03/12/2025 21:03:14 - Conectando a XE
+03/12/2025 21:03:15 - Encontrados 1 ficheros.
+03/12/2025 21:03:15 - Tratando tqgen03C
+03/12/2025 21:04:14 - -----------------------------------------------------------
+03/12/2025 21:04:14 - Conectando Oracle
+03/12/2025 21:04:14 - Comprobando C:\greenvb
+03/12/2025 21:04:14 - Conectando a XE
+03/12/2025 21:04:15 - Encontrados 1 ficheros.
+03/12/2025 21:04:15 - Tratando tqgen03C
+03/12/2025 21:05:14 - -----------------------------------------------------------
+03/12/2025 21:05:14 - Conectando Oracle
+03/12/2025 21:05:14 - Comprobando C:\greenvb
+03/12/2025 21:05:14 - Conectando a XE
+03/12/2025 21:05:15 - Encontrados 1 ficheros.
+03/12/2025 21:05:15 - Tratando tqgen03C
+03/12/2025 21:06:14 - -----------------------------------------------------------
+03/12/2025 21:06:14 - Conectando Oracle
+03/12/2025 21:06:14 - Comprobando C:\greenvb
+03/12/2025 21:06:14 - Conectando a XE
+03/12/2025 21:06:15 - Encontrados 1 ficheros.
+03/12/2025 21:06:15 - Tratando tqgen03C
+03/12/2025 21:07:14 - -----------------------------------------------------------
+03/12/2025 21:07:14 - Conectando Oracle
+03/12/2025 21:07:14 - Comprobando C:\greenvb
+03/12/2025 21:07:14 - Conectando a XE
+03/12/2025 21:07:15 - Encontrados 1 ficheros.
+03/12/2025 21:07:15 - Tratando tqgen03C
+03/12/2025 21:08:14 - -----------------------------------------------------------
+03/12/2025 21:08:14 - Conectando Oracle
+03/12/2025 21:08:14 - Comprobando C:\greenvb
+03/12/2025 21:08:14 - Conectando a XE
+03/12/2025 21:08:15 - Encontrados 1 ficheros.
+03/12/2025 21:08:15 - Tratando tqgen03C
+03/12/2025 21:09:14 - -----------------------------------------------------------
+03/12/2025 21:09:14 - Conectando Oracle
+03/12/2025 21:09:14 - Comprobando C:\greenvb
+03/12/2025 21:09:14 - Conectando a XE
+03/12/2025 21:09:15 - Encontrados 1 ficheros.
+03/12/2025 21:09:15 - Tratando tqgen03C
+03/12/2025 21:10:14 - -----------------------------------------------------------
+03/12/2025 21:10:14 - Conectando Oracle
+03/12/2025 21:10:14 - Comprobando C:\greenvb
+03/12/2025 21:10:14 - Conectando a XE
+03/12/2025 21:10:15 - Encontrados 1 ficheros.
+03/12/2025 21:10:15 - Tratando tqgen03C
+03/12/2025 21:11:14 - -----------------------------------------------------------
+03/12/2025 21:11:14 - Conectando Oracle
+03/12/2025 21:11:14 - Comprobando C:\greenvb
+03/12/2025 21:11:14 - Conectando a XE
+03/12/2025 21:11:15 - Encontrados 1 ficheros.
+03/12/2025 21:11:15 - Tratando tqgen03C
+03/12/2025 21:12:14 - -----------------------------------------------------------
+03/12/2025 21:12:14 - Conectando Oracle
+03/12/2025 21:12:14 - Comprobando C:\greenvb
+03/12/2025 21:12:14 - Conectando a XE
+03/12/2025 21:12:15 - Encontrados 1 ficheros.
+03/12/2025 21:12:15 - Tratando tqgen03C
+03/12/2025 21:13:14 - -----------------------------------------------------------
+03/12/2025 21:13:14 - Conectando Oracle
+03/12/2025 21:13:14 - Comprobando C:\greenvb
+03/12/2025 21:13:14 - Conectando a XE
+03/12/2025 21:13:15 - Encontrados 1 ficheros.
+03/12/2025 21:13:15 - Tratando tqgen03C
+03/12/2025 21:14:14 - -----------------------------------------------------------
+03/12/2025 21:14:14 - Conectando Oracle
+03/12/2025 21:14:14 - Comprobando C:\greenvb
+03/12/2025 21:14:14 - Conectando a XE
+03/12/2025 21:14:15 - Encontrados 1 ficheros.
+03/12/2025 21:14:15 - Tratando tqgen03C
+03/12/2025 21:15:14 - -----------------------------------------------------------
+03/12/2025 21:15:14 - Conectando Oracle
+03/12/2025 21:15:14 - Comprobando C:\greenvb
+03/12/2025 21:15:14 - Conectando a XE
+03/12/2025 21:15:15 - Encontrados 1 ficheros.
+03/12/2025 21:15:15 - Tratando tqgen03C
+03/12/2025 21:16:14 - -----------------------------------------------------------
+03/12/2025 21:16:14 - Conectando Oracle
+03/12/2025 21:16:14 - Comprobando C:\greenvb
+03/12/2025 21:16:14 - Conectando a XE
+03/12/2025 21:16:15 - Encontrados 2 ficheros.
+03/12/2025 21:16:15 - Tratando 205639.03C
+03/12/2025 21:16:16 - Tratando tqgen03C
+03/12/2025 21:17:14 - -----------------------------------------------------------
+03/12/2025 21:17:14 - Conectando Oracle
+03/12/2025 21:17:14 - Comprobando C:\greenvb
+03/12/2025 21:17:14 - Conectando a XE
+03/12/2025 21:17:15 - Encontrados 1 ficheros.
+03/12/2025 21:17:15 - Tratando tqgen03C
+03/12/2025 21:18:14 - -----------------------------------------------------------
+03/12/2025 21:18:14 - Conectando Oracle
+03/12/2025 21:18:14 - Comprobando C:\greenvb
+03/12/2025 21:18:14 - Conectando a XE
+03/12/2025 21:18:15 - Encontrados 1 ficheros.
+03/12/2025 21:18:15 - Tratando tqgen03C
+03/12/2025 21:19:14 - -----------------------------------------------------------
+03/12/2025 21:19:14 - Conectando Oracle
+03/12/2025 21:19:14 - Comprobando C:\greenvb
+03/12/2025 21:19:14 - Conectando a XE
+03/12/2025 21:19:15 - Encontrados 2 ficheros.
+03/12/2025 21:19:15 - Tratando 206284.03C
+03/12/2025 21:19:16 - Tratando tqgen03C
+03/12/2025 21:20:14 - -----------------------------------------------------------
+03/12/2025 21:20:14 - Conectando Oracle
+03/12/2025 21:20:14 - Comprobando C:\greenvb
+03/12/2025 21:20:14 - Conectando a XE
+03/12/2025 21:20:15 - Encontrados 1 ficheros.
+03/12/2025 21:20:15 - Tratando tqgen03C
+03/12/2025 21:21:14 - -----------------------------------------------------------
+03/12/2025 21:21:14 - Conectando Oracle
+03/12/2025 21:21:14 - Comprobando C:\greenvb
+03/12/2025 21:21:14 - Conectando a XE
+03/12/2025 21:21:15 - Encontrados 1 ficheros.
+03/12/2025 21:21:15 - Tratando tqgen03C
+03/12/2025 21:22:14 - -----------------------------------------------------------
+03/12/2025 21:22:14 - Conectando Oracle
+03/12/2025 21:22:14 - Comprobando C:\greenvb
+03/12/2025 21:22:14 - Conectando a XE
+03/12/2025 21:22:15 - Encontrados 1 ficheros.
+03/12/2025 21:22:15 - Tratando tqgen03C
+03/12/2025 21:23:14 - -----------------------------------------------------------
+03/12/2025 21:23:14 - Conectando Oracle
+03/12/2025 21:23:14 - Comprobando C:\greenvb
+03/12/2025 21:23:14 - Conectando a XE
+03/12/2025 21:23:15 - Encontrados 1 ficheros.
+03/12/2025 21:23:15 - Tratando tqgen03C
+03/12/2025 21:24:14 - -----------------------------------------------------------
+03/12/2025 21:24:14 - Conectando Oracle
+03/12/2025 21:24:14 - Comprobando C:\greenvb
+03/12/2025 21:24:14 - Conectando a XE
+03/12/2025 21:24:15 - Encontrados 1 ficheros.
+03/12/2025 21:24:15 - Tratando tqgen03C
+03/12/2025 21:25:14 - -----------------------------------------------------------
+03/12/2025 21:25:14 - Conectando Oracle
+03/12/2025 21:25:14 - Comprobando C:\greenvb
+03/12/2025 21:25:14 - Conectando a XE
+03/12/2025 21:25:15 - Encontrados 1 ficheros.
+03/12/2025 21:25:15 - Tratando tqgen03C
+03/12/2025 21:26:14 - -----------------------------------------------------------
+03/12/2025 21:26:14 - Conectando Oracle
+03/12/2025 21:26:14 - Comprobando C:\greenvb
+03/12/2025 21:26:14 - Conectando a XE
+03/12/2025 21:26:15 - Encontrados 1 ficheros.
+03/12/2025 21:26:15 - Tratando tqgen03C
+03/12/2025 21:27:14 - -----------------------------------------------------------
+03/12/2025 21:27:14 - Conectando Oracle
+03/12/2025 21:27:14 - Comprobando C:\greenvb
+03/12/2025 21:27:14 - Conectando a XE
+03/12/2025 21:27:15 - Encontrados 1 ficheros.
+03/12/2025 21:27:15 - Tratando tqgen03C
+03/12/2025 21:28:14 - -----------------------------------------------------------
+03/12/2025 21:28:14 - Conectando Oracle
+03/12/2025 21:28:14 - Comprobando C:\greenvb
+03/12/2025 21:28:14 - Conectando a XE
+03/12/2025 21:28:15 - Encontrados 1 ficheros.
+03/12/2025 21:28:15 - Tratando tqgen03C
+03/12/2025 21:29:14 - -----------------------------------------------------------
+03/12/2025 21:29:14 - Conectando Oracle
+03/12/2025 21:29:14 - Comprobando C:\greenvb
+03/12/2025 21:29:14 - Conectando a XE
+03/12/2025 21:29:15 - Encontrados 1 ficheros.
+03/12/2025 21:29:15 - Tratando tqgen03C
+03/12/2025 21:30:14 - -----------------------------------------------------------
+03/12/2025 21:30:14 - Conectando Oracle
+03/12/2025 21:30:14 - Comprobando C:\greenvb
+03/12/2025 21:30:14 - Conectando a XE
+03/12/2025 21:30:15 - Encontrados 1 ficheros.
+03/12/2025 21:30:15 - Tratando tqgen03C
+03/12/2025 21:31:14 - -----------------------------------------------------------
+03/12/2025 21:31:14 - Conectando Oracle
+03/12/2025 21:31:14 - Comprobando C:\greenvb
+03/12/2025 21:31:14 - Conectando a XE
+03/12/2025 21:31:15 - Encontrados 1 ficheros.
+03/12/2025 21:31:15 - Tratando tqgen03C
+03/12/2025 21:32:14 - -----------------------------------------------------------
+03/12/2025 21:32:14 - Conectando Oracle
+03/12/2025 21:32:14 - Comprobando C:\greenvb
+03/12/2025 21:32:14 - Conectando a XE
+03/12/2025 21:32:15 - Encontrados 1 ficheros.
+03/12/2025 21:32:15 - Tratando tqgen03C
+03/12/2025 21:33:14 - -----------------------------------------------------------
+03/12/2025 21:33:14 - Conectando Oracle
+03/12/2025 21:33:14 - Comprobando C:\greenvb
+03/12/2025 21:33:14 - Conectando a XE
+03/12/2025 21:33:15 - Encontrados 1 ficheros.
+03/12/2025 21:33:15 - Tratando tqgen03C
+03/12/2025 21:34:14 - -----------------------------------------------------------
+03/12/2025 21:34:14 - Conectando Oracle
+03/12/2025 21:34:14 - Comprobando C:\greenvb
+03/12/2025 21:34:14 - Conectando a XE
+03/12/2025 21:34:15 - Encontrados 1 ficheros.
+03/12/2025 21:34:15 - Tratando tqgen03C
+03/12/2025 21:35:14 - -----------------------------------------------------------
+03/12/2025 21:35:14 - Conectando Oracle
+03/12/2025 21:35:14 - Comprobando C:\greenvb
+03/12/2025 21:35:14 - Conectando a XE
+03/12/2025 21:35:15 - Encontrados 1 ficheros.
+03/12/2025 21:35:15 - Tratando tqgen03C
+03/12/2025 21:36:14 - -----------------------------------------------------------
+03/12/2025 21:36:14 - Conectando Oracle
+03/12/2025 21:36:14 - Comprobando C:\greenvb
+03/12/2025 21:36:14 - Conectando a XE
+03/12/2025 21:36:15 - Encontrados 1 ficheros.
+03/12/2025 21:36:15 - Tratando tqgen03C
+03/12/2025 21:37:14 - -----------------------------------------------------------
+03/12/2025 21:37:14 - Conectando Oracle
+03/12/2025 21:37:14 - Comprobando C:\greenvb
+03/12/2025 21:37:14 - Conectando a XE
+03/12/2025 21:37:15 - Encontrados 1 ficheros.
+03/12/2025 21:37:15 - Tratando tqgen03C
+03/12/2025 21:38:14 - -----------------------------------------------------------
+03/12/2025 21:38:14 - Conectando Oracle
+03/12/2025 21:38:14 - Comprobando C:\greenvb
+03/12/2025 21:38:14 - Conectando a XE
+03/12/2025 21:38:15 - Encontrados 1 ficheros.
+03/12/2025 21:38:15 - Tratando tqgen03C
+03/12/2025 21:39:14 - -----------------------------------------------------------
+03/12/2025 21:39:14 - Conectando Oracle
+03/12/2025 21:39:14 - Comprobando C:\greenvb
+03/12/2025 21:39:14 - Conectando a XE
+03/12/2025 21:39:15 - Encontrados 1 ficheros.
+03/12/2025 21:39:15 - Tratando tqgen03C
+03/12/2025 21:40:14 - -----------------------------------------------------------
+03/12/2025 21:40:14 - Conectando Oracle
+03/12/2025 21:40:14 - Comprobando C:\greenvb
+03/12/2025 21:40:14 - Conectando a XE
+03/12/2025 21:40:15 - Encontrados 1 ficheros.
+03/12/2025 21:40:15 - Tratando tqgen03C
+03/12/2025 21:41:14 - -----------------------------------------------------------
+03/12/2025 21:41:14 - Conectando Oracle
+03/12/2025 21:41:14 - Comprobando C:\greenvb
+03/12/2025 21:41:14 - Conectando a XE
+03/12/2025 21:41:15 - Encontrados 1 ficheros.
+03/12/2025 21:41:15 - Tratando tqgen03C
+03/12/2025 21:42:14 - -----------------------------------------------------------
+03/12/2025 21:42:14 - Conectando Oracle
+03/12/2025 21:42:14 - Comprobando C:\greenvb
+03/12/2025 21:42:14 - Conectando a XE
+03/12/2025 21:42:15 - Encontrados 1 ficheros.
+03/12/2025 21:42:15 - Tratando tqgen03C
+03/12/2025 21:43:14 - -----------------------------------------------------------
+03/12/2025 21:43:14 - Conectando Oracle
+03/12/2025 21:43:14 - Comprobando C:\greenvb
+03/12/2025 21:43:14 - Conectando a XE
+03/12/2025 21:43:15 - Encontrados 1 ficheros.
+03/12/2025 21:43:15 - Tratando tqgen03C
+03/12/2025 21:44:14 - -----------------------------------------------------------
+03/12/2025 21:44:14 - Conectando Oracle
+03/12/2025 21:44:14 - Comprobando C:\greenvb
+03/12/2025 21:44:14 - Conectando a XE
+03/12/2025 21:44:15 - Encontrados 1 ficheros.
+03/12/2025 21:44:15 - Tratando tqgen03C
+03/12/2025 21:45:14 - -----------------------------------------------------------
+03/12/2025 21:45:14 - Conectando Oracle
+03/12/2025 21:45:14 - Comprobando C:\greenvb
+03/12/2025 21:45:14 - Conectando a XE
+03/12/2025 21:45:15 - Encontrados 1 ficheros.
+03/12/2025 21:45:15 - Tratando tqgen03C
+03/12/2025 21:46:14 - -----------------------------------------------------------
+03/12/2025 21:46:14 - Conectando Oracle
+03/12/2025 21:46:14 - Comprobando C:\greenvb
+03/12/2025 21:46:14 - Conectando a XE
+03/12/2025 21:46:15 - Encontrados 1 ficheros.
+03/12/2025 21:46:15 - Tratando tqgen03C
+03/12/2025 21:47:14 - -----------------------------------------------------------
+03/12/2025 21:47:14 - Conectando Oracle
+03/12/2025 21:47:14 - Comprobando C:\greenvb
+03/12/2025 21:47:14 - Conectando a XE
+03/12/2025 21:47:15 - Encontrados 1 ficheros.
+03/12/2025 21:47:15 - Tratando tqgen03C
+03/12/2025 21:48:14 - -----------------------------------------------------------
+03/12/2025 21:48:14 - Conectando Oracle
+03/12/2025 21:48:14 - Comprobando C:\greenvb
+03/12/2025 21:48:14 - Conectando a XE
+03/12/2025 21:48:15 - Encontrados 1 ficheros.
+03/12/2025 21:48:15 - Tratando tqgen03C
+03/12/2025 21:49:14 - -----------------------------------------------------------
+03/12/2025 21:49:14 - Conectando Oracle
+03/12/2025 21:49:14 - Comprobando C:\greenvb
+03/12/2025 21:49:14 - Conectando a XE
+03/12/2025 21:49:15 - Encontrados 1 ficheros.
+03/12/2025 21:49:15 - Tratando tqgen03C
+03/12/2025 21:50:14 - -----------------------------------------------------------
+03/12/2025 21:50:14 - Conectando Oracle
+03/12/2025 21:50:14 - Comprobando C:\greenvb
+03/12/2025 21:50:14 - Conectando a XE
+03/12/2025 21:50:15 - Encontrados 1 ficheros.
+03/12/2025 21:50:15 - Tratando tqgen03C
+03/12/2025 21:51:14 - -----------------------------------------------------------
+03/12/2025 21:51:14 - Conectando Oracle
+03/12/2025 21:51:14 - Comprobando C:\greenvb
+03/12/2025 21:51:14 - Conectando a XE
+03/12/2025 21:51:15 - Encontrados 1 ficheros.
+03/12/2025 21:51:15 - Tratando tqgen03C
+03/12/2025 21:52:14 - -----------------------------------------------------------
+03/12/2025 21:52:14 - Conectando Oracle
+03/12/2025 21:52:14 - Comprobando C:\greenvb
+03/12/2025 21:52:14 - Conectando a XE
+03/12/2025 21:52:15 - Encontrados 1 ficheros.
+03/12/2025 21:52:15 - Tratando tqgen03C
+03/12/2025 21:53:14 - -----------------------------------------------------------
+03/12/2025 21:53:14 - Conectando Oracle
+03/12/2025 21:53:14 - Comprobando C:\greenvb
+03/12/2025 21:53:14 - Conectando a XE
+03/12/2025 21:53:15 - Encontrados 1 ficheros.
+03/12/2025 21:53:15 - Tratando tqgen03C
+03/12/2025 21:54:14 - -----------------------------------------------------------
+03/12/2025 21:54:14 - Conectando Oracle
+03/12/2025 21:54:14 - Comprobando C:\greenvb
+03/12/2025 21:54:14 - Conectando a XE
+03/12/2025 21:54:15 - Encontrados 1 ficheros.
+03/12/2025 21:54:15 - Tratando tqgen03C
+03/12/2025 21:55:14 - -----------------------------------------------------------
+03/12/2025 21:55:14 - Conectando Oracle
+03/12/2025 21:55:14 - Comprobando C:\greenvb
+03/12/2025 21:55:14 - Conectando a XE
+03/12/2025 21:55:15 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 21:56:14 - -----------------------------------------------------------
+03/12/2025 21:56:14 - Conectando Oracle
+03/12/2025 21:56:14 - Comprobando C:\greenvb
+03/12/2025 21:56:14 - Conectando a XE
+03/12/2025 21:56:15 - Encontrados 1 ficheros.
+03/12/2025 21:56:15 - Tratando tqgen03C
+03/12/2025 21:57:14 - -----------------------------------------------------------
+03/12/2025 21:57:14 - Conectando Oracle
+03/12/2025 21:57:14 - Comprobando C:\greenvb
+03/12/2025 21:57:14 - Conectando a XE
+03/12/2025 21:57:15 - Encontrados 1 ficheros.
+03/12/2025 21:57:15 - Tratando tqgen03C
+03/12/2025 21:58:14 - -----------------------------------------------------------
+03/12/2025 21:58:14 - Conectando Oracle
+03/12/2025 21:58:14 - Comprobando C:\greenvb
+03/12/2025 21:58:14 - Conectando a XE
+03/12/2025 21:58:15 - Encontrados 1 ficheros.
+03/12/2025 21:58:15 - Tratando tqgen03C
+03/12/2025 21:59:14 - -----------------------------------------------------------
+03/12/2025 21:59:14 - Conectando Oracle
+03/12/2025 21:59:14 - Comprobando C:\greenvb
+03/12/2025 21:59:14 - Conectando a XE
+03/12/2025 21:59:15 - Encontrados 1 ficheros.
+03/12/2025 21:59:15 - Tratando tqgen03C
+03/12/2025 22:00:14 - -----------------------------------------------------------
+03/12/2025 22:00:14 - Conectando Oracle
+03/12/2025 22:00:14 - Comprobando C:\greenvb
+03/12/2025 22:00:14 - Conectando a XE
+03/12/2025 22:00:15 - Encontrados 1 ficheros.
+03/12/2025 22:00:15 - Tratando tqgen03C
+03/12/2025 22:01:14 - -----------------------------------------------------------
+03/12/2025 22:01:14 - Conectando Oracle
+03/12/2025 22:01:14 - Comprobando C:\greenvb
+03/12/2025 22:01:14 - Conectando a XE
+03/12/2025 22:01:15 - Encontrados 1 ficheros.
+03/12/2025 22:01:15 - Tratando tqgen03C
+03/12/2025 22:02:14 - -----------------------------------------------------------
+03/12/2025 22:02:14 - Conectando Oracle
+03/12/2025 22:02:14 - Comprobando C:\greenvb
+03/12/2025 22:02:14 - Conectando a XE
+03/12/2025 22:02:15 - Encontrados 1 ficheros.
+03/12/2025 22:02:15 - Tratando tqgen03C
+03/12/2025 22:03:14 - -----------------------------------------------------------
+03/12/2025 22:03:14 - Conectando Oracle
+03/12/2025 22:03:14 - Comprobando C:\greenvb
+03/12/2025 22:03:14 - Conectando a XE
+03/12/2025 22:03:15 - Encontrados 1 ficheros.
+03/12/2025 22:03:15 - Tratando tqgen03C
+03/12/2025 22:04:14 - -----------------------------------------------------------
+03/12/2025 22:04:14 - Conectando Oracle
+03/12/2025 22:04:14 - Comprobando C:\greenvb
+03/12/2025 22:04:14 - Conectando a XE
+03/12/2025 22:04:15 - Encontrados 1 ficheros.
+03/12/2025 22:04:15 - Tratando tqgen03C
+03/12/2025 22:05:14 - -----------------------------------------------------------
+03/12/2025 22:05:14 - Conectando Oracle
+03/12/2025 22:05:14 - Comprobando C:\greenvb
+03/12/2025 22:05:14 - Conectando a XE
+03/12/2025 22:05:15 - Encontrados 1 ficheros.
+03/12/2025 22:05:15 - Tratando tqgen03C
+03/12/2025 22:06:14 - -----------------------------------------------------------
+03/12/2025 22:06:14 - Conectando Oracle
+03/12/2025 22:06:14 - Comprobando C:\greenvb
+03/12/2025 22:06:14 - Conectando a XE
+03/12/2025 22:06:15 - Encontrados 1 ficheros.
+03/12/2025 22:06:15 - Tratando tqgen03C
+03/12/2025 22:07:14 - -----------------------------------------------------------
+03/12/2025 22:07:14 - Conectando Oracle
+03/12/2025 22:07:14 - Comprobando C:\greenvb
+03/12/2025 22:07:14 - Conectando a XE
+03/12/2025 22:07:15 - Encontrados 1 ficheros.
+03/12/2025 22:07:15 - Tratando tqgen03C
+03/12/2025 22:08:14 - -----------------------------------------------------------
+03/12/2025 22:08:14 - Conectando Oracle
+03/12/2025 22:08:14 - Comprobando C:\greenvb
+03/12/2025 22:08:14 - Conectando a XE
+03/12/2025 22:08:15 - Encontrados 1 ficheros.
+03/12/2025 22:08:15 - Tratando tqgen03C
+03/12/2025 22:09:14 - -----------------------------------------------------------
+03/12/2025 22:09:14 - Conectando Oracle
+03/12/2025 22:09:14 - Comprobando C:\greenvb
+03/12/2025 22:09:14 - Conectando a XE
+03/12/2025 22:09:15 - Encontrados 1 ficheros.
+03/12/2025 22:09:15 - Tratando tqgen03C
+03/12/2025 22:10:14 - -----------------------------------------------------------
+03/12/2025 22:10:14 - Conectando Oracle
+03/12/2025 22:10:14 - Comprobando C:\greenvb
+03/12/2025 22:10:14 - Conectando a XE
+03/12/2025 22:10:15 - Encontrados 1 ficheros.
+03/12/2025 22:10:15 - Tratando tqgen03C
+03/12/2025 22:11:14 - -----------------------------------------------------------
+03/12/2025 22:11:14 - Conectando Oracle
+03/12/2025 22:11:14 - Comprobando C:\greenvb
+03/12/2025 22:11:14 - Conectando a XE
+03/12/2025 22:11:15 - Encontrados 1 ficheros.
+03/12/2025 22:11:15 - Tratando tqgen03C
+03/12/2025 22:12:14 - -----------------------------------------------------------
+03/12/2025 22:12:14 - Conectando Oracle
+03/12/2025 22:12:14 - Comprobando C:\greenvb
+03/12/2025 22:12:14 - Conectando a XE
+03/12/2025 22:12:15 - Encontrados 1 ficheros.
+03/12/2025 22:12:15 - Tratando tqgen03C
+03/12/2025 22:13:14 - -----------------------------------------------------------
+03/12/2025 22:13:14 - Conectando Oracle
+03/12/2025 22:13:14 - Comprobando C:\greenvb
+03/12/2025 22:13:14 - Conectando a XE
+03/12/2025 22:13:15 - Encontrados 1 ficheros.
+03/12/2025 22:13:15 - Tratando tqgen03C
+03/12/2025 22:14:14 - -----------------------------------------------------------
+03/12/2025 22:14:14 - Conectando Oracle
+03/12/2025 22:14:14 - Comprobando C:\greenvb
+03/12/2025 22:14:14 - Conectando a XE
+03/12/2025 22:14:15 - Encontrados 1 ficheros.
+03/12/2025 22:14:15 - Tratando tqgen03C
+03/12/2025 22:15:14 - -----------------------------------------------------------
+03/12/2025 22:15:14 - Conectando Oracle
+03/12/2025 22:15:14 - Comprobando C:\greenvb
+03/12/2025 22:15:14 - Conectando a XE
+03/12/2025 22:15:15 - Encontrados 1 ficheros.
+03/12/2025 22:15:15 - Tratando tqgen03C
+03/12/2025 22:16:14 - -----------------------------------------------------------
+03/12/2025 22:16:14 - Conectando Oracle
+03/12/2025 22:16:14 - Comprobando C:\greenvb
+03/12/2025 22:16:14 - Conectando a XE
+03/12/2025 22:16:15 - Encontrados 1 ficheros.
+03/12/2025 22:16:15 - Tratando tqgen03C
+03/12/2025 22:17:14 - -----------------------------------------------------------
+03/12/2025 22:17:14 - Conectando Oracle
+03/12/2025 22:17:14 - Comprobando C:\greenvb
+03/12/2025 22:17:14 - Conectando a XE
+03/12/2025 22:17:15 - Encontrados 1 ficheros.
+03/12/2025 22:17:15 - Tratando tqgen03C
+03/12/2025 22:18:14 - -----------------------------------------------------------
+03/12/2025 22:18:14 - Conectando Oracle
+03/12/2025 22:18:14 - Comprobando C:\greenvb
+03/12/2025 22:18:14 - Conectando a XE
+03/12/2025 22:18:15 - Encontrados 1 ficheros.
+03/12/2025 22:18:15 - Tratando tqgen03C
+03/12/2025 22:19:14 - -----------------------------------------------------------
+03/12/2025 22:19:14 - Conectando Oracle
+03/12/2025 22:19:14 - Comprobando C:\greenvb
+03/12/2025 22:19:14 - Conectando a XE
+03/12/2025 22:19:15 - Encontrados 1 ficheros.
+03/12/2025 22:19:15 - Tratando tqgen03C
+03/12/2025 22:20:14 - -----------------------------------------------------------
+03/12/2025 22:20:14 - Conectando Oracle
+03/12/2025 22:20:14 - Comprobando C:\greenvb
+03/12/2025 22:20:14 - Conectando a XE
+03/12/2025 22:20:15 - Encontrados 1 ficheros.
+03/12/2025 22:20:15 - Tratando tqgen03C
+03/12/2025 22:21:14 - -----------------------------------------------------------
+03/12/2025 22:21:14 - Conectando Oracle
+03/12/2025 22:21:14 - Comprobando C:\greenvb
+03/12/2025 22:21:14 - Conectando a XE
+03/12/2025 22:21:15 - Encontrados 1 ficheros.
+03/12/2025 22:21:15 - Tratando tqgen03C
+03/12/2025 22:22:14 - -----------------------------------------------------------
+03/12/2025 22:22:14 - Conectando Oracle
+03/12/2025 22:22:14 - Comprobando C:\greenvb
+03/12/2025 22:22:14 - Conectando a XE
+03/12/2025 22:22:15 - Encontrados 1 ficheros.
+03/12/2025 22:22:15 - Tratando tqgen03C
+03/12/2025 22:23:14 - -----------------------------------------------------------
+03/12/2025 22:23:14 - Conectando Oracle
+03/12/2025 22:23:14 - Comprobando C:\greenvb
+03/12/2025 22:23:14 - Conectando a XE
+03/12/2025 22:23:15 - Encontrados 1 ficheros.
+03/12/2025 22:23:15 - Tratando tqgen03C
+03/12/2025 22:24:14 - -----------------------------------------------------------
+03/12/2025 22:24:14 - Conectando Oracle
+03/12/2025 22:24:14 - Comprobando C:\greenvb
+03/12/2025 22:24:14 - Conectando a XE
+03/12/2025 22:24:15 - Encontrados 1 ficheros.
+03/12/2025 22:24:15 - Tratando tqgen03C
+03/12/2025 22:25:14 - -----------------------------------------------------------
+03/12/2025 22:25:14 - Conectando Oracle
+03/12/2025 22:25:14 - Comprobando C:\greenvb
+03/12/2025 22:25:14 - Conectando a XE
+03/12/2025 22:25:15 - Encontrados 1 ficheros.
+03/12/2025 22:25:15 - Tratando tqgen03C
+03/12/2025 22:26:14 - -----------------------------------------------------------
+03/12/2025 22:26:14 - Conectando Oracle
+03/12/2025 22:26:14 - Comprobando C:\greenvb
+03/12/2025 22:26:14 - Conectando a XE
+03/12/2025 22:26:15 - Encontrados 1 ficheros.
+03/12/2025 22:26:15 - Tratando tqgen03C
+03/12/2025 22:27:14 - -----------------------------------------------------------
+03/12/2025 22:27:14 - Conectando Oracle
+03/12/2025 22:27:14 - Comprobando C:\greenvb
+03/12/2025 22:27:14 - Conectando a XE
+03/12/2025 22:27:15 - Encontrados 1 ficheros.
+03/12/2025 22:27:15 - Tratando tqgen03C
+03/12/2025 22:28:14 - -----------------------------------------------------------
+03/12/2025 22:28:14 - Conectando Oracle
+03/12/2025 22:28:14 - Comprobando C:\greenvb
+03/12/2025 22:28:14 - Conectando a XE
+03/12/2025 22:28:15 - Encontrados 1 ficheros.
+03/12/2025 22:28:15 - Tratando tqgen03C
+03/12/2025 22:29:14 - -----------------------------------------------------------
+03/12/2025 22:29:14 - Conectando Oracle
+03/12/2025 22:29:14 - Comprobando C:\greenvb
+03/12/2025 22:29:14 - Conectando a XE
+03/12/2025 22:29:15 - Encontrados 1 ficheros.
+03/12/2025 22:29:15 - Tratando tqgen03C
+03/12/2025 22:30:14 - -----------------------------------------------------------
+03/12/2025 22:30:14 - Conectando Oracle
+03/12/2025 22:30:14 - Comprobando C:\greenvb
+03/12/2025 22:30:14 - Conectando a XE
+03/12/2025 22:30:15 - Encontrados 1 ficheros.
+03/12/2025 22:30:15 - Tratando tqgen03C
+03/12/2025 22:31:14 - -----------------------------------------------------------
+03/12/2025 22:31:14 - Conectando Oracle
+03/12/2025 22:31:14 - Comprobando C:\greenvb
+03/12/2025 22:31:14 - Conectando a XE
+03/12/2025 22:31:15 - Encontrados 1 ficheros.
+03/12/2025 22:31:15 - Tratando tqgen03C
+03/12/2025 22:32:14 - -----------------------------------------------------------
+03/12/2025 22:32:14 - Conectando Oracle
+03/12/2025 22:32:14 - Comprobando C:\greenvb
+03/12/2025 22:32:14 - Conectando a XE
+03/12/2025 22:32:15 - Encontrados 1 ficheros.
+03/12/2025 22:32:15 - Tratando tqgen03C
+03/12/2025 22:33:14 - -----------------------------------------------------------
+03/12/2025 22:33:14 - Conectando Oracle
+03/12/2025 22:33:14 - Comprobando C:\greenvb
+03/12/2025 22:33:14 - Conectando a XE
+03/12/2025 22:33:15 - Encontrados 1 ficheros.
+03/12/2025 22:33:15 - Tratando tqgen03C
+03/12/2025 22:34:14 - -----------------------------------------------------------
+03/12/2025 22:34:14 - Conectando Oracle
+03/12/2025 22:34:14 - Comprobando C:\greenvb
+03/12/2025 22:34:14 - Conectando a XE
+03/12/2025 22:34:15 - Encontrados 1 ficheros.
+03/12/2025 22:34:15 - Tratando tqgen03C
+03/12/2025 22:35:14 - -----------------------------------------------------------
+03/12/2025 22:35:14 - Conectando Oracle
+03/12/2025 22:35:14 - Comprobando C:\greenvb
+03/12/2025 22:35:14 - Conectando a XE
+03/12/2025 22:35:15 - Encontrados 1 ficheros.
+03/12/2025 22:35:15 - Tratando tqgen03C
+03/12/2025 22:36:14 - -----------------------------------------------------------
+03/12/2025 22:36:14 - Conectando Oracle
+03/12/2025 22:36:14 - Comprobando C:\greenvb
+03/12/2025 22:36:14 - Conectando a XE
+03/12/2025 22:36:15 - Encontrados 1 ficheros.
+03/12/2025 22:36:15 - Tratando tqgen03C
+03/12/2025 22:37:14 - -----------------------------------------------------------
+03/12/2025 22:37:14 - Conectando Oracle
+03/12/2025 22:37:14 - Comprobando C:\greenvb
+03/12/2025 22:37:14 - Conectando a XE
+03/12/2025 22:37:15 - Encontrados 1 ficheros.
+03/12/2025 22:37:15 - Tratando tqgen03C
+03/12/2025 22:38:14 - -----------------------------------------------------------
+03/12/2025 22:38:14 - Conectando Oracle
+03/12/2025 22:38:14 - Comprobando C:\greenvb
+03/12/2025 22:38:14 - Conectando a XE
+03/12/2025 22:38:15 - Encontrados 1 ficheros.
+03/12/2025 22:38:15 - Tratando tqgen03C
+03/12/2025 22:39:14 - -----------------------------------------------------------
+03/12/2025 22:39:14 - Conectando Oracle
+03/12/2025 22:39:14 - Comprobando C:\greenvb
+03/12/2025 22:39:14 - Conectando a XE
+03/12/2025 22:39:15 - Encontrados 1 ficheros.
+03/12/2025 22:39:15 - Tratando tqgen03C
+03/12/2025 22:40:14 - -----------------------------------------------------------
+03/12/2025 22:40:14 - Conectando Oracle
+03/12/2025 22:40:14 - Comprobando C:\greenvb
+03/12/2025 22:40:14 - Conectando a XE
+03/12/2025 22:40:15 - Encontrados 1 ficheros.
+03/12/2025 22:40:15 - Tratando tqgen03C
+03/12/2025 22:41:14 - -----------------------------------------------------------
+03/12/2025 22:41:14 - Conectando Oracle
+03/12/2025 22:41:14 - Comprobando C:\greenvb
+03/12/2025 22:41:14 - Conectando a XE
+03/12/2025 22:41:15 - Encontrados 1 ficheros.
+03/12/2025 22:41:15 - Tratando tqgen03C
+03/12/2025 22:42:14 - -----------------------------------------------------------
+03/12/2025 22:42:14 - Conectando Oracle
+03/12/2025 22:42:14 - Comprobando C:\greenvb
+03/12/2025 22:42:14 - Conectando a XE
+03/12/2025 22:42:15 - Encontrados 1 ficheros.
+03/12/2025 22:42:15 - Tratando tqgen03C
+03/12/2025 22:43:14 - -----------------------------------------------------------
+03/12/2025 22:43:14 - Conectando Oracle
+03/12/2025 22:43:14 - Comprobando C:\greenvb
+03/12/2025 22:43:14 - Conectando a XE
+03/12/2025 22:43:15 - Encontrados 1 ficheros.
+03/12/2025 22:43:15 - Tratando tqgen03C
+03/12/2025 22:44:14 - -----------------------------------------------------------
+03/12/2025 22:44:14 - Conectando Oracle
+03/12/2025 22:44:14 - Comprobando C:\greenvb
+03/12/2025 22:44:14 - Conectando a XE
+03/12/2025 22:44:15 - Encontrados 1 ficheros.
+03/12/2025 22:44:15 - Tratando tqgen03C
+03/12/2025 22:45:14 - -----------------------------------------------------------
+03/12/2025 22:45:14 - Conectando Oracle
+03/12/2025 22:45:14 - Comprobando C:\greenvb
+03/12/2025 22:45:14 - Conectando a XE
+03/12/2025 22:45:15 - Encontrados 1 ficheros.
+03/12/2025 22:45:15 - Tratando tqgen03C
+03/12/2025 22:46:14 - -----------------------------------------------------------
+03/12/2025 22:46:14 - Conectando Oracle
+03/12/2025 22:46:14 - Comprobando C:\greenvb
+03/12/2025 22:46:14 - Conectando a XE
+03/12/2025 22:46:15 - Encontrados 1 ficheros.
+03/12/2025 22:46:15 - Tratando tqgen03C
+03/12/2025 22:47:14 - -----------------------------------------------------------
+03/12/2025 22:47:14 - Conectando Oracle
+03/12/2025 22:47:14 - Comprobando C:\greenvb
+03/12/2025 22:47:14 - Conectando a XE
+03/12/2025 22:47:15 - Encontrados 1 ficheros.
+03/12/2025 22:47:15 - Tratando tqgen03C
+03/12/2025 22:48:14 - -----------------------------------------------------------
+03/12/2025 22:48:14 - Conectando Oracle
+03/12/2025 22:48:14 - Comprobando C:\greenvb
+03/12/2025 22:48:14 - Conectando a XE
+03/12/2025 22:48:15 - Encontrados 1 ficheros.
+03/12/2025 22:48:15 - Tratando tqgen03C
+03/12/2025 22:49:14 - -----------------------------------------------------------
+03/12/2025 22:49:14 - Conectando Oracle
+03/12/2025 22:49:14 - Comprobando C:\greenvb
+03/12/2025 22:49:14 - Conectando a XE
+03/12/2025 22:49:15 - Encontrados 1 ficheros.
+03/12/2025 22:49:15 - Tratando tqgen03C
+03/12/2025 22:50:14 - -----------------------------------------------------------
+03/12/2025 22:50:14 - Conectando Oracle
+03/12/2025 22:50:14 - Comprobando C:\greenvb
+03/12/2025 22:50:14 - Conectando a XE
+03/12/2025 22:50:15 - Encontrados 1 ficheros.
+03/12/2025 22:50:15 - Tratando tqgen03C
+03/12/2025 22:51:14 - -----------------------------------------------------------
+03/12/2025 22:51:14 - Conectando Oracle
+03/12/2025 22:51:14 - Comprobando C:\greenvb
+03/12/2025 22:51:14 - Conectando a XE
+03/12/2025 22:51:15 - Encontrados 1 ficheros.
+03/12/2025 22:51:15 - Tratando tqgen03C
+03/12/2025 22:52:14 - -----------------------------------------------------------
+03/12/2025 22:52:14 - Conectando Oracle
+03/12/2025 22:52:14 - Comprobando C:\greenvb
+03/12/2025 22:52:14 - Conectando a XE
+03/12/2025 22:52:15 - Encontrados 1 ficheros.
+03/12/2025 22:52:15 - Tratando tqgen03C
+03/12/2025 22:53:14 - -----------------------------------------------------------
+03/12/2025 22:53:14 - Conectando Oracle
+03/12/2025 22:53:14 - Comprobando C:\greenvb
+03/12/2025 22:53:14 - Conectando a XE
+03/12/2025 22:53:15 - Encontrados 1 ficheros.
+03/12/2025 22:53:15 - Tratando tqgen03C
+03/12/2025 22:54:14 - -----------------------------------------------------------
+03/12/2025 22:54:14 - Conectando Oracle
+03/12/2025 22:54:14 - Comprobando C:\greenvb
+03/12/2025 22:54:14 - Conectando a XE
+03/12/2025 22:54:15 - Encontrados 1 ficheros.
+03/12/2025 22:54:15 - Tratando tqgen03C
+03/12/2025 22:55:14 - -----------------------------------------------------------
+03/12/2025 22:55:14 - Conectando Oracle
+03/12/2025 22:55:14 - Comprobando C:\greenvb
+03/12/2025 22:55:14 - Conectando a XE
+03/12/2025 22:55:15 - Encontrados 1 ficheros.
+03/12/2025 22:55:15 - Tratando tqgen03C
+03/12/2025 22:56:14 - -----------------------------------------------------------
+03/12/2025 22:56:14 - Conectando Oracle
+03/12/2025 22:56:14 - Comprobando C:\greenvb
+03/12/2025 22:56:14 - Conectando a XE
+03/12/2025 22:56:15 - Encontrados 1 ficheros.
+03/12/2025 22:56:15 - Tratando tqgen03C
+03/12/2025 22:57:14 - -----------------------------------------------------------
+03/12/2025 22:57:14 - Conectando Oracle
+03/12/2025 22:57:14 - Comprobando C:\greenvb
+03/12/2025 22:57:14 - Conectando a XE
+03/12/2025 22:57:15 - Encontrados 1 ficheros.
+03/12/2025 22:57:15 - Tratando tqgen03C
+03/12/2025 22:58:14 - -----------------------------------------------------------
+03/12/2025 22:58:14 - Conectando Oracle
+03/12/2025 22:58:14 - Comprobando C:\greenvb
+03/12/2025 22:58:14 - Conectando a XE
+03/12/2025 22:58:15 - Encontrados 1 ficheros.
+03/12/2025 22:58:15 - Tratando tqgen03C
+03/12/2025 22:59:14 - -----------------------------------------------------------
+03/12/2025 22:59:14 - Conectando Oracle
+03/12/2025 22:59:14 - Comprobando C:\greenvb
+03/12/2025 22:59:14 - Conectando a XE
+03/12/2025 22:59:15 - Encontrados 1 ficheros.
+03/12/2025 22:59:15 - Tratando tqgen03C
+03/12/2025 23:00:14 - -----------------------------------------------------------
+03/12/2025 23:00:14 - Conectando Oracle
+03/12/2025 23:00:14 - Comprobando C:\greenvb
+03/12/2025 23:00:14 - Conectando a XE
+03/12/2025 23:00:15 - Encontrados 1 ficheros.
+03/12/2025 23:00:15 - Tratando tqgen03C
+03/12/2025 23:01:14 - -----------------------------------------------------------
+03/12/2025 23:01:14 - Conectando Oracle
+03/12/2025 23:01:14 - Comprobando C:\greenvb
+03/12/2025 23:01:14 - Conectando a XE
+03/12/2025 23:01:15 - Encontrados 1 ficheros.
+03/12/2025 23:01:15 - Tratando tqgen03C
+03/12/2025 23:02:14 - -----------------------------------------------------------
+03/12/2025 23:02:14 - Conectando Oracle
+03/12/2025 23:02:14 - Comprobando C:\greenvb
+03/12/2025 23:02:14 - Conectando a XE
+03/12/2025 23:02:15 - Encontrados 1 ficheros.
+03/12/2025 23:02:15 - Tratando tqgen03C
+03/12/2025 23:03:14 - -----------------------------------------------------------
+03/12/2025 23:03:14 - Conectando Oracle
+03/12/2025 23:03:14 - Comprobando C:\greenvb
+03/12/2025 23:03:14 - Conectando a XE
+03/12/2025 23:03:15 - Encontrados 1 ficheros.
+03/12/2025 23:03:15 - Tratando tqgen03C
+03/12/2025 23:04:14 - -----------------------------------------------------------
+03/12/2025 23:04:14 - Conectando Oracle
+03/12/2025 23:04:14 - Comprobando C:\greenvb
+03/12/2025 23:04:14 - Conectando a XE
+03/12/2025 23:04:15 - Encontrados 1 ficheros.
+03/12/2025 23:04:15 - Tratando tqgen03C
+03/12/2025 23:05:14 - -----------------------------------------------------------
+03/12/2025 23:05:14 - Conectando Oracle
+03/12/2025 23:05:14 - Comprobando C:\greenvb
+03/12/2025 23:05:14 - Conectando a XE
+03/12/2025 23:05:15 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:07:15 - -----------------------------------------------------------
+03/12/2025 23:07:15 - Conectando Oracle
+03/12/2025 23:07:15 - Comprobando C:\greenvb
+03/12/2025 23:07:15 - Conectando a XE
+03/12/2025 23:07:16 - Encontrados 1 ficheros.
+03/12/2025 23:07:16 - Tratando tqgen03C
+03/12/2025 23:08:15 - -----------------------------------------------------------
+03/12/2025 23:08:15 - Conectando Oracle
+03/12/2025 23:08:15 - Comprobando C:\greenvb
+03/12/2025 23:08:15 - Conectando a XE
+03/12/2025 23:08:16 - Encontrados 1 ficheros.
+03/12/2025 23:08:16 - Tratando tqgen03C
+03/12/2025 23:09:14 - -----------------------------------------------------------
+03/12/2025 23:09:14 - Conectando Oracle
+03/12/2025 23:09:14 - Comprobando C:\greenvb
+03/12/2025 23:09:14 - Conectando a XE
+03/12/2025 23:09:15 - Encontrados 1 ficheros.
+03/12/2025 23:09:15 - Tratando tqgen03C
+03/12/2025 23:10:14 - -----------------------------------------------------------
+03/12/2025 23:10:14 - Conectando Oracle
+03/12/2025 23:10:14 - Comprobando C:\greenvb
+03/12/2025 23:10:14 - Conectando a XE
+03/12/2025 23:10:21 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:12:15 - -----------------------------------------------------------
+03/12/2025 23:12:15 - Conectando Oracle
+03/12/2025 23:12:15 - Comprobando C:\greenvb
+03/12/2025 23:12:15 - Conectando a XE
+03/12/2025 23:12:16 - Encontrados 1 ficheros.
+03/12/2025 23:12:16 - Tratando tqgen03C
+03/12/2025 23:13:15 - -----------------------------------------------------------
+03/12/2025 23:13:15 - Conectando Oracle
+03/12/2025 23:13:15 - Comprobando C:\greenvb
+03/12/2025 23:13:15 - Conectando a XE
+03/12/2025 23:13:16 - Encontrados 1 ficheros.
+03/12/2025 23:13:16 - Tratando tqgen03C
+03/12/2025 23:14:14 - -----------------------------------------------------------
+03/12/2025 23:14:14 - Conectando Oracle
+03/12/2025 23:14:14 - Comprobando C:\greenvb
+03/12/2025 23:14:14 - Conectando a XE
+03/12/2025 23:14:15 - Encontrados 1 ficheros.
+03/12/2025 23:14:15 - Tratando tqgen03C
+03/12/2025 23:15:14 - -----------------------------------------------------------
+03/12/2025 23:15:14 - Conectando Oracle
+03/12/2025 23:15:14 - Comprobando C:\greenvb
+03/12/2025 23:15:14 - Conectando a XE
+03/12/2025 23:15:24 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:17:15 - -----------------------------------------------------------
+03/12/2025 23:17:15 - Conectando Oracle
+03/12/2025 23:17:15 - Comprobando C:\greenvb
+03/12/2025 23:17:15 - Conectando a XE
+03/12/2025 23:17:16 - Encontrados 1 ficheros.
+03/12/2025 23:17:16 - Tratando tqgen03C
+03/12/2025 23:18:15 - -----------------------------------------------------------
+03/12/2025 23:18:15 - Conectando Oracle
+03/12/2025 23:18:15 - Comprobando C:\greenvb
+03/12/2025 23:18:15 - Conectando a XE
+03/12/2025 23:18:16 - Encontrados 1 ficheros.
+03/12/2025 23:18:16 - Tratando tqgen03C
+03/12/2025 23:19:14 - -----------------------------------------------------------
+03/12/2025 23:19:14 - Conectando Oracle
+03/12/2025 23:19:14 - Comprobando C:\greenvb
+03/12/2025 23:19:14 - Conectando a XE
+03/12/2025 23:19:15 - Encontrados 1 ficheros.
+03/12/2025 23:19:15 - Tratando tqgen03C
+03/12/2025 23:20:14 - -----------------------------------------------------------
+03/12/2025 23:20:14 - Conectando Oracle
+03/12/2025 23:20:14 - Comprobando C:\greenvb
+03/12/2025 23:20:14 - Conectando a XE
+03/12/2025 23:20:25 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:22:15 - -----------------------------------------------------------
+03/12/2025 23:22:15 - Conectando Oracle
+03/12/2025 23:22:15 - Comprobando C:\greenvb
+03/12/2025 23:22:15 - Conectando a XE
+03/12/2025 23:22:16 - Encontrados 1 ficheros.
+03/12/2025 23:22:16 - Tratando tqgen03C
+03/12/2025 23:23:15 - -----------------------------------------------------------
+03/12/2025 23:23:15 - Conectando Oracle
+03/12/2025 23:23:15 - Comprobando C:\greenvb
+03/12/2025 23:23:15 - Conectando a XE
+03/12/2025 23:23:16 - Encontrados 1 ficheros.
+03/12/2025 23:23:16 - Tratando tqgen03C
+03/12/2025 23:24:14 - -----------------------------------------------------------
+03/12/2025 23:24:14 - Conectando Oracle
+03/12/2025 23:24:14 - Comprobando C:\greenvb
+03/12/2025 23:24:14 - Conectando a XE
+03/12/2025 23:24:15 - Encontrados 1 ficheros.
+03/12/2025 23:24:15 - Tratando tqgen03C
+03/12/2025 23:25:14 - -----------------------------------------------------------
+03/12/2025 23:25:14 - Conectando Oracle
+03/12/2025 23:25:14 - Comprobando C:\greenvb
+03/12/2025 23:25:14 - Conectando a XE
+03/12/2025 23:25:23 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:27:15 - -----------------------------------------------------------
+03/12/2025 23:27:15 - Conectando Oracle
+03/12/2025 23:27:15 - Comprobando C:\greenvb
+03/12/2025 23:27:15 - Conectando a XE
+03/12/2025 23:27:16 - Encontrados 1 ficheros.
+03/12/2025 23:27:16 - Tratando tqgen03C
+03/12/2025 23:28:15 - -----------------------------------------------------------
+03/12/2025 23:28:15 - Conectando Oracle
+03/12/2025 23:28:15 - Comprobando C:\greenvb
+03/12/2025 23:28:15 - Conectando a XE
+03/12/2025 23:28:16 - Encontrados 1 ficheros.
+03/12/2025 23:28:16 - Tratando tqgen03C
+03/12/2025 23:29:14 - -----------------------------------------------------------
+03/12/2025 23:29:14 - Conectando Oracle
+03/12/2025 23:29:14 - Comprobando C:\greenvb
+03/12/2025 23:29:14 - Conectando a XE
+03/12/2025 23:29:15 - Encontrados 1 ficheros.
+03/12/2025 23:29:15 - Tratando tqgen03C
+03/12/2025 23:30:14 - -----------------------------------------------------------
+03/12/2025 23:30:14 - Conectando Oracle
+03/12/2025 23:30:14 - Comprobando C:\greenvb
+03/12/2025 23:30:14 - Conectando a XE
+03/12/2025 23:30:20 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:32:15 - -----------------------------------------------------------
+03/12/2025 23:32:15 - Conectando Oracle
+03/12/2025 23:32:15 - Comprobando C:\greenvb
+03/12/2025 23:32:15 - Conectando a XE
+03/12/2025 23:32:16 - Encontrados 1 ficheros.
+03/12/2025 23:32:16 - Tratando tqgen03C
+03/12/2025 23:33:15 - -----------------------------------------------------------
+03/12/2025 23:33:15 - Conectando Oracle
+03/12/2025 23:33:15 - Comprobando C:\greenvb
+03/12/2025 23:33:15 - Conectando a XE
+03/12/2025 23:33:16 - Encontrados 1 ficheros.
+03/12/2025 23:33:16 - Tratando tqgen03C
+03/12/2025 23:34:14 - -----------------------------------------------------------
+03/12/2025 23:34:14 - Conectando Oracle
+03/12/2025 23:34:14 - Comprobando C:\greenvb
+03/12/2025 23:34:14 - Conectando a XE
+03/12/2025 23:34:15 - Encontrados 1 ficheros.
+03/12/2025 23:34:15 - Tratando tqgen03C
+03/12/2025 23:35:14 - -----------------------------------------------------------
+03/12/2025 23:35:14 - Conectando Oracle
+03/12/2025 23:35:14 - Comprobando C:\greenvb
+03/12/2025 23:35:14 - Conectando a XE
+03/12/2025 23:35:23 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:37:15 - -----------------------------------------------------------
+03/12/2025 23:37:15 - Conectando Oracle
+03/12/2025 23:37:15 - Comprobando C:\greenvb
+03/12/2025 23:37:15 - Conectando a XE
+03/12/2025 23:37:16 - Encontrados 1 ficheros.
+03/12/2025 23:37:16 - Tratando tqgen03C
+03/12/2025 23:38:15 - -----------------------------------------------------------
+03/12/2025 23:38:15 - Conectando Oracle
+03/12/2025 23:38:15 - Comprobando C:\greenvb
+03/12/2025 23:38:15 - Conectando a XE
+03/12/2025 23:38:16 - Encontrados 1 ficheros.
+03/12/2025 23:38:16 - Tratando tqgen03C
+03/12/2025 23:39:14 - -----------------------------------------------------------
+03/12/2025 23:39:14 - Conectando Oracle
+03/12/2025 23:39:14 - Comprobando C:\greenvb
+03/12/2025 23:39:14 - Conectando a XE
+03/12/2025 23:39:15 - Encontrados 1 ficheros.
+03/12/2025 23:39:15 - Tratando tqgen03C
+03/12/2025 23:40:14 - -----------------------------------------------------------
+03/12/2025 23:40:14 - Conectando Oracle
+03/12/2025 23:40:14 - Comprobando C:\greenvb
+03/12/2025 23:40:14 - Conectando a XE
+03/12/2025 23:40:21 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:42:15 - -----------------------------------------------------------
+03/12/2025 23:42:15 - Conectando Oracle
+03/12/2025 23:42:15 - Comprobando C:\greenvb
+03/12/2025 23:42:15 - Conectando a XE
+03/12/2025 23:42:16 - Encontrados 1 ficheros.
+03/12/2025 23:42:16 - Tratando tqgen03C
+03/12/2025 23:43:15 - -----------------------------------------------------------
+03/12/2025 23:43:15 - Conectando Oracle
+03/12/2025 23:43:15 - Comprobando C:\greenvb
+03/12/2025 23:43:15 - Conectando a XE
+03/12/2025 23:43:16 - Encontrados 1 ficheros.
+03/12/2025 23:43:16 - Tratando tqgen03C
+03/12/2025 23:44:14 - -----------------------------------------------------------
+03/12/2025 23:44:14 - Conectando Oracle
+03/12/2025 23:44:14 - Comprobando C:\greenvb
+03/12/2025 23:44:14 - Conectando a XE
+03/12/2025 23:44:15 - Encontrados 1 ficheros.
+03/12/2025 23:44:15 - Tratando tqgen03C
+03/12/2025 23:45:14 - -----------------------------------------------------------
+03/12/2025 23:45:14 - Conectando Oracle
+03/12/2025 23:45:14 - Comprobando C:\greenvb
+03/12/2025 23:45:14 - Conectando a XE
+03/12/2025 23:45:23 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:47:15 - -----------------------------------------------------------
+03/12/2025 23:47:15 - Conectando Oracle
+03/12/2025 23:47:15 - Comprobando C:\greenvb
+03/12/2025 23:47:15 - Conectando a XE
+03/12/2025 23:47:16 - Encontrados 1 ficheros.
+03/12/2025 23:47:16 - Tratando tqgen03C
+03/12/2025 23:48:15 - -----------------------------------------------------------
+03/12/2025 23:48:15 - Conectando Oracle
+03/12/2025 23:48:15 - Comprobando C:\greenvb
+03/12/2025 23:48:15 - Conectando a XE
+03/12/2025 23:48:16 - Encontrados 1 ficheros.
+03/12/2025 23:48:16 - Tratando tqgen03C
+03/12/2025 23:49:14 - -----------------------------------------------------------
+03/12/2025 23:49:14 - Conectando Oracle
+03/12/2025 23:49:14 - Comprobando C:\greenvb
+03/12/2025 23:49:14 - Conectando a XE
+03/12/2025 23:49:15 - Encontrados 1 ficheros.
+03/12/2025 23:49:15 - Tratando tqgen03C
+03/12/2025 23:50:14 - -----------------------------------------------------------
+03/12/2025 23:50:14 - Conectando Oracle
+03/12/2025 23:50:14 - Comprobando C:\greenvb
+03/12/2025 23:50:14 - Conectando a XE
+03/12/2025 23:50:24 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:52:15 - -----------------------------------------------------------
+03/12/2025 23:52:15 - Conectando Oracle
+03/12/2025 23:52:15 - Comprobando C:\greenvb
+03/12/2025 23:52:15 - Conectando a XE
+03/12/2025 23:52:16 - Encontrados 1 ficheros.
+03/12/2025 23:52:16 - Tratando tqgen03C
+03/12/2025 23:53:15 - -----------------------------------------------------------
+03/12/2025 23:53:15 - Conectando Oracle
+03/12/2025 23:53:15 - Comprobando C:\greenvb
+03/12/2025 23:53:15 - Conectando a XE
+03/12/2025 23:53:16 - Encontrados 1 ficheros.
+03/12/2025 23:53:16 - Tratando tqgen03C
+03/12/2025 23:54:14 - -----------------------------------------------------------
+03/12/2025 23:54:14 - Conectando Oracle
+03/12/2025 23:54:14 - Comprobando C:\greenvb
+03/12/2025 23:54:14 - Conectando a XE
+03/12/2025 23:54:15 - Encontrados 1 ficheros.
+03/12/2025 23:54:15 - Tratando tqgen03C
+03/12/2025 23:55:14 - -----------------------------------------------------------
+03/12/2025 23:55:14 - Conectando Oracle
+03/12/2025 23:55:14 - Comprobando C:\greenvb
+03/12/2025 23:55:14 - Conectando a XE
+03/12/2025 23:55:21 - ConectarOracle
+Se produjo una excepción en el inicializador de tipo de 'OracleGreen.Master.repositorio'.
+03/12/2025 23:57:15 - -----------------------------------------------------------
+03/12/2025 23:57:15 - Conectando Oracle
+03/12/2025 23:57:15 - Comprobando C:\greenvb
+03/12/2025 23:57:15 - Conectando a XE
+03/12/2025 23:57:16 - Encontrados 1 ficheros.
+03/12/2025 23:57:16 - Tratando tqgen03C
+03/12/2025 23:58:15 - -----------------------------------------------------------
+03/12/2025 23:58:15 - Conectando Oracle
+03/12/2025 23:58:15 - Comprobando C:\greenvb
+03/12/2025 23:58:15 - Conectando a XE
+03/12/2025 23:58:16 - Encontrados 1 ficheros.
+03/12/2025 23:58:16 - Tratando tqgen03C
+03/12/2025 23:59:14 - -----------------------------------------------------------
+03/12/2025 23:59:14 - Conectando Oracle
+03/12/2025 23:59:14 - Comprobando C:\greenvb
+03/12/2025 23:59:14 - Conectando a XE
+03/12/2025 23:59:15 - Encontrados 1 ficheros.
+03/12/2025 23:59:15 - Tratando tqgen03C
